@@ -1,0 +1,39 @@
+# Dependências e builds web
+node_modules/
+dist/
+.vite/
+coverage/
+
+# Android, Gradle e Capacitor
+.gradle/
+android/.gradle/
+android/app/build/
+android/build/
+android/local.properties
+*.apk
+*.aab
+
+# Assinatura e credenciais
+*.jks
+*.keystore
+*.p12
+*.pem
+.env
+.env.*
+!.env.example
+
+# Editores e sistema
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+*.log
+
+# Backups e arquivos compactados
+*.bak
+*.backup
+*.zip
+*.7z
+*.rar
