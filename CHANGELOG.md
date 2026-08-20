@@ -16,3 +16,9 @@
 
 - Incorporado o núcleo financeiro no HTML principal para permitir download, envio e abertura sem arquivos JavaScript locais auxiliares.
 - Documentado o download pelo GitHub e pelo botão “Baixar HTML definitivo” do God Mode.
+
+## 13.1.2 — Hero e auditoria de evolução visual
+
+- Corrigido o fundo absoluto da Home, que era convertido em bloco de fluxo pelo selo de imagens de referência e deslocava todo o hero.
+- Adicionada regressão estrutural para preservar o empilhamento do hero.
+- Criado anexo técnico/editorial com inventário completo das mudanças, referências de estudo e direção futura para os seis mundos da aplicação.

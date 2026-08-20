@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth" style="scroll-behavior: smooth;"><head>
-    <!-- FR ALPHA 2.0 — ETAPA 13.1: fundação técnica, orçamento orientativo e compatibilidade legada -->
+    <!-- FR ALPHA 2.0 — ETAPA 13.1.2: fundação técnica, orçamento orientativo e compatibilidade legada. Rastreabilidade: docs/ANEXO_EVOLUCAO_VISUAL_AWWWARDS.md -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Franco Romeu Alpha 2.0 — Etapa 13.1 Fundação Técnica</title>
@@ -14790,7 +14790,7 @@ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',boot,{once:tru
 .fr-summary-actions{display:flex;gap:.25rem}.fr-summary-actions button{display:grid;place-items:center;width:44px;height:44px;border:1px solid rgba(230,214,181,.16);border-radius:10px;background:rgba(0,0,0,.2);color:#E6D6B5}.fr-summary-actions button:last-child{color:#ff927a}
 .fr-estimate-tag{display:inline-block;margin-top:.3rem;padding:.18rem .42rem;border-radius:999px;background:rgba(37,211,102,.1);color:#8bf0b2;font:600 .58rem/1.2 'Share Tech Mono',monospace;text-transform:uppercase}.fr-estimate-tag.is-estimated{background:rgba(246,167,0,.12);color:#F6A700}
 .fr-estimate-panel{padding:1rem;border:1px solid rgba(246,167,0,.35);border-radius:14px;background:linear-gradient(135deg,rgba(10,47,38,.96),rgba(18,63,52,.82))}.fr-estimate-eyebrow{display:block;color:#F6A700;font:600 .58rem/1.3 'Share Tech Mono',monospace;letter-spacing:.12em}.fr-estimate-panel>strong{display:block;margin:.35rem 0;color:#fff;font:700 clamp(1rem,2vw,1.35rem)/1.1 'Stardos Stencil',serif}.fr-estimate-panel>p{font-size:.72rem;color:rgba(230,214,181,.75)}.fr-estimate-panel dl{display:grid;gap:.35rem;margin:.75rem 0 0}.fr-estimate-panel dl div{display:flex;justify-content:space-between;font-size:.72rem}.fr-estimate-warning{margin-top:.65rem!important;color:#ff927a!important}.fr-estimate-details{margin-top:.75rem}.fr-estimate-details summary{min-height:44px;display:flex;align-items:center;cursor:pointer;color:#F6A700;font-weight:700}
-.fr-reference-media{position:relative!important}.fr-reference-badge{position:absolute;z-index:8;right:.5rem;bottom:.5rem;max-width:calc(100% - 1rem);padding:.35rem .5rem;border:1px solid rgba(230,214,181,.26);border-radius:6px;background:rgba(5,12,10,.9);color:#E6D6B5;font:600 .48rem/1.25 'Share Tech Mono',monospace;letter-spacing:.04em;text-transform:uppercase;pointer-events:none}
+.fr-reference-media{--fr-reference-badge-ready:1}.fr-reference-positioned{position:relative!important}.fr-reference-badge{position:absolute;z-index:8;right:.5rem;bottom:.5rem;max-width:calc(100% - 1rem);padding:.35rem .5rem;border:1px solid rgba(230,214,181,.26);border-radius:6px;background:rgba(5,12,10,.9);color:#E6D6B5;font:600 .48rem/1.25 'Share Tech Mono',monospace;letter-spacing:.04em;text-transform:uppercase;pointer-events:none}
 button,a,[role="button"]{touch-action:manipulation}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #F6A700!important;outline-offset:3px!important}
 @media(max-width:640px){.fr-summary-item{align-items:center}.fr-summary-actions{gap:.15rem}.fr-summary-actions button{width:44px;height:44px}.fr-reference-badge{font-size:.42rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}.animate-fadeIn,.step-enter{animation:none!important}.fr-summary-actions *,#modal-backdrop *{transition:none!important}}
@@ -14808,6 +14808,9 @@ function enhance(root=document){
     img.dataset.frReference='true';
     const host=img.parentElement;if(!host)return;
     host.classList.add('fr-reference-media');
+    // Não sobrescreve containers absolutos como o hero: esse conflito retirava a foto
+    // de fundo do empilhamento e empurrava todo o conteúdo editorial para baixo.
+    if(getComputedStyle(host).position==='static')host.classList.add('fr-reference-positioned');
     if(!host.querySelector(':scope > .fr-reference-badge')){const badge=document.createElement('span');badge.className='fr-reference-badge';badge.textContent=referenceLabel;host.appendChild(badge)}
   });
   root.querySelectorAll?.('a[href*="instagram.com"]:not([aria-label])').forEach(link=>link.setAttribute('aria-label','Abrir Instagram da Franco Romeu'));
