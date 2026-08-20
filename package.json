@@ -1,0 +1,9 @@
+{
+  "name": "franco-romeu-app",
+  "version": "13.1.1",
+  "private": true,
+  "scripts": {
+    "test": "node --test",
+    "check:html": "node scripts/check-html.js"
+  }
+}
