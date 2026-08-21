@@ -1,5 +1,29 @@
 # Changelog
 
+## 14.0.0 — Seis Universos Awwwards
+
+- cria seis universos visuais e campos Canvas 2D exclusivos;
+- adiciona matriz Three.js lazy com fallback compatível;
+- transforma Ambientes em galeria e Portfólio em Arquivo Vivo sem modal;
+- adiciona capítulos ao Sobre e rota de decisão à Home;
+- refina Orçamento como cockpit com confiança e divulgação progressiva;
+- preserva byte a byte os motores de Portfólio e PDF;
+- mantém 115 serviços, 15 categorias e fórmulas financeiras;
+- remove claims e escassez não comprovados;
+- adiciona SEO, JSON-LD, reduced motion, QA, brief JSON e roadmap Site/PWA/APK;
+- corrige o fechamento prematuro de `body` herdado;
+- registra limitação do Chromium empacotado, que encerrou com `SIGSEGV` antes do aceite visual.
+
+## 13.1.3 — PDF resiliente e fonte canônica
+
+- Restaurado o contrato `window.FR_PERFORMANCE.ensurePDFStack`, ausente apesar de ainda ser chamado por `generatePDF()`.
+- Adicionado carregamento sob demanda de `html2canvas@1.4.1` e `jsPDF@2.5.1`, com deduplicação de chamadas concorrentes, validação da API, timeout e nova tentativa após falha.
+- Mantida a paginação A4 e preservados motor financeiro, 115 serviços, 15 categorias, IQE, CEP, WhatsApp e persistência.
+- Ampliado `check:html` para impedir nova remoção silenciosa do bridge/dependências do PDF.
+- Definido o GitHub como fonte canônica e adicionados registro mestre, anexo factual e brief JSON para futuras IAs.
+- Separadas mudanças implementadas de propostas Awwwards; claims não comprovados, escassez artificial e uso de Unsplash como obra executada foram explicitamente rejeitados.
+- QA: sintaxe dos 25 scripts inline, 200 IDs estáticos, 115 IDs de serviços, seis views, 15 categorias e concorrência do loader aprovados. Chromium visual indisponível no ambiente por `SIGSEGV`, sem aprovação visual presumida.
+
 ## 13.1.0 — Fundação técnica
 
 - Criado núcleo financeiro puro e testável com arredondamento monetário, opções por ID e compatibilidade com índices legados.
