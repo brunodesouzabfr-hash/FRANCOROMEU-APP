@@ -1,0 +1,43 @@
+name: FR Quality Gate
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: fr-quality-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    name: FR quality (Node 24)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Configure Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+
+      - name: Verify runtime
+        run: |
+          node --version
+          npm --version
+
+      - name: Run financial and canonical regressions
+        run: npm test
+
+      - name: Validate canonical HTML structure
+        run: npm run check:html
