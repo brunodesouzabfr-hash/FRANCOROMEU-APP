@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0.0",
+  "project": {
+    "brand": "Franco Romeu (FR) - Arte & Engenharia",
+    "canonical_repository": "https://github.com/brunodesouzabfr-hash/FRANCOROMEU-APP",
+    "canonical_base_file": "FRANCO_ROMEU_ETAPA14_AWWWARDS_UNIVERSES.html",
+    "delivery_file": "FRANCO_ROMEU_ETAPA15_MATERIALIDADE_IMERSIVA.html",
+    "delivery_version": "15.0-materialidade-imersiva",
+    "previous_stage15_attempt_reused": false,
+    "target_platforms": ["Web_SPA", "PWA_future", "Android_WebView_APK_future"]
+  },
+  "brand_guardrails": {
+    "positioning": [
+      "Luxo silencioso de alto padrão",
+      "Tradição com precisão",
+      "Engenharia inteligente e bem executada",
+      "Engenharia de custo",
+      "Curadoria material",
+      "Permanência"
+    ],
+    "prohibited_copy": ["baratinho", "promoção", "reforma barata", "últimas vagas", "escassez artificial"],
+    "claim_policy": "Não inventar métricas, prêmios, obras executadas, disponibilidade, autoria de mídia ou preço definitivo.",
+    "palette": {
+      "petroleum_deep": ["#0A2F26", "#123F34", "#031812"],
+      "industrial_orange": ["#FF6B00", "#FF7A00"],
+      "burnt_gold": "#F6A700",
+      "mineral_bone": "#E6D6B5",
+      "petroleum_border": "#1A6069",
+      "technical_cyan_3d_only": "#54D6FF"
+    },
+    "fonts": ["Stardos Stencil", "Rokkitt", "Share Tech Mono"]
+  },
+  "protected_invariants": {
+    "views": 6,
+    "services": 115,
+    "progressive_categories": 15,
+    "existing_p3d_projects": 6,
+    "portfolio_projects": 16,
+    "environment_styles": 12,
+    "protected_scripts": {
+      "fr-stage2-portfolio-engine": "98dc336bb8174ab5a2d18617776c9abd8f8071fb19789d325ee8f7fb275ff844",
+      "fr-pdf-stack-loader": "b9f17ab1b6b52afc3cf215ca1ee54e6a59afa35beae5a6344bd92c2c20934015",
+      "fr-budget-core": "3b5696aeb51ebbda876a428e657c9e60cd6c08d45bc2f152b1ed98b905517bbc"
+    }
+  },
+  "modules": {
+    "projetos_3d": {
+      "element_id": "view-projetos3d",
+      "concept": "Matéria em órbita: arquivo editorial técnico mais volume tridimensional focal",
+      "references": ["https://www.sergio-ayala.com/", "https://vanlent.dev/"],
+      "existing_content_preserved": true,
+      "added_projects": [
+        {"id": "reforma-residencial-integral", "services": ["proj_interiores", "pac_reforma_residencial"]},
+        {"id": "retrofit-comercial", "services": ["retrofit", "proj_interiores"]},
+        {"id": "calacatta-orbita", "services": ["proj_bancada", "proj_interiores"]},
+        {"id": "marcenaria-integrada", "services": ["moveis", "mar_guarda_roupa", "ilu_led_closet"]},
+        {"id": "brinquedomovel", "services": ["evt_carreta_brinquedos", "proj_interiores"]},
+        {"id": "futebol-x1", "services": ["evt_estrutura_show", "proj_interiores"]},
+        {"id": "basquete-aco", "services": ["evt_estrutura_show", "proj_interiores"]},
+        {"id": "patinacao-dmx", "services": ["evt_skate", "evt_dmx_evento", "evt_sonorizacao"]},
+        {"id": "luz-no-movel", "services": ["ilu_dmx", "ilu_led_closet", "mar_instalacao_movel"]},
+        {"id": "suite-material", "services": ["proj_interiores", "tex_marmore", "ilu_dmx"]}
+      ],
+      "features": [
+        "editorial_index",
+        "interactive_css_3d_cube",
+        "render_wireframe_light_modes",
+        "four_angle_inspector",
+        "before_project_materiality_sequence",
+        "verified_video_slot",
+        "budget_link_by_existing_service_ids"
+      ]
+    },
+    "portfolio": {
+      "element_id": "view-projetos",
+      "concept": "Arquivo Vivo: selling gallery horizontal contínua sobre acervo em espiral",
+      "references": [
+        "https://sd-infinite-horizontal-scroll.vercel.app/",
+        "https://sd-spiral-gallery.vercel.app/",
+        "https://tympanus.net/codrops/2026/07/30/building-an-infinite-gsap-scroll-gallery-with-parallax-and-flip-transitions/",
+        "https://tympanus.net/codrops/2021/01/05/creating-an-infinite-auto-scrolling-gallery-using-webgl-with-ogl-and-glsl-shaders/"
+      ],
+      "data_source": "existing canonical PROJECTS array",
+      "features": [
+        "fullscreen_horizontal_loop",
+        "pointer_drag",
+        "touch_momentum",
+        "shift_wheel",
+        "keyboard_arrows_and_home",
+        "canvas_spiral_background",
+        "canonical_filters",
+        "delegation_to_protected_project_modal"
+      ]
+    },
+    "ambientes": {
+      "element_id": "view-ambientes",
+      "concept": "Atlas de atmosferas: lista editorial mais dossiê arquitetônico fullscreen",
+      "references": ["https://www.bloom3d.studio/", "https://www.bloom3d.studio/projects/morven"],
+      "data_source": "window.AMB_STYLES",
+      "features": [
+        "twelve_style_editorial_index",
+        "focus_preview",
+        "three_reference_images_per_style",
+        "technical_poetic_copy",
+        "material_palette",
+        "real_catalog_service_names",
+        "batch_budget_injection"
+      ]
+    },
+    "budget": {
+      "element_id": "view-orcamento",
+      "removed_visual_blocks": [
+        "ESTIMATIVA ORIENTATIVA",
+        "RETORNO PELO WHATSAPP",
+        "115 serviços / Catálogo técnico preservado",
+        "Escopo editável / Inclua, revise e remova",
+        "Faixa orientativa / Validação antes da contratação"
+      ],
+      "preserved": ["FRBudgetCore", "115 services", "15 categories", "PDF lazy bridge", "dock", "state", "validation"]
+    }
+  },
+  "engineering": {
+    "render_finance_isolation": true,
+    "touch_target_min_px": 44,
+    "target_fps": 60,
+    "target_fps_is_guarantee": false,
+    "reduced_motion": true,
+    "inactive_view_animation_pause": true,
+    "canvas_dpr_cap": 1.5,
+    "dynamic_button_normalization": true,
+    "external_image_policy": "Todas as imagens externas são referências explicitamente rotuladas; não representam obra FR.",
+    "public_api": "window.FR_STAGE15"
+  },
+  "quality": {
+    "automated_tests_passed": 12,
+    "automated_tests_total": 12,
+    "duplicate_runtime_ids": 0,
+    "manual_browser_visual_gate_required": true,
+    "browser_capture_status": "Bloqueado por binários Chromium vazios ou com falha nativa no ambiente de execução."
+  },
+  "future_roadmap": [
+    "Substituir imagens de referência por acervo FR validado",
+    "Conectar vídeos oficiais verificados",
+    "Medir LCP INP FPS e memória em dispositivos reais",
+    "Empacotar ativos críticos e implementar manifest e service worker",
+    "Validar Android WebView e back navigation",
+    "Instrumentar funil ambiente/projeto/portfolio para orçamento"
+  ]
+}
