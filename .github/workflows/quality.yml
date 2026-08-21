@@ -36,6 +36,9 @@ jobs:
           node --version
           npm --version
 
+      - name: Install test dependencies
+        run: npm install --no-audit --no-fund
+
       - name: Run financial and canonical regressions
         run: npm test
 
