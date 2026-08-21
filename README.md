@@ -97,3 +97,17 @@ npm run test:stage14
 ```
 
 A Etapa 14 continua em prototipagem: aceite visual em navegadores reais e substituição das imagens de referência por acervo verificado são gates antes de produção ou APK.
+
+## Etapa 15 — sites individuais Awwwards
+
+A Etapa 15 é uma evolução empilhada sobre a Etapa 14 e mantém o motor comercial protegido.
+
+- Aplicação: `base-original/FRANCO_ROMEU_ETAPA15_SITES_INDIVIDUAIS.html`
+- Distribuição compacta: `base-original/FRANCO_ROMEU_ETAPA15_SITES_INDIVIDUAIS.min.html`
+- Evolução e referências: `docs/ANEXO_EVOLUCAO_VISUAL_AWWWARDS_ETAPA15.md`
+- Brief para IA: `docs/fr_awwwards_stage15_prompt_brief.json`
+- QA: `docs/QA_STAGE15_INDIVIDUAL_SITES.md`
+
+Ambientes passa a operar como atlas curatorial com páginas dedicadas; Projetos 3D usa disciplinas, entrada e narrativa central por `clip-path`; Arquivo Vivo recebe trilha horizontal infinita com espiral WebGL resiliente; o ruído promocional do topo do Orçamento é removido. Os 115 serviços, 15 categorias e o carregador resiliente de PDF permanecem preservados.
+
+Status: protótipo em draft; 34/34 testes automatizados aprovados e aceite WebGL/dispositivos físicos ainda obrigatório.

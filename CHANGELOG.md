@@ -1,5 +1,16 @@
 # Changelog
 
+## 15.0.0 — Sites individuais Awwwards
+
+- reconstrói Ambientes como atlas Bloom-style com 12 linguagens e 4 referências por detalhe;
+- refaz Projetos 3D como jornada por disciplinas, Enter, Back/Next e palco central por clip-path;
+- refaz Arquivo Vivo como loop horizontal contínuo com espiral WebGL sob demanda e fallback;
+- integra Ambiente e projeto 3D ao mesmo estado da Calculadora;
+- remove o bloco superior sem finalidade da área de Orçamento;
+- preserva 115 serviços, 15 categorias, fórmulas e motores protegidos de Portfólio/PDF;
+- adiciona distribuição compacta reproduzível, anexo, brief JSON, QA e 34 testes aprovados;
+- mantém a etapa em draft até o aceite visual em navegadores e dispositivos reais.
+
 ## 14.0.0 — Seis Universos Awwwards
 
 - cria seis universos visuais e campos Canvas 2D exclusivos;

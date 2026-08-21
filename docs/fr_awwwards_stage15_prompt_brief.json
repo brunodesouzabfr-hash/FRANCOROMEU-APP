@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0",
+  "stage": "15.0-individual-awwwards-sites",
+  "canonical_repository": "https://github.com/brunodesouzabfr-hash/FRANCOROMEU-APP",
+  "source": "FRANCO_ROMEU_ETAPA14_AWWWARDS_UNIVERSES.html",
+  "deliverable": "FRANCO_ROMEU_ETAPA15_SITES_INDIVIDUAIS.html",
+  "brand": {
+    "name": "Franco Romeu — Arte & Engenharia",
+    "positioning": [
+      "luxo silencioso de alto padrão",
+      "tradição com precisão",
+      "engenharia inteligente e bem executada"
+    ],
+    "palette": {
+      "petroleum": ["#0A2F26", "#123F34", "#031812"],
+      "industrial_orange": "#FF6B00",
+      "burnished_gold": "#F6A700",
+      "mineral_bone": "#E6D6B5",
+      "technical_cyan": "#71E5F4"
+    },
+    "forbidden_claims": [
+      "falsa escassez",
+      "prazos de resposta não comprovados",
+      "obra executada sem evidência",
+      "promoção ou linguagem barateadora"
+    ]
+  },
+  "modules": {
+    "ambientes": {
+      "element_id": "view-ambientes",
+      "reference": "https://www.bloom3d.studio/",
+      "architecture": "atlas_grid_to_dedicated_environment_page",
+      "content_counts": { "styles": 12, "reference_images_per_style": 4 },
+      "features": [
+        "second_image_hover",
+        "dedicated_in_spa_detail_view",
+        "full_reference_gallery",
+        "technical_and_poetic_description",
+        "palette",
+        "back_next_navigation",
+        "add_style_package_to_existing_budget_state"
+      ],
+      "truth_label": "Referência visual — não representa obra executada"
+    },
+    "projetos_3d": {
+      "element_id": "view-projetos3d",
+      "references": [
+        "https://www.sergio-ayala.com/#illustration",
+        "https://vanlent.dev/"
+      ],
+      "architecture": "discipline_gate_to_single_cinematic_showcase",
+      "disciplines": [
+        "Ambientes completos",
+        "Cozinhas",
+        "Fachadas & externos",
+        "Banheiros"
+      ],
+      "features": [
+        "discipline_selection",
+        "explicit_enter",
+        "back_next_scene_navigation",
+        "clip_path_curtain",
+        "directional_translate_x",
+        "technical_hud",
+        "expanded_dossier",
+        "bind_project_to_budget"
+      ],
+      "webgl": false
+    },
+    "portfolio": {
+      "element_id": "view-projetos",
+      "references": [
+        "https://sd-infinite-horizontal-scroll.vercel.app/",
+        "https://sd-spiral-gallery.vercel.app/"
+      ],
+      "architecture": "infinite_horizontal_foreground_over_lazy_spiral_background",
+      "content_count": 16,
+      "features": [
+        "drag_touch_wheel_keyboard",
+        "momentum",
+        "category_filters",
+        "existing_project_dossier",
+        "lazy_three_spiral",
+        "webgl_context_loss_recovery",
+        "css_fallback"
+      ]
+    },
+    "orcamento": {
+      "element_id": "view-orcamento",
+      "removed": [
+        "ESTIMATIVA ORIENTATIVA badge",
+        "RETORNO PELO WHATSAPP badge",
+        "trust rail with service count, editable scope, range and PDF status"
+      ],
+      "preserved": [
+        "IQE status",
+        "115 service engine",
+        "progressive catalog",
+        "contextual navigation",
+        "lazy PDF warmup"
+      ]
+    }
+  },
+  "engineering_invariants": {
+    "services": 115,
+    "progressive_categories": 15,
+    "protected_script_ids": [
+      "fr-stage2-portfolio-engine",
+      "fr-pdf-stack-loader"
+    ],
+    "target_fps": 60,
+    "touch_target_min_px": 44,
+    "financial_logic_mutated": false,
+    "webgl_scope": "portfolio_background_only",
+    "webgl_fallbacks": [
+      "prefers-reduced-motion",
+      "save-data",
+      "no WebGL",
+      "CDN timeout",
+      "script load failure",
+      "context loss"
+    ]
+  },
+  "recommended_product_events": [
+    "environment_opened",
+    "environment_package_added",
+    "p3d_discipline_selected",
+    "p3d_journey_entered",
+    "p3d_project_bound_to_budget",
+    "archive_filter_changed",
+    "archive_dossier_opened",
+    "budget_pdf_requested"
+  ],
+  "acceptance": {
+    "tests_total": 34,
+    "stage15_tests": 8,
+    "services": 115,
+    "environments": 12,
+    "p3d_projects": 6,
+    "archive_items": 16,
+    "duplicate_ids": 0,
+    "browser_hardware_gate_required": true
+  }
+}
