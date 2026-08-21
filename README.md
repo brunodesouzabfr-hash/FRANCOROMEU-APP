@@ -76,3 +76,24 @@ O God Mode não possui senha no cliente. Em ambiente local controlado, abra a ap
 - Ativos visuais, Font Awesome, ViaCEP e a pilha de PDF ainda dependem de serviços externos.
 - Preços e cupons calculados no navegador precisam ser revalidados antes de uso comercial vinculante.
 - O CNPJ demonstrativo e métricas não validadas não devem ser publicados.
+
+## Etapa 14 — Seis Universos Awwwards
+
+A evolução visual completa está na branch `codex/etapa-14-awwwards-universes`, construída sobre a fundação de PDF da Etapa 13.1.3.
+
+- Aplicação: `base-original/FRANCO_ROMEU_ETAPA14_AWWWARDS_UNIVERSES.html`
+- Anexo integral: `docs/ANEXO_EVOLUCAO_VISUAL_AWWWARDS_ETAPA14.md`
+- Brief JSON: `docs/fr_awwwards_stage14_prompt_brief.json`
+- QA: `docs/QA_STAGE14_AWWWARDS.md`
+- Mapa interativo: `docs/fr-universe-blueprint.html`
+
+O redesign cria Forja, Manifesto, Arte Material, Modeling Space, Arquivo Vivo e Engenharia de Custo como universos distintos. Three.js é carregado somente em Projetos 3D; mobile, economia de dados, reduced motion e falhas de WebGL recebem fallback. Os 115 serviços, 15 categorias e motores protegidos permanecem preservados.
+
+Teste específico:
+
+```bash
+npm install
+npm run test:stage14
+```
+
+A Etapa 14 continua em prototipagem: aceite visual em navegadores reais e substituição das imagens de referência por acervo verificado são gates antes de produção ou APK.

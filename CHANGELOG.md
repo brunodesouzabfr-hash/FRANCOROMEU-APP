@@ -1,5 +1,19 @@
 # Changelog
 
+## 14.0.0 — Seis Universos Awwwards
+
+- cria seis universos visuais e campos Canvas 2D exclusivos;
+- adiciona matriz Three.js lazy com fallback compatível;
+- transforma Ambientes em galeria e Portfólio em Arquivo Vivo sem modal;
+- adiciona capítulos ao Sobre e rota de decisão à Home;
+- refina Orçamento como cockpit com confiança e divulgação progressiva;
+- preserva byte a byte os motores de Portfólio e PDF;
+- mantém 115 serviços, 15 categorias e fórmulas financeiras;
+- remove claims e escassez não comprovados;
+- adiciona SEO, JSON-LD, reduced motion, QA, brief JSON e roadmap Site/PWA/APK;
+- corrige o fechamento prematuro de `body` herdado;
+- registra limitação do Chromium empacotado, que encerrou com `SIGSEGV` antes do aceite visual.
+
 ## 13.1.3 — PDF resiliente e fonte canônica
 
 - Restaurado o contrato `window.FR_PERFORMANCE.ensurePDFStack`, ausente apesar de ainda ser chamado por `generatePDF()`.
