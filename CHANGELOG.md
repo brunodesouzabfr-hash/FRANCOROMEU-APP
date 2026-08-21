@@ -1,5 +1,15 @@
 # Changelog
 
+## 13.1.3 — PDF resiliente e fonte canônica
+
+- Restaurado o contrato `window.FR_PERFORMANCE.ensurePDFStack`, ausente apesar de ainda ser chamado por `generatePDF()`.
+- Adicionado carregamento sob demanda de `html2canvas@1.4.1` e `jsPDF@2.5.1`, com deduplicação de chamadas concorrentes, validação da API, timeout e nova tentativa após falha.
+- Mantida a paginação A4 e preservados motor financeiro, 115 serviços, 15 categorias, IQE, CEP, WhatsApp e persistência.
+- Ampliado `check:html` para impedir nova remoção silenciosa do bridge/dependências do PDF.
+- Definido o GitHub como fonte canônica e adicionados registro mestre, anexo factual e brief JSON para futuras IAs.
+- Separadas mudanças implementadas de propostas Awwwards; claims não comprovados, escassez artificial e uso de Unsplash como obra executada foram explicitamente rejeitados.
+- QA: sintaxe dos 25 scripts inline, 200 IDs estáticos, 115 IDs de serviços, seis views, 15 categorias e concorrência do loader aprovados. Chromium visual indisponível no ambiente por `SIGSEGV`, sem aprovação visual presumida.
+
 ## 13.1.0 — Fundação técnica
 
 - Criado núcleo financeiro puro e testável com arredondamento monetário, opções por ID e compatibilidade com índices legados.
