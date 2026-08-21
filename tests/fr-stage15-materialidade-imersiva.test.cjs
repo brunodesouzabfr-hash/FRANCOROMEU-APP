@@ -79,63 +79,123 @@ test('todos os scripts inline permanecem sintaticamente válidos', () => {
   assert.equal((html.match(/<\/html>/gi) || []).length, 1);
 });
 
-test('inicializa a aplicação e os três novos motores sem erros de runtime', async () => {
+test('runtime integra materialidade, arquivo vivo, atlas, orçamento e PDF', { timeout: 18000 }, async () => {
+  const runtimeErrors = [];
   const virtualConsole = new VirtualConsole();
-  const errors = [];
-  virtualConsole.on('jsdomError', error => errors.push('jsdom: ' + error.message));
-  virtualConsole.on('error', (...args) => errors.push(args.join(' ')));
-
+  virtualConsole.on('jsdomError', error => {
+    if (!/Could not load (script|link)|Not implemented: navigation|Not implemented: HTMLCanvasElement/.test(error.message)) runtimeErrors.push(error.message);
+  });
+  virtualConsole.on('error', message => runtimeErrors.push(String(message)));
   const dom = new JSDOM(html, {
     runScripts: 'dangerously',
     pretendToBeVisual: true,
     url: 'https://franco-romeu.local/',
     virtualConsole,
     beforeParse(window) {
-      window.alert = () => {};
-      window.confirm = () => true;
-      window.matchMedia = () => ({
-        matches: false,
-        addEventListener() {},
-        removeEventListener() {},
-        addListener() {},
-        removeListener() {}
-      });
-      window.requestAnimationFrame = () => 1;
-      window.cancelAnimationFrame = () => {};
-      window.IntersectionObserver = class {
-        observe() {}
-        unobserve() {}
-        disconnect() {}
-      };
-      window.ResizeObserver = class {
-        observe() {}
-        unobserve() {}
-        disconnect() {}
-      };
-      window.HTMLCanvasElement.prototype.getContext = function() {
-        return {
-          clearRect() {}, fillRect() {}, beginPath() {}, arc() {}, fill() {}, stroke() {},
-          moveTo() {}, lineTo() {}, save() {}, restore() {}, translate() {}, rotate() {},
-          scale() {}, setTransform() {}, drawImage() {}, createLinearGradient() {
-            return { addColorStop() {} };
-          }
-        };
-      };
-      Object.defineProperty(window.navigator, 'connection', {
+      window.scrollX = 0;
+      window.scrollY = 0;
+      window.scrollTo = value => Object.defineProperty(window, 'scrollY', {
+        value: typeof value === 'object' ? Number(value.top || 0) : 0,
         configurable: true,
-        value: { saveData: false }
+        writable: true
       });
-      window.fetch = async () => ({
-        ok: true,
-        json: async () => ({})
-      });
+      window.matchMedia = query => ({ matches: false, media: query, addEventListener() {}, removeEventListener() {}, addListener() {}, removeListener() {} });
+      window.requestIdleCallback = callback => window.setTimeout(() => callback({ didTimeout: false, timeRemaining: () => 10 }), 0);
+      window.cancelIdleCallback = id => window.clearTimeout(id);
+      class Observer {
+        constructor(callback) { this.callback = callback; }
+        observe(target) { this.callback([{ target, isIntersecting: true, intersectionRatio: 1 }], this); }
+        unobserve() {}
+        disconnect() {}
+      }
+      window.IntersectionObserver = Observer;
+      window.ResizeObserver = class { observe() {} unobserve() {} disconnect() {} };
+      window.HTMLElement.prototype.scrollIntoView = function() {};
+      window.HTMLElement.prototype.animate = function() { return { cancel() {}, finished: Promise.resolve() }; };
+      window.HTMLElement.prototype.getAnimations = function() { return []; };
+      window.HTMLCanvasElement.prototype.getContext = function() {
+        return new Proxy({}, {
+          get(target, key) { return target[key] || (() => {}); },
+          set(target, key, value) { target[key] = value; return true; }
+        });
+      };
+      window.fetch = async () => ({ ok: false, status: 404, json: async () => ({}) });
+      window.open = () => null;
+      window.alert = () => {};
+      window.confirm = () => false;
+      window.URL.createObjectURL = () => 'blob:fr-test';
+      window.URL.revokeObjectURL = () => {};
+      window.CSS = window.CSS || {};
+      window.CSS.escape = window.CSS.escape || (value => String(value).replace(/[^a-z0-9_-]/gi, '\\$&'));
+      Object.defineProperty(window.navigator, 'vibrate', { value: () => true, configurable: true });
+      Object.defineProperty(window.navigator, 'clipboard', { value: { writeText: async () => {} }, configurable: true });
     }
   });
+  try {
+    const { window } = dom;
+    const { document } = window;
+    await new Promise(resolve => document.readyState === 'loading'
+      ? document.addEventListener('DOMContentLoaded', resolve, { once: true })
+      : resolve());
+    await new Promise(resolve => setTimeout(resolve, 3900));
 
-  await new Promise(resolve => setTimeout(resolve, 300));
-  assert.equal(errors.length, 0, errors.join('\n'));
-  assert.equal(typeof dom.window.FR15_MATERIALIDADE, 'object');
-  assert.equal(typeof dom.window.FR15_ARCHIVE, 'object');
-  assert.equal(typeof dom.window.FR15_ATLAS, 'object');
-  dom.window.close();
+    const audit = window.FR_STAGE15?.audit();
+    assert.equal(window.FR_STAGE15?.version, '15.0-materialidade-imersiva');
+    assert.equal(audit.services, 115);
+    assert.equal(audit.p3dExisting, 6);
+    assert.equal(audit.p3dAdded, 10);
+    assert.equal(audit.portfolio, 16);
+    assert.equal(audit.environments, 12);
+    assert.equal(audit.budgetTrustRemoved, true);
+    assert.equal(audit.pdfBridge, true);
+    assert.ok(document.querySelector('.fr14-matrix-stage'), 'A matriz 3D existente foi removida.');
+    assert.equal(document.querySelectorAll('.fr15-p3d-card').length, 10);
+    assert.equal(document.querySelectorAll('[data-fr15-group="0"] .fr15-portfolio-card').length, 16);
+    assert.equal(document.querySelectorAll('.fr15-amb-row').length, 12);
+
+    document.querySelector('[data-fr15-p3d-card="2"]').click();
+    assert.match(document.getElementById('fr15-p3d-name').textContent, /Calacatta/i);
+    window.__frCore.appState.selectedServices = [];
+    document.getElementById('fr15-p3d-add').click();
+    assert.deepEqual(
+      window.__frCore.appState.selectedServices.map(item => item.serviceId).sort(),
+      ['proj_bancada', 'proj_interiores']
+    );
+    document.getElementById('fr15-p3d-open').click();
+    assert.equal(document.getElementById('fr15-p3d-inspector').classList.contains('is-open'), true);
+    document.querySelector('[data-fr15-material="2"]').click();
+    assert.match(document.getElementById('fr15-materiality-image').alt, /Materialidade/i);
+    document.getElementById('fr15-inspector-close').click();
+
+    document.querySelector('[data-fr15-amb="1"]').click();
+    assert.equal(document.getElementById('fr15-amb-project').classList.contains('is-open'), true);
+    assert.equal(document.querySelectorAll('.fr15-amb-gallery figure').length, 3);
+    assert.match(document.getElementById('fr15-amb-project-title').textContent, /Industrial/i);
+    document.getElementById('fr15-amb-add').click();
+    assert.ok(window.__frCore.appState.selectedServices.length >= 3);
+    document.getElementById('fr15-amb-close').click();
+
+    document.querySelector('[data-fr15-filter="marmore"]').click();
+    assert.equal(document.querySelectorAll('[data-fr15-group="0"] .fr15-portfolio-card').length, 3);
+    document.querySelector('[data-fr15-group="0"] .fr15-portfolio-card').click();
+    assert.equal(document.getElementById('project-modal').classList.contains('open'), true);
+    window.closeProjectModal();
+
+    window.__frCore.appState.step = 2;
+    window.__frCore.renderApp();
+    await new Promise(resolve => setTimeout(resolve, 80));
+    assert.equal(document.querySelectorAll('[data-action="toggleCatalogCategory"]').length, 15);
+    window.html2canvas = () => Promise.resolve({});
+    window.jspdf = { jsPDF: function jsPDF() {} };
+    assert.equal(await window.FR_PERFORMANCE.ensurePDFStack(), true);
+
+    assert.equal(document.querySelector('.fr14-budget-trust'), null);
+    const ids = [...document.querySelectorAll('[id]')].map(node => node.id);
+    assert.deepEqual([...new Set(ids.filter((id, index) => ids.indexOf(id) !== index))], []);
+    const buttonsWithoutType = [...document.querySelectorAll('button:not([type])')];
+    assert.deepEqual(buttonsWithoutType.map(button => button.outerHTML.slice(0, 240)), []);
+    assert.deepEqual(runtimeErrors, []);
+  } finally {
+    dom.window.close();
+  }
 });
