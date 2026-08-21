@@ -17,7 +17,7 @@ const pdfBridge = html.includes('id="fr-pdf-stack-loader"')
 const pdfDependencies = [
   'html2canvas/1.4.1/html2canvas.min.js',
   'jspdf/2.5.1/jspdf.umd.min.js'
-+];
+];
 const missingPdfDependencies = pdfDependencies.filter(dependency => !html.includes(dependency));
 if (duplicates.length || missing.length || localDependencies.length || missingPdfDependencies.length || !pdfBridge || !heroLayerSafe || !html.includes('window.__frCore') || !html.includes('id="fr-budget-core"')) {
   console.error({ duplicates, missing, localDependencies, missingPdfDependencies, pdfBridge, heroLayerSafe, bridge: html.includes('window.__frCore'), embeddedBudgetCore: html.includes('id="fr-budget-core"') });
