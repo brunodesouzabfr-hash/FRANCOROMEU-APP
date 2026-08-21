@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth" style="scroll-behavior: smooth;"><head>
-    <!-- FR ALPHA 2.0 — ETAPA 13.1.2: fundação técnica, orçamento orientativo e compatibilidade legada. Rastreabilidade: docs/ANEXO_EVOLUCAO_VISUAL_AWWWARDS.md -->
+    <!-- FR ALPHA 2.0 — ETAPA 13.1.3: fundação técnica, PDF resiliente, orçamento orientativo e compatibilidade legada.
+         FONTE CANÔNICA: https://github.com/brunodesouzabfr-hash/FRANCOROMEU-APP | branch main
+         BASE AUDITADA: d3848928daabc39e400cb1391156dbbfcf787aa0
+         RASTREABILIDADE: docs/ANEXO_EVOLUCAO_VISUAL_AWWWARDS.md -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Franco Romeu Alpha 2.0 — Etapa 13.1 Fundação Técnica</title>
+    <title>Franco Romeu Alpha 2.0 — Etapa 13.1.3 Fundação Técnica</title>
     <!-- FR ETAPA 7 — RESOURCE ORCHESTRATION -->
     <meta name="theme-color" content="#0A2F26">
     <meta name="color-scheme" content="dark light">
@@ -362,7 +365,87 @@ img,svg,video,canvas{display:block;max-width:100%}
     
     <!-- GSAP & ScrollTrigger -->
 
-    <!-- PDF libraries are loaded on demand by FR Performance Core (Etapa 7) -->
+    <!-- PDF libraries are loaded on demand. This bridge restores the Etapa 7
+         contract without reintroducing its full performance engine. -->
+    <script id="fr-pdf-stack-loader">
+    (() => {
+        'use strict';
+        const registry = new Map();
+        const timeoutMs = 15000;
+
+        function loadScript(src, isReady) {
+            if (isReady()) return Promise.resolve(true);
+            if (registry.has(src)) return registry.get(src);
+
+            const task = new Promise((resolve, reject) => {
+                const absoluteSrc = new URL(src, document.baseURI).href;
+                let script = Array.from(document.scripts).find(item => item.src === absoluteSrc);
+                let timer = 0;
+
+                const cleanup = () => {
+                    clearTimeout(timer);
+                    script?.removeEventListener('load', onLoad);
+                    script?.removeEventListener('error', onError);
+                };
+                const onLoad = () => {
+                    cleanup();
+                    if (isReady()) resolve(true);
+                    else reject(new Error(`Biblioteca carregada sem expor a API esperada: ${src}`));
+                };
+                const onError = () => {
+                    cleanup();
+                    script?.remove();
+                    reject(new Error(`Falha ao carregar a biblioteca de PDF: ${src}`));
+                };
+
+                const isNewScript = !script;
+                if (isNewScript) {
+                    script = document.createElement('script');
+                    script.src = src;
+                    script.async = true;
+                    script.dataset.frPdfDependency = 'true';
+                }
+                script.addEventListener('load', onLoad, { once: true });
+                script.addEventListener('error', onError, { once: true });
+                timer = setTimeout(() => {
+                    cleanup();
+                    reject(new Error('Tempo esgotado ao carregar as bibliotecas de PDF. Verifique a conexão e tente novamente.'));
+                }, timeoutMs);
+                if (isNewScript) document.head.appendChild(script);
+            }).catch(error => {
+                registry.delete(src);
+                throw error;
+            });
+
+            registry.set(src, task);
+            return task;
+        }
+
+        async function ensurePDFStack() {
+            await Promise.all([
+                loadScript(
+                    'https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js',
+                    () => typeof window.html2canvas === 'function'
+                ),
+                loadScript(
+                    'https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js',
+                    () => typeof window.jspdf?.jsPDF === 'function'
+                )
+            ]);
+            if (typeof window.html2canvas !== 'function' || typeof window.jspdf?.jsPDF !== 'function') {
+                throw new Error('As bibliotecas de PDF não ficaram disponíveis. Verifique a conexão e tente novamente.');
+            }
+            return true;
+        }
+
+        const performanceBridge = window.FR_PERFORMANCE && typeof window.FR_PERFORMANCE === 'object'
+            ? window.FR_PERFORMANCE
+            : {};
+        performanceBridge.ensurePDFStack = ensurePDFStack;
+        window.FR_PERFORMANCE = performanceBridge;
+        window.dispatchEvent(new CustomEvent('frPDFStackBridgeReady'));
+    })();
+    </script>
 
     <style>
         /* =========================================
