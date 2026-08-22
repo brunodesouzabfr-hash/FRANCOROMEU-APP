@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "1.0",
+  "updatedAt": null,
+  "policy": {
+    "loadMode": "click_to_load",
+    "externalScriptsAtFirstPaint": false,
+    "consentRequired": true,
+    "allowRawHtml": false,
+    "showSyntheticMetrics": false
+  },
+  "items": [
+    {
+      "id": "fr-social-instagram-001",
+      "provider": "instagram",
+      "status": "placeholder",
+      "series": "Milímetros que importam",
+      "title": "O encontro entre pedra e marcenaria começa no desenho.",
+      "format": "reel",
+      "aspectRatio": "9/16",
+      "permalink": null,
+      "externalId": null,
+      "poster": null,
+      "rightsStatus": "not_applicable",
+      "consentRequired": true,
+      "order": 10
+    },
+    {
+      "id": "fr-social-tiktok-001",
+      "provider": "tiktok",
+      "status": "placeholder",
+      "series": "Obra em 30 segundos",
+      "title": "Três decisões antes de fechar uma parede.",
+      "format": "vertical_video",
+      "aspectRatio": "9/16",
+      "permalink": null,
+      "externalId": null,
+      "poster": null,
+      "rightsStatus": "not_applicable",
+      "consentRequired": true,
+      "order": 20
+    },
+    {
+      "id": "fr-social-youtube-001",
+      "provider": "youtube",
+      "status": "placeholder",
+      "series": "Caderno de obra",
+      "title": "Do levantamento ao ambiente compatibilizado.",
+      "format": "video",
+      "aspectRatio": "16/9",
+      "permalink": null,
+      "externalId": null,
+      "poster": null,
+      "rightsStatus": "not_applicable",
+      "consentRequired": true,
+      "order": 30
+    },
+    {
+      "id": "fr-social-facebook-001",
+      "provider": "facebook",
+      "status": "placeholder",
+      "series": "Transformações locais",
+      "title": "Como o escopo foi organizado por etapas.",
+      "format": "post",
+      "aspectRatio": "4/5",
+      "permalink": null,
+      "externalId": null,
+      "poster": null,
+      "rightsStatus": "not_applicable",
+      "consentRequired": true,
+      "order": 40
+    },
+    {
+      "id": "fr-social-pinterest-001",
+      "provider": "pinterest",
+      "status": "placeholder",
+      "series": "Atlas material",
+      "title": "Texturas, paginações e combinações em estudo.",
+      "format": "pin",
+      "aspectRatio": "2/3",
+      "permalink": null,
+      "externalId": null,
+      "poster": null,
+      "rightsStatus": "not_applicable",
+      "consentRequired": true,
+      "order": 50
+    },
+    {
+      "id": "fr-social-x-001",
+      "provider": "x",
+      "status": "placeholder",
+      "series": "Nota técnica",
+      "title": "Uma escolha estética sempre tem uma condição de execução.",
+      "format": "post",
+      "aspectRatio": "1/1",
+      "permalink": null,
+      "externalId": null,
+      "poster": null,
+      "rightsStatus": "not_applicable",
+      "consentRequired": true,
+      "order": 60
+    }
+  ]
+}
+
