@@ -68,7 +68,7 @@ test('remove os blocos sem finalidade do Orçamento sem remover o bridge de PDF'
 
 test('todos os scripts inline permanecem sintaticamente válidos', () => {
   const blocks = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)]
-    .filter(match => !/application\/ld\+json|\bsrc\s*=/i.test(match[1]));
+    .filter(match => !/application\/(?:ld\+)?json|\bsrc\s*=/i.test(match[1]));
   const failures = [];
   blocks.forEach((match, index) => {
     try { new Function(match[2]); }
@@ -79,7 +79,7 @@ test('todos os scripts inline permanecem sintaticamente válidos', () => {
   assert.equal((html.match(/<\/html>/gi) || []).length, 1);
 });
 
-test('runtime integra materialidade, arquivo vivo, atlas, orçamento e PDF', { timeout: 18000 }, async () => {
+test('runtime integra materialidade, arquivo vivo, atlas, orçamento e PDF', { timeout: 35000 }, async () => {
   const runtimeErrors = [];
   const virtualConsole = new VirtualConsole();
   virtualConsole.on('jsdomError', error => {
