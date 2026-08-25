@@ -1,0 +1,920 @@
+{
+  "schema_version": "2.0.0",
+  "generated_at": "2026-08-20T00:00:00-03:00",
+  "language": "pt-BR",
+  "project": {
+    "name": "Franco Romeu (FR) — Arte & Engenharia",
+    "repository": "https://github.com/brunodesouzabfr-hash/FRANCOROMEU-APP",
+    "canonical_branch": "main",
+    "audited_commit": "d3848928daabc39e400cb1391156dbbfcf787aa0",
+    "canonical_source_path": "base-original/FRANCO_ROMEU_ETAPA13_ORIGINAL.html",
+    "input_blob_sha_before_this_work": "12bf5a9c823ac3ad62f628b5b2d2d0af271bf9a1",
+    "prepared_stage": "13.1.3",
+    "companion_document": "docs/ANEXO_EVOLUCAO_VISUAL_AWWWARDS.md",
+    "future_targets": [
+      "site_web",
+      "apk_android"
+    ],
+    "future_targets_status": "not_started"
+  },
+  "status_vocabulary": {
+    "implemented": "Existe no código e foi localizado na auditoria.",
+    "fixed_13_1_3": "Alterado neste trabalho e coberto por validação específica.",
+    "proposed": "Direção para protótipo futuro; não declarar como produto atual.",
+    "content_dependent": "Exige conteúdo real, autorização ou dado de negócio comprovado.",
+    "unverified": "Não existe evidência suficiente para publicar como fato.",
+    "prohibited": "Não usar por risco de engano, dark pattern ou dano de marca."
+  },
+  "brand": {
+    "positioning": "Arte & Engenharia: atmosferas autorais sustentadas por execução técnica.",
+    "duality": {
+      "silent_luxury": "Sofisticação sem ostentação; espaço, matéria, silêncio visual e precisão.",
+      "intelligent_engineering": "Custo otimizado apresentado como solução inteligente e bem executada, nunca como produto inferior."
+    },
+    "voice": [
+      "precisa",
+      "sensorial",
+      "serena",
+      "técnica",
+      "autoral",
+      "honesta"
+    ],
+    "preferred_terms": [
+      "solução inteligente",
+      "tradição com precisão",
+      "engenharia de custo",
+      "curadoria material",
+      "arquivo vivo",
+      "assinatura",
+      "estimativa orientativa"
+    ],
+    "forbidden_terms_or_claims": [
+      "baratinho",
+      "baixo custo como sinônimo de baixa qualidade",
+      "150+ projetos sem prova",
+      "98% de aprovação sem prova",
+      "últimas vagas sem agenda verificável",
+      "obra executada usando fotografia de banco",
+      "prêmio ou cliente sem fonte"
+    ],
+    "color_tokens": {
+      "petroleum_900": "#0A2F26",
+      "petroleum_700": "#123F34",
+      "forge_orange": "#FF6B00",
+      "precision_gold": "#F6A700",
+      "mineral_bone": "#E6D6B5",
+      "tech_cyan_usage": "Somente telemetria e Modeling Space; nunca cor dominante da marca."
+    },
+    "typography": {
+      "industrial_display": "Stardos Stencil",
+      "editorial_serif": "Rokkitt",
+      "technical_mono": "Share Tech Mono"
+    }
+  },
+  "current_application": {
+    "architecture": "Single-file SPA em HTML/CSS/JavaScript nativo.",
+    "views": 6,
+    "services": 115,
+    "primary_categories": 15,
+    "actual_rendering_stack": [
+      "DOM/CSS",
+      "Canvas 2D",
+      "requestAnimationFrame",
+      "IntersectionObserver",
+      "ResizeObserver"
+    ],
+    "not_loaded": [
+      "Three.js",
+      "WebGL engine",
+      "GSAP",
+      "ScrollTrigger",
+      "Lenis",
+      "Tailwind CDN runtime"
+    ],
+    "prepared_but_inactive": [
+      "Trechos com guardas/fallback para GSAP e ScrollTrigger"
+    ],
+    "important_truths": [
+      "A aba Projetos 3D é uma simulação espacial 2D, não uma cena Three.js/WebGL.",
+      "Os 16 projetos padrão usam imagens Unsplash e devem permanecer rotulados como referência visual.",
+      "O GODMODE/local admin não constitui autenticação ou backend seguro.",
+      "SEO público não pode ser finalizado sem domínio e conteúdo verificados."
+    ]
+  },
+  "views": [
+    {
+      "id": "view-home",
+      "marker": "•FR / 01/ FORJA",
+      "purpose": "Entrada e síntese da marca.",
+      "implemented": [
+        "hero editorial",
+        "Canvas 2D",
+        "loading de entrada",
+        "motion próprio",
+        "logo/Home na navegação"
+      ],
+      "proposed_experience": {
+        "name": "Forja Mineral",
+        "unique_mechanic": "Fluido mineral âmbar e verde-petróleo reagindo suavemente a ponteiro/scroll.",
+        "content_sequence": [
+          "assinatura",
+          "promessa verificável",
+          "entrada no manifesto"
+        ],
+        "avoid": [
+          "introdução mais longa que o loading atual",
+          "grid de museu",
+          "azul como cor dominante"
+        ]
+      },
+      "references": [
+        {
+          "name": "House of Wonders",
+          "url": "https://www.awwwards.com/sites/the-house-of-wonders",
+          "status": "SOTD",
+          "score": 7.23,
+          "use": "entrada cinematográfica e luxo material"
+        },
+        {
+          "name": "Urban Jürgensen",
+          "url": "https://www.awwwards.com/sites/urban-jurgensen",
+          "status": "SOTD",
+          "score": 7.27,
+          "use": "continuidade entre eixos e ritmo editorial"
+        },
+        {
+          "name": "25 Residences",
+          "url": "https://www.awwwards.com/sites/25-residences",
+          "status": "SOTD",
+          "score": 7.31,
+          "use": "fotografia arquitetônica e progressão espacial"
+        }
+      ]
+    },
+    {
+      "id": "view-sobre",
+      "marker": "•FR / 02/ MANIFESTO",
+      "purpose": "Fusão entre o bruto, o refinado e o método FR.",
+      "implemented": [
+        "narrativa institucional em DOM/CSS",
+        "camadas de fundo conceituais",
+        "sem cena 3D real"
+      ],
+      "proposed_experience": {
+        "name": "Manifesto de Matéria",
+        "unique_mechanic": "Capítulos verticais com planos materiais; texto permanece estável.",
+        "chapters": [
+          "matéria",
+          "método",
+          "precisão",
+          "assinatura"
+        ],
+        "raw_layer": [
+          "aço",
+          "concreto",
+          "réguas",
+          "marcações"
+        ],
+        "refined_layer": [
+          "madeira",
+          "couro",
+          "luz",
+          "espaço negativo"
+        ],
+        "avoid": [
+          "carrossel 3D",
+          "texto em movimento contínuo",
+          "claims institucionais sem prova"
+        ]
+      },
+      "references": [
+        {
+          "name": "David Whyte Experience",
+          "url": "https://www.awwwards.com/sites/david-whyte-experience",
+          "status": "SOTD",
+          "score": 7.63,
+          "use": "storytelling em capítulos"
+        },
+        {
+          "name": "Horizonte Village",
+          "url": "https://www.awwwards.com/sites/horizonte-village",
+          "status": "SOTD",
+          "score": 7.41,
+          "use": "narrativa arquitetônica e atmosfera"
+        },
+        {
+          "name": "Silver Pinewood Residences",
+          "url": "https://www.awwwards.com/sites/silver-pinewood-residences",
+          "status": "SOTD",
+          "score": 7.25,
+          "use": "quiet luxury e profundidade controlada"
+        }
+      ]
+    },
+    {
+      "id": "view-ambientes",
+      "marker": "•FR / 03/ ARTE MATERIAL",
+      "purpose": "Curadoria de linguagens arquitetônicas e materiais.",
+      "implemented": [
+        "grid/painel de ambientes",
+        "integração com serviços",
+        "rótulo automático de referências Unsplash"
+      ],
+      "proposed_experience": {
+        "name": "Galeria de Linguagens",
+        "unique_mechanic": "Trilho de salas com parede expositiva assimétrica e ficha curatorial.",
+        "content_object": [
+          "nome da linguagem",
+          "intenção espacial",
+          "paleta",
+          "materiais",
+          "serviços compatíveis",
+          "fonte/proveniência da imagem"
+        ],
+        "fallback": "Grid 2D integral, operável por teclado e toque.",
+        "avoid": [
+          "serpentina do Portfólio",
+          "gesto como único meio de navegação",
+          "imagem de referência sem rótulo"
+        ]
+      },
+      "references": [
+        {
+          "name": "The Unconventional Gallery",
+          "url": "https://www.awwwards.com/sites/the-unconventional-gallery",
+          "status": "SOTD",
+          "score": 7.79,
+          "use": "gesto e exploração curatorial"
+        },
+        {
+          "name": "Magical Reflections",
+          "url": "https://www.awwwards.com/sites/magical-reflections",
+          "status": "SOTD",
+          "score": 7.85,
+          "use": "foco expositivo e espacialidade"
+        },
+        {
+          "name": "Southern Guild",
+          "url": "https://www.awwwards.com/sites/southern-guild",
+          "status": "SOTD",
+          "score": 7.43,
+          "use": "hierarquia editorial e ficha de obra"
+        }
+      ]
+    },
+    {
+      "id": "view-projetos3d",
+      "marker": "•FR / 04/ MODELING SPACE",
+      "purpose": "Orientação e entendimento espacial de projetos.",
+      "implemented": [
+        "Canvas 2D",
+        "layout com profundidade simulada",
+        "sem Three.js/WebGL"
+      ],
+      "proposed_experience": {
+        "name": "Matriz Arquitetônica",
+        "unique_mechanic": "Frames em três profundidades, waypoints de câmera e minimapa.",
+        "states": [
+          "atlas_2d",
+          "matrix_3d",
+          "project_focus",
+          "dossier_open",
+          "context_lost_fallback"
+        ],
+        "controls": [
+          "wheel/trackpad",
+          "drag",
+          "teclado",
+          "touch",
+          "minimapa"
+        ],
+        "resilience": [
+          "detecção de WebGL",
+          "fallback 2D no mesmo projeto",
+          "webglcontextlost/webglcontextrestored",
+          "limite de devicePixelRatio",
+          "texturas comprimidas",
+          "suspensão fora da view"
+        ],
+        "avoid": [
+          "scrolljacking obrigatório",
+          "câmera sem orientação",
+          "WebGL na Calculadora"
+        ]
+      },
+      "references": [
+        {
+          "name": "E.C.H.O.",
+          "url": "https://www.awwwards.com/sites/e-c-h-o",
+          "status": "SOTD",
+          "score": 7.9,
+          "use": "transições de estado e exploração espacial"
+        },
+        {
+          "name": "Loftgarten",
+          "url": "https://www.awwwards.com/sites/loftgarten",
+          "status": "SOTD",
+          "score": 7.74,
+          "use": "visualização arquitetônica e câmera"
+        },
+        {
+          "name": "iyO",
+          "url": "https://www.awwwards.com/sites/iyo",
+          "status": "SOTD",
+          "score": 7.68,
+          "use": "configuração 3D e feedback de estado"
+        },
+        {
+          "name": "Scale & Form",
+          "url": "https://www.awwwards.com/sites/scale-form",
+          "status": "Nominee",
+          "score": null,
+          "use": "teclado e experiência 3D em tempo real"
+        }
+      ]
+    },
+    {
+      "id": "view-projetos",
+      "marker": "•FR / 05/ ARQUIVO VIVO",
+      "purpose": "Museu verificável de serviços e projetos executados.",
+      "implemented": [
+        "filtros retangulares",
+        "percurso visual serpentino",
+        "16 itens padrão com imagens Unsplash",
+        "rótulo automático de referência"
+      ],
+      "content_status": "content_dependent",
+      "proposed_experience": {
+        "name": "Museu de Ofícios",
+        "unique_mechanic": "Acervo temporal/museológico com relações entre matéria, técnica e serviço.",
+        "required_project_schema": [
+          "project_id",
+          "title",
+          "year",
+          "city_or_region",
+          "scope",
+          "materiality",
+          "before_after_assets",
+          "photographer",
+          "usage_authorization",
+          "related_service_ids",
+          "verification_status"
+        ],
+        "truth_gate": "Somente verification_status=verified pode receber o rótulo obra executada.",
+        "avoid": [
+          "Unsplash como obra",
+          "case sem autorização",
+          "cards idênticos aos de Ambientes"
+        ]
+      },
+      "references": [
+        {
+          "name": "Elektra Virtual Museum",
+          "url": "https://www.awwwards.com/sites/elektra-virtual-museum",
+          "status": "SOTD",
+          "score": 7.72,
+          "use": "mediação e navegação museológica"
+        },
+        {
+          "name": "365 — A Year of Cartier",
+          "url": "https://www.awwwards.com/sites/365-a-year-of-cartier",
+          "status": "SOTD",
+          "score": 7.41,
+          "use": "arquivo temporal e continuidade de coleção"
+        },
+        {
+          "name": "The Museum of the World",
+          "url": "https://www.awwwards.com/sites/the-museum-of-the-world",
+          "status": "Awwwards site",
+          "score": 7.23,
+          "use": "relações entre itens e contexto"
+        },
+        {
+          "name": "Immersive WebGL Museums Collection",
+          "url": "https://www.awwwards.com/immersive-webgl-virtual-gallery-exhibition-collection.html",
+          "status": "Awwwards collection",
+          "score": null,
+          "use": "padrões de tour e exposição virtual"
+        }
+      ]
+    },
+    {
+      "id": "view-orcamento",
+      "marker": "•FR / 06/ ENGENHARIA DE CUSTO",
+      "purpose": "Configuração orientativa, qualificação e conversão.",
+      "implemented": [
+        "115 serviços",
+        "15 categorias progressivas",
+        "validação por etapa",
+        "faixa ±12%",
+        "origem estimada/confirmada",
+        "resumo persistente",
+        "IQE",
+        "fidelidade",
+        "CEP",
+        "WhatsApp",
+        "PDF",
+        "armazenamento local"
+      ],
+      "proposed_experience": {
+        "name": "Cockpit de Engenharia de Custo",
+        "unique_mechanic": "Uma decisão por camada, telemetria clara e resumo sempre editável.",
+        "decision_sequence": [
+          "contexto",
+          "ambiente",
+          "serviços",
+          "configuração",
+          "dados",
+          "resumo",
+          "próximo passo humano"
+        ],
+        "conversion_principles": [
+          "clareza",
+          "progressive_disclosure",
+          "transparência da incerteza",
+          "reversibilidade",
+          "feedback imediato",
+          "personalização consentida"
+        ],
+        "avoid": [
+          "WebGL pesado",
+          "contagem regressiva",
+          "escassez falsa",
+          "preço oculto",
+          "opção cara pré-selecionada",
+          "bloqueio para voltar/remover"
+        ]
+      },
+      "references": [
+        {
+          "name": "iyO",
+          "url": "https://www.awwwards.com/sites/iyo",
+          "status": "SOTD",
+          "score": 7.68,
+          "subscores": {
+            "design": 7.9,
+            "usability": 7.11
+          },
+          "use": "configuração de alto valor e feedback imediato"
+        },
+        {
+          "name": "National Grid CO2 Calculator",
+          "url": "https://www.awwwards.com/sites/national-grid-co2-calculator",
+          "status": "Nominee",
+          "score": null,
+          "use": "etapas, cálculo e visualização progressiva"
+        },
+        {
+          "name": "Brunello Cucinelli AI E-com",
+          "url": "https://www.awwwards.com/sites/brunello-cucinelli-ai-e-com",
+          "status": "SOTD",
+          "score": 7.19,
+          "use": "linguagem de luxo orientada por intenção",
+          "caution": "A usabilidade é mais modesta; não transferir complexidade para o fluxo de orçamento."
+        }
+      ]
+    }
+  ],
+  "actual_changes": {
+    "source": "CHANGELOG.md, histórico Git e diff Etapa 13 → 13.1.3",
+    "categories": [
+      {
+        "name": "repository_governance",
+        "status": "implemented",
+        "items": [
+          "base original preservada",
+          "README e CHANGELOG",
+          "package e scripts de teste",
+          "budget-core extraído e incorporado"
+        ]
+      },
+      {
+        "name": "finance",
+        "status": "implemented",
+        "items": [
+          "função pura de cálculo",
+          "IDs estáveis e índices legados",
+          "arredondamento monetário",
+          "acréscimos ambientais",
+          "cupom e pagamento separados",
+          "visita e abatimento",
+          "faixa ±12%",
+          "confiança e origem do item"
+        ]
+      },
+      {
+        "name": "budget_journey",
+        "status": "implemented",
+        "items": [
+          "configurações obrigatórias",
+          "validação final compartilhada",
+          "edição, duplicação e remoção",
+          "categorias progressivas",
+          "scroll preservado",
+          "CEP resiliente",
+          "WhatsApp validado",
+          "persistência com fallback"
+        ]
+      },
+      {
+        "name": "security_accessibility_truth",
+        "status": "implemented",
+        "items": [
+          "escape de conteúdo",
+          "validação de importação",
+          "backup administrativo",
+          "remoção de identificador empresarial fictício",
+          "rótulo de referência Unsplash",
+          "foco, nomes acessíveis e touch targets"
+        ]
+      },
+      {
+        "name": "home_hero",
+        "status": "implemented",
+        "items": [
+          "correção do contexto de posicionamento do rótulo de referência",
+          "hero novamente visível sem forçar position em todo host"
+        ]
+      },
+      {
+        "name": "pdf",
+        "status": "fixed_13_1_3",
+        "items": [
+          "restauração de window.FR_PERFORMANCE.ensurePDFStack",
+          "carregamento sob demanda de html2canvas 1.4.1 e jsPDF 2.5.1",
+          "deduplicação de chamadas concorrentes",
+          "validação de API",
+          "timeout de 15 segundos",
+          "retry após falha",
+          "listeners antes da inserção do script"
+        ]
+      }
+    ],
+    "not_implemented": [
+      "remake WebGL",
+      "Three.js",
+      "museu 3D",
+      "matriz arquitetônica 3D",
+      "rotas públicas",
+      "SEO completo",
+      "backend autenticado",
+      "APK"
+    ]
+  },
+  "pdf_fix": {
+    "status": "fixed_13_1_3",
+    "root_cause": "generatePDF chamava window.FR_PERFORMANCE.ensurePDFStack, mas a definição havia sido removida em uma etapa anterior.",
+    "contract": "window.FR_PERFORMANCE.ensurePDFStack(): Promise<true>",
+    "dependencies": [
+      {
+        "name": "html2canvas",
+        "version": "1.4.1",
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+      },
+      {
+        "name": "jsPDF",
+        "version": "2.5.1",
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"
+      }
+    ],
+    "resilience": [
+      "lazy_load",
+      "promise_registry",
+      "api_verification",
+      "load_error",
+      "timeout_15000ms",
+      "retry_after_failure",
+      "existing_namespace_preserved"
+    ],
+    "apk_note": "Para operação offline em APK/PWA, empacotar as dependências localmente e revisar CSP/licenças."
+  },
+  "ethical_conversion": {
+    "allowed": [
+      "autoridade com evidência",
+      "estimativa e incerteza explícitas",
+      "progresso visível",
+      "edição e reversibilidade",
+      "personalização consentida",
+      "cases autorizados",
+      "exclusividade baseada em capacidade real"
+    ],
+    "prohibited": [
+      "fake_scarcity",
+      "fake_countdown",
+      "invented_metrics",
+      "unverified_testimonials",
+      "stock_as_executed_work",
+      "hidden_costs",
+      "forced_defaults",
+      "obstructed_back_or_remove"
+    ],
+    "sources": [
+      "https://www.nngroup.com/articles/4-principles-reduce-cognitive-load/",
+      "https://www.nngroup.com/articles/progressive-disclosure/",
+      "https://www.nngroup.com/articles/scrolljacking-101/",
+      "https://doi.org/10.1016/j.jcps.2014.08.002",
+      "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm"
+    ]
+  },
+  "audit_lenses": {
+    "seo_audit": {
+      "current": [
+        "lang pt-BR",
+        "charset",
+        "viewport",
+        "theme-color"
+      ],
+      "missing": [
+        "meta description",
+        "canonical",
+        "Open Graph",
+        "Twitter Card",
+        "JSON-LD",
+        "deep links por view",
+        "title/description por view"
+      ],
+      "guardrail": "Não inventar domínio, razão social, endereço, CNPJ ou avaliações."
+    },
+    "ux_copy": {
+      "rule": "Resultado antes do jargão; frase curta, técnica e sensorial.",
+      "examples": {
+        "good": [
+          "Composição orientativa — validação final na visita técnica.",
+          "Abra uma frente de trabalho para revelar as soluções relacionadas.",
+          "Seu escopo permanece editável."
+        ],
+        "reject": [
+          "Corra, últimas vagas!",
+          "O mais barato do mercado",
+          "150+ projetos com 98% de aprovação"
+        ]
+      }
+    },
+    "testing_strategy": {
+      "required_suites": [
+        "unit_budget_core",
+        "html_syntax_and_static_ids",
+        "pdf_loader_concurrency_and_retry",
+        "runtime_smoke",
+        "navigation_mobile_desktop",
+        "keyboard_and_focus",
+        "reduced_motion",
+        "webgl_context_loss_when_added",
+        "visual_regression",
+        "apk_webview_when_started"
+      ]
+    },
+    "system_design": {
+      "now": "HTML standalone com fallbacks.",
+      "next": "Módulos-fonte + build que gere o standalone canônico.",
+      "production": "Site com rotas, assets versionados, CSP, observabilidade e backend apenas onde necessário.",
+      "apk": "Shell Android/Capacitor com assets críticos locais, links externos controlados e testes offline."
+    },
+    "brand_review": {
+      "strengths": [
+        "paleta proprietária",
+        "vocabulário de ofício",
+        "dualidade bruto/refinado",
+        "calculadora com identidade tech"
+      ],
+      "risks": [
+        "azul competir com verde-petróleo",
+        "referência visual parecer case",
+        "excesso de ornamento diluir luxo silencioso",
+        "claims não comprovados"
+      ]
+    },
+    "variance_analysis": {
+      "implemented_range": "±12%",
+      "rule": "Tratar como política atual configurada e explicar o que pode alterar a faixa.",
+      "required_business_review": [
+        "descontos por pagamento",
+        "acréscimos ambientais",
+        "visita e abatimento",
+        "cupons",
+        "patentes e benefícios"
+      ]
+    },
+    "design_system": {
+      "deliverables": [
+        "tokens de cor/tipo/espaço",
+        "component inventory",
+        "motion tokens",
+        "state matrix",
+        "fallback matrix",
+        "content provenance badge"
+      ]
+    },
+    "product_brainstorming": {
+      "principle": "Uma mecânica memorável por universo; nenhum efeito sem função.",
+      "highest_value_bets": [
+        "manifesto em capítulos",
+        "galeria de linguagens",
+        "arquivo real verificável",
+        "matriz 3D com atlas 2D",
+        "cockpit de orçamento transparente"
+      ]
+    },
+    "roadmap_update": {
+      "order": [
+        "truth_and_stability",
+        "design_system",
+        "sobre_and_ambientes",
+        "portfolio_real",
+        "projetos3d_prototype",
+        "calculator_ux",
+        "site",
+        "apk"
+      ]
+    },
+    "capacity_plan": {
+      "roles": [
+        "product_owner_FR",
+        "creative_direction",
+        "frontend_motion",
+        "3d_webgl",
+        "content_and_asset_provenance",
+        "qa_accessibility_performance",
+        "backend_security_when_needed"
+      ],
+      "rule": "Não executar três universos WebGL em paralelo antes de estabilizar o Motion Director e o manifesto de ativos."
+    }
+  },
+  "performance_and_accessibility": {
+    "rules": [
+      "animar transform e opacity",
+      "agrupar eventos em requestAnimationFrame",
+      "suspender cenas fora da view/document.hidden",
+      "evitar layout thrashing",
+      "usar conteúdo equivalente em reduced motion",
+      "limitar DPR, texturas e draw calls em WebGL",
+      "tratar perda/restauração do contexto WebGL",
+      "medir INP, LCP, CLS, memória e FPS; não prometer 60 fps sem ensaio"
+    ],
+    "sources": [
+      "https://web.dev/articles/optimize-inp",
+      "https://web.dev/articles/avoid-large-complex-layouts-and-layout-thrashing",
+      "https://web.dev/articles/content-visibility",
+      "https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html",
+      "https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/WebGL_best_practices",
+      "https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/isContextLost"
+    ]
+  },
+  "roadmap": [
+    {
+      "phase": 0,
+      "name": "Verdade e estabilidade",
+      "deliverables": [
+        "PDF resiliente",
+        "manifesto de ativos",
+        "revisão comercial das regras financeiras",
+        "contratos de dados"
+      ],
+      "exit_criteria": [
+        "critical_tests_green",
+        "no_unverified_work_or_claim"
+      ]
+    },
+    {
+      "phase": 1,
+      "name": "Design system e Motion Director",
+      "deliverables": [
+        "tokens",
+        "componentes",
+        "motion budget",
+        "fallbacks"
+      ],
+      "exit_criteria": [
+        "desktop_mobile_keyboard_reduced_motion_approved"
+      ]
+    },
+    {
+      "phase": 2,
+      "name": "Sobre e Ambientes",
+      "deliverables": [
+        "manifesto em capítulos",
+        "galeria curatorial"
+      ],
+      "exit_criteria": [
+        "distinct_mechanics",
+        "accessible_fallback"
+      ]
+    },
+    {
+      "phase": 3,
+      "name": "Portfólio real",
+      "deliverables": [
+        "schema de cases",
+        "acervo verificado",
+        "Arquivo Vivo"
+      ],
+      "exit_criteria": [
+        "provenance_and_authorization_for_every_case"
+      ]
+    },
+    {
+      "phase": 4,
+      "name": "Projetos 3D",
+      "deliverables": [
+        "protótipo WebGL isolado",
+        "atlas 2D",
+        "context-loss recovery"
+      ],
+      "exit_criteria": [
+        "performance_budget_met",
+        "fallback_preserves_project_state"
+      ]
+    },
+    {
+      "phase": 5,
+      "name": "Calculadora",
+      "deliverables": [
+        "cockpit refinado",
+        "telemetria",
+        "testes com usuários"
+      ],
+      "exit_criteria": [
+        "no_regression_115_services",
+        "pdf_whatsapp_cep_accessibility_green"
+      ]
+    },
+    {
+      "phase": 6,
+      "name": "Site",
+      "deliverables": [
+        "rotas",
+        "SEO",
+        "CSP",
+        "observabilidade",
+        "consentimento"
+      ],
+      "exit_criteria": [
+        "reversible_deploy",
+        "real_browser_quality_gate"
+      ]
+    },
+    {
+      "phase": 7,
+      "name": "APK",
+      "deliverables": [
+        "shell Android",
+        "assets críticos locais",
+        "testes offline/WebView"
+      ],
+      "exit_criteria": [
+        "pdf_offline",
+        "storage_links_and_navigation_verified"
+      ]
+    }
+  ],
+  "acceptance_contract": [
+    "Preservar exatamente 115 serviços e 15 categorias.",
+    "Não alterar valores/regras sem teste e aprovação comercial.",
+    "Manter PDF, WhatsApp, CEP, IQE, busca, resumo e persistência.",
+    "Garantir uma única aba ativa e estado coerente.",
+    "Zero erro de sintaxe/runtime e zero ID estático duplicado.",
+    "Operação por teclado, foco visível e nomes acessíveis.",
+    "Nenhuma obra, métrica, prêmio, urgência ou benefício sem comprovação.",
+    "Fallback equivalente para mobile, reduced motion e falha de WebGL/CDN.",
+    "Registrar cada mudança como implemented, proposed, content_dependent, unverified ou prohibited."
+  ],
+  "ai_prompt_contract": {
+    "role": "Atue como Estrategista-Chefe, Diretor Criativo, Master Builder e engenheiro de resiliência da Franco Romeu.",
+    "first_action": "Ler este JSON e o anexo comentado; verificar o código canônico antes de sugerir ou alterar.",
+    "required_response_sections": [
+      "diagnóstico factual",
+      "status de cada item",
+      "mudanças propostas",
+      "riscos e fallbacks",
+      "plano de testes",
+      "diff/changelog real"
+    ],
+    "decision_rules": [
+      "Nunca chamar uma proposta de implementação.",
+      "Nunca chamar Canvas 2D de WebGL/Three.js.",
+      "Nunca chamar Unsplash de obra executada.",
+      "Nunca inventar métricas, disponibilidade ou credenciais.",
+      "Usar referências Awwwards como princípios, sem copiar layout/código.",
+      "Priorizar estabilidade e clareza da Calculadora sobre efeito visual.",
+      "Uma mecânica distinta por aba.",
+      "Toda experiência avançada precisa de fallback equivalente."
+    ]
+  },
+  "validation_record": {
+    "inline_scripts": 25,
+    "javascript_syntax_errors": 0,
+    "static_dom_ids": 200,
+    "duplicate_static_ids": 0,
+    "default_services": 115,
+    "service_key_id_mismatches": 0,
+    "pdf_loader_concurrent_calls": 2,
+    "pdf_dependency_scripts_inserted": 2,
+    "pdf_dependency_duplicates": 0,
+    "runtime_smoke": "passed",
+    "runtime_views": 6,
+    "runtime_categories": 15,
+    "runtime_errors": 0,
+    "browser_visual_qa": "blocked_by_chromium_sigsegv_in_environment",
+    "claim_policy": "No screenshot or real-browser pass is claimed for this stage."
+  }
+}

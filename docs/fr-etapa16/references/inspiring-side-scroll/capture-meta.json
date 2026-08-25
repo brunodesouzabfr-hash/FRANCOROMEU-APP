@@ -1,0 +1,78 @@
+{
+  "tool": "FR Lab",
+  "version": "1.2.0",
+  "startedAt": "2026-08-22T01:37:44.619Z",
+  "finishedAt": "2026-08-22T01:38:42.037Z",
+  "durationSeconds": 57.4,
+  "requestedUrl": "https://inspiring.nk.studio/es",
+  "finalUrls": {
+    "desktop": "https://inspiring.nk.studio/es",
+    "mobile": "https://inspiring.nk.studio/es"
+  },
+  "responseStatus": {
+    "desktop": 200,
+    "mobile": 200
+  },
+  "browserExecutable": "/usr/bin/chromium",
+  "nodeVersion": "v20.20.2",
+  "deepCapture": false,
+  "headed": true,
+  "scope": null,
+  "paletteOmitted": true,
+  "entryAction": {
+    "text": "archivo de inspiración",
+    "waitSeconds": 6
+  },
+  "viewports": {
+    "desktop": {
+      "viewportWidth": 1440,
+      "viewportHeight": 900,
+      "scrollWidth": 1440,
+      "scrollHeight": 900,
+      "devicePixelRatio": 1,
+      "elementCount": 1366,
+      "documentElementCount": 1438,
+      "scope": null
+    },
+    "mobile": {
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844,
+      "devicePixelRatio": 1,
+      "elementCount": 1289,
+      "documentElementCount": 1361,
+      "scope": null
+    }
+  },
+  "scopedScrollCheckpoints": {
+    "desktop": [
+      {
+        "index": 0,
+        "scrollY": 0
+      },
+      {
+        "index": 1,
+        "scrollY": 0
+      }
+    ],
+    "mobile": [
+      {
+        "index": 0,
+        "scrollY": 0
+      },
+      {
+        "index": 1,
+        "scrollY": 0
+      }
+    ]
+  },
+  "limitations": [
+    "A captura contém somente recursos públicos entregues ao navegador; não representa o código-fonte privado original.",
+    "Estados dependentes de login, gestos específicos, temporização longa ou hardware podem não ter sido observados.",
+    "Bibliotecas detectadas por nomes em bundles são indícios e devem ser confirmadas pelas evidências.",
+    "Configurações internas minificadas ou ofuscadas podem permanecer indisponíveis.",
+    "A paleta foi omitida intencionalmente dos dados estruturados desta referência.",
+    "O estado interativo foi ativado uma vez pelo controle textual \"archivo de inspiración\" antes do exercício de scroll."
+  ]
+}
