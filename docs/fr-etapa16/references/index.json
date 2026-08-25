@@ -1,0 +1,140 @@
+{
+  "generatedAt": "2026-08-22T04:40:41.530Z",
+  "labRoot": "/home/romeu/FR-Design-Lab",
+  "selected": [
+    {
+      "slug": "vanlent-grid",
+      "host": "vanlent.dev",
+      "pathname": "/",
+      "purpose": "Malha editorial, ritmo, grid lateral e hierarquia; nunca copiar paleta, textos ou assets.",
+      "sourceDirectory": "/home/romeu/FR-Design-Lab/captures/vanlent.dev/20260821-135506",
+      "requestedUrl": "https://vanlent.dev/",
+      "finishedAt": "2026-08-21T17:02:12.984Z",
+      "files": [
+        "capture-meta.json",
+        "codex-summary.md",
+        "design-system-reference.md",
+        "design-system.json",
+        "fr-translation-plan.md",
+        "evidence.md"
+      ],
+      "screenshots": [
+        ".fr-context/screenshots/vanlent-grid/desktop.png",
+        ".fr-context/screenshots/vanlent-grid/mobile.png"
+      ]
+    },
+    {
+      "slug": "sergio-illustration",
+      "host": "sergio-ayala.com",
+      "pathname": "/",
+      "hash": "#illustration",
+      "purpose": "Interação do cubo e progressão por faces; excluir animação de letras e paleta.",
+      "sourceDirectory": "/home/romeu/FR-Design-Lab/captures/www.sergio-ayala.com/20260821-174746",
+      "requestedUrl": "https://www.sergio-ayala.com/#illustration",
+      "finishedAt": "2026-08-21T20:51:52.264Z",
+      "files": [
+        "capture-meta.json",
+        "analysis-brief.md",
+        "evidence.md"
+      ],
+      "screenshots": [
+        ".fr-context/screenshots/sergio-illustration/desktop-state-01.png",
+        ".fr-context/screenshots/sergio-illustration/desktop-state-02.png",
+        ".fr-context/screenshots/sergio-illustration/desktop-state-03.png",
+        ".fr-context/screenshots/sergio-illustration/desktop-state-04.png",
+        ".fr-context/screenshots/sergio-illustration/desktop-state-05.png",
+        ".fr-context/screenshots/sergio-illustration/desktop.png",
+        ".fr-context/screenshots/sergio-illustration/mobile-state-01.png",
+        ".fr-context/screenshots/sergio-illustration/mobile-state-02.png",
+        ".fr-context/screenshots/sergio-illustration/mobile-state-03.png",
+        ".fr-context/screenshots/sergio-illustration/mobile.png"
+      ]
+    },
+    {
+      "slug": "sd-spiral-gallery",
+      "host": "sd-spiral-gallery.vercel.app",
+      "pathname": "/",
+      "purpose": "Campo espacial/espiral como atmosfera progressiva do Portfólio.",
+      "sourceDirectory": "/home/romeu/FR-Design-Lab/captures/sd-spiral-gallery.vercel.app/20260822-013338",
+      "requestedUrl": "https://sd-spiral-gallery.vercel.app/",
+      "finishedAt": "2026-08-22T04:34:42.975Z",
+      "files": [
+        "capture-meta.json",
+        "codex-summary.md",
+        "design-system-reference.md",
+        "design-system.json",
+        "fr-translation-plan.md",
+        "evidence.md"
+      ],
+      "screenshots": [
+        ".fr-context/screenshots/sd-spiral-gallery/desktop-entry.png",
+        ".fr-context/screenshots/sd-spiral-gallery/desktop.png",
+        ".fr-context/screenshots/sd-spiral-gallery/mobile-entry.png",
+        ".fr-context/screenshots/sd-spiral-gallery/mobile.png"
+      ]
+    },
+    {
+      "slug": "inspiring-side-scroll",
+      "host": "inspiring.nk.studio",
+      "pathname": "/es",
+      "purpose": "Side-scrolling gravitacional e progressão horizontal; traduzir para tokens FR.",
+      "sourceDirectory": "/home/romeu/FR-Design-Lab/captures/inspiring.nk.studio/20260821-223742",
+      "requestedUrl": "https://inspiring.nk.studio/es",
+      "finishedAt": "2026-08-22T01:38:42.037Z",
+      "files": [
+        "capture-meta.json",
+        "analysis-brief.md",
+        "evidence.md"
+      ],
+      "screenshots": [
+        ".fr-context/screenshots/inspiring-side-scroll/desktop-entry-after.png",
+        ".fr-context/screenshots/inspiring-side-scroll/desktop-entry.png",
+        ".fr-context/screenshots/inspiring-side-scroll/desktop.png",
+        ".fr-context/screenshots/inspiring-side-scroll/mobile-entry-after.png",
+        ".fr-context/screenshots/inspiring-side-scroll/mobile-entry.png",
+        ".fr-context/screenshots/inspiring-side-scroll/mobile.png"
+      ]
+    },
+    {
+      "slug": "bloom-overview",
+      "host": "bloom3d.studio",
+      "pathname": "/",
+      "purpose": "Estrutura minimalista suíça, lista expansível e espaçamento da nova base de Ambientes.",
+      "sourceDirectory": "/home/romeu/FR-Design-Lab/captures/www.bloom3d.studio/20260821-223931",
+      "requestedUrl": "https://www.bloom3d.studio/",
+      "finishedAt": "2026-08-22T01:40:33.097Z",
+      "files": [
+        "capture-meta.json",
+        "analysis-brief.md",
+        "evidence.md"
+      ],
+      "screenshots": [
+        ".fr-context/screenshots/bloom-overview/desktop-entry.png",
+        ".fr-context/screenshots/bloom-overview/desktop.png",
+        ".fr-context/screenshots/bloom-overview/mobile-entry.png",
+        ".fr-context/screenshots/bloom-overview/mobile.png"
+      ]
+    },
+    {
+      "slug": "bloom-morven",
+      "host": "bloom3d.studio",
+      "pathname": "/projects/morven",
+      "purpose": "Dossiê/drawer imersivo de detalhe de uma linguagem de ambiente.",
+      "sourceDirectory": "/home/romeu/FR-Design-Lab/captures/www.bloom3d.studio/20260821-224046",
+      "requestedUrl": "https://www.bloom3d.studio/projects/morven",
+      "finishedAt": "2026-08-22T01:41:20.560Z",
+      "files": [
+        "capture-meta.json",
+        "analysis-brief.md",
+        "evidence.md"
+      ],
+      "screenshots": [
+        ".fr-context/screenshots/bloom-morven/desktop-entry.png",
+        ".fr-context/screenshots/bloom-morven/desktop.png",
+        ".fr-context/screenshots/bloom-morven/mobile-entry.png",
+        ".fr-context/screenshots/bloom-morven/mobile.png"
+      ]
+    }
+  ],
+  "missing": []
+}

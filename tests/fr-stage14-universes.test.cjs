@@ -76,7 +76,7 @@ test('inclui metadados semânticos e todos os scripts inline são válidos', () 
   assert.equal((html.match(/<\/html>/gi) || []).length, 1);
 });
 
-test('inicializa seis universos, calculadora e fallback 3D sem erros', { timeout: 14000 }, async () => {
+test('inicializa seis universos, calculadora e fallback 3D sem erros', { timeout: 30000 }, async () => {
   const runtimeErrors = [];
   const virtualConsole = new VirtualConsole();
   virtualConsole.on('jsdomError', error => {

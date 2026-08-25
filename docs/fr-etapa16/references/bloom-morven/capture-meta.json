@@ -1,0 +1,98 @@
+{
+  "tool": "FR Lab",
+  "version": "1.2.0",
+  "startedAt": "2026-08-22T01:40:47.967Z",
+  "finishedAt": "2026-08-22T01:41:20.560Z",
+  "durationSeconds": 32.6,
+  "requestedUrl": "https://www.bloom3d.studio/projects/morven",
+  "finalUrls": {
+    "desktop": "https://www.bloom3d.studio/projects/morven",
+    "mobile": "https://www.bloom3d.studio/projects/morven"
+  },
+  "responseStatus": {
+    "desktop": 200,
+    "mobile": 200
+  },
+  "browserExecutable": "/usr/bin/chromium",
+  "nodeVersion": "v20.20.2",
+  "deepCapture": false,
+  "headed": false,
+  "scope": null,
+  "paletteOmitted": true,
+  "entryAction": null,
+  "viewports": {
+    "desktop": {
+      "viewportWidth": 1440,
+      "viewportHeight": 900,
+      "scrollWidth": 1440,
+      "scrollHeight": 7573,
+      "devicePixelRatio": 1,
+      "elementCount": 177,
+      "documentElementCount": 204,
+      "scope": null
+    },
+    "mobile": {
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 3944,
+      "devicePixelRatio": 1,
+      "elementCount": 177,
+      "documentElementCount": 204,
+      "scope": null
+    }
+  },
+  "scopedScrollCheckpoints": {
+    "desktop": [
+      {
+        "index": 0,
+        "scrollY": 0
+      },
+      {
+        "index": 3,
+        "scrollY": 1820
+      },
+      {
+        "index": 6,
+        "scrollY": 3640
+      },
+      {
+        "index": 8,
+        "scrollY": 4853
+      },
+      {
+        "index": 11,
+        "scrollY": 6673
+      }
+    ],
+    "mobile": [
+      {
+        "index": 0,
+        "scrollY": 0
+      },
+      {
+        "index": 1,
+        "scrollY": 568
+      },
+      {
+        "index": 3,
+        "scrollY": 1705
+      },
+      {
+        "index": 4,
+        "scrollY": 2274
+      },
+      {
+        "index": 5,
+        "scrollY": 2842
+      }
+    ]
+  },
+  "limitations": [
+    "A captura contém somente recursos públicos entregues ao navegador; não representa o código-fonte privado original.",
+    "Estados dependentes de login, gestos específicos, temporização longa ou hardware podem não ter sido observados.",
+    "Bibliotecas detectadas por nomes em bundles são indícios e devem ser confirmadas pelas evidências.",
+    "Configurações internas minificadas ou ofuscadas podem permanecer indisponíveis.",
+    "A paleta foi omitida intencionalmente dos dados estruturados desta referência."
+  ]
+}
