@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://francoromeu.com.br/sitemap.xml
