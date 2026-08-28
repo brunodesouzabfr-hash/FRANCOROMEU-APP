@@ -22,3 +22,10 @@
 - Corrigido o fundo absoluto da Home, que era convertido em bloco de fluxo pelo selo de imagens de referência e deslocava todo o hero.
 - Adicionada regressão estrutural para preservar o empilhamento do hero.
 - Criado anexo técnico/editorial com inventário completo das mudanças, referências de estudo e direção futura para os seis mundos da aplicação.
+
+## 13.2.0 — Ecossistema de autoridade e SEO local
+
+- Promovido `index.html` a artefato principal, com metadados locais, canonical, social cards e grafo JSON-LD para negócio, site, breadcrumbs, FAQ e 16 serviços reais do catálogo.
+- Convertida a navegação principal e do rodapé em links rastreáveis, com rotas amigáveis, History API, metadados dinâmicos e fallback de rewrite na Vercel.
+- Criados `sitemap.xml`, `robots.txt` e o plano operacional de conteúdo, GBP, Instagram, citações, backlinks, Q&A, analytics e evolução técnica.
+- Corrigidos textos alternativos críticos de logo e hero, sem atribuir imagens de referência a obras executadas.

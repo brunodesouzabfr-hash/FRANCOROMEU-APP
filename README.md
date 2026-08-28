@@ -1,4 +1,4 @@
-# ꟻR — Franco Romeu Alpha 2.0
+# ꟻR — Franco Romeu Arte & Engenharia
 
 Aplicação corporativa e acervo digital da Franco Romeu — **Arte + Engenharia**. A experiência reúne apresentação institucional, ambientes, estudos 3D, portfólio de referências e uma calculadora de estimativa orientativa.
 
@@ -7,7 +7,7 @@ Aplicação corporativa e acervo digital da Franco Romeu — **Arte + Engenharia
 O aplicativo principal agora é autocontido: o núcleo financeiro foi incorporado no próprio documento. Para guardar ou enviar apenas a aplicação, baixe este arquivo:
 
 ```text
-base-original/FRANCO_ROMEU_ETAPA13_ORIGINAL.html
+index.html
 ```
 
 No GitHub, abra o arquivo, clique em **Raw** e use **Salvar página como…** (`Ctrl+S`). Dentro da própria aplicação, o God Mode também oferece o botão **“⬇️ Baixar HTML definitivo”**, que exporta uma cópia limpa com as personalizações salvas.
@@ -22,7 +22,7 @@ Sirva a raiz do repositório por HTTP para que módulos e integrações funcione
 python3 -m http.server 8000
 ```
 
-Abra `http://localhost:8000/base-original/FRANCO_ROMEU_ETAPA13_ORIGINAL.html`. A abertura por `file://` possui suporte degradado: consulta de CEP, fontes, imagens e geração de PDF podem depender da rede.
+Abra `http://localhost:8000/index.html`. A abertura por `file://` possui suporte degradado: consulta de CEP, fontes, imagens e geração de PDF podem depender da rede.
 
 ## Natureza da estimativa
 
@@ -66,3 +66,7 @@ O God Mode não possui senha no cliente. Em ambiente local controlado, abra a ap
 - Ativos visuais, Font Awesome, ViaCEP e a pilha de PDF ainda dependem de serviços externos.
 - Preços e cupons calculados no navegador precisam ser revalidados antes de uso comercial vinculante.
 - O CNPJ demonstrativo e métricas não validadas não devem ser publicados.
+
+## SEO local e rotas
+
+O artefato de produção é `index.html`. As rotas `/sobre`, `/ambientes`, `/projetos3d`, `/portfolio` e `/orcamento` usam History API e o rewrite de `vercel.json`. Consulte `docs/ESTRATEGIA_SEO_AUTORIDADE.md` antes de publicar: dados provisórios de contato e operação precisam de validação do proprietário.
