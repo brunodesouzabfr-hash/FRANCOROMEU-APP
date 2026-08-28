@@ -29,3 +29,8 @@
 - Convertida a navegação principal e do rodapé em links rastreáveis, com rotas amigáveis, History API, metadados dinâmicos e fallback de rewrite na Vercel.
 - Criados `sitemap.xml`, `robots.txt` e o plano operacional de conteúdo, GBP, Instagram, citações, backlinks, Q&A, analytics e evolução técnica.
 - Corrigidos textos alternativos críticos de logo e hero, sem atribuir imagens de referência a obras executadas.
+
+## 13.2.1 — Consolidação da branch principal
+
+- Consolidada a linha de desenvolvimento na branch `main`, preservando os merges históricos das etapas 13.1.1 e 13.1.2 e a implementação de SEO local 13.2.0.
+- Confirmado o versionamento dos artefatos úteis de aplicação, documentação, rastreamento, deploy, núcleo financeiro e testes automatizados.

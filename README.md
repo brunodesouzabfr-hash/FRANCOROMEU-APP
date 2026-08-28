@@ -67,6 +67,16 @@ O God Mode não possui senha no cliente. Em ambiente local controlado, abra a ap
 - Preços e cupons calculados no navegador precisam ser revalidados antes de uso comercial vinculante.
 - O CNPJ demonstrativo e métricas não validadas não devem ser publicados.
 
+## Branch principal e inventário versionado
+
+A linha canônica de desenvolvimento é a branch `main`. Ela reúne o histórico das fundações técnicas anteriores e mantém versionados os seguintes grupos de artefatos:
+
+- aplicação de produção: `index.html`;
+- referência histórica preservada: `base-original/FRANCO_ROMEU_ETAPA13_ORIGINAL.html`;
+- rastreamento e deploy: `robots.txt`, `sitemap.xml` e `vercel.json`;
+- documentação técnica e estratégica: `docs/`;
+- núcleo financeiro e sua suíte: `src/`, `tests/` e `scripts/`.
+
 ## SEO local e rotas
 
 O artefato de produção é `index.html`. As rotas `/sobre`, `/ambientes`, `/projetos3d`, `/portfolio` e `/orcamento` usam History API e o rewrite de `vercel.json`. Consulte `docs/ESTRATEGIA_SEO_AUTORIDADE.md` antes de publicar: dados provisórios de contato e operação precisam de validação do proprietário.
