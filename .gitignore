@@ -30,6 +30,8 @@ Thumbs.db
 *.swp
 *.tmp
 *.log
+__pycache__/
+*.py[cod]
 
 # Backups e arquivos compactados
 *.bak
