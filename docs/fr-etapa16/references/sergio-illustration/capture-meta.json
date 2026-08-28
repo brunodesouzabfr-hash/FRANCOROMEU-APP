@@ -1,0 +1,110 @@
+{
+  "tool": "FR Lab",
+  "version": "1.1.1",
+  "startedAt": "2026-08-21T20:47:47.741Z",
+  "finishedAt": "2026-08-21T20:51:52.264Z",
+  "durationSeconds": 244.5,
+  "requestedUrl": "https://www.sergio-ayala.com/#illustration",
+  "finalUrls": {
+    "desktop": "https://www.sergio-ayala.com/#illustration",
+    "mobile": "https://www.sergio-ayala.com/#illustration"
+  },
+  "responseStatus": {
+    "desktop": 200,
+    "mobile": 200
+  },
+  "browserExecutable": "/usr/bin/chromium",
+  "nodeVersion": "v20.20.2",
+  "deepCapture": false,
+  "headed": false,
+  "scope": "#illustration",
+  "paletteOmitted": true,
+  "viewports": {
+    "desktop": {
+      "viewportWidth": 1440,
+      "viewportHeight": 900,
+      "scrollWidth": 1440,
+      "scrollHeight": 21891,
+      "devicePixelRatio": 1,
+      "elementCount": 5508,
+      "documentElementCount": 15652,
+      "scope": {
+        "selector": "#illustration",
+        "top": 7567.296875,
+        "width": 1440,
+        "height": 13500,
+        "elementCount": 5508
+      }
+    },
+    "mobile": {
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 16478,
+      "devicePixelRatio": 1,
+      "elementCount": 5464,
+      "documentElementCount": 14115,
+      "scope": {
+        "selector": "#illustration",
+        "top": 7329.890625,
+        "width": 390,
+        "height": 8229,
+        "elementCount": 5464
+      }
+    }
+  },
+  "scopedScrollCheckpoints": {
+    "desktop": [
+      {
+        "index": 0,
+        "scrollY": 7567
+      },
+      {
+        "index": 5,
+        "scrollY": 10717
+      },
+      {
+        "index": 10,
+        "scrollY": 13868
+      },
+      {
+        "index": 15,
+        "scrollY": 17018
+      },
+      {
+        "index": 20,
+        "scrollY": 20168
+      }
+    ],
+    "mobile": [
+      {
+        "index": 0,
+        "scrollY": 7329
+      },
+      {
+        "index": 3,
+        "scrollY": 9033
+      },
+      {
+        "index": 7,
+        "scrollY": 11306
+      },
+      {
+        "index": 10,
+        "scrollY": 13011
+      },
+      {
+        "index": 13,
+        "scrollY": 14715
+      }
+    ]
+  },
+  "limitations": [
+    "A captura contém somente recursos públicos entregues ao navegador; não representa o código-fonte privado original.",
+    "Estados dependentes de login, gestos específicos, temporização longa ou hardware podem não ter sido observados.",
+    "Bibliotecas detectadas por nomes em bundles são indícios e devem ser confirmadas pelas evidências.",
+    "Configurações internas minificadas ou ofuscadas podem permanecer indisponíveis.",
+    "A coleta de DOM, layout, interação e scroll foi limitada ao escopo #illustration.",
+    "A paleta foi omitida intencionalmente dos dados estruturados desta referência."
+  ]
+}
