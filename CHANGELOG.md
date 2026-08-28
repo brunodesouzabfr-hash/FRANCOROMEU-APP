@@ -46,3 +46,10 @@
 - Corrigido o fundo absoluto da Home, que era convertido em bloco de fluxo pelo selo de imagens de referência e deslocava todo o hero.
 - Adicionada regressão estrutural para preservar o empilhamento do hero.
 - Criado anexo técnico/editorial com inventário completo das mudanças, referências de estudo e direção futura para os seis mundos da aplicação.
+
+## 16.1.0 — Search Control Engineering
+
+- consolida metadados SEO no domínio canônico e grafo JSON-LD com entidade local, site, breadcrumbs, FAQ e 16 serviços reais;
+- converte a navegação principal para links rastreáveis e adiciona History API, metadados e canonical por view;
+- inclui sitemap, robots e rewrite das rotas da SPA;
+- documenta diagnóstico, GBP, Instagram, conteúdo, NAP, backlinks, Q&A, monitoramento, riscos e rollback sem inventar provas comerciais.
