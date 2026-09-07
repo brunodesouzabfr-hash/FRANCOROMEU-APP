@@ -1,196 +1,361 @@
-# Anexo técnico e editorial — evolução Franco Romeu
+# ANEXO COMENTADO — Auditoria canônica, evolução real e direção Awwwards
 
-> Documento de comentário e rastreabilidade. Não é uma autorização para copiar interfaces, imagens ou código de terceiros. Toda referência deve ser reinterpretada pelo algoritmo FORJA e pelas regras de veracidade da marca.
-
-**Base comparada:** Etapa 13 oficial (`bd11827`) → Etapa 13.1.1 (`294e0ac`) → correção atual do hero.
-**Objetivo futuro:** transformar a SPA/HTML em site corporativo e, somente após estabilização da experiência web, avaliar empacotamento como PWA e aplicativo Android (`.apk`).
-
----
-
-## 1. Alterações realmente implementadas desde a base Etapa 13
-
-### 1.1 Distribuição e arquitetura
-
-1. O núcleo financeiro foi extraído para `src/budget-core.js`, permitindo testes fora do navegador.
-2. O mesmo núcleo foi incorporado ao HTML em `<script id="fr-budget-core">`; o aplicativo principal pode ser baixado como um único arquivo.
-3. Foram adicionados `package.json`, testes automatizados, verificador estrutural do HTML, README ampliado e changelog.
-4. O HTML continua monolítico e as seis views, `appState`, `localStorage`, `window.__frCore`, IQE, God Mode, busca, fidelidade e motores visuais foram preservados.
-
-### 1.2 Orçamento e regras financeiras
-
-1. `resolveConfigOption` passou a aceitar ID estável e índice numérico legado.
-2. Novas escolhas manuais são persistidas por ID, evitando que uma reordenação do catálogo altere seu significado.
-3. O cálculo passou a ser uma função pura que recebe catálogo, estado e política.
-4. Preços são arredondados em centavos por uma função central.
-5. Markups de ambiente, cupom, condição de pagamento e visita são calculados em ordem explícita.
-6. A taxa de visita é exibida como cobrada ou abatida; a fronteira atual permanece `subtotal > R$ 450`.
-7. O resultado comercial passou de “total definitivo” para faixa orientativa de ±12%, com referência central, confiança, avisos e premissas.
-8. Itens informados pelo cliente e itens sugeridos/estimados pelo IQE são diferenciados.
-9. Configurações obrigatórias de serviço são verificadas antes da inclusão.
-10. A finalização verifica serviço, quantidade, configurações, nome, telefone, CEP, rua/número, pagamento e aceite dos termos.
-11. Serviços adicionados podem ser editados, duplicados ou removidos no resumo.
-
-### 1.3 Persistência, administração e segurança
-
-1. Foi criada uma fronteira `storage.get/set/remove` para capturar falhas de armazenamento.
-2. A finalização não descarta o rascunho quando o navegador não consegue salvar.
-3. Valores de usuário interpolados no HTML passaram a usar escape de conteúdo/atributo nos pontos modificados.
-4. A importação do God Mode valida estrutura, IDs, categorias, preços, opções, adicionais, ícones e cupons.
-5. Uma cópia preventiva do banco administrativo é criada antes de importações válidas.
-6. Cupons administrativos recebem validação de formato, duplicidade e intervalo.
-7. A senha administrativa literal foi removida; o acesso local documentado não é apresentado como autenticação real.
-8. O CNPJ demonstrativo foi removido das áreas públicas e do PDF.
-
-### 1.4 Formulários, CEP, PDF e WhatsApp
-
-1. Labels passaram a possuir associação com IDs estáveis em inputs gerados.
-2. Foram adicionados `required`, `autocomplete`, `inputmode`, validade semântica, foco no primeiro erro, texto de erro e `aria-invalid`.
-3. Datas preferenciais recebem mínimo futuro.
-4. O CEP é normalizado, validado e consultado com timeout, `AbortController`, verificação HTTP e mensagens distintas.
-5. O preenchimento manual de endereço é preservado se o ViaCEP falhar.
-6. O WhatsApp utiliza link real com isolamento da nova aba.
-7. O PDF passou a criar páginas adicionais quando o conteúdo excede uma folha A4.
-8. Arquivo, título e conteúdo do PDF passaram a usar “estimativa” e “referência central”.
-
-### 1.5 Acessibilidade, veracidade e apresentação
-
-1. Opções de serviço e pagamento foram convertidas de `div` clicável para botões com estado `aria-pressed`.
-2. Botões sem tipo recebem `type="button"`; links externos recebem `noopener noreferrer`.
-3. Links sociais e botões de ícone recebem nomes acessíveis.
-4. Modais receberam `role="dialog"`, título/descrição associados, foco inicial e fechamento por `Escape`.
-5. Alvos essenciais receberam dimensão mínima de 44 px e foco visível.
-6. `prefers-reduced-motion` pausa movimentos decorativos adicionados nesta etapa.
-7. Imagens do Unsplash recebem a ressalva “Referência visual — não representa obra executada pela Franco Romeu”.
-8. Título, versão, copyright e comentários corrompidos foram atualizados.
+**Marca:** Franco Romeu (FR) — Arte & Engenharia  
+**Repositório canônico:** https://github.com/brunodesouzabfr-hash/FRANCOROMEU-APP  
+**Branch canônica auditada:** `main`  
+**Commit canônico auditado:** `d3848928daabc39e400cb1391156dbbfcf787aa0`  
+**Base importada:** `base-original/FRANCO_ROMEU_ETAPA13_ORIGINAL.html`  
+**Versão preparada neste trabalho:** Etapa `13.1.3`  
+**Data da auditoria e da pesquisa:** 20/08/2026  
+**Escopo:** inventário factual do que mudou, correção do PDF, auditoria de marca/UX/SEO/sistema/testes e roteiro visual. Este documento não declara como implementada nenhuma proposta futura.
 
 ---
 
-## 2. Correção do hero da Home nesta etapa
+## 1. Regra de fonte de verdade
 
-### Sintoma
+1. O GitHub acima passa a ser a fonte canônica do código.
+2. Antes da correção desta etapa, o HTML anexado e o arquivo da branch `main` eram idênticos pelo Git blob SHA: `12bf5a9c823ac3ad62f628b5b2d2d0af271bf9a1`.
+3. O HTML preparado neste trabalho altera essa base somente para restaurar o contrato de carregamento do PDF e atualizar a identificação para `13.1.3`.
+4. Documentos de marca continuam válidos como princípios; em caso de conflito sobre comportamento da aplicação, prevalecem código, testes e histórico do repositório.
+5. A migração para site publicado e APK permanece futura. Antes dela, URLs públicas, analytics, autenticação, política de privacidade e ativos finais precisam ser definidos.
 
-A fotografia aparecia como um bloco normal e todo o conjunto “Studio em operação / Espaços Forjados Para durar / CTAs” era empurrado para baixo, em vez de permanecer sobre a imagem.
+### Vocabulário de status usado neste anexo
 
-### Causa confirmada
-
-O aperfeiçoamento que adiciona a ressalva em imagens externas aplicava `.fr-reference-media { position: relative !important }` ao pai de toda imagem do Unsplash. No hero, esse pai é `.fr6-hero-media`, originalmente absoluto. O `!important` substituía `position:absolute`, retirava a imagem do plano de fundo e a transformava em conteúdo normal do grid.
-
-### Correção
-
-1. `.fr-reference-media` deixou de alterar `position` indiscriminadamente.
-2. A classe auxiliar `.fr-reference-positioned` só é aplicada quando o pai era originalmente `position: static`.
-3. Contêineres já posicionados — como o fundo absoluto do hero — preservam seu contexto e continuam aptos a ancorar o selo.
-4. O verificador estrutural agora falha se `.fr-reference-media` voltar a definir posição ou se `.fr6-hero-media` deixar de ser absoluta.
+| Status | Significado |
+|---|---|
+| `IMPLEMENTADO` | Existe no HTML/repositório e foi localizado no código. |
+| `CORRIGIDO_13_1_3` | Foi alterado neste trabalho e passou no teste correspondente. |
+| `PROPOSTO` | Direção aprovada para prototipagem futura; não existe no produto atual. |
+| `DEPENDENTE_DE_CONTEUDO` | Só pode ser publicado após receber imagens/dados reais e autorização. |
+| `NAO_COMPROVADO` | Alegação presente em textos anteriores sem evidência suficiente. |
+| `PROIBIDO` | Não deve ser usado por risco de engano, dark pattern ou dano à marca. |
 
 ---
 
-## 3. Pesquisa e referências Awwwards
+## 2. Estrutura real da aplicação atual
 
-### Transparência da pesquisa
+| Universo | ID real | Nome FR | Estado técnico verificado |
+|---|---|---|---|
+| Home | `view-home` | `•FR / 01/ FORJA` | Hero editorial, Canvas 2D, imagem de referência e motion próprio. |
+| Sobre | `view-sobre` | `•FR / 02/ MANIFESTO` | Narrativa institucional em DOM/CSS/JS; sem cena 3D real. |
+| Ambientes | `view-ambientes` | `•FR / 03/ ARTE MATERIAL` | Curadoria em grid/painel, integração com serviços e referências visuais. |
+| Projetos 3D | `view-projetos3d` | `•FR / 04/ MODELING SPACE` | Simulação espacial 2D em Canvas/DOM; não carrega Three.js/WebGL. |
+| Portfólio | `view-projetos` | `•FR / 05/ ARQUIVO VIVO` | Arquivo filtrável/serpentino; imagens padrão atuais vêm do Unsplash. |
+| Orçamento | `view-orcamento` | `•FR / 06/ ENGENHARIA DE CUSTO` | SPA com 115 serviços, 15 categorias progressivas, IQE, fidelidade, resumo e PDF. |
 
-Foi tentado acesso às coleções oficiais de [Arquitetura](https://www.awwwards.com/websites/architecture/), [Arte](https://www.awwwards.com/websites/art/), [3D](https://www.awwwards.com/websites/3d/) e [Museus](https://www.awwwards.com/websites/museum/). O ambiente automatizado respondeu `403` no túnel de acesso e a busca web respondeu `401`; por isso **notas, posições e premiações atuais não foram declaradas como verificadas**. Antes da fase visual, a equipe deve abrir as coleções e registrar score, data e prêmio vigentes.
+### Stack realmente carregada
 
-As referências abaixo são pontos de estudo reconhecíveis no ecossistema de experiências digitais; devem ser avaliadas funcionalmente, não copiadas:
+- HTML, CSS estático e JavaScript nativo em um único arquivo.
+- Configuração Tailwind presente, porém sem runtime Tailwind carregado; a interface depende do CSS utilitário estático incorporado.
+- Fontes e Font Awesome são recursos diferidos.
+- Dois canvases usam contexto 2D.
+- Existem trechos preparados para GSAP/ScrollTrigger, mas as bibliotecas não são carregadas; o fallback nativo é o caminho efetivo.
+- Não há Three.js, Lenis nem motor WebGL ativo.
 
-| Referência | O que estudar | Aplicação FR proposta |
+**Comentário:** documentos anteriores confundiam código preparado com biblioteca instalada. O roteiro novo separa claramente inspiração, protótipo e produção.
+
+---
+
+## 3. Todas as alterações efetivamente realizadas desde a Etapa 13 importada
+
+O histórico foi reconstituído a partir dos commits e do diff entre a Etapa 13 e a base atual. A lista abaixo descreve mudanças reais; não inclui propostas Awwwards.
+
+### 3.1 Repositório e governança — `IMPLEMENTADO`
+
+1. O HTML original foi preservado em `base-original/`.
+2. Foram adicionados `.gitignore`, `README.md`, `CHANGELOG.md` e `package.json`.
+3. O motor financeiro reutilizável foi extraído para `src/budget-core.js` e também incorporado ao HTML standalone.
+4. Foram adicionados `tests/budget-core.test.js` e `scripts/check-html.js`.
+5. A Etapa 13.1.2 adicionou este anexo em `docs/` e ampliou a checagem estrutural do hero.
+6. O fluxo Git registrado utiliza branches de feature e pull requests; `main` é a referência estável.
+
+### 3.2 Motor financeiro e compatibilidade — `IMPLEMENTADO`
+
+7. O cálculo passou a ser função pura em `FRBudgetCore.calculateBudget`.
+8. A resolução de configurações aceita ID estável e índice numérico legado.
+9. Valores monetários são arredondados a duas casas por função central.
+10. Quantidades inválidas e serviços desconhecidos geram aviso em vez de contaminar o total.
+11. Os acréscimos ambientais existentes são calculados de forma explícita.
+12. Cupom e desconto por forma de pagamento são separados no resultado.
+13. A visita técnica de R$ 99 é mantida e deixa de ser cobrada quando o subtotal supera R$ 450, conforme regra atual do aplicativo.
+14. O resultado exibe faixa orientativa de ±12%, fonte estimada/confirmada e nível de confiança.
+15. Itens adicionados manualmente, pelo IQE ou por Ambientes recebem origem rastreável.
+16. Os 115 serviços e os 15 agrupamentos primários foram preservados.
+
+**Guardrail financeiro:** descontos de `cash`, `pix` e `crypto`, cupons, patentes e benefícios são regras configuradas no software, não fatos de mercado. Precisam de aprovação comercial/jurídica antes de produção.
+
+### 3.3 Jornada do orçamento — `IMPLEMENTADO`
+
+17. Configurações obrigatórias agora bloqueiam a inclusão incompleta de um serviço.
+18. A finalização, o WhatsApp, a visualização e o PDF validam cliente, ambiente, serviços, endereço, pagamento e termos.
+19. Campos inválidos recebem mensagem e `aria-invalid`.
+20. A navegação por etapa foi centralizada e limitada ao intervalo válido.
+21. Itens do resumo podem ser editados, duplicados e removidos.
+22. Novos itens usam identificador próprio sem quebrar seleções legadas.
+23. O catálogo usa divulgação progressiva: primeiro categorias, depois serviços da categoria aberta.
+24. A posição de scroll do catálogo é preservada durante seleção e renderização.
+25. A consulta de CEP possui timeout, fallback manual e preserva dados já digitados.
+26. O link de WhatsApp é montado apenas após validação.
+27. A finalização trata indisponibilidade do armazenamento e mantém a estimativa aberta.
+
+### 3.4 Persistência e administração — `IMPLEMENTADO_COM_LIMITES`
+
+28. Acesso a `localStorage` foi concentrado em adaptador com tratamento de exceções.
+29. Configuração antiga/corrompida cai para dados padrão utilizáveis.
+30. Importação administrativa valida estrutura mínima, IDs, categorias, serviços, ícones e cupons.
+31. Um backup do banco anterior é criado antes da importação.
+32. CRUD administrativo de serviços permanece disponível no dispositivo.
+33. Gatilhos administrativos secretos expostos no conteúdo foram removidos na fundação técnica.
+
+**Limite:** o GODMODE/local admin não é autenticação nem backend. Não deve ser exposto como painel seguro em site público ou APK conectado.
+
+### 3.5 Segurança de conteúdo e honestidade — `IMPLEMENTADO`
+
+34. Conteúdo dinâmico crítico passou a usar escape de HTML/atributos.
+35. IDs derivados de dados são normalizados antes de entrar no DOM.
+36. Cupons administrativos são limitados ao intervalo aceito pelo motor.
+37. Uma identificação empresarial/CNPJ demonstrativos e não comprovados foram removidos do PDF.
+38. Imagens do Unsplash recebem automaticamente o aviso: “Referência visual — não representa obra executada pela Franco Romeu”.
+39. Links externos e nomes acessíveis receberam normalização defensiva.
+
+**Achado prioritário:** os 16 itens padrão de Portfólio usam imagens do Unsplash. Portanto, hoje eles não podem ser apresentados como “obras executadas”. O rótulo de referência deve permanecer até a substituição por acervo real comprovado.
+
+### 3.6 Acessibilidade e robustez — `IMPLEMENTADO`
+
+40. Botões sem `type` são normalizados para evitar submissões acidentais.
+41. Foco visível, áreas de toque e mensagens acessíveis foram reforçados.
+42. Imagens sem texto alternativo recebem fallback; referências recebem descrição explícita.
+43. Diálogos recebem foco quando abertos.
+44. Há tratamento para `prefers-reduced-motion` sem remover conteúdo ou impedir navegação.
+45. Loops recentes de Canvas usam `requestAnimationFrame`, visibilidade da aba/view e observadores para reduzir trabalho invisível.
+
+### 3.7 Hero e camada visual — `IMPLEMENTADO`
+
+46. A Etapa 13.1.2 corrigiu a camada do hero da Home que podia desaparecer após o rótulo automático de imagem.
+47. `.fr-reference-media` deixou de forçar posicionamento em todo host.
+48. A classe `.fr-reference-positioned` passou a ser aplicada somente quando o host realmente precisa de contexto de posicionamento.
+49. Nenhum remake WebGL/Awwwards foi implementado pelos commits 13.1.1/13.1.2; houve fundação técnica, correção do hero e documentação.
+
+### 3.8 PDF — `CORRIGIDO_13_1_3`
+
+50. A causa do erro “Núcleo de PDF ainda não inicializado” foi localizada: `generatePDF()` chamava `window.FR_PERFORMANCE.ensurePDFStack()`, mas a Etapa 13 não definia mais esse contrato.
+51. Foi adicionado o bridge `fr-pdf-stack-loader`.
+52. `html2canvas@1.4.1` e `jsPDF@2.5.1` são carregados somente quando o usuário gera o PDF.
+53. Chamadas simultâneas compartilham uma única Promise por dependência.
+54. O bridge valida se as APIs esperadas foram realmente expostas.
+55. Falha de rede, biblioteca inválida e timeout de 15 segundos retornam mensagens específicas e permitem nova tentativa.
+56. Listeners são registrados antes de anexar scripts, removendo a corrida de inicialização.
+57. O bridge preserva qualquer propriedade já existente em `window.FR_PERFORMANCE`.
+58. A paginação A4 já existente continua preservada.
+
+**Validação executada:** 25 scripts inline sem erro de sintaxe; 200 IDs estáticos sem duplicação; 115/115 IDs de serviços coerentes; smoke runtime simulado com as seis views, 15 categorias e zero erro; duas chamadas concorrentes carregaram exatamente duas dependências uma única vez. O Chromium disponível no ambiente encerrou com `SIGSEGV`, por isso não há screenshot declarado como aprovado nesta etapa.
+
+---
+
+## 4. Débitos técnicos reais antes do remake visual
+
+| Prioridade | Achado | Consequência | Ação recomendada |
+|---|---|---|---|
+| P0 | PDF depende de CDN em runtime | Offline/APK pode não gerar documento | Web: bridge atual. APK/PWA: empacotar versões licenciadas/localizadas e aplicar CSP/SRI. |
+| P0 | Portfólio usa Unsplash | Risco de representar referência como obra | Criar manifesto de ativos e bloquear o selo “executado” sem prova/autorização. |
+| P0 | Admin é local | Não há segurança multiusuário | Remover em produção ou criar backend autenticado com autorização e auditoria. |
+| P1 | HTML monolítico com sucessivas camadas `stage*` | Colisões CSS/JS, peso e regressão | Modularizar mantendo saída standalone gerada; remover motores superseded após testes de equivalência. |
+| P1 | Sem deep links por aba | SEO, compartilhamento e retorno de navegação frágeis | Adotar rotas/hash estáveis, título e foco por view. |
+| P1 | SEO mínimo | Sem description, OG/Twitter, canonical ou schema | Adicionar apenas quando domínio, textos e imagens públicas forem aprovados. |
+| P1 | Dependências visuais externas | Privacidade, disponibilidade e CORS | Manifesto de terceiros, cache, fallback e política de atualização. |
+| P2 | Motion distribuído em muitos motores | Ritmo inconsistente e custo imprevisível | Criar Motion Director único com tokens de duração, easing, prioridade e orçamento de frame. |
+| P2 | WebGL ainda inexistente | A aba “3D” é conceitual, não tridimensional | Prototipar isoladamente; só integrar após orçamento de performance e fallback 2D. |
+
+---
+
+## 5. Curadoria Awwwards verificável
+
+As notas abaixo são as exibidas pelo Awwwards na data desta auditoria. Elas são sinais editoriais/comunitários, não prova de conversão nem licença para copiar layout ou código.
+
+### Home / Forja
+
+| Referência | Reconhecimento | O que estudar | O que não copiar |
+|---|---|---|---|
+| [House of Wonders](https://www.awwwards.com/sites/the-house-of-wonders) | SOTD, 7,23 | Entrada cinematográfica, luxo material e transição narrativa. | Ornamento de moda sem vínculo com obra/engenharia. |
+| [Urban Jürgensen](https://www.awwwards.com/sites/urban-jurgensen) | SOTD, 7,27 | Continuidade entre eixos e ritmo editorial de luxo. | Scroll que esconda orientação ou impeça controle. |
+| [25 Residences](https://www.awwwards.com/sites/25-residences) | SOTD, 7,31 | Fotografia arquitetônica, tipografia contida e progressão espacial. | Promessas imobiliárias ou conteúdo não FR. |
+
+**Tradução FR — `PROPOSTO`:** hero-forja com líquido mineral âmbar/verde-petróleo, uma única ação primária e progressão para o Manifesto; sem introdução mais longa que o loading já existente.
+
+### Sobre / Manifesto — bruto + refinado
+
+| Referência | Reconhecimento | Princípio transferível |
 |---|---|---|
-| [Bruno Simon](https://bruno-simon.com/) · [busca Awwwards](https://www.awwwards.com/search-websites/?text=Bruno%20Simon) | Navegação 3D compreensível, descoberta e controle pelo usuário | Projetos 3D: viewport navegável com alternativa em lista e instrução progressiva |
-| [Active Theory](https://activetheory.net/) · [busca Awwwards](https://www.awwwards.com/search-websites/?text=Active%20Theory) | WebGL usado como linguagem espacial, transições de mundo | Passagem entre as seis views sem perder localização ou contexto |
-| [Lusion](https://lusion.co/) · [busca Awwwards](https://www.awwwards.com/search-websites/?text=Lusion) | Objetos digitais responsivos e performance adaptativa | Matriz arquitetônica e materiais reativos em Projetos 3D |
-| [Locomotive](https://locomotive.ca/) · [busca Awwwards](https://www.awwwards.com/search-websites/?text=Locomotive) | Direção editorial, tipografia cinética e ritmo de scroll | Sobre: manifesto bruto/refinado e costura das linguagens FR |
-| [Obys Agency](https://obys.agency/) · [busca Awwwards](https://www.awwwards.com/search-websites/?text=Obys) | Brutalismo controlado, composição editorial e contraste | Sobre: pranchas, matéria, manifesto e método, sem ruído gratuito |
-| [Resn](https://resn.co.nz/) · [busca Awwwards](https://www.awwwards.com/search-websites/?text=Resn) | Narrativas experimentais e interação com personalidade | Ambientes: curadoria sensorial sem sacrificar entendimento |
-| [Gucci Garden](https://guccigarden.gucci.com/) · [busca Awwwards](https://www.awwwards.com/search-websites/?text=Gucci%20Garden) | Exposição digital, salas temáticas e exploração | Portfólio/Arquivo Vivo: salas curatoriais e obras documentadas |
-| [The Museum of Annoying Experiences](https://annoyingmuseum.zendesk.com/) · [busca Awwwards](https://www.awwwards.com/search-websites/?text=Museum%20of%20Annoying%20Experiences) | Metáfora museológica aplicada à navegação e ao conteúdo | Portfólio como museu interativo com percurso e índice acessível |
+| [David Whyte Experience](https://www.awwwards.com/sites/david-whyte-experience) | SOTD, 7,63 | Storytelling em capítulos, texto como espaço e transições que servem à leitura. |
+| [Horizonte Village](https://www.awwwards.com/sites/horizonte-village) | SOTD, 7,41 | Narrativa de arquitetura, atmosfera e conteúdo estruturado. |
+| [Silver Pinewood Residences](https://www.awwwards.com/sites/silver-pinewood-residences) | SOTD, 7,25 | Quiet luxury, profundidade controlada e composição arquitetônica. |
 
-### Critério de seleção futuro
+**Tradução FR — `PROPOSTO`:** capítulos “matéria → método → precisão → assinatura”; aço/concreto no grid, couro/madeira/luz na camada sensorial; movimento lento apenas em planos de fundo, texto sempre estável e legível.
 
-Cada referência candidata deve ser registrada com: URL oficial, página Awwwards, prêmio/menção, notas de Design/Usability/Creativity/Content, data, tecnologia, custo estimado de renderização, comportamento mobile, teclado, reduced-motion e utilidade concreta para a jornada FR.
+### Ambientes / Arte Material — galeria curatorial
 
----
+| Referência | Reconhecimento | Princípio transferível |
+|---|---|---|
+| [The Unconventional Gallery](https://www.awwwards.com/sites/the-unconventional-gallery) | SOTD, 7,79 | Galeria WebGL explorável e gesto como mecanismo curatorial. |
+| [Magical Reflections](https://www.awwwards.com/sites/magical-reflections) | SOTD, 7,85 | Espaço expositivo, foco na obra e alto valor de conteúdo/criatividade. |
+| [Southern Guild](https://www.awwwards.com/sites/southern-guild) | SOTD, 7,43 | Galeria real, hierarquia editorial e fichas de obra utilizáveis. |
 
-## 4. Direção visual proposta por view (ainda não implementada)
+**Tradução FR — `PROPOSTO`:** trilho de salas/linguagens, parede expositiva assimétrica, paleta material e ficha curatorial. Não duplicar o movimento serpentino do Portfólio. Touch, teclado e grid 2D devem ser equivalentes ao gesto.
 
-### 4.1 Home — portal da Forja
+### Projetos 3D / Modeling Space — matriz arquitetônica
 
-**Função:** orientar em até cinco segundos: quem é a FR, o que faz e qual o próximo passo.
-**Experiência:** fotografia em tela cheia, matéria escura, headline sobreposta, campo técnico sutil e CTAs inequívocos. A imagem reage com profundidade mínima ao ponteiro; texto permanece estável.
-**Interações:** reveal inicial curto, parallax limitado, transição de forja ao trocar de mundo.
-**Guardrails:** LCP prioritário; hero legível sem imagem, Canvas ou animação; nenhum selo pode alterar seu layout novamente.
+| Referência | Reconhecimento | Princípio transferível |
+|---|---|---|
+| [E.C.H.O.](https://www.awwwards.com/sites/e-c-h-o) | SOTD, 7,90 | Transições de estado, exploração espacial e densidade técnica. |
+| [Loftgarten](https://www.awwwards.com/sites/loftgarten) | SOTD, 7,74 | Visualização arquitetônica, câmera e composição de empreendimento. |
+| [iyO](https://www.awwwards.com/sites/iyo) | SOTD, 7,68 | Configurador 3D responsivo, estados claros e feedback imediato. |
+| [Scale & Form](https://www.awwwards.com/sites/scale-form) | Nominee | Navegação por teclado e experiência 3D em tempo real como referência de fallback. |
 
-### 4.2 Sobre — matéria, método e manifesto
+**Tradução FR — `PROPOSTO`:** matriz de frames em três profundidades, waypoints de câmera, minimapa e dossiê lateral. Nunca amarrar toda a navegação a scrolljacking. Se WebGL falhar/perder contexto, retornar ao mesmo projeto no atlas 2D.
 
-**Conceito:** “mesa de oficina + arquivo editorial”. Deve mesclar forja, galeria, blueprint e arquivo, mas no estado mais bruto e refinado da marca.
-**Estrutura:** manifesto → tensões reais → método FORJA → competências → processo → limites/veracidade → contato.
-**Visual:** grandes tipos stencil, Cormorant nos momentos humanos, diagramas de medida, macros de matéria, grids que se desmontam e recompõem.
-**Interação:** capítulos que se encaixam como pranchas; scrub apenas onde explica processo; resumo fixo acessível.
+### Portfólio / Arquivo Vivo — museu de trabalhos
 
-### 4.3 Ambientes — galeria de linguagens arquitetônicas
+| Referência | Reconhecimento | Princípio transferível |
+|---|---|---|
+| [Elektra Virtual Museum](https://www.awwwards.com/sites/elektra-virtual-museum) | SOTD, 7,72 | Navegação museológica e mediação de acervo. |
+| [365 — A Year of Cartier](https://www.awwwards.com/sites/365-a-year-of-cartier) | SOTD, 7,41 | Arquivo temporal, continuidade de coleção e conteúdo como objeto. |
+| [The Museum of the World](https://www.awwwards.com/sites/the-museum-of-the-world) | 7,23 | Relações entre itens, tempo e contexto em vez de cards isolados. |
+| [Coleção Immersive WebGL Museums](https://www.awwwards.com/immersive-webgl-virtual-gallery-exhibition-collection.html) | Curadoria Awwwards | Padrões de sala, tour e exposição virtual. |
 
-**Conceito:** curadoria, não catálogo. Cada ambiente é uma sala/exposição com paleta, matéria, luz, serviço e aplicação.
-**Estrutura:** foyer curatorial → filtro por sensação/material → sala individual → composição recomendada → enviar para orçamento.
-**Visual:** paredes virtuais discretas, molduras, luz rasante e legendas museológicas.
-**Interação:** trilho horizontal no desktop, lista vertical no mobile, aproximação progressiva de detalhes e áudio sempre opcional/desligado por padrão.
-**Verdade:** enquanto forem imagens externas, o selo de referência permanece visível; obras reais devem trazer ficha de execução verificável.
+**Tradução FR — `DEPENDENTE_DE_CONTEUDO`:** cada obra precisa de `project_id`, título, cidade aproximada, ano, escopo, materialidade, antes/depois, autoria da foto, autorização e serviços relacionados. Sem esse pacote, o item continua “referência”, não “obra executada”.
 
-### 4.4 Projetos 3D — matriz arquitetônica
+### Calculadora / Engenharia de Custo — clareza e conversão
 
-**Conceito:** viewport de modelagem, não carrossel decorativo.
-**Estrutura:** matriz de frames → seleção de estudo → órbita/plantas/cortes → decisões testadas → CTA de diagnóstico.
-**Visual:** azul/ciano técnico, eixos XYZ, snapping, wireframe, pranchas e camadas de materiais.
-**Interação:** navegação espacial assistida, mini-mapa, teclado/setas, controles de órbita limitados e botão “voltar ao enquadramento”.
-**Fallback:** cards, imagens e ficha técnica completos sem WebGL.
+| Referência | Reconhecimento | Princípio transferível |
+|---|---|---|
+| [iyO](https://www.awwwards.com/sites/iyo) | SOTD, 7,68; Design 7,90; Usabilidade 7,11 | Configuração de alto valor com resposta imediata. |
+| [National Grid CO2 Calculator](https://www.awwwards.com/sites/national-grid-co2-calculator) | Nominee | Etapas, cálculo e visualização progressiva. Não tratá-lo como SOTD. |
+| [Brunello Cucinelli AI E-com](https://www.awwwards.com/sites/brunello-cucinelli-ai-e-com) | SOTD, 7,19 | Linguagem de luxo e descoberta orientada por intenção; a usabilidade mais modesta recomenda cautela. |
 
-### 4.5 Portfólio — Arquivo Vivo / museu de execução
-
-**Conceito:** cada serviço executado é uma obra documentada; o conjunto é um acervo em permanente expansão.
-**Estrutura:** hall → coleção/categoria → peça → processo → evidência → materiais → serviço relacionado.
-**Visual:** bordô, carvão, etiquetas de arquivo, números de inventário, escala museológica e imagens com espaço de contemplação.
-**Interação:** mapa do museu, salas temáticas, zoom de detalhe, antes/depois controlado e retorno imediato ao índice.
-**Verdade:** só chamar de “obra executada” quando houver autoria e comprovação; referências e renders permanecem explicitamente rotulados.
-
-### 4.6 Orçamento — central de engenharia de custo
-
-**Conceito:** a área mais clara e previsível da experiência, mesmo mantendo a identidade imersiva.
-**Estrutura:** diagnóstico → ambiente → serviços → dados → visita → estimativa → próximos passos.
-**Visual:** máquina/central, verde de validação funcional, progresso persistente e resumo legível.
-**Interação:** uma decisão por vez, salvamento contínuo, edição reversível, explicação de premissas e confiança.
-**Guardrail:** motion nunca pode atrasar input, cálculo, validação ou envio.
+**Tradução FR — `PROPOSTO`:** manter o catálogo progressivo, transformar o resumo em instrumento de decisão, explicar incerteza antes do total e mostrar próximo passo humano. Evitar WebGL pesado no caminho de receita.
 
 ---
 
-## 5. Sistema comum para experiências diferentes
+## 6. Neuromarketing ético e UX de conversão
 
-As views devem parecer mundos diferentes sem se tornarem seis sites desconectados. Permanecem comuns:
+O termo “gatilho” não autoriza pressão artificial. A referência correta é reduzir carga cognitiva, incerteza e risco percebido.
 
-- marca, navegação, atalhos, grid-base, tokens e contraste;
-- transição entre mundos e indicação de localização;
-- linguagem direta/técnica/material;
-- foco, teclado, toque ≥44 px, safe areas e reduced-motion;
-- performance adaptativa e fallbacks sem WebGL/CDN;
-- CTA “Vamos dimensionar sua obra” e ponte consistente para o orçamento;
-- veracidade de imagens, números, preços e afirmações.
+### Padrões permitidos
+
+| Princípio | Aplicação FR | Condição |
+|---|---|---|
+| Autoridade técnica | Método, escopo, memorial, responsável e critérios verificáveis. | Só publicar dados comprovados. |
+| Transparência | “Estimativa orientativa”, faixa ±12%, itens estimados e visita técnica. | Linguagem visível antes do CTA. |
+| Progresso | Etapas e resumo persistente. | Permitir voltar/editar sem perder dados. |
+| Personalização | Nome do cliente e composição escolhida. | Usar somente dados fornecidos, com privacidade. |
+| Compromisso | Salvar composição e retomar. | Sem seleção pré-marcada ou custo oculto. |
+| Exclusividade legítima | Processo autoral e atendimento compatível com capacidade real. | Nunca inventar agenda limitada. |
+| Prova social | Case real com escopo, data e autorização. | Sem números ou avaliações não verificadas. |
+
+### Padrões proibidos
+
+- Contadores falsos, escassez fabricada e “últimas vagas” sem agenda real.
+- “150+ projetos”, “98% de aprovação”, prêmios, clientes ou depoimentos sem fonte.
+- Apresentar imagens de banco como obras executadas.
+- Esconder taxa, condição, desconto ou caráter estimativo.
+- Pré-selecionar opção mais cara ou dificultar voltar/remover.
+- Usar animação para bloquear, confundir ou empurrar a confirmação.
+
+### Fontes primárias de UX e compliance
+
+- Nielsen Norman Group, [quatro princípios para reduzir carga cognitiva](https://www.nngroup.com/articles/4-principles-reduce-cognitive-load/).
+- Nielsen Norman Group, [progressive disclosure](https://www.nngroup.com/articles/progressive-disclosure/).
+- Nielsen Norman Group, [scrolljacking e desorientação](https://www.nngroup.com/articles/scrolljacking-101/).
+- Chernev, Böckenholt e Goodman, [meta-análise sobre choice overload](https://doi.org/10.1016/j.jcps.2014.08.002): o efeito depende do contexto; não sustenta a regra simplista “menos opções sempre converte mais”.
+- Código de Defesa do Consumidor, [arts. 36–38](https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm): publicidade identificável, sustentação factual/técnica e proibição de comunicação enganosa.
 
 ---
 
-## 6. Ordem recomendada de implementação
+## 7. Sistema de design e gramática de movimento
 
-1. **Estabilização:** regressão visual, screenshots em 390/768/1440 px, console, performance e acessibilidade.
-2. **Design tokens:** consolidar tipografia, cor, ritmo, profundidade e motion.
-3. **Sobre:** construir a síntese editorial que define o vocabulário dos outros mundos.
-4. **Ambientes:** implementar o primeiro sistema curatorial.
-5. **Projetos 3D:** prototipar viewport + fallback antes de expandir WebGL.
-6. **Arquivo Vivo:** migrar somente trabalhos comprovados para fichas museológicas.
-7. **Orçamento:** integrar entradas curatoriais sem alterar o núcleo financeiro.
-8. **Site/PWA:** modularizar, criar rotas indexáveis, SEO, analytics consentido e cache.
-9. **Android:** somente após estabilidade web; preferir PWA/TWA ou wrapper auditado antes de manter uma base nativa separada.
+### Núcleo compartilhado
 
-## 7. Critério de “pronto” para a fase Awwwards
+- Verde-petróleo `#0A2F26` e `#123F34`: base e autoridade.
+- Laranja `#FF6B00`: energia da Forja e ação primária.
+- Ouro `#F6A700`: precisão, detalhe e valor.
+- Osso `#E6D6B5`: texto/contraste refinado.
+- Ciano/azul: somente telemetria e Modeling Space; nunca cor dominante da marca.
+- Tipografia atual: `Stardos Stencil` para títulos industriais, `Rokkitt` para narrativa, `Share Tech Mono` para dados.
 
-- Cada view tem tese, interação principal e fallback próprios.
-- O usuário sempre sabe onde está, o que pode fazer e como voltar.
-- Lighthouse e testes de campo são registrados, não presumidos.
-- Nenhum conteúdo fica inacessível sem motion, Canvas, WebGL, hover ou áudio.
-- O orçamento permanece mais simples que o portfólio.
-- Nenhuma referência visual é apresentada como obra executada.
-- O site continua reconhecível como Franco Romeu sem depender do logotipo.
+### Uma mecânica exclusiva por universo
+
+| Universo | Mecânica exclusiva | Evitar repetição |
+|---|---|---|
+| Home | Fluido mineral + forja luminosa | Não usar grade de museu. |
+| Sobre | Capítulos verticais e matéria em camadas | Não usar carrossel 3D. |
+| Ambientes | Trilho curatorial/salas | Não usar serpentina do Arquivo Vivo. |
+| Projetos 3D | Matriz espacial + waypoints | Não transformar tudo em scroll vertical. |
+| Portfólio | Acervo temporal/museológico | Não reutilizar cards da aba Ambientes. |
+| Orçamento | Cockpit progressivo e resumo persistente | Não usar efeitos que atrasem entrada/seleção. |
+
+### Orçamento de motion e resiliência
+
+1. Animar preferencialmente `transform` e `opacity`.
+2. Coalescer eventos de scroll/pointer em `requestAnimationFrame`.
+3. Suspender cenas quando view/documento não estiver visível.
+4. Evitar leitura/escrita alternada de layout no mesmo frame.
+5. Definir fallback de conteúdo equivalente para `prefers-reduced-motion` e WebGL indisponível.
+6. Alvo de qualidade: medir INP, LCP, CLS, memória e FPS por dispositivo; não prometer “60 fps” sem ensaio.
+7. Em WebGL, tratar `webglcontextlost`/`webglcontextrestored`, limitar DPR, texturas e draw calls.
+
+Referências técnicas: [INP](https://web.dev/articles/optimize-inp), [layout thrashing](https://web.dev/articles/avoid-large-complex-layouts-and-layout-thrashing), [`content-visibility`](https://web.dev/articles/content-visibility), [WCAG — animation from interactions](https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html), [WebGL best practices](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/WebGL_best_practices).
+
+---
+
+## 8. SEO e arquitetura futura
+
+### Estado atual
+
+- `lang="pt-BR"`, `charset`, viewport e `theme-color` existem.
+- Não há meta description, canonical, Open Graph, Twitter Card ou JSON-LD.
+- As seis views não têm URL própria; a navegação é controlada no DOM.
+- O título não muda por universo.
+
+### Antes do site público
+
+1. Definir domínio e ambiente canônico; só então publicar `<link rel="canonical">`.
+2. Criar rota/deep link para cada universo e título/description únicos.
+3. Adicionar `Organization`/`LocalBusiness` apenas com razão social, endereço, área atendida e identificadores verificados.
+4. Gerar sitemap/robots no ambiente web, não no HTML local.
+5. Usar cases reais como páginas indexáveis; não indexar referências de banco como portfólio.
+6. Medir eventos de navegação, expansão de categoria, serviço adicionado, erro de validação, PDF, WhatsApp e conclusão — com consentimento e minimização de dados.
+
+---
+
+## 9. Roadmap de implementação
+
+| Fase | Entrega | Critério de saída |
+|---|---|---|
+| 0 — Verdade e estabilidade | PDF, manifesto de ativos, termos comerciais e contratos de dados | Testes críticos verdes; nenhuma obra/alegação sem prova. |
+| 1 — Design system | Tokens, componentes, Motion Director e estados de fallback | Inventário visual aprovado em desktop/mobile/teclado/reduced motion. |
+| 2 — Sobre + Ambientes | Manifesto em capítulos e galeria curatorial | Sem duplicar mecânica; conteúdo acessível no fallback. |
+| 3 — Portfólio real | CMS/manifesto de cases e Arquivo Vivo | Cada item tem proveniência e autorização. |
+| 4 — Projetos 3D | Protótipo WebGL isolado + atlas 2D | INP/LCP/memória dentro do orçamento acordado; context loss recuperável. |
+| 5 — Calculadora | Clareza, telemetria, acessibilidade e teste com usuários | Sem regressão nos 115 serviços/cálculo/PDF/WhatsApp. |
+| 6 — Site | Rotas, SEO, CSP, analytics/consentimento, backend quando necessário | Lighthouse e testes reais; deploy observável e reversível. |
+| 7 — APK | Empacotamento, assets locais, permissões e testes WebView | PDF offline, navegação, armazenamento e links externos testados em Android. |
+
+---
+
+## 10. Critérios de aceite para qualquer próxima mudança
+
+- Zero redução dos 115 serviços e 15 categorias.
+- Valores e configurações idênticos nos testes de regressão.
+- PDF, WhatsApp, CEP, IQE, busca, resumo e persistência operacionais.
+- Uma única aba ativa e URL/estado coerentes.
+- Nenhum ID estático duplicado nem erro de sintaxe/runtime.
+- Operação por teclado, foco visível e nomes acessíveis.
+- Sem obra, métrica, prêmio, urgência ou benefício não comprovado.
+- Fallback equivalente em mobile, reduced motion e indisponibilidade de WebGL/CDN.
+- Registro em `CHANGELOG.md` distinguindo `implemented`, `proposed`, `content-dependent` e `rejected`.
+
+---
+
+## 11. Conclusão executiva
+
+A base atual já possui uma identidade forte e um motor de orçamento substancial, mas ainda não é uma experiência 3D/WebGL e não deve ser descrita como tal. A prioridade correta é: verdade do acervo, resiliência do PDF e da conversão, unificação do motion e só então experiências distintas por aba. O padrão Awwwards deve funcionar como repertório de princípios — narrativa, materialidade, orientação e resposta — sem cópia de composição, código ou claims.

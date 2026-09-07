@@ -1,0 +1,120 @@
+{
+  "source": {
+    "value": "https://vanlent.dev/",
+    "capture": "captures/vanlent.dev/20260821-135506",
+    "capturedAt": "2026-08-21T16:55:08.369Z",
+    "status": "observed",
+    "evidence": "capture-meta.json; requestedUrl/finalUrls; desktop 1440x900 and mobile 390x844"
+  },
+  "confidence": {
+    "overall": "high for computed visual tokens and two captured layouts; medium for dependency detection; low for uncaptured states",
+    "status": "observed",
+    "evidence": "design-tokens.json, layout-map.json, animations.json, dependencies.json, resources-manifest.json; deepCapture=false"
+  },
+  "colors": [
+    {"name":"background.primary","value":"#1c1c1c","status":"observed","evidence":"design-tokens.json; desktop/mobile; --background-primary; computed rgb(28, 28, 28)"},
+    {"name":"background.inverse","value":"#fafafa","status":"observed","evidence":"design-tokens.json; desktop/mobile; --background-inverse"},
+    {"name":"background.secondary","value":"rgba(73,73,73,.2)","status":"observed","evidence":"design-tokens.json; desktop/mobile; --background-secondary"},
+    {"name":"background.tertiary","value":"#27272a","status":"observed","evidence":"design-tokens.json; desktop/mobile; --background-tertiary"},
+    {"name":"text.primary","value":"#fafafa","status":"observed","evidence":"design-tokens.json; desktop/mobile; --text-primary"},
+    {"name":"text.secondary","value":"#d4d4d8","status":"observed","evidence":"design-tokens.json; desktop/mobile; --text-secondary"},
+    {"name":"text.tertiary","value":"#a1a1aa","status":"observed","evidence":"design-tokens.json; desktop/mobile; --text-tertiary"},
+    {"name":"text.quaternary","value":"#71717a","status":"observed","evidence":"design-tokens.json; desktop/mobile; --text-quaternary"},
+    {"name":"border.primary","value":"#404040","status":"observed","evidence":"design-tokens.json; desktop/mobile; --border-primary"},
+    {"name":"grid.line.large","value":"#282727","status":"observed","evidence":"design-tokens.json; desktop/mobile; --grid-line-large"},
+    {"name":"grid.line.small","value":"rgba(255,255,255,.05)","status":"observed","evidence":"design-tokens.json; desktop/mobile; --grid-line-small"},
+    {"name":"accent.primary","value":"#57ded3","status":"observed","evidence":"design-tokens.json; desktop/mobile; --accent-primary and --cta-primary"},
+    {"name":"accent.hover","value":"#43cabc","status":"observed","evidence":"design-tokens.json; desktop/mobile; --accent-hover and --cta-hover"},
+    {"name":"framework.utilityColorsUsage","value":null,"status":"unavailable","evidence":"resources/css/85b910ff11d5b23795ed.css declares red/amber/yellow/green tokens, but declaration does not prove expressive use"}
+  ],
+  "typography": [
+    {"name":"family.primary","value":"Montserrat, Montserrat Fallback, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif","status":"observed","evidence":"design-tokens.json; desktop/mobile; fontFamilies; 3684/3438 computed occurrences"},
+    {"name":"family.mono","value":"IBM Plex Mono, IBM Plex Mono Fallback","status":"observed","evidence":"design-tokens.json; desktop/mobile; fontFamilies; 2/6 computed occurrences"},
+    {"name":"weights","value":[200,300,500],"status":"observed","evidence":"design-tokens.json; desktop/mobile; fontWeights"},
+    {"name":"sectionTitle.desktop","value":{"fontSize":"39.0667px","lineHeight":"39.0667px","weight":200,"transform":"uppercase"},"status":"observed","evidence":"layout-map.json; desktop 1440x900; div.heading-reveal__inner > h2..."},
+    {"name":"sectionTitle.mobile","value":{"fontSize":"33.2px","lineHeight":"33.2px","weight":200,"transform":"uppercase"},"status":"observed","evidence":"layout-map.json; mobile 390x844; div.heading-reveal__inner > h2..."},
+    {"name":"expressiveTitle.desktop","value":{"fontSize":"50.1333px","lineHeight":"55.1467px","weight":300},"status":"observed","evidence":"layout-map.json; desktop 1440x900; div > h3.grid-font--5xl.flex"},
+    {"name":"expressiveTitle.mobile","value":{"fontSize":"38.4px","lineHeight":"42.24px","weight":300},"status":"observed","evidence":"layout-map.json; mobile 390x844; div > h3.grid-font--5xl.flex"},
+    {"name":"visualCharacter","value":"light-weight uppercase hierarchy with sparse utility labels","status":"inferred","evidence":"screenshots/desktop.png and screenshots/mobile.png plus observed weights, transforms and sizes"}
+  ],
+  "spacing": [
+    {"name":"base","value":"4px","status":"observed","evidence":"design-tokens.json; desktop/mobile; --spacing=.25rem"},
+    {"name":"recurring","value":["4px","8px","16px"],"status":"observed","evidence":"design-tokens.json; desktop/mobile; spacing frequency inventory"},
+    {"name":"contentInset.desktop","value":"45px","status":"observed","evidence":"layout-map.json; desktop 1440x900; #header > div.relative.flex x=45 width=1350"},
+    {"name":"contentInset.mobile","value":"36px","status":"observed","evidence":"layout-map.json; mobile 390x844; #header > div.relative.flex x=36 width=318"}
+  ],
+  "radii": [
+    {"name":"computedNonZero","value":[],"status":"observed","evidence":"design-tokens.json; desktop/mobile; radii=[]"},
+    {"name":"controlReset","value":"0","status":"observed","evidence":"resources/css/85b910ff11d5b23795ed.css; button/input/select reset"},
+    {"name":"modalScrollbarThumb","value":"3px","status":"observed","evidence":"resources/css/85b910ff11d5b23795ed.css; .modal-scrollbar::-webkit-scrollbar-thumb"}
+  ],
+  "shadows": [
+    {"name":"gridCell","value":"rgb(40, 39, 39) 1px 1px 0 0 inset","status":"observed","evidence":"design-tokens.json; desktop/mobile; shadows; 1308/844 occurrences"},
+    {"name":"edgeUtilities","value":"1px inset shadows on individual edges","status":"observed","evidence":"resources/css/85b910ff11d5b23795ed.css; .s-border-t/r/b/l/x/y and .grid-row"},
+    {"name":"softElevationRole","value":"used sparingly for grid depth/elevation states","status":"inferred","evidence":"resources/css/85b910ff11d5b23795ed.css; .grid-cell-elevated and .grid-cell-depth; uncaptured state appearance"}
+  ],
+  "layout": [
+    {"name":"desktop.metrics","value":{"viewport":"1440x900","document":"1440x17100","dpr":1,"elements":11715},"status":"observed","evidence":"capture-meta.json and layout-map.json; desktop.metrics"},
+    {"name":"mobile.metrics","value":{"viewport":"390x844","document":"390x7208","dpr":1,"elements":10873},"status":"observed","evidence":"capture-meta.json and layout-map.json; mobile.metrics"},
+    {"name":"grid.desktop","value":{"module":"75px","rowsPerViewport":12,"columnsPerViewport":20,"contentColumns":18,"maxWidth":"1350px","xOffset":"15px"},"status":"observed","evidence":"design-tokens.json; desktop; --grid-*; layout-map.json .grid-row"},
+    {"name":"grid.mobile","value":{"module":"53px","rowsPerViewport":16,"columnsPerViewport":8,"contentColumns":6,"maxWidth":"318px","xOffset":"19px"},"status":"observed","evidence":"design-tokens.json; mobile; --grid-*; layout-map.json .grid-row"},
+    {"name":"header.desktop","value":{"height":"75px","position":"fixed","zIndex":50},"status":"observed","evidence":"layout-map.json; desktop; #header"},
+    {"name":"mobileNavigation","value":{"topModule":"53px","bottomControls":"53x53px"},"status":"observed","evidence":"layout-map.json; mobile; #header > div.relative.flex and #bottom-nav > button.relative.z-10"},
+    {"name":"hero.desktop","value":{"sectionHeight":"1800px","stickyHeight":"900px","grid":"1350x450px","scrollDistance":"1800px"},"status":"observed","evidence":"layout-map.json; desktop; #hero-section and child sticky/grid; design-tokens.json --grid-hero-*"},
+    {"name":"hero.mobile","value":{"sectionHeight":"848px","grid":"318x424px","scrollDistance":"0px"},"status":"observed","evidence":"layout-map.json; mobile; #hero-section and .hero-grid; design-tokens.json --grid-hero-*"},
+    {"name":"work.desktop","value":{"sectionHeight":"5400px","pattern":"sticky/pinning"},"status":"observed","evidence":"layout-map.json; desktop; #work-section and #work-section > div.pinning-container"},
+    {"name":"work.mobile","value":{"sectionHeight":"2120px","pattern":"vertical flow"},"status":"observed","evidence":"layout-map.json; mobile; #work-section"},
+    {"name":"services.desktop","value":{"sectionHeight":"5400px","pattern":"sticky/pinning"},"status":"observed","evidence":"layout-map.json; desktop; #services-section and child .pinning-container"},
+    {"name":"services.mobile","value":{"sectionHeight":"1325px","pattern":"vertical flow"},"status":"observed","evidence":"layout-map.json; mobile; #services-section"},
+    {"name":"gridPurpose","value":"alignment, visual texture and scroll rhythm","status":"inferred","evidence":"repeated .section-grid/.grid-row geometry in layout-map.json and screenshots at both viewports"}
+  ],
+  "breakpoints": [
+    {"name":"maxMobile","value":"max-width: 768px","status":"observed","evidence":"design-tokens.json; mediaQueries; resources/css/85b910ff11d5b23795ed.css @media"},
+    {"name":"sm","value":"min-width: 40rem","status":"observed","evidence":"design-tokens.json; mediaQueries"},
+    {"name":"md","value":"min-width: 48rem","status":"observed","evidence":"design-tokens.json; mediaQueries"},
+    {"name":"lg","value":"min-width: 64rem","status":"observed","evidence":"design-tokens.json; mediaQueries"},
+    {"name":"xl","value":"min-width: 80rem","status":"observed","evidence":"design-tokens.json; mediaQueries"},
+    {"name":"2xl","value":"min-width: 96rem","status":"observed","evidence":"design-tokens.json; mediaQueries"},
+    {"name":"componentMappingBetweenCaptures","value":null,"status":"unavailable","evidence":"only 390px and 1440px viewports were captured"}
+  ],
+  "motion": [
+    {"name":"sectionReveal","value":{"property":"transform","from":"translateY(100%)","to":"translateY(0%)","duration":"600ms","easing":"cubic-bezier(.22,1,.36,1)"},"status":"observed","evidence":"resources/css/85b910ff11d5b23795ed.css; .heading-reveal__inner and .reveal-y__inner; animations.json mobile activeAtFinalState"},
+    {"name":"letterEnter","value":{"property":"opacity","from":0,"to":1,"duration":"100ms","easing":"ease","staggerObserved":"17.5ms and 50ms groups"},"status":"observed","evidence":"animations.json; desktop initial sampledDuringExercise; span.textreveal-letter"},
+    {"name":"letterExit","value":{"property":"opacity","from":1,"to":0,"duration":"150ms","easing":"ease","delay":"0ms"},"status":"observed","evidence":"animations.json; desktop/mobile scroll phases and mobile activeAtFinalState; span.textreveal-letter"},
+    {"name":"imageReveal","value":{"property":"clip-path","from":"inset(100% 0 0)","to":"inset(0)","activeDuration":"2s","easing":"cubic-bezier(.22,1,.36,1)"},"status":"observed","evidence":"resources/css/85b910ff11d5b23795ed.css; .reveal-y--image__inner and active selector"},
+    {"name":"galleryThumbnails.desktop","value":{"duration":"650ms","easing":"cubic-bezier(.33,1,.68,1)","stagger":"50ms"},"status":"observed","evidence":"resources/css/85b910ff11d5b23795ed.css; .device-mockup-gallery-thumbnails--desktop"},
+    {"name":"galleryThumbnails.mobile","value":{"duration":"500ms","easing":"cubic-bezier(.33,1,.68,1)","stagger":"70ms"},"status":"observed","evidence":"resources/css/85b910ff11d5b23795ed.css; .device-mockup-gallery-thumbnails--mobile"},
+    {"name":"controlExpand","value":{"property":"width","duration":"200ms","easing":"cubic-bezier(.4,0,.2,1)","targetsObserved":["75px","150px"]},"status":"observed","evidence":"animations.json; desktop initial; header controls and a.btn-hover-accent.h-full"},
+    {"name":"loaderActivate","value":{"duration":"800ms","keyframes":["scale(.67)","scaleX(.67)","scale(1)"]},"status":"observed","evidence":"animations.json keyframes activate-box; resources/css/85b910ff11d5b23795ed.css .loader-progress-box"},
+    {"name":"reducedMotionQuery","value":"prefers-reduced-motion: reduce","status":"observed","evidence":"design-tokens.json; mediaQueries"},
+    {"name":"hoverCapturedResult","value":null,"status":"unavailable","evidence":"animations.json; hoverChanges=[]"}
+  ],
+  "dependencies": [
+    {"name":"WebGL canvas","confidence":"high","status":"observed","evidence":"dependencies.json; desktop/mobile; div > canvas sized to viewport; browser-console.json WebGL warnings"},
+    {"name":"GSAP","confidence":"medium","status":"observed","evidence":"dependencies.json; desktop/mobile; detected.gsap=true; public JS bundles not saved"},
+    {"name":"Three.js","confidence":"medium","status":"observed","evidence":"dependencies.json; desktop/mobile; detected.three=true; public JS bundles not saved"},
+    {"name":"Tailwind-compatible utility CSS","confidence":"high","status":"observed","evidence":"resources/css/85b910ff11d5b23795ed.css; --tw-* properties, utility classes and @layer rules"},
+    {"name":"Next.js/Turbopack delivery","confidence":"medium-high","status":"inferred","evidence":"dependencies.json and resources-manifest.json; /_next/static/chunks URLs and turbopack-named chunk; detected.next=false"},
+    {"name":"Montserrat variable font","confidence":"high","status":"observed","evidence":"resources/css/85b910ff11d5b23795ed.css @font-face 100 900; design-tokens.json computed usage"},
+    {"name":"IBM Plex Mono","confidence":"high","status":"observed","evidence":"resources/css/85b910ff11d5b23795ed.css @font-face weight 400; design-tokens.json computed usage"},
+    {"name":"exactLibraryVersions","confidence":"none","status":"unavailable","evidence":"resources-manifest.json; script resources localFile=null; deepCapture=false"}
+  ],
+  "components": [
+    {"name":"persistentGridFrame","value":"square-cell background/alignment frame with inset 1px lines","status":"observed","evidence":"layout-map.json; desktop/mobile; .section-grid and .grid-row; CSS .grid-row/.grid-cell"},
+    {"name":"fixedHeader","value":"modular top navigation with theme control","status":"observed","evidence":"layout-map.json; desktop/mobile; #header and #theme-switch"},
+    {"name":"mobileBottomNav","value":"fixed modular bottom controls","status":"observed","evidence":"layout-map.json; mobile 390x844; #bottom-nav and sibling buttons at y=791"},
+    {"name":"gridHero","value":"labels, split word fields and centered viewport canvas","status":"observed","evidence":"layout-map.json; .hero-grid/.hero-grid-part; dependencies.json div > canvas"},
+    {"name":"pinnedWorkGallery","value":"section title, CTA, desktop/mobile mockups and named preview buttons","status":"observed","evidence":"layout-map.json; desktop/mobile; #work-section and .device-mockup-gallery-thumb > button"},
+    {"name":"servicesResults","value":"grid-aligned long-form section with results subregion","status":"observed","evidence":"layout-map.json; desktop/mobile; #services-section and desktop #results-section"},
+    {"name":"exactStateContracts","value":null,"status":"unavailable","evidence":"capture lacks complete post-click/menu/theme/language/gallery state traces"}
+  ],
+  "unavailable": [
+    {"name":"privateSourceCode","value":null,"status":"unavailable","evidence":"capture-meta.json limitation; public browser delivery only"},
+    {"name":"savedJavaScriptBundles","value":null,"status":"unavailable","evidence":"resources-manifest.json; script entries localFile=null; deepCapture=false"},
+    {"name":"libraryVersionsAndInternalConfiguration","value":null,"status":"unavailable","evidence":"dependencies.json note and absent local bundles"},
+    {"name":"3DAssetsShadersAndSceneParameters","value":null,"status":"unavailable","evidence":"canvas observed but related assets/bundles were not saved"},
+    {"name":"intermediateResponsiveStates","value":null,"status":"unavailable","evidence":"capture-meta.json contains only 390x844 and 1440x900"},
+    {"name":"completeHoverClickGestureAndLongTimingStates","value":null,"status":"unavailable","evidence":"capture-meta.json limitations; animations.json hoverChanges=[]"},
+    {"name":"sustainedPerformanceMetrics","value":null,"status":"unavailable","evidence":"browser-console.json has WebGL stalls, but no FPS, memory, energy or Core Web Vitals trace"}
+  ]
+}

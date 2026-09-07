@@ -1,0 +1,102 @@
+<div id="fr-universe-blueprint" aria-label="Mapa interativo dos seis universos Franco Romeu">
+  <div class="card frub-summary" aria-live="polite">
+    <span class="text-small text-muted" id="frub-code">FR / 01</span>
+    <strong id="frub-name">Forja Industrial</strong>
+    <span class="text-small" id="frub-purpose">Orientação imediata e primeira impressão.</span>
+  </div>
+  <svg class="frub-orbit" viewBox="0 0 720 250" role="img" aria-labelledby="frub-title frub-desc">
+    <title id="frub-title">Arquitetura dos seis universos</title>
+    <desc id="frub-desc">Seis destinos distintos ligados pelo núcleo de marca Franco Romeu.</desc>
+    <path class="frub-line" d="M82 125 C175 18 545 18 638 125 C545 232 175 232 82 125Z"></path>
+    <path class="frub-line frub-line-inner" d="M205 125 C255 62 465 62 515 125 C465 188 255 188 205 125Z"></path>
+    <g class="frub-core">
+      <circle cx="360" cy="125" r="42"></circle>
+      <text x="360" y="121">FR</text>
+      <text class="frub-core-caption" x="360" y="141">DNA ÚNICO</text>
+    </g>
+    <g id="frub-marker" class="frub-marker" transform="translate(82 125)">
+      <circle r="12"></circle>
+      <circle class="frub-marker-pulse" r="21"></circle>
+    </g>
+    <g class="frub-nodes" aria-hidden="true">
+      <circle cx="82" cy="125" r="5"></circle>
+      <circle cx="220" cy="35" r="5"></circle>
+      <circle cx="500" cy="35" r="5"></circle>
+      <circle cx="638" cy="125" r="5"></circle>
+      <circle cx="500" cy="215" r="5"></circle>
+      <circle cx="220" cy="215" r="5"></circle>
+    </g>
+  </svg>
+  <div class="viz-grid frub-grid" role="group" aria-label="Selecionar universo">
+    <button type="button" class="btn viz-tile is-selected" aria-pressed="true" data-index="0">Forja</button>
+    <button type="button" class="btn viz-tile" aria-pressed="false" data-index="1">Manifesto</button>
+    <button type="button" class="btn viz-tile" aria-pressed="false" data-index="2">Atlas</button>
+    <button type="button" class="btn viz-tile" aria-pressed="false" data-index="3">Matriz</button>
+    <button type="button" class="btn viz-tile" aria-pressed="false" data-index="4">Arquivo</button>
+    <button type="button" class="btn viz-tile" aria-pressed="false" data-index="5">Decisão</button>
+  </div>
+  <div class="viz-row text-small frub-legend" aria-label="Leitura do mapa">
+    <span><i class="frub-swatch frub-swatch-core"></i>DNA de marca</span>
+    <span><i class="frub-swatch frub-swatch-world"></i>Mecânica própria</span>
+    <span><i class="frub-swatch frub-swatch-fallback"></i>Fallback equivalente</span>
+  </div>
+</div>
+<style>
+  #fr-universe-blueprint{width:100%;color:var(--foreground)}
+  #fr-universe-blueprint .frub-summary{display:grid;grid-template-columns:auto 1fr;gap:.25rem 1rem;align-items:baseline;margin-bottom:.5rem}
+  #fr-universe-blueprint .frub-summary strong{font-weight:500}
+  #fr-universe-blueprint .frub-summary>:last-child{grid-column:2}
+  #fr-universe-blueprint .frub-orbit{width:100%;height:auto;overflow:visible;color:var(--foreground)}
+  #fr-universe-blueprint .frub-line{fill:none;stroke:var(--border);stroke-width:2}
+  #fr-universe-blueprint .frub-line-inner{stroke-dasharray:5 8;opacity:.72}
+  #fr-universe-blueprint .frub-core circle{fill:color-mix(in srgb,var(--viz-series-1) 18%,var(--card));stroke:var(--viz-series-1);stroke-width:2}
+  #fr-universe-blueprint .frub-core text{fill:var(--foreground);font-weight:500;text-anchor:middle}
+  #fr-universe-blueprint .frub-core .frub-core-caption{fill:var(--muted-foreground);font-weight:400}
+  #fr-universe-blueprint .frub-nodes circle{fill:var(--muted-foreground)}
+  #fr-universe-blueprint .frub-marker{transition:transform .5s cubic-bezier(.22,1,.36,1)}
+  #fr-universe-blueprint .frub-marker circle:first-child{fill:var(--viz-series-1)}
+  #fr-universe-blueprint .frub-marker-pulse{fill:color-mix(in srgb,var(--viz-series-1) 15%,transparent);stroke:var(--viz-series-1);stroke-width:1}
+  #fr-universe-blueprint .frub-grid{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:.25rem}
+  #fr-universe-blueprint .frub-legend{justify-content:center;margin-top:.5rem;color:var(--muted-foreground)}
+  #fr-universe-blueprint .frub-legend span{display:inline-flex;align-items:center;gap:.35rem}
+  #fr-universe-blueprint .frub-swatch{display:inline-block;width:.65rem;height:.65rem;border-radius:50%;background:var(--border)}
+  #fr-universe-blueprint .frub-swatch-core{background:var(--viz-series-1)}
+  #fr-universe-blueprint .frub-swatch-world{background:var(--viz-series-2)}
+  #fr-universe-blueprint .frub-swatch-fallback{background:var(--muted-foreground)}
+  @media(max-width:480px){#fr-universe-blueprint .frub-summary{grid-template-columns:1fr}#fr-universe-blueprint .frub-summary>:last-child{grid-column:1}#fr-universe-blueprint .frub-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media(prefers-reduced-motion:reduce){#fr-universe-blueprint .frub-marker{transition:none}}
+</style>
+<script>
+  (function(){
+    "use strict";
+    const root=document.getElementById("fr-universe-blueprint");
+    if(!root)return;
+    const worlds=[
+      {code:"FR / 01",name:"Forja Industrial",purpose:"Orientação imediata e primeira impressão.",point:[82,125]},
+      {code:"FR / 02",name:"Manifesto Bruto + Refinado",purpose:"Confiança por método, matéria e prova conceitual.",point:[220,35]},
+      {code:"FR / 03",name:"Atlas Material",purpose:"Descoberta guiada de linguagens arquitetônicas.",point:[500,35]},
+      {code:"FR / 04",name:"Matriz Arquitetônica",purpose:"Autoridade técnica por navegação espacial.",point:[638,125]},
+      {code:"FR / 05",name:"Arquivo Vivo",purpose:"Acervo verificável e redução de risco percebido.",point:[500,215]},
+      {code:"FR / 06",name:"Sala de Decisão",purpose:"Orçamento claro, editável e sem ruído.",point:[220,215]}
+    ];
+    const code=root.querySelector("#frub-code");
+    const name=root.querySelector("#frub-name");
+    const purpose=root.querySelector("#frub-purpose");
+    const marker=root.querySelector("#frub-marker");
+    const buttons=Array.from(root.querySelectorAll("[data-index]"));
+    function select(index){
+      const world=worlds[index];
+      if(!world)return;
+      code.textContent=world.code;
+      name.textContent=world.name;
+      purpose.textContent=world.purpose;
+      marker.setAttribute("transform","translate("+world.point[0]+" "+world.point[1]+")");
+      buttons.forEach((button,buttonIndex)=>{
+        const active=buttonIndex===index;
+        button.classList.toggle("is-selected",active);
+        button.setAttribute("aria-pressed",String(active));
+      });
+    }
+    buttons.forEach(button=>button.addEventListener("click",()=>select(Number(button.dataset.index))));
+  })();
+</script>

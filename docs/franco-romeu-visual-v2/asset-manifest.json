@@ -1,0 +1,963 @@
+{
+  "package": "franco-romeu-site-v2-remaster-publicacao",
+  "generatedAt": "2026-08-28T00:00:00Z",
+  "fileCount": 191,
+  "totalBytes": 19924270,
+  "files": [
+    {
+      "path": "LEIA-ME-PUBLICACAO.md",
+      "bytes": 1242,
+      "sha256": "d3a0681008cd9d07a8549132c5837ef05a05cfa5f1077479f9a8143e785cf585"
+    },
+    {
+      "path": "assets/brand/franco-romeu-lockup-horizontal.svg",
+      "bytes": 31322,
+      "sha256": "ed988641d3baf6b0465d9184009aee9aff25d85b8469f889b8db42489db229ed"
+    },
+    {
+      "path": "assets/brand/franco-romeu-lockup-vertical.svg",
+      "bytes": 31146,
+      "sha256": "9323e68c40f18a355738045d208e2a1ec0b89a9637bd273549a2a58bf3122f26"
+    },
+    {
+      "path": "assets/brand/franco-romeu-logomark-main.svg",
+      "bytes": 10749,
+      "sha256": "4854cbb753a9dca1838b226d3e7f6bba39535fe52f52beb9ee193cc1b5016c98"
+    },
+    {
+      "path": "assets/brand/franco-romeu-logomark-premium.svg",
+      "bytes": 53551,
+      "sha256": "d177f9a8d702b159a7c558d0d91015e198f7feb2f71566746f16919a3c851c31"
+    },
+    {
+      "path": "assets/brand/franco-romeu-selo-institucional.svg",
+      "bytes": 42134,
+      "sha256": "cd5b00907c1983f99f11452a76dd0a1a3d4d067f08a34a03be67cce29903c6ce"
+    },
+    {
+      "path": "assets/brand/franco-romeu-watermark.svg",
+      "bytes": 21420,
+      "sha256": "2a3306fc4656e0ff710ad21d0c7eebf94b2c6e590f846f4221409f0a42098487"
+    },
+    {
+      "path": "assets/brand/svg-masters/franco-romeu-cartao-visita-frente-remaster.svg",
+      "bytes": 114210,
+      "sha256": "49f9d49a7678deed0d9ee1c3c2afd2737ab36069f4ae499210a45e1fd2eee292"
+    },
+    {
+      "path": "assets/brand/svg-masters/franco-romeu-cartao-visita-verso-remaster.svg",
+      "bytes": 144197,
+      "sha256": "6cedfb3813eef889cb0eb9aa74f45d491e3b5939ede6a8840f6392f312060a86"
+    },
+    {
+      "path": "assets/brand/svg-masters/franco-romeu-favicon-main.svg",
+      "bytes": 11406,
+      "sha256": "530ca2dd58f1413526eb5f5e8451a2e33069b1105fdaebad4d3278b237e08c3c"
+    },
+    {
+      "path": "assets/brand/svg-masters/franco-romeu-favicon-micro-main.svg",
+      "bytes": 10950,
+      "sha256": "41e0b4fb88e40ee196710415fd7c31e2799c383ddc2144c4d1d8b374f090bdd6"
+    },
+    {
+      "path": "assets/brand/svg-masters/franco-romeu-favicon-micro-mono-black.svg",
+      "bytes": 10950,
+      "sha256": "3e0e99dfebbbb273ed38df8301469f10ac624078e64aea9927e6fd11f9f718bd"
+    },
+    {
+      "path": "assets/brand/svg-masters/franco-romeu-favicon-micro-mono-white.svg",
+      "bytes": 10950,
+      "sha256": "79e289eccca234cdc3d641aa929be445611664a822ce58e6854dbdbadb42dfea"
+    },
+    {
+      "path": "assets/brand/svg-masters/franco-romeu-favicon-mono-black.svg",
+      "bytes": 11406,
+      "sha256": "b12598635d91421d509924da8179d30c9eb643158fa30fba1a2cc965e92bc715"
+    },
+    {
+      "path": "assets/brand/svg-masters/franco-romeu-favicon-mono-white.svg",
+      "bytes": 11406,
+      "sha256": "40ae4fe111ec04aeb68ecfbec1877cf93672af314221a3ab44fd4565cdcb53d0"
+    },
+    {
+      "path": "assets/brand/svg-masters/franco-romeu-lockup-couro-premium.svg",
+      "bytes": 115370,
+      "sha256": "95e016f315163f85553080cc938e8ce0343dc578ab62a7ebe8e8a60c4cad647f"
+    },
+    {
+      "path": "assets/brand/svg-masters/franco-romeu-lockup-horizontal-main.svg",
+      "bytes": 31322,
+      "sha256": "ed988641d3baf6b0465d9184009aee9aff25d85b8469f889b8db42489db229ed"
+    },
+    {
+      "path": "assets/brand/svg-masters/franco-romeu-lockup-horizontal-mono-black.svg",
+      "bytes": 31124,
+      "sha256": "b66d6db62872981a153e769ece27625735919a1973ab8da9061ac2c5806444a8"
+    },
+    {
+      "path": "assets/brand/svg-masters/franco-romeu-lockup-horizontal-mono-white.svg",
+      "bytes": 31124,
+      "sha256": "7f57342d37447938ffb1417bf806f32831a035546f2e8caa8c632e7b52eaa958"
+    },
+    {
+      "path": "assets/brand/svg-masters/franco-romeu-lockup-horizontal-premium-remaster.svg",
+      "bytes": 74379,
+      "sha256": "d34c23dad29f6d98c9ec29366d7dd772e3c4bc4f7db312f2050ca470896159ce"
+    },
+    {
+      "path": "assets/brand/svg-masters/franco-romeu-lockup-vertical-main.svg",
+      "bytes": 31146,
+      "sha256": "9323e68c40f18a355738045d208e2a1ec0b89a9637bd273549a2a58bf3122f26"
+    },
+    {
+      "path": "assets/brand/svg-masters/franco-romeu-lockup-vertical-mono-black.svg",
+      "bytes": 30941,
+      "sha256": "7933e8d8a7ae93c8d8e82ee75f29df3e509f4bb0a109785589580661f8f81a87"
+    },
+    {
+      "path": "assets/brand/svg-masters/franco-romeu-lockup-vertical-mono-white.svg",
+      "bytes": 30941,
+      "sha256": "6999b63382e3194d12074cb4a26ff1e896a03c39a5ac25dc2ee8f9526c7f6599"
+    },
+    {
+      "path": "assets/brand/svg-masters/franco-romeu-lockup-vertical-premium-remaster.svg",
+      "bytes": 74210,
+      "sha256": "1afc32fcf458c4da791fd90b07b27d1c83df3052797e5a27c0ea511554a6ac38"
+    },
+    {
+      "path": "assets/brand/svg-masters/franco-romeu-logomark-main.svg",
+      "bytes": 10749,
+      "sha256": "4854cbb753a9dca1838b226d3e7f6bba39535fe52f52beb9ee193cc1b5016c98"
+    },
+    {
+      "path": "assets/brand/svg-masters/franco-romeu-logomark-mono-black.svg",
+      "bytes": 10749,
+      "sha256": "42b7f02290b820efbd5672ae5bd4e19e3d0f3c0c9317ea462310e628afc739f6"
+    },
+    {
+      "path": "assets/brand/svg-masters/franco-romeu-logomark-mono-white.svg",
+      "bytes": 10749,
+      "sha256": "f3305cfaeb2e684b1c5cc94ef4ba13818f2c5f54e9e61aaf16dfd2479a0f66e3"
+    },
+    {
+      "path": "assets/brand/svg-masters/franco-romeu-logomark-outline-technical.svg",
+      "bytes": 22536,
+      "sha256": "26dbba1c531a8d135ca830251a048800e77906bc3d973fe1bb8fe1cb0b5463b4"
+    },
+    {
+      "path": "assets/brand/svg-masters/franco-romeu-logomark-premium-diamond-gold.svg",
+      "bytes": 53551,
+      "sha256": "d177f9a8d702b159a7c558d0d91015e198f7feb2f71566746f16919a3c851c31"
+    },
+    {
+      "path": "assets/brand/svg-masters/franco-romeu-logomark-watermark.svg",
+      "bytes": 21420,
+      "sha256": "2a3306fc4656e0ff710ad21d0c7eebf94b2c6e590f846f4221409f0a42098487"
+    },
+    {
+      "path": "assets/brand/svg-masters/franco-romeu-logotype-main.svg",
+      "bytes": 20279,
+      "sha256": "46f2cdd36e3992cf68cc1eb59f65fdb6a930845e422367566000bd69c401483a"
+    },
+    {
+      "path": "assets/brand/svg-masters/franco-romeu-logotype-mono-black.svg",
+      "bytes": 20279,
+      "sha256": "08bbf5ad036733169a91765b0090e773ba5bd910acb429e161383da692fdf2f5"
+    },
+    {
+      "path": "assets/brand/svg-masters/franco-romeu-logotype-mono-white.svg",
+      "bytes": 20279,
+      "sha256": "0b7488eeba00e05fad4efa57e6bed870a9252cff950d94383febf0addf6dfa8c"
+    },
+    {
+      "path": "assets/brand/svg-masters/franco-romeu-papel-timbrado-a4-main.svg",
+      "bytes": 102981,
+      "sha256": "fb580a9be1914ea65b838a2493cc99d4e6f259579649418054cf95b1879c066c"
+    },
+    {
+      "path": "assets/brand/svg-masters/franco-romeu-selo-institucional-main.svg",
+      "bytes": 42134,
+      "sha256": "cd5b00907c1983f99f11452a76dd0a1a3d4d067f08a34a03be67cce29903c6ce"
+    },
+    {
+      "path": "assets/brand/svg-masters/franco-romeu-selo-institucional-mono-black.svg",
+      "bytes": 42134,
+      "sha256": "b47fd78d01a29282c82659d9bbc639070a3ef6548ccb97ae066242811be89240"
+    },
+    {
+      "path": "assets/brand/svg-masters/franco-romeu-selo-institucional-mono-white.svg",
+      "bytes": 42134,
+      "sha256": "468b078c298b7c0df278a88f2f69250b96e4c8d5af76b8f6e3bc3640d2254546"
+    },
+    {
+      "path": "assets/icons/apple-touch-icon.png",
+      "bytes": 15423,
+      "sha256": "c685d232d9beaedae01f8cab567ae12a49dd6a28033449528c69042aac138702"
+    },
+    {
+      "path": "assets/icons/favicon-16x16.png",
+      "bytes": 559,
+      "sha256": "7ebdbc0e7f1e9551af4ed99d695a0676a849c0e00050031930e0a95855ade8c2"
+    },
+    {
+      "path": "assets/icons/favicon-32x32.png",
+      "bytes": 1129,
+      "sha256": "7ce2d6f307b82553abe2da994e908875da3c26aa3dedde11caf7509371677fc7"
+    },
+    {
+      "path": "assets/icons/favicon.svg",
+      "bytes": 11406,
+      "sha256": "530ca2dd58f1413526eb5f5e8451a2e33069b1105fdaebad4d3278b237e08c3c"
+    },
+    {
+      "path": "assets/icons/icon-192x192.png",
+      "bytes": 16503,
+      "sha256": "f0393e3ddba78d38f2ef27f0f73fcf71c410596480687a2d20d148af79351587"
+    },
+    {
+      "path": "assets/icons/icon-512x512.png",
+      "bytes": 47529,
+      "sha256": "e5e431cdbad54df7becb58a16d538c9ec07e13ba92e3973b8e5f60081c4b019b"
+    },
+    {
+      "path": "assets/icons/safari-pinned-tab.svg",
+      "bytes": 10950,
+      "sha256": "3e0e99dfebbbb273ed38df8301469f10ac624078e64aea9927e6fd11f9f718bd"
+    },
+    {
+      "path": "assets/media/ambiente-art-deco-01.jpg",
+      "bytes": 120620,
+      "sha256": "1de42d6b98f05596407728abfbf4993481117d7a45baadda0cdbc184809cee32"
+    },
+    {
+      "path": "assets/media/ambiente-art-deco-02.jpg",
+      "bytes": 93898,
+      "sha256": "4b4f96213da5d811b5998713287fb67822616d125528836d1e84a447bc4bf30a"
+    },
+    {
+      "path": "assets/media/ambiente-art-deco-03.jpg",
+      "bytes": 109666,
+      "sha256": "f3048b8519a578c70fdb6b76160c3d0a83abe727cff9ec1ae8fcacf34b54eb6e"
+    },
+    {
+      "path": "assets/media/ambiente-brutalismo-01.jpg",
+      "bytes": 118391,
+      "sha256": "234eb45bd9955d43b482df43a0a0aa0a96de12f3bc15dd4464c6a409e3d5982b"
+    },
+    {
+      "path": "assets/media/ambiente-brutalismo-02.jpg",
+      "bytes": 91992,
+      "sha256": "9b333ed1e8bd3a6e81a72f852e067308eb237b24f07bac823032fc173cdff9dc"
+    },
+    {
+      "path": "assets/media/ambiente-brutalismo-03.jpg",
+      "bytes": 98566,
+      "sha256": "e74ac2250c5e24c4ff95c272135aed7ff4fe9787d118207d8598f73f48bb0090"
+    },
+    {
+      "path": "assets/media/ambiente-classico-contemporaneo-01.jpg",
+      "bytes": 104183,
+      "sha256": "578f38ba49fd563cfe1f4b5e64cb2768bdd73913bf15a9959a915637df42eb8a"
+    },
+    {
+      "path": "assets/media/ambiente-classico-contemporaneo-02.jpg",
+      "bytes": 75226,
+      "sha256": "47c5e075ee03017f6ae38c893ab3e6a708f47b894d3dd5aa6cb47fceef5c76fd"
+    },
+    {
+      "path": "assets/media/ambiente-classico-contemporaneo-03.jpg",
+      "bytes": 97377,
+      "sha256": "fde0bed8ed7d9b1196dada030f1d15df14994d46081aded6dc8775b2ef59a392"
+    },
+    {
+      "path": "assets/media/ambiente-contemporaneo-01.jpg",
+      "bytes": 122284,
+      "sha256": "95bc63ee1003e521276100ab52e1173acf158a2c54c2da002baa05c8383e63f3"
+    },
+    {
+      "path": "assets/media/ambiente-contemporaneo-02.jpg",
+      "bytes": 86482,
+      "sha256": "2886f356315e7b4072fa61660396ee5bba43f47f930b7f7282c32d75b4235b29"
+    },
+    {
+      "path": "assets/media/ambiente-contemporaneo-03.jpg",
+      "bytes": 105800,
+      "sha256": "b1eca121e676d3043c7e15c51c65b7b1f5e76a5212b812e13866900f00501640"
+    },
+    {
+      "path": "assets/media/ambiente-ecletico-autoral-01.jpg",
+      "bytes": 147242,
+      "sha256": "b0aa3d100960ad99d92a69a23d652e3749a6a693f7e2b514e4211347cc91a103"
+    },
+    {
+      "path": "assets/media/ambiente-ecletico-autoral-02.jpg",
+      "bytes": 124581,
+      "sha256": "86c36c270666469f853cc5740e9e7acdbfdfa02c0fa8b39272f6ee9f4bc3dc35"
+    },
+    {
+      "path": "assets/media/ambiente-ecletico-autoral-03.jpg",
+      "bytes": 135352,
+      "sha256": "1d130dccff021e6175a83879bbedeb0b247d266fde18e86e909c7525b3e1d972"
+    },
+    {
+      "path": "assets/media/ambiente-industrial-01.jpg",
+      "bytes": 132317,
+      "sha256": "4a5697a5b3202f4fb6377ef445e2c67f599e7b21bf97e22a9f3c967f5b7f4218"
+    },
+    {
+      "path": "assets/media/ambiente-industrial-02.jpg",
+      "bytes": 100685,
+      "sha256": "75701475cd969517c13cf91d694258cbcebf56a42b8d955184ea2365612aeedb"
+    },
+    {
+      "path": "assets/media/ambiente-industrial-03.jpg",
+      "bytes": 117217,
+      "sha256": "a85c887e687a80f15bb21e72619191e2609f39aeda9f6ec3383f19eea37cacb3"
+    },
+    {
+      "path": "assets/media/ambiente-japandi-01.jpg",
+      "bytes": 109276,
+      "sha256": "b24c2f8c568e398e88bb58009fd2dea87d5807f2b2f4b82d67d5b3e09446b954"
+    },
+    {
+      "path": "assets/media/ambiente-japandi-02.jpg",
+      "bytes": 71199,
+      "sha256": "a647a27f5f1c43423a797ce70d61305a2ba520eb81f7ff1d63110511616d6b6a"
+    },
+    {
+      "path": "assets/media/ambiente-japandi-03.jpg",
+      "bytes": 98306,
+      "sha256": "d456fd3cb0ebbf4361d4fc2b7a952e236db265b60affff6a78274c67dd5e32f8"
+    },
+    {
+      "path": "assets/media/ambiente-mansory-01.jpg",
+      "bytes": 113148,
+      "sha256": "db3f0c9a5594f753f5bc99269c6dfdefe2d9f3f2af6becb847f7c0890a802532"
+    },
+    {
+      "path": "assets/media/ambiente-mansory-02.jpg",
+      "bytes": 79974,
+      "sha256": "ed7be79e5506d629014ee53676de3efa2b1f727a26dec9ef3a38b63f13d46f80"
+    },
+    {
+      "path": "assets/media/ambiente-mansory-03.jpg",
+      "bytes": 105587,
+      "sha256": "3f822bb83ebdaf8340dcd23aa1a7434419cbe92cb5425e7deb4e680ccc48330c"
+    },
+    {
+      "path": "assets/media/ambiente-minimalista-01.jpg",
+      "bytes": 87167,
+      "sha256": "9c20ff4962a885bafe235c24e90fa631de016769b81ef8e199a0ed8ba3e19c7b"
+    },
+    {
+      "path": "assets/media/ambiente-minimalista-02.jpg",
+      "bytes": 57006,
+      "sha256": "9ec3a110e0dfb79dd92e7c5f885d9cff40f2228e81b3fd50b8fa819c1adfcaed"
+    },
+    {
+      "path": "assets/media/ambiente-minimalista-03.jpg",
+      "bytes": 79964,
+      "sha256": "866064d33e2f8c118a326f03ffdad0afce638b21717d8738c5e3eeab61edf8a7"
+    },
+    {
+      "path": "assets/media/ambiente-rustico-01.jpg",
+      "bytes": 147535,
+      "sha256": "ef565992280539913ef5dcd21d2e759ddf873d62102baff1e769bab69eb8fb9e"
+    },
+    {
+      "path": "assets/media/ambiente-rustico-02.jpg",
+      "bytes": 109005,
+      "sha256": "2754a1caab709ad93d51d74b5e2b7b67e79e599faacc3e386a85efe1a94410e7"
+    },
+    {
+      "path": "assets/media/ambiente-rustico-03.jpg",
+      "bytes": 138172,
+      "sha256": "44eee93a7814515f16a5e3fcf9fea8b4e7cbf3814e8131345518bfceb173045b"
+    },
+    {
+      "path": "assets/media/ambiente-tropical-modern-01.jpg",
+      "bytes": 178081,
+      "sha256": "d22c0877bb23c1c2f5d425f3a0462fcb97f80c87e13eb64a8444ac42d34a124d"
+    },
+    {
+      "path": "assets/media/ambiente-tropical-modern-02.jpg",
+      "bytes": 169131,
+      "sha256": "fe2223639fdc22fc3a6c107064c11c359f29d24ef42a99522386d2d6cd365b26"
+    },
+    {
+      "path": "assets/media/ambiente-tropical-modern-03.jpg",
+      "bytes": 142464,
+      "sha256": "a9b293f36cfff8ab3c91a9aad231af7629fe87970a933288fbf2f62ee67247b1"
+    },
+    {
+      "path": "assets/media/ambiente-wabi-sabi-01.jpg",
+      "bytes": 130993,
+      "sha256": "b6a01779b9e69fbdf08574e99110119f1ad38c0a4d2a3978eeba99ff274633bb"
+    },
+    {
+      "path": "assets/media/ambiente-wabi-sabi-02.jpg",
+      "bytes": 101331,
+      "sha256": "7afdab7d448d54a0e8111846db9d14e0ea08eeb87aa293dd8c2faa5474afbc05"
+    },
+    {
+      "path": "assets/media/ambiente-wabi-sabi-03.jpg",
+      "bytes": 114040,
+      "sha256": "06c3641413c98b0bc3c1b075f95f37697a66173ee8a0682663be936ca2e9a639"
+    },
+    {
+      "path": "assets/media/estilo-art-deco.jpg",
+      "bytes": 166874,
+      "sha256": "8d20040604a4d277e75dd53705dd3c56a38b8598436ee7c265894333fa9e52de"
+    },
+    {
+      "path": "assets/media/estilo-brutalismo.jpg",
+      "bytes": 159233,
+      "sha256": "d880709b8525eee9a55dd649f33d941ea0e81e4a21e3790357cd85ecb792e6f5"
+    },
+    {
+      "path": "assets/media/estilo-classico-contemporaneo.jpg",
+      "bytes": 142261,
+      "sha256": "9aa86ae03bf37b46462dc9251b08dfabf9a302eb3782587500433b9558ed48fb"
+    },
+    {
+      "path": "assets/media/estilo-contemporaneo.jpg",
+      "bytes": 158203,
+      "sha256": "65a0ffa52e705b593ea63298fdae4068e9669852c2d3cf1e35e3bcf5ed730584"
+    },
+    {
+      "path": "assets/media/estilo-ecletico-autoral.jpg",
+      "bytes": 208899,
+      "sha256": "72b6f75047838b0f1113100386ac3963b9bd192fa1425666ee84227bb3ecaae0"
+    },
+    {
+      "path": "assets/media/estilo-industrial.jpg",
+      "bytes": 182580,
+      "sha256": "395cc4dc72244a54b8edf44a116fa1ebd6563d87a0700480b04d505c3128f207"
+    },
+    {
+      "path": "assets/media/estilo-japandi.jpg",
+      "bytes": 147226,
+      "sha256": "4745d766c267e6b43ab923008cb36212a19e92476f77c60add3e812dcbb57818"
+    },
+    {
+      "path": "assets/media/estilo-mansory.jpg",
+      "bytes": 151862,
+      "sha256": "7e0add0959ff9dab141b4e7b2ee146edd4881b8a80928f91d6e416a63ae15c40"
+    },
+    {
+      "path": "assets/media/estilo-minimalista.jpg",
+      "bytes": 116599,
+      "sha256": "12c0a334943a5fca1a7e905357307fa6a98167c4dc49ad439d050c6d4012d7e9"
+    },
+    {
+      "path": "assets/media/estilo-rustico.jpg",
+      "bytes": 210326,
+      "sha256": "83168838a6034ff6ccf53c96f6d5274291f28b7f24a27b1d2cc911d40a728919"
+    },
+    {
+      "path": "assets/media/estilo-tropical-modern.jpg",
+      "bytes": 249485,
+      "sha256": "250281f5b3fe65034d2b69a5803637a6914be23a427f8970159366c96e0253ef"
+    },
+    {
+      "path": "assets/media/estilo-wabi-sabi.jpg",
+      "bytes": 178405,
+      "sha256": "49a291f578934595e8dded1a7ef1e0f423e7ccd3d6c883ba7c423c023c980689"
+    },
+    {
+      "path": "assets/media/home-hero-1600.jpg",
+      "bytes": 199864,
+      "sha256": "658e16f6fb514db8a626b676900fa1ddde923bb7e3b965d52299e9df9682143b"
+    },
+    {
+      "path": "assets/media/home-hero-2200.jpg",
+      "bytes": 371324,
+      "sha256": "a6f1e09fbaf3170e573d5c3f436c1a65a6c66b8bf3741458c56ff7dd7fa19f74"
+    },
+    {
+      "path": "assets/media/home-hero-960.jpg",
+      "bytes": 77250,
+      "sha256": "98de1c6cd7f32421e4336b159260c720f099b2def5d3a876950e9231dd268914"
+    },
+    {
+      "path": "assets/media/home-hero.jpg",
+      "bytes": 199864,
+      "sha256": "658e16f6fb514db8a626b676900fa1ddde923bb7e3b965d52299e9df9682143b"
+    },
+    {
+      "path": "assets/media/home-servico-marcenaria.jpg",
+      "bytes": 103793,
+      "sha256": "ccbfaa6ea8ab2eb36a332cb4ad68e51a2ce7a182f64acc335894c0e50f85fbe0"
+    },
+    {
+      "path": "assets/media/home-servico-projeto-3d.jpg",
+      "bytes": 111895,
+      "sha256": "5e9b81b5be49122afe53bb308a9bd92083bf72b4783560022bcaaf996bbb5d8e"
+    },
+    {
+      "path": "assets/media/home-servico-superficies.jpg",
+      "bytes": 76356,
+      "sha256": "f79f82c87b097c83d2722f806765a1f02f2ed4e467d8628950e0eb05f624b185"
+    },
+    {
+      "path": "assets/media/home-trabalho-casa-luz.jpg",
+      "bytes": 84865,
+      "sha256": "b6fb1255545057c7dbabde110a496ebc79869bbd2aa05642f3331e20cdc61a26"
+    },
+    {
+      "path": "assets/media/home-trabalho-loft.jpg",
+      "bytes": 132317,
+      "sha256": "4a5697a5b3202f4fb6377ef445e2c67f599e7b21bf97e22a9f3c967f5b7f4218"
+    },
+    {
+      "path": "assets/media/home-trabalho-residencia.jpg",
+      "bytes": 96438,
+      "sha256": "76aac8a306db12e2d54cd2473345c4e3b83b8f2dcbfa351ff2a18fc6160f82fc"
+    },
+    {
+      "path": "assets/media/manifesto-detalhe-01.jpg",
+      "bytes": 106649,
+      "sha256": "55e1978490e8637975a9dff8f77754dcdbffbe6d495a35e0724c25c39e263b86"
+    },
+    {
+      "path": "assets/media/manifesto-detalhe-02.jpg",
+      "bytes": 94925,
+      "sha256": "2af67756cbe5220ab930389521daec0f64b689537d22908a6b38785fa7d5440b"
+    },
+    {
+      "path": "assets/media/manifesto-detalhe-03.jpg",
+      "bytes": 87368,
+      "sha256": "5e3fd16551716352b674528e75a9f8b0224dc9d3fab741c9cf639cd4d9da0fe6"
+    },
+    {
+      "path": "assets/media/manifesto-luz-01.jpg",
+      "bytes": 81963,
+      "sha256": "a3fc6dfe922dcdb6a2e49ad282f4382175e48862517087d82b91cd1b5b5fb6d9"
+    },
+    {
+      "path": "assets/media/manifesto-luz-02.jpg",
+      "bytes": 73691,
+      "sha256": "dce83d5b5a79d5a3b44149e2996a71b17f08406354f533bd3975346aff8d5305"
+    },
+    {
+      "path": "assets/media/manifesto-luz-03.jpg",
+      "bytes": 72808,
+      "sha256": "033402ab9b1bf8e6bdc38a381dc24bb71f992d31a355e36fddd30d5f39419c39"
+    },
+    {
+      "path": "assets/media/manifesto-materia-01.jpg",
+      "bytes": 76356,
+      "sha256": "f79f82c87b097c83d2722f806765a1f02f2ed4e467d8628950e0eb05f624b185"
+    },
+    {
+      "path": "assets/media/manifesto-materia-02.jpg",
+      "bytes": 67677,
+      "sha256": "945769d8d066f6eb9e166c6636f72ef1c1ac7a38805c36524952d35fe24e35c6"
+    },
+    {
+      "path": "assets/media/manifesto-materia-03.jpg",
+      "bytes": 54995,
+      "sha256": "fe5b15db025983f8cb48d28ac791d95a476eee32612fd5c6cb782732d92e57e6"
+    },
+    {
+      "path": "assets/media/manifesto-proporcao-01.jpg",
+      "bytes": 103793,
+      "sha256": "ccbfaa6ea8ab2eb36a332cb4ad68e51a2ce7a182f64acc335894c0e50f85fbe0"
+    },
+    {
+      "path": "assets/media/manifesto-proporcao-02.jpg",
+      "bytes": 89687,
+      "sha256": "d1b0ff7e518a500f48176f4aa4e9099d18d789d7a544b5bb7f9585e44c2555ae"
+    },
+    {
+      "path": "assets/media/manifesto-proporcao-03.jpg",
+      "bytes": 88857,
+      "sha256": "eb399bcb2c01db876feb48cc45a45543437123cdd8fd912313a6078678a1db3c"
+    },
+    {
+      "path": "assets/media/p3d-arena-futebol-x1-01.jpg",
+      "bytes": 149703,
+      "sha256": "0fcb3c899a5b300fa21d65c00d86cad3b94fbe750f0b925e3dbe40173c2596df"
+    },
+    {
+      "path": "assets/media/p3d-arena-futebol-x1-02.jpg",
+      "bytes": 102684,
+      "sha256": "d4889439b7499b11a80b54ea9b8b9e5e221b0ddbddd379e0e070f9ec1957f266"
+    },
+    {
+      "path": "assets/media/p3d-arena-futebol-x1-03.jpg",
+      "bytes": 125397,
+      "sha256": "9cbe27d9cf55270e47b21616de6cb98f0ba7af441c58bb39815b9d7de9731086"
+    },
+    {
+      "path": "assets/media/p3d-bancada-calacatta-01.jpg",
+      "bytes": 92630,
+      "sha256": "2e6d293f742304d38e9ee29c9bba290d06f75e4df5fc8c51efc875b905e689ac"
+    },
+    {
+      "path": "assets/media/p3d-bancada-calacatta-02.jpg",
+      "bytes": 75109,
+      "sha256": "cdaf42833beac6f4d938ca4799a4377c7c175c0c0dc75b7d710cb1cd860f984c"
+    },
+    {
+      "path": "assets/media/p3d-bancada-calacatta-03.jpg",
+      "bytes": 77249,
+      "sha256": "f29478a805b4cf06d06abe3519e6af608d69dcfead9749ac02c97ce8a4ab0c48"
+    },
+    {
+      "path": "assets/media/p3d-basquete-aco-01.jpg",
+      "bytes": 119969,
+      "sha256": "72d264088a01326c862e41495614b8f77acd80342553ba8107081c97dbd629b9"
+    },
+    {
+      "path": "assets/media/p3d-basquete-aco-02.jpg",
+      "bytes": 97487,
+      "sha256": "74514fc9c5f9ea53a756aba785515bc178f1759b5981b12723bda237c77cadd9"
+    },
+    {
+      "path": "assets/media/p3d-basquete-aco-03.jpg",
+      "bytes": 94530,
+      "sha256": "405e63f011abc0b2f8a89c0b9a54b71919ee9b77889bdde8cdeb3895c0d1851c"
+    },
+    {
+      "path": "assets/media/p3d-brinquedomovel-01.jpg",
+      "bytes": 132193,
+      "sha256": "0d8a577425f12199ed06b4eb6f9f8e7325bba257c3d65ee90faa0e6224df808f"
+    },
+    {
+      "path": "assets/media/p3d-brinquedomovel-02.jpg",
+      "bytes": 115021,
+      "sha256": "2357f6e8d337121f538f7f270994aeebc481ee91878a61b74dcca64604a767b0"
+    },
+    {
+      "path": "assets/media/p3d-brinquedomovel-03.jpg",
+      "bytes": 96424,
+      "sha256": "ab826258bbd3445f419edd7b14dc38b0c530a116dec02ed7b35d102fbb7fa0bc"
+    },
+    {
+      "path": "assets/media/p3d-iluminacao-integrada-01.jpg",
+      "bytes": 84865,
+      "sha256": "b6fb1255545057c7dbabde110a496ebc79869bbd2aa05642f3331e20cdc61a26"
+    },
+    {
+      "path": "assets/media/p3d-iluminacao-integrada-02.jpg",
+      "bytes": 70617,
+      "sha256": "984ba71c0a03bb314f30b1745bbdc54df8e71b17eecd092c2799f90651316acc"
+    },
+    {
+      "path": "assets/media/p3d-iluminacao-integrada-03.jpg",
+      "bytes": 77294,
+      "sha256": "51de136489ac31fb3ec79bceb4862c1ae88b8d3a4ae55b8b3cbff27938e5d506"
+    },
+    {
+      "path": "assets/media/p3d-marcenaria-integrada-01.jpg",
+      "bytes": 66953,
+      "sha256": "94122758ca2ecfb560ab9ebef212b46ab239b05d8ca0d3bbd092698d5e838395"
+    },
+    {
+      "path": "assets/media/p3d-marcenaria-integrada-02.jpg",
+      "bytes": 76352,
+      "sha256": "24a054e5424ca4eee4e2b09deff12e736e1ab65018604d66d1a9b73407fdcf9c"
+    },
+    {
+      "path": "assets/media/p3d-marcenaria-integrada-03.jpg",
+      "bytes": 61464,
+      "sha256": "1736e45810b8a6b6dea8bbe8aa828c9949a5fea3580277588eb69dd313a1f09f"
+    },
+    {
+      "path": "assets/media/p3d-patinacao-dmx-01.jpg",
+      "bytes": 104338,
+      "sha256": "01d7430116dd68a086a8c14246060ea8848a7f19eecce714962d481d0d2eccf9"
+    },
+    {
+      "path": "assets/media/p3d-patinacao-dmx-02.jpg",
+      "bytes": 81975,
+      "sha256": "f83bced89fa866171dbb191cad101a895fbfe2211b27376051a7b51197a07f3c"
+    },
+    {
+      "path": "assets/media/p3d-patinacao-dmx-03.jpg",
+      "bytes": 95519,
+      "sha256": "85f6d1fd3cf32d46978a9568e8228dd494b9400590c9f3c7c283a59b04ab4e0d"
+    },
+    {
+      "path": "assets/media/p3d-reforma-residencial-01.jpg",
+      "bytes": 96438,
+      "sha256": "76aac8a306db12e2d54cd2473345c4e3b83b8f2dcbfa351ff2a18fc6160f82fc"
+    },
+    {
+      "path": "assets/media/p3d-reforma-residencial-02.jpg",
+      "bytes": 80342,
+      "sha256": "9e5d90eb7fd3e2476da5f45b9fa371e7535525c9b24006d79b462bbfc435ee95"
+    },
+    {
+      "path": "assets/media/p3d-reforma-residencial-03.jpg",
+      "bytes": 75416,
+      "sha256": "d8021c56afa9daae09b2008025a13d43db414d33a8b276d976cafce0f4a65ba6"
+    },
+    {
+      "path": "assets/media/p3d-retrofit-comercial-01.jpg",
+      "bytes": 155705,
+      "sha256": "e05c05768159bbd1dae177abe03815f935de390ef78aa4ca590a5e9c28d0b461"
+    },
+    {
+      "path": "assets/media/p3d-retrofit-comercial-02.jpg",
+      "bytes": 136574,
+      "sha256": "c9f64b27bfb75218c795423325676e97d58c36805248f23c16629580b7aabade"
+    },
+    {
+      "path": "assets/media/p3d-retrofit-comercial-03.jpg",
+      "bytes": 115404,
+      "sha256": "6f9ab8bcdabd20309c69ba7500573ba6205085a3978296cf1ffb3bb328b67d51"
+    },
+    {
+      "path": "assets/media/p3d-suite-luxo-01.jpg",
+      "bytes": 111968,
+      "sha256": "4e3dc4cfadad8ed151fa7d2bda6da6c1e27353936d19d068031218d3867a7f7f"
+    },
+    {
+      "path": "assets/media/p3d-suite-luxo-02.jpg",
+      "bytes": 87108,
+      "sha256": "ebdabea323059ba85bee14365365038e51648b0536b41fe03f969408575cb2be"
+    },
+    {
+      "path": "assets/media/p3d-suite-luxo-03.jpg",
+      "bytes": 102361,
+      "sha256": "98c28002a786a40695b3d28a58ab68b2c74342a4bfe5c2fd3a0822956eccc325"
+    },
+    {
+      "path": "assets/media/portfolio-automacao-persianas.jpg",
+      "bytes": 141599,
+      "sha256": "0533a1fa6ef4231a69f274c4991ec7410795942b55e5c854fb032962e37a1952"
+    },
+    {
+      "path": "assets/media/portfolio-automacao.jpg",
+      "bytes": 99763,
+      "sha256": "84b8f0455a40148c4e528d30777d0882389e0cc887e75d8fc57854ab360f1da1"
+    },
+    {
+      "path": "assets/media/portfolio-banheiro.jpg",
+      "bytes": 116245,
+      "sha256": "790187f7ff4324fa55672718d92121e76437068b35e0a0c23f05f7660aee6011"
+    },
+    {
+      "path": "assets/media/portfolio-efeito-marmore.jpg",
+      "bytes": 144487,
+      "sha256": "301d019ae62fde9ccc295abb93c970c75704f4db4f18c5b04504e541b93d69d7"
+    },
+    {
+      "path": "assets/media/portfolio-eletrica.jpg",
+      "bytes": 129411,
+      "sha256": "dd69ea78d732a9324db3d6e9b1e7f300a3b939a0442c4be6a1601bb61db2e42b"
+    },
+    {
+      "path": "assets/media/portfolio-epoxy-cozinha.jpg",
+      "bytes": 133161,
+      "sha256": "fdd483ace2759bad5f7fdd4a9dd11a37d9d3536204d6f5ba26063703a5cfd74a"
+    },
+    {
+      "path": "assets/media/portfolio-evento-corporativo.jpg",
+      "bytes": 205416,
+      "sha256": "d7c41e6b9eaad3e3d0a55b1e893f4fa89c4c46feb0336a72884090375abc1a08"
+    },
+    {
+      "path": "assets/media/portfolio-eventos.jpg",
+      "bytes": 158048,
+      "sha256": "3726914612fd9bc2622866cacc4ad230f89098009ba86b39f39b725edc24ff7b"
+    },
+    {
+      "path": "assets/media/portfolio-fachada.jpg",
+      "bytes": 160299,
+      "sha256": "00c81832b61815b39ce3cc157785b7b85f4dfe967769f3aa290ea6a564944505"
+    },
+    {
+      "path": "assets/media/portfolio-iluminacao.jpg",
+      "bytes": 84865,
+      "sha256": "b6fb1255545057c7dbabde110a496ebc79869bbd2aa05642f3331e20cdc61a26"
+    },
+    {
+      "path": "assets/media/portfolio-marcenaria.jpg",
+      "bytes": 66953,
+      "sha256": "94122758ca2ecfb560ab9ebef212b46ab239b05d8ca0d3bbd092698d5e838395"
+    },
+    {
+      "path": "assets/media/portfolio-marmore.jpg",
+      "bytes": 104237,
+      "sha256": "9c89438706b94ffc7762622adc43f45a7e885581be19275d2bb4e884fb57b83b"
+    },
+    {
+      "path": "assets/media/portfolio-pintura-texturizada.jpg",
+      "bytes": 186005,
+      "sha256": "51d796774b13ac7a6bda03fb2142177d8136cb48e8e5382e7450263010a0bfa7"
+    },
+    {
+      "path": "assets/media/portfolio-pintura.jpg",
+      "bytes": 131316,
+      "sha256": "694fd84d6b76e8930947590117507e47d0dba5992e67200d495820ffb704ce88"
+    },
+    {
+      "path": "assets/media/portfolio-porcelanato.jpg",
+      "bytes": 101163,
+      "sha256": "7cbddf7c8ec0adb3347976889b5c47bed913fef444e148848d634ad8a3458773"
+    },
+    {
+      "path": "assets/media/portfolio-quadro-eletrico.jpg",
+      "bytes": 166051,
+      "sha256": "376a057e9e1a0b9134396a92af92452c465ac80d1fbb92eba086a0762ee15af8"
+    },
+    {
+      "path": "assets/media/portfolio-reforma.jpg",
+      "bytes": 96438,
+      "sha256": "76aac8a306db12e2d54cd2473345c4e3b83b8f2dcbfa351ff2a18fc6160f82fc"
+    },
+    {
+      "path": "assets/media/portfolio-resina.jpg",
+      "bytes": 101163,
+      "sha256": "7cbddf7c8ec0adb3347976889b5c47bed913fef444e148848d634ad8a3458773"
+    },
+    {
+      "path": "assets/media/portfolio-suite.jpg",
+      "bytes": 111968,
+      "sha256": "4e3dc4cfadad8ed151fa7d2bda6da6c1e27353936d19d068031218d3867a7f7f"
+    },
+    {
+      "path": "assets/media/processo-iluminacao-led.jpg",
+      "bytes": 116291,
+      "sha256": "a97e434bc91e34b5c9c04176d478ea67eb16114fca3afd18a08a46b7e434971e"
+    },
+    {
+      "path": "assets/media/processo-marcenaria-medicao.jpg",
+      "bytes": 143467,
+      "sha256": "455999534919571194be2573beb214f9d02e573b77499ecfa4ec498e70428cbe"
+    },
+    {
+      "path": "assets/media/processo-metalurgia-solda.jpg",
+      "bytes": 142914,
+      "sha256": "b91440f17ccf00bb18ed427e07a1512d50ca43ec1570cdc6ca9d9244ece1185d"
+    },
+    {
+      "path": "assets/media/processo-pintura-acabamento.jpg",
+      "bytes": 126437,
+      "sha256": "c7bc5b105d2609472ac55becefc14b7e6f903c8a7a831a51d6b24bebba819cca"
+    },
+    {
+      "path": "assets/media/processo-projeto-3d.jpg",
+      "bytes": 141698,
+      "sha256": "65b1733f308c899f5d966ef00f35145c82602394be81b1e1c22c3a34af5a6e08"
+    },
+    {
+      "path": "assets/media/processo-superficie-resina.jpg",
+      "bytes": 98938,
+      "sha256": "c2a332313fd0236aba8ce52a6a34e401b7570eedc02ef5171985d868d6a38be7"
+    },
+    {
+      "path": "assets/media/projeto-arena-futebol-x1.jpg",
+      "bytes": 191098,
+      "sha256": "4f9edcee2674045c4c8210f8d2e984dabffc1ad14c28ff702d00334d19252e71"
+    },
+    {
+      "path": "assets/media/projeto-bancada-calacatta.jpg",
+      "bytes": 131552,
+      "sha256": "f5d3f992c248650b04fec57e1af389dcebc13fdb2ccf15edbfd191d936f2aab8"
+    },
+    {
+      "path": "assets/media/projeto-banheiro-marmoreado.jpg",
+      "bytes": 162086,
+      "sha256": "6f167e37725374dc122bc1ad79cb9183ab3c1a7534cabfc325965d41e0b9ad2a"
+    },
+    {
+      "path": "assets/media/projeto-basquete-aco.jpg",
+      "bytes": 150475,
+      "sha256": "8783f09ee8e5a71d7abecbf60ddd6302a5fc6003431b0350592d5c18ee16e488"
+    },
+    {
+      "path": "assets/media/projeto-brinquedomovel.jpg",
+      "bytes": 173229,
+      "sha256": "9b0eb3d78897fd3243e17daf66b5dfd7c70d166765e3328590921c09e28ac32a"
+    },
+    {
+      "path": "assets/media/projeto-fachada-contemporanea.jpg",
+      "bytes": 208815,
+      "sha256": "17461107757a3450e4eb02d0d5a5a230b40d7aef2628bcfdb9b161c77b872f41"
+    },
+    {
+      "path": "assets/media/projeto-iluminacao-integrada.jpg",
+      "bytes": 112837,
+      "sha256": "7af012b84f7a3ca7cf5fc056fea2b485f560e24b1670f82b1566a2b4e1e57984"
+    },
+    {
+      "path": "assets/media/projeto-marcenaria-integrada.jpg",
+      "bytes": 110035,
+      "sha256": "4a83a4f478f9113d4092b1ba01bcdd03d230e141750b2bb764de5df7682cb596"
+    },
+    {
+      "path": "assets/media/projeto-patinacao-dmx.jpg",
+      "bytes": 141936,
+      "sha256": "e99a31cf0abaa7efdc423ee70cba5c7c42f642229cf785b98e8c63ea46291095"
+    },
+    {
+      "path": "assets/media/projeto-reforma-residencial.jpg",
+      "bytes": 128757,
+      "sha256": "6aaa350772d03b8bf87c53262f7d16856986d269ec4a5a2342f9fb447364f151"
+    },
+    {
+      "path": "assets/media/projeto-retrofit-comercial.jpg",
+      "bytes": 206650,
+      "sha256": "0cc9695f0589ce048afceb84a6a3ff646808e51f888f1087eddef951b247b40f"
+    },
+    {
+      "path": "assets/media/projeto-suite-luxo.jpg",
+      "bytes": 152104,
+      "sha256": "a5038d8dd09f38d99af42804817bc51c096fde7ca3ee99fa435c684b0308df2e"
+    },
+    {
+      "path": "assets/media/sobre-essencia.jpg",
+      "bytes": 111895,
+      "sha256": "5e9b81b5be49122afe53bb308a9bd92083bf72b4783560022bcaaf996bbb5d8e"
+    },
+    {
+      "path": "assets/social/franco-romeu-logomark-512.png",
+      "bytes": 47529,
+      "sha256": "e5e431cdbad54df7becb58a16d538c9ec07e13ba92e3973b8e5f60081c4b019b"
+    },
+    {
+      "path": "assets/social/franco-romeu-og-site-1200x630.jpg",
+      "bytes": 251312,
+      "sha256": "ece88dcf4464d943aadda25abc4bf84599d3b60cb899932e50684329125f4a86"
+    },
+    {
+      "path": "browserconfig.xml",
+      "bytes": 232,
+      "sha256": "3fe2a67e14f9c352ef88e7a6272500c1a41a2b853479d74d48f51242f3e40dc4"
+    },
+    {
+      "path": "documentacao/MAPA-DE-ATIVOS.md",
+      "bytes": 857,
+      "sha256": "7ec8682a9062ccc1a7d77628a0bdfd6db684bf65bfaa60df4c017b603a2bd0f3"
+    },
+    {
+      "path": "documentacao/PROMPTS-IMAGENS.md",
+      "bytes": 2483,
+      "sha256": "f28a58e32312630112bbf9cc54f45ee0952450bb4b7027707f182fd6953ce972"
+    },
+    {
+      "path": "documentacao/RELATORIO-QA-VISUAL.md",
+      "bytes": 2129,
+      "sha256": "a42232fbbce863a59d1e580c28ef25963d371220fde88c9f3df2772e4aaead47"
+    },
+    {
+      "path": "favicon.ico",
+      "bytes": 54483,
+      "sha256": "2cc5e4d16861d20968e46f8ed3a503a5106250f6e0727e00b7b43c982fa44cc2"
+    },
+    {
+      "path": "index.html",
+      "bytes": 1385716,
+      "sha256": "1fbd48ae3c4a0e2eeb3bf5fe3c007df58e183beb35e7a73085d95d5b7def8228"
+    },
+    {
+      "path": "site.webmanifest",
+      "bytes": 623,
+      "sha256": "5dc50ae8c79667c0d077329dca3b7fb068b6cd2cfa49fcf4b5d34f4378ea569f"
+    }
+  ]
+}

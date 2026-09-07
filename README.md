@@ -2,6 +2,16 @@
 
 Aplicação corporativa e acervo digital da Franco Romeu — **Arte + Engenharia**. A experiência reúne apresentação institucional, ambientes, estudos 3D, portfólio de referências e uma calculadora de estimativa orientativa.
 
+## Fonte canônica e documentos de decisão
+
+Este repositório, branch `main`, é a fonte de verdade do produto. A versão preparada na branch de revisão é a **Etapa 13.1.3**, que restaura o carregamento resiliente das bibliotecas de PDF sem alterar o motor financeiro.
+
+- [Registro mestre da fonte canônica](docs/REGISTRO_MESTRE_FONTE_CANONICA.md)
+- [Anexo comentado: mudanças reais e direção Awwwards](docs/ANEXO_EVOLUCAO_VISUAL_AWWWARDS.md)
+- [Brief JSON para prompts e roadmap](docs/fr_awwwards_redesign_brief.json)
+
+Os documentos distinguem explicitamente o que está implementado, proposto, dependente de conteúdo, não comprovado ou proibido. Referências Awwwards são repertório de princípios, não código/layout a copiar.
+
 ## Baixar somente o arquivo HTML
 
 O aplicativo principal agora é autocontido: o núcleo financeiro foi incorporado no próprio documento. Para guardar ou enviar apenas a aplicação, baixe este arquivo:
@@ -51,7 +61,7 @@ Os testes cobrem resolução de configuração por ID e índice legado, adiciona
 4. Recarregar a página e confirmar a recuperação do orçamento.
 5. Testar CEP válido, inválido, timeout e preenchimento manual.
 6. Tentar finalizar sem serviço, dados, endereço, pagamento e aceite dos termos.
-7. Gerar estimativas curta e longa em PDF e conferir a paginação.
+7. Gerar estimativas curta e longa em PDF, confirmar o carregamento sob demanda de `html2canvas`/`jsPDF` e conferir a paginação.
 8. Navegar por teclado em 390×844 e desktop, verificando foco, modais e ausência de overflow horizontal.
 9. Simular indisponibilidade de CDNs e conferir a degradação de fontes, ícones e imagens.
 10. Confirmar que toda imagem do Unsplash apresenta a ressalva de referência visual.
@@ -66,3 +76,24 @@ O God Mode não possui senha no cliente. Em ambiente local controlado, abra a ap
 - Ativos visuais, Font Awesome, ViaCEP e a pilha de PDF ainda dependem de serviços externos.
 - Preços e cupons calculados no navegador precisam ser revalidados antes de uso comercial vinculante.
 - O CNPJ demonstrativo e métricas não validadas não devem ser publicados.
+
+## Etapa 14 — Seis Universos Awwwards
+
+A evolução visual completa está na branch `codex/etapa-14-awwwards-universes`, construída sobre a fundação de PDF da Etapa 13.1.3.
+
+- Aplicação: `base-original/FRANCO_ROMEU_ETAPA14_AWWWARDS_UNIVERSES.html`
+- Anexo integral: `docs/ANEXO_EVOLUCAO_VISUAL_AWWWARDS_ETAPA14.md`
+- Brief JSON: `docs/fr_awwwards_stage14_prompt_brief.json`
+- QA: `docs/QA_STAGE14_AWWWARDS.md`
+- Mapa interativo: `docs/fr-universe-blueprint.html`
+
+O redesign cria Forja, Manifesto, Arte Material, Modeling Space, Arquivo Vivo e Engenharia de Custo como universos distintos. Three.js é carregado somente em Projetos 3D; mobile, economia de dados, reduced motion e falhas de WebGL recebem fallback. Os 115 serviços, 15 categorias e motores protegidos permanecem preservados.
+
+Teste específico:
+
+```bash
+npm install
+npm run test:stage14
+```
+
+A Etapa 14 continua em prototipagem: aceite visual em navegadores reais e substituição das imagens de referência por acervo verificado são gates antes de produção ou APK.

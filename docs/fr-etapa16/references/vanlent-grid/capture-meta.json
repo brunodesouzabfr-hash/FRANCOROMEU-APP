@@ -1,0 +1,44 @@
+{
+  "tool": "FR Lab",
+  "version": "1.0.0",
+  "startedAt": "2026-08-21T16:55:08.369Z",
+  "finishedAt": "2026-08-21T17:02:12.984Z",
+  "durationSeconds": 424.6,
+  "requestedUrl": "https://vanlent.dev/",
+  "finalUrls": {
+    "desktop": "https://vanlent.dev/",
+    "mobile": "https://vanlent.dev/"
+  },
+  "responseStatus": {
+    "desktop": 200,
+    "mobile": 200
+  },
+  "browserExecutable": "/usr/bin/chromium",
+  "nodeVersion": "v20.20.2",
+  "deepCapture": false,
+  "headed": false,
+  "viewports": {
+    "desktop": {
+      "viewportWidth": 1440,
+      "viewportHeight": 900,
+      "scrollWidth": 1440,
+      "scrollHeight": 17100,
+      "devicePixelRatio": 1,
+      "elementCount": 11715
+    },
+    "mobile": {
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 7208,
+      "devicePixelRatio": 1,
+      "elementCount": 10873
+    }
+  },
+  "limitations": [
+    "A captura contém somente recursos públicos entregues ao navegador; não representa o código-fonte privado original.",
+    "Estados dependentes de login, gestos específicos, temporização longa ou hardware podem não ter sido observados.",
+    "Bibliotecas detectadas por nomes em bundles são indícios e devem ser confirmadas pelas evidências.",
+    "Configurações internas minificadas ou ofuscadas podem permanecer indisponíveis."
+  ]
+}

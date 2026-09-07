@@ -1,0 +1,436 @@
+{
+  "schema_version": "1.0.0",
+  "project": {
+    "name": "Franco Romeu — Arte & Engenharia",
+    "stage": "14.0-awwwards-universes",
+    "canonical_repository": "https://github.com/brunodesouzabfr-hash/FRANCOROMEU-APP",
+    "canonical_base": "FRANCO_ROMEU_ETAPA13_PATCHED.html",
+    "base_commit": "96c59eb192fd3a5fa76b5e539a4891a24acfa68a",
+    "primary_deliverable": "FRANCO_ROMEU_ETAPA14_AWWWARDS_UNIVERSES.html",
+    "language": "pt-BR",
+    "status": "prototype_ready_for_real_browser_acceptance"
+  },
+  "brand_operating_system": {
+    "positioning": "Arte material e precisão técnica organizadas como uma assinatura de execução.",
+    "duality": {
+      "premium": "Luxo silencioso, autoria, matéria, proporção e controle.",
+      "optimized": "Engenharia inteligente e bem executada, com escopo legível e decisões priorizadas."
+    },
+    "voice": [
+      "precisa",
+      "sensorial",
+      "direta",
+      "autoral",
+      "tecnicamente defensável"
+    ],
+    "approved_terms": [
+      "solução inteligente",
+      "tradição com precisão",
+      "engenharia de custo",
+      "execução controlada",
+      "curadoria material",
+      "estimativa orientativa"
+    ],
+    "rejected_terms": [
+      "baratinho",
+      "imperdível",
+      "últimas vagas",
+      "apenas duas datas",
+      "luxo ostensivo",
+      "garantia sem evidência"
+    ],
+    "palette": {
+      "naval_green": "#0B3D3E",
+      "deep_green": "#0A2F26",
+      "petrol_green": "#123F34",
+      "thermal_orange": "#FC7016",
+      "legacy_orange": "#FF6B00",
+      "technical_gold": "#F6A700",
+      "bone": "#E6D6B5",
+      "carbon": "#121318",
+      "technology_blue": "#71E5F4",
+      "archive_rose": "#D43A65",
+      "validation_green": "#25D366"
+    },
+    "color_ratio": {
+      "dark_petrol": "60-75%",
+      "warm_neutrals": "15-25%",
+      "special_accents": "5-10%"
+    },
+    "typography": {
+      "display": "Stardos Stencil",
+      "body": "Rokkitt",
+      "technical": "Share Tech Mono"
+    },
+    "metaphors": [
+      "forja",
+      "geologia",
+      "blueprint",
+      "atmosfera",
+      "arquivo",
+      "máquina",
+      "órbita"
+    ]
+  },
+  "hard_invariants": {
+    "views": 6,
+    "services": 115,
+    "progressive_categories": 15,
+    "environment_languages": 12,
+    "p3d_concepts": 6,
+    "rules": [
+      "Preservar IDs, cálculos, armazenamento, IQE, busca, fidelidade, GODMODE e dock contextual.",
+      "Não alterar fr-stage2-portfolio-engine.",
+      "Não alterar fr-pdf-stack-loader.",
+      "Não apresentar imagens de referência como obras executadas.",
+      "Não inventar métricas, prazos, escassez, certificações ou dados empresariais.",
+      "Uma única view ativa e uma única fonte de verdade financeira.",
+      "Three.js somente em Projetos 3D e carregado sob demanda."
+    ]
+  },
+  "shared_experience_system": {
+    "world_marker_format": "•FR / {index} / {name}",
+    "ambient_engine": {
+      "technology": "Canvas 2D",
+      "behaviors": [
+        "unique_pattern_per_view",
+        "requestAnimationFrame_pointer_batching",
+        "pause_when_inactive",
+        "pause_when_document_hidden",
+        "device_pixel_ratio_cap_1_5",
+        "reduced_motion_equivalent"
+      ]
+    },
+    "transition": {
+      "strategy": "Retheme and accelerate existing Stage 8 portal",
+      "target_cover_duration_ms": 420,
+      "target_reveal_duration_ms": 220
+    },
+    "performance": {
+      "new_runtime_dependencies": [
+        {
+          "name": "three",
+          "version": "0.161.0",
+          "scope": "view-projetos3d",
+          "loading": "lazy"
+        }
+      ],
+      "forbidden": [
+        "scroll_jacking",
+        "unbounded_device_pixel_ratio",
+        "multiple_webgl_contexts",
+        "always_on_rendering_in_hidden_views",
+        "layout_reads_and_writes_in_same_pointer_event"
+      ]
+    }
+  },
+  "universes": [
+    {
+      "id": "view-home",
+      "code": "01",
+      "name": "FORJA",
+      "purpose": "Transformar a primeira impressão em compreensão do método e intenção de iniciar um projeto.",
+      "visual_language": "Calor controlado, carbono, verde-petróleo, laranja térmico, partículas e matéria.",
+      "interaction": [
+        "low_amplitude_hero_parallax",
+        "thermal_canvas_field",
+        "diagnosis_project_execution_route"
+      ],
+      "conversion": "Iniciar projeto ou acessar arquivo visual sem urgência artificial.",
+      "truth_metrics": [
+        "115 serviços",
+        "15 categorias",
+        "12 linguagens"
+      ]
+    },
+    {
+      "id": "view-sobre",
+      "code": "02",
+      "name": "MANIFESTO",
+      "purpose": "Articular o DNA bruto e refinado da FR como tese, evidência e método.",
+      "visual_language": "Eixo dividido, blueprint, metal envelhecido, vazio editorial e capítulos sticky.",
+      "interaction": [
+        "chapter_rail",
+        "intersection_observer_state",
+        "accessible_section_jump"
+      ],
+      "chapters": [
+        "Tese",
+        "Essência",
+        "Pilares",
+        "Método"
+      ]
+    },
+    {
+      "id": "view-ambientes",
+      "code": "03",
+      "name": "ARTE MATERIAL",
+      "purpose": "Transformar estilos em uma curadoria de linguagem, matéria e atmosfera.",
+      "visual_language": "Galeria full-bleed, quadros contíguos, spotlight e saturação revelada.",
+      "interaction": [
+        "pointer_spotlight",
+        "asymmetric_twelve_column_gallery",
+        "existing_detail_overlay"
+      ],
+      "material_chips": [
+        "Pedra",
+        "Madeira",
+        "Metal",
+        "Resina",
+        "Luz"
+      ]
+    },
+    {
+      "id": "view-projetos3d",
+      "code": "04",
+      "name": "MODELING SPACE",
+      "purpose": "Permitir orientação e seleção de conceitos antes da obra.",
+      "visual_language": "Matriz espacial, grid técnico, névoa, frames wireframe e dossiê sincronizado.",
+      "interaction": [
+        "raycast_selection",
+        "pointer_drag_rotation",
+        "passive_wheel_orientation",
+        "sync_with_existing_p3d_carousel"
+      ],
+      "fallbacks": [
+        "mobile",
+        "save_data",
+        "reduced_motion",
+        "webgl_unavailable",
+        "cdn_failure",
+        "context_lost"
+      ]
+    },
+    {
+      "id": "view-projetos",
+      "code": "05",
+      "name": "ARQUIVO VIVO",
+      "purpose": "Apresentar referências e, futuramente, evidências verificadas como um acervo em evolução.",
+      "visual_language": "Museu full-bleed, salas contíguas, escala alternada e acento rosé profundo.",
+      "interaction": [
+        "manual_guided_tour",
+        "filter_preservation",
+        "no_popup",
+        "scroll_into_view_by_room"
+      ],
+      "disclosure": "Referência visual — não representa obra executada pela Franco Romeu."
+    },
+    {
+      "id": "view-orcamento",
+      "code": "06",
+      "name": "ENGENHARIA DE CUSTO",
+      "purpose": "Reduzir incerteza e transformar interesse em escopo editável.",
+      "visual_language": "Cockpit verde-petróleo, grid técnico, densidade controlada e sinais de validação.",
+      "interaction": [
+        "progressive_category_disclosure",
+        "sticky_contextual_dock",
+        "expandable_summary",
+        "pdf_prewarm"
+      ],
+      "trust_rail": [
+        "115 serviços",
+        "Escopo editável",
+        "Faixa orientativa",
+        "PDF resiliente"
+      ],
+      "approved_capacity_copy": "Disponibilidade confirmada após diagnóstico técnico."
+    }
+  ],
+  "reference_library": [
+    {
+      "name": "The Unconventional Gallery",
+      "score": 7.79,
+      "url": "https://www.awwwards.com/sites/the-unconventional-gallery",
+      "use": "immersive_webgl_gallery"
+    },
+    {
+      "name": "iyO",
+      "score": 7.68,
+      "url": "https://www.awwwards.com/sites/iyo",
+      "use": "threejs_configurator_and_adaptive_commerce"
+    },
+    {
+      "name": "Silver Pinewood Residences",
+      "score": 7.25,
+      "url": "https://www.awwwards.com/sites/silver-pinewood-residences",
+      "use": "quiet_luxury_architecture"
+    },
+    {
+      "name": "Loftgarten",
+      "score": 7.74,
+      "url": "https://www.awwwards.com/sites/loftgarten",
+      "use": "high_end_architectural_visualization"
+    },
+    {
+      "name": "E.C.H.O",
+      "score": 7.9,
+      "url": "https://www.awwwards.com/sites/e-c-h-o",
+      "use": "cinematic_webgl_storytelling"
+    },
+    {
+      "name": "20 Years of Xbox Museum",
+      "score": 7.93,
+      "url": "https://www.awwwards.com/sites/20-years-of-xbox-museum",
+      "use": "living_archive_and_virtual_museum"
+    },
+    {
+      "name": "Cristóbal Balenciaga Museum",
+      "score": 7.51,
+      "url": "https://www.awwwards.com/sites/cristobal-balenciaga-museum",
+      "use": "horizontal_museum_navigation"
+    },
+    {
+      "name": "Magical Reflections",
+      "score": 7.85,
+      "url": "https://www.awwwards.com/sites/magical-reflections",
+      "use": "virtual_gallery_and_webxr"
+    }
+  ],
+  "seo_audit": {
+    "implemented": [
+      "descriptive_title",
+      "meta_description",
+      "robots",
+      "open_graph",
+      "twitter_card",
+      "organization_json_ld",
+      "pt_BR_locale"
+    ],
+    "pending_production": [
+      "approved_canonical_domain",
+      "canonical_tag",
+      "sitemap",
+      "service_and_location_routes",
+      "verified_case_study_metadata",
+      "consented_analytics"
+    ]
+  },
+  "neuromarketing": {
+    "approved": [
+      "technical_authority",
+      "progressive_commitment",
+      "risk_reduction",
+      "material_anticipation",
+      "method_transparency"
+    ],
+    "forbidden": [
+      "fake_scarcity",
+      "fake_countdowns",
+      "unverified_social_proof",
+      "hidden_costs",
+      "forced_continuity",
+      "dark_patterns"
+    ]
+  },
+  "quality_gates": {
+    "automated_results": {
+      "status": "passed",
+      "tests": 6,
+      "runtime_errors": 0,
+      "duplicate_ids": 0,
+      "inline_scripts_valid": 26,
+      "protected_engines_equal": true,
+      "services": 115,
+      "categories": 15,
+      "views": 6,
+      "pdf_contract": "passed_with_preexposed_apis",
+      "three_fallback": "passed_in_jsdom"
+    },
+    "environment_limitation": "Packaged Chromium exited with SIGSEGV before page launch; real-browser screenshots and WebGL acceptance remain pending.",
+    "required_next": [
+      "chrome_firefox_safari_visual_matrix",
+      "android_and_ios_physical_devices",
+      "real_webgl_context",
+      "slow_4g_and_offline_failure",
+      "lighthouse_and_core_web_vitals",
+      "verified_pdf_download"
+    ]
+  },
+  "variance": {
+    "base_bytes": 992373,
+    "final_bytes": 1038544,
+    "delta_bytes": 46171,
+    "delta_percent": 4.65,
+    "base_script_tags": 25,
+    "final_script_tags": 27,
+    "base_style_tags": 32,
+    "final_style_tags": 33,
+    "body_closings_base": 2,
+    "body_closings_final": 1
+  },
+  "system_design": {
+    "current": "standalone_monolithic_spa_prototype",
+    "future_modules": [
+      "design_tokens",
+      "router_and_view_lifecycle",
+      "brand_content",
+      "service_catalog",
+      "quote_domain",
+      "pdf_adapter",
+      "lead_adapter",
+      "authenticated_admin",
+      "analytics_and_consent",
+      "pwa_shell"
+    ],
+    "apk_strategy": {
+      "preferred_first": "PWA_or_TWA",
+      "use_capacitor_when": "native integrations create measurable value",
+      "single_source_of_truth": "shared quote domain and service catalog"
+    }
+  },
+  "roadmap": [
+    {
+      "priority": "P0",
+      "name": "Visual acceptance and verified assets",
+      "exit_criteria": "Real-browser matrix passes and every case/claim has evidence."
+    },
+    {
+      "priority": "P1",
+      "name": "Production modularization",
+      "exit_criteria": "Assets, modules, CSP, caching, monitoring and approved domain are ready."
+    },
+    {
+      "priority": "P2",
+      "name": "Lead and quote backend",
+      "exit_criteria": "Authenticated administration, consent and auditable lead flow."
+    },
+    {
+      "priority": "P3",
+      "name": "PWA and business automation",
+      "exit_criteria": "Offline-safe shell, CRM integration and KPI instrumentation."
+    },
+    {
+      "priority": "P4",
+      "name": "APK",
+      "exit_criteria": "Native value, permissions, PDF sharing, deep links and release governance validated."
+    }
+  ],
+  "ai_prompt_contract": {
+    "system_role": "Act as Franco Romeu's chief strategist, creative director and resilient web master builder.",
+    "mandatory_context": [
+      "Read brand operating system before suggesting visuals.",
+      "Treat GitHub canonical branch as source of truth.",
+      "Preserve hard invariants and protected engines.",
+      "Separate verified facts from concepts and references.",
+      "Deliver changes, rationale, risk, test and rollback notes."
+    ],
+    "output_sections": [
+      "outcome",
+      "affected_universe",
+      "brand_rationale",
+      "implementation",
+      "performance_and_accessibility",
+      "truth_and_compliance",
+      "tests",
+      "changelog"
+    ],
+    "review_questions": [
+      "Is this universe perceptually distinct without breaking the global navigation?",
+      "Does motion communicate meaning or only decorate?",
+      "Is every commercial claim verifiable?",
+      "Does mobile retain conceptual richness with a lower rendering cost?",
+      "Can failure of a CDN, PDF library or WebGL leave the core journey usable?",
+      "Are the 115 services and financial results unchanged?"
+    ]
+  }
+}

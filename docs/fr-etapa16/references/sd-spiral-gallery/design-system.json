@@ -1,0 +1,104 @@
+{
+  "source": {
+    "value": "local capture captures/sd-spiral-gallery.vercel.app/20260822-013338",
+    "status": "observed",
+    "evidence": "capture-meta.json; desktop 1440x900 and mobile 390x844; full page scope"
+  },
+  "confidence": {
+    "value": "medium",
+    "status": "inferred",
+    "evidence": "Geometry and computed styles are present, while palette, raw HTML/CSS/screenshots, exercised states and 3D parameters are absent."
+  },
+  "colors": [
+    {
+      "value": null,
+      "status": "unavailable",
+      "evidence": "design-tokens.json; both viewports; colors arrays empty and paletteOmitted true"
+    }
+  ],
+  "typography": [
+    {
+      "name": "display-family",
+      "value": "Jaguar",
+      "status": "observed",
+      "evidence": "design-tokens.json; desktop 1440x900 (10 occurrences), mobile 390x844 (4 occurrences)"
+    },
+    {
+      "name": "utility-family",
+      "value": "Arial",
+      "status": "observed",
+      "evidence": "design-tokens.json; desktop 1440x900 (5 occurrences)"
+    },
+    {
+      "name": "hero-h1",
+      "value": {"fontFamily":"Jaguar","fontSize":"92.8px","fontWeight":700,"lineHeight":"normal","letterSpacing":"normal"},
+      "status": "observed",
+      "evidence": "layout-map.json; desktop 1440x900; section.hero > h1"
+    },
+    {
+      "name": "mobile-fallback-h1",
+      "value": {"fontFamily":"Jaguar","fontSize":"48px","fontWeight":700,"lineHeight":"normal"},
+      "status": "observed",
+      "evidence": "layout-map.json; mobile 390x844; #not-supported > h1"
+    },
+    {
+      "name": "font-license-and-metrics",
+      "value": null,
+      "status": "unavailable",
+      "evidence": "resources-manifest.json; Jaguar.otf requested but localFile is null"
+    }
+  ],
+  "spacing": [
+    {"name":"hero-gap","value":"32px","status":"observed","evidence":"layout-map.json; desktop 1440x900; #main-content > section.hero"},
+    {"name":"cta-gap","value":"12px","status":"observed","evidence":"layout-map.json; desktop 1440x900; section.hero > button"},
+    {"name":"chrome-padding","value":{"x":"30px","y":"20px"},"status":"observed","evidence":"design-tokens.json; desktop 1440x900; each value occurs twice"},
+    {"name":"mobile-inline-padding","value":"20px","status":"observed","evidence":"design-tokens.json; mobile 390x844; paddingLeft and paddingRight each occur once"}
+  ],
+  "radii": [
+    {"name":"pill","value":"50px","status":"observed","evidence":"design-tokens.json; desktop 1440x900; 4 occurrences"},
+    {"name":"circle","value":"100%","status":"observed","evidence":"design-tokens.json; desktop 1440x900; 4 occurrences"}
+  ],
+  "shadows": [
+    {"value":null,"status":"unavailable","evidence":"design-tokens.json; desktop and mobile; shadows arrays empty"}
+  ],
+  "layout": [
+    {"name":"desktop-stage","value":{"width":"100vw","height":"100vh","scroll":false},"status":"observed","evidence":"layout-map.json; desktop 1440x900; viewport equals scroll area; .hero and canvas are 1440x900"},
+    {"name":"layer-stack","value":{"canvas":0,"hero":30,"fixedChrome":50},"status":"observed","evidence":"layout-map.json; desktop 1440x900; #main-content > canvas, section.hero, header.header and footer.footer"},
+    {"name":"hero-grid","value":{"column":"1002.48px","rows":["178px","55px"],"gap":"32px","justifyContent":"center"},"status":"observed","evidence":"layout-map.json; desktop 1440x900; #main-content > section.hero"},
+    {"name":"header","value":{"position":"fixed","rect":"0,0,1440,55","display":"flex","justifyContent":"space-between"},"status":"observed","evidence":"layout-map.json; desktop 1440x900; #main-content > header.header"},
+    {"name":"cta","value":{"rect":"627.92,527.5,184.14,55","iconBox":"40x40","svg":"18.38x18.38","svgRotation":"45deg computed matrix"},"status":"observed","evidence":"layout-map.json; desktop 1440x900; section.hero > button and descendants"},
+    {"name":"mobile-fallback","value":{"body":"flex centered","overflow":"hidden","interactiveCount":0,"canvasRect":"0x0"},"status":"observed","evidence":"layout-map.json and dependencies.json; mobile 390x844; html > body and #main-content > canvas"}
+  ],
+  "breakpoints": [
+    {"name":"compact-max","value":"1024px","status":"observed","evidence":"design-tokens.json; mediaQueries; screen and (max-width: 1024px)"},
+    {"name":"immersive-min","value":"1025px","status":"observed","evidence":"design-tokens.json; mediaQueries; screen and (min-width: 1025px)"},
+    {"name":"behavior-at-boundary","value":"compact likely maps to fallback and wide to immersive stage","status":"inferred","evidence":"media queries plus observed desktop 1440x900 immersive and mobile 390x844 fallback; boundary itself not captured"}
+  ],
+  "motion": [
+    {"name":"cta-transition","value":"transform 0.3s, background-color 0.3s, box-shadow 0.3s","status":"observed","evidence":"layout-map.json; desktop 1440x900; section.hero > button"},
+    {"name":"other-transform-transition","value":"transform 0.3s","status":"observed","evidence":"design-tokens.json; desktop 1440x900; one occurrence"},
+    {"name":"gallery-motion-parameters","value":null,"status":"unavailable","evidence":"animations.json; no keyframes, active animations, samples or hover changes; no entry action"},
+    {"name":"easing","value":null,"status":"unavailable","evidence":"No easing value in design-tokens.json, layout-map.json or animations.json"}
+  ],
+  "dependencies": [
+    {"name":"three","value":true,"confidence":"medium-high","status":"observed","evidence":"dependencies.json; both viewports; detected.three true and webglCanvas true"},
+    {"name":"public-module","value":"/assets/index-BSSXJ9N0.js","status":"observed","evidence":"dependencies.json; both viewports; type module"},
+    {"name":"public-stylesheet","value":"/assets/index-DmlARsBh.css","status":"observed","evidence":"design-tokens.json; both viewports; accessible, 19 rules"},
+    {"name":"not-detected","value":["gsap","lenis","locomotiveScroll","barba","swiper","next","nuxt"],"status":"observed","evidence":"dependencies.json; detected flags false; this is not proof of absolute absence"},
+    {"name":"webgl-performance-warning","value":"GPU stall due to ReadPixels","status":"observed","evidence":"browser-console.json; desktop 1440x900; four warnings"}
+  ],
+  "components": [
+    {"name":"immersive-canvas-stage","value":"fixed full-viewport canvas behind editorial UI","status":"observed","evidence":"layout-map.json; desktop 1440x900; #main-content > canvas and section.hero"},
+    {"name":"fixed-header","value":"55px flex chrome","status":"observed","evidence":"layout-map.json; desktop; #main-content > header.header"},
+    {"name":"editorial-hero","value":"centered H1 and CTA grid","status":"observed","evidence":"layout-map.json; desktop; #main-content > section.hero"},
+    {"name":"pill-cta","value":"184.14x55 with 40px circular icon","status":"observed","evidence":"layout-map.json; desktop; section.hero > button"},
+    {"name":"unsupported-state","value":"centered message with no interactive controls","status":"observed","evidence":"layout-map.json; mobile; html > body and #not-supported > h1"}
+  ],
+  "unavailable": [
+    {"name":"palette","status":"unavailable","evidence":"capture-meta.json and design-tokens.json; intentionally omitted"},
+    {"name":"raw-rendered-html-css-screenshots-and-assets","status":"unavailable","evidence":"evidence.md names some artifacts, but they are absent from the audited directory; resources-manifest localFile values are null"},
+    {"name":"3d-scene-parameters-and-gestures","status":"unavailable","evidence":"No saved JS bundle inspection, no exercised interactions and animations.json arrays empty"},
+    {"name":"accessibility-states","status":"unavailable","evidence":"No focus, keyboard, screen reader, contrast or reduced-motion evidence"},
+    {"name":"intermediate-width-behavior","status":"unavailable","evidence":"Only 1440x900 and 390x844 viewports were captured"}
+  ]
+}

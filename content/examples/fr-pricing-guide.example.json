@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0",
+  "status": "pending_validation",
+  "currency": "BRL",
+  "region": null,
+  "referenceMonth": null,
+  "approvedBy": null,
+  "disclaimer": "Faixas orientativas dependem de levantamento, escopo, condição do imóvel, logística, materiais e responsabilidades contratadas.",
+  "requiredContext": [
+    "cidade_regiao",
+    "tipologia",
+    "metragem",
+    "imovel_ocupado",
+    "condicao_instalacoes",
+    "padrao_materiais",
+    "prazo_janela",
+    "logistica_acesso",
+    "inclusoes_exclusoes"
+  ],
+  "ranges": [
+    {
+      "id": "diagnostico-consultoria",
+      "label": "Diagnóstico / consultoria",
+      "status": "pending_validation",
+      "unit": null,
+      "min": null,
+      "max": null,
+      "includes": [],
+      "excludes": [],
+      "source": null,
+      "verifiedAt": null
+    },
+    {
+      "id": "projeto-interiores-3d",
+      "label": "Projeto de interiores / 3D",
+      "status": "pending_validation",
+      "unit": null,
+      "min": null,
+      "max": null,
+      "includes": [],
+      "excludes": [],
+      "source": null,
+      "verifiedAt": null
+    },
+    {
+      "id": "projeto-executivo-compatibilizacao",
+      "label": "Projeto executivo / compatibilização",
+      "status": "pending_validation",
+      "unit": null,
+      "min": null,
+      "max": null,
+      "includes": [],
+      "excludes": [],
+      "source": null,
+      "verifiedAt": null
+    },
+    {
+      "id": "gerenciamento",
+      "label": "Gerenciamento",
+      "status": "pending_validation",
+      "unit": null,
+      "min": null,
+      "max": null,
+      "includes": [],
+      "excludes": [],
+      "source": null,
+      "verifiedAt": null
+    }
+  ]
+}
+
