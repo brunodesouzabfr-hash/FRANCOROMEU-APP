@@ -10,7 +10,7 @@ Prioridade: (1) consolidar entidade e NAP confirmado; (2) disponibilizar URLs HT
 
 ## 2. Implementação on-page
 
-- Canonical: `https://francoromeu.com.br/`, alterado por view para `/sobre`, `/ambientes`, `/projetos-3d`, `/portfolio` e `/orcamento`.
+- Canonical: `https://francoromeu-app.vercel.app/`, alterado por view para `/sobre`, `/ambientes`, `/projetos-3d`, `/portfolio` e `/orcamento`.
 - Grafo: `LocalBusiness`, `WebSite/SearchAction`, `BreadcrumbList`, `ItemList`, cinco FAQs e 16 `Service` com IDs reais.
 - Navegação: links HTTP rastreáveis; History API e `popstate`; fallback de produção em `vercel.json`.
 - ALT: textos alternativos permanecem vazios em camadas estritamente decorativas. Logo dentro de marca já nomeada é decorativo; peças editoriais devem descrever o conteúdo e declarar “render” ou “referência visual”, nunca “obra executada” sem comprovação.
@@ -21,7 +21,7 @@ Prioridade: (1) consolidar entidade e NAP confirmado; (2) disponibilizar URLs HT
 ### Configuração
 1. Confirmar propriedade e preencher o **mesmo NAP** usado abaixo; se não houver atendimento no endereço, ocultá-lo e definir área de serviço.
 2. Escolher a categoria principal que melhor represente a operação real e esteja disponível no painel: **Empresa de reformas**. Avaliar secundárias: Designer de interiores, Pintor, Marceneiro e Empreiteira de revestimentos.
-3. Vincular `https://francoromeu.com.br/` e o telefone `+55 11 99002-1603`; cadastrar horário segunda–sexta, 08h–18h, somente se vigente.
+3. Vincular `https://francoromeu-app.vercel.app/` e o telefone `+55 11 99002-1603`; cadastrar horário segunda–sexta, 08h–18h, somente se vigente.
 4. Adicionar fotos próprias identificadas por etapa, sem apresentar render ou referência como obra. Publicar semanalmente e responder avaliações com contexto real.
 5. Ativar mensagens, orçamento e atributos somente quando verdadeiros. Não inserir palavras-chave no nome comercial.
 
@@ -92,7 +92,7 @@ Cada pauta segue: introdução com problema real → critérios e alternativas �
 
 ## 6. NAP e diretórios
 
-**NAP controlado:** Franco Romeu — Arte & Engenharia | endereço: **não publicar até confirmação** (empresa de área de serviço, se aplicável) | +55 11 99002-1603 | `https://francoromeu.com.br/` | `romeudifranco@gmail.com`.
+**NAP controlado:** Franco Romeu — Arte & Engenharia | endereço: **não publicar até confirmação** (empresa de área de serviço, se aplicável) | +55 11 99002-1603 | `https://francoromeu-app.vercel.app/` | `romeudifranco@gmail.com`.
 
 | Diretório | Status inicial | Ação |
 |---|---|---|
@@ -121,7 +121,7 @@ Registrar URL, login do proprietário, data, status de verificação e última a
 **Modelo de resposta jornalística:** Assunto: `[consulta] — fonte sobre reformas em São Paulo`. “Sou [nome/cargo verificável], da Franco Romeu — Arte & Engenharia. Em reformas, os três controles que mais evitam retrabalho são [1], [2] e [3]. [Explicação factual em 80–120 palavras]. Posso detalhar o método e fornecer imagem própria com crédito. Contato: +55 11 99002-1603.”
 
 ### 10 respostas-base para Quora/Reddit/grupos
-1. **Quanto custa reformar?** Sem escopo, medida e condição da base, preço é falsa precisão. Organize etapas e valide o imóvel; use o estimador: `https://francoromeu.com.br/orcamento`.
+1. **Quanto custa reformar?** Sem escopo, medida e condição da base, preço é falsa precisão. Organize etapas e valide o imóvel; use o estimador: `https://francoromeu-app.vercel.app/orcamento`.
 2. **Porcelanato líquido serve sobre piso existente?** Às vezes, após ensaiar estabilidade, umidade, nivelamento e aderência. Diagnóstico precede especificação.
 3. **Piso contínuo trinca?** O risco depende da base, juntas, movimentação e sistema aplicado. Nenhum acabamento corrige suporte instável.
 4. **Duas ou três demãos?** Cobertura depende de cor, produto, absorção e preparação; conte o sistema completo, não apenas demãos.
@@ -136,7 +136,7 @@ Registrar URL, login do proprietário, data, status de verificação e última a
 
 ### Checklist
 - [ ] Confirmar propriedade de domínio no Search Console por DNS.
-- [ ] Enviar `https://francoromeu.com.br/sitemap.xml`; inspecionar as seis URLs e testar canonical renderizado.
+- [ ] Enviar `https://francoromeu-app.vercel.app/sitemap.xml`; inspecionar as seis URLs e testar canonical renderizado.
 - [ ] Verificar HTTPS, redirects e uma única versão de host.
 - [ ] No GA4, excluir tráfego interno e manter consentimento conforme LGPD.
 - [ ] Instrumentar `generate_lead` no envio válido; `click_whatsapp`, `start_budget`, `complete_budget`, `view_service` e `click_phone` sem dados pessoais.

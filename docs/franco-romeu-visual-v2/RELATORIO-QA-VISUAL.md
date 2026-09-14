@@ -41,7 +41,7 @@ esta integração. O bloco integral `DEFAULT_DATA` manteve o SHA-256
 - Favicon SVG, ICO multirresolução, PNG 16/32, Apple Touch 180, PWA 192/512 e
   Safari pinned tab foram integrados.
 - Open Graph, Twitter Card e JSON-LD apontam para URLs absolutas no domínio
-  canônico `francoromeu.com.br`.
+  canônico `francoromeu-app.vercel.app`.
 
 ## Limite de validação
 
