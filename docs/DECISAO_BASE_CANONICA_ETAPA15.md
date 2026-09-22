@@ -1,39 +1,43 @@
-# Decisão: base canônica da Franco Romeu
+# Decisão: `main` como base canônica da Franco Romeu
 
-**Data:** 21 de agosto de 2026  
-**Decisão do proprietário:** a Etapa 15 — Materialidade Imersiva é a base funcional e visual para o desenvolvimento futuro.
+**Data da decisão atual:** 22 de setembro de 2026
+**Decisão do proprietário:** a branch `main` atual é a única base funcional e visual canônica do projeto e corresponde à aplicação publicada em `https://francoromeu-app.vercel.app/`.
+
+Esta decisão substitui a orientação de 21 de agosto de 2026 que usava a branch `codex/etapa-15-materialidade-imersiva` como base provisória.
 
 ## Estado de cada linha de trabalho
 
-| Item | Estado | Uso daqui em diante |
+| Item | Estado atual | Uso daqui em diante |
 |---|---|---|
-| `main` | Versão estável oficial atual | Não desenvolver diretamente. Receberá a nova base somente após aprovação e merge do PR #6. |
-| PR #3 / Etapa 13.1.3 | Intermediária, substituída | Manter apenas como histórico. Fundamentos úteis já chegaram à base canônica. |
-| PR #4 / Etapa 14 | Intermediária, substituída | Manter apenas como histórico. Não continuar seu visual separadamente. |
-| PR #5 / Etapa 15 “sites individuais” | Rejeitada | Não reutilizar layout, navegação nem decisões visuais. |
-| PR #6 / Etapa 15 “Materialidade Imersiva” | Canônica, em desenvolvimento | Única base autorizada para melhorias atuais. Permanece rascunho até o gate de qualidade. |
-| `develop` | Sem papel no fluxo atual | Não usar como base enquanto não houver uma decisão explícita sobre sua finalidade. |
+| `main` | Canônica e publicada | Fonte de verdade do produto. Todo novo trabalho deve partir da versão mais recente da `main`. |
+| Site Vercel | Produção | `https://francoromeu-app.vercel.app/` representa a aplicação canônica publicada. |
+| PR #6 / `codex/etapa-15-materialidade-imersiva` | Histórico | Não usar como base de desenvolvimento. Conservar apenas para rastreabilidade da evolução. |
+| PR #3 / Etapa 13.1.3 | Histórico intermediário | Não continuar separadamente. |
+| PR #4 / Etapa 14 | Histórico intermediário | Não continuar separadamente. |
+| PR #5 / “sites individuais” | Rejeitado | Não reutilizar layout, navegação nem decisões visuais. |
+| `develop` | Sem papel no fluxo atual | Não usar como base sem nova decisão explícita. |
 
 ## Consequências práticas
 
-1. Todo novo trabalho deve partir de `codex/etapa-15-materialidade-imersiva` enquanto o PR #6 não for integrado.
-2. Os PRs #3, #4 e #5 podem ser fechados sem merge porque foram substituídos pelo PR #6.
-3. As branches anteriores serão mantidas temporariamente como histórico; fechá-las ou manter um PR fechado não apaga código.
-4. O PR #6 deve apontar diretamente para `main`, mostrando a mudança completa que poderá virar a próxima versão oficial.
-5. Nenhum merge, publicação ou exclusão de branch faz parte desta decisão.
-6. A base canônica pode receber melhorias incrementais, mas não deve ser substituída por outro redesign sem nova decisão do proprietário.
+1. Antes de qualquer trabalho, atualizar e inspecionar a `main`.
+2. Branches de tarefa, quando necessárias, devem nascer da `main` atualizada.
+3. Alterações diretas na `main` são permitidas somente quando o proprietário as autorizar explicitamente.
+4. Sem autorização explícita para alteração direta, usar branch de tarefa e revisão antes de integrar.
+5. A aplicação publicada e a documentação de governança devem permanecer coerentes com a `main`.
+6. Branches e PRs antigos não voltam a ser canônicos por terem nomes de etapa; servem apenas como histórico.
+7. A experiência atual pode receber melhorias incrementais, mas não deve ser substituída por outro redesign completo sem nova decisão do proprietário.
 
-## Gate antes de integrar à main
+## Gate de qualidade
 
-O PR #6 permanece como rascunho até haver validação suficiente de:
+Toda alteração, direta ou via PR, deve preservar os contratos descritos em `AGENTS.md` e executar, no mínimo:
 
-- Chrome, Safari e Firefox reais;
-- 390 px, touch e navegação responsiva;
-- GPU/WebGL e fallbacks;
-- rede lenta e falhas de dependências;
-- Calculadora, IQE e PDF;
-- teclado, foco e movimento reduzido;
-- imagens e alegações comerciais;
-- testes automatizados existentes.
+```bash
+npm test
+npm run check:html
+```
 
-Quando esse gate for concluído, o proprietário decidirá explicitamente se o PR #6 pode sair de rascunho e ser integrado à `main`.
+Quando aplicável, também devem ser registrados testes visuais, responsivos, de teclado, cálculo, persistência, PDF e integrações externas.
+
+## Registro desta atualização
+
+A atualização da governança e das metatags do site foi autorizada diretamente pelo proprietário em 22 de setembro de 2026. Ela não autoriza exclusão de branches, fechamento de PRs históricos ou redesign da aplicação.

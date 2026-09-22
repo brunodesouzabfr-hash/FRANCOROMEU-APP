@@ -27,13 +27,13 @@ Se `git status --short` imprimir qualquer linha, **pare**. Não misture a Etapa 
 
 ## 1. Criar o ponto de retorno
 
-A base registrada para este projeto é `codex/etapa-15-materialidade-imersiva`.
+A base canônica registrada para este projeto é a branch `main`.
 
 ```bash
 git fetch origin
-git switch codex/etapa-15-materialidade-imersiva
-git pull --ff-only origin codex/etapa-15-materialidade-imersiva
-git branch backup/etapa-15-antes-da-etapa-16
+git switch main
+git pull --ff-only origin main
+git branch backup/main-antes-da-etapa-16
 git switch -c codex/etapa-16-portfolio-ambientes
 ```
 

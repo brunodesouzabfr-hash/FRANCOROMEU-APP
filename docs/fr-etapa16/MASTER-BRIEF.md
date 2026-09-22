@@ -3,7 +3,7 @@
 ## Contrato mestre de implementação
 
 **Projeto:** Franco Romeu (ꟻR) — Forjada Resistência · Arte + Engenharia  
-**Base canônica informada:** branch `codex/etapa-15-materialidade-imersiva`  
+**Base canônica informada:** branch `main`, correspondente à aplicação publicada em `https://francoromeu-app.vercel.app/`
 **Escopo:** corrigir interações críticas e construir uma nova experiência para Portfólio e Ambientes, preservando todo contrato funcional da aplicação.  
 **Modo de trabalho:** local, sem API, sem automação externa, sem deploy e em checkpoints reversíveis.
 

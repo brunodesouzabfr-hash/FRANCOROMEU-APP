@@ -54,9 +54,21 @@ function localAsset(url) {
 
 test('unifica domínio, metadados sociais, JSON-LD e roteador SPA', () => {
   const origin = 'https://francoromeu-app.vercel.app';
+  assert.equal(doc.querySelectorAll('meta[name="p:domain_verify"]').length, 1);
+  assert.equal(doc.querySelector('meta[name="p:domain_verify"]').content, 'feefd2f4d4ca08f595a42c56885b37ad');
+  assert.equal(doc.querySelector('meta[name="application-name"]').content, 'Franco Romeu');
+  assert.equal(doc.querySelector('meta[name="apple-mobile-web-app-title"]').content, 'Franco Romeu');
+  assert.equal(doc.querySelector('meta[name="mobile-web-app-capable"]').content, 'yes');
+  assert.equal(doc.querySelector('meta[name="apple-mobile-web-app-capable"]').content, 'yes');
+  assert.equal(doc.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]').content, 'black-translucent');
+  assert.equal(doc.querySelector('meta[name="referrer"]').content, 'strict-origin-when-cross-origin');
   assert.equal(doc.querySelector('link[rel="canonical"]').href, `${origin}/`);
   assert.equal(doc.querySelector('meta[property="og:url"]').content, `${origin}/`);
   assert.equal(doc.querySelector('meta[property="og:image"]').content, `${origin}/assets/social/franco-romeu-og-site-1200x630.jpg`);
+  assert.equal(doc.querySelector('meta[property="og:image:secure_url"]').content, `${origin}/assets/social/franco-romeu-og-site-1200x630.jpg`);
+  assert.equal(doc.querySelector('meta[property="og:image:type"]').content, 'image/jpeg');
+  assert.equal(doc.querySelector('meta[property="og:image:width"]').content, '1200');
+  assert.equal(doc.querySelector('meta[property="og:image:height"]').content, '630');
   assert.equal(doc.querySelector('meta[name="twitter:image"]').content, `${origin}/assets/social/franco-romeu-og-site-1200x630.jpg`);
 
   const graph = JSON.parse(doc.querySelector('#fr-seo-structured-data').textContent)['@graph'];

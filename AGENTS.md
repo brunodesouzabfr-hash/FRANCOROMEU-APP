@@ -4,14 +4,16 @@ Estas instruções valem para todo o repositório. Elas existem para permitir ev
 
 ## 0. Decisão canônica vigente
 
-- A única base funcional e visual autorizada para desenvolvimento é a branch `codex/etapa-15-materialidade-imersiva` e seu PR #6.
-- Enquanto o PR #6 não for aprovado e integrado, toda nova branch de trabalho deve partir dessa branch.
-- A `main` continua sendo a versão estável oficial atual, mas ainda não representa a direção visual escolhida para o próximo lançamento.
+- A branch `main` é a única base funcional e visual canônica do projeto.
+- A `main` corresponde à aplicação publicada em `https://francoromeu-app.vercel.app/` e deve ser a origem de todo novo trabalho.
+- Branches de tarefa, quando usadas, devem partir da `main` atualizada e retornar a ela somente após validação.
+- Alterações diretas na `main` são permitidas quando o proprietário as autorizar explicitamente; sem essa autorização, use uma branch de tarefa.
+- O PR #6 e a branch `codex/etapa-15-materialidade-imersiva` permanecem apenas como histórico da evolução do produto e não são mais base de desenvolvimento.
 - PRs #3 e #4 e suas branches são histórico intermediário. Não continuar o visual dessas etapas separadamente.
 - O PR #5 e `codex/etapa-15-sites-individuais` foram rejeitados. Não reutilizar layout, navegação ou decisões visuais dessa tentativa.
 - A branch `develop` não tem papel aprovado no fluxo atual.
-- Fundamentos técnicos anteriores já incorporados à Materialidade Imersiva devem ser preservados.
-- Não substitua a Materialidade Imersiva por um novo redesign completo sem autorização explícita.
+- Fundamentos técnicos e visuais já consolidados na `main` devem ser preservados.
+- Não substitua a experiência atual por um novo redesign completo sem autorização explícita.
 - A decisão formal está em `docs/DECISAO_BASE_CANONICA_ETAPA15.md`.
 
 ## 1. Missão do repositório
@@ -139,12 +141,12 @@ Não declare teste visual, navegador, dispositivo ou PDF como aprovado se ele n�
 
 ## 9. Git e Pull Requests
 
-- Não desenvolva diretamente na `main`.
+- Use a `main` como origem canônica. Alterações diretas nela exigem autorização explícita do proprietário; sem essa autorização, use uma branch de tarefa.
 - Antes de trocar de branch, confirme que o trabalho local está limpo.
 - Não use `git add .`, `git add -A`, `git push --force`, `git reset --hard` ou operação destrutiva ampla.
 - Adicione apenas caminhos deliberadamente alterados.
 - Commits devem ser pequenos, descritivos e reversíveis.
-- Abra PR em rascunho até testes automáticos e aceite manual estarem documentados.
+- Quando o trabalho usar PR, abra-o em rascunho até testes automáticos e aceite manual estarem documentados.
 - Não faça merge sem autorização do responsável e sem os checks exigidos.
 - Mudança visual significativa precisa de evidência de antes/depois ou descrição verificável no PR.
 - Mudança de fórmula, banco, segurança ou publicação deve declarar risco e rollback.
@@ -176,5 +178,5 @@ Uma tarefa só está concluída quando:
 - invariantes protegidos permanecem válidos;
 - estados normal, vazio, erro e persistência foram considerados;
 - QA manual aplicável foi executado ou marcado explicitamente como pendente;
-- riscos, limitações e rollback estão descritos no PR;
+- riscos, limitações e rollback estão descritos no PR ou no commit/diff quando houver alteração direta autorizada;
 - não houve merge, publicação ou comunicação externa além do que foi autorizado.
