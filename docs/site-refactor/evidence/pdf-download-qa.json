@@ -1,0 +1,18 @@
+{
+  "synthetic": true,
+  "cases": [
+    {
+      "name": "short",
+      "services": 2,
+      "downloaded": true,
+      "bytes": 14083659
+    },
+    {
+      "name": "long",
+      "services": 28,
+      "downloaded": true,
+      "bytes": 34180358
+    }
+  ],
+  "errors": []
+}

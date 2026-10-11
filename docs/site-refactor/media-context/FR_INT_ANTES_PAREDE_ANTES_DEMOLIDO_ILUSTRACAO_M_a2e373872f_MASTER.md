@@ -1,0 +1,56 @@
+# FR_INT_ANTES_PAREDE_ANTES_DEMOLIDO_ILUSTRACAO_M_a2e373872f_MASTER
+
+## METADADOS
+- **Arquivo:** 02_MELHORADAS/PROCESSO/FR_INT_ANTES_PAREDE_ANTES_DEMOLIDO_ILUSTRACAO_M_a2e373872f_MASTER.jpg
+- **ID:** M_a2e373872f
+- **Ambiente:** integração
+- **Lado físico:** central
+- **Etapa:** antes_demolido
+- **Núcleo:** ENV_COZINHA_LAVANDERIA_01
+- **Estado:** aprovado
+- **Origem:** c2pa_marker_trainedAlgorithmicMedia
+- **Rótulo público obrigatório:** RECONSTITUIÇÃO ILUSTRATIVA
+- **SHA-256 da fonte:** a2e373872f20ce3d5ee0cf0474a4ede42e90d795f1d4b7822dbfe7f494e0663a
+- **Dimensões do arquivo entregue:** 1402 × 1122 pixels
+- **SHA-256 do arquivo entregue:** de92bcdbb09b562efb90cc828fe9caf9c29230408d89a54911382de3db089930
+- **Tipo do derivado:** graded_master_native
+- **Fonte original relativa:** IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Cozinha demolida com azulejos brancos antigos-1.png
+- **Recorte na fonte:** null; demais arquivos mantêm enquadramento integral
+- **Regra de publicação:** liberar somente estado aprovado ou candidato com rótulo; HOLD bloqueia exportação pública.
+- **Revisão factual:** PASS_VISUAL; aprovação para ilustração identificada, sem comprovar obra executada.
+
+## CONTEÚDO VISUAL
+- **Objetos:** Ilustração de parede antiga com azulejos brancos, sem marcenaria final.
+- **Materiais:** azulejos brancos; superfícies brutas representadas
+- **Iluminação:** preservar exatamente o estado visível; não concluir comando ou sequência temporal de uma imagem isolada
+- **Elementos arquitetônicos:** parede e passagem representadas; sem comparação documental homologada
+- **Cor dominante:** branco, cinza, amadeirado e preto conforme enquadramento
+- **Medidas executivas:** não documentadas; não inferir medidas dos pixels.
+- **Material especificado no apoio documental:** quartzo Calacatta nas bancadas/frontões identificados; MDP cinza no tampo direito. A imagem ilustrativa não comprova material da obra.
+- **Modelo 3D manipulável:** null; imagem raster não habilita órbita física.
+
+## IMPLEMENTAÇÃO NO SITE
+- **Seção alvo:** processo
+- **Subseção:** cozinha_lavanderia_fr
+- **Posição sugerida:** galeria
+- **Layout sugerido:** carousel
+- **Prioridade:** 3
+- **Implementação necessária:** adicionar galeria identificada ao case cozinha_lavanderia_fr; preservar os cadastros e serviços existentes
+- **Adaptação de layout necessária:** sim; contain para imagens integrais e grade com abertura por teclado; rótulo visível
+- **Fidelidade:** preservar o lado físico e a etapa; não espelhar, completar cenário, mudar contagem de objetos ou afirmar execução real.
+- **Classificação do case:** visualização de projeto; não substituir prova documental de obra.
+
+## SEO / ACESSIBILIDADE
+- **Alt text:** Reconstituição ilustrativa: Ilustração de parede antiga com azulejos brancos, sem marcenaria final
+- **Título:** Antes parede — Franco Romeu
+- **Descrição:** Ilustração de parede antiga com azulejos brancos, sem marcenaria final.
+- **Palavras-chave:** Franco Romeu; cozinha e lavanderia; projeto de interiores; visualização de projeto
+- **Imagem:** contain; dimensão nativa como teto de resolução; abrir detalhe por botão acessível; respeitar prefers-reduced-motion.
+
+## USO SOCIAL
+- **Formato:** carrossel / reel / story / pinterest
+- **Sequência:** usar somente a relação explícita do plano; vedado criar antes/depois documental por inferência.
+- **Legenda base:** Reconstituição ilustrativa. Ilustração de parede antiga com azulejos brancos, sem marcenaria final. Explore os detalhes do projeto.
+- **Hashtags:** #FrancoRomeu #ProjetoDeInteriores #CozinhaPlanejada #Lavanderia
+- **CTA:** Envie fotos e medidas para avaliação inicial.
+- **Fonte social:** original sem tratamento fotométrico; resize/contain e tipografia editorial em derivado separado.

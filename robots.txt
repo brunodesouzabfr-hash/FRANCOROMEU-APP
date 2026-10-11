@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://francoromeu-app.vercel.app/sitemap.xml
+Sitemap: https://francoromeufr.com.br/sitemap.xml
+Sitemap: https://francoromeufr.com.br/sitemap-images.xml

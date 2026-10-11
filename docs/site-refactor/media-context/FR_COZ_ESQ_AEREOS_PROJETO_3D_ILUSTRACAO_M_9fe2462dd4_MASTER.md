@@ -1,0 +1,56 @@
+# FR_COZ_ESQ_AEREOS_PROJETO_3D_ILUSTRACAO_M_9fe2462dd4_MASTER
+
+## METADADOS
+- **Arquivo:** 02_MELHORADAS/TECNICO_3D/FR_COZ_ESQ_AEREOS_PROJETO_3D_ILUSTRACAO_M_9fe2462dd4_MASTER.jpg
+- **ID:** M_9fe2462dd4
+- **Ambiente:** cozinha
+- **Lado físico:** esquerdo
+- **Etapa:** projeto_3d
+- **Núcleo:** OBJ_MARCENARIA_COZINHA_ESQUERDA_01
+- **Estado:** aprovado
+- **Origem:** c2pa_marker_trainedAlgorithmicMedia
+- **Rótulo público obrigatório:** ESTUDO 3D ILUSTRATIVO
+- **SHA-256 da fonte:** 9fe2462dd482033a80744bcb121d29287cf754dee057a0769506d69ab6b85d33
+- **Dimensões do arquivo entregue:** 1122 × 1402 pixels
+- **SHA-256 do arquivo entregue:** 547f15cf0afdd44de013455243001d5e131cd08de0bd4daf544775493c78634c
+- **Tipo do derivado:** graded_master_native
+- **Fonte original relativa:** IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Painel central de vidro escuro-6.png
+- **Recorte na fonte:** null; demais arquivos mantêm enquadramento integral
+- **Regra de publicação:** liberar somente estado aprovado ou candidato com rótulo; HOLD bloqueia exportação pública.
+- **Revisão factual:** PASS_VISUAL; aprovação para ilustração identificada, sem comprovar obra executada.
+
+## CONTEÚDO VISUAL
+- **Objetos:** Estudo cinza integrado com bloco central escuro no aéreo esquerdo.
+- **Materiais:** materiais representados graficamente; raster não é modelo 3D manipulável
+- **Iluminação:** preservar exatamente o estado visível; não concluir comando ou sequência temporal de uma imagem isolada
+- **Elementos arquitetônicos:** limites e passagens apenas conforme pixels da fonte; nenhuma janela nova ao lado da pia
+- **Cor dominante:** branco, cinza, amadeirado e preto conforme enquadramento
+- **Medidas executivas:** não documentadas; não inferir medidas dos pixels.
+- **Material especificado no apoio documental:** quartzo Calacatta nas bancadas/frontões identificados; MDP cinza no tampo direito. A imagem ilustrativa não comprova material da obra.
+- **Modelo 3D manipulável:** null; imagem raster não habilita órbita física.
+
+## IMPLEMENTAÇÃO NO SITE
+- **Seção alvo:** projetos_3d
+- **Subseção:** cozinha_lavanderia_fr
+- **Posição sugerida:** galeria
+- **Layout sugerido:** carousel
+- **Prioridade:** 3
+- **Implementação necessária:** adicionar galeria identificada ao case cozinha_lavanderia_fr; preservar os cadastros e serviços existentes
+- **Adaptação de layout necessária:** sim; contain para imagens integrais e grade com abertura por teclado; rótulo visível
+- **Fidelidade:** preservar o lado físico e a etapa; não espelhar, completar cenário, mudar contagem de objetos ou afirmar execução real.
+- **Classificação do case:** visualização de projeto; não substituir prova documental de obra.
+
+## SEO / ACESSIBILIDADE
+- **Alt text:** Estudo 3d ilustrativo: Estudo cinza integrado com bloco central escuro no aéreo esquerdo
+- **Título:** Aereos — Franco Romeu
+- **Descrição:** Estudo cinza integrado com bloco central escuro no aéreo esquerdo.
+- **Palavras-chave:** Franco Romeu; cozinha e lavanderia; projeto de interiores; visualização de projeto
+- **Imagem:** contain; dimensão nativa como teto de resolução; abrir detalhe por botão acessível; respeitar prefers-reduced-motion.
+
+## USO SOCIAL
+- **Formato:** carrossel / reel / story / pinterest
+- **Sequência:** usar somente a relação explícita do plano; vedado criar antes/depois documental por inferência.
+- **Legenda base:** Estudo 3d ilustrativo. Estudo cinza integrado com bloco central escuro no aéreo esquerdo. Explore os detalhes do projeto.
+- **Hashtags:** #FrancoRomeu #ProjetoDeInteriores #CozinhaPlanejada #Lavanderia
+- **CTA:** Envie fotos e medidas para avaliação inicial.
+- **Fonte social:** original sem tratamento fotométrico; resize/contain e tipografia editorial em derivado separado.

@@ -1,0 +1,44 @@
+{
+  "preflightHTMLBytes": 1393656,
+  "currentSourceBytes": 1417487,
+  "publicHTMLBytes": 1164042,
+  "publicReductionVsPreflight": 0.16475658268611482,
+  "buildSha256": "f37716e9c8bb803ecbfe647dd0953a3b3c31c599bbb13e43d9940523cd8a520b",
+  "heroMeasurementNote": "transfer observed before final desktop-only onboarding guard; unchanged hashed hero assets",
+  "heroMobileBeforeTransfer": 77550,
+  "heroMobileCandidateTransfer": 9992,
+  "heroVariants": [
+    {
+      "width": 640,
+      "format": "webp",
+      "bytes": 21996
+    },
+    {
+      "width": 640,
+      "format": "avif",
+      "bytes": 9692
+    },
+    {
+      "width": 960,
+      "format": "webp",
+      "bytes": 41090
+    },
+    {
+      "width": 960,
+      "format": "avif",
+      "bytes": 16020
+    },
+    {
+      "width": 1600,
+      "format": "webp",
+      "bytes": 86464
+    },
+    {
+      "width": 1600,
+      "format": "avif",
+      "bytes": 30702
+    }
+  ],
+  "originalsPreserved": true,
+  "notFieldCWV": true
+}

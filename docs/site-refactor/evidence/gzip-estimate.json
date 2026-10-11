@@ -1,0 +1,6 @@
+{
+  "baselineGzip": 319105,
+  "candidateGzip": 268234,
+  "kind": "offline gzip estimate, not observed Vercel transfer",
+  "buildSha256": "f37716e9c8bb803ecbfe647dd0953a3b3c31c599bbb13e43d9940523cd8a520b"
+}

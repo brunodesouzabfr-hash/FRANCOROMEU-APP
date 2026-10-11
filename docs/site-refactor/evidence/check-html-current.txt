@@ -1,0 +1,6 @@
+
+> franco-romeu-app@15.1.0 check:html
+> node scripts/check-html.js
+
+HTML check OK: 253 IDs únicos, 6 views, ponte __frCore, núcleo financeiro e bridge PDF incorporados, hero preservado e nenhuma dependência local.
+SEO check OK: JSON-LD com 16 serviços, 6 links de view, roteador e arquivos de rastreamento.

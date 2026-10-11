@@ -47,13 +47,13 @@ function webpDimensions(file) {
 }
 
 function localAsset(url) {
-  const value = new URL(url, 'https://francoromeu-app.vercel.app/');
-  assert.equal(value.origin, 'https://francoromeu-app.vercel.app');
+  const value = new URL(url, 'https://francoromeufr.com.br/');
+  assert.equal(value.origin, 'https://francoromeufr.com.br');
   return value.pathname.replace(/^\//, '');
 }
 
 test('unifica domínio, metadados sociais, JSON-LD e roteador SPA', () => {
-  const origin = 'https://francoromeu-app.vercel.app';
+  const origin = 'https://francoromeufr.com.br';
   assert.equal(doc.querySelectorAll('meta[name="p:domain_verify"]').length, 1);
   assert.equal(doc.querySelector('meta[name="p:domain_verify"]').content, 'feefd2f4d4ca08f595a42c56885b37ad');
   assert.equal(doc.querySelector('meta[name="application-name"]').content, 'Franco Romeu');
@@ -80,7 +80,7 @@ test('unifica domínio, metadados sociais, JSON-LD e roteador SPA', () => {
     'https://www.pinterest.com/FrancoRomeu',
     'https://wa.me/5511990021603'
   ]);
-  assert.match(doc.querySelector('#fr-seo-spa-router').textContent, /origin='https:\/\/francoromeu-app\.vercel\.app'/);
+  assert.match(doc.querySelector('#fr-seo-spa-router').textContent, /origin='https:\/\/francoromeufr\.com\.br'/);
 });
 
 test('favicons, PWA e derivados remasterizados existem nas dimensões corretas', () => {
@@ -204,7 +204,7 @@ test('exportador remove locks, foco e estados transitórios do clone', () => {
     <div id="fr15-amb-project" class="is-open" aria-hidden="false"></div>
     <div id="fr16-amb-dossier" class="is-open" aria-hidden="false"></div>
     <div id="iqe-overlay"></div><div id="modal-backdrop"></div><div class="admin-overlay"></div>
-  </body></html>`, { runScripts: 'outside-only', url: 'https://francoromeu-app.vercel.app/' });
+  </body></html>`, { runScripts: 'outside-only', url: 'https://francoromeufr.com.br/' });
   const win = exportDom.window;
   let exportedHtml = '';
   win.gmCore = () => ({ saveAdminData() {} });
@@ -254,7 +254,7 @@ test('não conserva domínio antigo, i.ibb.co nem altera assets/media', () => {
     assert.doesNotMatch(contents, /i\.ibb\.co/i, `host externo em ${file}`);
   }
 
-  const media = walk('assets/media').sort();
+  const media = walk('assets/media', new Set(['fr-coz-lav'])).sort();
   const digest = crypto.createHash('sha256');
   for (const file of media) {
     digest.update(file);

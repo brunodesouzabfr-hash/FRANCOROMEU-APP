@@ -1,0 +1,12 @@
+{
+  "before": {
+    "criarConteudoPDF": "35215e00ddacdaca5fd4eb13cc3db37487d3a06214f596a16ca108c9f5f605ba",
+    "generatePDF": "154e286b56df7b56991e83a738cbc5de09067bf56b6d03f41cf7b77a8a98da46"
+  },
+  "after": {
+    "criarConteudoPDF": "35215e00ddacdaca5fd4eb13cc3db37487d3a06214f596a16ca108c9f5f605ba",
+    "generatePDF": "154e286b56df7b56991e83a738cbc5de09067bf56b6d03f41cf7b77a8a98da46"
+  },
+  "unchanged": true,
+  "visualFinding": "Long PDF cuts rows across pages; absolute footer overlaps final totals; preserved legacy renderer."
+}
