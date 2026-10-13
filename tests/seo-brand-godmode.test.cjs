@@ -75,10 +75,10 @@ test('unifica domínio, metadados sociais, JSON-LD e roteador SPA', () => {
   const localBusiness = graph.find(node => Array.isArray(node['@type']) && node['@type'].includes('LocalBusiness'));
   assert.equal(localBusiness.logo.url, `${origin}/assets/brand/franco-romeu-logo-remaster-800.webp`);
   assert.equal(localBusiness.image, `${origin}/assets/social/franco-romeu-og-site-1200x630.jpg`);
+  assert.equal(localBusiness.alternateName, 'Franco Romeu — Reformas, projetos sob medida e Design');
   assert.deepEqual(localBusiness.sameAs, [
-    'https://instagram.com/francoromeu.fr',
-    'https://www.pinterest.com/FrancoRomeu',
-    'https://wa.me/5511990021603'
+    'https://www.instagram.com/francoromeu.fr/',
+    'https://www.linkedin.com/in/franco-romeu-fr/'
   ]);
   assert.match(doc.querySelector('#fr-seo-spa-router').textContent, /origin='https:\/\/www\.francoromeufr\.com\.br'/);
 });
