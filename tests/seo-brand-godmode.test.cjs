@@ -83,6 +83,11 @@ test('unifica domínio, metadados sociais, JSON-LD e roteador SPA', () => {
     "https://br.pinterest.com/francoromeu_fr/",
     "https://github.com/Francoromeu-fr"
   ]);
+  assert.equal('address' in localBusiness, false);
+  assert.equal('geo' in localBusiness, false);
+  const website = graph.find(node => node['@type'] === 'WebSite');
+  assert.ok(website);
+  assert.equal('potentialAction' in website, false);
   assert.match(doc.querySelector('#fr-seo-spa-router').textContent, /origin='https:\/\/www\.francoromeufr\.com\.br'/);
 });
 
