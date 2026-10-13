@@ -81,3 +81,12 @@ test('arquivos de rastreamento usam o domínio canônico', () => {
   assert.ok(fs.existsSync('vercel.json'));
   assert.ok(fs.existsSync('docs/SEARCH_CONTROL_ENGINEERING.md'));
 });
+
+
+test('Ahrefs Web Analytics tem uma única tag assíncrona no head', () => {
+  const hits = [...doc.querySelectorAll('head script[src="https://analytics.ahrefs.com/analytics.js"]')];
+  assert.equal(hits.length, 1, 'tag Ahrefs duplicada');
+  assert.equal(hits[0].getAttribute('data-key'), 'R5uObk7S/kmy79NyRbbXsA');
+  assert.ok(hits[0].hasAttribute('async'));
+  assert.equal(html.split('analytics.ahrefs.com/analytics.js').length - 1, 1);
+});

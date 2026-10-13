@@ -59,6 +59,7 @@ O workflow `.github/workflows/quality.yml` executa as regressões na `main` e em
 - `vercel.json` mantém recarga direta das rotas da SPA e redireciona o host automático da Vercel para o domínio canônico.
 - `.github/workflows/indexnow.yml` lê o sitemap já publicado e notifica o IndexNow após validar a chave pública.
 - O HTML contém metadados sociais e dados estruturados; claims, avaliações e credenciais não comprovados continuam proibidos.
+- Ahrefs Web Analytics está instalado em uma única tag assíncrona no `<head>` de `index.html`. Não adicionar a mesma chave ao GTM; verificar a instalação e o rastreamento das rotas SPA no painel Ahrefs.
 
 Mudanças de SEO devem manter código, testes e documentação na mesma origem canônica.
 

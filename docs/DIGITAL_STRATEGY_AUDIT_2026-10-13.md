@@ -26,7 +26,7 @@
 | `alternateName` | FR, ꟻR, assinatura da marca | **Aplicado** | Nomes autorais, não serviços |
 | `sameAs` | Redes e GitHub oficiais | **Aplicado** | URLs declaradas pelo proprietário |
 | `telephone` | Removido na v2, sem reposição | **Preservado** `+55-11-99002-1603` | Telefone fornecido pelo proprietário |
-| `email` | Removido na v2, sem reposição | **Preservado** `romeudifranco@gmail.com` | `@gmail.com.br` difere do contato anterior e precisa ser resolvido antes de alteração |
+| `email` | Removido na v2, sem reposição | **Preservado** `romeudifranco@gmail.com` | Confirmado pelo proprietário em 13/10/2026; a versão `@gmail.com.br` não deve ser utilizada |
 | `address` | Removido, sem reposição | **Preservado** com cidade São Paulo, SP, BR, sem rua/CEP | Não tratar cidade como sede ou endereço de atendimento |
 | `geo` | Removido, sem reposição | **Preservado por pedido explícito**, valor legado -23.5505, -46.6333 | CENTRO APROXIMADO DE SÃO PAULO: não é a geolocalização verificada da Franco Romeu; corrigir com fonte primária antes de uso em mapas |
 | `areaServed` | Permaneceu na v2 | **Preservado** conforme `main` | São Paulo, Guarulhos, Osasco, Barueri, Santo André, São Bernardo do Campo; confirmar cidades realmente atendidas antes de divulgar como cobertura garantida |
@@ -74,7 +74,7 @@ A diferença entre abrangência e geoponto é estrutural: `areaServed` cobre uma
 
 ## 4. Pendências que não devem ser escondidas
 
-1. Verificar por fonte primária o e-mail comercial — `romeudifranco@gmail.com` versus o texto posterior `romeudifranco@gmail.com.br`. Não publicar a extensão .br automaticamente.
+1. **Resolvido:** e-mail comercial confirmado em 13/10/2026 como `romeudifranco@gmail.com`. Não publicar `@gmail.com.br`.
 2. Definir se o negócio exibe endereço de atendimento físico ou atua como prestador por área de serviço; não publicar moradia sem escolha explícita.
 3. Validar coordenadas reais, municípios de atendimento, horários e pagamentos no Perfil da Empresa/contratos; `areaServed` não substitui endereço nem geoponto.
 4. Confirmar que `?busca=` efetivamente executa a pesquisa. Se não executar, corrigir o comportamento ou remover o `SearchAction` em uma mudança futura autorizada.
@@ -90,3 +90,12 @@ A diferença entre abrangência e geoponto é estrutural: `areaServed` cobre uma
 - Diferenças compiladas sobre `main`; os dois históricos de commit originais permanecem intactos e rastreáveis nas branches autorais.
 - Preservação da aplicação verificada por diff restrito aos arquivos desta integração; rodar `npm test` e `npm run check:html` antes de merge e testar preview das rotas.
 - `main` e produção não devem ser alteradas sem revisão, aceite e autorização específicos.
+
+## 6. Ahrefs Web Analytics — integração autorizada
+
+- Instalação direta no `<head>` do `index.html` usando a URL `https://analytics.ahrefs.com/analytics.js`, a chave pública fornecida pelo proprietário e o atributo `async`.
+- Não instalar simultaneamente a tag no Google Tag Manager: evitar duplicidade.
+- Testar o recurso «Verificar instalação» no painel Ahrefs depois da publicação. Ter a tag no GitHub não garante recepção de dados na produção.
+- Nas rotas SPA com History API, conferir se a visualização de cada URL é reconhecida. Não disparar eventos virtuais manualmente antes de observar o funcionamento real.
+- Ahrefs coleta URLs incluindo parâmetros. Não incluir dados pessoais, textos privados de orçamento ou contatos de clientes na query string; revisar a política de privacidade e as tags existentes sob LGPD.
+- Teste de regressão adicionado para exigir uma só tag com `src`, `data-key` e `async` corretos.
