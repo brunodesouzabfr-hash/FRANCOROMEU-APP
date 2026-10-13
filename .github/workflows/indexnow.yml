@@ -1,13 +1,81 @@
 name: IndexNow
+
 on:
   push:
     branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: fr-indexnow-production
+  cancel-in-progress: true
+
 jobs:
   indexnow:
+    name: Notify IndexNow from production sitemap
     runs-on: ubuntu-latest
+    timeout-minutes: 6
+
     steps:
-      - name: Notificar IndexNow
+      - name: Wait for production and submit canonical URLs
+        env:
+          FR_ORIGIN: https://www.francoromeufr.com.br
+          FR_INDEXNOW_KEY: 15371fdcae5446498483cb1385b2ccc3
+          FR_INDEXNOW_ENDPOINT: https://api.indexnow.org/indexnow
         run: |
-          curl -X POST https://api.indexnow.org/indexnow \
-            -H "Content-Type: application/json" \
-            -d '{"host":"www.francoromeufr.com.br","key":"15371fdcae5446498483cb1385b2ccc3","keyLocation":"https://www.francoromeufr.com.br/15371fdcae5446498483cb1385b2ccc3.txt","urlList":["https://www.francoromeufr.com.br/"]}'
+          set -euo pipefail
+
+          key_location="${FR_ORIGIN}/${FR_INDEXNOW_KEY}.txt"
+
+          for attempt in {1..18}; do
+            if curl -fsS --max-time 15 "${FR_ORIGIN}/sitemap.xml" -o /tmp/fr-sitemap.xml \
+              && curl -fsS --max-time 15 "${key_location}" | grep -Fxq "${FR_INDEXNOW_KEY}"; then
+              break
+            fi
+
+            if [ "${attempt}" -eq 18 ]; then
+              echo "Production sitemap or IndexNow key was not ready after deployment checks."
+              exit 1
+            fi
+
+            sleep 10
+          done
+
+          python3 - <<'PY' > /tmp/indexnow-payload.json
+          import json
+          import os
+          import xml.etree.ElementTree as ET
+
+          origin = os.environ["FR_ORIGIN"].rstrip("/")
+          key = os.environ["FR_INDEXNOW_KEY"]
+          namespace = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+          root = ET.parse("/tmp/fr-sitemap.xml").getroot()
+
+          urls = []
+          for node in root.findall("sm:url/sm:loc", namespace):
+              if not node.text:
+                  continue
+              url = node.text.strip()
+              if url == origin or url.startswith(origin + "/"):
+                  urls.append(url)
+
+          urls = list(dict.fromkeys(urls))
+          if not urls:
+              raise SystemExit("No canonical URLs were found in the production sitemap.")
+          if len(urls) > 10000:
+              raise SystemExit("IndexNow accepts at most 10,000 URLs per POST.")
+
+          print(json.dumps({
+              "host": "www.francoromeufr.com.br",
+              "key": key,
+              "keyLocation": f"{origin}/{key}.txt",
+              "urlList": urls,
+          }, ensure_ascii=False))
+          PY
+
+          curl --fail-with-body -sS \
+            -X POST "${FR_INDEXNOW_ENDPOINT}" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            --data-binary @/tmp/indexnow-payload.json

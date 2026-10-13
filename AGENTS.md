@@ -5,7 +5,7 @@ Estas instruções valem para todo o repositório. Elas existem para permitir ev
 ## 0. Decisão canônica vigente
 
 - A branch `main` é a única base funcional e visual canônica do projeto.
-- A `main` corresponde à aplicação publicada em `https://francoromeu-app.vercel.app/` e deve ser a origem de todo novo trabalho.
+- A `main` corresponde à aplicação publicada em `https://www.francoromeufr.com.br/` e deve ser a origem de todo novo trabalho.
 - Branches de tarefa, quando usadas, devem partir da `main` atualizada e retornar a ela somente após validação.
 - Alterações diretas na `main` são permitidas quando o proprietário as autorizar explicitamente; sem essa autorização, use uma branch de tarefa.
 - O PR #6 e a branch `codex/etapa-15-materialidade-imersiva` permanecem apenas como histórico da evolução do produto e não são mais base de desenvolvimento.

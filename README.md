@@ -1,99 +1,92 @@
-# ꟻR — Franco Romeu Alpha 2.0
+# ꟻR — Franco Romeu
 
-Aplicação corporativa e acervo digital da Franco Romeu — **Arte + Engenharia**. A experiência reúne apresentação institucional, ambientes, estudos 3D, portfólio de referências e uma calculadora de estimativa orientativa.
+Aplicação corporativa e acervo digital da **Franco Romeu — Arte + Engenharia**. A experiência reúne apresentação institucional, ambientes, projetos 3D, portfólio e uma calculadora de estimativa orientativa.
 
-## Fonte canônica e documentos de decisão
+**Produção canônica:** https://www.francoromeufr.com.br/  
+**Repositório canônico:** `brunodesouzabfr-hash/FRANCOROMEU-APP`, branch `main`.
 
-Este repositório, branch `main`, é a fonte de verdade do produto. A versão preparada na branch de revisão é a **Etapa 13.1.3**, que restaura o carregamento resiliente das bibliotecas de PDF sem alterar o motor financeiro.
+## Estado atual
 
-- [Registro mestre da fonte canônica](docs/REGISTRO_MESTRE_FONTE_CANONICA.md)
-- [Anexo comentado: mudanças reais e direção Awwwards](docs/ANEXO_EVOLUCAO_VISUAL_AWWWARDS.md)
-- [Brief JSON para prompts e roadmap](docs/fr_awwwards_redesign_brief.json)
+O artefato publicado é o `index.html` da raiz. Os arquivos em `base-original/` e os documentos das Etapas 13–16 permanecem como histórico, fonte de regressão e rastreabilidade; eles não substituem a `main` atual.
 
-Os documentos distinguem explicitamente o que está implementado, proposto, dependente de conteúdo, não comprovado ou proibido. Referências Awwwards são repertório de princípios, não código/layout a copiar.
+As rotas públicas da SPA são:
 
-## Baixar somente o arquivo HTML
+- `/`
+- `/sobre`
+- `/ambientes`
+- `/projetos-3d`
+- `/portfolio`
+- `/orcamento`
 
-O aplicativo principal agora é autocontido: o núcleo financeiro foi incorporado no próprio documento. Para guardar ou enviar apenas a aplicação, baixe este arquivo:
+O domínio `www.francoromeufr.com.br` é a origem canônica para metadados, JSON-LD, sitemap e compartilhamento. O domínio automático da Vercel não deve ser promovido como URL pública.
 
-```text
-base-original/FRANCO_ROMEU_ETAPA13_ORIGINAL.html
-```
+## Arquitetura e invariantes
 
-No GitHub, abra o arquivo, clique em **Raw** e use **Salvar página como…** (`Ctrl+S`). Dentro da própria aplicação, o God Mode também oferece o botão **“⬇️ Baixar HTML definitivo”**, que exporta uma cópia limpa com as personalizações salvas.
+A aplicação permanece majoritariamente autocontida em HTML/JavaScript, com núcleo financeiro testável em `src/budget-core.js`.
 
-O HTML funciona diretamente com duplo clique. Recursos online — imagens externas, fontes, consulta de CEP e bibliotecas de PDF — continuam exigindo conexão com a internet, mas nenhum arquivo JavaScript local adicional é necessário.
+Antes de qualquer alteração, leia `AGENTS.md`. Entre os invariantes protegidos estão:
+
+- `FRBudgetCore` e `window.__frCore`;
+- 115 serviços, 15 categorias e 7 cupons padrão;
+- as seis views públicas;
+- persistência, IQE, busca, PDF e navegação SPA;
+- preços, IDs, fórmulas e regras financeiras sem alteração não autorizada.
 
 ## Execução local
 
-Sirva a raiz do repositório por HTTP para que módulos e integrações funcionem corretamente:
+Na raiz:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Abra `http://localhost:8000/base-original/FRANCO_ROMEU_ETAPA13_ORIGINAL.html`. A abertura por `file://` possui suporte degradado: consulta de CEP, fontes, imagens e geração de PDF podem depender da rede.
+Abra `http://localhost:8000/`.
+
+Para validar a base:
+
+```bash
+npm install
+npm test
+npm run check:html
+```
+
+O workflow `.github/workflows/quality.yml` executa as regressões na `main` e em pull requests.
+
+## SEO, rastreamento e indexação
+
+- `robots.txt` aponta para o sitemap canônico.
+- `sitemap.xml` lista as seis rotas públicas.
+- `vercel.json` mantém recarga direta das rotas da SPA e redireciona o host automático da Vercel para o domínio canônico.
+- `.github/workflows/indexnow.yml` lê o sitemap já publicado e notifica o IndexNow após validar a chave pública.
+- O HTML contém metadados sociais e dados estruturados; claims, avaliações e credenciais não comprovados continuam proibidos.
+
+Mudanças de SEO devem manter código, testes e documentação na mesma origem canônica.
 
 ## Natureza da estimativa
 
 O valor mostrado é uma faixa orientativa baseada nas informações fornecidas pelo cliente, configurações selecionadas e premissas do ambiente. Não é preço fechado. Medidas, condições da base, acesso, materiais e interferências devem ser validados em visita técnica antes de uma proposta comercial.
 
-## Imagens de referência
+## Verdade visual e conteúdo
 
-Imagens carregadas de bancos externos recebem a indicação **“Referência visual — não representa obra executada pela Franco Romeu”**. Elas devem ser substituídas gradualmente por acervo próprio e validado. Estudos 3D devem continuar identificados como renderizações.
+Imagem de referência nunca deve ser apresentada como obra executada. Render deve ser identificado como renderização. O acervo próprio e verificável tem prioridade sobre bancos externos e duplicações editoriais.
 
-## Testes automatizados
+Não invente cliente, depoimento, avaliação, prêmio, certificação, prazo, garantia, licença, CNPJ, preço ou resultado.
 
-A suíte usa o test runner nativo do Node.js, equivalente ao Jest para esta fundação sem dependências externas:
+## Administração e segurança
 
-```bash
-npm test
-npm run check:html
-```
+O God Mode existente é ferramenta local de desenvolvimento, não autenticação. Não publique tokens, senhas, dados de clientes, endereço residencial ou credenciais no cliente, workflow, log ou repositório.
 
-Os testes cobrem resolução de configuração por ID e índice legado, adicionais, markups, cupons, desconto de pagamento, arredondamento, dados inválidos e a fronteira de abatimento da visita técnica.
+Uma administração pública futura exige backend, sessão e autorização no servidor.
 
-## Checklist manual
+## Documentos principais
 
-1. Abrir as seis views e confirmar que a navegação SPA permanece funcional.
-2. Adicionar porcelanato manualmente e confirmar que todas as opções obrigatórias são exigidas.
-3. Executar o IQE, adicionar recomendações e comparar o total com as mesmas escolhas manuais.
-4. Recarregar a página e confirmar a recuperação do orçamento.
-5. Testar CEP válido, inválido, timeout e preenchimento manual.
-6. Tentar finalizar sem serviço, dados, endereço, pagamento e aceite dos termos.
-7. Gerar estimativas curta e longa em PDF, confirmar o carregamento sob demanda de `html2canvas`/`jsPDF` e conferir a paginação.
-8. Navegar por teclado em 390×844 e desktop, verificando foco, modais e ausência de overflow horizontal.
-9. Simular indisponibilidade de CDNs e conferir a degradação de fontes, ícones e imagens.
-10. Confirmar que toda imagem do Unsplash apresenta a ressalva de referência visual.
+- `AGENTS.md` — regras de evolução e invariantes.
+- `CHANGELOG.md` — histórico técnico.
+- `docs/SEARCH_CONTROL_ENGINEERING.md` — engenharia de busca.
+- `docs/REGISTRO_MESTRE_FONTE_CANONICA.md` — rastreabilidade da base.
+- `docs/fr-etapa16/` — brief, conteúdo, CRO ético e regressões da Etapa 16.
+- `docs/franco-romeu-visual-v2/` — biblioteca e QA visual.
 
-## Administração local
+## Publicação
 
-O God Mode não possui senha no cliente. Em ambiente local controlado, abra a aplicação com `?fr-admin=local` e digite `ADMIN` no campo de cupom para acessar a ferramenta. Isso **não é autenticação** e não deve ser habilitado como painel administrativo público. Uma administração real exige backend, sessão e autorização no servidor.
-
-## Limitações conhecidas e evolução
-
-- A aplicação ainda é um HTML monolítico; a modularização progressiva está planejada após a estabilização técnica.
-- Ativos visuais, Font Awesome, ViaCEP e a pilha de PDF ainda dependem de serviços externos.
-- Preços e cupons calculados no navegador precisam ser revalidados antes de uso comercial vinculante.
-- O CNPJ demonstrativo e métricas não validadas não devem ser publicados.
-
-## Etapa 14 — Seis Universos Awwwards
-
-A evolução visual completa está na branch `codex/etapa-14-awwwards-universes`, construída sobre a fundação de PDF da Etapa 13.1.3.
-
-- Aplicação: `base-original/FRANCO_ROMEU_ETAPA14_AWWWARDS_UNIVERSES.html`
-- Anexo integral: `docs/ANEXO_EVOLUCAO_VISUAL_AWWWARDS_ETAPA14.md`
-- Brief JSON: `docs/fr_awwwards_stage14_prompt_brief.json`
-- QA: `docs/QA_STAGE14_AWWWARDS.md`
-- Mapa interativo: `docs/fr-universe-blueprint.html`
-
-O redesign cria Forja, Manifesto, Arte Material, Modeling Space, Arquivo Vivo e Engenharia de Custo como universos distintos. Three.js é carregado somente em Projetos 3D; mobile, economia de dados, reduced motion e falhas de WebGL recebem fallback. Os 115 serviços, 15 categorias e motores protegidos permanecem preservados.
-
-Teste específico:
-
-```bash
-npm install
-npm run test:stage14
-```
-
-A Etapa 14 continua em prototipagem: aceite visual em navegadores reais e substituição das imagens de referência por acervo verificado são gates antes de produção ou APK.
+Mudanças na `main` devem permanecer pequenas, reversíveis e cobertas por regressão. Antes de declarar publicação concluída, revise `docs/CHECKLIST_PUBLICACAO.md` e registre qualquer teste manual ainda não executado.
