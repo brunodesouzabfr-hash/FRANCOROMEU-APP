@@ -89,4 +89,6 @@ Uma administração pública futura exige backend, sessão e autorização no se
 
 ## Publicação
 
+A configuração atual é de site estático na raiz: o `package.json` não possui script `build` e não gera `dist/`. Portanto, não documente `npm run build`/`dist/` como fluxo vigente sem antes introduzir e validar explicitamente uma etapa de build. A Vercel deve publicar a raiz conforme a configuração atual e respeitar `vercel.json`.
+
 Mudanças na `main` devem permanecer pequenas, reversíveis e cobertas por regressão. Antes de declarar publicação concluída, revise `docs/CHECKLIST_PUBLICACAO.md` e registre qualquer teste manual ainda não executado.
