@@ -28,10 +28,11 @@ test('grafo estruturado é válido e usa 16 IDs reais sem avaliações fictícia
   assert.ok(services.some(service => service.identifier === 'porcelanato'));
   assert.ok(nodes.some(node => node['@type'] === 'WebSite'));
   assert.ok(nodes.some(node => node['@type'] === 'BreadcrumbList'));
-  assert.deepEqual(nodes.find(node => Array.isArray(node['@type']) && node['@type'].includes('LocalBusiness')).sameAs, [
-    'https://instagram.com/francoromeu.fr',
-    'https://www.pinterest.com/FrancoRomeu',
-    'https://wa.me/5511990021603'
+  const localBusiness = nodes.find(node => Array.isArray(node['@type']) && node['@type'].includes('LocalBusiness'));
+  assert.equal(localBusiness.alternateName, 'Franco Romeu — Reformas, projetos sob medida e Design');
+  assert.deepEqual(localBusiness.sameAs, [
+    'https://www.instagram.com/francoromeu.fr/',
+    'https://www.linkedin.com/in/franco-romeu-fr/'
   ]);
   assert.equal(nodes.find(node => node['@type'] === 'FAQPage').mainEntity.length, 5);
   assert.equal(html.includes('aggregateRating'), false);
