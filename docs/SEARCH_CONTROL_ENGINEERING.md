@@ -11,7 +11,7 @@ Prioridade: (1) consolidar entidade e NAP confirmado; (2) disponibilizar URLs HT
 ## 2. Implementação on-page
 
 - Canonical: `https://www.francoromeufr.com.br/`, alterado por view para `/sobre`, `/ambientes`, `/projetos-3d`, `/portfolio` e `/orcamento`.
-- Grafo: `LocalBusiness`, `WebSite/SearchAction`, `BreadcrumbList`, `ItemList`, cinco FAQs e 16 `Service` com IDs reais.
+- Grafo atual: `LocalBusiness`, `WebSite`, `BreadcrumbList`, `ItemList`, cinco FAQs e 16 `Service` com IDs reais. `SearchAction` pode permanecer como legado sem efeito de rich result, mas não deve ser tratado como vantagem de SEO: o Google encerrou a sitelinks search box em novembro de 2024.
 - Navegação: links HTTP rastreáveis; History API e `popstate`; fallback de produção em `vercel.json`.
 - ALT: textos alternativos permanecem vazios em camadas estritamente decorativas. Logo dentro de marca já nomeada é decorativo; peças editoriais devem descrever o conteúdo e declarar “render” ou “referência visual”, nunca “obra executada” sem comprovação.
 - Limite: metadados alterados no cliente não substituem HTML prerenderizado. Fase seguinte: snapshot estático de cada rota no deploy, mantendo o mesmo `index.html` como fonte.
@@ -145,7 +145,14 @@ Registrar URL, login do proprietário, data, status de verificação e última a
 
 Semanal: cobertura/indexação, consultas novas, CTR por landing, leads e erros. Mensal: usuários orgânicos não-marca, posição/CTR por cluster, conversão por rota, GBP (ligações, site, rotas), citações consistentes e links conquistados. Ferramentas: GSC e Looker Studio primeiro; depois Semrush/Ahrefs; Ubersuggest apenas como apoio. Não prometer posição.
 
-## 9. Melhorias adicionais e rollback
+## 9. Indexação, IA generativa e limites de automação
+
+- **Google Indexing API:** não usar para páginas institucionais, serviços, portfólio ou artigos da Franco Romeu. A API oficial é restrita a páginas com `JobPosting` ou `BroadcastEvent` incorporado em `VideoObject`. Para o site atual, usar sitemap, Search Console, links internos e descoberta normal.
+- **IndexNow:** manter o workflow `.github/workflows/indexnow.yml`, que valida sitemap e chave em produção antes de enviar URLs canônicas ao endpoint.
+- **AI Overviews / AI Mode:** não criar marcação especial, `llms.txt` obrigatório ou páginas artificiais para “treinar” modelos. Priorizar conteúdo próprio, verificável, textual, indexável, com imagens/vídeos úteis, autoria/entidade coerente e dados estruturados que correspondam ao conteúdo visível.
+- **Programmatic SEO:** só publicar páginas de cidade/serviço/material quando houver conteúdo e prova operacional realmente distintos; páginas em massa com texto quase idêntico devem ser evitadas.
+
+## 10. Melhorias adicionais e rollback
 
 1. Prerender/SSG das seis rotas no deploy para entregar título, H1 e conteúdo sem depender de JavaScript.
 2. Criar páginas editoriais dentro da fonte única e snapshots de rotas de serviço somente após autorização arquitetural.
@@ -158,6 +165,6 @@ Semanal: cobertura/indexação, consultas novas, CTR por landing, leads e erros.
 9. Evitar pop-up de saída, contagem regressiva e escassez falsa; usar CTA persistente e contextual.
 10. Reversão: remover `fr-seo-spa-router`, restaurar nav anterior e retirar `vercel.json`; dados financeiros não foram tocados.
 
-## 10. DNA aplicado
+## 11. DNA aplicado
 
 O anexo nomeado no pedido não existe nesta árvore. Foram aplicadas as diretrizes disponíveis no `AGENTS.md`: verdade antes da promessa, voz direta/técnica/humana, arte aplicada, matéria, estrutura, precisão, autoria, engenharia de custo e conversão sem manipulação. “Render” e “referência visual” continuam identificados; nenhum prêmio, avaliação, cliente, endereço ou desempenho foi inventado.
