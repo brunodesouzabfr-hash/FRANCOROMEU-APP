@@ -11,7 +11,7 @@ Prioridade: (1) consolidar entidade e NAP confirmado; (2) disponibilizar URLs HT
 ## 2. Implementação on-page
 
 - Canonical: `https://www.francoromeufr.com.br/`, alterado por view para `/sobre`, `/ambientes`, `/projetos-3d`, `/portfolio` e `/orcamento`.
-- Grafo atual: `LocalBusiness`, `WebSite`, `BreadcrumbList`, `ItemList`, cinco FAQs e 16 `Service` com IDs reais. `SearchAction` pode permanecer como legado sem efeito de rich result, mas não deve ser tratado como vantagem de SEO: o Google encerrou a sitelinks search box em novembro de 2024.
+- Grafo atual: `LocalBusiness`, `WebSite`, `BreadcrumbList`, `ItemList`, cinco FAQs e 16 `Service` com IDs reais. `SearchAction` foi removido por não oferecer benefício atual de rich result.
 - Navegação: links HTTP rastreáveis; History API e `popstate`; fallback de produção em `vercel.json`.
 - ALT: textos alternativos permanecem vazios em camadas estritamente decorativas. Logo dentro de marca já nomeada é decorativo; peças editoriais devem descrever o conteúdo e declarar “render” ou “referência visual”, nunca “obra executada” sem comprovação.
 - Limite: metadados alterados no cliente não substituem HTML prerenderizado. Fase seguinte: snapshot estático de cada rota no deploy, mantendo o mesmo `index.html` como fonte.
@@ -21,7 +21,7 @@ Prioridade: (1) consolidar entidade e NAP confirmado; (2) disponibilizar URLs HT
 ### Configuração
 1. Confirmar propriedade e preencher o **mesmo NAP** usado abaixo; se não houver atendimento no endereço, ocultá-lo e definir área de serviço.
 2. Escolher a categoria principal que melhor represente a operação real e esteja disponível no painel: **Empresa de reformas**. Avaliar secundárias: Designer de interiores, Pintor, Marceneiro e Empreiteira de revestimentos.
-3. Vincular `https://www.francoromeufr.com.br/` e o telefone `+55 11 99002-1603`; cadastrar horário segunda–sexta, 08h–18h, somente se vigente.
+3. Vincular `https://www.francoromeufr.com.br/`. Telefone, e-mail, endereço, horário, meios de pagamento e área atendida só devem entrar no schema/diretórios depois de confirmados como dados comerciais públicos vigentes.
 4. Adicionar fotos próprias identificadas por etapa, sem apresentar render ou referência como obra. Publicar semanalmente e responder avaliações com contexto real.
 5. Ativar mensagens, orçamento e atributos somente quando verdadeiros. Não inserir palavras-chave no nome comercial.
 
@@ -92,7 +92,7 @@ Cada pauta segue: introdução com problema real → critérios e alternativas �
 
 ## 6. NAP e diretórios
 
-**NAP controlado:** Franco Romeu — Arte & Engenharia | endereço: **não publicar até confirmação** (empresa de área de serviço, se aplicável) | +55 11 99002-1603 | `https://www.francoromeufr.com.br/` | `romeudifranco@gmail.com`.
+**NAP/identidade controlada:** Franco Romeu | `https://www.francoromeufr.com.br/` | endereço, telefone, e-mail e demais dados operacionais: **confirmar como dados comerciais públicos antes de publicar no schema ou diretórios**.
 
 | Diretório | Status inicial | Ação |
 |---|---|---|
