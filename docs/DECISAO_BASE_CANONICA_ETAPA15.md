@@ -1,5 +1,7 @@
 # Decisão: `main` como base canônica da Franco Romeu
 
+> **SUPERADA EM 13/10/2026 PARA FINS DE DOMÍNIO:** este documento preserva a decisão histórica da Etapa 15. A base de desenvolvimento continua sendo a `main`, mas o domínio público canônico vigente é `https://www.francoromeufr.com.br/`; `francoromeu-app.vercel.app` é host legado e não deve ser promovido como URL pública.
+
 **Data da decisão atual:** 22 de setembro de 2026
 **Decisão do proprietário:** a branch `main` atual é a única base funcional e visual canônica do projeto e corresponde à aplicação publicada em `https://francoromeu-app.vercel.app/`.
 
