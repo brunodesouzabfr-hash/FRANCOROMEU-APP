@@ -2,24 +2,19 @@
 
 **Data:** 2026-10-13  
 **Domínio canônico:** https://www.francoromeufr.com.br/  
-**Base auditada:** `main` no commit `17c27f28ceea1e0a1517ef47de81b4ba418c2bd4`  
+**Base auditada:** `main` após os commits `59d4e9148978f94fb325caba8f8cb87f4e731ec4` e `a7af351219f1a7173202cd5d113f5a8973aae791`  
 **Branch de correção:** `audit/estrategia-digital-2026-10-13`
 
 ## Resumo executivo
 
-A infraestrutura externa já avançou para o domínio próprio, mas a fonte canônica da aplicação ainda declarava `francoromeu-app.vercel.app` em canonical, Open Graph, Twitter, JSON-LD, roteador SPA, robots e sitemap. Isso criava sinais conflitantes para mecanismos de busca e explica a persistência do host Vercel legado em resultados e perfis externos.
+Durante a auditoria, o Codex avançou a `main` em paralelo: o commit `59d4e914` consolidou `www.francoromeufr.com.br` em canonical/OG/JSON-LD/sitemap e adicionou redirect/rewrites; o commit `a7af3512` endureceu o IndexNow e atualizou a documentação operacional. Esta auditoria foi então reconstruída sobre esse novo estado, mantendo essas melhorias e limitando o PR aos deltas ainda necessários.
 
-A correção desta auditoria consolida `www.francoromeufr.com.br` como host canônico, preserva as seis rotas atuais da SPA em reload direto, adiciona redirect permanente do host Vercel legado e reduz duplicidade na integração IndexNow.
+O delta desta auditoria normaliza a entidade `Franco Romeu`, amplia `sameAs`, remove dados comerciais genéricos/não confirmados do schema, remove `SearchAction` sem utilidade atual na SERP, alinha rewrites com `cleanUrls: true`, fortalece testes e documenta a estratégia.
 
 ## Achados críticos
 
-### P0 — domínio canônico divergente no código
-- `index.html` tinha dezenas de referências absolutas ao host Vercel legado.
-- `robots.txt` e `sitemap.xml` apontavam para o host legado.
-- os testes protegiam o valor antigo, portanto uma correção somente de produção seria revertida pelo CI.
-- `AGENTS.md` ainda descrevia o host Vercel como aplicação publicada canônica.
-
-**Correção:** migrar a camada operacional para `https://www.francoromeufr.com.br` e atualizar testes.
+### P0 — domínio canônico divergente, corrigido pelo Codex durante a auditoria
+O estado inicial ainda promovia `francoromeu-app.vercel.app`; o commit `59d4e914` corrigiu canonical, OG, JSON-LD, robots, sitemap e testes para `https://www.francoromeufr.com.br`. O commit `a7af3512` alinhou README/AGENTS/IndexNow. A auditoria preserva essas correções e marca documentação histórica antiga como superada para fins de domínio.
 
 ### P0 — deep links SPA
 O site depende de rotas de History API. A configuração da Vercel precisa resolver explicitamente:
@@ -31,10 +26,8 @@ O site depende de rotas de History API. A configuração da Vercel precisa resol
 
 sem transformar qualquer URL desconhecida em Home, para preservar 404 real.
 
-### P1 — IndexNow duplicado
-Foram encontrados dois workflows idênticos em `.github/workflows/` e uma cópia adicional na raiz.
-
-**Correção:** manter um único workflow, com URLs extraídas do `sitemap.xml`.
+### P1 — IndexNow duplicado, corrigido pelo Codex durante a auditoria
+Havia múltiplas cópias. O commit `a7af3512` deixou um único workflow que aguarda a produção, valida a chave pública e envia as URLs canônicas do sitemap. Esta auditoria preserva esse workflow mais robusto.
 
 ### P1 — grafo de entidade incompleto
 O `sameAs` continha apenas Instagram, Pinterest antigo e WhatsApp. O host canônico e os IDs do grafo também apontavam para Vercel.
@@ -57,6 +50,7 @@ A `main` ainda não possui um `sitemap-images.xml` operacional. O candidato do P
 - nome principal da entidade normalizado para `Franco Romeu`;
 - `sameAs` ampliado para perfis oficiais informados;
 - endereço/geo genéricos retirados do JSON-LD até confirmação de dados públicos adequados;
+- telefone/e-mail herdados retirados do JSON-LD até confirmação explícita de que são contatos comerciais públicos;
 - `SearchAction` removido do `WebSite`;
 - `robots.txt` migrado;
 - `sitemap.xml` migrado;
@@ -64,8 +58,7 @@ A `main` ainda não possui um `sitemap-images.xml` operacional. O candidato do P
 - rewrites explícitos para as seis rotas atuais;
 - testes SEO atualizados para o domínio oficial;
 - `AGENTS.md` e documentação operacional atualizados;
-- workflows IndexNow duplicados removidos;
-- IndexNow passa a ler as URLs canônicas do sitemap.
+- o workflow IndexNow robusto já presente na `main` foi preservado sem regressão.
 
 ## Decisões estratégicas
 
@@ -135,8 +128,8 @@ Pixels de Meta/Pinterest/LinkedIn/TikTok devem ser adicionados somente quando ho
 
 ## Próxima sequência recomendada
 
-1. CI desta branch.
-2. Revisão e merge autorizado da canonicalização.
+1. CI desta branch e validação do preview Vercel.
+2. Revisão e merge autorizado do delta de entidade/roteamento.
 3. Deploy Vercel e teste real das seis rotas/redirects.
 4. Search Console: confirmar propriedade de domínio e reenviar sitemap canônico.
 5. Atualizar LinkedIn e outros perfis externos para o domínio oficial.
