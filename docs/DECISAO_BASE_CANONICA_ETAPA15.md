@@ -1,7 +1,10 @@
 # Decisão: `main` como base canônica da Franco Romeu
 
-**Data da decisão atual:** 22 de setembro de 2026
-**Decisão do proprietário:** a branch `main` atual é a única base funcional e visual canônica do projeto e corresponde à aplicação publicada em `https://francoromeu-app.vercel.app/`.
+**Data da decisão registrada:** 22 de setembro de 2026
+
+> **Nota de atualização — 13 de outubro de 2026:** este documento preserva a decisão histórica de base da Etapa 15. A origem pública canônica vigente passou a ser `https://www.francoromeufr.com.br/`. O host `https://francoromeu-app.vercel.app/` é apenas infraestrutura histórica/automática da Vercel e não deve ser usado em canonical, sitemap, compartilhamento, documentação operacional ou perfis públicos.
+
+**Decisão do proprietário em 22/09/2026:** a branch `main` tornou-se a única base funcional e visual canônica do projeto.
 
 Esta decisão substitui a orientação de 21 de agosto de 2026 que usava a branch `codex/etapa-15-materialidade-imersiva` como base provisória.
 
@@ -10,7 +13,7 @@ Esta decisão substitui a orientação de 21 de agosto de 2026 que usava a branc
 | Item | Estado atual | Uso daqui em diante |
 |---|---|---|
 | `main` | Canônica e publicada | Fonte de verdade do produto. Todo novo trabalho deve partir da versão mais recente da `main`. |
-| Site Vercel | Produção | `https://francoromeu-app.vercel.app/` representa a aplicação canônica publicada. |
+| Site público | Produção canônica atual | `https://www.francoromeufr.com.br/` é a origem pública canônica. O host automático `francoromeu-app.vercel.app` deve redirecionar para ela. |
 | PR #6 / `codex/etapa-15-materialidade-imersiva` | Histórico | Não usar como base de desenvolvimento. Conservar apenas para rastreabilidade da evolução. |
 | PR #3 / Etapa 13.1.3 | Histórico intermediário | Não continuar separadamente. |
 | PR #4 / Etapa 14 | Histórico intermediário | Não continuar separadamente. |
