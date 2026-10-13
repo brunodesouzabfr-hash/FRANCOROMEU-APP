@@ -85,6 +85,8 @@ test('unifica domínio, metadados sociais, JSON-LD e roteador SPA', () => {
   ]);
   assert.equal('address' in localBusiness, false);
   assert.equal('geo' in localBusiness, false);
+  assert.equal('telephone' in localBusiness, false);
+  assert.equal('email' in localBusiness, false);
   const website = graph.find(node => node['@type'] === 'WebSite');
   assert.ok(website);
   assert.equal('potentialAction' in website, false);
