@@ -6,7 +6,7 @@ const { JSDOM } = require('jsdom');
 const html = fs.readFileSync('index.html', 'utf8');
 const dom = new JSDOM(html);
 const doc = dom.window.document;
-const ORIGIN = 'https://francoromeu-app.vercel.app';
+const ORIGIN = 'https://www.francoromeufr.com.br';
 
 test('metadados apontam para a entidade canônica', () => {
   assert.match(doc.title, /Franco Romeu/);
@@ -29,9 +29,12 @@ test('grafo estruturado é válido e usa 16 IDs reais sem avaliações fictícia
   assert.ok(nodes.some(node => node['@type'] === 'WebSite'));
   assert.ok(nodes.some(node => node['@type'] === 'BreadcrumbList'));
   assert.deepEqual(nodes.find(node => Array.isArray(node['@type']) && node['@type'].includes('LocalBusiness')).sameAs, [
-    'https://instagram.com/francoromeu.fr',
-    'https://www.pinterest.com/FrancoRomeu',
-    'https://wa.me/5511990021603'
+    "https://www.instagram.com/francoromeu.fr/",
+    "https://www.facebook.com/FrancoRomeuRF",
+    "https://www.linkedin.com/in/franco-romeu-fr/",
+    "https://www.youtube.com/@FRANCOROMEU",
+    "https://br.pinterest.com/francoromeu_fr/",
+    "https://github.com/Francoromeu-fr"
   ]);
   assert.equal(nodes.find(node => node['@type'] === 'FAQPage').mainEntity.length, 5);
   assert.equal(html.includes('aggregateRating'), false);
@@ -47,16 +50,16 @@ test('as seis views têm links HTTP e configuração de rota', () => {
   assert.ok(doc.querySelector('#fr-seo-spa-router'));
   assert.match(doc.querySelector('#fr-seo-spa-router').textContent, /popstate/);
   assert.match(doc.querySelector('#fr-seo-spa-router').textContent, /history\.pushState/);
-  assert.match(doc.querySelector('#fr-seo-spa-router').textContent, /https:\/\/francoromeu-app\.vercel\.app/);
+  assert.match(doc.querySelector('#fr-seo-spa-router').textContent, /https:\/\/www\.francoromeufr\.com\.br/);
 });
 
 test('arquivos de rastreamento usam o domínio canônico', () => {
   const robots = fs.readFileSync('robots.txt', 'utf8');
   const sitemap = fs.readFileSync('sitemap.xml', 'utf8');
   assert.match(robots, /Allow: \/\s/);
-  assert.match(robots, /https:\/\/francoromeu-app\.vercel\.app\/sitemap\.xml/);
+  assert.match(robots, /https:\/\/www\.francoromeufr\.com\.br\/sitemap\.xml/);
   assert.equal((sitemap.match(/<url>/g) || []).length, 6);
-  assert.equal((sitemap.match(/https:\/\/francoromeu-app\.vercel\.app\//g) || []).length, 6);
+  assert.equal((sitemap.match(/https:\/\/www\.francoromeufr\.com\.br\//g) || []).length, 6);
   assert.doesNotMatch(sitemap, /#/);
   assert.ok(fs.existsSync('vercel.json'));
   assert.ok(fs.existsSync('docs/SEARCH_CONTROL_ENGINEERING.md'));
