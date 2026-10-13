@@ -1,10 +1,15 @@
-# ꟻR — Franco Romeu Alpha 2.0
+# ꟻR — Franco Romeu
 
 Aplicação corporativa e acervo digital da Franco Romeu — **Arte + Engenharia**. A experiência reúne apresentação institucional, ambientes, estudos 3D, portfólio de referências e uma calculadora de estimativa orientativa.
 
-## Fonte canônica e documentos de decisão
+## Produção, fonte canônica e documentos de decisão
 
-Este repositório, branch `main`, é a fonte de verdade do produto. A versão preparada na branch de revisão é a **Etapa 13.1.3**, que restaura o carregamento resiliente das bibliotecas de PDF sem alterar o motor financeiro.
+- Site oficial: `https://www.francoromeufr.com.br/`
+- Repositório canônico: `brunodesouzabfr-hash/FRANCOROMEU-APP`
+- Branch canônica: `main`
+- Host legado: `https://francoromeu-app.vercel.app/` — deve redirecionar permanentemente para o domínio oficial.
+
+A `main` é a fonte de verdade do produto. As etapas numeradas e branches históricas documentam a evolução; não substituem a base canônica atual.
 
 - [Registro mestre da fonte canônica](docs/REGISTRO_MESTRE_FONTE_CANONICA.md)
 - [Anexo comentado: mudanças reais e direção Awwwards](docs/ANEXO_EVOLUCAO_VISUAL_AWWWARDS.md)
