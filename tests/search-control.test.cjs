@@ -29,11 +29,20 @@ test('grafo estruturado é válido e usa 16 IDs reais sem avaliações fictícia
   assert.ok(nodes.some(node => node['@type'] === 'WebSite'));
   assert.ok(nodes.some(node => node['@type'] === 'BreadcrumbList'));
   const localBusiness = nodes.find(node => Array.isArray(node['@type']) && node['@type'].includes('LocalBusiness'));
-  assert.equal(localBusiness.alternateName, 'Franco Romeu — Reformas, projetos sob medida e Design');
+  assert.deepEqual(localBusiness.alternateName, ['FR', 'ꟻR', 'Franco Romeu — Arte & Engenharia']);
   assert.deepEqual(localBusiness.sameAs, [
-    'https://www.instagram.com/francoromeu.fr/',
-    'https://www.linkedin.com/in/franco-romeu-fr/'
+    "https://www.instagram.com/francoromeu.fr/",
+    "https://www.facebook.com/FrancoRomeuRF",
+    "https://www.linkedin.com/in/franco-romeu-fr/",
+    "https://www.youtube.com/@FRANCOROMEU",
+    "https://br.pinterest.com/francoromeu_fr/",
+    "https://github.com/Francoromeu-fr"
   ]);
+  for (const field of ['telephone','email','address','geo','openingHoursSpecification','paymentAccepted','priceRange','areaServed']) {
+    assert.equal(field in localBusiness, false, `campo não confirmado no schema: ${field}`);
+  }
+  const website = nodes.find(node => node['@type'] === 'WebSite');
+  assert.equal('potentialAction' in website, false);
   assert.equal(nodes.find(node => node['@type'] === 'FAQPage').mainEntity.length, 5);
   assert.equal(html.includes('aggregateRating'), false);
 });
