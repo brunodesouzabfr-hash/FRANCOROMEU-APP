@@ -1,0 +1,42 @@
+{
+  "schema_version": "fr-editorial-1.0.0",
+  "generated_at": "2026-10-11",
+  "canonical": "https://www.francoromeufr.com.br",
+  "publication_state": "PRE_IMPLEMENTATION",
+  "auto_publish": false,
+  "references": [
+    {
+      "id": "FR-REF-SPIRAL",
+      "name": "Spiral Gallery",
+      "decision": "REFERENCE_ONLY",
+      "source_status": "USER_MENTION_ONLY_SOURCE_FOLDER_ABSENT",
+      "evaluated_visual_source": false
+    },
+    {
+      "id": "FR-REF-SERGIO",
+      "name": "Sergio Ayala",
+      "decision": "REFERENCE_ONLY",
+      "source_status": "USER_MENTION_ONLY_SOURCE_FOLDER_ABSENT",
+      "evaluated_visual_source": false
+    },
+    {
+      "id": "FR-REF-ORBITAL",
+      "name": "Cards orbitais/social",
+      "decision": "REFERENCE_ONLY",
+      "source_status": "USER_MENTION_ONLY_SOURCE_FOLDER_ABSENT",
+      "evaluated_visual_source": false
+    },
+    {
+      "id": "FR-REF-VIDEO",
+      "media_id": "FR-M-48555B73BF0BF997",
+      "decision": "REFERENCE_ONLY",
+      "evaluated_visual_source": true
+    },
+    {
+      "id": "FR-REF-INSTRUCTIONS",
+      "media_id": "FR-M-C61732147E5A6162",
+      "decision": "DISCARD",
+      "evaluated_visual_source": true
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "media_id": "FR-M-14B94B3E47FB47E6",
+    "source_path": "reels_design_organized/_CAPAS_AUTORAIS_POR_AMBIENTE/area-gourmet-capa-autoral.png",
+    "declared_environment": "area-gourmet",
+    "visually_verified_environment": "biblioteca",
+    "action": "CORRECT_RELATIONSHIPS_ONLY",
+    "original_untouched": true
+  },
+  {
+    "media_id": "FR-M-83EFB6DCE0B7B856",
+    "source_path": "reels_design_organized/_CAPAS_AUTORAIS_POR_AMBIENTE/biblioteca-capa-autoral.png",
+    "declared_environment": "biblioteca",
+    "visually_verified_environment": "area-gourmet",
+    "action": "CORRECT_RELATIONSHIPS_ONLY",
+    "original_untouched": true
+  },
+  {
+    "media_id": "FR-M-C3AA0D58A1E3EBA4",
+    "source_path": "reels_design_organized/ambientes/area-gourmet/area-gourmet-bancada-pedra-sabao-residencial-142/01-capa/area-gourmet-bancada-pedra-sabao-residencial-142-capa-intro-01.jpg",
+    "declared_environment": "area-gourmet",
+    "visually_verified_environment": "biblioteca",
+    "action": "USE_CORRECT_MASTER_AS_POSTER",
+    "original_untouched": true
+  },
+  {
+    "media_id": "FR-M-7FF0F177E601652C",
+    "source_path": "reels_design_organized/ambientes/biblioteca/biblioteca-marcenaria-rosso-levanto-residencial-141/01-capa/biblioteca-marcenaria-rosso-levanto-residencial-141-capa-intro-01.jpg",
+    "declared_environment": "biblioteca",
+    "visually_verified_environment": "area-gourmet",
+    "action": "USE_CORRECT_MASTER_AS_POSTER",
+    "original_untouched": true
+  }
+]

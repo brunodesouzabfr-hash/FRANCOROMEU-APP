@@ -1,0 +1,12 @@
+'use strict';
+const fs=require('node:fs'),assert=require('node:assert/strict'),{execFileSync}=require('node:child_process');
+const {csv}=require('../src/media-library.cjs');
+const before=JSON.parse(fs.readFileSync('docs/media/IMAGE_BUILD_REPORT.json'));
+const rowsBefore=csv(fs.readFileSync('docs/media/RENAMING_EXECUTION.csv','utf8')).length;
+console.log(execFileSync('npm',['run','build'],{encoding:'utf8',maxBuffer:2e6}));
+const after=JSON.parse(fs.readFileSync('docs/media/IMAGE_BUILD_REPORT.json'));
+const rowsAfter=csv(fs.readFileSync('docs/media/RENAMING_EXECUTION.csv','utf8')).length;
+assert.equal(after.publicFingerprint,before.publicFingerprint,'public artifact bytes changed on repeat');
+assert.equal(rowsAfter,rowsBefore,'renaming execution gained duplicate records');
+const report={status:'PASS',publicFingerprint:after.publicFingerprint,artifacts:Object.keys(after.artifacts).length,renamingRows:rowsAfter,media:after.media,routes:after.routes};
+fs.writeFileSync('docs/media/IMAGE_IDEMPOTENCE.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));

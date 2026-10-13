@@ -2,6 +2,20 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "cleanUrls": true,
+  "redirects": [
+    { "source": "/jornal", "destination": "/projetos/", "permanent": true },
+    { "source": "/projetos.html", "destination": "/projetos/", "permanent": true },
+    { "source": "/projetos/estudo-area-gourmet-cozinha-planejada-madeira-casa-010", "destination": "/projetos/antes-depois/area-gourmet-cozinha-planejada-madeira-casa-010/", "permanent": true },
+    { "source": "/projetos/estudo-banheiro-bancada-pedra-natural-apto-037", "destination": "/projetos/antes-depois/banheiro-bancada-pedra-natural-apto-037/", "permanent": true },
+    { "source": "/projetos/estudo-closet-closet-planejado-madeira-apto-030", "destination": "/projetos/antes-depois/closet-closet-planejado-madeira-apto-030/", "permanent": true },
+    { "source": "/projetos/estudo-cozinha-bancada-calacatta-apto-055", "destination": "/projetos/antes-depois/cozinha-bancada-calacatta-apto-055/", "permanent": true },
+    { "source": "/projetos/estudo-escritorio-marcenaria-madeira-casa-008", "destination": "/projetos/antes-depois/escritorio-marcenaria-madeira-casa-008/", "permanent": true },
+    { "source": "/projetos/estudo-hall-textura-travertino-casa-021", "destination": "/projetos/antes-depois/hall-textura-travertino-casa-021/", "permanent": true },
+    { "source": "/projetos-3d/cozinha-lavanderia-estudo-fr", "destination": "/projetos/cozinha-lavanderia", "permanent": true },
+    { "source": "/materiais/:slug", "destination": "/projetos/materiais/:slug/", "permanent": true },
+    { "source": "/servicos/:slug", "destination": "/projetos/servicos/:slug/", "permanent": true },
+    { "source": "/ambientes/:slug", "destination": "/projetos/ambientes/:slug/", "permanent": true }
+  ],
   "headers": [
     { "source": "/assets/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }] },
     { "source": "/assets/optimized/:file([a-z0-9-]+\\.[a-f0-9]{12}\\.(?:avif|webp))", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] },

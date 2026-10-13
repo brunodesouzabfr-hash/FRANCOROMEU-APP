@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "validation_date": "2026-10-11",
+  "errors": [],
+  "check_counts": {
+    "unique_ids": 8,
+    "canonical": 8,
+    "publication_policy": 968,
+    "unique_slugs": 6,
+    "roots": 4404,
+    "paths": 4404,
+    "file_existence": 4404,
+    "hashes": 1451,
+    "original_preservation": 685,
+    "graph": 2051,
+    "editorial_boundaries": 1264,
+    "image_dimensions": 162,
+    "publication_source_decode": 425,
+    "seo_metadata": 528,
+    "pairs": 300,
+    "trails": 361,
+    "social": 147,
+    "recovery_pixels": 15,
+    "rename_collisions": 684,
+    "sitemap": 2
+  },
+  "original_files_hashed": 1020,
+  "unique_verified_file_hash_pairs": 1451,
+  "media_ids": 480,
+  "projects": 110,
+  "before_after_pairs": 60,
+  "trails": 52,
+  "publication_enabled": 0,
+  "source_roots": {
+    "CODEX_ROOT": "/home/romeu/###PROGRAMAS###/FRANCO ROMEU/FRANCOROMEU-APP/CODEX USE AQUI",
+    "REPO_ROOT": "/home/romeu/###PROGRAMAS###/FRANCO ROMEU/FRANCOROMEU-APP",
+    "PACKAGE_ROOT": "/home/romeu/###PROGRAMAS###/FRANCO ROMEU/FRANCOROMEU-APP/CODEX USE AQUI/FRANCO_ROMEU_ACERVO_EDITORIAL"
+  },
+  "known_source_corruption": "16 received PNGs truncated; 15 recovered in separate copies, one kitchen original remains HOLD.",
+  "public_url_validation": "NOT_APPLICABLE_PRE_IMPLEMENTATION_PLANNED_URLS_ONLY",
+  "historical_source_gaps": "DIAGNOSTIC_ONLY_NOT_ACTIVE_REFERENCES"
+}

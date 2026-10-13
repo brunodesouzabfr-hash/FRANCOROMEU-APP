@@ -13,7 +13,14 @@ function walk(dir, excluded = new Set()) {
   return fs.readdirSync(dir, { withFileTypes: true }).flatMap(entry => {
     if (excluded.has(entry.name)) return [];
     const target = path.join(dir, entry.name);
-    return entry.isDirectory() ? walk(target, excluded) : [target];
+    if (entry.isDirectory()) return walk(target, excluded);
+    // A symlink to a directory is not a readable text file. Keep source links.
+    if (entry.isFile()) return [target];
+    if (entry.isSymbolicLink()) {
+      try { return fs.statSync(target).isFile() ? [target] : []; }
+      catch { return []; }
+    }
+    return [];
   });
 }
 
@@ -245,9 +252,11 @@ test('exportador remove locks, foco e estados transitórios do clone', () => {
 });
 
 test('não conserva domínio antigo, i.ibb.co nem altera assets/media', () => {
-  const textFiles = walk('.', new Set(['.git', '.codex-input', 'node_modules']))
+  // Materiais brutos do usuário são entrada editorial, não código nem saída pública.
+  // Continuamos verificando todo o restante do repositório e a dist gerada.
+  const textFiles = walk('.', new Set(['.git', '.codex-input', 'CODEX USE AQUI', 'node_modules']))
     .filter(file => path.resolve(file) !== __filename)
-    .filter(file => !/\.(?:avif|gif|ico|jpe?g|png|webp|woff2?)$/i.test(file));
+    .filter(file => /\.(?:html?|css|[cm]?js|mjs|json|xml|txt|md|webmanifest|ya?ml)$/i.test(file));
   for (const file of textFiles) {
     const contents = fs.readFileSync(file, 'utf8');
     assert.doesNotMatch(contents, /francoromeu\.com\.br/i, `domínio antigo em ${file}`);

@@ -80,6 +80,11 @@ test('galeria reconstrói host, filtra setor e mantém rótulo sem exigir JavaSc
   replacement.replaceChildren();
   await new Promise(resolve=>dom.window.setTimeout(resolve,20));
   assert.equal(replacement.querySelectorAll('#frmedia-cozinha-lavanderia .frmedia-card').length,57,'reconstrução interna do mesmo host observada automaticamente');
+  const cloned=replacement.querySelector('#frmedia-cozinha-lavanderia').cloneNode(true);
+  replacement.replaceChildren(cloned);dom.window.FRMediaCase.integrate();
+  assert.notEqual(replacement.querySelector('#frmedia-cozinha-lavanderia'),cloned,'a serialized live attribute cannot prove that a clone has listeners');
+  replacement.querySelector('#frmedia-cozinha-lavanderia [data-group="LAV"]').click();
+  assert.equal(replacement.querySelectorAll('#frmedia-cozinha-lavanderia .frmedia-card').length,6,'a cloned host regains working filter listeners');
   dom.window.close();
 });
 test('quantidade usa o input existente e seu evento: limites, decimais, vazio e montagem idempotente', () => {

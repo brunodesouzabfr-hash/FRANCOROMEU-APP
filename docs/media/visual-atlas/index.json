@@ -1,0 +1,246 @@
+{
+  "status": "AUDIT_ONLY",
+  "contact_sheets": [
+    {
+      "root": "PACKAGE_ROOT",
+      "path": "docs/media/visual-atlas/before-original-01.jpg",
+      "sha256": "56f045e4cd51b1dbbfecf4dcab060625ba142a0ece6096a051f67e288fcf8f5b",
+      "width": 1600,
+      "height": 1700,
+      "role": "AUDIT_CONTACT_SHEET_NOT_A_PUBLIC_SITE_ASSET"
+    },
+    {
+      "root": "PACKAGE_ROOT",
+      "path": "docs/media/visual-atlas/before-original-02.jpg",
+      "sha256": "59ae60c3b0f6dc0dd85f46d3dc74d96964d086841c888a536411e8d70b372b3b",
+      "width": 1600,
+      "height": 1700,
+      "role": "AUDIT_CONTACT_SHEET_NOT_A_PUBLIC_SITE_ASSET"
+    },
+    {
+      "root": "PACKAGE_ROOT",
+      "path": "docs/media/visual-atlas/before-original-03.jpg",
+      "sha256": "b883c2fd48c63bc8ef488a632ff960573461c3d9edfd68006ad632a64496ac05",
+      "width": 1600,
+      "height": 1700,
+      "role": "AUDIT_CONTACT_SHEET_NOT_A_PUBLIC_SITE_ASSET"
+    },
+    {
+      "root": "PACKAGE_ROOT",
+      "path": "docs/media/visual-atlas/before-original-04.jpg",
+      "sha256": "842bcda8ecad39c9bd90469b0b23be053067941480590f3dd1e60352a137bbf5",
+      "width": 1600,
+      "height": 1700,
+      "role": "AUDIT_CONTACT_SHEET_NOT_A_PUBLIC_SITE_ASSET"
+    },
+    {
+      "root": "PACKAGE_ROOT",
+      "path": "docs/media/visual-atlas/before-panels-01.jpg",
+      "sha256": "bb4724816adf04d4172246485ca69b6700344294c8923d0d5f24801edf626bc2",
+      "width": 1600,
+      "height": 1700,
+      "role": "AUDIT_CONTACT_SHEET_NOT_A_PUBLIC_SITE_ASSET"
+    },
+    {
+      "root": "PACKAGE_ROOT",
+      "path": "docs/media/visual-atlas/before-panels-02.jpg",
+      "sha256": "b9b0c102e196395cee3756077ff7f2dd73baa4427cf9dd7c2f7375d2e3c88a3c",
+      "width": 1600,
+      "height": 1700,
+      "role": "AUDIT_CONTACT_SHEET_NOT_A_PUBLIC_SITE_ASSET"
+    },
+    {
+      "root": "PACKAGE_ROOT",
+      "path": "docs/media/visual-atlas/before-panels-03.jpg",
+      "sha256": "dd22c42342b946013477afd26372816595893d4601fe3897b40adc4061067969",
+      "width": 1600,
+      "height": 1700,
+      "role": "AUDIT_CONTACT_SHEET_NOT_A_PUBLIC_SITE_ASSET"
+    },
+    {
+      "root": "PACKAGE_ROOT",
+      "path": "docs/media/visual-atlas/before-panels-04.jpg",
+      "sha256": "d1f61e075b988886daa90f156004e0dcf498a40703fdc59370d6d4450ddc0d8b",
+      "width": 1600,
+      "height": 1700,
+      "role": "AUDIT_CONTACT_SHEET_NOT_A_PUBLIC_SITE_ASSET"
+    },
+    {
+      "root": "PACKAGE_ROOT",
+      "path": "docs/media/visual-atlas/before-panels-05.jpg",
+      "sha256": "44c8673786eb7549f181b696f3497ec4db9a146a45f9b9f2d2502f090ffa1113",
+      "width": 1600,
+      "height": 1700,
+      "role": "AUDIT_CONTACT_SHEET_NOT_A_PUBLIC_SITE_ASSET"
+    },
+    {
+      "root": "PACKAGE_ROOT",
+      "path": "docs/media/visual-atlas/before-panels-06.jpg",
+      "sha256": "d7fa4fe30c26a0251e2152311eae64e5b95ec83c41c16866e7412266225f350a",
+      "width": 1600,
+      "height": 1700,
+      "role": "AUDIT_CONTACT_SHEET_NOT_A_PUBLIC_SITE_ASSET"
+    },
+    {
+      "root": "PACKAGE_ROOT",
+      "path": "docs/media/visual-atlas/case-01.jpg",
+      "sha256": "b27267cb80197c95a5144ebbdeb27bf4ae012a947bb880d95ada19ac60e2c4b6",
+      "width": 1600,
+      "height": 1700,
+      "role": "AUDIT_CONTACT_SHEET_NOT_A_PUBLIC_SITE_ASSET"
+    },
+    {
+      "root": "PACKAGE_ROOT",
+      "path": "docs/media/visual-atlas/case-02.jpg",
+      "sha256": "d1f466d893ade1cb273c373ce3490ac41a984af8ccd58543dec3548ff2bd24d4",
+      "width": 1600,
+      "height": 1700,
+      "role": "AUDIT_CONTACT_SHEET_NOT_A_PUBLIC_SITE_ASSET"
+    },
+    {
+      "root": "PACKAGE_ROOT",
+      "path": "docs/media/visual-atlas/case-03.jpg",
+      "sha256": "436d7b2bb09d4de2e2812b847d91f3f94834c1c7c1d14d2204f973bd2b062aa6",
+      "width": 1600,
+      "height": 1700,
+      "role": "AUDIT_CONTACT_SHEET_NOT_A_PUBLIC_SITE_ASSET"
+    },
+    {
+      "root": "PACKAGE_ROOT",
+      "path": "docs/media/visual-atlas/case-04.jpg",
+      "sha256": "3515a38ebdea28ab524bc13ca67eeffe39f85a3297b57e52ae4899ed3603e404",
+      "width": 1600,
+      "height": 1700,
+      "role": "AUDIT_CONTACT_SHEET_NOT_A_PUBLIC_SITE_ASSET"
+    },
+    {
+      "root": "PACKAGE_ROOT",
+      "path": "docs/media/visual-atlas/case-05.jpg",
+      "sha256": "4a281aa9f20f1ab1a07e457ccc1c2067e947b8251c60f8423938da88d1f0ce48",
+      "width": 1600,
+      "height": 1700,
+      "role": "AUDIT_CONTACT_SHEET_NOT_A_PUBLIC_SITE_ASSET"
+    },
+    {
+      "root": "PACKAGE_ROOT",
+      "path": "docs/media/visual-atlas/recovered-panels.jpg",
+      "sha256": "16dcd303111a98e6858e9a4e63eb7fcdcc9532622181cc6c913e23949f6a8c6b",
+      "width": 1600,
+      "height": 1700,
+      "role": "AUDIT_CONTACT_SHEET_NOT_A_PUBLIC_SITE_ASSET"
+    },
+    {
+      "root": "PACKAGE_ROOT",
+      "path": "docs/media/visual-atlas/reference-video.jpg",
+      "sha256": "9682ed991004535b986272e279ffe548f28e6f493084750ff9d9351a3bf5ad39",
+      "width": 1350,
+      "height": 960,
+      "role": "AUDIT_CONTACT_SHEET_NOT_A_PUBLIC_SITE_ASSET"
+    },
+    {
+      "root": "PACKAGE_ROOT",
+      "path": "docs/media/visual-atlas/repo-case-01.jpg",
+      "sha256": "a358b73c4a5a1e0ab189cf089d74066e2c83412a9256810a7768d95243bf848a",
+      "width": 1600,
+      "height": 1700,
+      "role": "AUDIT_CONTACT_SHEET_NOT_A_PUBLIC_SITE_ASSET"
+    },
+    {
+      "root": "PACKAGE_ROOT",
+      "path": "docs/media/visual-atlas/repo-case-02.jpg",
+      "sha256": "a0afb015b57d487688344ca0302b5664512d1ff14fc2319544aa981a3be8eec2",
+      "width": 1600,
+      "height": 1700,
+      "role": "AUDIT_CONTACT_SHEET_NOT_A_PUBLIC_SITE_ASSET"
+    },
+    {
+      "root": "PACKAGE_ROOT",
+      "path": "docs/media/visual-atlas/repo-case-03.jpg",
+      "sha256": "5b79256e127de992355f0d47d15e12396b0770aa15d10c2216eee70320d9d60b",
+      "width": 1600,
+      "height": 1700,
+      "role": "AUDIT_CONTACT_SHEET_NOT_A_PUBLIC_SITE_ASSET"
+    },
+    {
+      "root": "PACKAGE_ROOT",
+      "path": "docs/media/visual-atlas/social-01.jpg",
+      "sha256": "81b3c10f171471283d860472e25e9fe8aa23222ba41c6a65e92f71c992e9dd57",
+      "width": 1600,
+      "height": 1700,
+      "role": "AUDIT_CONTACT_SHEET_NOT_A_PUBLIC_SITE_ASSET"
+    },
+    {
+      "root": "PACKAGE_ROOT",
+      "path": "docs/media/visual-atlas/social-02.jpg",
+      "sha256": "cca43630831bdbab837e62fc53f2c78e55fd03d19a572a84a48149cc8069e180",
+      "width": 1600,
+      "height": 1700,
+      "role": "AUDIT_CONTACT_SHEET_NOT_A_PUBLIC_SITE_ASSET"
+    },
+    {
+      "root": "PACKAGE_ROOT",
+      "path": "docs/media/visual-atlas/social-03.jpg",
+      "sha256": "bae335a25ffbc2d5a8d0168106d0f634fb87b88bd6b4f4061160c242cbc352d2",
+      "width": 1600,
+      "height": 1700,
+      "role": "AUDIT_CONTACT_SHEET_NOT_A_PUBLIC_SITE_ASSET"
+    },
+    {
+      "root": "PACKAGE_ROOT",
+      "path": "docs/media/visual-atlas/social-04.jpg",
+      "sha256": "c41f0c2c38fb862651437103c09ec480f1fec5f9ab39cd6cbce8020918590082",
+      "width": 1600,
+      "height": 1700,
+      "role": "AUDIT_CONTACT_SHEET_NOT_A_PUBLIC_SITE_ASSET"
+    },
+    {
+      "root": "PACKAGE_ROOT",
+      "path": "docs/media/visual-atlas/social-05.jpg",
+      "sha256": "2cb53580e2ae49fdec00bde7545e3f7b2a336ea4a65466afb1ac9191201a3879",
+      "width": 1600,
+      "height": 1700,
+      "role": "AUDIT_CONTACT_SHEET_NOT_A_PUBLIC_SITE_ASSET"
+    },
+    {
+      "root": "PACKAGE_ROOT",
+      "path": "docs/media/visual-atlas/social-06.jpg",
+      "sha256": "c7ef5dbb8d98845957f70afb12ce0171de369d3dd4150a3389dabd17ba582ac9",
+      "width": 1600,
+      "height": 1700,
+      "role": "AUDIT_CONTACT_SHEET_NOT_A_PUBLIC_SITE_ASSET"
+    },
+    {
+      "root": "PACKAGE_ROOT",
+      "path": "docs/media/visual-atlas/social-07.jpg",
+      "sha256": "15679e879ef154dba75791c3adb12b05a6b2140281fab9de4af03fa318db2866",
+      "width": 1600,
+      "height": 1700,
+      "role": "AUDIT_CONTACT_SHEET_NOT_A_PUBLIC_SITE_ASSET"
+    },
+    {
+      "root": "PACKAGE_ROOT",
+      "path": "docs/media/visual-atlas/social-08.jpg",
+      "sha256": "0e1f6c088cc5bf1113a94eedd5e99845f9c84da32b09ef46dc4a101456c2eab3",
+      "width": 1600,
+      "height": 1700,
+      "role": "AUDIT_CONTACT_SHEET_NOT_A_PUBLIC_SITE_ASSET"
+    },
+    {
+      "root": "PACKAGE_ROOT",
+      "path": "docs/media/visual-atlas/social-09.jpg",
+      "sha256": "e0355c38507576832565415ba58818b69b51f7fa1be7ba8f2bade8f3d3d9e828",
+      "width": 1600,
+      "height": 1700,
+      "role": "AUDIT_CONTACT_SHEET_NOT_A_PUBLIC_SITE_ASSET"
+    },
+    {
+      "root": "PACKAGE_ROOT",
+      "path": "docs/media/visual-atlas/social-10.jpg",
+      "sha256": "03205c6a0bf190a1bebf1c65490b31460f33d9261250e75bd37f745e905001eb",
+      "width": 1600,
+      "height": 1700,
+      "role": "AUDIT_CONTACT_SHEET_NOT_A_PUBLIC_SITE_ASSET"
+    }
+  ],
+  "warning": "Miniaturas de conferência. Fontes originais truncadas aparecem incompletas; recovered-panels mostra as cópias íntegras. Nenhuma prancha é ativo do site."
+}

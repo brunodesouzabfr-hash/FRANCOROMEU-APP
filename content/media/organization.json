@@ -1,0 +1,31 @@
+{
+  "schema_version": "fr-editorial-1.0.0",
+  "canonical": "https://www.francoromeufr.com.br",
+  "jsonld_base": {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://www.francoromeufr.com.br/#organization",
+    "name": "Franco Romeu",
+    "alternateName": [
+      "FR",
+      "ꟻR"
+    ],
+    "url": "https://www.francoromeufr.com.br"
+  },
+  "logo_asset": {
+    "root": "REPO_ROOT",
+    "path": "assets/brand/franco-romeu-logo-remaster-800.webp",
+    "sha256": "3df55531c5531da4f30018df590052a988f0459f414de5051c394439253ef3ec",
+    "contentUrl": null,
+    "status": "EXISTING_REPO_ASSET_URL_TO_VERIFY_AT_PUBLICATION"
+  },
+  "sameAs": [],
+  "localBusiness": null,
+  "missing_verified_fields": [
+    "address",
+    "legal_identifier",
+    "official_social_urls",
+    "logo_public_url",
+    "creator_rights_per_media"
+  ]
+}

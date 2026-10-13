@@ -1,0 +1,186 @@
+{
+  "routes": [
+    "/",
+    "/inspiracoes",
+    "/projetos",
+    "/projetos/estudo-area-gourmet-cozinha-planejada-madeira-casa-010",
+    "/projetos/estudo-banheiro-bancada-pedra-natural-apto-037",
+    "/projetos/estudo-closet-closet-planejado-madeira-apto-030",
+    "/projetos/estudo-cozinha-bancada-calacatta-apto-055",
+    "/projetos/estudo-escritorio-marcenaria-madeira-casa-008",
+    "/projetos/estudo-hall-textura-travertino-casa-021",
+    "/projetos-3d",
+    "/projetos-3d/cozinha-lavanderia-estudo-fr",
+    "/servicos",
+    "/servicos/cozinhas-planejadas",
+    "/servicos/forros",
+    "/servicos/bancadas",
+    "/servicos/iluminacao",
+    "/servicos/paisagismo",
+    "/servicos/marcenaria-sob-medida",
+    "/servicos/projeto-e-compatibilizacao",
+    "/servicos/revestimentos-e-acabamentos",
+    "/servicos/pisos",
+    "/servicos/portas-e-esquadrias",
+    "/servicos/hidraulica",
+    "/servicos/drywall",
+    "/servicos/eletrica",
+    "/servicos/pisos-monoliticos",
+    "/servicos/automacao",
+    "/servicos/acustica",
+    "/servicos/climatizacao",
+    "/servicos/closets",
+    "/ambientes",
+    "/ambientes/adega",
+    "/ambientes/area-gourmet",
+    "/ambientes/atelie",
+    "/ambientes/banheiro",
+    "/ambientes/bar",
+    "/ambientes/biblioteca",
+    "/ambientes/cinema",
+    "/ambientes/closet",
+    "/ambientes/corredor",
+    "/ambientes/cozinha",
+    "/ambientes/escada",
+    "/ambientes/escritorio",
+    "/ambientes/fachada",
+    "/ambientes/garagem",
+    "/ambientes/hall",
+    "/ambientes/lavabo",
+    "/ambientes/lavanderia",
+    "/ambientes/pavilhao-piscina",
+    "/ambientes/quarto",
+    "/ambientes/quintal",
+    "/ambientes/sala-audio",
+    "/ambientes/sala-estar",
+    "/ambientes/sala-gamer",
+    "/ambientes/sala-jantar",
+    "/materiais",
+    "/materiais/madeira",
+    "/materiais/ceramica",
+    "/materiais/vidro",
+    "/materiais/efeito-calacatta",
+    "/materiais/pedra-natural",
+    "/materiais/quartzito-taj-mahal",
+    "/materiais/travertino-romano",
+    "/materiais/calacatta-gold",
+    "/materiais/led",
+    "/materiais/acabamento-amadeirado",
+    "/materiais/quartzo-calacatta",
+    "/portfolio",
+    "/estilos",
+    "/processo",
+    "/caderno-tecnico",
+    "/sobre",
+    "/contato"
+  ],
+  "viewports": [
+    {
+      "width": 390,
+      "height": 844,
+      "route": "/",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "route": "/inspiracoes",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "route": "/materiais",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "route": "/servicos",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "route": "/projetos",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "route": "/ambientes",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "route": "/portfolio",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "route": "/projetos-3d",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "route": "/",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "route": "/inspiracoes",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "route": "/materiais",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "route": "/servicos",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "route": "/projetos",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "route": "/ambientes",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "route": "/portfolio",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "route": "/projetos-3d",
+      "overflow": false
+    }
+  ],
+  "flows": [
+    "trilhas: busca, vazio, recuperação e filtro de ambiente",
+    "menu: teclado, Escape e restauração do foco",
+    "CTA contextual, persistência editorial e remoção sem mutação financeira",
+    "seleção manual pelo editor existente, total e recuperação após reload",
+    "IQE: abertura, teclado e fechamento sem alterar o orçamento",
+    "mídia indisponível e movimento reduzido: composição e texto preservados",
+    "404 reais e fontes fora do servidor público",
+    "conteúdo e navegação com JavaScript desativado"
+  ],
+  "errors": []
+}

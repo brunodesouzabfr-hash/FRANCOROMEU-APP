@@ -1,0 +1,13 @@
+{
+  "schema_version": "fr-additions-decisions-1.0.0",
+  "canonical": "https://www.francoromeufr.com.br",
+  "decisions": [
+    {"id":"A01","topic":"Base visual","decision":"Preservar Home e seis vistas da branch atual; adicionar acervo aos componentes existentes.","evidence":"index.html e testes de Stage 14-16","publication_effect":"nenhum"},
+    {"id":"A02","topic":"Saida local","decision":"dist/ unica; prévia ativa em 4183 e porta 4182 descontinuada; saídas anteriores copiadas e arquivadas fora do público.","evidence":"scripts/build-site.cjs e scripts/preview-site.cjs","publication_effect":"nenhum deploy"},
+    {"id":"A03","topic":"Natureza das imagens","decision":"Remover avisos repetitivos e códigos internos da UI sem descrever render/reconstituição como fotografia documental.","evidence":"content/projects/projects.json e docs/media/HUMAN_DECISIONS.json","publication_effect":"noindex e gates mantidos"},
+    {"id":"A04","topic":"Autoria e direitos","decision":"A declaração geral de propriedade da marca não altera creator_verified ou rights_verified de cada media_id.","evidence":"content/media/media-master.json","publication_effect":"ImageObject autoral e indexação bloqueados até comprovação individual"},
+    {"id":"A05","topic":"Servicos e precos","decision":"Remover comparativo público; preservar 115 serviços e valores atuais; mapear 17 famílias sem adicionar preços hipotéticos.","evidence":"docs/additions/SERVICE_RECONCILIATION.csv","publication_effect":"nenhuma alteração financeira"},
+    {"id":"A06","topic":"Google e analytics","decision":"Não ativar novas tags ou avaliações antes de confirmar propriedade e credenciais.","evidence":"gtag existente e api/google-reviews.js","publication_effect":"sem operação remota"},
+    {"id":"A07","topic":"Modelos 3D","decision":"Não gerar modelo GLB/CAD a partir de imagens raster.","evidence":"content/projects/projects.json model_3d=null","publication_effect":"estudos raster continuam identificados"}
+  ]
+}

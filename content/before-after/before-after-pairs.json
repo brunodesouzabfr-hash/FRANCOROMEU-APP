@@ -1,0 +1,2346 @@
+{
+  "schema_version": "fr-editorial-1.0.0",
+  "generated_at": "2026-10-11",
+  "canonical": "https://www.francoromeufr.com.br",
+  "publication_state": "PRE_IMPLEMENTATION",
+  "auto_publish": false,
+  "pairs": [
+    {
+      "pair_id": "FR-BA010",
+      "project_id": "FR-P010",
+      "before_media_id": "FR-M-88BE5E11FBC003E6",
+      "after_media_id": "FR-M-28F3A287384DEA43",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Varanda coberta com piso cerâmico e bancada existente.",
+      "interventions": [
+        "Cozinha externa planejada",
+        "Forro ripado",
+        "Bancada e cuba integradas",
+        "Iluminação de apoio e paisagismo"
+      ],
+      "material_ids": [
+        "madeira",
+        "pedra-clara",
+        "metal-escuro"
+      ],
+      "service_ids": [
+        "cozinhas-planejadas",
+        "forros",
+        "bancadas",
+        "iluminacao",
+        "paisagismo"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/area-gourmet-cozinha-planejada-madeira-casa-010/servicosexecutados-area-gourmet-cozinha-planejada-madeira-casa-010.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA040",
+      "project_id": "FR-P040",
+      "before_media_id": "FR-M-A49087DE2DF28C85",
+      "after_media_id": "FR-M-6BBF823585AB0D30",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Área coberta com bancada básica, equipamentos aparentes e acabamento incompleto.",
+      "interventions": [
+        "Marcenaria resistente ao ambiente",
+        "Bancada e cuba",
+        "Integração de churrasqueira e equipamentos",
+        "Iluminação pendente"
+      ],
+      "material_ids": [
+        "madeira",
+        "pedra-escura",
+        "metal-preto"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "bancadas",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/area-gourmet-cozinha-planejada-madeira-casa-040/servicosexecutados-area-gourmet-cozinha-planejada-madeira-casa-040.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA019",
+      "project_id": "FR-P019",
+      "before_media_id": "FR-M-71D49D024AE25D8B",
+      "after_media_id": "FR-M-446AE2B3F99E9426",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Varanda coberta com mesa central, piso cerâmico e estrutura aparente.",
+      "interventions": [
+        "Cozinha externa planejada",
+        "Bancada central",
+        "Iluminação pendente",
+        "Organização da área de refeições"
+      ],
+      "material_ids": [
+        "pedra-clara",
+        "madeira",
+        "metal-escuro"
+      ],
+      "service_ids": [
+        "cozinhas-planejadas",
+        "bancadas",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/area-gourmet-cozinha-planejada-pedra-natural-casa-019/servicosexecutados-area-gourmet-cozinha-planejada-pedra-natural-casa-019.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA058",
+      "project_id": "FR-P058",
+      "before_media_id": "FR-M-2215DA77FB9C0A36",
+      "after_media_id": "FR-M-3B8B6266C700679D",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Área coberta com estrutura desgastada, bordas aparentes e mobiliário provisório.",
+      "interventions": [
+        "Renovação visual da cobertura",
+        "Instalação de forro em madeira",
+        "Tratamento de calhas e bordas aparentes",
+        "Iluminação de apoio"
+      ],
+      "material_ids": [
+        "madeira",
+        "telha-ceramica",
+        "metal"
+      ],
+      "service_ids": [
+        "forros",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/area-gourmet-forro-madeira-casa-058/servicosexecutados-area-gourmet-forro-madeira-casa-058.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA037",
+      "project_id": "FR-P037",
+      "before_media_id": "FR-M-884D7FE6A1F39944",
+      "after_media_id": "FR-M-AB2DD6F575807AFE",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Lavabo com gabinete tradicional, tampo escuro e espelho ornamentado.",
+      "interventions": [
+        "Instalação de bancada suspensa",
+        "Composição de cuba integrada",
+        "Atualização de espelho e iluminação",
+        "Tratamento visual das paredes"
+      ],
+      "material_ids": [
+        "pedra-clara",
+        "metal-escuro",
+        "vidro"
+      ],
+      "service_ids": [
+        "bancadas",
+        "projeto-e-compatibilizacao",
+        "iluminacao",
+        "revestimentos-e-acabamentos"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/banheiro-bancada-pedra-natural-apto-037/servicosexecutados-banheiro-bancada-pedra-natural-apto-037.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA007",
+      "project_id": "FR-P007",
+      "before_media_id": "FR-M-E8F100A794C06BED",
+      "after_media_id": "FR-M-618C5BDABDF84BD8",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Banheiro com bancada simples, banheira e box setorizado.",
+      "interventions": [
+        "Revestimento de paredes e piso",
+        "Instalação de bancada dupla",
+        "Composição de gabinete em madeira",
+        "Atualização de box e iluminação"
+      ],
+      "material_ids": [
+        "pedra-clara",
+        "madeira",
+        "vidro"
+      ],
+      "service_ids": [
+        "pisos",
+        "revestimentos-e-acabamentos",
+        "bancadas",
+        "marcenaria-sob-medida",
+        "projeto-e-compatibilizacao",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/banheiro-bancada-pedra-natural-casa-007/servicosexecutados-banheiro-bancada-pedra-natural-casa-007.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA015",
+      "project_id": "FR-P015",
+      "before_media_id": "FR-M-A8B7C044EC921A9D",
+      "after_media_id": "FR-M-A33A0FFF54DB9CB8",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Banheiro com revestimento cerâmico, box frontal e bancada lateral.",
+      "interventions": [
+        "Atualização dos revestimentos",
+        "Reconfiguração visual do box",
+        "Instalação de bancada suspensa",
+        "Iluminação de apoio"
+      ],
+      "material_ids": [
+        "pedra-clara",
+        "madeira",
+        "vidro"
+      ],
+      "service_ids": [
+        "revestimentos-e-acabamentos",
+        "bancadas",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/banheiro-revestimento-pedra-natural-casa-015/servicosexecutados-banheiro-revestimento-pedra-natural-casa-015.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA046",
+      "project_id": "FR-P046",
+      "before_media_id": "FR-M-AA325AEA2D4C52E7",
+      "after_media_id": "FR-M-0C7D1AB7771B406D",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Banheiro com revestimentos pequenos, louças existentes e instalações aparentes.",
+      "interventions": [
+        "Atualização de revestimentos",
+        "Composição de nicho",
+        "Instalação visual de box",
+        "Bancada suspensa e iluminação"
+      ],
+      "material_ids": [
+        "porcelanato-claro-de-grande-formato",
+        "vidro",
+        "metal-preto"
+      ],
+      "service_ids": [
+        "revestimentos-e-acabamentos",
+        "projeto-e-compatibilizacao",
+        "bancadas",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/banheiro-revestimento-porcelanato-apto-046/servicosexecutados-banheiro-revestimento-porcelanato-apto-046.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA030",
+      "project_id": "FR-P030",
+      "before_media_id": "FR-M-98045C2D558D242D",
+      "after_media_id": "FR-M-9E8E9E58ADB500AF",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Closet com araras abertas e armazenamento provisório.",
+      "interventions": [
+        "Marcenaria do piso ao teto",
+        "Organização de cabideiros, gavetas e sapateiras",
+        "Portas de vidro fumê",
+        "Iluminação vertical integrada"
+      ],
+      "material_ids": [
+        "madeira",
+        "vidro-fume",
+        "metal-escuro"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "forros",
+        "pisos",
+        "portas-e-esquadrias",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/closet-closet-planejado-madeira-apto-030/servicosexecutados-closet-closet-planejado-madeira-apto-030.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA006",
+      "project_id": "FR-P006",
+      "before_media_id": "FR-M-D692056D9B7AB967",
+      "after_media_id": "FR-M-24E5E0DDDD33E69D",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Closet aberto com peças aparentes e armazenamento não integrado.",
+      "interventions": [
+        "Marcenaria do piso ao teto",
+        "Organização de cabideiros e gaveteiros",
+        "Portas envidraçadas",
+        "Iluminação interna em LED"
+      ],
+      "material_ids": [
+        "madeira",
+        "vidro-fume",
+        "tecido-claro"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "forros",
+        "pisos",
+        "portas-e-esquadrias",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/closet-closet-planejado-madeira-casa-006/servicosexecutados-closet-closet-planejado-madeira-casa-006.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA017",
+      "project_id": "FR-P017",
+      "before_media_id": "FR-M-32AA81E9E08156FC",
+      "after_media_id": "FR-M-C09C417DBF1BF82A",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Corredor com piso cerâmico escuro e iluminação pontual.",
+      "interventions": [
+        "Tratamento visual das paredes",
+        "Atualização do piso",
+        "Instalação de arandelas",
+        "Organização dos vãos e transições"
+      ],
+      "material_ids": [
+        "madeira",
+        "pedra-clara",
+        "metal-escuro"
+      ],
+      "service_ids": [
+        "revestimentos-e-acabamentos",
+        "pisos",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/corredor-iluminacao-madeira-casa-017/servicosexecutados-corredor-iluminacao-madeira-casa-017.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA055",
+      "project_id": "FR-P055",
+      "before_media_id": "FR-M-65F7FF115D1C1061",
+      "after_media_id": "FR-M-1DDFA8E0C5B05623",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Cozinha com bancada escura, cuba dupla e armários claros.",
+      "interventions": [
+        "Instalação de bancada",
+        "Composição de frontão e backsplash",
+        "Integração de cuba e torneira",
+        "Acabamento visual das emendas"
+      ],
+      "material_ids": [
+        "efeito-calacatta",
+        "mdf-verde",
+        "metal-preto"
+      ],
+      "service_ids": [
+        "bancadas",
+        "projeto-e-compatibilizacao",
+        "hidraulica",
+        "revestimentos-e-acabamentos"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/cozinha-bancada-calacatta-apto-055/servicosexecutados-cozinha-bancada-calacatta-apto-055.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA013",
+      "project_id": "FR-P013",
+      "before_media_id": "FR-M-89240238FCBCE63B",
+      "after_media_id": "FR-M-ACC89D3FB0C8D91A",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Cozinha rústica com bancadas laterais e mobiliário independente.",
+      "interventions": [
+        "Marcenaria planejada",
+        "Instalação de ilha",
+        "Integração de eletrodomésticos",
+        "Iluminação funcional"
+      ],
+      "material_ids": [
+        "madeira",
+        "pedra-clara",
+        "metal-escuro"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "bancadas",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/cozinha-cozinha-planejada-madeira-casa-013/servicosexecutados-cozinha-cozinha-planejada-madeira-casa-013.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA032",
+      "project_id": "FR-P032",
+      "before_media_id": "FR-M-FCB58A4B828C296C",
+      "after_media_id": "FR-M-B65AA04715671C4F",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Cozinha clara com eletrodomésticos independentes e mesa central.",
+      "interventions": [
+        "Marcenaria planejada",
+        "Integração visual dos eletrodomésticos",
+        "Instalação de ilha",
+        "Iluminação de bancada"
+      ],
+      "material_ids": [
+        "mdf-em-tom-grafite",
+        "pedra-clara",
+        "metal-preto"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "bancadas",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/cozinha-cozinha-planejada-mdf-apto-032/servicosexecutados-cozinha-cozinha-planejada-mdf-apto-032.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA045",
+      "project_id": "FR-P045",
+      "before_media_id": "FR-M-6E38649A0F126D55",
+      "after_media_id": "FR-M-19B7A80EBC516E09",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Cozinha compacta com armários claros e circulação restrita.",
+      "interventions": [
+        "Marcenaria planejada",
+        "Atualização da bancada",
+        "Integração visual de cuba e eletrodomésticos",
+        "Iluminação funcional"
+      ],
+      "material_ids": [
+        "mdf-amadeirado",
+        "pedra-clara",
+        "metal-preto"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "bancadas",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/cozinha-cozinha-planejada-mdf-apto-045/servicosexecutados-cozinha-cozinha-planejada-mdf-apto-045.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA004",
+      "project_id": "FR-P004",
+      "before_media_id": "FR-M-27B6A66AFFFDBD04",
+      "after_media_id": "FR-M-764C1CFF80E3B908",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Cozinha com armários claros, bancada perimetral e ilha compacta.",
+      "interventions": [
+        "Marcenaria sob medida",
+        "Instalação de ilha central",
+        "Integração visual de eletrodomésticos",
+        "Iluminação funcional de bancada"
+      ],
+      "material_ids": [
+        "pedra-clara",
+        "mdf-verde",
+        "metal-em-tom-bronze"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "bancadas",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/cozinha-cozinha-planejada-pedra-natural-casa-004/servicosexecutados-cozinha-cozinha-planejada-pedra-natural-casa-004.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA044",
+      "project_id": "FR-P044",
+      "before_media_id": "FR-M-D05E88873F26FBD3",
+      "after_media_id": "FR-M-3B930FFBE5800CBA",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Cozinha estreita com armários claros e eletrodomésticos independentes.",
+      "interventions": [
+        "Marcenaria sob medida",
+        "Aproveitamento vertical",
+        "Integração de eletrodomésticos",
+        "Iluminação inferior de armários"
+      ],
+      "material_ids": [
+        "mdf-amadeirado-e-verde",
+        "pedra-clara",
+        "metal-escuro"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/cozinha-marcenaria-mdf-apto-044/servicosexecutados-cozinha-marcenaria-mdf-apto-044.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA051",
+      "project_id": "FR-P051",
+      "before_media_id": "FR-M-D77E6BD437FD018F",
+      "after_media_id": "FR-M-0DB2F25CC3DCCD55",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Ambiente de trabalho aberto com limites pouco definidos e infraestrutura aparente.",
+      "interventions": [
+        "Criação de divisória interna",
+        "Tratamento visual das juntas",
+        "Integração de porta",
+        "Execução de nicho iluminado"
+      ],
+      "material_ids": [
+        "drywall",
+        "madeira",
+        "led-linear"
+      ],
+      "service_ids": [
+        "drywall",
+        "portas-e-esquadrias",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/escritorio-drywall-apto-051/servicosexecutados-escritorio-drywall-apto-051.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA053",
+      "project_id": "FR-P053",
+      "before_media_id": "FR-M-F6CF2609215E034F",
+      "after_media_id": "FR-M-4CD1F7390E4FCE14",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Escritório com iluminação geral direta, equipamentos e cabos aparentes.",
+      "interventions": [
+        "Organização visual dos pontos elétricos",
+        "Iluminação de tarefa",
+        "Trilho com spots",
+        "Reorganização dos equipamentos"
+      ],
+      "material_ids": [
+        "metal-preto",
+        "madeira",
+        "tinta-osso"
+      ],
+      "service_ids": [
+        "eletrica",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/escritorio-eletrica-apto-053/servicosexecutados-escritorio-eletrica-apto-053.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA057",
+      "project_id": "FR-P057",
+      "before_media_id": "FR-M-A4807A550E296BC6",
+      "after_media_id": "FR-M-342DAC0DF469A7E1",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Espaço comercial com iluminação fluorescente e equipamentos distribuídos.",
+      "interventions": [
+        "Instalação visual de unidade interna",
+        "Organização da passagem técnica",
+        "Atualização da iluminação",
+        "Reorganização do ambiente"
+      ],
+      "material_ids": [
+        "equipamento-de-climatizacao",
+        "metal-preto",
+        "tinta-clara"
+      ],
+      "service_ids": [
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/escritorio-instalacao-comercial-057/servicosexecutados-escritorio-instalacao-comercial-057.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA008",
+      "project_id": "FR-P008",
+      "before_media_id": "FR-M-4F9258A655E61390",
+      "after_media_id": "FR-M-73EE93DC80530079",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Escritório com estantes independentes e mesa próxima à janela.",
+      "interventions": [
+        "Marcenaria do piso ao teto",
+        "Mesa de trabalho sob medida",
+        "Iluminação de tarefa",
+        "Reorganização do armazenamento"
+      ],
+      "material_ids": [
+        "madeira",
+        "metal-escuro",
+        "tecido-neutro"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "forros",
+        "pisos",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/escritorio-marcenaria-madeira-casa-008/servicosexecutados-escritorio-marcenaria-madeira-casa-008.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA016",
+      "project_id": "FR-P016",
+      "before_media_id": "FR-M-E4738863BE84D463",
+      "after_media_id": "FR-M-1C8C153E56F10205",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Escritório com estantes abertas, mesa solta e equipamentos aparentes.",
+      "interventions": [
+        "Marcenaria de armazenamento",
+        "Mesa de trabalho",
+        "Iluminação de apoio",
+        "Reorganização da circulação"
+      ],
+      "material_ids": [
+        "madeira",
+        "piso-ceramico-existente",
+        "tecido-neutro"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/escritorio-marcenaria-madeira-casa-016/servicosexecutados-escritorio-marcenaria-madeira-casa-016.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA023",
+      "project_id": "FR-P023",
+      "before_media_id": "FR-M-5E54BFE23E0ACD91",
+      "after_media_id": "FR-M-BA27344010D5C39F",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Escritório com parede curva lisa, mesa central e estantes laterais.",
+      "interventions": [
+        "Aplicação de textura efeito madeira",
+        "Tratamento de parede curva",
+        "Iluminação indireta",
+        "Reorganização da área de trabalho"
+      ],
+      "material_ids": [
+        "revestimento-mineral-efeito-madeira",
+        "madeira",
+        "tecido-neutro"
+      ],
+      "service_ids": [
+        "revestimentos-e-acabamentos",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/escritorio-textura-madeira-apto-023/servicosexecutados-escritorio-textura-madeira-apto-023.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA059",
+      "project_id": "FR-P059",
+      "before_media_id": "FR-M-D68FA32E798DD152",
+      "after_media_id": "FR-M-9A96D631F3BF543C",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Fachada comercial com revestimento desgastado, porta de enrolar e infraestrutura aparente.",
+      "interventions": [
+        "Recuperação visual da fachada",
+        "Organização dos planos e esquadrias",
+        "Aplicação de elementos em madeira",
+        "Iluminação arquitetônica"
+      ],
+      "material_ids": [
+        "madeira",
+        "metal-preto",
+        "revestimento-grafite"
+      ],
+      "service_ids": [
+        "portas-e-esquadrias",
+        "projeto-e-compatibilizacao",
+        "iluminacao",
+        "forros"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/fachada-revestimento-madeira-comercial-059/servicosexecutados-fachada-revestimento-madeira-comercial-059.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA009",
+      "project_id": "FR-P009",
+      "before_media_id": "FR-M-C3886DF84A3AB678",
+      "after_media_id": "FR-M-4479292428BDAF91",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Fachada residencial com acabamento claro, vegetação frontal e acesso central.",
+      "interventions": [
+        "Recuperação visual da fachada",
+        "Aplicação de revestimento mineral e pedra",
+        "Atualização da porta e esquadrias",
+        "Iluminação arquitetônica externa"
+      ],
+      "material_ids": [
+        "pedra-clara",
+        "metal-preto",
+        "verde-petroleo"
+      ],
+      "service_ids": [
+        "revestimentos-e-acabamentos",
+        "portas-e-esquadrias",
+        "iluminacao",
+        "forros"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/fachada-revestimento-pedra-natural-casa-009/servicosexecutados-fachada-revestimento-pedra-natural-casa-009.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA048",
+      "project_id": "FR-P048",
+      "before_media_id": "FR-M-D368FEE3945F873A",
+      "after_media_id": "FR-M-72751FE14AAE5D79",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Garagem com concreto desgastado, manchas e reparos aparentes.",
+      "interventions": [
+        "Preparação visual da base",
+        "Regularização das falhas",
+        "Aplicação de sistema monolítico",
+        "Acabamento contínuo"
+      ],
+      "material_ids": [
+        "resina-epoxi-cinza",
+        "concreto",
+        "metal"
+      ],
+      "service_ids": [
+        "pisos-monoliticos",
+        "revestimentos-e-acabamentos"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/garagem-porcelanato-liquido-epoxi-casa-048/servicosexecutados-garagem-porcelanato-liquido-epoxi-casa-048.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA001",
+      "project_id": "FR-P001",
+      "before_media_id": "FR-M-F9FC620F1791EBB6",
+      "after_media_id": "FR-M-89CA826B21DB487A",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Hall com escada, paredes claras e circulação existente.",
+      "interventions": [
+        "Recuperação visual das superfícies",
+        "Revestimento da escada em madeira",
+        "Atualização da porta de entrada",
+        "Iluminação indireta de circulação"
+      ],
+      "material_ids": [
+        "madeira",
+        "pedra-clara",
+        "metal-escuro"
+      ],
+      "service_ids": [
+        "revestimentos-e-acabamentos",
+        "portas-e-esquadrias",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/hall-escada-madeira-casa-001/servicosexecutados-hall-escada-madeira-casa-001.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA035",
+      "project_id": "FR-P035",
+      "before_media_id": "FR-M-4B717289A9D4D99C",
+      "after_media_id": "FR-M-3DDBA3C62BFAD2BF",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Escada com iluminação geral direta e degraus sem balizamento.",
+      "interventions": [
+        "Instalação visual de iluminação nos degraus",
+        "Iluminação linear de corrimão",
+        "Balizamento de circulação",
+        "Composição de cena noturna"
+      ],
+      "material_ids": [
+        "led-linear",
+        "metal-preto",
+        "pedra-clara"
+      ],
+      "service_ids": [
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/hall-led-sequencial-casa-035/servicosexecutados-hall-led-sequencial-casa-035.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA039",
+      "project_id": "FR-P039",
+      "before_media_id": "FR-M-17A4BB756BB03594",
+      "after_media_id": "FR-M-FCBBBA0B55ED5669",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Hall com aparador tradicional junto à escada.",
+      "interventions": [
+        "Composição de móvel autoral",
+        "Estrutura tensionada aparente",
+        "Instalação de tampo em madeira",
+        "Integração com o hall"
+      ],
+      "material_ids": [
+        "madeira",
+        "metal-escuro",
+        "pedra-clara"
+      ],
+      "service_ids": [
+        "projeto-e-compatibilizacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/hall-mesa-madeira-casa-039/servicosexecutados-hall-mesa-madeira-casa-039.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA056",
+      "project_id": "FR-P056",
+      "before_media_id": "FR-M-2754A1619D1669CC",
+      "after_media_id": "FR-M-CEFF8272E8EE812E",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Entrada com porta metálica clara, grade externa e degraus existentes.",
+      "interventions": [
+        "Preparação visual do vão",
+        "Instalação de porta pivotante",
+        "Composição de puxador vertical",
+        "Recuperação do entorno"
+      ],
+      "material_ids": [
+        "madeira",
+        "metal-preto",
+        "pedra-clara"
+      ],
+      "service_ids": [
+        "portas-e-esquadrias",
+        "projeto-e-compatibilizacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/hall-porta-madeira-casa-056/servicosexecutados-hall-porta-madeira-casa-056.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA021",
+      "project_id": "FR-P021",
+      "before_media_id": "FR-M-1F3D6F71B718483A",
+      "after_media_id": "FR-M-AAF41770DEF3B075",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Hall de pé-direito duplo com parede clara e escada lateral.",
+      "interventions": [
+        "Aplicação visual de textura mineral",
+        "Polimento da superfície",
+        "Iluminação rasante",
+        "Integração com a escada"
+      ],
+      "material_ids": [
+        "revestimento-mineral-efeito-travertino",
+        "pedra-clara",
+        "metal-escuro"
+      ],
+      "service_ids": [
+        "revestimentos-e-acabamentos",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/hall-textura-travertino-casa-021/servicosexecutados-hall-textura-travertino-casa-021.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA049",
+      "project_id": "FR-P049",
+      "before_media_id": "FR-M-F49F4D1A3D3CCE1B",
+      "after_media_id": "FR-M-E3FB067070F9E89C",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Lavabo com paredes claras, piso cerâmico e lavatório convencional.",
+      "interventions": [
+        "Revestimento contínuo de paredes",
+        "Revestimento visual do piso",
+        "Composição de bancada integrada",
+        "Iluminação de destaque"
+      ],
+      "material_ids": [
+        "microcimento-em-tom-areia",
+        "metal-preto",
+        "ceramica-branca"
+      ],
+      "service_ids": [
+        "revestimentos-e-acabamentos",
+        "pisos",
+        "bancadas",
+        "projeto-e-compatibilizacao",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/lavabo-microcimento-casa-049/servicosexecutados-lavabo-microcimento-casa-049.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA054",
+      "project_id": "FR-P054",
+      "before_media_id": "FR-M-532F7144003D62D5",
+      "after_media_id": "FR-M-644DD38F8571066A",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Lavanderia com tanque em alvenaria, tubulações aparentes e armazenamento aberto.",
+      "interventions": [
+        "Organização visual dos pontos de água",
+        "Instalação de bancada e cuba",
+        "Integração da lavadora",
+        "Marcenaria resistente à umidade"
+      ],
+      "material_ids": [
+        "pedra-clara",
+        "mdf-branco",
+        "metal"
+      ],
+      "service_ids": [
+        "bancadas",
+        "marcenaria-sob-medida"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/lavanderia-hidraulica-apto-054/servicosexecutados-lavanderia-hidraulica-apto-054.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA052",
+      "project_id": "FR-P052",
+      "before_media_id": "FR-M-6838407049F3CD5B",
+      "after_media_id": "FR-M-2859D620516609CA",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Quarto com teto irregular, ponto de luz central e acabamento incompleto.",
+      "interventions": [
+        "Execução visual de forro plano",
+        "Sanca perimetral",
+        "Iluminação linear indireta",
+        "Pontos direcionáveis"
+      ],
+      "material_ids": [
+        "drywall",
+        "led-linear",
+        "madeira"
+      ],
+      "service_ids": [
+        "forros",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/quarto-forro-casa-052/servicosexecutados-quarto-forro-casa-052.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA050",
+      "project_id": "FR-P050",
+      "before_media_id": "FR-M-AAE8441EE68BACFB",
+      "after_media_id": "FR-M-6F2B86AB82E82A91",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Quarto com piso frio e mobiliário distribuído sem continuidade material.",
+      "interventions": [
+        "Regularização visual do contrapiso",
+        "Instalação de réguas vinílicas",
+        "Acabamento perimetral",
+        "Reorganização do mobiliário"
+      ],
+      "material_ids": [
+        "piso-vinilico-amadeirado",
+        "tinta-clara",
+        "madeira"
+      ],
+      "service_ids": [
+        "pisos",
+        "revestimentos-e-acabamentos",
+        "marcenaria-sob-medida"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/quarto-piso-vinilico-apto-050/servicosexecutados-quarto-piso-vinilico-apto-050.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA020",
+      "project_id": "FR-P020",
+      "before_media_id": "FR-M-242C6B5D03BA9958",
+      "after_media_id": "FR-M-3B1E3D210BB4624A",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Quintal com piso irregular, vegetação espontânea e fachadas claras.",
+      "interventions": [
+        "Reorganização dos percursos",
+        "Atualização do piso",
+        "Composição de canteiros",
+        "Iluminação de fachada e jardim"
+      ],
+      "material_ids": [
+        "pedra-natural",
+        "telha-ceramica",
+        "vegetacao-de-especies-nao-identificadas"
+      ],
+      "service_ids": [
+        "pisos",
+        "paisagismo",
+        "projeto-e-compatibilizacao",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/quintal-iluminacao-pedra-natural-casa-020/servicosexecutados-quintal-iluminacao-pedra-natural-casa-020.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA018",
+      "project_id": "FR-P018",
+      "before_media_id": "FR-M-2892FD5AE0C92990",
+      "after_media_id": "FR-M-B79E1798F1C76B27",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Pátio interno com piso irregular, fonte central e vegetação consolidada.",
+      "interventions": [
+        "Reorganização do pátio",
+        "Atualização do piso",
+        "Composição de vegetação",
+        "Iluminação externa de baixa intensidade"
+      ],
+      "material_ids": [
+        "pedra-natural",
+        "madeira",
+        "vegetacao-de-especies-nao-identificadas"
+      ],
+      "service_ids": [
+        "pisos",
+        "projeto-e-compatibilizacao",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/quintal-piso-pedra-natural-casa-018/servicosexecutados-quintal-piso-pedra-natural-casa-018.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA060",
+      "project_id": "FR-P060",
+      "before_media_id": "FR-M-2D4626C942A7178A",
+      "after_media_id": "FR-M-6B108622D9DC5C38",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Quintal com solo exposto, caminho irregular e vegetação dispersa.",
+      "interventions": [
+        "Organização visual do terreno",
+        "Criação de caminho permeável",
+        "Composição de canteiros",
+        "Iluminação externa"
+      ],
+      "material_ids": [
+        "pedra-natural",
+        "gramado",
+        "vegetacao-de-especies-nao-identificadas"
+      ],
+      "service_ids": [
+        "paisagismo",
+        "projeto-e-compatibilizacao",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/quintal-piso-pedra-natural-casa-060/servicosexecutados-quintal-piso-pedra-natural-casa-060.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA034",
+      "project_id": "FR-P034",
+      "before_media_id": "FR-M-AF7998C19F7C1851",
+      "after_media_id": "FR-M-F537364E9D096661",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Sala com cortinas abertas, iluminação geral e equipamentos distribuídos.",
+      "interventions": [
+        "Integração visual de cortinas",
+        "Iluminação dimerizável",
+        "Organização de comandos",
+        "Composição de cenas de luz"
+      ],
+      "material_ids": [
+        "tecido-claro",
+        "madeira",
+        "metal-escuro"
+      ],
+      "service_ids": [
+        "iluminacao",
+        "automacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/sala-estar-automacao-apto-034/servicosexecutados-sala-estar-automacao-apto-034.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA043",
+      "project_id": "FR-P043",
+      "before_media_id": "FR-M-EDE0D6DEE3A368E5",
+      "after_media_id": "FR-M-C5E26D9137706E9A",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Sala com parede lisa e marcas de fixação aparentes.",
+      "interventions": [
+        "Instalação visual de boiseries",
+        "Composição de molduras ornamentais",
+        "Pintura de acabamento",
+        "Organização dos alinhamentos"
+      ],
+      "material_ids": [
+        "gesso",
+        "tinta-osso",
+        "tecido-claro"
+      ],
+      "service_ids": [
+        "revestimentos-e-acabamentos",
+        "projeto-e-compatibilizacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/sala-estar-boiserie-apto-043/servicosexecutados-sala-estar-boiserie-apto-043.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA011",
+      "project_id": "FR-P011",
+      "before_media_id": "FR-M-BE8623B077BFCA20",
+      "after_media_id": "FR-M-9E89126F63640262",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Sala rústica com lareira central, piso cerâmico e vigas aparentes.",
+      "interventions": [
+        "Remodelação visual da lareira",
+        "Atualização do piso",
+        "Recuperação de vigas aparentes",
+        "Iluminação quente de apoio"
+      ],
+      "material_ids": [
+        "travertino-ou-pedra-clara",
+        "madeira",
+        "cal-mineral"
+      ],
+      "service_ids": [
+        "pisos",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/sala-estar-lareira-travertino-casa-011/servicosexecutados-sala-estar-lareira-travertino-casa-011.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA002",
+      "project_id": "FR-P002",
+      "before_media_id": "FR-M-BB3BFDE55DC23974",
+      "after_media_id": "FR-M-8D9DF51BA4421AFF",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Sala de estar com mobiliário distribuído ao redor da circulação central.",
+      "interventions": [
+        "Regularização visual das superfícies",
+        "Composição de painel e marcenaria",
+        "Reorganização do mobiliário",
+        "Iluminação técnica e indireta"
+      ],
+      "material_ids": [
+        "madeira",
+        "tecido-claro",
+        "pedra-clara"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "projeto-e-compatibilizacao",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/sala-estar-marcenaria-madeira-casa-002/servicosexecutados-sala-estar-marcenaria-madeira-casa-002.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA033",
+      "project_id": "FR-P033",
+      "before_media_id": "FR-M-EF1A03531C86D281",
+      "after_media_id": "FR-M-81D0843AFCA2BB80",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Sala com televisão sobre móvel independente e equipamentos aparentes.",
+      "interventions": [
+        "Instalação de painel de televisão",
+        "Organização visual de cabos e equipamentos",
+        "Móvel suspenso",
+        "Iluminação indireta"
+      ],
+      "material_ids": [
+        "madeira",
+        "pedra-clara",
+        "metal-escuro"
+      ],
+      "service_ids": [
+        "eletrica",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/sala-estar-painel-madeira-apto-033/servicosexecutados-sala-estar-painel-madeira-apto-033.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA041",
+      "project_id": "FR-P041",
+      "before_media_id": "FR-M-99251B1F02CFB8A4",
+      "after_media_id": "FR-M-8BBAD7EA1836A798",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Sala com marcas e irregularidades visíveis nas paredes.",
+      "interventions": [
+        "Correção visual de fissuras superficiais",
+        "Regularização das paredes",
+        "Pintura fosca",
+        "Recuperação de recortes e rodapés"
+      ],
+      "material_ids": [
+        "tinta-acrilica-fosca",
+        "piso-ceramico-existente",
+        "tecido-neutro"
+      ],
+      "service_ids": [
+        "revestimentos-e-acabamentos"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/sala-estar-pintura-apto-041/servicosexecutados-sala-estar-pintura-apto-041.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA029",
+      "project_id": "FR-P029",
+      "before_media_id": "FR-M-B3E60B1A29779F49",
+      "after_media_id": "FR-M-1D1E6FF8CE88A498",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Sala com piso de taco desgastado e mobiliário distribuído nas laterais.",
+      "interventions": [
+        "Reposição visual de peças",
+        "Lixamento e uniformização",
+        "Proteção de baixo brilho",
+        "Reorganização do mobiliário"
+      ],
+      "material_ids": [
+        "madeira",
+        "tecido-neutro",
+        "madeira-escura"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/sala-estar-piso-madeira-apto-029/servicosexecutados-sala-estar-piso-madeira-apto-029.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA027",
+      "project_id": "FR-P027",
+      "before_media_id": "FR-M-0144FAEF0B919345",
+      "after_media_id": "FR-M-F4E2B9747D963C2F",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Área social integrada com piso claro de placas menores e estante central.",
+      "interventions": [
+        "Atualização do piso",
+        "Paginação de placas de grande formato",
+        "Tratamento visual das transições",
+        "Reorganização do mobiliário"
+      ],
+      "material_ids": [
+        "porcelanato-acetinado-de-grande-formato",
+        "metal-escuro",
+        "tecido-claro"
+      ],
+      "service_ids": [
+        "pisos",
+        "marcenaria-sob-medida"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/sala-estar-piso-porcelanato-apto-027/servicosexecutados-sala-estar-piso-porcelanato-apto-027.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA047",
+      "project_id": "FR-P047",
+      "before_media_id": "FR-M-30393224AC333FD9",
+      "after_media_id": "FR-M-D8973A8C79016A8B",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Sala integrada com piso cerâmico marcado e mobiliário distribuído nas laterais.",
+      "interventions": [
+        "Atualização do piso",
+        "Paginação de placas",
+        "Tratamento das transições",
+        "Reorganização da circulação"
+      ],
+      "material_ids": [
+        "porcelanato-acetinado",
+        "tecido-natural",
+        "madeira"
+      ],
+      "service_ids": [
+        "pisos",
+        "projeto-e-compatibilizacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/sala-estar-piso-porcelanato-apto-047/servicosexecutados-sala-estar-piso-porcelanato-apto-047.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA024",
+      "project_id": "FR-P024",
+      "before_media_id": "FR-M-19BD4FE8F4EEBFDC",
+      "after_media_id": "FR-M-01204B2B0074E034",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Sala com painel de televisão simples e lareira lateral.",
+      "interventions": [
+        "Composição de painel volumétrico",
+        "Integração de televisão e lareira",
+        "Iluminação de destaque",
+        "Acabamento de retornos laterais"
+      ],
+      "material_ids": [
+        "revestimento-leve-efeito-pedra-natural",
+        "pedra-clara",
+        "tecido-natural"
+      ],
+      "service_ids": [
+        "projeto-e-compatibilizacao",
+        "iluminacao",
+        "revestimentos-e-acabamentos"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/sala-estar-revestimento-parede-pedra-natural-apto-024/servicosexecutados-sala-estar-revestimento-parede-pedra-natural-apto-024.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA026",
+      "project_id": "FR-P026",
+      "before_media_id": "FR-M-4A0F97819721F03A",
+      "after_media_id": "FR-M-4CEC8114CB79C158",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Sala ampla com parede de televisão simples e revestimento contínuo claro.",
+      "interventions": [
+        "Paginação de grandes lâminas",
+        "Alinhamento visual dos veios",
+        "Integração do painel de televisão",
+        "Iluminação linear"
+      ],
+      "material_ids": [
+        "porcelanato-de-grande-formato",
+        "madeira",
+        "metal-escuro"
+      ],
+      "service_ids": [
+        "pisos",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/sala-estar-revestimento-parede-porcelanato-apto-026/servicosexecutados-sala-estar-revestimento-parede-porcelanato-apto-026.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA036",
+      "project_id": "FR-P036",
+      "before_media_id": "FR-M-9D6C9E068F6CAA62",
+      "after_media_id": "FR-M-77F255159F096CF2",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Sala ampla com mobiliário claro e equipamentos distribuídos.",
+      "interventions": [
+        "Composição de painéis absorventes",
+        "Aplicação de ripado",
+        "Tratamento visual do teto",
+        "Integração do sistema audiovisual"
+      ],
+      "material_ids": [
+        "madeira",
+        "tecido-acustico",
+        "piso-textil"
+      ],
+      "service_ids": [
+        "acustica",
+        "projeto-e-compatibilizacao",
+        "forros"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/sala-estar-ripado-madeira-casa-036/servicosexecutados-sala-estar-ripado-madeira-casa-036.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA031",
+      "project_id": "FR-P031",
+      "before_media_id": "FR-M-FDDA54336CB23912",
+      "after_media_id": "FR-M-3EC911EEF901B599",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Área de refeições com buffet independente e equipamentos aparentes.",
+      "interventions": [
+        "Marcenaria planejada para bar",
+        "Integração de adega e nichos",
+        "Bancada de apoio",
+        "Iluminação interna"
+      ],
+      "material_ids": [
+        "madeira-ou-mdf",
+        "vidro-fume",
+        "pedra-escura"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "bancadas",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/sala-jantar-adega-madeira-apto-031/servicosexecutados-sala-jantar-adega-madeira-apto-031.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA003",
+      "project_id": "FR-P003",
+      "before_media_id": "FR-M-34908CE47F52BB1E",
+      "after_media_id": "FR-M-DF2C138A7A2890FD",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Sala de jantar com mesa escura e iluminação central existente.",
+      "interventions": [
+        "Renovação visual das superfícies",
+        "Instalação de luminária central",
+        "Reorganização da mesa e assentos",
+        "Integração material com a área social"
+      ],
+      "material_ids": [
+        "latao-ou-bronze",
+        "madeira",
+        "tecido-osso"
+      ],
+      "service_ids": [
+        "iluminacao",
+        "marcenaria-sob-medida",
+        "projeto-e-compatibilizacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/sala-jantar-iluminacao-latao-casa-003/servicosexecutados-sala-jantar-iluminacao-latao-casa-003.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA012",
+      "project_id": "FR-P012",
+      "before_media_id": "FR-M-443B4D01122ED7BE",
+      "after_media_id": "FR-M-5B8BF8C7E5ADD900",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Sala de jantar com mobiliário tradicional e piso cerâmico.",
+      "interventions": [
+        "Recuperação visual do teto e arcos",
+        "Atualização do piso",
+        "Instalação de luminária central",
+        "Reorganização do mobiliário"
+      ],
+      "material_ids": [
+        "madeira",
+        "pedra-clara",
+        "bronze-ou-latao"
+      ],
+      "service_ids": [
+        "forros",
+        "pisos",
+        "iluminacao",
+        "marcenaria-sob-medida"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/sala-jantar-iluminacao-latao-casa-012/servicosexecutados-sala-jantar-iluminacao-latao-casa-012.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA038",
+      "project_id": "FR-P038",
+      "before_media_id": "FR-M-14BD266B9626B8F4",
+      "after_media_id": "FR-M-D287A48923B8ABE3",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Sala de jantar com mesa de vidro e base metálica.",
+      "interventions": [
+        "Fabricação visual de mesa autoral",
+        "Composição de madeira e resina",
+        "Estrutura metálica",
+        "Integração com a iluminação central"
+      ],
+      "material_ids": [
+        "madeira-macica-ou-recuperada",
+        "resina-verde-petroleo",
+        "metal-preto"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "projeto-e-compatibilizacao",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/sala-jantar-rivertable-resina-apto-038/servicosexecutados-sala-jantar-rivertable-resina-apto-038.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA042",
+      "project_id": "FR-P042",
+      "before_media_id": "FR-M-E3452D3B262ABB2D",
+      "after_media_id": "FR-M-8FF7A63F34D365A5",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Sala de jantar com parede lisa e mesa de madeira.",
+      "interventions": [
+        "Preparação visual da parede",
+        "Aplicação de textura com veios",
+        "Polimento controlado",
+        "Iluminação de destaque"
+      ],
+      "material_ids": [
+        "revestimento-mineral-pigmentado",
+        "efeito-visual-de-marmore",
+        "madeira"
+      ],
+      "service_ids": [
+        "revestimentos-e-acabamentos",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/sala-jantar-textura-marmore-apto-042/servicosexecutados-sala-jantar-textura-marmore-apto-042.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA022",
+      "project_id": "FR-P022",
+      "before_media_id": "FR-M-514F95E8EE9775C5",
+      "after_media_id": "FR-M-8160F10DD49C91AE",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Sala de jantar com parede lisa e mobiliário escuro.",
+      "interventions": [
+        "Composição geométrica em baixo-relevo",
+        "Acabamento mineral",
+        "Iluminação de destaque",
+        "Compatibilização com o mobiliário"
+      ],
+      "material_ids": [
+        "revestimento-mineral-pigmentado",
+        "madeira",
+        "metal-dourado"
+      ],
+      "service_ids": [
+        "projeto-e-compatibilizacao",
+        "revestimentos-e-acabamentos",
+        "iluminacao",
+        "marcenaria-sob-medida"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/sala-jantar-textura-microcimento-apto-022/servicosexecutados-sala-jantar-textura-microcimento-apto-022.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA005",
+      "project_id": "FR-P005",
+      "before_media_id": "FR-M-1C12983B18084E3E",
+      "after_media_id": "FR-M-035B1FE5812B5853",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Suíte com cama, armário lateral e ventilador de teto.",
+      "interventions": [
+        "Composição de cabeceira arquitetônica",
+        "Marcenaria suspensa",
+        "Atualização da iluminação",
+        "Reorganização de cortinas e mobiliário"
+      ],
+      "material_ids": [
+        "madeira",
+        "tecido-osso",
+        "piso-amadeirado"
+      ],
+      "service_ids": [
+        "forros",
+        "projeto-e-compatibilizacao",
+        "marcenaria-sob-medida",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/suite-painel-madeira-casa-005/servicosexecutados-suite-painel-madeira-casa-005.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA014",
+      "project_id": "FR-P014",
+      "before_media_id": "FR-M-46C2B6BA450B26AE",
+      "after_media_id": "FR-M-B34FBF4D45BB54BC",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Suíte com piso escuro, mobiliário tradicional e abertura para o pátio.",
+      "interventions": [
+        "Atualização do piso",
+        "Reorganização da cama e mobiliário",
+        "Tratamento visual das paredes",
+        "Iluminação de apoio"
+      ],
+      "material_ids": [
+        "madeira",
+        "tecido-natural",
+        "cal-ou-tinta-mineral"
+      ],
+      "service_ids": [
+        "pisos",
+        "marcenaria-sob-medida",
+        "revestimentos-e-acabamentos",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/suite-piso-madeira-casa-014/servicosexecutados-suite-piso-madeira-casa-014.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA028",
+      "project_id": "FR-P028",
+      "before_media_id": "FR-M-DF845264FDAD6509",
+      "after_media_id": "FR-M-E0C268416A71BC83",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Suíte com piso têxtil e mobiliário escuro.",
+      "interventions": [
+        "Regularização visual da base",
+        "Instalação de paginação espinha de peixe",
+        "Acabamento perimetral",
+        "Reorganização do mobiliário"
+      ],
+      "material_ids": [
+        "piso-vinilico-amadeirado",
+        "tecido-claro",
+        "madeira"
+      ],
+      "service_ids": [
+        "pisos",
+        "revestimentos-e-acabamentos",
+        "marcenaria-sob-medida"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/suite-piso-vinilico-apto-028/servicosexecutados-suite-piso-vinilico-apto-028.md"
+      }
+    },
+    {
+      "pair_id": "FR-BA025",
+      "project_id": "FR-P025",
+      "before_media_id": "FR-M-274445157CA9DD28",
+      "after_media_id": "FR-M-7DF6B3D9E7986221",
+      "before_type": "RECONSTRUCTED_BEFORE",
+      "after_type": "ILLUSTRATIVE_AFTER",
+      "nature": "ILLUSTRATIVE",
+      "execution_documented": false,
+      "process_media_ids": [],
+      "project_3d_media_ids": [],
+      "initial_condition": "Suíte com cabeceira estofada e parede lisa em tom escuro.",
+      "interventions": [
+        "Escultura de baixo-relevo na parede",
+        "Acabamento contínuo",
+        "Iluminação lateral",
+        "Reorganização da cabeceira"
+      ],
+      "material_ids": [
+        "gesso-esculpido",
+        "tecido-natural",
+        "madeira"
+      ],
+      "service_ids": [
+        "revestimentos-e-acabamentos",
+        "iluminacao"
+      ],
+      "angle_comparability": null,
+      "geometric_registration_verified": false,
+      "recommended_display": "SIDE_BY_SIDE",
+      "chronological_sequence_verified": false,
+      "status": "VALID_ILLUSTRATIVE_PAIR",
+      "required_public_label": "COMPARATIVO ILUSTRATIVO — SIMULAÇÃO VISUAL",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "before_after_organized/suite-textura-casa-025/servicosexecutados-suite-textura-casa-025.md"
+      }
+    }
+  ]
+}

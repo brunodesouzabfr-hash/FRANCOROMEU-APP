@@ -1,0 +1,4586 @@
+{
+  "schema_version": "fr-editorial-1.0.0",
+  "generated_at": "2026-10-11",
+  "canonical": "https://www.francoromeufr.com.br",
+  "publication_state": "PRE_IMPLEMENTATION",
+  "auto_publish": false,
+  "materials": [
+    {
+      "material_id": "madeira",
+      "slug": "madeira",
+      "name": "Madeira",
+      "family": "MADEIRA",
+      "source_labels": [
+        "Madeira (forro e marcenaria)",
+        "Madeira (marcenaria e cobertura)",
+        "Madeira (estrutura e mesa)",
+        "Madeira (forro e estrutura aparente)",
+        "Madeira (gabinete)",
+        "Madeira natural (armários)",
+        "Madeira (vigas e portas)",
+        "Madeira natural (marcenaria)",
+        "Madeira (porta e mobiliário)",
+        "Madeira (mesa)",
+        "Madeira natural (estantes e mesa)",
+        "Madeira (mesa e estantes)",
+        "Madeira (piso e mobiliário)",
+        "Madeira (elementos de fachada)",
+        "Madeira (degraus e acabamentos)",
+        "Madeira (tampo)",
+        "Madeira (folha da porta)",
+        "Madeira (piso)",
+        "Madeira (mobiliário)",
+        "Madeira (esquadrias)",
+        "Madeira (vigas)",
+        "Madeira natural (painel e marcenaria)",
+        "Madeira (painel)",
+        "Madeira (taco existente)",
+        "Madeira",
+        "Madeira (painel e mobiliário)",
+        "Madeira (ripado)",
+        "Madeira (vigas e mesa)",
+        "Madeira natural (cabeceira)"
+      ],
+      "evidence_refs": [
+        "before_after_organized/area-gourmet-cozinha-planejada-madeira-casa-010/servicosexecutados-area-gourmet-cozinha-planejada-madeira-casa-010.md",
+        "before_after_organized/area-gourmet-cozinha-planejada-madeira-casa-040/servicosexecutados-area-gourmet-cozinha-planejada-madeira-casa-040.md",
+        "before_after_organized/area-gourmet-cozinha-planejada-pedra-natural-casa-019/servicosexecutados-area-gourmet-cozinha-planejada-pedra-natural-casa-019.md",
+        "before_after_organized/area-gourmet-forro-madeira-casa-058/servicosexecutados-area-gourmet-forro-madeira-casa-058.md",
+        "before_after_organized/banheiro-bancada-pedra-natural-casa-007/servicosexecutados-banheiro-bancada-pedra-natural-casa-007.md",
+        "before_after_organized/banheiro-revestimento-pedra-natural-casa-015/servicosexecutados-banheiro-revestimento-pedra-natural-casa-015.md",
+        "before_after_organized/closet-closet-planejado-madeira-apto-030/servicosexecutados-closet-closet-planejado-madeira-apto-030.md",
+        "before_after_organized/closet-closet-planejado-madeira-casa-006/servicosexecutados-closet-closet-planejado-madeira-casa-006.md",
+        "before_after_organized/corredor-iluminacao-madeira-casa-017/servicosexecutados-corredor-iluminacao-madeira-casa-017.md",
+        "before_after_organized/cozinha-cozinha-planejada-madeira-casa-013/servicosexecutados-cozinha-cozinha-planejada-madeira-casa-013.md",
+        "before_after_organized/escritorio-drywall-apto-051/servicosexecutados-escritorio-drywall-apto-051.md",
+        "before_after_organized/escritorio-eletrica-apto-053/servicosexecutados-escritorio-eletrica-apto-053.md",
+        "before_after_organized/escritorio-marcenaria-madeira-casa-008/servicosexecutados-escritorio-marcenaria-madeira-casa-008.md",
+        "before_after_organized/escritorio-marcenaria-madeira-casa-016/servicosexecutados-escritorio-marcenaria-madeira-casa-016.md",
+        "before_after_organized/escritorio-textura-madeira-apto-023/servicosexecutados-escritorio-textura-madeira-apto-023.md",
+        "before_after_organized/fachada-revestimento-madeira-comercial-059/servicosexecutados-fachada-revestimento-madeira-comercial-059.md",
+        "before_after_organized/hall-escada-madeira-casa-001/servicosexecutados-hall-escada-madeira-casa-001.md",
+        "before_after_organized/hall-mesa-madeira-casa-039/servicosexecutados-hall-mesa-madeira-casa-039.md",
+        "before_after_organized/hall-porta-madeira-casa-056/servicosexecutados-hall-porta-madeira-casa-056.md",
+        "before_after_organized/quarto-forro-casa-052/servicosexecutados-quarto-forro-casa-052.md",
+        "before_after_organized/quarto-piso-vinilico-apto-050/servicosexecutados-quarto-piso-vinilico-apto-050.md",
+        "before_after_organized/quintal-piso-pedra-natural-casa-018/servicosexecutados-quintal-piso-pedra-natural-casa-018.md",
+        "before_after_organized/sala-estar-automacao-apto-034/servicosexecutados-sala-estar-automacao-apto-034.md",
+        "before_after_organized/sala-estar-lareira-travertino-casa-011/servicosexecutados-sala-estar-lareira-travertino-casa-011.md",
+        "before_after_organized/sala-estar-marcenaria-madeira-casa-002/servicosexecutados-sala-estar-marcenaria-madeira-casa-002.md",
+        "before_after_organized/sala-estar-painel-madeira-apto-033/servicosexecutados-sala-estar-painel-madeira-apto-033.md",
+        "before_after_organized/sala-estar-piso-madeira-apto-029/servicosexecutados-sala-estar-piso-madeira-apto-029.md",
+        "before_after_organized/sala-estar-piso-porcelanato-apto-047/servicosexecutados-sala-estar-piso-porcelanato-apto-047.md",
+        "before_after_organized/sala-estar-revestimento-parede-porcelanato-apto-026/servicosexecutados-sala-estar-revestimento-parede-porcelanato-apto-026.md",
+        "before_after_organized/sala-estar-ripado-madeira-casa-036/servicosexecutados-sala-estar-ripado-madeira-casa-036.md",
+        "before_after_organized/sala-jantar-iluminacao-latao-casa-003/servicosexecutados-sala-jantar-iluminacao-latao-casa-003.md",
+        "before_after_organized/sala-jantar-iluminacao-latao-casa-012/servicosexecutados-sala-jantar-iluminacao-latao-casa-012.md",
+        "before_after_organized/sala-jantar-textura-marmore-apto-042/servicosexecutados-sala-jantar-textura-marmore-apto-042.md",
+        "before_after_organized/sala-jantar-textura-microcimento-apto-022/servicosexecutados-sala-jantar-textura-microcimento-apto-022.md",
+        "before_after_organized/suite-painel-madeira-casa-005/servicosexecutados-suite-painel-madeira-casa-005.md",
+        "before_after_organized/suite-piso-madeira-casa-014/servicosexecutados-suite-piso-madeira-casa-014.md",
+        "before_after_organized/suite-piso-vinilico-apto-028/servicosexecutados-suite-piso-vinilico-apto-028.md",
+        "before_after_organized/suite-textura-casa-025/servicosexecutados-suite-textura-casa-025.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P005",
+        "FR-P017",
+        "FR-P051",
+        "FR-P002",
+        "FR-P047",
+        "FR-P034",
+        "FR-P023",
+        "FR-P016",
+        "FR-P029",
+        "FR-P006",
+        "FR-P008",
+        "FR-P052",
+        "FR-P010",
+        "FR-P036",
+        "FR-P001",
+        "FR-P056",
+        "FR-P015",
+        "FR-P058",
+        "FR-P019",
+        "FR-P053",
+        "FR-P026",
+        "FR-P012",
+        "FR-P007",
+        "FR-P040",
+        "FR-P011",
+        "FR-P050",
+        "FR-P033",
+        "FR-P042",
+        "FR-P018",
+        "FR-P059",
+        "FR-P025",
+        "FR-P022",
+        "FR-P039",
+        "FR-P028",
+        "FR-P030",
+        "FR-P014",
+        "FR-P013",
+        "FR-P003"
+      ],
+      "media_ids": [
+        "FR-M-035B1FE5812B5853",
+        "FR-M-0CDE9DF3A2DD210E",
+        "FR-M-0DB2F25CC3DCCD55",
+        "FR-M-0F47FCEF7F1F5100",
+        "FR-M-0FD157881E93B0B4",
+        "FR-M-133D727B394EA5EA",
+        "FR-M-176B2BD73944E1B9",
+        "FR-M-1C13A44FF73C4C5E",
+        "FR-M-1C8C153E56F10205",
+        "FR-M-1D1E6FF8CE88A498",
+        "FR-M-24E5E0DDDD33E69D",
+        "FR-M-260669225D2C5A94",
+        "FR-M-2859D620516609CA",
+        "FR-M-28F3A287384DEA43",
+        "FR-M-2B0D01554F2CF05D",
+        "FR-M-2D4A2AA83F0196F7",
+        "FR-M-2FD489F38B029748",
+        "FR-M-37D8AE6EA26FC63E",
+        "FR-M-3B8B6266C700679D",
+        "FR-M-41715EF0E0DD494F",
+        "FR-M-446AE2B3F99E9426",
+        "FR-M-4CD1F7390E4FCE14",
+        "FR-M-4CEC8114CB79C158",
+        "FR-M-5B8BF8C7E5ADD900",
+        "FR-M-5E8CA416B435F392",
+        "FR-M-618C5BDABDF84BD8",
+        "FR-M-66F30DB72F661DA1",
+        "FR-M-6BBF823585AB0D30",
+        "FR-M-6E01FD081F5C854E",
+        "FR-M-6F2B86AB82E82A91",
+        "FR-M-73745040D9FF1E63",
+        "FR-M-73EE93DC80530079",
+        "FR-M-74934596BE310F06",
+        "FR-M-75FA654FC2CD0D0E",
+        "FR-M-77F255159F096CF2",
+        "FR-M-78F01C611F5C4ABB",
+        "FR-M-7A6B18E8A0068381",
+        "FR-M-7DF6B3D9E7986221",
+        "FR-M-8160F10DD49C91AE",
+        "FR-M-81D0843AFCA2BB80",
+        "FR-M-8462F2A9187F75A2",
+        "FR-M-865AF22126A1931D",
+        "FR-M-8775C38E55AC166C",
+        "FR-M-880BD7981ED48B48",
+        "FR-M-89CA826B21DB487A",
+        "FR-M-8D9DF51BA4421AFF",
+        "FR-M-8FF7A63F34D365A5",
+        "FR-M-9A96D631F3BF543C",
+        "FR-M-9E163B42940DE29F",
+        "FR-M-9E89126F63640262",
+        "FR-M-9E8E9E58ADB500AF",
+        "FR-M-9FE60D1CC75B8A3E",
+        "FR-M-A16EF2B3BBCC3312",
+        "FR-M-A33A0FFF54DB9CB8",
+        "FR-M-A373E3191363C1B5",
+        "FR-M-A590961DAF4BE7C9",
+        "FR-M-AB62C6C9129641C4",
+        "FR-M-ACC89D3FB0C8D91A",
+        "FR-M-B279CC6D1AA2241C",
+        "FR-M-B34FBF4D45BB54BC",
+        "FR-M-B3E60B1A29779F49",
+        "FR-M-B79E1798F1C76B27",
+        "FR-M-BA27344010D5C39F",
+        "FR-M-C09C417DBF1BF82A",
+        "FR-M-CEFF8272E8EE812E",
+        "FR-M-D46983A5CACC78F4",
+        "FR-M-D618CEC63672CDF0",
+        "FR-M-D8973A8C79016A8B",
+        "FR-M-D8CCB3981644528C",
+        "FR-M-DF278238C61356CB",
+        "FR-M-DF2C138A7A2890FD",
+        "FR-M-E0C268416A71BC83",
+        "FR-M-E3452D3B262ABB2D",
+        "FR-M-E867562165A581CC",
+        "FR-M-F4D2BA3557E52005",
+        "FR-M-F537364E9D096661",
+        "FR-M-FCBBBA0B55ED5669",
+        "FR-M-FEE4C527A0F3245F"
+      ],
+      "proposed_route": "/materiais/madeira"
+    },
+    {
+      "material_id": "pedra-clara",
+      "slug": "pedra-clara",
+      "name": "Pedra clara",
+      "family": "SUPERFICIE_MINERAL",
+      "source_labels": [
+        "Pedra clara (bancada)",
+        "Pedra natural clara (bancada) [A CONFIRMAR]",
+        "Pedra clara (bancada e revestimento) [A CONFIRMAR]",
+        "Pedra clara (bancada e paredes) [A CONFIRMAR]",
+        "Pedra clara (piso) [A CONFIRMAR]",
+        "Pedra clara (ilha e bancada)",
+        "Pedra clara (ilha)",
+        "Pedra natural clara (ilha) [A CONFIRMAR]",
+        "Pedra natural clara (fachada)",
+        "Pedra clara (piso)",
+        "Pedra clara (degraus)",
+        "Pedra clara (soleira)",
+        "Pedra clara (bancada) [A CONFIRMAR]",
+        "Pedra clara (plano de fundo) [A CONFIRMAR]",
+        "Pedra clara (base)"
+      ],
+      "evidence_refs": [
+        "before_after_organized/area-gourmet-cozinha-planejada-madeira-casa-010/servicosexecutados-area-gourmet-cozinha-planejada-madeira-casa-010.md",
+        "before_after_organized/area-gourmet-cozinha-planejada-pedra-natural-casa-019/servicosexecutados-area-gourmet-cozinha-planejada-pedra-natural-casa-019.md",
+        "before_after_organized/banheiro-bancada-pedra-natural-apto-037/servicosexecutados-banheiro-bancada-pedra-natural-apto-037.md",
+        "before_after_organized/banheiro-bancada-pedra-natural-casa-007/servicosexecutados-banheiro-bancada-pedra-natural-casa-007.md",
+        "before_after_organized/banheiro-revestimento-pedra-natural-casa-015/servicosexecutados-banheiro-revestimento-pedra-natural-casa-015.md",
+        "before_after_organized/corredor-iluminacao-madeira-casa-017/servicosexecutados-corredor-iluminacao-madeira-casa-017.md",
+        "before_after_organized/cozinha-cozinha-planejada-madeira-casa-013/servicosexecutados-cozinha-cozinha-planejada-madeira-casa-013.md",
+        "before_after_organized/cozinha-cozinha-planejada-mdf-apto-032/servicosexecutados-cozinha-cozinha-planejada-mdf-apto-032.md",
+        "before_after_organized/cozinha-cozinha-planejada-mdf-apto-045/servicosexecutados-cozinha-cozinha-planejada-mdf-apto-045.md",
+        "before_after_organized/cozinha-cozinha-planejada-pedra-natural-casa-004/servicosexecutados-cozinha-cozinha-planejada-pedra-natural-casa-004.md",
+        "before_after_organized/cozinha-marcenaria-mdf-apto-044/servicosexecutados-cozinha-marcenaria-mdf-apto-044.md",
+        "before_after_organized/fachada-revestimento-pedra-natural-casa-009/servicosexecutados-fachada-revestimento-pedra-natural-casa-009.md",
+        "before_after_organized/hall-escada-madeira-casa-001/servicosexecutados-hall-escada-madeira-casa-001.md",
+        "before_after_organized/hall-led-sequencial-casa-035/servicosexecutados-hall-led-sequencial-casa-035.md",
+        "before_after_organized/hall-mesa-madeira-casa-039/servicosexecutados-hall-mesa-madeira-casa-039.md",
+        "before_after_organized/hall-porta-madeira-casa-056/servicosexecutados-hall-porta-madeira-casa-056.md",
+        "before_after_organized/hall-textura-travertino-casa-021/servicosexecutados-hall-textura-travertino-casa-021.md",
+        "before_after_organized/lavanderia-hidraulica-apto-054/servicosexecutados-lavanderia-hidraulica-apto-054.md",
+        "before_after_organized/sala-estar-marcenaria-madeira-casa-002/servicosexecutados-sala-estar-marcenaria-madeira-casa-002.md",
+        "before_after_organized/sala-estar-painel-madeira-apto-033/servicosexecutados-sala-estar-painel-madeira-apto-033.md",
+        "before_after_organized/sala-estar-revestimento-parede-pedra-natural-apto-024/servicosexecutados-sala-estar-revestimento-parede-pedra-natural-apto-024.md",
+        "before_after_organized/sala-jantar-iluminacao-latao-casa-012/servicosexecutados-sala-jantar-iluminacao-latao-casa-012.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P024",
+        "FR-P017",
+        "FR-P002",
+        "FR-P035",
+        "FR-P045",
+        "FR-P010",
+        "FR-P001",
+        "FR-P056",
+        "FR-P015",
+        "FR-P044",
+        "FR-P019",
+        "FR-P009",
+        "FR-P004",
+        "FR-P012",
+        "FR-P007",
+        "FR-P054",
+        "FR-P037",
+        "FR-P033",
+        "FR-P039",
+        "FR-P021",
+        "FR-P013",
+        "FR-P032"
+      ],
+      "media_ids": [
+        "FR-M-01204B2B0074E034",
+        "FR-M-0CDE9DF3A2DD210E",
+        "FR-M-0F47FCEF7F1F5100",
+        "FR-M-12AB438ADBA01D0E",
+        "FR-M-19B7A80EBC516E09",
+        "FR-M-28F3A287384DEA43",
+        "FR-M-2D4A2AA83F0196F7",
+        "FR-M-2FD489F38B029748",
+        "FR-M-37D8AE6EA26FC63E",
+        "FR-M-3B930FFBE5800CBA",
+        "FR-M-3DDBA3C62BFAD2BF",
+        "FR-M-41715EF0E0DD494F",
+        "FR-M-446AE2B3F99E9426",
+        "FR-M-4479292428BDAF91",
+        "FR-M-4A283FEA85CB56B4",
+        "FR-M-50616272B158DD86",
+        "FR-M-5B8BF8C7E5ADD900",
+        "FR-M-5E8CA416B435F392",
+        "FR-M-618C5BDABDF84BD8",
+        "FR-M-623062C31D5B47BF",
+        "FR-M-62403BDBB8F85C5B",
+        "FR-M-644DD38F8571066A",
+        "FR-M-66F30DB72F661DA1",
+        "FR-M-68D13B090D4082C3",
+        "FR-M-73745040D9FF1E63",
+        "FR-M-74934596BE310F06",
+        "FR-M-764C1CFF80E3B908",
+        "FR-M-81D0843AFCA2BB80",
+        "FR-M-865AF22126A1931D",
+        "FR-M-89CA826B21DB487A",
+        "FR-M-8D9DF51BA4421AFF",
+        "FR-M-A33A0FFF54DB9CB8",
+        "FR-M-A480917B0D5AB056",
+        "FR-M-AAF41770DEF3B075",
+        "FR-M-AB2DD6F575807AFE",
+        "FR-M-ACC89D3FB0C8D91A",
+        "FR-M-ADBF8F43B2C0EBBE",
+        "FR-M-B279CC6D1AA2241C",
+        "FR-M-B65AA04715671C4F",
+        "FR-M-C09C417DBF1BF82A",
+        "FR-M-CEFF8272E8EE812E",
+        "FR-M-E07749B18D8FB095",
+        "FR-M-E3084A76B4F00B64",
+        "FR-M-FCBBBA0B55ED5669"
+      ],
+      "proposed_route": "/materiais/pedra-clara"
+    },
+    {
+      "material_id": "metal-escuro",
+      "slug": "metal-escuro",
+      "name": "Metal escuro",
+      "family": "METAL",
+      "source_labels": [
+        "Metal escuro (esquadrias)",
+        "Metal escuro (luminárias)",
+        "Metal escuro (torneira)",
+        "Metal escuro (perfis)",
+        "Metal escuro (arandelas)",
+        "Metal escuro (eletrodomésticos)",
+        "Metal escuro (detalhes)",
+        "Metal escuro (guarda-corpo)",
+        "Metal escuro (cabos e estrutura)",
+        "Metal escuro (perfis e comandos)",
+        "Metal escuro (equipamentos)",
+        "Metal escuro (estante)"
+      ],
+      "evidence_refs": [
+        "before_after_organized/area-gourmet-cozinha-planejada-madeira-casa-010/servicosexecutados-area-gourmet-cozinha-planejada-madeira-casa-010.md",
+        "before_after_organized/area-gourmet-cozinha-planejada-pedra-natural-casa-019/servicosexecutados-area-gourmet-cozinha-planejada-pedra-natural-casa-019.md",
+        "before_after_organized/banheiro-bancada-pedra-natural-apto-037/servicosexecutados-banheiro-bancada-pedra-natural-apto-037.md",
+        "before_after_organized/closet-closet-planejado-madeira-apto-030/servicosexecutados-closet-closet-planejado-madeira-apto-030.md",
+        "before_after_organized/corredor-iluminacao-madeira-casa-017/servicosexecutados-corredor-iluminacao-madeira-casa-017.md",
+        "before_after_organized/cozinha-cozinha-planejada-madeira-casa-013/servicosexecutados-cozinha-cozinha-planejada-madeira-casa-013.md",
+        "before_after_organized/cozinha-marcenaria-mdf-apto-044/servicosexecutados-cozinha-marcenaria-mdf-apto-044.md",
+        "before_after_organized/escritorio-marcenaria-madeira-casa-008/servicosexecutados-escritorio-marcenaria-madeira-casa-008.md",
+        "before_after_organized/hall-escada-madeira-casa-001/servicosexecutados-hall-escada-madeira-casa-001.md",
+        "before_after_organized/hall-mesa-madeira-casa-039/servicosexecutados-hall-mesa-madeira-casa-039.md",
+        "before_after_organized/hall-textura-travertino-casa-021/servicosexecutados-hall-textura-travertino-casa-021.md",
+        "before_after_organized/sala-estar-automacao-apto-034/servicosexecutados-sala-estar-automacao-apto-034.md",
+        "before_after_organized/sala-estar-painel-madeira-apto-033/servicosexecutados-sala-estar-painel-madeira-apto-033.md",
+        "before_after_organized/sala-estar-piso-porcelanato-apto-027/servicosexecutados-sala-estar-piso-porcelanato-apto-027.md",
+        "before_after_organized/sala-estar-revestimento-parede-porcelanato-apto-026/servicosexecutados-sala-estar-revestimento-parede-porcelanato-apto-026.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P017",
+        "FR-P034",
+        "FR-P027",
+        "FR-P008",
+        "FR-P010",
+        "FR-P001",
+        "FR-P044",
+        "FR-P019",
+        "FR-P026",
+        "FR-P037",
+        "FR-P033",
+        "FR-P039",
+        "FR-P030",
+        "FR-P021",
+        "FR-P013"
+      ],
+      "media_ids": [
+        "FR-M-0CDE9DF3A2DD210E",
+        "FR-M-133D727B394EA5EA",
+        "FR-M-1C3F48E242CDA816",
+        "FR-M-260669225D2C5A94",
+        "FR-M-28F3A287384DEA43",
+        "FR-M-2D4A2AA83F0196F7",
+        "FR-M-3B930FFBE5800CBA",
+        "FR-M-41715EF0E0DD494F",
+        "FR-M-446AE2B3F99E9426",
+        "FR-M-4CEC8114CB79C158",
+        "FR-M-623062C31D5B47BF",
+        "FR-M-66F30DB72F661DA1",
+        "FR-M-68D13B090D4082C3",
+        "FR-M-73EE93DC80530079",
+        "FR-M-74934596BE310F06",
+        "FR-M-81D0843AFCA2BB80",
+        "FR-M-865AF22126A1931D",
+        "FR-M-89CA826B21DB487A",
+        "FR-M-9E8E9E58ADB500AF",
+        "FR-M-A16EF2B3BBCC3312",
+        "FR-M-A480917B0D5AB056",
+        "FR-M-AAF41770DEF3B075",
+        "FR-M-AB2DD6F575807AFE",
+        "FR-M-ACC89D3FB0C8D91A",
+        "FR-M-B279CC6D1AA2241C",
+        "FR-M-C09C417DBF1BF82A",
+        "FR-M-DF278238C61356CB",
+        "FR-M-F4E2B9747D963C2F",
+        "FR-M-F537364E9D096661",
+        "FR-M-FCBBBA0B55ED5669"
+      ],
+      "proposed_route": "/materiais/metal-escuro"
+    },
+    {
+      "material_id": "ceramica",
+      "slug": "ceramica",
+      "name": "Cerâmica",
+      "family": "REVESTIMENTO",
+      "source_labels": [
+        "Cerâmica"
+      ],
+      "evidence_refs": [
+        "before_after_organized/area-gourmet-cozinha-planejada-madeira-casa-010/servicosexecutados-area-gourmet-cozinha-planejada-madeira-casa-010.md",
+        "before_after_organized/area-gourmet-cozinha-planejada-pedra-natural-casa-019/servicosexecutados-area-gourmet-cozinha-planejada-pedra-natural-casa-019.md",
+        "before_after_organized/banheiro-revestimento-pedra-natural-casa-015/servicosexecutados-banheiro-revestimento-pedra-natural-casa-015.md",
+        "before_after_organized/corredor-iluminacao-madeira-casa-017/servicosexecutados-corredor-iluminacao-madeira-casa-017.md",
+        "before_after_organized/lavabo-microcimento-casa-049/servicosexecutados-lavabo-microcimento-casa-049.md",
+        "before_after_organized/quarto-piso-vinilico-apto-050/servicosexecutados-quarto-piso-vinilico-apto-050.md",
+        "before_after_organized/sala-estar-lareira-travertino-casa-011/servicosexecutados-sala-estar-lareira-travertino-casa-011.md",
+        "before_after_organized/sala-estar-piso-porcelanato-apto-047/servicosexecutados-sala-estar-piso-porcelanato-apto-047.md",
+        "before_after_organized/sala-jantar-iluminacao-latao-casa-012/servicosexecutados-sala-jantar-iluminacao-latao-casa-012.md",
+        "IMAGENS-CODEX/leiamecodex/FR_INT_ANTES_PAREDE_ANTES_DEMOLIDO_ILUSTRACAO_M_a2e373872f_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_INT_INTEGRACAO_ANTES_DEMOLIDO_ILUSTRACAO_M_97fd574b27_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_INT_INTEGRACAO_ANTES_DEMOLIDO_ILUSTRACAO_M_76e8550654_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_INT_ANTES_PAREDE_ANTES_DEMOLIDO_ILUSTRACAO_M_2d491895a6_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_INT_ANTES_PAREDE_ANTES_DEMOLIDO_ILUSTRACAO_M_88353144b4_MASTER.md",
+        "docs/site-refactor/media-context/FR_INT_ANTES_PAREDE_ANTES_DEMOLIDO_ILUSTRACAO_M027_MASTER.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-C001",
+        "FR-P047",
+        "FR-P017",
+        "FR-P012",
+        "FR-P019",
+        "FR-P010",
+        "FR-P015",
+        "FR-P050",
+        "FR-P011",
+        "FR-P049"
+      ],
+      "media_ids": [
+        "FR-M-2D491895A6800A73",
+        "FR-M-30393224AC333FD9",
+        "FR-M-32AA81E9E08156FC",
+        "FR-M-443B4D01122ED7BE",
+        "FR-M-71D49D024AE25D8B",
+        "FR-M-76E855065475CBC5",
+        "FR-M-88353144B4C87AAB",
+        "FR-M-88BE5E11FBC003E6",
+        "FR-M-97FD574B27A24F85",
+        "FR-M-A2E373872F20CE3D",
+        "FR-M-A8B7C044EC921A9D",
+        "FR-M-AAE8441EE68BACFB",
+        "FR-M-BE8623B077BFCA20",
+        "FR-M-F49F4D1A3D3CCE1B",
+        "FR-M-FEF2552A9B9435F9"
+      ],
+      "proposed_route": "/materiais/ceramica"
+    },
+    {
+      "material_id": "pedra-escura",
+      "slug": "pedra-escura",
+      "name": "Pedra escura",
+      "family": "SUPERFICIE_MINERAL",
+      "source_labels": [
+        "Pedra escura (bancada)"
+      ],
+      "evidence_refs": [
+        "before_after_organized/area-gourmet-cozinha-planejada-madeira-casa-040/servicosexecutados-area-gourmet-cozinha-planejada-madeira-casa-040.md",
+        "before_after_organized/sala-jantar-adega-madeira-apto-031/servicosexecutados-sala-jantar-adega-madeira-apto-031.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P031",
+        "FR-P040"
+      ],
+      "media_ids": [
+        "FR-M-3EC911EEF901B599",
+        "FR-M-6BBF823585AB0D30",
+        "FR-M-8775C38E55AC166C",
+        "FR-M-BCC58DE669F45183"
+      ],
+      "proposed_route": "/materiais/pedra-escura"
+    },
+    {
+      "material_id": "metal-preto",
+      "slug": "metal-preto",
+      "name": "Metal preto",
+      "family": "METAL",
+      "source_labels": [
+        "Metal preto (equipamentos e luminárias)",
+        "Metal preto (chuveiro e acessórios)",
+        "Metal preto (torneira)",
+        "Metal preto (eletrodomésticos)",
+        "Metal preto (trilho e spots)",
+        "Metal preto (trilho de luz)",
+        "Metal preto (esquadrias)",
+        "Metal preto (guarda-corpo)",
+        "Metal preto (marco e puxador)",
+        "Metal preto (base)"
+      ],
+      "evidence_refs": [
+        "before_after_organized/area-gourmet-cozinha-planejada-madeira-casa-040/servicosexecutados-area-gourmet-cozinha-planejada-madeira-casa-040.md",
+        "before_after_organized/banheiro-revestimento-porcelanato-apto-046/servicosexecutados-banheiro-revestimento-porcelanato-apto-046.md",
+        "before_after_organized/cozinha-bancada-calacatta-apto-055/servicosexecutados-cozinha-bancada-calacatta-apto-055.md",
+        "before_after_organized/cozinha-cozinha-planejada-mdf-apto-032/servicosexecutados-cozinha-cozinha-planejada-mdf-apto-032.md",
+        "before_after_organized/cozinha-cozinha-planejada-mdf-apto-045/servicosexecutados-cozinha-cozinha-planejada-mdf-apto-045.md",
+        "before_after_organized/escritorio-eletrica-apto-053/servicosexecutados-escritorio-eletrica-apto-053.md",
+        "before_after_organized/escritorio-instalacao-comercial-057/servicosexecutados-escritorio-instalacao-comercial-057.md",
+        "before_after_organized/fachada-revestimento-madeira-comercial-059/servicosexecutados-fachada-revestimento-madeira-comercial-059.md",
+        "before_after_organized/fachada-revestimento-pedra-natural-casa-009/servicosexecutados-fachada-revestimento-pedra-natural-casa-009.md",
+        "before_after_organized/hall-led-sequencial-casa-035/servicosexecutados-hall-led-sequencial-casa-035.md",
+        "before_after_organized/hall-porta-madeira-casa-056/servicosexecutados-hall-porta-madeira-casa-056.md",
+        "before_after_organized/lavabo-microcimento-casa-049/servicosexecutados-lavabo-microcimento-casa-049.md",
+        "before_after_organized/sala-jantar-rivertable-resina-apto-038/servicosexecutados-sala-jantar-rivertable-resina-apto-038.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P046",
+        "FR-P035",
+        "FR-P045",
+        "FR-P055",
+        "FR-P056",
+        "FR-P057",
+        "FR-P009",
+        "FR-P053",
+        "FR-P040",
+        "FR-P038",
+        "FR-P059",
+        "FR-P032",
+        "FR-P049"
+      ],
+      "media_ids": [
+        "FR-M-0C7D1AB7771B406D",
+        "FR-M-12AB438ADBA01D0E",
+        "FR-M-19B7A80EBC516E09",
+        "FR-M-1DDFA8E0C5B05623",
+        "FR-M-2E51A77F3F0E32D5",
+        "FR-M-2FD489F38B029748",
+        "FR-M-342DAC0DF469A7E1",
+        "FR-M-3DDBA3C62BFAD2BF",
+        "FR-M-4479292428BDAF91",
+        "FR-M-4977F9E9C533EE05",
+        "FR-M-4A283FEA85CB56B4",
+        "FR-M-4CD1F7390E4FCE14",
+        "FR-M-6BBF823585AB0D30",
+        "FR-M-78436252CA96E539",
+        "FR-M-7A6B18E8A0068381",
+        "FR-M-8775C38E55AC166C",
+        "FR-M-9766AA4633CF26E1",
+        "FR-M-9A96D631F3BF543C",
+        "FR-M-ADBF8F43B2C0EBBE",
+        "FR-M-B65AA04715671C4F",
+        "FR-M-CEFF8272E8EE812E",
+        "FR-M-D287A48923B8ABE3",
+        "FR-M-DC81C16225B39025",
+        "FR-M-E07749B18D8FB095",
+        "FR-M-E3FB067070F9E89C",
+        "FR-M-E867562165A581CC"
+      ],
+      "proposed_route": "/materiais/metal-preto"
+    },
+    {
+      "material_id": "telha-ceramica",
+      "slug": "telha-ceramica",
+      "name": "Telha cerâmica",
+      "family": "REVESTIMENTO",
+      "source_labels": [
+        "Telha cerâmica [A CONFIRMAR]",
+        "Telha cerâmica (cobertura)"
+      ],
+      "evidence_refs": [
+        "before_after_organized/area-gourmet-forro-madeira-casa-058/servicosexecutados-area-gourmet-forro-madeira-casa-058.md",
+        "before_after_organized/quintal-iluminacao-pedra-natural-casa-020/servicosexecutados-quintal-iluminacao-pedra-natural-casa-020.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P020",
+        "FR-P058"
+      ],
+      "media_ids": [
+        "FR-M-3B1E3D210BB4624A",
+        "FR-M-3B8B6266C700679D",
+        "FR-M-91B901A35B40060D",
+        "FR-M-A590961DAF4BE7C9"
+      ],
+      "proposed_route": "/materiais/telha-ceramica"
+    },
+    {
+      "material_id": "metal",
+      "slug": "metal",
+      "name": "Metal",
+      "family": "METAL",
+      "source_labels": [
+        "Metal (calhas e rufos)",
+        "Metal (portão e armazenamento)",
+        "Metal (torneira e conexões)"
+      ],
+      "evidence_refs": [
+        "before_after_organized/area-gourmet-forro-madeira-casa-058/servicosexecutados-area-gourmet-forro-madeira-casa-058.md",
+        "before_after_organized/garagem-porcelanato-liquido-epoxi-casa-048/servicosexecutados-garagem-porcelanato-liquido-epoxi-casa-048.md",
+        "before_after_organized/lavanderia-hidraulica-apto-054/servicosexecutados-lavanderia-hidraulica-apto-054.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P058",
+        "FR-P054",
+        "FR-P048"
+      ],
+      "media_ids": [
+        "FR-M-3B8B6266C700679D",
+        "FR-M-62403BDBB8F85C5B",
+        "FR-M-644DD38F8571066A",
+        "FR-M-72751FE14AAE5D79",
+        "FR-M-9609104915BC3531",
+        "FR-M-A590961DAF4BE7C9"
+      ],
+      "proposed_route": "/materiais/metal"
+    },
+    {
+      "material_id": "vidro",
+      "slug": "vidro",
+      "name": "Vidro",
+      "family": "VIDRO",
+      "source_labels": [
+        "Vidro (espelho)",
+        "Vidro (box)",
+        "Vidro"
+      ],
+      "evidence_refs": [
+        "before_after_organized/banheiro-bancada-pedra-natural-apto-037/servicosexecutados-banheiro-bancada-pedra-natural-apto-037.md",
+        "before_after_organized/banheiro-bancada-pedra-natural-casa-007/servicosexecutados-banheiro-bancada-pedra-natural-casa-007.md",
+        "before_after_organized/banheiro-revestimento-pedra-natural-casa-015/servicosexecutados-banheiro-revestimento-pedra-natural-casa-015.md",
+        "before_after_organized/banheiro-revestimento-porcelanato-apto-046/servicosexecutados-banheiro-revestimento-porcelanato-apto-046.md",
+        "before_after_organized/sala-jantar-rivertable-resina-apto-038/servicosexecutados-sala-jantar-rivertable-resina-apto-038.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P046",
+        "FR-P038",
+        "FR-P015",
+        "FR-P007",
+        "FR-P037"
+      ],
+      "media_ids": [
+        "FR-M-0C7D1AB7771B406D",
+        "FR-M-14BD266B9626B8F4",
+        "FR-M-2E51A77F3F0E32D5",
+        "FR-M-37D8AE6EA26FC63E",
+        "FR-M-618C5BDABDF84BD8",
+        "FR-M-68D13B090D4082C3",
+        "FR-M-73745040D9FF1E63",
+        "FR-M-A33A0FFF54DB9CB8",
+        "FR-M-AB2DD6F575807AFE"
+      ],
+      "proposed_route": "/materiais/vidro"
+    },
+    {
+      "material_id": "porcelanato-claro-de-grande-formato",
+      "slug": "porcelanato-claro-de-grande-formato",
+      "name": "Porcelanato claro de grande formato",
+      "family": "REVESTIMENTO",
+      "source_labels": [
+        "Porcelanato claro de grande formato [A CONFIRMAR]"
+      ],
+      "evidence_refs": [
+        "before_after_organized/banheiro-revestimento-porcelanato-apto-046/servicosexecutados-banheiro-revestimento-porcelanato-apto-046.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P046"
+      ],
+      "media_ids": [
+        "FR-M-0C7D1AB7771B406D",
+        "FR-M-2E51A77F3F0E32D5"
+      ],
+      "proposed_route": "/materiais/porcelanato-claro-de-grande-formato"
+    },
+    {
+      "material_id": "vidro-fume",
+      "slug": "vidro-fume",
+      "name": "Vidro fumê",
+      "family": "VIDRO",
+      "source_labels": [
+        "Vidro fumê (portas)",
+        "Vidro fumê (prateleiras)",
+        "Vidro fumê"
+      ],
+      "evidence_refs": [
+        "before_after_organized/closet-closet-planejado-madeira-apto-030/servicosexecutados-closet-closet-planejado-madeira-apto-030.md",
+        "before_after_organized/closet-closet-planejado-madeira-casa-006/servicosexecutados-closet-closet-planejado-madeira-casa-006.md",
+        "before_after_organized/sala-jantar-adega-madeira-apto-031/servicosexecutados-sala-jantar-adega-madeira-apto-031.md",
+        "reels_design_organized/ambientes/sala-gamer/sala-gamer-automacao-grafite-residencial-109/conteudo-sala-gamer-automacao-grafite-residencial-109.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P006",
+        "FR-P031",
+        "FR-I109",
+        "FR-P030"
+      ],
+      "media_ids": [
+        "FR-M-24E5E0DDDD33E69D",
+        "FR-M-3EC911EEF901B599",
+        "FR-M-3F7186AA492D142A",
+        "FR-M-9E8E9E58ADB500AF",
+        "FR-M-BCC58DE669F45183",
+        "FR-M-D46983A5CACC78F4",
+        "FR-M-D5D33C39165224D2",
+        "FR-M-DF278238C61356CB"
+      ],
+      "proposed_route": "/materiais/vidro-fume"
+    },
+    {
+      "material_id": "tecido-claro",
+      "slug": "tecido-claro",
+      "name": "Tecido claro",
+      "family": "TEXTIL",
+      "source_labels": [
+        "Tecido claro (banco central)",
+        "Tecido claro (cortinas)",
+        "Tecido claro (poltrona)",
+        "Tecido claro (estofados)",
+        "Tecido claro (mobiliário)",
+        "Tecido claro (tapete e poltronas)"
+      ],
+      "evidence_refs": [
+        "before_after_organized/closet-closet-planejado-madeira-casa-006/servicosexecutados-closet-closet-planejado-madeira-casa-006.md",
+        "before_after_organized/sala-estar-automacao-apto-034/servicosexecutados-sala-estar-automacao-apto-034.md",
+        "before_after_organized/sala-estar-boiserie-apto-043/servicosexecutados-sala-estar-boiserie-apto-043.md",
+        "before_after_organized/sala-estar-marcenaria-madeira-casa-002/servicosexecutados-sala-estar-marcenaria-madeira-casa-002.md",
+        "before_after_organized/sala-estar-piso-porcelanato-apto-027/servicosexecutados-sala-estar-piso-porcelanato-apto-027.md",
+        "before_after_organized/suite-piso-vinilico-apto-028/servicosexecutados-suite-piso-vinilico-apto-028.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P002",
+        "FR-P034",
+        "FR-P027",
+        "FR-P006",
+        "FR-P043",
+        "FR-P028"
+      ],
+      "media_ids": [
+        "FR-M-0F47FCEF7F1F5100",
+        "FR-M-133D727B394EA5EA",
+        "FR-M-1C3F48E242CDA816",
+        "FR-M-24E5E0DDDD33E69D",
+        "FR-M-3E0110D5470C811E",
+        "FR-M-8D9DF51BA4421AFF",
+        "FR-M-9E163B42940DE29F",
+        "FR-M-C5E26D9137706E9A",
+        "FR-M-D46983A5CACC78F4",
+        "FR-M-E0C268416A71BC83",
+        "FR-M-F4E2B9747D963C2F",
+        "FR-M-F537364E9D096661"
+      ],
+      "proposed_route": "/materiais/tecido-claro"
+    },
+    {
+      "material_id": "efeito-calacatta",
+      "slug": "efeito-calacatta",
+      "name": "Quartzo ou pedra efeito Calacatta",
+      "family": "SUPERFICIE_MINERAL",
+      "source_labels": [
+        "Quartzo ou pedra efeito Calacatta [A CONFIRMAR]"
+      ],
+      "evidence_refs": [
+        "before_after_organized/cozinha-bancada-calacatta-apto-055/servicosexecutados-cozinha-bancada-calacatta-apto-055.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P055"
+      ],
+      "media_ids": [
+        "FR-M-1DDFA8E0C5B05623",
+        "FR-M-4977F9E9C533EE05"
+      ],
+      "proposed_route": "/materiais/efeito-calacatta"
+    },
+    {
+      "material_id": "mdf-verde",
+      "slug": "mdf-verde",
+      "name": "MDF verde",
+      "family": "PAINEL_DERIVADO_DE_MADEIRA",
+      "source_labels": [
+        "MDF verde (gabinetes) [A CONFIRMAR]",
+        "MDF verde (marcenaria) [A CONFIRMAR]"
+      ],
+      "evidence_refs": [
+        "before_after_organized/cozinha-bancada-calacatta-apto-055/servicosexecutados-cozinha-bancada-calacatta-apto-055.md",
+        "before_after_organized/cozinha-cozinha-planejada-pedra-natural-casa-004/servicosexecutados-cozinha-cozinha-planejada-pedra-natural-casa-004.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P055",
+        "FR-P004"
+      ],
+      "media_ids": [
+        "FR-M-1DDFA8E0C5B05623",
+        "FR-M-4977F9E9C533EE05",
+        "FR-M-50616272B158DD86",
+        "FR-M-764C1CFF80E3B908"
+      ],
+      "proposed_route": "/materiais/mdf-verde"
+    },
+    {
+      "material_id": "mdf-em-tom-grafite",
+      "slug": "mdf-em-tom-grafite",
+      "name": "MDF em tom grafite",
+      "family": "PAINEL_DERIVADO_DE_MADEIRA",
+      "source_labels": [
+        "MDF em tom grafite (marcenaria) [A CONFIRMAR]"
+      ],
+      "evidence_refs": [
+        "before_after_organized/cozinha-cozinha-planejada-mdf-apto-032/servicosexecutados-cozinha-cozinha-planejada-mdf-apto-032.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P032"
+      ],
+      "media_ids": [
+        "FR-M-ADBF8F43B2C0EBBE",
+        "FR-M-B65AA04715671C4F"
+      ],
+      "proposed_route": "/materiais/mdf-em-tom-grafite"
+    },
+    {
+      "material_id": "mdf-amadeirado",
+      "slug": "mdf-amadeirado",
+      "name": "MDF amadeirado",
+      "family": "MADEIRA",
+      "source_labels": [
+        "MDF amadeirado [A CONFIRMAR]"
+      ],
+      "evidence_refs": [
+        "before_after_organized/cozinha-cozinha-planejada-mdf-apto-045/servicosexecutados-cozinha-cozinha-planejada-mdf-apto-045.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P045"
+      ],
+      "media_ids": [
+        "FR-M-19B7A80EBC516E09",
+        "FR-M-4A283FEA85CB56B4"
+      ],
+      "proposed_route": "/materiais/mdf-amadeirado"
+    },
+    {
+      "material_id": "metal-em-tom-bronze",
+      "slug": "metal-em-tom-bronze",
+      "name": "Metal em tom bronze",
+      "family": "METAL",
+      "source_labels": [
+        "Metal em tom bronze (detalhes)"
+      ],
+      "evidence_refs": [
+        "before_after_organized/cozinha-cozinha-planejada-pedra-natural-casa-004/servicosexecutados-cozinha-cozinha-planejada-pedra-natural-casa-004.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P004"
+      ],
+      "media_ids": [
+        "FR-M-50616272B158DD86",
+        "FR-M-764C1CFF80E3B908"
+      ],
+      "proposed_route": "/materiais/metal-em-tom-bronze"
+    },
+    {
+      "material_id": "mdf-amadeirado-e-verde",
+      "slug": "mdf-amadeirado-e-verde",
+      "name": "MDF amadeirado e verde",
+      "family": "MADEIRA",
+      "source_labels": [
+        "MDF amadeirado e verde [A CONFIRMAR]"
+      ],
+      "evidence_refs": [
+        "before_after_organized/cozinha-marcenaria-mdf-apto-044/servicosexecutados-cozinha-marcenaria-mdf-apto-044.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P044"
+      ],
+      "media_ids": [
+        "FR-M-3B930FFBE5800CBA",
+        "FR-M-623062C31D5B47BF"
+      ],
+      "proposed_route": "/materiais/mdf-amadeirado-e-verde"
+    },
+    {
+      "material_id": "drywall",
+      "slug": "drywall",
+      "name": "Drywall",
+      "family": "UNKNOWN",
+      "source_labels": [
+        "Drywall [A CONFIRMAR]"
+      ],
+      "evidence_refs": [
+        "before_after_organized/escritorio-drywall-apto-051/servicosexecutados-escritorio-drywall-apto-051.md",
+        "before_after_organized/quarto-forro-casa-052/servicosexecutados-quarto-forro-casa-052.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P051",
+        "FR-P052"
+      ],
+      "media_ids": [
+        "FR-M-0DB2F25CC3DCCD55",
+        "FR-M-1C13A44FF73C4C5E",
+        "FR-M-2859D620516609CA",
+        "FR-M-AB62C6C9129641C4"
+      ],
+      "proposed_route": "/materiais/drywall"
+    },
+    {
+      "material_id": "led-linear",
+      "slug": "led-linear",
+      "name": "LED linear",
+      "family": "ILUMINACAO",
+      "source_labels": [
+        "LED linear (nicho)",
+        "LED linear"
+      ],
+      "evidence_refs": [
+        "before_after_organized/escritorio-drywall-apto-051/servicosexecutados-escritorio-drywall-apto-051.md",
+        "before_after_organized/hall-led-sequencial-casa-035/servicosexecutados-hall-led-sequencial-casa-035.md",
+        "before_after_organized/quarto-forro-casa-052/servicosexecutados-quarto-forro-casa-052.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P051",
+        "FR-P035",
+        "FR-P052"
+      ],
+      "media_ids": [
+        "FR-M-0DB2F25CC3DCCD55",
+        "FR-M-12AB438ADBA01D0E",
+        "FR-M-1C13A44FF73C4C5E",
+        "FR-M-2859D620516609CA",
+        "FR-M-3DDBA3C62BFAD2BF",
+        "FR-M-AB62C6C9129641C4"
+      ],
+      "proposed_route": "/materiais/led-linear"
+    },
+    {
+      "material_id": "tinta-osso",
+      "slug": "tinta-osso",
+      "name": "Tinta osso",
+      "family": "UNKNOWN",
+      "source_labels": [
+        "Tinta osso (paredes)",
+        "Tinta osso"
+      ],
+      "evidence_refs": [
+        "before_after_organized/escritorio-eletrica-apto-053/servicosexecutados-escritorio-eletrica-apto-053.md",
+        "before_after_organized/sala-estar-boiserie-apto-043/servicosexecutados-sala-estar-boiserie-apto-043.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P043",
+        "FR-P053"
+      ],
+      "media_ids": [
+        "FR-M-3E0110D5470C811E",
+        "FR-M-4CD1F7390E4FCE14",
+        "FR-M-C5E26D9137706E9A",
+        "FR-M-E867562165A581CC"
+      ],
+      "proposed_route": "/materiais/tinta-osso"
+    },
+    {
+      "material_id": "equipamento-de-climatizacao",
+      "slug": "equipamento-de-climatizacao",
+      "name": "Equipamento de climatização",
+      "family": "UNKNOWN",
+      "source_labels": [
+        "Equipamento de climatização"
+      ],
+      "evidence_refs": [
+        "before_after_organized/escritorio-instalacao-comercial-057/servicosexecutados-escritorio-instalacao-comercial-057.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P057"
+      ],
+      "media_ids": [
+        "FR-M-342DAC0DF469A7E1",
+        "FR-M-9766AA4633CF26E1"
+      ],
+      "proposed_route": "/materiais/equipamento-de-climatizacao"
+    },
+    {
+      "material_id": "tinta-clara",
+      "slug": "tinta-clara",
+      "name": "Tinta clara",
+      "family": "UNKNOWN",
+      "source_labels": [
+        "Tinta clara (paredes)"
+      ],
+      "evidence_refs": [
+        "before_after_organized/escritorio-instalacao-comercial-057/servicosexecutados-escritorio-instalacao-comercial-057.md",
+        "before_after_organized/quarto-piso-vinilico-apto-050/servicosexecutados-quarto-piso-vinilico-apto-050.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P057",
+        "FR-P050"
+      ],
+      "media_ids": [
+        "FR-M-342DAC0DF469A7E1",
+        "FR-M-6F2B86AB82E82A91",
+        "FR-M-880BD7981ED48B48",
+        "FR-M-9766AA4633CF26E1"
+      ],
+      "proposed_route": "/materiais/tinta-clara"
+    },
+    {
+      "material_id": "tecido-neutro",
+      "slug": "tecido-neutro",
+      "name": "Tecido neutro",
+      "family": "TEXTIL",
+      "source_labels": [
+        "Tecido neutro (cadeira)",
+        "Tecido neutro (assento)",
+        "Tecido neutro (tapete)",
+        "Tecido neutro (estofado)"
+      ],
+      "evidence_refs": [
+        "before_after_organized/escritorio-marcenaria-madeira-casa-008/servicosexecutados-escritorio-marcenaria-madeira-casa-008.md",
+        "before_after_organized/escritorio-marcenaria-madeira-casa-016/servicosexecutados-escritorio-marcenaria-madeira-casa-016.md",
+        "before_after_organized/escritorio-textura-madeira-apto-023/servicosexecutados-escritorio-textura-madeira-apto-023.md",
+        "before_after_organized/sala-estar-pintura-apto-041/servicosexecutados-sala-estar-pintura-apto-041.md",
+        "before_after_organized/sala-estar-piso-madeira-apto-029/servicosexecutados-sala-estar-piso-madeira-apto-029.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P023",
+        "FR-P016",
+        "FR-P029",
+        "FR-P008",
+        "FR-P041"
+      ],
+      "media_ids": [
+        "FR-M-176B2BD73944E1B9",
+        "FR-M-1C8C153E56F10205",
+        "FR-M-1D1E6FF8CE88A498",
+        "FR-M-260669225D2C5A94",
+        "FR-M-73EE93DC80530079",
+        "FR-M-8BBAD7EA1836A798",
+        "FR-M-9FE60D1CC75B8A3E",
+        "FR-M-B90209E3F9410094",
+        "FR-M-BA27344010D5C39F",
+        "FR-M-D8CCB3981644528C"
+      ],
+      "proposed_route": "/materiais/tecido-neutro"
+    },
+    {
+      "material_id": "piso-ceramico-existente",
+      "slug": "piso-ceramico-existente",
+      "name": "Piso cerâmico existente",
+      "family": "UNKNOWN",
+      "source_labels": [
+        "Piso cerâmico existente"
+      ],
+      "evidence_refs": [
+        "before_after_organized/escritorio-marcenaria-madeira-casa-016/servicosexecutados-escritorio-marcenaria-madeira-casa-016.md",
+        "before_after_organized/sala-estar-pintura-apto-041/servicosexecutados-sala-estar-pintura-apto-041.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P016",
+        "FR-P041"
+      ],
+      "media_ids": [
+        "FR-M-1C8C153E56F10205",
+        "FR-M-8BBAD7EA1836A798",
+        "FR-M-9FE60D1CC75B8A3E",
+        "FR-M-B90209E3F9410094"
+      ],
+      "proposed_route": "/materiais/piso-ceramico-existente"
+    },
+    {
+      "material_id": "revestimento-mineral-efeito-madeira",
+      "slug": "revestimento-mineral-efeito-madeira",
+      "name": "Revestimento mineral efeito madeira",
+      "family": "MADEIRA",
+      "source_labels": [
+        "Revestimento mineral efeito madeira"
+      ],
+      "evidence_refs": [
+        "before_after_organized/escritorio-textura-madeira-apto-023/servicosexecutados-escritorio-textura-madeira-apto-023.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P023"
+      ],
+      "media_ids": [
+        "FR-M-176B2BD73944E1B9",
+        "FR-M-BA27344010D5C39F"
+      ],
+      "proposed_route": "/materiais/revestimento-mineral-efeito-madeira"
+    },
+    {
+      "material_id": "revestimento-grafite",
+      "slug": "revestimento-grafite",
+      "name": "Revestimento grafite",
+      "family": "ACABAMENTO_CROMATICO",
+      "source_labels": [
+        "Revestimento grafite"
+      ],
+      "evidence_refs": [
+        "before_after_organized/fachada-revestimento-madeira-comercial-059/servicosexecutados-fachada-revestimento-madeira-comercial-059.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P059"
+      ],
+      "media_ids": [
+        "FR-M-7A6B18E8A0068381",
+        "FR-M-9A96D631F3BF543C"
+      ],
+      "proposed_route": "/materiais/revestimento-grafite"
+    },
+    {
+      "material_id": "verde-petroleo",
+      "slug": "verde-petroleo",
+      "name": "Verde petróleo",
+      "family": "ACABAMENTO_CROMATICO",
+      "source_labels": [
+        "Verde petróleo (porta)"
+      ],
+      "evidence_refs": [
+        "before_after_organized/fachada-revestimento-pedra-natural-casa-009/servicosexecutados-fachada-revestimento-pedra-natural-casa-009.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P009"
+      ],
+      "media_ids": [
+        "FR-M-4479292428BDAF91",
+        "FR-M-E07749B18D8FB095"
+      ],
+      "proposed_route": "/materiais/verde-petroleo"
+    },
+    {
+      "material_id": "resina-epoxi-cinza",
+      "slug": "resina-epoxi-cinza",
+      "name": "Resina epóxi cinza",
+      "family": "RESINA",
+      "source_labels": [
+        "Resina epóxi cinza [A CONFIRMAR]"
+      ],
+      "evidence_refs": [
+        "before_after_organized/garagem-porcelanato-liquido-epoxi-casa-048/servicosexecutados-garagem-porcelanato-liquido-epoxi-casa-048.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P048"
+      ],
+      "media_ids": [
+        "FR-M-72751FE14AAE5D79",
+        "FR-M-9609104915BC3531"
+      ],
+      "proposed_route": "/materiais/resina-epoxi-cinza"
+    },
+    {
+      "material_id": "concreto",
+      "slug": "concreto",
+      "name": "Concreto",
+      "family": "REVESTIMENTO",
+      "source_labels": [
+        "Concreto (base existente)",
+        "Concreto"
+      ],
+      "evidence_refs": [
+        "before_after_organized/garagem-porcelanato-liquido-epoxi-casa-048/servicosexecutados-garagem-porcelanato-liquido-epoxi-casa-048.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P048"
+      ],
+      "media_ids": [
+        "FR-M-72751FE14AAE5D79",
+        "FR-M-9609104915BC3531",
+        "FR-M-D368FEE3945F873A"
+      ],
+      "proposed_route": "/materiais/concreto"
+    },
+    {
+      "material_id": "revestimento-mineral-efeito-travertino",
+      "slug": "revestimento-mineral-efeito-travertino",
+      "name": "Revestimento mineral efeito travertino",
+      "family": "SUPERFICIE_MINERAL",
+      "source_labels": [
+        "Revestimento mineral efeito travertino"
+      ],
+      "evidence_refs": [
+        "before_after_organized/hall-textura-travertino-casa-021/servicosexecutados-hall-textura-travertino-casa-021.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P021"
+      ],
+      "media_ids": [
+        "FR-M-A480917B0D5AB056",
+        "FR-M-AAF41770DEF3B075"
+      ],
+      "proposed_route": "/materiais/revestimento-mineral-efeito-travertino"
+    },
+    {
+      "material_id": "microcimento-em-tom-areia",
+      "slug": "microcimento-em-tom-areia",
+      "name": "Microcimento em tom areia",
+      "family": "REVESTIMENTO",
+      "source_labels": [
+        "Microcimento em tom areia [A CONFIRMAR]"
+      ],
+      "evidence_refs": [
+        "before_after_organized/lavabo-microcimento-casa-049/servicosexecutados-lavabo-microcimento-casa-049.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P049"
+      ],
+      "media_ids": [
+        "FR-M-DC81C16225B39025",
+        "FR-M-E3FB067070F9E89C"
+      ],
+      "proposed_route": "/materiais/microcimento-em-tom-areia"
+    },
+    {
+      "material_id": "ceramica-branca",
+      "slug": "ceramica-branca",
+      "name": "Cerâmica branca",
+      "family": "REVESTIMENTO",
+      "source_labels": [
+        "Cerâmica branca (louça)"
+      ],
+      "evidence_refs": [
+        "before_after_organized/lavabo-microcimento-casa-049/servicosexecutados-lavabo-microcimento-casa-049.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P049"
+      ],
+      "media_ids": [
+        "FR-M-DC81C16225B39025",
+        "FR-M-E3FB067070F9E89C"
+      ],
+      "proposed_route": "/materiais/ceramica-branca"
+    },
+    {
+      "material_id": "mdf-branco",
+      "slug": "mdf-branco",
+      "name": "MDF branco",
+      "family": "PAINEL_DERIVADO_DE_MADEIRA",
+      "source_labels": [
+        "MDF branco (gabinete) [A CONFIRMAR]"
+      ],
+      "evidence_refs": [
+        "before_after_organized/lavanderia-hidraulica-apto-054/servicosexecutados-lavanderia-hidraulica-apto-054.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P054"
+      ],
+      "media_ids": [
+        "FR-M-62403BDBB8F85C5B",
+        "FR-M-644DD38F8571066A"
+      ],
+      "proposed_route": "/materiais/mdf-branco"
+    },
+    {
+      "material_id": "piso-vinilico-amadeirado",
+      "slug": "piso-vinilico-amadeirado",
+      "name": "Piso vinílico amadeirado",
+      "family": "MADEIRA",
+      "source_labels": [
+        "Piso vinílico amadeirado"
+      ],
+      "evidence_refs": [
+        "before_after_organized/quarto-piso-vinilico-apto-050/servicosexecutados-quarto-piso-vinilico-apto-050.md",
+        "before_after_organized/suite-piso-vinilico-apto-028/servicosexecutados-suite-piso-vinilico-apto-028.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P050",
+        "FR-P028"
+      ],
+      "media_ids": [
+        "FR-M-6F2B86AB82E82A91",
+        "FR-M-880BD7981ED48B48",
+        "FR-M-9E163B42940DE29F",
+        "FR-M-E0C268416A71BC83"
+      ],
+      "proposed_route": "/materiais/piso-vinilico-amadeirado"
+    },
+    {
+      "material_id": "pedra-natural",
+      "slug": "pedra-natural",
+      "name": "Pedra natural",
+      "family": "SUPERFICIE_MINERAL",
+      "source_labels": [
+        "Pedra natural (piso)",
+        "Pedra natural (piso e bordas)",
+        "Pedra natural (caminho)"
+      ],
+      "evidence_refs": [
+        "before_after_organized/quintal-iluminacao-pedra-natural-casa-020/servicosexecutados-quintal-iluminacao-pedra-natural-casa-020.md",
+        "before_after_organized/quintal-piso-pedra-natural-casa-018/servicosexecutados-quintal-piso-pedra-natural-casa-018.md",
+        "before_after_organized/quintal-piso-pedra-natural-casa-060/servicosexecutados-quintal-piso-pedra-natural-casa-060.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P020",
+        "FR-P060",
+        "FR-P018"
+      ],
+      "media_ids": [
+        "FR-M-3B1E3D210BB4624A",
+        "FR-M-6B108622D9DC5C38",
+        "FR-M-78F01C611F5C4ABB",
+        "FR-M-91B901A35B40060D",
+        "FR-M-B79E1798F1C76B27",
+        "FR-M-F69A4BBCBDD20C71"
+      ],
+      "proposed_route": "/materiais/pedra-natural"
+    },
+    {
+      "material_id": "vegetacao-de-especies-nao-identificadas",
+      "slug": "vegetacao-de-especies-nao-identificadas",
+      "name": "Vegetação de espécies não identificadas",
+      "family": "UNKNOWN",
+      "source_labels": [
+        "Vegetação de espécies não identificadas"
+      ],
+      "evidence_refs": [
+        "before_after_organized/quintal-iluminacao-pedra-natural-casa-020/servicosexecutados-quintal-iluminacao-pedra-natural-casa-020.md",
+        "before_after_organized/quintal-piso-pedra-natural-casa-018/servicosexecutados-quintal-piso-pedra-natural-casa-018.md",
+        "before_after_organized/quintal-piso-pedra-natural-casa-060/servicosexecutados-quintal-piso-pedra-natural-casa-060.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P020",
+        "FR-P060",
+        "FR-P018"
+      ],
+      "media_ids": [
+        "FR-M-3B1E3D210BB4624A",
+        "FR-M-6B108622D9DC5C38",
+        "FR-M-78F01C611F5C4ABB",
+        "FR-M-91B901A35B40060D",
+        "FR-M-B79E1798F1C76B27",
+        "FR-M-F69A4BBCBDD20C71"
+      ],
+      "proposed_route": "/materiais/vegetacao-de-especies-nao-identificadas"
+    },
+    {
+      "material_id": "gramado",
+      "slug": "gramado",
+      "name": "Gramado",
+      "family": "UNKNOWN",
+      "source_labels": [
+        "Gramado"
+      ],
+      "evidence_refs": [
+        "before_after_organized/quintal-piso-pedra-natural-casa-060/servicosexecutados-quintal-piso-pedra-natural-casa-060.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P060"
+      ],
+      "media_ids": [
+        "FR-M-6B108622D9DC5C38",
+        "FR-M-F69A4BBCBDD20C71"
+      ],
+      "proposed_route": "/materiais/gramado"
+    },
+    {
+      "material_id": "gesso",
+      "slug": "gesso",
+      "name": "Gesso",
+      "family": "UNKNOWN",
+      "source_labels": [
+        "Gesso (molduras) [A CONFIRMAR]"
+      ],
+      "evidence_refs": [
+        "before_after_organized/sala-estar-boiserie-apto-043/servicosexecutados-sala-estar-boiserie-apto-043.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P043"
+      ],
+      "media_ids": [
+        "FR-M-3E0110D5470C811E",
+        "FR-M-C5E26D9137706E9A"
+      ],
+      "proposed_route": "/materiais/gesso"
+    },
+    {
+      "material_id": "travertino-ou-pedra-clara",
+      "slug": "travertino-ou-pedra-clara",
+      "name": "Travertino ou pedra clara",
+      "family": "SUPERFICIE_MINERAL",
+      "source_labels": [
+        "Travertino ou pedra clara (piso) [A CONFIRMAR]"
+      ],
+      "evidence_refs": [
+        "before_after_organized/sala-estar-lareira-travertino-casa-011/servicosexecutados-sala-estar-lareira-travertino-casa-011.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P011"
+      ],
+      "media_ids": [
+        "FR-M-6E01FD081F5C854E",
+        "FR-M-9E89126F63640262"
+      ],
+      "proposed_route": "/materiais/travertino-ou-pedra-clara"
+    },
+    {
+      "material_id": "cal-mineral",
+      "slug": "cal-mineral",
+      "name": "Cal mineral",
+      "family": "UNKNOWN",
+      "source_labels": [
+        "Cal mineral (paredes) [A CONFIRMAR]"
+      ],
+      "evidence_refs": [
+        "before_after_organized/sala-estar-lareira-travertino-casa-011/servicosexecutados-sala-estar-lareira-travertino-casa-011.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P011"
+      ],
+      "media_ids": [
+        "FR-M-6E01FD081F5C854E",
+        "FR-M-9E89126F63640262"
+      ],
+      "proposed_route": "/materiais/cal-mineral"
+    },
+    {
+      "material_id": "tinta-acrilica-fosca",
+      "slug": "tinta-acrilica-fosca",
+      "name": "Tinta acrílica fosca",
+      "family": "UNKNOWN",
+      "source_labels": [
+        "Tinta acrílica fosca [A CONFIRMAR]"
+      ],
+      "evidence_refs": [
+        "before_after_organized/sala-estar-pintura-apto-041/servicosexecutados-sala-estar-pintura-apto-041.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P041"
+      ],
+      "media_ids": [
+        "FR-M-8BBAD7EA1836A798",
+        "FR-M-B90209E3F9410094"
+      ],
+      "proposed_route": "/materiais/tinta-acrilica-fosca"
+    },
+    {
+      "material_id": "madeira-escura",
+      "slug": "madeira-escura",
+      "name": "Madeira escura",
+      "family": "MADEIRA",
+      "source_labels": [
+        "Madeira escura (estantes)"
+      ],
+      "evidence_refs": [
+        "before_after_organized/sala-estar-piso-madeira-apto-029/servicosexecutados-sala-estar-piso-madeira-apto-029.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P029"
+      ],
+      "media_ids": [
+        "FR-M-1D1E6FF8CE88A498",
+        "FR-M-D8CCB3981644528C"
+      ],
+      "proposed_route": "/materiais/madeira-escura"
+    },
+    {
+      "material_id": "porcelanato-acetinado-de-grande-formato",
+      "slug": "porcelanato-acetinado-de-grande-formato",
+      "name": "Porcelanato acetinado de grande formato",
+      "family": "REVESTIMENTO",
+      "source_labels": [
+        "Porcelanato acetinado de grande formato"
+      ],
+      "evidence_refs": [
+        "before_after_organized/sala-estar-piso-porcelanato-apto-027/servicosexecutados-sala-estar-piso-porcelanato-apto-027.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P027"
+      ],
+      "media_ids": [
+        "FR-M-1C3F48E242CDA816",
+        "FR-M-F4E2B9747D963C2F"
+      ],
+      "proposed_route": "/materiais/porcelanato-acetinado-de-grande-formato"
+    },
+    {
+      "material_id": "porcelanato-acetinado",
+      "slug": "porcelanato-acetinado",
+      "name": "Porcelanato acetinado",
+      "family": "REVESTIMENTO",
+      "source_labels": [
+        "Porcelanato acetinado [A CONFIRMAR]"
+      ],
+      "evidence_refs": [
+        "before_after_organized/sala-estar-piso-porcelanato-apto-047/servicosexecutados-sala-estar-piso-porcelanato-apto-047.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P047"
+      ],
+      "media_ids": [
+        "FR-M-0FD157881E93B0B4",
+        "FR-M-D8973A8C79016A8B"
+      ],
+      "proposed_route": "/materiais/porcelanato-acetinado"
+    },
+    {
+      "material_id": "tecido-natural",
+      "slug": "tecido-natural",
+      "name": "Tecido natural",
+      "family": "TEXTIL",
+      "source_labels": [
+        "Tecido natural (tapete)",
+        "Tecido natural (estofados)",
+        "Tecido natural (roupa de cama)",
+        "Tecido natural (cama)"
+      ],
+      "evidence_refs": [
+        "before_after_organized/sala-estar-piso-porcelanato-apto-047/servicosexecutados-sala-estar-piso-porcelanato-apto-047.md",
+        "before_after_organized/sala-estar-revestimento-parede-pedra-natural-apto-024/servicosexecutados-sala-estar-revestimento-parede-pedra-natural-apto-024.md",
+        "before_after_organized/suite-piso-madeira-casa-014/servicosexecutados-suite-piso-madeira-casa-014.md",
+        "before_after_organized/suite-textura-casa-025/servicosexecutados-suite-textura-casa-025.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P024",
+        "FR-P047",
+        "FR-P025",
+        "FR-P014"
+      ],
+      "media_ids": [
+        "FR-M-01204B2B0074E034",
+        "FR-M-0FD157881E93B0B4",
+        "FR-M-7DF6B3D9E7986221",
+        "FR-M-A373E3191363C1B5",
+        "FR-M-B34FBF4D45BB54BC",
+        "FR-M-D618CEC63672CDF0",
+        "FR-M-D8973A8C79016A8B",
+        "FR-M-E3084A76B4F00B64"
+      ],
+      "proposed_route": "/materiais/tecido-natural"
+    },
+    {
+      "material_id": "revestimento-leve-efeito-pedra-natural",
+      "slug": "revestimento-leve-efeito-pedra-natural",
+      "name": "Revestimento leve efeito pedra natural",
+      "family": "SUPERFICIE_MINERAL",
+      "source_labels": [
+        "Revestimento leve efeito pedra natural [A CONFIRMAR]"
+      ],
+      "evidence_refs": [
+        "before_after_organized/sala-estar-revestimento-parede-pedra-natural-apto-024/servicosexecutados-sala-estar-revestimento-parede-pedra-natural-apto-024.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P024"
+      ],
+      "media_ids": [
+        "FR-M-01204B2B0074E034",
+        "FR-M-E3084A76B4F00B64"
+      ],
+      "proposed_route": "/materiais/revestimento-leve-efeito-pedra-natural"
+    },
+    {
+      "material_id": "porcelanato-de-grande-formato",
+      "slug": "porcelanato-de-grande-formato",
+      "name": "Porcelanato de grande formato",
+      "family": "REVESTIMENTO",
+      "source_labels": [
+        "Porcelanato de grande formato"
+      ],
+      "evidence_refs": [
+        "before_after_organized/sala-estar-revestimento-parede-porcelanato-apto-026/servicosexecutados-sala-estar-revestimento-parede-porcelanato-apto-026.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P026"
+      ],
+      "media_ids": [
+        "FR-M-4CEC8114CB79C158",
+        "FR-M-A16EF2B3BBCC3312"
+      ],
+      "proposed_route": "/materiais/porcelanato-de-grande-formato"
+    },
+    {
+      "material_id": "tecido-acustico",
+      "slug": "tecido-acustico",
+      "name": "Tecido acústico",
+      "family": "TEXTIL",
+      "source_labels": [
+        "Tecido acústico [A CONFIRMAR]"
+      ],
+      "evidence_refs": [
+        "before_after_organized/sala-estar-ripado-madeira-casa-036/servicosexecutados-sala-estar-ripado-madeira-casa-036.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P036"
+      ],
+      "media_ids": [
+        "FR-M-2B0D01554F2CF05D",
+        "FR-M-77F255159F096CF2"
+      ],
+      "proposed_route": "/materiais/tecido-acustico"
+    },
+    {
+      "material_id": "piso-textil",
+      "slug": "piso-textil",
+      "name": "Piso têxtil",
+      "family": "TEXTIL",
+      "source_labels": [
+        "Piso têxtil"
+      ],
+      "evidence_refs": [
+        "before_after_organized/sala-estar-ripado-madeira-casa-036/servicosexecutados-sala-estar-ripado-madeira-casa-036.md",
+        "before_after_organized/suite-piso-vinilico-apto-028/servicosexecutados-suite-piso-vinilico-apto-028.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P036",
+        "FR-P028"
+      ],
+      "media_ids": [
+        "FR-M-2B0D01554F2CF05D",
+        "FR-M-77F255159F096CF2",
+        "FR-M-DF845264FDAD6509"
+      ],
+      "proposed_route": "/materiais/piso-textil"
+    },
+    {
+      "material_id": "madeira-ou-mdf",
+      "slug": "madeira-ou-mdf",
+      "name": "Madeira ou MDF",
+      "family": "MADEIRA",
+      "source_labels": [
+        "Madeira ou MDF (marcenaria) [A CONFIRMAR]"
+      ],
+      "evidence_refs": [
+        "before_after_organized/sala-jantar-adega-madeira-apto-031/servicosexecutados-sala-jantar-adega-madeira-apto-031.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P031"
+      ],
+      "media_ids": [
+        "FR-M-3EC911EEF901B599",
+        "FR-M-BCC58DE669F45183"
+      ],
+      "proposed_route": "/materiais/madeira-ou-mdf"
+    },
+    {
+      "material_id": "latao-ou-bronze",
+      "slug": "latao-ou-bronze",
+      "name": "Latão ou bronze",
+      "family": "METAL",
+      "source_labels": [
+        "Latão ou bronze (luminária) [A CONFIRMAR]"
+      ],
+      "evidence_refs": [
+        "before_after_organized/sala-jantar-iluminacao-latao-casa-003/servicosexecutados-sala-jantar-iluminacao-latao-casa-003.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P003"
+      ],
+      "media_ids": [
+        "FR-M-DF2C138A7A2890FD",
+        "FR-M-F4D2BA3557E52005"
+      ],
+      "proposed_route": "/materiais/latao-ou-bronze"
+    },
+    {
+      "material_id": "tecido-osso",
+      "slug": "tecido-osso",
+      "name": "Tecido osso",
+      "family": "TEXTIL",
+      "source_labels": [
+        "Tecido osso (cadeiras)",
+        "Tecido osso (estofados)"
+      ],
+      "evidence_refs": [
+        "before_after_organized/sala-jantar-iluminacao-latao-casa-003/servicosexecutados-sala-jantar-iluminacao-latao-casa-003.md",
+        "before_after_organized/suite-painel-madeira-casa-005/servicosexecutados-suite-painel-madeira-casa-005.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P005",
+        "FR-P003"
+      ],
+      "media_ids": [
+        "FR-M-035B1FE5812B5853",
+        "FR-M-DF2C138A7A2890FD",
+        "FR-M-F4D2BA3557E52005",
+        "FR-M-FEE4C527A0F3245F"
+      ],
+      "proposed_route": "/materiais/tecido-osso"
+    },
+    {
+      "material_id": "bronze-ou-latao",
+      "slug": "bronze-ou-latao",
+      "name": "Bronze ou latão",
+      "family": "METAL",
+      "source_labels": [
+        "Bronze ou latão (luminária) [A CONFIRMAR]"
+      ],
+      "evidence_refs": [
+        "before_after_organized/sala-jantar-iluminacao-latao-casa-012/servicosexecutados-sala-jantar-iluminacao-latao-casa-012.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P012"
+      ],
+      "media_ids": [
+        "FR-M-5B8BF8C7E5ADD900",
+        "FR-M-5E8CA416B435F392"
+      ],
+      "proposed_route": "/materiais/bronze-ou-latao"
+    },
+    {
+      "material_id": "madeira-macica-ou-recuperada",
+      "slug": "madeira-macica-ou-recuperada",
+      "name": "Madeira maciça ou recuperada",
+      "family": "MADEIRA",
+      "source_labels": [
+        "Madeira maciça ou recuperada [A CONFIRMAR]"
+      ],
+      "evidence_refs": [
+        "before_after_organized/sala-jantar-rivertable-resina-apto-038/servicosexecutados-sala-jantar-rivertable-resina-apto-038.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P038"
+      ],
+      "media_ids": [
+        "FR-M-78436252CA96E539",
+        "FR-M-D287A48923B8ABE3"
+      ],
+      "proposed_route": "/materiais/madeira-macica-ou-recuperada"
+    },
+    {
+      "material_id": "resina-verde-petroleo",
+      "slug": "resina-verde-petroleo",
+      "name": "Resina verde-petróleo",
+      "family": "RESINA",
+      "source_labels": [
+        "Resina verde-petróleo"
+      ],
+      "evidence_refs": [
+        "before_after_organized/sala-jantar-rivertable-resina-apto-038/servicosexecutados-sala-jantar-rivertable-resina-apto-038.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P038"
+      ],
+      "media_ids": [
+        "FR-M-78436252CA96E539",
+        "FR-M-D287A48923B8ABE3"
+      ],
+      "proposed_route": "/materiais/resina-verde-petroleo"
+    },
+    {
+      "material_id": "revestimento-mineral-pigmentado",
+      "slug": "revestimento-mineral-pigmentado",
+      "name": "Revestimento mineral pigmentado",
+      "family": "UNKNOWN",
+      "source_labels": [
+        "Revestimento mineral pigmentado [A CONFIRMAR]"
+      ],
+      "evidence_refs": [
+        "before_after_organized/sala-jantar-textura-marmore-apto-042/servicosexecutados-sala-jantar-textura-marmore-apto-042.md",
+        "before_after_organized/sala-jantar-textura-microcimento-apto-022/servicosexecutados-sala-jantar-textura-microcimento-apto-022.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P042",
+        "FR-P022"
+      ],
+      "media_ids": [
+        "FR-M-75FA654FC2CD0D0E",
+        "FR-M-8160F10DD49C91AE",
+        "FR-M-8462F2A9187F75A2",
+        "FR-M-8FF7A63F34D365A5"
+      ],
+      "proposed_route": "/materiais/revestimento-mineral-pigmentado"
+    },
+    {
+      "material_id": "efeito-visual-de-marmore",
+      "slug": "efeito-visual-de-marmore",
+      "name": "Efeito visual de mármore",
+      "family": "SUPERFICIE_MINERAL",
+      "source_labels": [
+        "Efeito visual de mármore"
+      ],
+      "evidence_refs": [
+        "before_after_organized/sala-jantar-textura-marmore-apto-042/servicosexecutados-sala-jantar-textura-marmore-apto-042.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P042"
+      ],
+      "media_ids": [
+        "FR-M-75FA654FC2CD0D0E",
+        "FR-M-8FF7A63F34D365A5"
+      ],
+      "proposed_route": "/materiais/efeito-visual-de-marmore"
+    },
+    {
+      "material_id": "metal-dourado",
+      "slug": "metal-dourado",
+      "name": "Metal dourado",
+      "family": "METAL",
+      "source_labels": [
+        "Metal dourado (luminária)"
+      ],
+      "evidence_refs": [
+        "before_after_organized/sala-jantar-textura-microcimento-apto-022/servicosexecutados-sala-jantar-textura-microcimento-apto-022.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P022"
+      ],
+      "media_ids": [
+        "FR-M-8160F10DD49C91AE",
+        "FR-M-8462F2A9187F75A2"
+      ],
+      "proposed_route": "/materiais/metal-dourado"
+    },
+    {
+      "material_id": "piso-amadeirado",
+      "slug": "piso-amadeirado",
+      "name": "Piso amadeirado",
+      "family": "MADEIRA",
+      "source_labels": [
+        "Piso amadeirado"
+      ],
+      "evidence_refs": [
+        "before_after_organized/suite-painel-madeira-casa-005/servicosexecutados-suite-painel-madeira-casa-005.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P005"
+      ],
+      "media_ids": [
+        "FR-M-035B1FE5812B5853",
+        "FR-M-FEE4C527A0F3245F"
+      ],
+      "proposed_route": "/materiais/piso-amadeirado"
+    },
+    {
+      "material_id": "cal-ou-tinta-mineral",
+      "slug": "cal-ou-tinta-mineral",
+      "name": "Cal ou tinta mineral",
+      "family": "UNKNOWN",
+      "source_labels": [
+        "Cal ou tinta mineral (paredes) [A CONFIRMAR]"
+      ],
+      "evidence_refs": [
+        "before_after_organized/suite-piso-madeira-casa-014/servicosexecutados-suite-piso-madeira-casa-014.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P014"
+      ],
+      "media_ids": [
+        "FR-M-A373E3191363C1B5",
+        "FR-M-B34FBF4D45BB54BC"
+      ],
+      "proposed_route": "/materiais/cal-ou-tinta-mineral"
+    },
+    {
+      "material_id": "gesso-esculpido",
+      "slug": "gesso-esculpido",
+      "name": "Gesso esculpido",
+      "family": "UNKNOWN",
+      "source_labels": [
+        "Gesso esculpido"
+      ],
+      "evidence_refs": [
+        "before_after_organized/suite-textura-casa-025/servicosexecutados-suite-textura-casa-025.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-P025"
+      ],
+      "media_ids": [
+        "FR-M-7DF6B3D9E7986221",
+        "FR-M-D618CEC63672CDF0"
+      ],
+      "proposed_route": "/materiais/gesso-esculpido"
+    },
+    {
+      "material_id": "limestone-moleanos",
+      "slug": "limestone-moleanos",
+      "name": "Limestone Moleanos",
+      "family": "SUPERFICIE_MINERAL",
+      "source_labels": [
+        "Limestone Moleanos"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/adega/adega-marcenaria-limestone-residencial-146/conteudo-adega-marcenaria-limestone-residencial-146.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I146"
+      ],
+      "media_ids": [
+        "FR-M-0D3506EFDE3FD8E9",
+        "FR-M-9978DE0B620AF82F"
+      ],
+      "proposed_route": "/materiais/limestone-moleanos"
+    },
+    {
+      "material_id": "malha-de-bronze",
+      "slug": "malha-de-bronze",
+      "name": "Malha de bronze",
+      "family": "METAL",
+      "source_labels": [
+        "Malha de bronze"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/adega/adega-marcenaria-limestone-residencial-146/conteudo-adega-marcenaria-limestone-residencial-146.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I146"
+      ],
+      "media_ids": [
+        "FR-M-0D3506EFDE3FD8E9",
+        "FR-M-9978DE0B620AF82F"
+      ],
+      "proposed_route": "/materiais/malha-de-bronze"
+    },
+    {
+      "material_id": "greige-fosco",
+      "slug": "greige-fosco",
+      "name": "Greige fosco",
+      "family": "ACABAMENTO_CROMATICO",
+      "source_labels": [
+        "Greige fosco"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/ambiente-a-confirmar/ambiente-a-confirmar-revestimento-greige-residencial-124/conteudo-ambiente-a-confirmar-revestimento-greige-residencial-124.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I124"
+      ],
+      "media_ids": [
+        "FR-M-C80EEEF057E3E342"
+      ],
+      "proposed_route": "/materiais/greige-fosco"
+    },
+    {
+      "material_id": "carvalho-ebanizado",
+      "slug": "carvalho-ebanizado",
+      "name": "Carvalho ebanizado",
+      "family": "MADEIRA",
+      "source_labels": [
+        "Carvalho ebanizado"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/ambiente-a-confirmar/ambiente-a-confirmar-revestimento-greige-residencial-124/conteudo-ambiente-a-confirmar-revestimento-greige-residencial-124.md",
+        "reels_design_organized/ambientes/hall/hall-revestimento-microcimento-residencial-114/conteudo-hall-revestimento-microcimento-residencial-114.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I114",
+        "FR-I124"
+      ],
+      "media_ids": [
+        "FR-M-BA0729261A310DAA",
+        "FR-M-C80EEEF057E3E342",
+        "FR-M-EA12A88DB29938AD"
+      ],
+      "proposed_route": "/materiais/carvalho-ebanizado"
+    },
+    {
+      "material_id": "pedra-sabao",
+      "slug": "pedra-sabao",
+      "name": "Pedra-sabão",
+      "family": "SUPERFICIE_MINERAL",
+      "source_labels": [
+        "Pedra-sabão"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/area-gourmet/area-gourmet-bancada-pedra-sabao-residencial-142/conteudo-area-gourmet-bancada-pedra-sabao-residencial-142.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I142"
+      ],
+      "media_ids": [
+        "FR-M-496C23577E2DA23D",
+        "FR-M-89FE8AEC0CD681A5"
+      ],
+      "proposed_route": "/materiais/pedra-sabao"
+    },
+    {
+      "material_id": "nogueira-canaletto",
+      "slug": "nogueira-canaletto",
+      "name": "Nogueira Canaletto",
+      "family": "MADEIRA",
+      "source_labels": [
+        "Nogueira Canaletto"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/area-gourmet/area-gourmet-bancada-pedra-sabao-residencial-142/conteudo-area-gourmet-bancada-pedra-sabao-residencial-142.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I142"
+      ],
+      "media_ids": [
+        "FR-M-496C23577E2DA23D",
+        "FR-M-89FE8AEC0CD681A5"
+      ],
+      "proposed_route": "/materiais/nogueira-canaletto"
+    },
+    {
+      "material_id": "terra-compactada",
+      "slug": "terra-compactada",
+      "name": "Terra compactada",
+      "family": "REVESTIMENTO",
+      "source_labels": [
+        "Terra compactada"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/atelie/atelie-revestimento-terra-residencial-144/conteudo-atelie-revestimento-terra-residencial-144.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I144"
+      ],
+      "media_ids": [
+        "FR-M-2E4B9CE12259F76E",
+        "FR-M-B1C99AD5B504A588"
+      ],
+      "proposed_route": "/materiais/terra-compactada"
+    },
+    {
+      "material_id": "freijo-natural",
+      "slug": "freijo-natural",
+      "name": "Freijó natural",
+      "family": "MADEIRA",
+      "source_labels": [
+        "Freijó natural"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/atelie/atelie-revestimento-terra-residencial-144/conteudo-atelie-revestimento-terra-residencial-144.md",
+        "reels_design_organized/ambientes/suite/suite-marcenaria-calcario-residencial-115/conteudo-suite-marcenaria-calcario-residencial-115.md",
+        "reels_design_organized/ambientes/suite/suite-marcenaria-limestone-residencial-105/conteudo-suite-marcenaria-limestone-residencial-105.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I144",
+        "FR-I105",
+        "FR-I115"
+      ],
+      "media_ids": [
+        "FR-M-2E4B9CE12259F76E",
+        "FR-M-33E05A9B4D23EB8A",
+        "FR-M-8477FB1BE0B0C253",
+        "FR-M-96B1F9605BEFC3C2",
+        "FR-M-B1C99AD5B504A588",
+        "FR-M-FA51CBA2D7AD3D6D"
+      ],
+      "proposed_route": "/materiais/freijo-natural"
+    },
+    {
+      "material_id": "onix-mel",
+      "slug": "onix-mel",
+      "name": "Ônix mel",
+      "family": "SUPERFICIE_MINERAL",
+      "source_labels": [
+        "Ônix mel"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/banheiro/banheiro-revestimento-onix-mel-residencial-120/conteudo-banheiro-revestimento-onix-mel-residencial-120.md",
+        "reels_design_organized/ambientes/sala-jantar/sala-jantar-mesa-onix-mel-residencial-111/conteudo-sala-jantar-mesa-onix-mel-residencial-111.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I120",
+        "FR-I111"
+      ],
+      "media_ids": [
+        "FR-M-4791AF2308E976EC",
+        "FR-M-B6898A912D180F83",
+        "FR-M-E9E039D3D1147A98",
+        "FR-M-FD82D004C5402E13"
+      ],
+      "proposed_route": "/materiais/onix-mel"
+    },
+    {
+      "material_id": "latao-champagne",
+      "slug": "latao-champagne",
+      "name": "Latão champagne",
+      "family": "METAL",
+      "source_labels": [
+        "Latão champagne"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/banheiro/banheiro-revestimento-onix-mel-residencial-120/conteudo-banheiro-revestimento-onix-mel-residencial-120.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I120"
+      ],
+      "media_ids": [
+        "FR-M-4791AF2308E976EC",
+        "FR-M-E9E039D3D1147A98"
+      ],
+      "proposed_route": "/materiais/latao-champagne"
+    },
+    {
+      "material_id": "quartzito-taj-mahal",
+      "slug": "quartzito-taj-mahal",
+      "name": "Quartzito Taj Mahal",
+      "family": "SUPERFICIE_MINERAL",
+      "source_labels": [
+        "Quartzito Taj Mahal"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/banheiro/banheiro-revestimento-taj-mahal-residencial-127/conteudo-banheiro-revestimento-taj-mahal-residencial-127.md",
+        "reels_design_organized/ambientes/cozinha/cozinha-bancada-taj-mahal-residencial-103/conteudo-cozinha-bancada-taj-mahal-residencial-103.md",
+        "reels_design_organized/ambientes/sala-estar/sala-estar-marcenaria-taj-mahal-residencial-107/conteudo-sala-estar-marcenaria-taj-mahal-residencial-107.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I127",
+        "FR-I103",
+        "FR-I107"
+      ],
+      "media_ids": [
+        "FR-M-16F8CF5B3FA870F4",
+        "FR-M-6839429975B59F3A",
+        "FR-M-835087A9ACB7BCFF",
+        "FR-M-A765E32AC633C849",
+        "FR-M-CAD07278FFE31694",
+        "FR-M-FF1D7BDF3045C558"
+      ],
+      "proposed_route": "/materiais/quartzito-taj-mahal"
+    },
+    {
+      "material_id": "latao-escovado",
+      "slug": "latao-escovado",
+      "name": "Latão escovado",
+      "family": "METAL",
+      "source_labels": [
+        "Latão escovado"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/banheiro/banheiro-revestimento-taj-mahal-residencial-127/conteudo-banheiro-revestimento-taj-mahal-residencial-127.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I127"
+      ],
+      "media_ids": [
+        "FR-M-16F8CF5B3FA870F4",
+        "FR-M-835087A9ACB7BCFF"
+      ],
+      "proposed_route": "/materiais/latao-escovado"
+    },
+    {
+      "material_id": "travertino-romano",
+      "slug": "travertino-romano",
+      "name": "Travertino Romano",
+      "family": "SUPERFICIE_MINERAL",
+      "source_labels": [
+        "Travertino Romano"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/banheiro/banheiro-revestimento-travertino-residencial-106/conteudo-banheiro-revestimento-travertino-residencial-106.md",
+        "reels_design_organized/ambientes/cozinha/cozinha-bancada-travertino-residencial-104/conteudo-cozinha-bancada-travertino-residencial-104.md",
+        "reels_design_organized/ambientes/sala-estar/sala-estar-revestimento-travertino-residencial-126/conteudo-sala-estar-revestimento-travertino-residencial-126.md",
+        "reels_design_organized/ambientes/sala-jantar/sala-jantar-mesa-travertino-residencial-123/conteudo-sala-jantar-mesa-travertino-residencial-123.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I123",
+        "FR-I126",
+        "FR-I104",
+        "FR-I106"
+      ],
+      "media_ids": [
+        "FR-M-0E82A04AF7A51964",
+        "FR-M-102719814FBBBA41",
+        "FR-M-6E007F88481955F5",
+        "FR-M-A4AA6D26829AC6A0",
+        "FR-M-AD3EF4B11502B91A",
+        "FR-M-C64ED2BC9ACF0A69",
+        "FR-M-EC35905A83A02DC0",
+        "FR-M-F8CC9967F759994D"
+      ],
+      "proposed_route": "/materiais/travertino-romano"
+    },
+    {
+      "material_id": "carvalho-claro",
+      "slug": "carvalho-claro",
+      "name": "Carvalho claro",
+      "family": "MADEIRA",
+      "source_labels": [
+        "Carvalho claro"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/banheiro/banheiro-revestimento-travertino-residencial-106/conteudo-banheiro-revestimento-travertino-residencial-106.md",
+        "reels_design_organized/ambientes/sala-estar/sala-estar-marcenaria-palha-residencial-118/conteudo-sala-estar-marcenaria-palha-residencial-118.md",
+        "reels_design_organized/ambientes/suite/suite-marcenaria-microcimento-residencial-125/conteudo-suite-marcenaria-microcimento-residencial-125.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I118",
+        "FR-I106",
+        "FR-I125"
+      ],
+      "media_ids": [
+        "FR-M-11593EB013F99BDE",
+        "FR-M-AD3EF4B11502B91A",
+        "FR-M-BD66F74EA142A008",
+        "FR-M-DAD7A7434C231554",
+        "FR-M-EC35905A83A02DC0",
+        "FR-M-FED6FADB891BB1AB"
+      ],
+      "proposed_route": "/materiais/carvalho-claro"
+    },
+    {
+      "material_id": "zellige-verde-floresta",
+      "slug": "zellige-verde-floresta",
+      "name": "Zellige verde floresta",
+      "family": "REVESTIMENTO",
+      "source_labels": [
+        "Zellige verde floresta"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/banheiro/banheiro-revestimento-zellige-residencial-135/conteudo-banheiro-revestimento-zellige-residencial-135.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I135"
+      ],
+      "media_ids": [
+        "FR-M-2E94B6C1800E029F",
+        "FR-M-9F01F45DA21E9ED1"
+      ],
+      "proposed_route": "/materiais/zellige-verde-floresta"
+    },
+    {
+      "material_id": "niquel-escovado",
+      "slug": "niquel-escovado",
+      "name": "Níquel escovado",
+      "family": "METAL",
+      "source_labels": [
+        "Níquel escovado"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/banheiro/banheiro-revestimento-zellige-residencial-135/conteudo-banheiro-revestimento-zellige-residencial-135.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I135"
+      ],
+      "media_ids": [
+        "FR-M-2E94B6C1800E029F",
+        "FR-M-9F01F45DA21E9ED1"
+      ],
+      "proposed_route": "/materiais/niquel-escovado"
+    },
+    {
+      "material_id": "rosso-levanto",
+      "slug": "rosso-levanto",
+      "name": "Rosso Levanto",
+      "family": "SUPERFICIE_MINERAL",
+      "source_labels": [
+        "Rosso Levanto"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/biblioteca/biblioteca-marcenaria-rosso-levanto-residencial-141/conteudo-biblioteca-marcenaria-rosso-levanto-residencial-141.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I141"
+      ],
+      "media_ids": [
+        "FR-M-0F59DBE4EB22E23D",
+        "FR-M-AE6FCAE144C9FD81"
+      ],
+      "proposed_route": "/materiais/rosso-levanto"
+    },
+    {
+      "material_id": "palha-natural",
+      "slug": "palha-natural",
+      "name": "Palha natural",
+      "family": "FIBRA_VEGETAL",
+      "source_labels": [
+        "Palha natural"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/biblioteca/biblioteca-marcenaria-rosso-levanto-residencial-141/conteudo-biblioteca-marcenaria-rosso-levanto-residencial-141.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I141"
+      ],
+      "media_ids": [
+        "FR-M-0F59DBE4EB22E23D",
+        "FR-M-AE6FCAE144C9FD81"
+      ],
+      "proposed_route": "/materiais/palha-natural"
+    },
+    {
+      "material_id": "feltro-acustico",
+      "slug": "feltro-acustico",
+      "name": "Feltro acústico",
+      "family": "TEXTIL",
+      "source_labels": [
+        "Feltro acústico"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/cinema/cinema-acustica-feltro-residencial-149/conteudo-cinema-acustica-feltro-residencial-149.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I149"
+      ],
+      "media_ids": [
+        "FR-M-597EAA20858074EF",
+        "FR-M-5FC5CB760F74F3FE"
+      ],
+      "proposed_route": "/materiais/feltro-acustico"
+    },
+    {
+      "material_id": "carvalho-microperfurado",
+      "slug": "carvalho-microperfurado",
+      "name": "Carvalho microperfurado",
+      "family": "MADEIRA",
+      "source_labels": [
+        "Carvalho microperfurado"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/cinema/cinema-acustica-feltro-residencial-149/conteudo-cinema-acustica-feltro-residencial-149.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I149"
+      ],
+      "media_ids": [
+        "FR-M-597EAA20858074EF",
+        "FR-M-5FC5CB760F74F3FE"
+      ],
+      "proposed_route": "/materiais/carvalho-microperfurado"
+    },
+    {
+      "material_id": "azul-noite",
+      "slug": "azul-noite",
+      "name": "Azul noite",
+      "family": "UNKNOWN",
+      "source_labels": [
+        "Azul noite"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/cinema/cinema-automacao-azul-noite-residencial-133/conteudo-cinema-automacao-azul-noite-residencial-133.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I133"
+      ],
+      "media_ids": [
+        "FR-M-8071CD91AA2D7BBF",
+        "FR-M-EA7BA8BEE381003F"
+      ],
+      "proposed_route": "/materiais/azul-noite"
+    },
+    {
+      "material_id": "cherry-vintage",
+      "slug": "cherry-vintage",
+      "name": "Cherry vintage",
+      "family": "MADEIRA",
+      "source_labels": [
+        "Cherry vintage"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/cinema/cinema-automacao-azul-noite-residencial-133/conteudo-cinema-automacao-azul-noite-residencial-133.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I133"
+      ],
+      "media_ids": [
+        "FR-M-8071CD91AA2D7BBF",
+        "FR-M-EA7BA8BEE381003F"
+      ],
+      "proposed_route": "/materiais/cherry-vintage"
+    },
+    {
+      "material_id": "espelho-bronze",
+      "slug": "espelho-bronze",
+      "name": "Espelho bronze",
+      "family": "VIDRO",
+      "source_labels": [
+        "Espelho bronze"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/closet/closet-closet-planejado-espelho-bronze-residencial-148/conteudo-closet-closet-planejado-espelho-bronze-residencial-148.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I148"
+      ],
+      "media_ids": [
+        "FR-M-BE34B1A15361BB2E",
+        "FR-M-D51FE8727A625B8B"
+      ],
+      "proposed_route": "/materiais/espelho-bronze"
+    },
+    {
+      "material_id": "couro-nobucke",
+      "slug": "couro-nobucke",
+      "name": "Couro nobucke",
+      "family": "TEXTIL",
+      "source_labels": [
+        "Couro nobucke"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/closet/closet-closet-planejado-espelho-bronze-residencial-148/conteudo-closet-closet-planejado-espelho-bronze-residencial-148.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I148"
+      ],
+      "media_ids": [
+        "FR-M-BE34B1A15361BB2E",
+        "FR-M-D51FE8727A625B8B"
+      ],
+      "proposed_route": "/materiais/couro-nobucke"
+    },
+    {
+      "material_id": "linho-areia",
+      "slug": "linho-areia",
+      "name": "Linho areia",
+      "family": "TEXTIL",
+      "source_labels": [
+        "Linho areia"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/closet/closet-closet-planejado-linho-residencial-122/conteudo-closet-closet-planejado-linho-residencial-122.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I122"
+      ],
+      "media_ids": [
+        "FR-M-9AA0A07EEEF24289",
+        "FR-M-E96FD2A58AD7CACC"
+      ],
+      "proposed_route": "/materiais/linho-areia"
+    },
+    {
+      "material_id": "bronze-escovado",
+      "slug": "bronze-escovado",
+      "name": "Bronze escovado",
+      "family": "METAL",
+      "source_labels": [
+        "Bronze escovado"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/closet/closet-closet-planejado-linho-residencial-122/conteudo-closet-closet-planejado-linho-residencial-122.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I122"
+      ],
+      "media_ids": [
+        "FR-M-9AA0A07EEEF24289",
+        "FR-M-E96FD2A58AD7CACC"
+      ],
+      "proposed_route": "/materiais/bronze-escovado"
+    },
+    {
+      "material_id": "fendi-matte",
+      "slug": "fendi-matte",
+      "name": "Fendi matte",
+      "family": "ACABAMENTO_CROMATICO",
+      "source_labels": [
+        "Fendi matte"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/closet/closet-closet-planejado-vidro-reflecta-residencial-112/conteudo-closet-closet-planejado-vidro-reflecta-residencial-112.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I112"
+      ],
+      "media_ids": [
+        "FR-M-07E4F6580C2E6F1C",
+        "FR-M-AFEACC74D6840CEA"
+      ],
+      "proposed_route": "/materiais/fendi-matte"
+    },
+    {
+      "material_id": "vidro-reflecta-bronze",
+      "slug": "vidro-reflecta-bronze",
+      "name": "Vidro Reflecta bronze",
+      "family": "VIDRO",
+      "source_labels": [
+        "Vidro Reflecta bronze"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/closet/closet-closet-planejado-vidro-reflecta-residencial-112/conteudo-closet-closet-planejado-vidro-reflecta-residencial-112.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I112"
+      ],
+      "media_ids": [
+        "FR-M-07E4F6580C2E6F1C",
+        "FR-M-AFEACC74D6840CEA"
+      ],
+      "proposed_route": "/materiais/vidro-reflecta-bronze"
+    },
+    {
+      "material_id": "laca-grafite-acetinada",
+      "slug": "laca-grafite-acetinada",
+      "name": "Laca grafite acetinada",
+      "family": "ACABAMENTO_CROMATICO",
+      "source_labels": [
+        "Laca grafite acetinada"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/cozinha/cozinha-bancada-black-fusion-residencial-102/conteudo-cozinha-bancada-black-fusion-residencial-102.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I102"
+      ],
+      "media_ids": [
+        "FR-M-58B51DA38CB04D09",
+        "FR-M-8F86A2FC0B9A46F3"
+      ],
+      "proposed_route": "/materiais/laca-grafite-acetinada"
+    },
+    {
+      "material_id": "quartzito-black-fusion",
+      "slug": "quartzito-black-fusion",
+      "name": "Quartzito Black Fusion",
+      "family": "SUPERFICIE_MINERAL",
+      "source_labels": [
+        "Quartzito Black Fusion"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/cozinha/cozinha-bancada-black-fusion-residencial-102/conteudo-cozinha-bancada-black-fusion-residencial-102.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I102"
+      ],
+      "media_ids": [
+        "FR-M-58B51DA38CB04D09",
+        "FR-M-8F86A2FC0B9A46F3"
+      ],
+      "proposed_route": "/materiais/quartzito-black-fusion"
+    },
+    {
+      "material_id": "carvalho-natural-canelado",
+      "slug": "carvalho-natural-canelado",
+      "name": "Carvalho natural canelado",
+      "family": "MADEIRA",
+      "source_labels": [
+        "Carvalho natural canelado"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/cozinha/cozinha-bancada-calacatta-residencial-101/conteudo-cozinha-bancada-calacatta-residencial-101.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I101"
+      ],
+      "media_ids": [
+        "FR-M-F9B87E87B5BD6EC0",
+        "FR-M-FF6FB66521DA7A1B"
+      ],
+      "proposed_route": "/materiais/carvalho-natural-canelado"
+    },
+    {
+      "material_id": "calacatta-gold",
+      "slug": "calacatta-gold",
+      "name": "Calacatta Gold",
+      "family": "SUPERFICIE_MINERAL",
+      "source_labels": [
+        "Calacatta Gold"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/cozinha/cozinha-bancada-calacatta-residencial-101/conteudo-cozinha-bancada-calacatta-residencial-101.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I101"
+      ],
+      "media_ids": [
+        "FR-M-F9B87E87B5BD6EC0",
+        "FR-M-FF6FB66521DA7A1B"
+      ],
+      "proposed_route": "/materiais/calacatta-gold"
+    },
+    {
+      "material_id": "quartzito-patagonia",
+      "slug": "quartzito-patagonia",
+      "name": "Quartzito Patagonia",
+      "family": "SUPERFICIE_MINERAL",
+      "source_labels": [
+        "Quartzito Patagonia"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/cozinha/cozinha-bancada-patagonia-residencial-136/conteudo-cozinha-bancada-patagonia-residencial-136.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I136"
+      ],
+      "media_ids": [
+        "FR-M-11A08C4C25E59CEB",
+        "FR-M-C2F7F1D917A8BECA"
+      ],
+      "proposed_route": "/materiais/quartzito-patagonia"
+    },
+    {
+      "material_id": "laca-cafe",
+      "slug": "laca-cafe",
+      "name": "Laca café",
+      "family": "ACABAMENTO_CROMATICO",
+      "source_labels": [
+        "Laca café"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/cozinha/cozinha-bancada-patagonia-residencial-136/conteudo-cozinha-bancada-patagonia-residencial-136.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I136"
+      ],
+      "media_ids": [
+        "FR-M-11A08C4C25E59CEB",
+        "FR-M-C2F7F1D917A8BECA"
+      ],
+      "proposed_route": "/materiais/laca-cafe"
+    },
+    {
+      "material_id": "off-white-fosco",
+      "slug": "off-white-fosco",
+      "name": "Off-white fosco",
+      "family": "ACABAMENTO_CROMATICO",
+      "source_labels": [
+        "Off-white fosco"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/cozinha/cozinha-bancada-taj-mahal-residencial-103/conteudo-cozinha-bancada-taj-mahal-residencial-103.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I103"
+      ],
+      "media_ids": [
+        "FR-M-6839429975B59F3A",
+        "FR-M-FF1D7BDF3045C558"
+      ],
+      "proposed_route": "/materiais/off-white-fosco"
+    },
+    {
+      "material_id": "verde-petroleo-fosco",
+      "slug": "verde-petroleo-fosco",
+      "name": "Verde petróleo fosco",
+      "family": "ACABAMENTO_CROMATICO",
+      "source_labels": [
+        "Verde petróleo fosco"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/cozinha/cozinha-bancada-travertino-residencial-104/conteudo-cozinha-bancada-travertino-residencial-104.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I104"
+      ],
+      "media_ids": [
+        "FR-M-6E007F88481955F5",
+        "FR-M-F8CC9967F759994D"
+      ],
+      "proposed_route": "/materiais/verde-petroleo-fosco"
+    },
+    {
+      "material_id": "concreto-aparente",
+      "slug": "concreto-aparente",
+      "name": "Concreto aparente",
+      "family": "REVESTIMENTO",
+      "source_labels": [
+        "Concreto aparente"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/cozinha/cozinha-marcenaria-concreto-residencial-121/conteudo-cozinha-marcenaria-concreto-residencial-121.md",
+        "reels_design_organized/ambientes/fachada/fachada-revestimento-concreto-residencial-108/conteudo-fachada-revestimento-concreto-residencial-108.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I121",
+        "FR-I108"
+      ],
+      "media_ids": [
+        "FR-M-45DCEC99F26AB8A7",
+        "FR-M-87BC7D8C7362F515",
+        "FR-M-89AF8E313FB4F286",
+        "FR-M-9875F6925F5893AD"
+      ],
+      "proposed_route": "/materiais/concreto-aparente"
+    },
+    {
+      "material_id": "nogueira-escura",
+      "slug": "nogueira-escura",
+      "name": "Nogueira escura",
+      "family": "MADEIRA",
+      "source_labels": [
+        "Nogueira escura"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/cozinha/cozinha-marcenaria-concreto-residencial-121/conteudo-cozinha-marcenaria-concreto-residencial-121.md",
+        "reels_design_organized/ambientes/sala-estar/sala-estar-marcenaria-couro-residencial-130/conteudo-sala-estar-marcenaria-couro-residencial-130.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I130",
+        "FR-I121"
+      ],
+      "media_ids": [
+        "FR-M-3A81F376EA55998F",
+        "FR-M-45DCEC99F26AB8A7",
+        "FR-M-87BC7D8C7362F515",
+        "FR-M-E7560379200A4082"
+      ],
+      "proposed_route": "/materiais/nogueira-escura"
+    },
+    {
+      "material_id": "vidro-fundido",
+      "slug": "vidro-fundido",
+      "name": "Vidro fundido",
+      "family": "VIDRO",
+      "source_labels": [
+        "Vidro fundido"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/escada/escada-vidro-vidro-fundido-residencial-143/conteudo-escada-vidro-vidro-fundido-residencial-143.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I143"
+      ],
+      "media_ids": [
+        "FR-M-566E71C811F5DE53",
+        "FR-M-E84E680CEFEF54F8"
+      ],
+      "proposed_route": "/materiais/vidro-fundido"
+    },
+    {
+      "material_id": "aco-azulado",
+      "slug": "aco-azulado",
+      "name": "Aço azulado",
+      "family": "METAL",
+      "source_labels": [
+        "Aço azulado"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/escada/escada-vidro-vidro-fundido-residencial-143/conteudo-escada-vidro-vidro-fundido-residencial-143.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I143"
+      ],
+      "media_ids": [
+        "FR-M-566E71C811F5DE53",
+        "FR-M-E84E680CEFEF54F8"
+      ],
+      "proposed_route": "/materiais/aco-azulado"
+    },
+    {
+      "material_id": "bordeaux-profundo",
+      "slug": "bordeaux-profundo",
+      "name": "Bordeaux profundo",
+      "family": "ACABAMENTO_CROMATICO",
+      "source_labels": [
+        "Bordeaux profundo"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/escritorio/escritorio-marcenaria-bordeaux-residencial-131/conteudo-escritorio-marcenaria-bordeaux-residencial-131.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I131"
+      ],
+      "media_ids": [
+        "FR-M-716EC1A866FE8CEC",
+        "FR-M-A41CCD96F018EF23"
+      ],
+      "proposed_route": "/materiais/bordeaux-profundo"
+    },
+    {
+      "material_id": "ebano-fosco",
+      "slug": "ebano-fosco",
+      "name": "Ébano fosco",
+      "family": "MADEIRA",
+      "source_labels": [
+        "Ébano fosco"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/escritorio/escritorio-marcenaria-bordeaux-residencial-131/conteudo-escritorio-marcenaria-bordeaux-residencial-131.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I131"
+      ],
+      "media_ids": [
+        "FR-M-716EC1A866FE8CEC",
+        "FR-M-A41CCD96F018EF23"
+      ],
+      "proposed_route": "/materiais/ebano-fosco"
+    },
+    {
+      "material_id": "nogueira-americana",
+      "slug": "nogueira-americana",
+      "name": "Nogueira americana",
+      "family": "MADEIRA",
+      "source_labels": [
+        "Nogueira americana"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/escritorio/escritorio-marcenaria-nogueira-residencial-110/conteudo-escritorio-marcenaria-nogueira-residencial-110.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I110"
+      ],
+      "media_ids": [
+        "FR-M-2C1CC4014737033A",
+        "FR-M-655E521A8E6DF4C7"
+      ],
+      "proposed_route": "/materiais/nogueira-americana"
+    },
+    {
+      "material_id": "couro-caramelo",
+      "slug": "couro-caramelo",
+      "name": "Couro caramelo",
+      "family": "TEXTIL",
+      "source_labels": [
+        "Couro caramelo"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/escritorio/escritorio-marcenaria-nogueira-residencial-110/conteudo-escritorio-marcenaria-nogueira-residencial-110.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I110"
+      ],
+      "media_ids": [
+        "FR-M-2C1CC4014737033A",
+        "FR-M-655E521A8E6DF4C7"
+      ],
+      "proposed_route": "/materiais/couro-caramelo"
+    },
+    {
+      "material_id": "cumaru-natural",
+      "slug": "cumaru-natural",
+      "name": "Cumaru natural",
+      "family": "MADEIRA",
+      "source_labels": [
+        "Cumaru natural"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/fachada/fachada-revestimento-concreto-residencial-108/conteudo-fachada-revestimento-concreto-residencial-108.md",
+        "reels_design_organized/ambientes/fachada/fachada-revestimento-concreto-residencial-129/conteudo-fachada-revestimento-concreto-residencial-129.md",
+        "reels_design_organized/ambientes/lavabo/lavabo-revestimento-verde-guatemala-residencial-113/conteudo-lavabo-revestimento-verde-guatemala-residencial-113.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I129",
+        "FR-I113",
+        "FR-I108"
+      ],
+      "media_ids": [
+        "FR-M-367FAB8B2D96C986",
+        "FR-M-391B329FBF7DBAD6",
+        "FR-M-76E2BA61C4E6623B",
+        "FR-M-89AF8E313FB4F286",
+        "FR-M-9875F6925F5893AD",
+        "FR-M-A8765D3C5621C76B"
+      ],
+      "proposed_route": "/materiais/cumaru-natural"
+    },
+    {
+      "material_id": "concreto-arquitetonico",
+      "slug": "concreto-arquitetonico",
+      "name": "Concreto arquitetônico",
+      "family": "REVESTIMENTO",
+      "source_labels": [
+        "Concreto arquitetônico"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/fachada/fachada-revestimento-concreto-residencial-129/conteudo-fachada-revestimento-concreto-residencial-129.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I129"
+      ],
+      "media_ids": [
+        "FR-M-367FAB8B2D96C986",
+        "FR-M-A8765D3C5621C76B"
+      ],
+      "proposed_route": "/materiais/concreto-arquitetonico"
+    },
+    {
+      "material_id": "pedra-moledo",
+      "slug": "pedra-moledo",
+      "name": "Pedra moledo",
+      "family": "SUPERFICIE_MINERAL",
+      "source_labels": [
+        "Pedra moledo"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/fachada/fachada-revestimento-pedra-moledo-residencial-117/conteudo-fachada-revestimento-pedra-moledo-residencial-117.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I117"
+      ],
+      "media_ids": [
+        "FR-M-486DE074FA0D6C3A",
+        "FR-M-9C5F8D0424D0EA1C"
+      ],
+      "proposed_route": "/materiais/pedra-moledo"
+    },
+    {
+      "material_id": "aco-corten",
+      "slug": "aco-corten",
+      "name": "Aço Corten",
+      "family": "METAL",
+      "source_labels": [
+        "Aço Corten"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/fachada/fachada-revestimento-pedra-moledo-residencial-117/conteudo-fachada-revestimento-pedra-moledo-residencial-117.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I117"
+      ],
+      "media_ids": [
+        "FR-M-486DE074FA0D6C3A",
+        "FR-M-9C5F8D0424D0EA1C"
+      ],
+      "proposed_route": "/materiais/aco-corten"
+    },
+    {
+      "material_id": "granilite-antracita",
+      "slug": "granilite-antracita",
+      "name": "Granilite antracita",
+      "family": "SUPERFICIE_MINERAL",
+      "source_labels": [
+        "Granilite antracita"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/hall/hall-piso-granilite-residencial-137/conteudo-hall-piso-granilite-residencial-137.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I137"
+      ],
+      "media_ids": [
+        "FR-M-54CA6326E4C1F6BF",
+        "FR-M-6B9AED818E37970F"
+      ],
+      "proposed_route": "/materiais/granilite-antracita"
+    },
+    {
+      "material_id": "tauari-termotratado",
+      "slug": "tauari-termotratado",
+      "name": "Tauari termotratado",
+      "family": "MADEIRA",
+      "source_labels": [
+        "Tauari termotratado"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/hall/hall-piso-granilite-residencial-137/conteudo-hall-piso-granilite-residencial-137.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I137"
+      ],
+      "media_ids": [
+        "FR-M-54CA6326E4C1F6BF",
+        "FR-M-6B9AED818E37970F"
+      ],
+      "proposed_route": "/materiais/tauari-termotratado"
+    },
+    {
+      "material_id": "microcimento-greige",
+      "slug": "microcimento-greige",
+      "name": "Microcimento greige",
+      "family": "REVESTIMENTO",
+      "source_labels": [
+        "Microcimento greige"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/hall/hall-revestimento-microcimento-residencial-114/conteudo-hall-revestimento-microcimento-residencial-114.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I114"
+      ],
+      "media_ids": [
+        "FR-M-BA0729261A310DAA",
+        "FR-M-EA12A88DB29938AD"
+      ],
+      "proposed_route": "/materiais/microcimento-greige"
+    },
+    {
+      "material_id": "ameixa-intensa",
+      "slug": "ameixa-intensa",
+      "name": "Ameixa intensa",
+      "family": "ACABAMENTO_CROMATICO",
+      "source_labels": [
+        "Ameixa intensa"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/lavabo/lavabo-revestimento-ameixa-residencial-132/conteudo-lavabo-revestimento-ameixa-residencial-132.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I132"
+      ],
+      "media_ids": [
+        "FR-M-6F4545E989AFB357",
+        "FR-M-B625EA35B1A5D4A4"
+      ],
+      "proposed_route": "/materiais/ameixa-intensa"
+    },
+    {
+      "material_id": "cobre-escovado",
+      "slug": "cobre-escovado",
+      "name": "Cobre escovado",
+      "family": "METAL",
+      "source_labels": [
+        "Cobre escovado"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/lavabo/lavabo-revestimento-ameixa-residencial-132/conteudo-lavabo-revestimento-ameixa-residencial-132.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I132"
+      ],
+      "media_ids": [
+        "FR-M-6F4545E989AFB357",
+        "FR-M-B625EA35B1A5D4A4"
+      ],
+      "proposed_route": "/materiais/cobre-escovado"
+    },
+    {
+      "material_id": "onix-verde-persa",
+      "slug": "onix-verde-persa",
+      "name": "Ônix Verde Persa",
+      "family": "SUPERFICIE_MINERAL",
+      "source_labels": [
+        "Ônix Verde Persa"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/lavabo/lavabo-revestimento-onix-verde-residencial-140/conteudo-lavabo-revestimento-onix-verde-residencial-140.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I140"
+      ],
+      "media_ids": [
+        "FR-M-86FF6FCCFE3EA6A2",
+        "FR-M-CCA6BAD9775C2890"
+      ],
+      "proposed_route": "/materiais/onix-verde-persa"
+    },
+    {
+      "material_id": "cobre-oxidado",
+      "slug": "cobre-oxidado",
+      "name": "Cobre oxidado",
+      "family": "METAL",
+      "source_labels": [
+        "Cobre oxidado"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/lavabo/lavabo-revestimento-onix-verde-residencial-140/conteudo-lavabo-revestimento-onix-verde-residencial-140.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I140"
+      ],
+      "media_ids": [
+        "FR-M-86FF6FCCFE3EA6A2",
+        "FR-M-CCA6BAD9775C2890"
+      ],
+      "proposed_route": "/materiais/cobre-oxidado"
+    },
+    {
+      "material_id": "marmore-verde-guatemala",
+      "slug": "marmore-verde-guatemala",
+      "name": "Mármore Verde Guatemala",
+      "family": "SUPERFICIE_MINERAL",
+      "source_labels": [
+        "Mármore Verde Guatemala"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/lavabo/lavabo-revestimento-verde-guatemala-residencial-113/conteudo-lavabo-revestimento-verde-guatemala-residencial-113.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I113"
+      ],
+      "media_ids": [
+        "FR-M-391B329FBF7DBAD6",
+        "FR-M-76E2BA61C4E6623B"
+      ],
+      "proposed_route": "/materiais/marmore-verde-guatemala"
+    },
+    {
+      "material_id": "madeira-yakisugi",
+      "slug": "madeira-yakisugi",
+      "name": "Madeira Yakisugi",
+      "family": "MADEIRA",
+      "source_labels": [
+        "Madeira Yakisugi"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/pavilhao-piscina/pavilhao-piscina-revestimento-yakisugi-residencial-147/conteudo-pavilhao-piscina-revestimento-yakisugi-residencial-147.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I147"
+      ],
+      "media_ids": [
+        "FR-M-80D892C71088F476",
+        "FR-M-9C91617D0BEB2755"
+      ],
+      "proposed_route": "/materiais/madeira-yakisugi"
+    },
+    {
+      "material_id": "basalto-flamejado",
+      "slug": "basalto-flamejado",
+      "name": "Basalto flamejado",
+      "family": "SUPERFICIE_MINERAL",
+      "source_labels": [
+        "Basalto flamejado"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/pavilhao-piscina/pavilhao-piscina-revestimento-yakisugi-residencial-147/conteudo-pavilhao-piscina-revestimento-yakisugi-residencial-147.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I147"
+      ],
+      "media_ids": [
+        "FR-M-80D892C71088F476",
+        "FR-M-9C91617D0BEB2755"
+      ],
+      "proposed_route": "/materiais/basalto-flamejado"
+    },
+    {
+      "material_id": "oliva-profunda",
+      "slug": "oliva-profunda",
+      "name": "Oliva profunda",
+      "family": "ACABAMENTO_CROMATICO",
+      "source_labels": [
+        "Oliva profunda"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/quarto/quarto-marcenaria-terracota-residencial-134/conteudo-quarto-marcenaria-terracota-residencial-134.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I134"
+      ],
+      "media_ids": [
+        "FR-M-3A19EE1010A7B9B7",
+        "FR-M-DD0153C653B44AAD"
+      ],
+      "proposed_route": "/materiais/oliva-profunda"
+    },
+    {
+      "material_id": "terracota-queimada",
+      "slug": "terracota-queimada",
+      "name": "Terracota queimada",
+      "family": "METAL",
+      "source_labels": [
+        "Terracota queimada"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/quarto/quarto-marcenaria-terracota-residencial-134/conteudo-quarto-marcenaria-terracota-residencial-134.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I134"
+      ],
+      "media_ids": [
+        "FR-M-3A19EE1010A7B9B7",
+        "FR-M-DD0153C653B44AAD"
+      ],
+      "proposed_route": "/materiais/terracota-queimada"
+    },
+    {
+      "material_id": "tadelakt-terracota",
+      "slug": "tadelakt-terracota",
+      "name": "Tadelakt terracota",
+      "family": "METAL",
+      "source_labels": [
+        "Tadelakt terracota"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/quarto/quarto-revestimento-tadelakt-residencial-139/conteudo-quarto-revestimento-tadelakt-residencial-139.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I139"
+      ],
+      "media_ids": [
+        "FR-M-3AACD83FF9529778",
+        "FR-M-CA8B2B3C58A3950B"
+      ],
+      "proposed_route": "/materiais/tadelakt-terracota"
+    },
+    {
+      "material_id": "sucupira-natural",
+      "slug": "sucupira-natural",
+      "name": "Sucupira natural",
+      "family": "MADEIRA",
+      "source_labels": [
+        "Sucupira natural"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/quarto/quarto-revestimento-tadelakt-residencial-139/conteudo-quarto-revestimento-tadelakt-residencial-139.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I139"
+      ],
+      "media_ids": [
+        "FR-M-3AACD83FF9529778",
+        "FR-M-CA8B2B3C58A3950B"
+      ],
+      "proposed_route": "/materiais/sucupira-natural"
+    },
+    {
+      "material_id": "cortica-fume",
+      "slug": "cortica-fume",
+      "name": "Cortiça fumê",
+      "family": "FIBRA_VEGETAL",
+      "source_labels": [
+        "Cortiça fumê"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/sala-audio/sala-audio-acustica-cortica-residencial-138/conteudo-sala-audio-acustica-cortica-residencial-138.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I138"
+      ],
+      "media_ids": [
+        "FR-M-0506B896ABE2365C",
+        "FR-M-62C4BFC6A236ECCB"
+      ],
+      "proposed_route": "/materiais/cortica-fume"
+    },
+    {
+      "material_id": "la-acustica-caramelo",
+      "slug": "la-acustica-caramelo",
+      "name": "Lã acústica caramelo",
+      "family": "TEXTIL",
+      "source_labels": [
+        "Lã acústica caramelo"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/sala-audio/sala-audio-acustica-cortica-residencial-138/conteudo-sala-audio-acustica-cortica-residencial-138.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I138"
+      ],
+      "media_ids": [
+        "FR-M-0506B896ABE2365C",
+        "FR-M-62C4BFC6A236ECCB"
+      ],
+      "proposed_route": "/materiais/la-acustica-caramelo"
+    },
+    {
+      "material_id": "couro-conhaque",
+      "slug": "couro-conhaque",
+      "name": "Couro conhaque",
+      "family": "TEXTIL",
+      "source_labels": [
+        "Couro conhaque"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/sala-estar/sala-estar-marcenaria-couro-residencial-130/conteudo-sala-estar-marcenaria-couro-residencial-130.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I130"
+      ],
+      "media_ids": [
+        "FR-M-3A81F376EA55998F",
+        "FR-M-E7560379200A4082"
+      ],
+      "proposed_route": "/materiais/couro-conhaque"
+    },
+    {
+      "material_id": "palha-indiana",
+      "slug": "palha-indiana",
+      "name": "Palha indiana",
+      "family": "FIBRA_VEGETAL",
+      "source_labels": [
+        "Palha indiana"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/sala-estar/sala-estar-marcenaria-palha-residencial-118/conteudo-sala-estar-marcenaria-palha-residencial-118.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I118"
+      ],
+      "media_ids": [
+        "FR-M-11593EB013F99BDE",
+        "FR-M-DAD7A7434C231554"
+      ],
+      "proposed_route": "/materiais/palha-indiana"
+    },
+    {
+      "material_id": "nogueira-fume",
+      "slug": "nogueira-fume",
+      "name": "Nogueira fumê",
+      "family": "MADEIRA",
+      "source_labels": [
+        "Nogueira fumê"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/sala-estar/sala-estar-marcenaria-taj-mahal-residencial-107/conteudo-sala-estar-marcenaria-taj-mahal-residencial-107.md",
+        "reels_design_organized/ambientes/sala-estar/sala-estar-painel-black-fusion-residencial-116/conteudo-sala-estar-painel-black-fusion-residencial-116.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I116",
+        "FR-I107"
+      ],
+      "media_ids": [
+        "FR-M-1E89219EB7D0A531",
+        "FR-M-A765E32AC633C849",
+        "FR-M-B5EEC432F623DCDF",
+        "FR-M-CAD07278FFE31694"
+      ],
+      "proposed_route": "/materiais/nogueira-fume"
+    },
+    {
+      "material_id": "black-fusion",
+      "slug": "black-fusion",
+      "name": "Black Fusion",
+      "family": "SUPERFICIE_MINERAL",
+      "source_labels": [
+        "Black Fusion"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/sala-estar/sala-estar-painel-black-fusion-residencial-116/conteudo-sala-estar-painel-black-fusion-residencial-116.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I116"
+      ],
+      "media_ids": [
+        "FR-M-1E89219EB7D0A531",
+        "FR-M-B5EEC432F623DCDF"
+      ],
+      "proposed_route": "/materiais/black-fusion"
+    },
+    {
+      "material_id": "boucle-avela",
+      "slug": "boucle-avela",
+      "name": "Bouclé avelã",
+      "family": "TEXTIL",
+      "source_labels": [
+        "Bouclé avelã"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/sala-estar/sala-estar-revestimento-travertino-residencial-126/conteudo-sala-estar-revestimento-travertino-residencial-126.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I126"
+      ],
+      "media_ids": [
+        "FR-M-102719814FBBBA41",
+        "FR-M-A4AA6D26829AC6A0"
+      ],
+      "proposed_route": "/materiais/boucle-avela"
+    },
+    {
+      "material_id": "azul-petroleo",
+      "slug": "azul-petroleo",
+      "name": "Azul petróleo",
+      "family": "ACABAMENTO_CROMATICO",
+      "source_labels": [
+        "Azul petróleo"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/sala-gamer/sala-gamer-automacao-azul-petroleo-residencial-119/conteudo-sala-gamer-automacao-azul-petroleo-residencial-119.md",
+        "reels_design_organized/ambientes/sala-gamer/sala-gamer-automacao-grafite-residencial-128/conteudo-sala-gamer-automacao-grafite-residencial-128.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I128",
+        "FR-I119"
+      ],
+      "media_ids": [
+        "FR-M-4F4C99EE43808044",
+        "FR-M-5296B598ACC770B4",
+        "FR-M-75A3EABE0177F947",
+        "FR-M-B3AD907DA59F5BBB"
+      ],
+      "proposed_route": "/materiais/azul-petroleo"
+    },
+    {
+      "material_id": "ripado-grafite",
+      "slug": "ripado-grafite",
+      "name": "Ripado grafite",
+      "family": "ACABAMENTO_CROMATICO",
+      "source_labels": [
+        "Ripado grafite"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/sala-gamer/sala-gamer-automacao-azul-petroleo-residencial-119/conteudo-sala-gamer-automacao-azul-petroleo-residencial-119.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I119"
+      ],
+      "media_ids": [
+        "FR-M-5296B598ACC770B4",
+        "FR-M-75A3EABE0177F947"
+      ],
+      "proposed_route": "/materiais/ripado-grafite"
+    },
+    {
+      "material_id": "grafite-soft-touch",
+      "slug": "grafite-soft-touch",
+      "name": "Grafite soft-touch",
+      "family": "ACABAMENTO_CROMATICO",
+      "source_labels": [
+        "Grafite soft-touch"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/sala-gamer/sala-gamer-automacao-grafite-residencial-109/conteudo-sala-gamer-automacao-grafite-residencial-109.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I109"
+      ],
+      "media_ids": [
+        "FR-M-3F7186AA492D142A",
+        "FR-M-D5D33C39165224D2"
+      ],
+      "proposed_route": "/materiais/grafite-soft-touch"
+    },
+    {
+      "material_id": "led",
+      "slug": "led",
+      "name": "LED",
+      "family": "ILUMINACAO",
+      "source_labels": [
+        "LED"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/sala-gamer/sala-gamer-automacao-grafite-residencial-109/conteudo-sala-gamer-automacao-grafite-residencial-109.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_RIPADO_DEPOIS_REPRESENTADO_ILUSTRACAO_M004_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_TETO_COZINHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M040_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_ILHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M063_MASTER.md",
+        "IMAGENS-CODEX/MANIFESTO.csv",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_RIPADO_DEPOIS_REPRESENTADO_ILUSTRACAO_M126_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_TORRE_QUENTE_DEPOIS_REPRESENTADO_ILUSTRACAO_M_e4b37ac18d_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_TETO_COZINHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_b0c4a0d6af_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_RIPADO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_8634c39bcf_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_INT_INTEGRACAO_PROJETO_3D_ILUSTRACAO_M_e3f45a71e3_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_TETO_COZINHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_9313fb1327_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_LAV_LAVANDERIA_DEPOIS_REPRESENTADO_ILUSTRACAO_M012_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_LAV_LAVANDERIA_DEPOIS_REPRESENTADO_ILUSTRACAO_M037_MASTER.md",
+        "docs/site-refactor/media-context/FR_COZ_DIR_TETO_COZINHA_PROJETO_3D_ILUSTRACAO_M022_MASTER.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-C001",
+        "FR-I109"
+      ],
+      "media_ids": [
+        "FR-M-10A3D7A3F6757596",
+        "FR-M-17AFD9ED8677E257",
+        "FR-M-1E0BBD778EA37DC6",
+        "FR-M-31180D4C47247154",
+        "FR-M-3F7186AA492D142A",
+        "FR-M-5AFCBC450A7188A6",
+        "FR-M-60F4A0C110CB40F1",
+        "FR-M-8634C39BCF47DB0C",
+        "FR-M-8C6CD031AF8654B3",
+        "FR-M-9313FB13273C5711",
+        "FR-M-A88A9F59C3D6FE95",
+        "FR-M-B0C4A0D6AF236DC2",
+        "FR-M-D5D33C39165224D2",
+        "FR-M-E3F45A71E307B2CB",
+        "FR-M-E4B37AC18D80C473",
+        "FR-M-ED27D28EE6493869",
+        "FR-M-F48E737A207C219A"
+      ],
+      "proposed_route": "/materiais/led"
+    },
+    {
+      "material_id": "grafite-acetinado",
+      "slug": "grafite-acetinado",
+      "name": "Grafite acetinado",
+      "family": "ACABAMENTO_CROMATICO",
+      "source_labels": [
+        "Grafite acetinado"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/sala-gamer/sala-gamer-automacao-grafite-residencial-128/conteudo-sala-gamer-automacao-grafite-residencial-128.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I128"
+      ],
+      "media_ids": [
+        "FR-M-4F4C99EE43808044",
+        "FR-M-B3AD907DA59F5BBB"
+      ],
+      "proposed_route": "/materiais/grafite-acetinado"
+    },
+    {
+      "material_id": "metal-champagne",
+      "slug": "metal-champagne",
+      "name": "Metal champagne",
+      "family": "METAL",
+      "source_labels": [
+        "Metal champagne"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/sala-jantar/sala-jantar-mesa-onix-mel-residencial-111/conteudo-sala-jantar-mesa-onix-mel-residencial-111.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I111"
+      ],
+      "media_ids": [
+        "FR-M-B6898A912D180F83",
+        "FR-M-FD82D004C5402E13"
+      ],
+      "proposed_route": "/materiais/metal-champagne"
+    },
+    {
+      "material_id": "verde-musgo",
+      "slug": "verde-musgo",
+      "name": "Verde musgo",
+      "family": "ACABAMENTO_CROMATICO",
+      "source_labels": [
+        "Verde musgo"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/sala-jantar/sala-jantar-mesa-travertino-residencial-123/conteudo-sala-jantar-mesa-travertino-residencial-123.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I123"
+      ],
+      "media_ids": [
+        "FR-M-0E82A04AF7A51964",
+        "FR-M-C64ED2BC9ACF0A69"
+      ],
+      "proposed_route": "/materiais/verde-musgo"
+    },
+    {
+      "material_id": "marmorino-grafite",
+      "slug": "marmorino-grafite",
+      "name": "Marmorino grafite",
+      "family": "REVESTIMENTO",
+      "source_labels": [
+        "Marmorino grafite"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/sala-jantar/sala-jantar-revestimento-marmorino-residencial-145/conteudo-sala-jantar-revestimento-marmorino-residencial-145.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I145"
+      ],
+      "media_ids": [
+        "FR-M-1B189C326529AB4A",
+        "FR-M-A3E97FD89DCB98EC"
+      ],
+      "proposed_route": "/materiais/marmorino-grafite"
+    },
+    {
+      "material_id": "eucalipto-fume",
+      "slug": "eucalipto-fume",
+      "name": "Eucalipto fumê",
+      "family": "MADEIRA",
+      "source_labels": [
+        "Eucalipto fumê"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/sala-jantar/sala-jantar-revestimento-marmorino-residencial-145/conteudo-sala-jantar-revestimento-marmorino-residencial-145.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I145"
+      ],
+      "media_ids": [
+        "FR-M-1B189C326529AB4A",
+        "FR-M-A3E97FD89DCB98EC"
+      ],
+      "proposed_route": "/materiais/eucalipto-fume"
+    },
+    {
+      "material_id": "calcario-areia",
+      "slug": "calcario-areia",
+      "name": "Calcário areia",
+      "family": "SUPERFICIE_MINERAL",
+      "source_labels": [
+        "Calcário areia"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/suite/suite-marcenaria-calcario-residencial-115/conteudo-suite-marcenaria-calcario-residencial-115.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I115"
+      ],
+      "media_ids": [
+        "FR-M-8477FB1BE0B0C253",
+        "FR-M-96B1F9605BEFC3C2"
+      ],
+      "proposed_route": "/materiais/calcario-areia"
+    },
+    {
+      "material_id": "limestone-areia",
+      "slug": "limestone-areia",
+      "name": "Limestone areia",
+      "family": "SUPERFICIE_MINERAL",
+      "source_labels": [
+        "Limestone areia"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/suite/suite-marcenaria-limestone-residencial-105/conteudo-suite-marcenaria-limestone-residencial-105.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I105"
+      ],
+      "media_ids": [
+        "FR-M-33E05A9B4D23EB8A",
+        "FR-M-FA51CBA2D7AD3D6D"
+      ],
+      "proposed_route": "/materiais/limestone-areia"
+    },
+    {
+      "material_id": "microcimento-areia",
+      "slug": "microcimento-areia",
+      "name": "Microcimento areia",
+      "family": "REVESTIMENTO",
+      "source_labels": [
+        "Microcimento areia"
+      ],
+      "evidence_refs": [
+        "reels_design_organized/ambientes/suite/suite-marcenaria-microcimento-residencial-125/conteudo-suite-marcenaria-microcimento-residencial-125.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-I125"
+      ],
+      "media_ids": [
+        "FR-M-BD66F74EA142A008",
+        "FR-M-FED6FADB891BB1AB"
+      ],
+      "proposed_route": "/materiais/microcimento-areia"
+    },
+    {
+      "material_id": "acabamento-amadeirado",
+      "slug": "acabamento-amadeirado",
+      "name": "Acabamento amadeirado",
+      "family": "MADEIRA",
+      "source_labels": [
+        "Acabamento amadeirado"
+      ],
+      "evidence_refs": [
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_RIPADO_DEPOIS_REPRESENTADO_ILUSTRACAO_M004_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_TETO_COZINHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M040_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_RIPADO_PROJETO_3D_ILUSTRACAO_M043_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_ILHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M045_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_ILHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M063_MASTER.md",
+        "IMAGENS-CODEX/MANIFESTO.csv",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_ILHA_PROJETO_3D_ILUSTRACAO_M066_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_RIPADO_DEPOIS_REPRESENTADO_ILUSTRACAO_M068_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_RIPADO_DEPOIS_REPRESENTADO_ILUSTRACAO_M126_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_TORRE_QUENTE_DEPOIS_REPRESENTADO_ILUSTRACAO_M_e4b37ac18d_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_ILHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_f4512475bc_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_RIPADO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_f9abaacdbe_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_RIPADO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_8634c39bcf_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_ILHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_39e83ae3cd_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_INT_INTEGRACAO_PROJETO_3D_ILUSTRACAO_M_e3f45a71e3_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_TORRE_QUENTE_DEPOIS_REPRESENTADO_ILUSTRACAO_M_78d797da36_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_ESQ_BANCADA_INTEGRADA_DEPOIS_REPRESENTADO_ILUSTRACAO_M035_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_ESQ_AEREOS_DEPOIS_REPRESENTADO_ILUSTRACAO_M101_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_ESQ_AEREOS_DEPOIS_REPRESENTADO_ILUSTRACAO_M102_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_INT_ESTANTE_TRANSICAO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_6b28e6add2_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_INT_ESTANTE_TRANSICAO_PROJETO_3D_ILUSTRACAO_M_3fe2cb429d_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_ESQ_GELADEIRA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_0c3916ba68_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_ESQ_AEREOS_PROJETO_3D_ILUSTRACAO_M_134fab7c78_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_TETO_COZINHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_9313fb1327_MASTER.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-C001"
+      ],
+      "media_ids": [
+        "FR-M-09B62863B656A8A6",
+        "FR-M-0C3916BA68FEAEB2",
+        "FR-M-0F1E7B3DB762F8C7",
+        "FR-M-10A3D7A3F6757596",
+        "FR-M-134FAB7C78074791",
+        "FR-M-17AFD9ED8677E257",
+        "FR-M-1E0BBD778EA37DC6",
+        "FR-M-343D0651684027DC",
+        "FR-M-39E83AE3CDB95FAD",
+        "FR-M-3FE2CB429D6C9CFD",
+        "FR-M-60F4A0C110CB40F1",
+        "FR-M-6B28E6ADD278BD6B",
+        "FR-M-78D797DA36E52BEE",
+        "FR-M-8634C39BCF47DB0C",
+        "FR-M-8C633189E65ED5DC",
+        "FR-M-9313FB13273C5711",
+        "FR-M-A3D791E9AA53F5AF",
+        "FR-M-D0CA9C7352C86C81",
+        "FR-M-D102D0D1AFF30145",
+        "FR-M-E3F45A71E307B2CB",
+        "FR-M-E4B37AC18D80C473",
+        "FR-M-F4512475BCC65053",
+        "FR-M-F48E737A207C219A",
+        "FR-M-F9ABAACDBE450F25"
+      ],
+      "proposed_route": "/materiais/acabamento-amadeirado"
+    },
+    {
+      "material_id": "quartzo-calacatta",
+      "slug": "quartzo-calacatta",
+      "name": "Quartzo Calacatta",
+      "family": "SUPERFICIE_MINERAL",
+      "source_labels": [
+        "Quartzo Calacatta"
+      ],
+      "evidence_refs": [
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_ILHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M005_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_ILHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M045_MASTER.md",
+        "IMAGENS-CODEX/MANIFESTO.csv",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_ILHA_PROJETO_3D_ILUSTRACAO_M061_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_ILHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M063_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_ILHA_PROJETO_3D_ILUSTRACAO_M066_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_ILHA_PROJETO_3D_ILUSTRACAO_M160_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_FRONTAO_DIREITO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_8b1be5288e_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_FRONTAO_DIREITO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_45222b69bb_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_INT_INTEGRACAO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_986cf34222_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_INT_INTEGRACAO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_39e6e58ac4_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_INT_INTEGRACAO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_2e9a1d3645_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_INT_INTEGRACAO_PROJETO_3D_ILUSTRACAO_M_baca27c082_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_ILHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_f4512475bc_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_INT_INTEGRACAO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_877c8391e5_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_INT_INTEGRACAO_PROJETO_3D_ILUSTRACAO_M_7df3e185c2_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_FRONTAO_DIREITO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_a008a94127_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_FRONTAO_DIREITO_PROJETO_3D_ILUSTRACAO_M_34d6041412_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_ILHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_39e83ae3cd_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_ILHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_aaf8fc2000_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_FRONTAO_DIREITO_PROJETO_3D_ILUSTRACAO_M_4b216c7e0b_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_INT_INTEGRACAO_PROJETO_3D_ILUSTRACAO_M_e3f45a71e3_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_INT_INTEGRACAO_PROJETO_3D_ILUSTRACAO_M_cbe9707801_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_INT_INTEGRACAO_PROJETO_3D_ILUSTRACAO_M_9ef5cf0808_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_ILHA_PROJETO_3D_ILUSTRACAO_M_55a2676b5d_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_FRONTAO_DIREITO_PROJETO_3D_ILUSTRACAO_M_c6eb8354c7_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_ESQ_BANCADA_INTEGRADA_DEPOIS_REPRESENTADO_ILUSTRACAO_M011_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_ESQ_BANCADA_INTEGRADA_PROJETO_3D_ILUSTRACAO_M013_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_ESQ_BANCADA_INTEGRADA_DEPOIS_REPRESENTADO_ILUSTRACAO_M018_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_ESQ_BANCADA_SOLO_DEPOIS_REPRESENTADO_ILUSTRACAO_M029_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_ESQ_BANCADA_INTEGRADA_DEPOIS_REPRESENTADO_ILUSTRACAO_M035_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_ESQ_KOKAY_DEPOIS_REPRESENTADO_ILUSTRACAO_M036_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_ESQ_BANCADA_SOLO_DEPOIS_REPRESENTADO_ILUSTRACAO_M094_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_ESQ_BANCADA_INTEGRADA_DEPOIS_REPRESENTADO_ILUSTRACAO_M122_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_ESQ_RECORTE_LIXEIRA_DEPOIS_REPRESENTADO_ILUSTRACAO_M128_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_ESQ_BANCADA_SOLO_DEPOIS_REPRESENTADO_ILUSTRACAO_M186_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_ESQ_KOKAY_PROJETO_3D_ILUSTRACAO_M_05eb01d897_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_ESQ_BANCADA_INTEGRADA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_1f5bb38a40_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_INT_INTEGRACAO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_32499ad2d3_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_INT_INTEGRACAO_PROJETO_3D_ILUSTRACAO_M_86059cdf6d_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_INT_INTEGRACAO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_4da90c1f3d_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_ESQ_BANCADA_INTEGRADA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_ee74ab3ef2_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_ESQ_KOKAY_DEPOIS_REPRESENTADO_ILUSTRACAO_M_704cae5d35_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_ESQ_KOKAY_PROJETO_3D_ILUSTRACAO_M_e855f80e25_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_ESQ_BANCADA_SOLO_PROJETO_3D_ILUSTRACAO_M_66df774c0e_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_ESQ_KOKAY_PROJETO_3D_ILUSTRACAO_M_9c5025f2a1_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_ESQ_BANCADA_INTEGRADA_PROJETO_3D_ILUSTRACAO_M_2dd45b193b_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_LAV_LAVANDERIA_DEPOIS_REPRESENTADO_ILUSTRACAO_M008_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_LAV_LAVANDERIA_DEPOIS_REPRESENTADO_ILUSTRACAO_M012_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_LAV_LAVANDERIA_DEPOIS_REPRESENTADO_ILUSTRACAO_M024_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_LAV_LAVANDERIA_DEPOIS_REPRESENTADO_ILUSTRACAO_M037_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_LAV_LAVANDERIA_PROJETO_3D_ILUSTRACAO_M047_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_LAV_LAVANDERIA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_ad9f695aa3_MASTER.md",
+        "docs/site-refactor/media-context/FR_COZ_DIR_ILHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M020_MASTER.md",
+        "docs/site-refactor/media-context/FR_COZ_ESQ_BANCADA_INTEGRADA_PROJETO_3D_ILUSTRACAO_M025_MASTER.md",
+        "docs/site-refactor/media-context/FR_COZ_ESQ_BANCADA_INTEGRADA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_b239e59121_MASTER.md",
+        "docs/site-refactor/media-context/FR_LAV_BANCADA_JANELA_ILUSTRACAO_M047_PANEL_MASTER.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-C001"
+      ],
+      "media_ids": [
+        "FR-M-05EB01D8976517E1",
+        "FR-M-09B62863B656A8A6",
+        "FR-M-15E6787FB27EEAE9",
+        "FR-M-1ACE6819D27F62F7",
+        "FR-M-1E0BBD778EA37DC6",
+        "FR-M-1F5BB38A4070E00D",
+        "FR-M-26226004DDB43CBD",
+        "FR-M-2DD45B193B9D9702",
+        "FR-M-2E9A1D36454418AE",
+        "FR-M-2F50725789C0E791",
+        "FR-M-31180D4C47247154",
+        "FR-M-32499AD2D3DD1093",
+        "FR-M-34D6041412BDEF54",
+        "FR-M-37277556C74B2EFD",
+        "FR-M-39E6E58AC45362C6",
+        "FR-M-39E83AE3CDB95FAD",
+        "FR-M-3DDA9463C4F31C07",
+        "FR-M-3F4E92FBE0C837D1",
+        "FR-M-437BC843BB5251E5",
+        "FR-M-44C59154F0F9D77F",
+        "FR-M-45222B69BBC5B8EE",
+        "FR-M-4B216C7E0B01FE5C",
+        "FR-M-4DA90C1F3D26FC81",
+        "FR-M-519B3AFD4826065F",
+        "FR-M-55A2676B5DF88A57",
+        "FR-M-60C773787F71530B",
+        "FR-M-66DF774C0E8C74DB",
+        "FR-M-6A31D21C884E6892",
+        "FR-M-704CAE5D352263D3",
+        "FR-M-7DF3E185C2754CFA",
+        "FR-M-80A427276CEF2366",
+        "FR-M-85813FC193F39D38",
+        "FR-M-86059CDF6D75169C",
+        "FR-M-877C8391E5A81E23",
+        "FR-M-885465571AC43045",
+        "FR-M-8B1BE5288E9A1455",
+        "FR-M-8C633189E65ED5DC",
+        "FR-M-986CF342224E81F1",
+        "FR-M-9C5025F2A1EC77F0",
+        "FR-M-9EF5CF080814F304",
+        "FR-M-A008A941270433B0",
+        "FR-M-A4BD44BA2B5CB46A",
+        "FR-M-A88A9F59C3D6FE95",
+        "FR-M-AAF8FC200021E775",
+        "FR-M-AD9F695AA3938F46",
+        "FR-M-B239E5912188239C",
+        "FR-M-BACA27C082382836",
+        "FR-M-C4D0CE23C6DCCE77",
+        "FR-M-C6EB8354C773E8BC",
+        "FR-M-C9098D450C5629A5",
+        "FR-M-CBE97078012F15B9",
+        "FR-M-D0CA9C7352C86C81",
+        "FR-M-E3F45A71E307B2CB",
+        "FR-M-E855F80E2529B38B",
+        "FR-M-EE74AB3EF2BD65E3",
+        "FR-M-F4512475BCC65053",
+        "FR-M-F95547B93191E812",
+        "FR-M-F980AB5BF787B158"
+      ],
+      "proposed_route": "/materiais/quartzo-calacatta"
+    },
+    {
+      "material_id": "acabamento-cinza",
+      "slug": "acabamento-cinza",
+      "name": "Acabamento cinza",
+      "family": "UNKNOWN",
+      "source_labels": [
+        "Acabamento cinza"
+      ],
+      "evidence_refs": [
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_ILHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M005_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_TETO_COZINHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M040_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_FRONTAO_DIREITO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_8b1be5288e_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_FRONTAO_DIREITO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_45222b69bb_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_TORRE_QUENTE_DEPOIS_REPRESENTADO_ILUSTRACAO_M_78d797da36_MASTER.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-C001"
+      ],
+      "media_ids": [
+        "FR-M-45222B69BBC5B8EE",
+        "FR-M-78D797DA36E52BEE",
+        "FR-M-8B1BE5288E9A1455",
+        "FR-M-F48E737A207C219A",
+        "FR-M-F95547B93191E812"
+      ],
+      "proposed_route": "/materiais/acabamento-cinza"
+    },
+    {
+      "material_id": "mdp-cinza",
+      "slug": "mdp-cinza",
+      "name": "MDP cinza",
+      "family": "PAINEL_DERIVADO_DE_MADEIRA",
+      "source_labels": [
+        "MDP cinza"
+      ],
+      "evidence_refs": [
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_FRONTAO_DIREITO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_8b1be5288e_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_FRONTAO_DIREITO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_45222b69bb_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_DIR_FRONTAO_DIREITO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_a008a94127_MASTER.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-C001"
+      ],
+      "media_ids": [
+        "FR-M-45222B69BBC5B8EE",
+        "FR-M-8B1BE5288E9A1455",
+        "FR-M-A008A941270433B0"
+      ],
+      "proposed_route": "/materiais/mdp-cinza"
+    },
+    {
+      "material_id": "vidro-escuro",
+      "slug": "vidro-escuro",
+      "name": "Vidro escuro",
+      "family": "VIDRO",
+      "source_labels": [
+        "Vidro escuro"
+      ],
+      "evidence_refs": [
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_ESQ_AEREOS_DEPOIS_REPRESENTADO_ILUSTRACAO_M101_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_ESQ_AEREOS_PROJETO_3D_ILUSTRACAO_M_134fab7c78_MASTER.md",
+        "IMAGENS-CODEX/leiamecodex/FR_COZ_ESQ_AEREOS_PROJETO_3D_ILUSTRACAO_M_f63a72fefd_MASTER.md"
+      ],
+      "verification": "EDITORIAL_OR_VISUAL_IDENTIFICATION_ONLY",
+      "physical_product_verified": false,
+      "supplier": null,
+      "product_code": null,
+      "technical_properties": null,
+      "project_ids": [
+        "FR-C001"
+      ],
+      "media_ids": [
+        "FR-M-134FAB7C78074791",
+        "FR-M-D102D0D1AFF30145",
+        "FR-M-F63A72FEFD63CA8B"
+      ],
+      "proposed_route": "/materiais/vidro-escuro"
+    }
+  ]
+}
