@@ -29,11 +29,30 @@ test('grafo estruturado é válido e usa 16 IDs reais sem avaliações fictícia
   assert.ok(nodes.some(node => node['@type'] === 'WebSite'));
   assert.ok(nodes.some(node => node['@type'] === 'BreadcrumbList'));
   const localBusiness = nodes.find(node => Array.isArray(node['@type']) && node['@type'].includes('LocalBusiness'));
-  assert.equal(localBusiness.alternateName, 'Franco Romeu — Reformas, projetos sob medida e Design');
+  assert.equal(localBusiness.name, 'Franco Romeu');
+  assert.deepEqual(localBusiness.alternateName, ['FR', 'ꟻR', 'Franco Romeu — Arte & Engenharia']);
   assert.deepEqual(localBusiness.sameAs, [
     'https://www.instagram.com/francoromeu.fr/',
-    'https://www.linkedin.com/in/franco-romeu-fr/'
+    'https://www.facebook.com/FrancoRomeuRF',
+    'https://www.linkedin.com/in/franco-romeu-fr/',
+    'https://www.youtube.com/@FRANCOROMEU',
+    'https://br.pinterest.com/francoromeu_fr/',
+    'https://github.com/Francoromeu-fr'
   ]);
+  // Esta consolidação não remove informações operacionais existentes da main.
+  assert.equal(localBusiness.telephone, '+55-11-99002-1603');
+  assert.equal(localBusiness.email, 'romeudifranco@gmail.com');
+  assert.equal(localBusiness.address.addressLocality, 'São Paulo');
+  assert.equal(localBusiness.address.addressRegion, 'SP');
+  assert.deepEqual(localBusiness.geo, { '@type': 'GeoCoordinates', latitude: -23.5505, longitude: -46.6333 });
+  assert.deepEqual(localBusiness.areaServed.map(city => city.name), ['São Paulo', 'Guarulhos', 'Osasco', 'Barueri', 'Santo André', 'São Bernardo do Campo']);
+  assert.ok(localBusiness.openingHoursSpecification.length > 0);
+  assert.ok(localBusiness.paymentAccepted.length > 0);
+  assert.ok(localBusiness.priceRange);
+  const website = nodes.find(node => node['@type'] === 'WebSite');
+  assert.equal(website.potentialAction?.['@type'], 'SearchAction');
+  assert.ok(doc.querySelector('meta[name="google-site-verification"]'));
+
   assert.equal(nodes.find(node => node['@type'] === 'FAQPage').mainEntity.length, 5);
   assert.equal(html.includes('aggregateRating'), false);
 });

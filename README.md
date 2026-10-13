@@ -83,6 +83,8 @@ Uma administração pública futura exige backend, sessão e autorização no se
 - `AGENTS.md` — regras de evolução e invariantes.
 - `CHANGELOG.md` — histórico técnico.
 - `docs/SEARCH_CONTROL_ENGINEERING.md` — engenharia de busca.
+- `docs/DIGITAL_STRATEGY_AUDIT_2026-10-13.md` — consolidação das duas auditorias autorais, com proveniência, matriz de preservação e prioridades.
+- `docs/audits/estrategia-digital-2026-10-13-original.md` e `docs/audits/estrategia-digital-2026-10-13-v2.md` — versões integrais preservadas sem reescrita.
 - `docs/REGISTRO_MESTRE_FONTE_CANONICA.md` — rastreabilidade da base.
 - `docs/fr-etapa16/` — brief, conteúdo, CRO ético e regressões da Etapa 16.
 - `docs/franco-romeu-visual-v2/` — biblioteca e QA visual.
