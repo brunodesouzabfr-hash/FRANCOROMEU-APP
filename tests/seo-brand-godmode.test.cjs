@@ -75,11 +75,21 @@ test('unifica domínio, metadados sociais, JSON-LD e roteador SPA', () => {
   const localBusiness = graph.find(node => Array.isArray(node['@type']) && node['@type'].includes('LocalBusiness'));
   assert.equal(localBusiness.logo.url, `${origin}/assets/brand/franco-romeu-logo-remaster-800.webp`);
   assert.equal(localBusiness.image, `${origin}/assets/social/franco-romeu-og-site-1200x630.jpg`);
-  assert.equal(localBusiness.alternateName, 'Franco Romeu — Reformas, projetos sob medida e Design');
+  assert.deepEqual(localBusiness.alternateName, ['FR', 'ꟻR', 'Franco Romeu — Arte & Engenharia']);
   assert.deepEqual(localBusiness.sameAs, [
-    'https://www.instagram.com/francoromeu.fr/',
-    'https://www.linkedin.com/in/franco-romeu-fr/'
+    "https://www.instagram.com/francoromeu.fr/",
+    "https://www.facebook.com/FrancoRomeuRF",
+    "https://www.linkedin.com/in/franco-romeu-fr/",
+    "https://www.youtube.com/@FRANCOROMEU",
+    "https://br.pinterest.com/francoromeu_fr/",
+    "https://github.com/Francoromeu-fr"
   ]);
+  for (const field of ['telephone','email','address','geo','openingHoursSpecification','paymentAccepted','priceRange','areaServed']) {
+    assert.equal(field in localBusiness, false, `campo não confirmado no schema: ${field}`);
+  }
+  const website = graph.find(node => node['@type'] === 'WebSite');
+  assert.ok(website);
+  assert.equal('potentialAction' in website, false);
   assert.match(doc.querySelector('#fr-seo-spa-router').textContent, /origin='https:\/\/www\.francoromeufr\.com\.br'/);
 });
 
