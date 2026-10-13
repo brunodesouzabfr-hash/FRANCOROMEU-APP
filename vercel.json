@@ -5,17 +5,35 @@
     {
       "source": "/:path*",
       "has": [
-        { "type": "host", "value": "francoromeu-app.vercel.app" }
+        {
+          "type": "host",
+          "value": "francoromeu-app.vercel.app"
+        }
       ],
       "destination": "https://www.francoromeufr.com.br/:path*",
       "permanent": true
     }
   ],
   "rewrites": [
-    { "source": "/sobre", "destination": "/index.html" },
-    { "source": "/ambientes", "destination": "/index.html" },
-    { "source": "/projetos-3d", "destination": "/index.html" },
-    { "source": "/portfolio", "destination": "/index.html" },
-    { "source": "/orcamento", "destination": "/index.html" }
+    {
+      "source": "/sobre",
+      "destination": "/"
+    },
+    {
+      "source": "/ambientes",
+      "destination": "/"
+    },
+    {
+      "source": "/projetos-3d",
+      "destination": "/"
+    },
+    {
+      "source": "/portfolio",
+      "destination": "/"
+    },
+    {
+      "source": "/orcamento",
+      "destination": "/"
+    }
   ]
 }
