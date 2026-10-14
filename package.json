@@ -4,7 +4,7 @@
   "private": true,
   "description": "Regressão da Etapa 14 e experiência da Etapa 15 — Materialidade 3D, Arquivo Vivo e Atlas de Ambientes.",
   "scripts": {
-    "test": "node tests/canonical-data.test.js && node tests/fr-stage14-universes.test.cjs && node tests/fr-stage15-materialidade-imersiva.test.cjs && node tests/fr-stage16-experience.test.cjs",
+    "test": "node tests/canonical-data.test.js && node tests/fr-stage14-universes.test.cjs && node tests/fr-stage15-materialidade-imersiva.test.cjs && node tests/fr-stage16-experience.test.cjs && node tests/search-control.test.cjs",
     "check:html": "node scripts/check-html.js",
     "test:stage14": "node tests/fr-stage14-universes.test.cjs",
     "test:stage15": "node tests/fr-stage15-materialidade-imersiva.test.cjs",
