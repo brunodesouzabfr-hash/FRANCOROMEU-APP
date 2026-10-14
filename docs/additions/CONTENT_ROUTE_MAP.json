@@ -1,0 +1,40 @@
+{
+  "schema_version": "fr-additions-routes-2.0.0",
+  "canonical": "https://www.francoromeufr.com.br",
+  "output": "dist",
+  "journal": {
+    "cover": "/projetos/",
+    "indexes": [
+      "/projetos/antes-depois/",
+      "/projetos/estudos-3d/",
+      "/projetos/materiais/",
+      "/projetos/servicos/",
+      "/projetos/ambientes/"
+    ],
+    "project_readings": 109,
+    "before_after_pages": 60,
+    "study_3d_pages": 48,
+    "material_pages": 147,
+    "service_pages": 18,
+    "environment_pages": 24,
+    "migration_map": "docs/additions/LEGACY_PROJECT_ROUTES_MAP.json"
+  },
+  "redirects": {
+    "/jornal": "/projetos/",
+    "/projetos.html": "/projetos/",
+    "/materiais/:slug": "/projetos/materiais/:slug/",
+    "/servicos/:slug": "/projetos/servicos/:slug/",
+    "/ambientes/:slug": "/projetos/ambientes/:slug/"
+  },
+  "reused_routes": [
+    "/",
+    "/sobre",
+    "/ambientes",
+    "/projetos-3d",
+    "/portfolio",
+    "/orcamento",
+    "/projetos/cozinha-lavanderia"
+  ],
+  "release_state": "local_preview_only",
+  "release_note": "O preview local envia X-Robots-Tag noindex. As novas rotas e imagens permanecem noindex/noimageindex ate a liberacao editorial e de direitos registrada no acervo."
+}

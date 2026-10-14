@@ -1,0 +1,1516 @@
+{
+  "interpretation": "Historical missing references are diagnostics, not active manifest asset references.",
+  "case_transport_ledger": [
+    {
+      "ID": "001",
+      "arquivo_no_pack": "IMAGENS/001__exec-e8005786-7334-46a9-8a27-6a3519d3bf3e.png",
+      "origem": "generated_images/exec-e8005786-7334-46a9-8a27-6a3519d3bf3e.png",
+      "sha256": "e0f66fe2643d0ecf12087da72d1bb8896f91b401527605cc8599ec7a95e721c3",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "002",
+      "arquivo_no_pack": "IMAGENS/002__exec-48b999b6-f6a6-4e1b-ac8f-e75bab2391ef.png",
+      "origem": "generated_images/exec-48b999b6-f6a6-4e1b-ac8f-e75bab2391ef.png",
+      "sha256": "b013c026f4b1866472f0500c5e578661b38849a5ccd95f6a4d17f2241ab2b7a3",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "003",
+      "arquivo_no_pack": "IMAGENS/003__exec-56d9381a-d3f9-4a47-84ab-e0b6b9702554.png",
+      "origem": "generated_images/exec-56d9381a-d3f9-4a47-84ab-e0b6b9702554.png",
+      "sha256": "2db84d273708ed44d3afc8e11fa8fe903c9fb681975baaf9691c5480c2cc0bb2",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "004",
+      "arquivo_no_pack": "IMAGENS/004__exec-d05e8127-fa14-436f-99cc-9a2887e1fe6a.png",
+      "origem": "generated_images/exec-d05e8127-fa14-436f-99cc-9a2887e1fe6a.png",
+      "sha256": "10a3d7a3f67575961d94a1800276ede4c185ca5eb31a21b150ad3f93fa508bbe",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "005",
+      "arquivo_no_pack": "IMAGENS/005__exec-d87dfb4f-c474-4d2e-b40b-20ef2cd37b1e.png",
+      "origem": "generated_images/exec-d87dfb4f-c474-4d2e-b40b-20ef2cd37b1e.png",
+      "sha256": "f95547b93191e8129eb0c6e027d79ad89819be9b7527eced89c8e47cbc0b7286",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "006",
+      "arquivo_no_pack": "IMAGENS/006__exec-66c8a5c9-62f6-4f68-953a-c53f6a6fc705.png",
+      "origem": "generated_images/exec-66c8a5c9-62f6-4f68-953a-c53f6a6fc705.png",
+      "sha256": "3694d6635fe93cee867d5fbccbf713e2d3285d4420383f9d851ffd6a497769b1",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "007",
+      "arquivo_no_pack": "IMAGENS/007__exec-5a8d7c1c-7cad-4098-9052-2586c2605f6b.png",
+      "origem": "generated_images/exec-5a8d7c1c-7cad-4098-9052-2586c2605f6b.png",
+      "sha256": "8ea7cb4f36322e486c99cd7b7fb136d65240a916787a100a578381881150737a",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "008",
+      "arquivo_no_pack": "IMAGENS/008__exec-0b39e0bc-cd13-4ed8-86a3-bb83e5aede44.png",
+      "origem": "generated_images/exec-0b39e0bc-cd13-4ed8-86a3-bb83e5aede44.png",
+      "sha256": "85813fc193f39d38750eff4c85cbf9a04163b0cf73859eb3a52a8fc52913eda4",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "009",
+      "arquivo_no_pack": "IMAGENS/009__exec-84e7324f-de6e-40d5-81e5-bdd0a1a536a6.png",
+      "origem": "generated_images/exec-84e7324f-de6e-40d5-81e5-bdd0a1a536a6.png",
+      "sha256": "54c82beac446cbc5df5bd9878c5e92b27d17c928a3db709d545e6acbe2edf6e0",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "010",
+      "arquivo_no_pack": "IMAGENS/010__exec-1c8381ae-fcdd-49f5-99ad-624576766f45.png",
+      "origem": "generated_images/exec-1c8381ae-fcdd-49f5-99ad-624576766f45.png",
+      "sha256": "23aed8d8583a949e9404e8d50165be6e39f50b00aa7487e50d632fc946d529fd",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "011",
+      "arquivo_no_pack": "IMAGENS/011__exec-6f41dcea-75b0-4b6c-a52f-93224f86d6c4.png",
+      "origem": "generated_images/exec-6f41dcea-75b0-4b6c-a52f-93224f86d6c4.png",
+      "sha256": "c4d0ce23c6dcce776b70e6c2597753690ffc844bbf2deae8c4338dbeb5d31d7e",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "012",
+      "arquivo_no_pack": "IMAGENS/012__exec-955ac94f-571c-4ee9-b4db-e7f8b7c40408.png",
+      "origem": "generated_images/exec-955ac94f-571c-4ee9-b4db-e7f8b7c40408.png",
+      "sha256": "31180d4c47247154dadeb4dd4c1b16dd82e82d3dd390d7d03680906e03fd0f0b",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "013",
+      "arquivo_no_pack": "IMAGENS/013__exec-035d4ee0-a13c-407b-9552-5d5ba040d091.png",
+      "origem": "generated_images/exec-035d4ee0-a13c-407b-9552-5d5ba040d091.png",
+      "sha256": "60c773787f71530b03713ea978df38c091d0fd327a65731ddd4ee784f6a9404e",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "014",
+      "arquivo_no_pack": "IMAGENS/014__exec-b72ff5a9-c3e7-474c-8297-a2c31878730f.png",
+      "origem": "generated_images/exec-b72ff5a9-c3e7-474c-8297-a2c31878730f.png",
+      "sha256": "94430c87567aebec38581f149a00b90aee52d81a4e0ae3a95d01ac28c1a3eb5b",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "015",
+      "arquivo_no_pack": "IMAGENS/015__exec-d0d9b629-66ac-4dc4-bbf7-889c0c128838.png",
+      "origem": "generated_images/exec-d0d9b629-66ac-4dc4-bbf7-889c0c128838.png",
+      "sha256": "fe6ebfca3ece0739c9c8986c99c1ffaa1cc5ed3db0a415902e38b9a3a4a5c543",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "016",
+      "arquivo_no_pack": "IMAGENS/016__exec-3382010b-dbe1-412b-8940-5fca96f905c2.png",
+      "origem": "generated_images/exec-3382010b-dbe1-412b-8940-5fca96f905c2.png",
+      "sha256": "db09a7fd8edd3ac04a6643c5026207b5b20d8f67d1a5a07ef3850bd27873a24e",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "017",
+      "arquivo_no_pack": "IMAGENS/017__exec-7d0c6622-050b-493e-826f-7180fb9647ec.png",
+      "origem": "generated_images/exec-7d0c6622-050b-493e-826f-7180fb9647ec.png",
+      "sha256": "47f76ecf0640ab019e5b9854c9280d9fe1a77e1b821b0057f02b9a03da9da0e9",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "018",
+      "arquivo_no_pack": "IMAGENS/018__exec-ecbe877f-b081-4c36-94dd-e7d477c27e96.png",
+      "origem": "generated_images/exec-ecbe877f-b081-4c36-94dd-e7d477c27e96.png",
+      "sha256": "519b3afd4826065f859a3f476fa54004f58115a16e8c4824bf08a505f0cb9c9e",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "019",
+      "arquivo_no_pack": "IMAGENS/019__exec-1be4127c-6363-4eed-8d97-68b8fc19a5db.png",
+      "origem": "generated_images/exec-1be4127c-6363-4eed-8d97-68b8fc19a5db.png",
+      "sha256": "6f6d6a95a4e8c2367c50d7750ff8a8c8e21a677a9de1fb7b9edd760a1bda4d60",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "020",
+      "arquivo_no_pack": "IMAGENS/020__exec-753d3e0b-ebc7-41a8-a4fb-70df43458e75.png",
+      "origem": "generated_images/exec-753d3e0b-ebc7-41a8-a4fb-70df43458e75.png",
+      "sha256": "80a427276cef236642098bef4e5eea2810f7558acdca30ba11d1635f05a13a4a",
+      "current_status": "ORIGINAL_ABSENT_APPROVED_REPO_VARIANT_AVAILABLE",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "021",
+      "arquivo_no_pack": "IMAGENS/021__exec-e6c0910a-3674-44ac-9aa8-4b7208b5d876.png",
+      "origem": "generated_images/exec-e6c0910a-3674-44ac-9aa8-4b7208b5d876.png",
+      "sha256": "bb389b3707019bb269b0b561e15760784a050b8c1c160de07c1b00d3c0005e51",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "022",
+      "arquivo_no_pack": "IMAGENS/022__exec-ccdfe40d-ec76-4cc4-a4de-44912478e23a.png",
+      "origem": "generated_images/exec-ccdfe40d-ec76-4cc4-a4de-44912478e23a.png",
+      "sha256": "8c6cd031af8654b388aa915e8f76ac53b1c14815bd01e10737e4196dce6450f8",
+      "current_status": "ORIGINAL_ABSENT_APPROVED_REPO_VARIANT_AVAILABLE",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "023",
+      "arquivo_no_pack": "IMAGENS/023__exec-7f3998d1-f6f0-4f04-ae77-b9ff733a91b7.png",
+      "origem": "generated_images/exec-7f3998d1-f6f0-4f04-ae77-b9ff733a91b7.png",
+      "sha256": "fdb6e220af414d1fbcf7244ea33e6294769b17fdd7eb1c0d395eb90f25ba31de",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "024",
+      "arquivo_no_pack": "IMAGENS/024__exec-0fad86d0-b44c-4021-b8c0-3566d8f8ad67.png",
+      "origem": "generated_images/exec-0fad86d0-b44c-4021-b8c0-3566d8f8ad67.png",
+      "sha256": "2f50725789c0e791eb1d7b59c52aba74bb73607c79d914eb01f4ba071be585a6",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "025",
+      "arquivo_no_pack": "IMAGENS/025__exec-87eec336-8742-43e2-9ece-f82a7590c6ee.png",
+      "origem": "generated_images/exec-87eec336-8742-43e2-9ece-f82a7590c6ee.png",
+      "sha256": "6a31d21c884e68924afdcf5ee2407e448ef6f74aaad961ef93d144898885a4d5",
+      "current_status": "ORIGINAL_ABSENT_APPROVED_REPO_VARIANT_AVAILABLE",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "026",
+      "arquivo_no_pack": "IMAGENS/026__exec-9e32eb04-8cca-474a-979a-041dedcecc07.png",
+      "origem": "generated_images/exec-9e32eb04-8cca-474a-979a-041dedcecc07.png",
+      "sha256": "5959d310c494536358ebbe7a8c92cff0e2af4fa4bb39d95cc6be7328da20e6e1",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "027",
+      "arquivo_no_pack": "IMAGENS/027__exec-b7b5728a-601f-4a9b-bab4-d6ddd6f991bc.png",
+      "origem": "generated_images/exec-b7b5728a-601f-4a9b-bab4-d6ddd6f991bc.png",
+      "sha256": "fef2552a9b9435f9c5de37c359e3e82ed32957edcd332cf5c0234f9f98f17e10",
+      "current_status": "ORIGINAL_ABSENT_APPROVED_REPO_VARIANT_AVAILABLE",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "028",
+      "arquivo_no_pack": "IMAGENS/028__exec-fc5938f0-e58b-48c1-bd5f-4b4da04a0df5.png",
+      "origem": "generated_images/exec-fc5938f0-e58b-48c1-bd5f-4b4da04a0df5.png",
+      "sha256": "7885a43cc7de6700d3cbaddda9745d62b725d8703992d7e6368d1d192d23f79f",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "029",
+      "arquivo_no_pack": "IMAGENS/029__exec-169d8e1c-8872-461d-b812-f77cf09c7a47.png",
+      "origem": "generated_images/exec-169d8e1c-8872-461d-b812-f77cf09c7a47.png",
+      "sha256": "c9098d450c5629a52f12e189e08a547c868c299ede27a56d16b5b378f281837f",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "030",
+      "arquivo_no_pack": "IMAGENS/030__exec-fc9003cb-689f-4479-b32b-f9ed9486cc36.png",
+      "origem": "generated_images/exec-fc9003cb-689f-4479-b32b-f9ed9486cc36.png",
+      "sha256": "5fbdc555a37866ba758b2f6916ecdf1a14746a4cd627610666a8a6f9c5037897",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "031",
+      "arquivo_no_pack": "IMAGENS/031__exec-d4f7d9ed-dd37-4a28-8632-c91d50f6de9d.png",
+      "origem": "generated_images/exec-d4f7d9ed-dd37-4a28-8632-c91d50f6de9d.png",
+      "sha256": "abba6582af332bf12d5ee5d792304a967a8def6496d3dc9fc675395b7f0016e3",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "032",
+      "arquivo_no_pack": "IMAGENS/032__exec-f181b454-5339-4d47-8b6d-acfc278b7f85.png",
+      "origem": "generated_images/exec-f181b454-5339-4d47-8b6d-acfc278b7f85.png",
+      "sha256": "c6a8c89bd6f372cdcd948b483cc16947f36bdf1f09f9f39f21c82d673552e74a",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "033",
+      "arquivo_no_pack": "IMAGENS/033__exec-90945907-0495-4f53-a8b3-82ded2b2f40f.png",
+      "origem": "generated_images/exec-90945907-0495-4f53-a8b3-82ded2b2f40f.png",
+      "sha256": "ad9f695aa3938f469c5ee8516704c5ea51f9df6c88562a84748124f8c764a045",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "034",
+      "arquivo_no_pack": "IMAGENS/034__exec-6d8f0ffe-6541-40ea-9b30-06332e01239d.png",
+      "origem": "generated_images/exec-6d8f0ffe-6541-40ea-9b30-06332e01239d.png",
+      "sha256": "ef4053953097cdb120d4f9e255f948228f4300ec40695a4262af535058408b36",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "035",
+      "arquivo_no_pack": "IMAGENS/035__exec-35230136-d86e-412a-a8a7-93769f6235c9.png",
+      "origem": "generated_images/exec-35230136-d86e-412a-a8a7-93769f6235c9.png",
+      "sha256": "09b62863b656a8a6e511a08567ed11195b6fe318fb1a5ace63424cc6b79524e8",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "036",
+      "arquivo_no_pack": "IMAGENS/036__exec-fa5f948c-6e21-4da5-8c0a-5d1ff3cd3d4f.png",
+      "origem": "generated_images/exec-fa5f948c-6e21-4da5-8c0a-5d1ff3cd3d4f.png",
+      "sha256": "3dda9463c4f31c07c7ddbab91fe2bd8eecb4bc0ffbbf7db68494f30a1272412a",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "037",
+      "arquivo_no_pack": "IMAGENS/037__exec-221b8260-2447-4111-840d-a6a8995d6843.png",
+      "origem": "generated_images/exec-221b8260-2447-4111-840d-a6a8995d6843.png",
+      "sha256": "a88a9f59c3d6fe95611a28ed40a3344f9afb4863a8b3320e07893c061a346a48",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "038",
+      "arquivo_no_pack": "IMAGENS/038__exec-1856c518-ccf7-41d2-962d-8e93d2f52dda.png",
+      "origem": "generated_images/exec-1856c518-ccf7-41d2-962d-8e93d2f52dda.png",
+      "sha256": "6d4491050adabf420fa48e6b3a091cfa371a56b1b178f35c49ccfa3cf3a8aa54",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "039",
+      "arquivo_no_pack": "IMAGENS/039__exec-3ca4af02-9f11-445e-a340-eea5e9ce0085.png",
+      "origem": "generated_images/exec-3ca4af02-9f11-445e-a340-eea5e9ce0085.png",
+      "sha256": "3e500bc6a2bfd03bc777d014c18cb4bd3f1055f3265474e115c6217eb9eb1145",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "040",
+      "arquivo_no_pack": "IMAGENS/040__exec-14e461ad-e91e-4dc5-bd68-ec1375f12029.png",
+      "origem": "generated_images/exec-14e461ad-e91e-4dc5-bd68-ec1375f12029.png",
+      "sha256": "f48e737a207c219a672756cc9449f89bba8ba3aebd60e89a536ed0d297f281b5",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "041",
+      "arquivo_no_pack": "IMAGENS/041__exec-229a95dd-4b2a-4235-b8f0-3897423a2585.png",
+      "origem": "generated_images/exec-229a95dd-4b2a-4235-b8f0-3897423a2585.png",
+      "sha256": "5806d949cbf67ad43a2b2bb5cf226986b0165913e7507cceefd95d7834401f3e",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "042",
+      "arquivo_no_pack": "IMAGENS/042__exec-98f43856-fb5a-498e-bf4e-3ccd6edeb64a.png",
+      "origem": "generated_images/exec-98f43856-fb5a-498e-bf4e-3ccd6edeb64a.png",
+      "sha256": "d9f8163c0fc23a8de54924e9976c79c13ff52a7797ad8e612075d30dbaba7caa",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "043",
+      "arquivo_no_pack": "IMAGENS/043__exec-1ad84d93-df43-4660-a1b7-d6bfda67fc61.png",
+      "origem": "generated_images/exec-1ad84d93-df43-4660-a1b7-d6bfda67fc61.png",
+      "sha256": "343d0651684027dcbeabbfc0fae40056d3427bde4c73ea7e5943304b55de9b04",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "044",
+      "arquivo_no_pack": "IMAGENS/044__exec-c4a7fd29-51a8-4d25-aaf9-624eb4f29caa.png",
+      "origem": "generated_images/exec-c4a7fd29-51a8-4d25-aaf9-624eb4f29caa.png",
+      "sha256": "db89983613ca0b9d0f48d3b2e3618b3c2405159d43db712e6a2e06983b338e66",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "045",
+      "arquivo_no_pack": "IMAGENS/045__exec-48309691-99cd-4e71-8441-b60d871fe4a9.png",
+      "origem": "generated_images/exec-48309691-99cd-4e71-8441-b60d871fe4a9.png",
+      "sha256": "8c633189e65ed5dcf007b93563ba2c9e7b418313fbfd9235f3f9fd9e71b2abd4",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "046",
+      "arquivo_no_pack": "IMAGENS/046__FR_PILOT_V2_CAM_MINI_ILHA_01_EXECUTADO_4X5_CANDIDATE.png",
+      "origem": "outputs/fr_pilot_v2/FR_PILOT_V2_CAM_MINI_ILHA_01_EXECUTADO_4X5_CANDIDATE.png",
+      "sha256": "f980ab5bf787b158465c06d1b0d96643df463da73e7ad87879d07d00015c3d87",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "047",
+      "arquivo_no_pack": "IMAGENS/047__FR_PILOT_V2_CAM_HERO_LAVANDERIA_01_EXECUTADO_4X5_CANDIDATE.png",
+      "origem": "outputs/fr_pilot_v2/FR_PILOT_V2_CAM_HERO_LAVANDERIA_01_EXECUTADO_4X5_CANDIDATE.png",
+      "sha256": "fbdfeeba6e2792dac9d30a1432a420300053d2c29fc92fda50101f9e51114d4d",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "048",
+      "arquivo_no_pack": "IMAGENS/048__FR_PILOT_V2_CAM_HERO_COZINHA_01_EXECUTADO_4X5_CANDIDATE.png",
+      "origem": "outputs/fr_pilot_v2/FR_PILOT_V2_CAM_HERO_COZINHA_01_EXECUTADO_4X5_CANDIDATE.png",
+      "sha256": "6e19c213fdc02a83f1a0aaeae28236d0590d7c793cab823f2eaf7c8e0c0e785e",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "049",
+      "arquivo_no_pack": "IMAGENS/049__FR_V2_CAM_RIPADO_45G_FRONTAL_01_EXECUTADO_4X5_CANDIDATE.png",
+      "origem": "outputs/fr_v2_complement_4x5/FR_V2_CAM_RIPADO_45G_FRONTAL_01_EXECUTADO_4X5_CANDIDATE.png",
+      "sha256": "4f9660d3ff5312dc48a20c431b64e5a05222cdd9dad8649e89896d70b663151e",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "050",
+      "arquivo_no_pack": "IMAGENS/050__FR_V2_CAM_LAVANDERIA_CLOSE_BANCADA_01_EXECUTADO_4X5_CANDIDATE.png",
+      "origem": "outputs/fr_v2_complement_4x5/FR_V2_CAM_LAVANDERIA_CLOSE_BANCADA_01_EXECUTADO_4X5_CANDIDATE.png",
+      "sha256": "fd64aad96c29719cab73f5e98008e8a5d15f06fd46726ca60401619574926d10",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "051",
+      "arquivo_no_pack": "IMAGENS/051__FR_V2_CAM_RIPADO_CLOSE_01_EXECUTADO_4X5_CANDIDATE.png",
+      "origem": "outputs/fr_v2_complement_4x5/FR_V2_CAM_RIPADO_CLOSE_01_EXECUTADO_4X5_CANDIDATE.png",
+      "sha256": "b05e43f097538cf55a7d3d9ad3f9a1ef7cbc19fbe30a88c32758d20da9e42ce9",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "052",
+      "arquivo_no_pack": "IMAGENS/052__FR_V2_CAM_COZINHA_CUBA_CLOSE_01_EXECUTADO_4X5_CANDIDATE.png",
+      "origem": "outputs/fr_v2_complement_4x5/FR_V2_CAM_COZINHA_CUBA_CLOSE_01_EXECUTADO_4X5_CANDIDATE.png",
+      "sha256": "c932eeefc7d0f6ae6359ef7e3ece86569e0529c2e468338667e09c029d01d405",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "053",
+      "arquivo_no_pack": "IMAGENS/053__FR_V2_CAM_COZINHA_DIREITA_GELADEIRA_45G_01_EXECUTADO_4X5_CANDIDATE.png",
+      "origem": "outputs/fr_v2_complement_4x5/FR_V2_CAM_COZINHA_DIREITA_GELADEIRA_45G_01_EXECUTADO_4X5_CANDIDATE.png",
+      "sha256": "ba8ad79f40ee05fbe837d123d12ac3cf16a10e0ff2e8e8255db6da1657fade48",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "054",
+      "arquivo_no_pack": "IMAGENS/054__FR_V2_CAM_LAVANDERIA_DUPLO_L_CLOSE_01_EXECUTADO_4X5_CANDIDATE.png",
+      "origem": "outputs/fr_v2_complement_4x5/FR_V2_CAM_LAVANDERIA_DUPLO_L_CLOSE_01_EXECUTADO_4X5_CANDIDATE.png",
+      "sha256": "ed27d28ee6493869ec70a9007fe47b608e2e0f1714fedcc1bb334b782bf10ce1",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "055",
+      "arquivo_no_pack": "IMAGENS/055__FR_V2_CAM_COZINHA_AMPLA_INTEGRACAO_01_EXECUTADO_4X5_CANDIDATE.png",
+      "origem": "outputs/fr_v2_complement_4x5/FR_V2_CAM_COZINHA_AMPLA_INTEGRACAO_01_EXECUTADO_4X5_CANDIDATE.png",
+      "sha256": "1327a5fd28e866e9ac26f93651869e62b0d428b89377e1a56aa5e86b33dfa6e1",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "056",
+      "arquivo_no_pack": "IMAGENS/056__FR_G07_CAM01_C_PROJETO_AMPLA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/work_replaced/FR_G07_CAM01_C_PROJETO_AMPLA_v1_CANDIDATE.png",
+      "sha256": "c48e1950174929cfa47168548889af9bc5fca5a5206fa30d17ac32deadad6031",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "057",
+      "arquivo_no_pack": "IMAGENS/057__FR_G11_CAM03_C_PROJETO_FORNO_76L_AIR_FRY_CLEAN_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/work_replaced/FR_G11_CAM03_C_PROJETO_FORNO_76L_AIR_FRY_CLEAN_v1_CANDIDATE.png",
+      "sha256": "084a24ab2583c7795e50a37cde4f6812f3399d89a7fa5248d56f741d7ca77d44",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "058",
+      "arquivo_no_pack": "IMAGENS/058__FR_G11_CAM02_D_EXECUTADO_FAMILY_HUB_RS58_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/work_replaced/FR_G11_CAM02_D_EXECUTADO_FAMILY_HUB_RS58_v1_CANDIDATE.png",
+      "sha256": "d9a697fd3d98e3e12226ac4a11247e649772e6d23b0c2cf880d178b59ecddeab",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "059",
+      "arquivo_no_pack": "IMAGENS/059__FR_G11_CAM02_C_PROJETO_FAMILY_HUB_RS58_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/work_replaced/FR_G11_CAM02_C_PROJETO_FAMILY_HUB_RS58_v1_CANDIDATE.png",
+      "sha256": "969f8af97bef2d4a3c654878db2f4ddcb585a90b10c615263ee10570569c6369",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "060",
+      "arquivo_no_pack": "IMAGENS/060__FR_G11_CAM04_D_EXECUTADO_MICROONDAS_COUNTERTOP_1_9_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/work_replaced/FR_G11_CAM04_D_EXECUTADO_MICROONDAS_COUNTERTOP_1_9_v1_CANDIDATE.png",
+      "sha256": "32975efec888636960baa9ffc13c949c4ec83de780638590b10817ee56cd78ea",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "061",
+      "arquivo_no_pack": "IMAGENS/061__FR_G05_CAM02_C_PROJETO_CLOSE_COOKTOP_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G05/FR_G05_CAM02_C_PROJETO_CLOSE_COOKTOP_v1_CANDIDATE.png",
+      "sha256": "1ace6819d27f62f71dcb694a12f439c72da0b843d33361593e747f66841d9a84",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "062",
+      "arquivo_no_pack": "IMAGENS/062__FR_G05_CAM01_A_ANTES_45G_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G05/FR_G05_CAM01_A_ANTES_45G_v1_CANDIDATE.png",
+      "sha256": "ee3f4f6183a18c389f81d648d69984f890f19026a97da7890d52ef6f9ee45790",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "063",
+      "arquivo_no_pack": "IMAGENS/063__FR_G05_CAM02_D_EXECUTADO_CLOSE_COOKTOP_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G05/FR_G05_CAM02_D_EXECUTADO_CLOSE_COOKTOP_v1_CANDIDATE.png",
+      "sha256": "1e0bbd778ea37dc6e872ba82edc40adc9f74b0337405fe9b767f01aaefd5aec4",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "064",
+      "arquivo_no_pack": "IMAGENS/064__FR_G05_CAM02_A_ANTES_CLOSE_COOKTOP_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G05/FR_G05_CAM02_A_ANTES_CLOSE_COOKTOP_v1_CANDIDATE.png",
+      "sha256": "6cbe580c26b1334275a2b39f39a05b82d567081fa30a03c505f3bb0682611d3c",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "065",
+      "arquivo_no_pack": "IMAGENS/065__FR_G05_CAM01_D_EXECUTADO_45G_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G05/FR_G05_CAM01_D_EXECUTADO_45G_v1_CANDIDATE.png",
+      "sha256": "60f4a0c110cb40f1f79aa8a72a0905426553753d151dca43b17458a336b0b505",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "066",
+      "arquivo_no_pack": "IMAGENS/066__FR_G05_CAM01_C_PROJETO_45G_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G05/FR_G05_CAM01_C_PROJETO_45G_v1_CANDIDATE.png",
+      "sha256": "d0ca9c7352c86c81bd9b389a07ffdc13fa8e960940f0dab2f7c8e822a087c76f",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "067",
+      "arquivo_no_pack": "IMAGENS/067__FR_G06_CAM01_D_EXECUTADO_SEQUENCIA_03_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G06/FR_G06_CAM01_D_EXECUTADO_SEQUENCIA_03_v1_CANDIDATE.png",
+      "sha256": "6cbc7a7bf156ffafebfc8f16783e0e3ecf63e46cc5768ca48dd0b3601c90691d",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "068",
+      "arquivo_no_pack": "IMAGENS/068__FR_G06_CAM01_D_EXECUTADO_LED_ACESO_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G06/FR_G06_CAM01_D_EXECUTADO_LED_ACESO_v1_CANDIDATE.png",
+      "sha256": "0f1e7b3db762f8c7493e607cf988dd403461f12d4344b9311301e689e57745b4",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "069",
+      "arquivo_no_pack": "IMAGENS/069__FR_G06_CAM01_C_PROJETO_45G_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G06/FR_G06_CAM01_C_PROJETO_45G_v1_CANDIDATE.png",
+      "sha256": "00c85bf298280fe4c1b2c84564207a74250a2598198295827bba1c7f44cd6d0a",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "070",
+      "arquivo_no_pack": "IMAGENS/070__FR_G06_CAM01_D_EXECUTADO_SEQUENCIA_01_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G06/FR_G06_CAM01_D_EXECUTADO_SEQUENCIA_01_v1_CANDIDATE.png",
+      "sha256": "6d7bcf10924ad81474ea2b96026994373f776434cc8d534aab93323dd057b79f",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "071",
+      "arquivo_no_pack": "IMAGENS/071__FR_G06_CAM01_D_EXECUTADO_LED_APAGADO_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G06/FR_G06_CAM01_D_EXECUTADO_LED_APAGADO_v1_CANDIDATE.png",
+      "sha256": "7c5a144798f7f069ae433d4e68128a937ab8e71e0af411a8751329a1452dea35",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "072",
+      "arquivo_no_pack": "IMAGENS/072__FR_G06_CAM01_D_EXECUTADO_SEQUENCIA_02_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G06/FR_G06_CAM01_D_EXECUTADO_SEQUENCIA_02_v1_CANDIDATE.png",
+      "sha256": "42fd2eb0146d5041c82045a6f936318d0bf7a93f9ec8b74535fb8c6e29b3fbea",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "073",
+      "arquivo_no_pack": "IMAGENS/073__FR_G06_CAM01_A_ANTES_45G_LED_OFF_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G06/FR_G06_CAM01_A_ANTES_45G_LED_OFF_v1_CANDIDATE.png",
+      "sha256": "e1c3d5afc37e6efe9dec68ff1114f47d6b9bca1ea39808f9c95fad7725d14207",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "074",
+      "arquivo_no_pack": "IMAGENS/074__FR_G09_CAM02_A_ANTES_COZINHA_PARA_LAVANDERIA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G09/FR_G09_CAM02_A_ANTES_COZINHA_PARA_LAVANDERIA_v1_CANDIDATE.png",
+      "sha256": "bdbb0d1b25e84415f8af390293cf2523f161c974021d583d91a6ae36be988822",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "075",
+      "arquivo_no_pack": "IMAGENS/075__FR_G09_CAM03_D_EXECUTADO_LAVANDERIA_PARA_COZINHA_NOTURNO_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G09/FR_G09_CAM03_D_EXECUTADO_LAVANDERIA_PARA_COZINHA_NOTURNO_v1_CANDIDATE.png",
+      "sha256": "fbfae74551ca0105d0523e027376226e022e39d5d50ecec9d1a2fb573a657cbf",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "076",
+      "arquivo_no_pack": "IMAGENS/076__FR_G09_CAM02_C_PROJETO_COZINHA_PARA_LAVANDERIA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G09/FR_G09_CAM02_C_PROJETO_COZINHA_PARA_LAVANDERIA_v1_CANDIDATE.png",
+      "sha256": "8fd20ba7ad179a6f9c392bc851af0f2542c471e604c98bcd3520d8293cd560cc",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "077",
+      "arquivo_no_pack": "IMAGENS/077__FR_G09_CAM03_C_PROJETO_LAVANDERIA_PARA_COZINHA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G09/FR_G09_CAM03_C_PROJETO_LAVANDERIA_PARA_COZINHA_v1_CANDIDATE.png",
+      "sha256": "e2e7c29c4a76f80d1c962c9ce165730b7e895f87862148a2c3dba8beaec7fafb",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "078",
+      "arquivo_no_pack": "IMAGENS/078__FR_G09_CAM02_D_EXECUTADO_COZINHA_PARA_LAVANDERIA_NOTURNO_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G09/FR_G09_CAM02_D_EXECUTADO_COZINHA_PARA_LAVANDERIA_NOTURNO_v1_CANDIDATE.png",
+      "sha256": "b38a517928c994d20002372413c37574127b03413b21dda90b9df9866b953c60",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "079",
+      "arquivo_no_pack": "IMAGENS/079__FR_G09_CAM02_B_PROCESSO_COZINHA_PARA_LAVANDERIA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G09/FR_G09_CAM02_B_PROCESSO_COZINHA_PARA_LAVANDERIA_v1_CANDIDATE.png",
+      "sha256": "b5749ef511573261c06a316a777d2eb91ff3601ba15128df91906ac9ec87b067",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "080",
+      "arquivo_no_pack": "IMAGENS/080__FR_G09_CAM03_B_PROCESSO_LAVANDERIA_PARA_COZINHA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G09/FR_G09_CAM03_B_PROCESSO_LAVANDERIA_PARA_COZINHA_v1_CANDIDATE.png",
+      "sha256": "2bae07d256e8713e6415a132c4e391ec888032424623d1a64c72331121ad2159",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "081",
+      "arquivo_no_pack": "IMAGENS/081__FR_G09_CAM01_D_EXECUTADO_AMPLA_PRINCIPAL_DIURNO_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G09/FR_G09_CAM01_D_EXECUTADO_AMPLA_PRINCIPAL_DIURNO_v1_CANDIDATE.png",
+      "sha256": "7c89955b6a5672e434f6e91cd22293c0c7490766f98d90745d0d86ef8886ce2f",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "082",
+      "arquivo_no_pack": "IMAGENS/082__FR_G09_CAM01_A_ANTES_AMPLA_PRINCIPAL_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G09/FR_G09_CAM01_A_ANTES_AMPLA_PRINCIPAL_v1_CANDIDATE.png",
+      "sha256": "e2ae16e73cbba5ebeb9eee57af06288c9b3cf54d52289be2e88657420e7666f7",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "083",
+      "arquivo_no_pack": "IMAGENS/083__FR_G09_CAM03_D_EXECUTADO_LAVANDERIA_PARA_COZINHA_DIURNO_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G09/FR_G09_CAM03_D_EXECUTADO_LAVANDERIA_PARA_COZINHA_DIURNO_v1_CANDIDATE.png",
+      "sha256": "75811902c465d6d15714ed823751f5d2d1814eb7879fa3945513e20278bf75a9",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "084",
+      "arquivo_no_pack": "IMAGENS/084__FR_G09_CAM01_D_EXECUTADO_AMPLA_PRINCIPAL_NOTURNO_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G09/FR_G09_CAM01_D_EXECUTADO_AMPLA_PRINCIPAL_NOTURNO_v1_CANDIDATE.png",
+      "sha256": "647543085abc87eb23db3c819aba384821a4ad9bc4f077f52355bcf995199ddb",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "085",
+      "arquivo_no_pack": "IMAGENS/085__FR_G09_CAM01_C_PROJETO_AMPLA_PRINCIPAL_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G09/FR_G09_CAM01_C_PROJETO_AMPLA_PRINCIPAL_v1_CANDIDATE.png",
+      "sha256": "5e2980d73b402febdafd8cd525e1b6935393b97f0ed5cb1099f87977a4d56700",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "086",
+      "arquivo_no_pack": "IMAGENS/086__FR_G09_CAM01_B_PROCESSO_AMPLA_PRINCIPAL_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G09/FR_G09_CAM01_B_PROCESSO_AMPLA_PRINCIPAL_v1_CANDIDATE.png",
+      "sha256": "56139cbfd0640ea071ff399da7f63c297273ccfaaf9507d1d055ed111ae377e8",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "087",
+      "arquivo_no_pack": "IMAGENS/087__FR_G09_CAM02_D_EXECUTADO_COZINHA_PARA_LAVANDERIA_DIURNO_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G09/FR_G09_CAM02_D_EXECUTADO_COZINHA_PARA_LAVANDERIA_DIURNO_v1_CANDIDATE.png",
+      "sha256": "c7eb267a0514cf4616b052507c95fc392c6bfc7db41ab9cca64258d48c1f6979",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "088",
+      "arquivo_no_pack": "IMAGENS/088__FR_G04_CAM01_C_PROJETO_CUBA_45G_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G04/FR_G04_CAM01_C_PROJETO_CUBA_45G_v1_CANDIDATE.png",
+      "sha256": "3c2512b1a2034b0139be4138def6aca0f26e7fda2d7dc2b9df8f473d4a7ab802",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "089",
+      "arquivo_no_pack": "IMAGENS/089__FR_G04_CAM01_A_ANTES_CUBA_45G_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G04/FR_G04_CAM01_A_ANTES_CUBA_45G_v1_CANDIDATE.png",
+      "sha256": "131d570f1370a66f0c14fc3a2b6115b6133c77105d0cc0d10b84f70ac8617322",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "090",
+      "arquivo_no_pack": "IMAGENS/090__FR_G04_CAM02_C_PROJETO_LIXEIRA_45G_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G04/FR_G04_CAM02_C_PROJETO_LIXEIRA_45G_v1_CANDIDATE.png",
+      "sha256": "05d352f384565719c497cd450c2545c3d837cd6554388c9756548de132af9d18",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "091",
+      "arquivo_no_pack": "IMAGENS/091__FR_G04_CAM02_D_EXECUTADO_LIXEIRA_45G_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G04/FR_G04_CAM02_D_EXECUTADO_LIXEIRA_45G_v1_CANDIDATE.png",
+      "sha256": "69bb09ddf53ef82409ad07ef97b77ae4b2a798016815eb510970ea4716c11d4b",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "092",
+      "arquivo_no_pack": "IMAGENS/092__FR_G04_CAM02_A_ANTES_LIXEIRA_45G_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G04/FR_G04_CAM02_A_ANTES_LIXEIRA_45G_v1_CANDIDATE.png",
+      "sha256": "e6c4c82b90c21f4f9f29b154dc31ce83a48b2043a2706230169f6fe65cfadde2",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "093",
+      "arquivo_no_pack": "IMAGENS/093__FR_G04_CAM01_D_EXECUTADO_CUBA_45G_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G04/FR_G04_CAM01_D_EXECUTADO_CUBA_45G_v1_CANDIDATE.png",
+      "sha256": "e986062023b6124bf7fedad759939305a740b371d2bdb3726653d4ca0dc71e89",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "094",
+      "arquivo_no_pack": "IMAGENS/094__FR_G10_CAM03_D_EXECUTADO_PERNA_LATERAL_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM03_D_EXECUTADO_PERNA_LATERAL_v1_CANDIDATE.png",
+      "sha256": "437bc843bb5251e5b1c9ff94a8323559012e51bc64ecfe7624e975d7c03d7659",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "095",
+      "arquivo_no_pack": "IMAGENS/095__FR_G10_CAM05_B_PROCESSO_RECORTE_LIXEIRA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM05_B_PROCESSO_RECORTE_LIXEIRA_v1_CANDIDATE.png",
+      "sha256": "ff718d30a5a5a4f754c8452537dabf42d3769bec8e1bbd6cf2082f95ef9ac297",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "096",
+      "arquivo_no_pack": "IMAGENS/096__FR_G10_CAM01_C_PROJETO_QUARTZO_CALACATTA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM01_C_PROJETO_QUARTZO_CALACATTA_v1_CANDIDATE.png",
+      "sha256": "f3036f921f670cc55324d4bea56ba54d91d5e1ead88852644bbc745a54852f7f",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "097",
+      "arquivo_no_pack": "IMAGENS/097__FR_G10_CAM09_B_PROCESSO_RIPADO_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM09_B_PROCESSO_RIPADO_v1_CANDIDATE.png",
+      "sha256": "5e2a7cc9b0749bad97ff6ae20ef71c780b45e4d914330d4eb92a87013fe2acdd",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "098",
+      "arquivo_no_pack": "IMAGENS/098__FR_G10_CAM04_C_PROJETO_RECORTE_CUBA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM04_C_PROJETO_RECORTE_CUBA_v1_CANDIDATE.png",
+      "sha256": "a3c6a87730fe4506c4e0027368681c656808dc25d13845415fe29e3488192210",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "099",
+      "arquivo_no_pack": "IMAGENS/099__FR_G10_CAM02_C_PROJETO_ENCONTRO_TAMPO_FRONTAO_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM02_C_PROJETO_ENCONTRO_TAMPO_FRONTAO_v1_CANDIDATE.png",
+      "sha256": "669220edb55baab066208334c11f1bfb1a8b1e5c766b9f2bff38c021c9452c76",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "100",
+      "arquivo_no_pack": "IMAGENS/100__FR_G10_CAM10_D_EXECUTADO_ILUMINACAO_INTEGRADA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM10_D_EXECUTADO_ILUMINACAO_INTEGRADA_v1_CANDIDATE.png",
+      "sha256": "1d17120216dde5fee9c3f96756c020b390326a367ed2beaa41ac7f495e574eba",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "101",
+      "arquivo_no_pack": "IMAGENS/101__FR_G10_CAM08_D_EXECUTADO_PORTA_VIDRO_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM08_D_EXECUTADO_PORTA_VIDRO_v1_CANDIDATE.png",
+      "sha256": "d102d0d1aff3014562c61c1c9cb632941ae1fc699956135df1556a23ae43cbe1",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "102",
+      "arquivo_no_pack": "IMAGENS/102__FR_G10_CAM07_D_EXECUTADO_MARCENARIA_AMADEIRADA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM07_D_EXECUTADO_MARCENARIA_AMADEIRADA_v1_CANDIDATE.png",
+      "sha256": "a3d791e9aa53f5af32fcaa1ecf6c749c36373f7126b89de934a48a79259a4a19",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "103",
+      "arquivo_no_pack": "IMAGENS/103__FR_G10_CAM06_D_EXECUTADO_MARCENARIA_GRAFITE_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM06_D_EXECUTADO_MARCENARIA_GRAFITE_v1_CANDIDATE.png",
+      "sha256": "53391f98a24e3167e01b1e8acfdef1a2ed11685001fedebb8672087975bb997d",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "104",
+      "arquivo_no_pack": "IMAGENS/104__FR_G10_CAM04_B_PROCESSO_RECORTE_CUBA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM04_B_PROCESSO_RECORTE_CUBA_v1_CANDIDATE.png",
+      "sha256": "9fa8f9f43065c38133dc56acc022a99effa8ce9c3408a58f4c82d946fccd3d8a",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "105",
+      "arquivo_no_pack": "IMAGENS/105__FR_G10_CAM07_C_PROJETO_MARCENARIA_AMADEIRADA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM07_C_PROJETO_MARCENARIA_AMADEIRADA_v1_CANDIDATE.png",
+      "sha256": "65fbe8a7fe60108db98e849a670aed279b8196af0c40fd091d90f40bf1fbea62",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "106",
+      "arquivo_no_pack": "IMAGENS/106__FR_G10_CAM12_C_PROJETO_SOCOLO_ILUMINADO_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM12_C_PROJETO_SOCOLO_ILUMINADO_v1_CANDIDATE.png",
+      "sha256": "fcfbf974e31ec51e5e82960e8409480c8dc80a1839f9f9f1dd4a66e07a6489fa",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "107",
+      "arquivo_no_pack": "IMAGENS/107__FR_G10_CAM10_B_PROCESSO_ILUMINACAO_INTEGRADA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM10_B_PROCESSO_ILUMINACAO_INTEGRADA_v1_CANDIDATE.png",
+      "sha256": "e0f47cb34ab06ea29d9daf15bd152c6758a1b852d2d5aff675ff2f0192de0dc2",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "108",
+      "arquivo_no_pack": "IMAGENS/108__FR_G10_CAM03_C_PROJETO_PERNA_LATERAL_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM03_C_PROJETO_PERNA_LATERAL_v1_CANDIDATE.png",
+      "sha256": "f6c515a8899257304657bae31f85d9e6f5ca4db0fea1d34d593c63528c736bbe",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "109",
+      "arquivo_no_pack": "IMAGENS/109__FR_G10_CAM06_B_PROCESSO_MARCENARIA_GRAFITE_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM06_B_PROCESSO_MARCENARIA_GRAFITE_v1_CANDIDATE.png",
+      "sha256": "225f9414985a4a7ee19bdbeb35cb63487ecc96e188f7a8ff67394a808040f9bb",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "110",
+      "arquivo_no_pack": "IMAGENS/110__FR_G10_CAM08_B_PROCESSO_PORTA_VIDRO_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM08_B_PROCESSO_PORTA_VIDRO_v1_CANDIDATE.png",
+      "sha256": "12098c3d367d9c3db40a4881f82672ba979e107c4ac2ced84c358e9958887762",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "111",
+      "arquivo_no_pack": "IMAGENS/111__FR_G10_CAM06_C_PROJETO_MARCENARIA_GRAFITE_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM06_C_PROJETO_MARCENARIA_GRAFITE_v1_CANDIDATE.png",
+      "sha256": "f122229355d9a29de18ca1b153eb25381aa359a4722bc490a88be29315cb3c39",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "112",
+      "arquivo_no_pack": "IMAGENS/112__FR_G10_CAM12_B_PROCESSO_SOCOLO_ILUMINADO_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM12_B_PROCESSO_SOCOLO_ILUMINADO_v1_CANDIDATE.png",
+      "sha256": "b192d5aa301600216bd925494e4727e69239408d95642a039b3d7568b3928d9d",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "113",
+      "arquivo_no_pack": "IMAGENS/113__FR_G10_CAM01_D_EXECUTADO_QUARTZO_CALACATTA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM01_D_EXECUTADO_QUARTZO_CALACATTA_v1_CANDIDATE.png",
+      "sha256": "3bab67f56dfb3a7ff360c8472f793487dfdc1cb3d428e1716db137a3bd0d311d",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "114",
+      "arquivo_no_pack": "IMAGENS/114__FR_G10_CAM12_D_EXECUTADO_SOCOLO_ILUMINADO_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM12_D_EXECUTADO_SOCOLO_ILUMINADO_v1_CANDIDATE.png",
+      "sha256": "db668eedec42603ec9dd04ebc0a93d2d8926923a55a8142f158d40344e214170",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "115",
+      "arquivo_no_pack": "IMAGENS/115__FR_G10_CAM11_C_PROJETO_ENCONTRO_MOVEL_PEDRA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM11_C_PROJETO_ENCONTRO_MOVEL_PEDRA_v1_CANDIDATE.png",
+      "sha256": "137fcfb2cf5c0fa94f6af91b3fa12b74b527e88366b8a1c2d683674f4089a088",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "116",
+      "arquivo_no_pack": "IMAGENS/116__FR_G10_CAM09_C_PROJETO_RIPADO_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM09_C_PROJETO_RIPADO_v1_CANDIDATE.png",
+      "sha256": "d6778c37c07f9cc05f7d29240a3547f6677f46a1cd7a1f833a1c3350f72424fa",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "117",
+      "arquivo_no_pack": "IMAGENS/117__FR_G10_CAM10_C_PROJETO_ILUMINACAO_INTEGRADA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM10_C_PROJETO_ILUMINACAO_INTEGRADA_v1_CANDIDATE.png",
+      "sha256": "6dc61e5d164657f37506fcebcb7de1997bf186c3bfe7e6b45315e0c1a8d033e3",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "118",
+      "arquivo_no_pack": "IMAGENS/118__FR_G10_CAM02_D_EXECUTADO_ENCONTRO_TAMPO_FRONTAO_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM02_D_EXECUTADO_ENCONTRO_TAMPO_FRONTAO_v1_CANDIDATE.png",
+      "sha256": "7a1eb08097035352f0275a2aa933e63ed84d82890c2d2f26271d3ced77afdbaf",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "119",
+      "arquivo_no_pack": "IMAGENS/119__FR_G10_CAM07_B_PROCESSO_MARCENARIA_AMADEIRADA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM07_B_PROCESSO_MARCENARIA_AMADEIRADA_v1_CANDIDATE.png",
+      "sha256": "e95010f030996dcb70f8ce487c783c955fbfcd88f44a38ca6294123ce1d4033d",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "120",
+      "arquivo_no_pack": "IMAGENS/120__FR_G10_CAM03_B_PROCESSO_PERNA_LATERAL_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM03_B_PROCESSO_PERNA_LATERAL_v1_CANDIDATE.png",
+      "sha256": "55edbae01cd0fbd8dfe47c8e24f5b7cf1b8838b39eaf142fabd51c31dac73537",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "121",
+      "arquivo_no_pack": "IMAGENS/121__FR_G10_CAM08_C_PROJETO_PORTA_VIDRO_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM08_C_PROJETO_PORTA_VIDRO_v1_CANDIDATE.png",
+      "sha256": "5ad7da2e8baae5a27266f5419adbed951df2c2d868cfcaffe8fc8d05b49bbcef",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "122",
+      "arquivo_no_pack": "IMAGENS/122__FR_G10_CAM11_D_EXECUTADO_ENCONTRO_MOVEL_PEDRA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM11_D_EXECUTADO_ENCONTRO_MOVEL_PEDRA_v1_CANDIDATE.png",
+      "sha256": "26226004ddb43cbd8e1dd4287982e18b554b9bca8a69f436f2fd9207002a6fe6",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "123",
+      "arquivo_no_pack": "IMAGENS/123__FR_G10_CAM05_C_PROJETO_RECORTE_LIXEIRA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM05_C_PROJETO_RECORTE_LIXEIRA_v1_CANDIDATE.png",
+      "sha256": "4aa4973b552736f08a1d975121a4400d0afdcfed174f22384627dd0c7d3753b7",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "124",
+      "arquivo_no_pack": "IMAGENS/124__FR_G10_CAM11_B_PROCESSO_ENCONTRO_MOVEL_PEDRA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM11_B_PROCESSO_ENCONTRO_MOVEL_PEDRA_v1_CANDIDATE.png",
+      "sha256": "20120edcb33ce572d6af5c43ac939530997d3111823ce9f2b6253c08cf755d02",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "125",
+      "arquivo_no_pack": "IMAGENS/125__FR_G10_CAM04_D_EXECUTADO_RECORTE_CUBA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM04_D_EXECUTADO_RECORTE_CUBA_v1_CANDIDATE.png",
+      "sha256": "bd8c499c7116f3ad86825ebb0e8c0bceddf8a391f741bd7f2e45c1c1f68f823a",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "126",
+      "arquivo_no_pack": "IMAGENS/126__FR_G10_CAM09_D_EXECUTADO_RIPADO_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM09_D_EXECUTADO_RIPADO_v1_CANDIDATE.png",
+      "sha256": "17afd9ed8677e257976b37f73f54ff4fffcd02cc2183551055aecf283fd978d2",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "127",
+      "arquivo_no_pack": "IMAGENS/127__FR_G10_CAM02_B_PROCESSO_ENCONTRO_TAMPO_FRONTAO_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM02_B_PROCESSO_ENCONTRO_TAMPO_FRONTAO_v1_CANDIDATE.png",
+      "sha256": "739a4be9b07938451e4f764749d60f057f4ea0bd2321be5cd0de433f63712831",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "128",
+      "arquivo_no_pack": "IMAGENS/128__FR_G10_CAM05_D_EXECUTADO_RECORTE_LIXEIRA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM05_D_EXECUTADO_RECORTE_LIXEIRA_v1_CANDIDATE.png",
+      "sha256": "37277556c74b2efdb78080408d7bb1f4ea0b9916076c723943a316da54d51580",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "129",
+      "arquivo_no_pack": "IMAGENS/129__FR_G10_CAM01_B_PROCESSO_QUARTZO_CALACATTA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G10/FR_G10_CAM01_B_PROCESSO_QUARTZO_CALACATTA_v1_CANDIDATE.png",
+      "sha256": "654c56092cde9837a8f4efbf8d493f6e186487bcf4c13baf999f2914db957f56",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "130",
+      "arquivo_no_pack": "IMAGENS/130__FR_G01_CAM01_A_ANTES_FRONTAL_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G01/FR_G01_CAM01_A_ANTES_FRONTAL_v1_CANDIDATE.png",
+      "sha256": "5cdb83ddfe04be76644626cb5a43ffd6ed7b95a9c02bcc28f13c16fdf77a3c05",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "131",
+      "arquivo_no_pack": "IMAGENS/131__FR_G01_CAM01_C_PROJETO_FRONTAL_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G01/FR_G01_CAM01_C_PROJETO_FRONTAL_v1_CANDIDATE.png",
+      "sha256": "7ff3ea650a289f04fcbe54aff8c1b0c3ebc79932b3fbc39cbc1c192874c7c858",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "132",
+      "arquivo_no_pack": "IMAGENS/132__FR_G01_CAM01_D_EXECUTADO_FRONTAL_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G01/FR_G01_CAM01_D_EXECUTADO_FRONTAL_v1_CANDIDATE.png",
+      "sha256": "5751563a5e918a6276bed6848da7b0d5d084960829e529e2b10dc404df6adb90",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "133",
+      "arquivo_no_pack": "IMAGENS/133__FR_G02_CAM01_D_EXECUTADO_45G_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G02/FR_G02_CAM01_D_EXECUTADO_45G_v1_CANDIDATE.png",
+      "sha256": "9578b1b00ec0f5b17180bd3c53b8fc1fc597608e565d07c82433773046cd19cf",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "134",
+      "arquivo_no_pack": "IMAGENS/134__FR_G02_CAM01_C_PROJETO_45G_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G02/FR_G02_CAM01_C_PROJETO_45G_v1_CANDIDATE.png",
+      "sha256": "c6925723a8ef1be6e9ce3c55ccaf856beb718c03b9ec5a0d0b8307527f5023cd",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "135",
+      "arquivo_no_pack": "IMAGENS/135__FR_G02_CAM01_A_ANTES_45G_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G02/FR_G02_CAM01_A_ANTES_45G_v1_CANDIDATE.png",
+      "sha256": "70deedfc621e2f3418de67a794db43045e9e90d9a870f64f277e225e55d899b8",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "136",
+      "arquivo_no_pack": "IMAGENS/136__FR_G12_CAM05_B_PROCESSO_FABRICACAO_PREPARACAO_PEDRA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G12/FR_G12_CAM05_B_PROCESSO_FABRICACAO_PREPARACAO_PEDRA_v1_CANDIDATE.png",
+      "sha256": "e9447fc647b6e929a1fd6ab21abe504ae38c8cfaab8a04d9887085568b018348",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "137",
+      "arquivo_no_pack": "IMAGENS/137__FR_G12_CAM10_B_PROCESSO_INSTALACAO_MINI_ILHA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G12/FR_G12_CAM10_B_PROCESSO_INSTALACAO_MINI_ILHA_v1_CANDIDATE.png",
+      "sha256": "40fa199f347d4f059b3bc964c357df157c5f8978f529472adeed1e5f281f56f4",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "138",
+      "arquivo_no_pack": "IMAGENS/138__FR_G12_CAM02_B_PROCESSO_AMBIENTE_ANTERIOR_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G12/FR_G12_CAM02_B_PROCESSO_AMBIENTE_ANTERIOR_v1_CANDIDATE.png",
+      "sha256": "d27734ec06a8dcadd5b853c1e716837897f1f54646fc37d975fbdf0e1ade05ef",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "139",
+      "arquivo_no_pack": "IMAGENS/139__FR_G12_CAM01_B_PROCESSO_LEVANTAMENTO_MEDIDAS_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G12/FR_G12_CAM01_B_PROCESSO_LEVANTAMENTO_MEDIDAS_v1_CANDIDATE.png",
+      "sha256": "f01c2d50da1049125a4761a02df055d8e379a62325d2cbd8aca736d8a2f855ab",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "140",
+      "arquivo_no_pack": "IMAGENS/140__FR_G12_CAM09_B_PROCESSO_HIDRAULICA_CUBA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G12/FR_G12_CAM09_B_PROCESSO_HIDRAULICA_CUBA_v1_CANDIDATE.png",
+      "sha256": "a6d59578925e34fcd9f7511990569de4d6c1429409762ac0809acdc468b90b13",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "141",
+      "arquivo_no_pack": "IMAGENS/141__FR_G12_CAM08_B_PROCESSO_INSTALACAO_PORTAS_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G12/FR_G12_CAM08_B_PROCESSO_INSTALACAO_PORTAS_v1_CANDIDATE.png",
+      "sha256": "3b26be1d0f83e0fa7d267416465ec6c5441bde86f154ef0c25ca98006fff8916",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "142",
+      "arquivo_no_pack": "IMAGENS/142__FR_G12_CAM06_B_PROCESSO_INSTALACAO_BANCADA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G12/FR_G12_CAM06_B_PROCESSO_INSTALACAO_BANCADA_v1_CANDIDATE.png",
+      "sha256": "457de65aa5e090957f935de3e7d22fb18755163513616af93c44f3d53bae3f5b",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "143",
+      "arquivo_no_pack": "IMAGENS/143__FR_G12_CAM11_B_PROCESSO_INSTALACAO_RIPADO_LEDS_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G12/FR_G12_CAM11_B_PROCESSO_INSTALACAO_RIPADO_LEDS_v1_CANDIDATE.png",
+      "sha256": "4ff417284835b01d37c529736ed7218d79c665c502aae6bd061272cfc27cdf5f",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "144",
+      "arquivo_no_pack": "IMAGENS/144__FR_G12_CAM07_B_PROCESSO_INSTALACAO_MARCENARIA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G12/FR_G12_CAM07_B_PROCESSO_INSTALACAO_MARCENARIA_v1_CANDIDATE.png",
+      "sha256": "071f892b337fa5ddf2e3d8bf0bb689a2da8ee28147ee319f47b3ffea678bda95",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "145",
+      "arquivo_no_pack": "IMAGENS/145__FR_G03_CAM02_B_PROCESSO_CLOSE_ENCONTROS_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G03/FR_G03_CAM02_B_PROCESSO_CLOSE_ENCONTROS_v1_CANDIDATE.png",
+      "sha256": "71d68e898301d7482c19510732cb654b0c7c077418a2111af6d8981241d5f79c",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "146",
+      "arquivo_no_pack": "IMAGENS/146__FR_G03_CAM02_D_EXECUTADO_CLOSE_ENCONTROS_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G03/FR_G03_CAM02_D_EXECUTADO_CLOSE_ENCONTROS_v1_CANDIDATE.png",
+      "sha256": "468727e89a603a4f9d810b2e4b44c06ebe74399d0304a032995cf6adfbe94374",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "147",
+      "arquivo_no_pack": "IMAGENS/147__FR_G03_CAM01_B_PROCESSO_45G_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G03/FR_G03_CAM01_B_PROCESSO_45G_v1_CANDIDATE.png",
+      "sha256": "af42cee17410db87d197b7f303f1f4afb44c7e4b9142ffd25eb26e60a8350283",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "148",
+      "arquivo_no_pack": "IMAGENS/148__FR_G03_CAM03_B_PROCESSO_CLOSE_RECORTES_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G03/FR_G03_CAM03_B_PROCESSO_CLOSE_RECORTES_v1_CANDIDATE.png",
+      "sha256": "f451d799591277789e2f69dea2d4e5b8d8af12004a800ff9c3e4192e93de5f4d",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "149",
+      "arquivo_no_pack": "IMAGENS/149__FR_G03_CAM02_C_PROJETO_CLOSE_ENCONTROS_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G03/FR_G03_CAM02_C_PROJETO_CLOSE_ENCONTROS_v1_CANDIDATE.png",
+      "sha256": "6d1e19db75067ab7971fb0a1c1c6ee9037c75e6bfd100321b31d5738a6f3cc12",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "150",
+      "arquivo_no_pack": "IMAGENS/150__FR_G03_CAM03_C_PROJETO_CLOSE_RECORTES_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G03/FR_G03_CAM03_C_PROJETO_CLOSE_RECORTES_v1_CANDIDATE.png",
+      "sha256": "9484995647d248d89a5b82ab125529ff0d356137524d8149e708adc296c21fa8",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "151",
+      "arquivo_no_pack": "IMAGENS/151__FR_G03_CAM01_C_PROJETO_45G_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G03/FR_G03_CAM01_C_PROJETO_45G_v1_CANDIDATE.png",
+      "sha256": "002c7026b10b2a958e702e755497d5dd2e9201145b24a0e5649902bc00b3ce86",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "152",
+      "arquivo_no_pack": "IMAGENS/152__FR_G11_CAM04_A_ANTES_MICROONDAS_COUNTERTOP_1_9_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G11/FR_G11_CAM04_A_ANTES_MICROONDAS_COUNTERTOP_1_9_v1_CANDIDATE.png",
+      "sha256": "594d8aacc025ebca1cf21eae547bb028377971c669c5e99f74450c3671a8032e",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "153",
+      "arquivo_no_pack": "IMAGENS/153__FR_G11_CAM03_C_PROJETO_FORNO_76L_AIR_FRY_CLEAN_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G11/FR_G11_CAM03_C_PROJETO_FORNO_76L_AIR_FRY_CLEAN_v1_CANDIDATE.png",
+      "sha256": "ef11fa07ccd12c13484c1dd63e3327359e4f62b069195a1b0447933222dcda6f",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "154",
+      "arquivo_no_pack": "IMAGENS/154__FR_G11_CAM04_C_PROJETO_MICROONDAS_COUNTERTOP_1_9_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G11/FR_G11_CAM04_C_PROJETO_MICROONDAS_COUNTERTOP_1_9_v1_CANDIDATE.png",
+      "sha256": "3b0e7c828b03c159c09a8f8535de24fb929cd380d772c6bfbc85bf9ed0836705",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "155",
+      "arquivo_no_pack": "IMAGENS/155__FR_G11_CAM02_D_EXECUTADO_FAMILY_HUB_RS58_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G11/FR_G11_CAM02_D_EXECUTADO_FAMILY_HUB_RS58_v1_CANDIDATE.png",
+      "sha256": "8495d5ea635f5f2fdc6ef8a52192f44209f62b882a7acf5f1fa1038ca41480e7",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "156",
+      "arquivo_no_pack": "IMAGENS/156__FR_G11_CAM02_C_PROJETO_FAMILY_HUB_RS58_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G11/FR_G11_CAM02_C_PROJETO_FAMILY_HUB_RS58_v1_CANDIDATE.png",
+      "sha256": "4bb5f6ddb0e6e05716a92f767e542e84a65dcb684c35ea25a7839d5bb135d691",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "157",
+      "arquivo_no_pack": "IMAGENS/157__FR_G11_CAM04_D_EXECUTADO_MICROONDAS_COUNTERTOP_1_9_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G11/FR_G11_CAM04_D_EXECUTADO_MICROONDAS_COUNTERTOP_1_9_v1_CANDIDATE.png",
+      "sha256": "d80131263b2714a49a4a308ce082c1afc23a4d41640093db38987f6be392cf97",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "158",
+      "arquivo_no_pack": "IMAGENS/158__FR_G11_CAM01_D_EXECUTADO_COOKTOP_NZ64H37070K_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G11/FR_G11_CAM01_D_EXECUTADO_COOKTOP_NZ64H37070K_v1_CANDIDATE.png",
+      "sha256": "7e1fdb284ac93b4e4caa292af10126cc0a210f2349fb16bd72dbd7ed7374ffd1",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "159",
+      "arquivo_no_pack": "IMAGENS/159__FR_G11_CAM03_D_EXECUTADO_FORNO_76L_AIR_FRY_CLEAN_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G11/FR_G11_CAM03_D_EXECUTADO_FORNO_76L_AIR_FRY_CLEAN_v1_CANDIDATE.png",
+      "sha256": "5f8353522c5d3f90806f5fe5d71951e5737786648d57eb8051a82de6c0f012e8",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "160",
+      "arquivo_no_pack": "IMAGENS/160__FR_G11_CAM01_C_PROJETO_COOKTOP_NZ64H37070K_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G11/FR_G11_CAM01_C_PROJETO_COOKTOP_NZ64H37070K_v1_CANDIDATE.png",
+      "sha256": "44c59154f0f9d77faaa085937bb60f3d6ab5fd483f913fc39a1b8eb2dbaefea9",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "161",
+      "arquivo_no_pack": "IMAGENS/161__FR_G07_CAM01_C_PROJETO_AMPLA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G07/FR_G07_CAM01_C_PROJETO_AMPLA_v1_CANDIDATE.png",
+      "sha256": "2fbaf129767d51328e04e431a29d63535675aa4c2c0eb980c8f5ab87bfa5172f",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "162",
+      "arquivo_no_pack": "IMAGENS/162__FR_G07_CAM01_A_ANTES_AMPLA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G07/FR_G07_CAM01_A_ANTES_AMPLA_v1_CANDIDATE.png",
+      "sha256": "fb2ebb41b335b9e89f9dc8674809e4a522e2288226f3c50715b0e67f0a7caea6",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "163",
+      "arquivo_no_pack": "IMAGENS/163__FR_G07_CAM02_D_EXECUTADO_FRONTAL_SUPERIORES_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G07/FR_G07_CAM02_D_EXECUTADO_FRONTAL_SUPERIORES_v1_CANDIDATE.png",
+      "sha256": "9e50b3684cf42a8c69d242ed57e85cb3fddb0a5dbbfcb2fb6fdccce6dbca58d8",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "164",
+      "arquivo_no_pack": "IMAGENS/164__FR_G07_CAM03_D_EXECUTADO_CONTEXTO_LAVADORA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G07/FR_G07_CAM03_D_EXECUTADO_CONTEXTO_LAVADORA_v1_CANDIDATE.png",
+      "sha256": "95b573b3a3ddb92eac174c57d1d2624cba29633014fd0178bb3adf7423924bad",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "165",
+      "arquivo_no_pack": "IMAGENS/165__FR_G07_CAM02_C_PROJETO_FRONTAL_SUPERIORES_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G07/FR_G07_CAM02_C_PROJETO_FRONTAL_SUPERIORES_v1_CANDIDATE.png",
+      "sha256": "587905058b3eb1265d21510830d9f9eb25c7b4122582b833cdfe4f55a767d86f",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "166",
+      "arquivo_no_pack": "IMAGENS/166__FR_G07_CAM01_D_EXECUTADO_AMPLA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G07/FR_G07_CAM01_D_EXECUTADO_AMPLA_v1_CANDIDATE.png",
+      "sha256": "bbd4d54f21fc929a77acc979ced93b62a4fdcf36704492915b0014592f60ba35",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "167",
+      "arquivo_no_pack": "IMAGENS/167__FR_G07_CAM03_B_PROCESSO_CONTEXTO_LAVADORA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G07/FR_G07_CAM03_B_PROCESSO_CONTEXTO_LAVADORA_v1_CANDIDATE.png",
+      "sha256": "d4fffec3fb20e9fb3f3a84c404915391325c8462fc2ad1bc59cc2266bf240fd3",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "168",
+      "arquivo_no_pack": "IMAGENS/168__FR_G07_CAM03_C_PROJETO_CONTEXTO_LAVADORA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G07/FR_G07_CAM03_C_PROJETO_CONTEXTO_LAVADORA_v1_CANDIDATE.png",
+      "sha256": "45fe378f954d0a86f5030fd64ca16c9fd4cbd9efd672ec6e8c0679bb98d731e1",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "169",
+      "arquivo_no_pack": "IMAGENS/169__FR_G07_CAM02_B_PROCESSO_FRONTAL_SUPERIORES_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G07/FR_G07_CAM02_B_PROCESSO_FRONTAL_SUPERIORES_v1_CANDIDATE.png",
+      "sha256": "d86874e5e8f49121e4c3eb4879222401696edc4d803b956a9c0a51d988658f53",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "170",
+      "arquivo_no_pack": "IMAGENS/170__FR_G08_CAM02_D_EXECUTADO_LAVANDERIA_ACESO_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G08/FR_G08_CAM02_D_EXECUTADO_LAVANDERIA_ACESO_v1_CANDIDATE.png",
+      "sha256": "be0c6b6ccdf8534d722ff70f895365a7cdee43bc1a9fcf38385c6183e6a9f44d",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "171",
+      "arquivo_no_pack": "IMAGENS/171__FR_G08_CAM01_D_EXECUTADO_COZINHA_SEQUENCIA_02_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G08/FR_G08_CAM01_D_EXECUTADO_COZINHA_SEQUENCIA_02_v1_CANDIDATE.png",
+      "sha256": "48f87891ecf03c1534aedf189e9cc27da46c7bd62113c4bda014af18ae0d0f98",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "172",
+      "arquivo_no_pack": "IMAGENS/172__FR_G08_CAM02_D_EXECUTADO_LAVANDERIA_SEQUENCIA_01_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G08/FR_G08_CAM02_D_EXECUTADO_LAVANDERIA_SEQUENCIA_01_v1_CANDIDATE.png",
+      "sha256": "2a078e63ff4a998f2f07ec73aab742d742f8e02f258bbd7a34b1884a594c041a",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "173",
+      "arquivo_no_pack": "IMAGENS/173__FR_G08_CAM02_D_EXECUTADO_LAVANDERIA_SEQUENCIA_02_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G08/FR_G08_CAM02_D_EXECUTADO_LAVANDERIA_SEQUENCIA_02_v1_CANDIDATE.png",
+      "sha256": "36cfb5cc9e43d669fbb92308998813ec73a96de9f5bb21f54ab8717c1d28df92",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "174",
+      "arquivo_no_pack": "IMAGENS/174__FR_G08_CAM01_D_EXECUTADO_COZINHA_SEQUENCIA_03_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G08/FR_G08_CAM01_D_EXECUTADO_COZINHA_SEQUENCIA_03_v1_CANDIDATE.png",
+      "sha256": "c93aa7c83e24ad5c6a9a6da4b95760dcf5a5d0d16c350469670088b1eb13b1d0",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "175",
+      "arquivo_no_pack": "IMAGENS/175__FR_G08_CAM02_D_EXECUTADO_LAVANDERIA_APAGADO_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G08/FR_G08_CAM02_D_EXECUTADO_LAVANDERIA_APAGADO_v1_CANDIDATE.png",
+      "sha256": "d3a28b64f2f18a8ba42f30e3a13fdc041860381f81359fd3e131b84915b5ab68",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "176",
+      "arquivo_no_pack": "IMAGENS/176__FR_G08_CAM01_C_PROJETO_COZINHA_TECNICO_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G08/FR_G08_CAM01_C_PROJETO_COZINHA_TECNICO_v1_CANDIDATE.png",
+      "sha256": "4d502b24eba4042260fe26dfbd70d6b6b9b8560bcdd747b360c8c875927b775d",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "177",
+      "arquivo_no_pack": "IMAGENS/177__FR_G08_CAM02_A_ANTES_LAVANDERIA_ANTES_FORRO_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G08/FR_G08_CAM02_A_ANTES_LAVANDERIA_ANTES_FORRO_v1_CANDIDATE.png",
+      "sha256": "498770b901723090c92897796f29f0a04a301e3f11cd1428a5d6eb2c84c6d2e9",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "178",
+      "arquivo_no_pack": "IMAGENS/178__FR_G08_CAM02_C_PROJETO_LAVANDERIA_TECNICO_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G08/FR_G08_CAM02_C_PROJETO_LAVANDERIA_TECNICO_v1_CANDIDATE.png",
+      "sha256": "0bc49c450781e0d194838159284af8c35a6fb1833a175106d9c82642c4f854e8",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "179",
+      "arquivo_no_pack": "IMAGENS/179__FR_G08_CAM01_D_EXECUTADO_COZINHA_ACESO_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G08/FR_G08_CAM01_D_EXECUTADO_COZINHA_ACESO_v1_CANDIDATE.png",
+      "sha256": "5afcbc450a7188a661530d2ee6aa91b94b6a5975c09e4a4c9670ad62fe97d26f",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "180",
+      "arquivo_no_pack": "IMAGENS/180__FR_G08_CAM01_D_EXECUTADO_COZINHA_APAGADO_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G08/FR_G08_CAM01_D_EXECUTADO_COZINHA_APAGADO_v1_CANDIDATE.png",
+      "sha256": "50e2c1763ded5fdb1ad17fbd2a659e6ebd7a121cd313ab02272470f0a1cd1be4",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "181",
+      "arquivo_no_pack": "IMAGENS/181__FR_G08_CAM02_D_EXECUTADO_LAVANDERIA_SEQUENCIA_03_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G08/FR_G08_CAM02_D_EXECUTADO_LAVANDERIA_SEQUENCIA_03_v1_CANDIDATE.png",
+      "sha256": "450460b8cc987601a6afcdad36b1f3a6c63f92ac8086174611bfdfe115f32fa8",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "182",
+      "arquivo_no_pack": "IMAGENS/182__FR_G08_CAM01_A_ANTES_COZINHA_ANTES_FORRO_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G08/FR_G08_CAM01_A_ANTES_COZINHA_ANTES_FORRO_v1_CANDIDATE.png",
+      "sha256": "633069871a6562ba99b6725a4351583758eeb641c54411c16f20c352bac8894b",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "183",
+      "arquivo_no_pack": "IMAGENS/183__FR_G08_CAM01_D_EXECUTADO_COZINHA_SEQUENCIA_01_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/G08/FR_G08_CAM01_D_EXECUTADO_COZINHA_SEQUENCIA_01_v1_CANDIDATE.png",
+      "sha256": "57730a5cbeb4c16018fb37835c9e20022573203a1857a459cdb5e2ea73d1c3a0",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "184",
+      "arquivo_no_pack": "IMAGENS/184__FR_G09_CAM01X_D_EXECUTADO_AMPLA_SINTETICA_REJEITADA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/REJECTED/G09/FR_G09_CAM01X_D_EXECUTADO_AMPLA_SINTETICA_REJEITADA_v1_CANDIDATE.png",
+      "sha256": "3634733a840513c26ae6a55ff5a714b4c030f5aaac5ec57e6c36389a708a41d5",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "185",
+      "arquivo_no_pack": "IMAGENS/185__FR_G09_CAM01X_C_PROJETO_AMPLA_SINTETICA_REJEITADA_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/REJECTED/G09/FR_G09_CAM01X_C_PROJETO_AMPLA_SINTETICA_REJEITADA_v1_CANDIDATE.png",
+      "sha256": "cff31ad3313b043f3760d61b9bcd88ded5cef042b837e430cc2458633466569d",
+      "current_status": "HISTORICAL_SOURCE_ABSENT",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "186",
+      "arquivo_no_pack": "IMAGENS/186__FR_G03_CAM03_D_EXECUTADO_CLOSE_RECORTES_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/REJECTED/G03/FR_G03_CAM03_D_EXECUTADO_CLOSE_RECORTES_v1_CANDIDATE.png",
+      "sha256": "885465571ac43045ed238b65b0d28551f3a3382ac72ad280e41f4737d28f6d3d",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    },
+    {
+      "ID": "187",
+      "arquivo_no_pack": "IMAGENS/187__FR_G03_CAM01_D_EXECUTADO_45G_v1_CANDIDATE.png",
+      "origem": "outputs/fr_visual_forensics_batch_v1/candidates/REJECTED/G03/FR_G03_CAM01_D_EXECUTADO_45G_v1_CANDIDATE.png",
+      "sha256": "a4bd44ba2b5cb46af9355f67ee2de42defac6af791637c75f64ed9e37830186c",
+      "current_status": "SOURCE_IN_PACK_BY_HASH",
+      "usable_as_current_path": false
+    }
+  ],
+  "ledger_summary": {
+    "HISTORICAL_SOURCE_ABSENT": 138,
+    "SOURCE_IN_PACK_BY_HASH": 45,
+    "ORIGINAL_ABSENT_APPROVED_REPO_VARIANT_AVAILABLE": 4
+  },
+  "document_source_hashes": 112,
+  "document_source_hashes_absent_from_pack": 22,
+  "missing_source_sets": [
+    "web desing",
+    "captures.zip",
+    "CODEX_USE_AQUI.zip",
+    "before_after_organized.zip",
+    "reels_design_organized_v2_capas_autorais.zip"
+  ],
+  "existing_repo_catalog_relative_ficha_paths": "57 legacy paths point outside repo; new manifest resolves all through verified docs/site-refactor/media-context paths."
+}

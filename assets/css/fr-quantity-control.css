@@ -1,0 +1,7 @@
+.fr-quantity{display:grid;grid-template-columns:48px minmax(0,1fr) 48px;gap:8px;align-items:center;min-width:0}.fr-quantity button{min-width:44px;min-height:48px;border:1px solid #1a6069;border-radius:6px;background:#031812;color:#e6d6b5;font:24px/1 Rokkitt,serif}.fr-quantity input{min-width:0;width:100%;min-height:48px}.fr-quantity button:focus-visible{outline:3px solid #f6a700;outline-offset:3px}.fr-quantity button:disabled{opacity:.45;cursor:not-allowed}.fr-quantity-change{animation:frQuantityChange 150ms ease-out}@keyframes frQuantityChange{from{transform:translateY(2px);color:#f6a700}to{transform:translateY(0)}}@media(prefers-reduced-motion:reduce){.fr-quantity-change{animation:none}}
+/* Keep transactional controls stationary while preserving entry feedback. */
+#step-content-container.fr-quantity-editor,
+#step-content-container.fr-quantity-editor>.animate-fadeIn{animation-name:frQuantityEditorEnter!important;transform:none!important}
+@keyframes frQuantityEditorEnter{from{opacity:.7}to{opacity:1}}
+#step-content-container [data-action="updateServiceConfig"]{color:#e6d6b5}
+@media(prefers-reduced-motion:reduce){#step-content-container.fr-quantity-editor,#step-content-container.fr-quantity-editor>.animate-fadeIn{animation:none!important}}

@@ -1,0 +1,84 @@
+{
+  "schema_version": "fr-editorial-1.0.0",
+  "canonical": "https://www.francoromeufr.com.br",
+  "jsonld_base": {
+    "@context": "https://schema.org",
+    "@type": [
+      "Organization",
+      "LocalBusiness",
+      "HomeAndConstructionBusiness"
+    ],
+    "@id": "https://www.francoromeufr.com.br/#organization",
+    "name": "Franco Romeu",
+    "alternateName": [
+      "FR",
+      "ꟻR",
+      "Franco Romeu — Arte & Engenharia"
+    ],
+    "url": "https://www.francoromeufr.com.br/",
+    "description": "Reformas, projetos de interiores, porcelanato líquido, pintura e marcenaria sob medida em São Paulo.",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.francoromeufr.com.br/assets/brand/franco-romeu-logo-remaster-800.webp"
+    },
+    "image": "https://www.francoromeufr.com.br/assets/social/franco-romeu-og-site-1200x630.jpg",
+    "telephone": "+55-11-99002-1603",
+    "email": "romeudifranco@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    ],
+    "paymentAccepted": ["Cash", "Credit Card", "PIX"],
+    "priceRange": "Consulte orçamento",
+    "areaServed": [
+      { "@type": "City", "name": "São Paulo" },
+      { "@type": "City", "name": "Guarulhos" },
+      { "@type": "City", "name": "Osasco" },
+      { "@type": "City", "name": "Barueri" },
+      { "@type": "City", "name": "Santo André" },
+      { "@type": "City", "name": "São Bernardo do Campo" }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/francoromeu.fr/",
+      "https://www.facebook.com/FrancoRomeuRF",
+      "https://www.linkedin.com/in/franco-romeu-fr/",
+      "https://www.youtube.com/@FRANCOROMEU",
+      "https://br.pinterest.com/francoromeu_fr/",
+      "https://github.com/Francoromeu-fr"
+    ]
+  },
+  "logo_asset": {
+    "root": "REPO_ROOT",
+    "path": "assets/brand/franco-romeu-logo-remaster-800.webp",
+    "sha256": "3df55531c5531da4f30018df590052a988f0459f414de5051c394439253ef3ec",
+    "contentUrl": null,
+    "status": "EXISTING_REPO_ASSET_URL_TO_VERIFY_AT_PUBLICATION"
+  },
+  "sameAs": [
+    "https://www.instagram.com/francoromeu.fr/",
+    "https://www.facebook.com/FrancoRomeuRF",
+    "https://www.linkedin.com/in/franco-romeu-fr/",
+    "https://www.youtube.com/@FRANCOROMEU",
+    "https://br.pinterest.com/francoromeu_fr/",
+    "https://github.com/Francoromeu-fr"
+  ],
+  "localBusiness": "COMBINED_WITH_ORGANIZATION",
+  "geo_status": "UNVERIFIED_POINT_EXCLUDED_FROM_PUBLIC_SCHEMA",
+  "missing_verified_fields": [
+    "street_address",
+    "postal_code",
+    "geo",
+    "legal_identifier",
+    "creator_rights_per_media"
+  ]
+}

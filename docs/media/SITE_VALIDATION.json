@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "executionDate": "2026-10-12T15:17:24.118Z",
+  "counts": {
+    "routes": 74,
+    "links": 6404,
+    "assets": 735,
+    "jsonld": 74,
+    "images": 502
+  },
+  "mediaUsed": 251,
+  "rejected": 196,
+  "errors": []
+}

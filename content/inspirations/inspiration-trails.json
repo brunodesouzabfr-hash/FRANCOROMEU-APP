@@ -1,0 +1,2456 @@
+{
+  "schema_version": "fr-editorial-1.0.0",
+  "generated_at": "2026-10-11",
+  "canonical": "https://www.francoromeufr.com.br",
+  "publication_state": "PRE_IMPLEMENTATION",
+  "auto_publish": false,
+  "trails": [
+    {
+      "trail_id": "FR-TR146",
+      "project_id": "FR-I146",
+      "title": "Estudo de materialidade — Adega em Limestone Moleanos",
+      "environment_id": "adega",
+      "material_ids": [
+        "limestone-moleanos",
+        "malha-de-bronze"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "iluminacao",
+        "climatizacao",
+        "revestimentos-e-acabamentos"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "adega",
+          "media_id": "FR-M-B5773FD4FC95ED6C",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "limestone-moleanos",
+            "malha-de-bronze"
+          ],
+          "media_id": "FR-M-9978DE0B620AF82F"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-0D3506EFDE3FD8E9",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/adega/adega-marcenaria-limestone-residencial-146/conteudo-adega-marcenaria-limestone-residencial-146.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR124",
+      "project_id": "FR-I124",
+      "title": "Estudo de materialidade — Ambiente em Greige fosco",
+      "environment_id": null,
+      "material_ids": [
+        "greige-fosco",
+        "carvalho-ebanizado"
+      ],
+      "service_ids": [
+        "revestimentos-e-acabamentos",
+        "projeto-e-compatibilizacao",
+        "marcenaria-sob-medida"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": null,
+          "media_id": "FR-M-55F19132FB6AFEC5",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "greige-fosco",
+            "carvalho-ebanizado"
+          ],
+          "media_id": "FR-M-C80EEEF057E3E342"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": null,
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "HOLD_INCOMPLETE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/ambiente-a-confirmar/ambiente-a-confirmar-revestimento-greige-residencial-124/conteudo-ambiente-a-confirmar-revestimento-greige-residencial-124.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR142",
+      "project_id": "FR-I142",
+      "title": "Estudo de materialidade — Área gourmet em Pedra-sabão",
+      "environment_id": "area-gourmet",
+      "material_ids": [
+        "pedra-sabao",
+        "nogueira-canaletto"
+      ],
+      "service_ids": [
+        "bancadas",
+        "marcenaria-sob-medida",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "area-gourmet",
+          "media_id": "FR-M-83EFB6DCE0B7B856",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "pedra-sabao",
+            "nogueira-canaletto"
+          ],
+          "media_id": "FR-M-89FE8AEC0CD681A5"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-496C23577E2DA23D",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/area-gourmet/area-gourmet-bancada-pedra-sabao-residencial-142/conteudo-area-gourmet-bancada-pedra-sabao-residencial-142.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR144",
+      "project_id": "FR-I144",
+      "title": "Estudo de materialidade — Ateliê residencial em Terra compactada",
+      "environment_id": "atelie",
+      "material_ids": [
+        "terra-compactada",
+        "freijo-natural"
+      ],
+      "service_ids": [
+        "bancadas",
+        "marcenaria-sob-medida",
+        "iluminacao",
+        "revestimentos-e-acabamentos"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "atelie",
+          "media_id": "FR-M-F8AF1967EFCB77C2",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "terra-compactada",
+            "freijo-natural"
+          ],
+          "media_id": "FR-M-B1C99AD5B504A588"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-2E4B9CE12259F76E",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/atelie/atelie-revestimento-terra-residencial-144/conteudo-atelie-revestimento-terra-residencial-144.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR120",
+      "project_id": "FR-I120",
+      "title": "Estudo de materialidade — Banheiro em Ônix mel",
+      "environment_id": "banheiro",
+      "material_ids": [
+        "onix-mel",
+        "latao-champagne"
+      ],
+      "service_ids": [
+        "pisos",
+        "revestimentos-e-acabamentos",
+        "bancadas",
+        "marcenaria-sob-medida",
+        "iluminacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "banheiro",
+          "media_id": "FR-M-D1B5E15E3819530F",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "onix-mel",
+            "latao-champagne"
+          ],
+          "media_id": "FR-M-E9E039D3D1147A98"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-4791AF2308E976EC",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/banheiro/banheiro-revestimento-onix-mel-residencial-120/conteudo-banheiro-revestimento-onix-mel-residencial-120.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR127",
+      "project_id": "FR-I127",
+      "title": "Estudo de materialidade — Banheiro em Quartzito Taj Mahal",
+      "environment_id": "banheiro",
+      "material_ids": [
+        "quartzito-taj-mahal",
+        "latao-escovado"
+      ],
+      "service_ids": [
+        "pisos",
+        "revestimentos-e-acabamentos",
+        "bancadas",
+        "marcenaria-sob-medida",
+        "iluminacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "banheiro",
+          "media_id": "FR-M-D1B5E15E3819530F",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "quartzito-taj-mahal",
+            "latao-escovado"
+          ],
+          "media_id": "FR-M-835087A9ACB7BCFF"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-16F8CF5B3FA870F4",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/banheiro/banheiro-revestimento-taj-mahal-residencial-127/conteudo-banheiro-revestimento-taj-mahal-residencial-127.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR106",
+      "project_id": "FR-I106",
+      "title": "Estudo de materialidade — Banheiro em Travertino Romano",
+      "environment_id": "banheiro",
+      "material_ids": [
+        "travertino-romano",
+        "carvalho-claro"
+      ],
+      "service_ids": [
+        "pisos",
+        "revestimentos-e-acabamentos",
+        "bancadas",
+        "marcenaria-sob-medida",
+        "iluminacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "banheiro",
+          "media_id": "FR-M-D1B5E15E3819530F",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "travertino-romano",
+            "carvalho-claro"
+          ],
+          "media_id": "FR-M-AD3EF4B11502B91A"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-EC35905A83A02DC0",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/banheiro/banheiro-revestimento-travertino-residencial-106/conteudo-banheiro-revestimento-travertino-residencial-106.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR135",
+      "project_id": "FR-I135",
+      "title": "Estudo de materialidade — Banheiro em Zellige verde floresta",
+      "environment_id": "banheiro",
+      "material_ids": [
+        "zellige-verde-floresta",
+        "niquel-escovado"
+      ],
+      "service_ids": [
+        "pisos",
+        "revestimentos-e-acabamentos",
+        "bancadas",
+        "marcenaria-sob-medida",
+        "iluminacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "banheiro",
+          "media_id": "FR-M-D1B5E15E3819530F",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "zellige-verde-floresta",
+            "niquel-escovado"
+          ],
+          "media_id": "FR-M-2E94B6C1800E029F"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-9F01F45DA21E9ED1",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/banheiro/banheiro-revestimento-zellige-residencial-135/conteudo-banheiro-revestimento-zellige-residencial-135.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR141",
+      "project_id": "FR-I141",
+      "title": "Estudo de materialidade — Biblioteca em Rosso Levanto",
+      "environment_id": "biblioteca",
+      "material_ids": [
+        "rosso-levanto",
+        "palha-natural"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "iluminacao",
+        "projeto-e-compatibilizacao",
+        "revestimentos-e-acabamentos"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "biblioteca",
+          "media_id": "FR-M-14B94B3E47FB47E6",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "rosso-levanto",
+            "palha-natural"
+          ],
+          "media_id": "FR-M-AE6FCAE144C9FD81"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-0F59DBE4EB22E23D",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/biblioteca/biblioteca-marcenaria-rosso-levanto-residencial-141/conteudo-biblioteca-marcenaria-rosso-levanto-residencial-141.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR149",
+      "project_id": "FR-I149",
+      "title": "Estudo de materialidade — Cinema residencial em Feltro acústico",
+      "environment_id": "cinema",
+      "material_ids": [
+        "feltro-acustico",
+        "carvalho-microperfurado"
+      ],
+      "service_ids": [
+        "acustica",
+        "marcenaria-sob-medida",
+        "iluminacao",
+        "automacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "cinema",
+          "media_id": "FR-M-4F14F4455772DA2D",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "feltro-acustico",
+            "carvalho-microperfurado"
+          ],
+          "media_id": "FR-M-597EAA20858074EF"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-5FC5CB760F74F3FE",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/cinema/cinema-acustica-feltro-residencial-149/conteudo-cinema-acustica-feltro-residencial-149.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR133",
+      "project_id": "FR-I133",
+      "title": "Estudo de materialidade — Cinema residencial em Azul noite",
+      "environment_id": "cinema",
+      "material_ids": [
+        "azul-noite",
+        "cherry-vintage"
+      ],
+      "service_ids": [
+        "acustica",
+        "marcenaria-sob-medida",
+        "iluminacao",
+        "automacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "cinema",
+          "media_id": "FR-M-4F14F4455772DA2D",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "azul-noite",
+            "cherry-vintage"
+          ],
+          "media_id": "FR-M-8071CD91AA2D7BBF"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-EA7BA8BEE381003F",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/cinema/cinema-automacao-azul-noite-residencial-133/conteudo-cinema-automacao-azul-noite-residencial-133.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR148",
+      "project_id": "FR-I148",
+      "title": "Estudo de materialidade — Closet-galeria em Espelho bronze",
+      "environment_id": "closet",
+      "material_ids": [
+        "espelho-bronze",
+        "couro-nobucke"
+      ],
+      "service_ids": [
+        "closets",
+        "portas-e-esquadrias",
+        "iluminacao",
+        "bancadas"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "closet",
+          "media_id": "FR-M-0FD1B97EC8FFF658",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "espelho-bronze",
+            "couro-nobucke"
+          ],
+          "media_id": "FR-M-BE34B1A15361BB2E"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-D51FE8727A625B8B",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/closet/closet-closet-planejado-espelho-bronze-residencial-148/conteudo-closet-closet-planejado-espelho-bronze-residencial-148.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR122",
+      "project_id": "FR-I122",
+      "title": "Estudo de materialidade — Closet em Linho areia",
+      "environment_id": "closet",
+      "material_ids": [
+        "linho-areia",
+        "bronze-escovado"
+      ],
+      "service_ids": [
+        "closets",
+        "portas-e-esquadrias",
+        "iluminacao",
+        "bancadas"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "closet",
+          "media_id": "FR-M-0FD1B97EC8FFF658",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "linho-areia",
+            "bronze-escovado"
+          ],
+          "media_id": "FR-M-E96FD2A58AD7CACC"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-9AA0A07EEEF24289",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/closet/closet-closet-planejado-linho-residencial-122/conteudo-closet-closet-planejado-linho-residencial-122.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR112",
+      "project_id": "FR-I112",
+      "title": "Estudo de materialidade — Closet em Fendi matte",
+      "environment_id": "closet",
+      "material_ids": [
+        "fendi-matte",
+        "vidro-reflecta-bronze"
+      ],
+      "service_ids": [
+        "closets",
+        "portas-e-esquadrias",
+        "iluminacao",
+        "bancadas"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "closet",
+          "media_id": "FR-M-0FD1B97EC8FFF658",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "fendi-matte",
+            "vidro-reflecta-bronze"
+          ],
+          "media_id": "FR-M-AFEACC74D6840CEA"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-07E4F6580C2E6F1C",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/closet/closet-closet-planejado-vidro-reflecta-residencial-112/conteudo-closet-closet-planejado-vidro-reflecta-residencial-112.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR102",
+      "project_id": "FR-I102",
+      "title": "Estudo de materialidade — Cozinha em Quartzito Black Fusion",
+      "environment_id": "cozinha",
+      "material_ids": [
+        "laca-grafite-acetinada",
+        "quartzito-black-fusion"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "bancadas",
+        "iluminacao",
+        "revestimentos-e-acabamentos",
+        "projeto-e-compatibilizacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "cozinha",
+          "media_id": "FR-M-C3EEB5AC24308F9D",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "laca-grafite-acetinada",
+            "quartzito-black-fusion"
+          ],
+          "media_id": "FR-M-8F86A2FC0B9A46F3"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-58B51DA38CB04D09",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/cozinha/cozinha-bancada-black-fusion-residencial-102/conteudo-cozinha-bancada-black-fusion-residencial-102.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR101",
+      "project_id": "FR-I101",
+      "title": "Estudo de materialidade — Cozinha em Calacatta Gold",
+      "environment_id": "cozinha",
+      "material_ids": [
+        "carvalho-natural-canelado",
+        "calacatta-gold"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "bancadas",
+        "iluminacao",
+        "revestimentos-e-acabamentos",
+        "projeto-e-compatibilizacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "cozinha",
+          "media_id": "FR-M-C3EEB5AC24308F9D",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "carvalho-natural-canelado",
+            "calacatta-gold"
+          ],
+          "media_id": "FR-M-FF6FB66521DA7A1B"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-F9B87E87B5BD6EC0",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/cozinha/cozinha-bancada-calacatta-residencial-101/conteudo-cozinha-bancada-calacatta-residencial-101.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR136",
+      "project_id": "FR-I136",
+      "title": "Estudo de materialidade — Cozinha em Quartzito Patagonia",
+      "environment_id": "cozinha",
+      "material_ids": [
+        "quartzito-patagonia",
+        "laca-cafe"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "bancadas",
+        "iluminacao",
+        "revestimentos-e-acabamentos",
+        "projeto-e-compatibilizacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "cozinha",
+          "media_id": "FR-M-C3EEB5AC24308F9D",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "quartzito-patagonia",
+            "laca-cafe"
+          ],
+          "media_id": "FR-M-11A08C4C25E59CEB"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-C2F7F1D917A8BECA",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/cozinha/cozinha-bancada-patagonia-residencial-136/conteudo-cozinha-bancada-patagonia-residencial-136.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR103",
+      "project_id": "FR-I103",
+      "title": "Estudo de materialidade — Cozinha em Quartzito Taj Mahal",
+      "environment_id": "cozinha",
+      "material_ids": [
+        "off-white-fosco",
+        "quartzito-taj-mahal"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "bancadas",
+        "iluminacao",
+        "revestimentos-e-acabamentos",
+        "projeto-e-compatibilizacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "cozinha",
+          "media_id": "FR-M-C3EEB5AC24308F9D",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "off-white-fosco",
+            "quartzito-taj-mahal"
+          ],
+          "media_id": "FR-M-6839429975B59F3A"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-FF1D7BDF3045C558",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/cozinha/cozinha-bancada-taj-mahal-residencial-103/conteudo-cozinha-bancada-taj-mahal-residencial-103.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR104",
+      "project_id": "FR-I104",
+      "title": "Estudo de materialidade — Cozinha em Travertino Romano",
+      "environment_id": "cozinha",
+      "material_ids": [
+        "verde-petroleo-fosco",
+        "travertino-romano"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "bancadas",
+        "iluminacao",
+        "revestimentos-e-acabamentos",
+        "projeto-e-compatibilizacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "cozinha",
+          "media_id": "FR-M-C3EEB5AC24308F9D",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "verde-petroleo-fosco",
+            "travertino-romano"
+          ],
+          "media_id": "FR-M-6E007F88481955F5"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-F8CC9967F759994D",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/cozinha/cozinha-bancada-travertino-residencial-104/conteudo-cozinha-bancada-travertino-residencial-104.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR121",
+      "project_id": "FR-I121",
+      "title": "Estudo de materialidade — Cozinha em Concreto aparente",
+      "environment_id": "cozinha",
+      "material_ids": [
+        "concreto-aparente",
+        "nogueira-escura"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "bancadas",
+        "iluminacao",
+        "revestimentos-e-acabamentos",
+        "projeto-e-compatibilizacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "cozinha",
+          "media_id": "FR-M-C3EEB5AC24308F9D",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "concreto-aparente",
+            "nogueira-escura"
+          ],
+          "media_id": "FR-M-45DCEC99F26AB8A7"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-87BC7D8C7362F515",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/cozinha/cozinha-marcenaria-concreto-residencial-121/conteudo-cozinha-marcenaria-concreto-residencial-121.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR143",
+      "project_id": "FR-I143",
+      "title": "Estudo de materialidade — Escada-galeria em Vidro fundido",
+      "environment_id": "escada",
+      "material_ids": [
+        "vidro-fundido",
+        "aco-azulado"
+      ],
+      "service_ids": [
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "escada",
+          "media_id": "FR-M-A975E2A8E65DB14D",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "vidro-fundido",
+            "aco-azulado"
+          ],
+          "media_id": "FR-M-E84E680CEFEF54F8"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-566E71C811F5DE53",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/escada/escada-vidro-vidro-fundido-residencial-143/conteudo-escada-vidro-vidro-fundido-residencial-143.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR131",
+      "project_id": "FR-I131",
+      "title": "Estudo de materialidade — Escritório em Bordeaux profundo",
+      "environment_id": "escritorio",
+      "material_ids": [
+        "bordeaux-profundo",
+        "ebano-fosco"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "escritorio",
+          "media_id": "FR-M-FFF7AE5E8C667A6E",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "bordeaux-profundo",
+            "ebano-fosco"
+          ],
+          "media_id": "FR-M-A41CCD96F018EF23"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-716EC1A866FE8CEC",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/escritorio/escritorio-marcenaria-bordeaux-residencial-131/conteudo-escritorio-marcenaria-bordeaux-residencial-131.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR110",
+      "project_id": "FR-I110",
+      "title": "Estudo de materialidade — Escritório em Nogueira americana",
+      "environment_id": "escritorio",
+      "material_ids": [
+        "nogueira-americana",
+        "couro-caramelo"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "escritorio",
+          "media_id": "FR-M-FFF7AE5E8C667A6E",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "nogueira-americana",
+            "couro-caramelo"
+          ],
+          "media_id": "FR-M-2C1CC4014737033A"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-655E521A8E6DF4C7",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/escritorio/escritorio-marcenaria-nogueira-residencial-110/conteudo-escritorio-marcenaria-nogueira-residencial-110.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR108",
+      "project_id": "FR-I108",
+      "title": "Estudo de materialidade — Fachada em Concreto aparente",
+      "environment_id": "fachada",
+      "material_ids": [
+        "concreto-aparente",
+        "cumaru-natural"
+      ],
+      "service_ids": [
+        "revestimentos-e-acabamentos",
+        "marcenaria-sob-medida",
+        "portas-e-esquadrias",
+        "iluminacao",
+        "paisagismo",
+        "projeto-e-compatibilizacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "fachada",
+          "media_id": "FR-M-A22B3E149551C0F5",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "concreto-aparente",
+            "cumaru-natural"
+          ],
+          "media_id": "FR-M-89AF8E313FB4F286"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-9875F6925F5893AD",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/fachada/fachada-revestimento-concreto-residencial-108/conteudo-fachada-revestimento-concreto-residencial-108.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR129",
+      "project_id": "FR-I129",
+      "title": "Estudo de materialidade — Fachada em Concreto arquitetônico",
+      "environment_id": "fachada",
+      "material_ids": [
+        "concreto-arquitetonico",
+        "cumaru-natural"
+      ],
+      "service_ids": [
+        "revestimentos-e-acabamentos",
+        "marcenaria-sob-medida",
+        "portas-e-esquadrias",
+        "iluminacao",
+        "paisagismo",
+        "projeto-e-compatibilizacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "fachada",
+          "media_id": "FR-M-A22B3E149551C0F5",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "concreto-arquitetonico",
+            "cumaru-natural"
+          ],
+          "media_id": "FR-M-367FAB8B2D96C986"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-A8765D3C5621C76B",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/fachada/fachada-revestimento-concreto-residencial-129/conteudo-fachada-revestimento-concreto-residencial-129.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR117",
+      "project_id": "FR-I117",
+      "title": "Estudo de materialidade — Fachada em Pedra moledo",
+      "environment_id": "fachada",
+      "material_ids": [
+        "pedra-moledo",
+        "aco-corten"
+      ],
+      "service_ids": [
+        "revestimentos-e-acabamentos",
+        "marcenaria-sob-medida",
+        "portas-e-esquadrias",
+        "iluminacao",
+        "paisagismo",
+        "projeto-e-compatibilizacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "fachada",
+          "media_id": "FR-M-A22B3E149551C0F5",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "pedra-moledo",
+            "aco-corten"
+          ],
+          "media_id": "FR-M-486DE074FA0D6C3A"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-9C5F8D0424D0EA1C",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/fachada/fachada-revestimento-pedra-moledo-residencial-117/conteudo-fachada-revestimento-pedra-moledo-residencial-117.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR137",
+      "project_id": "FR-I137",
+      "title": "Estudo de materialidade — Hall de entrada em Granilite antracita",
+      "environment_id": "hall",
+      "material_ids": [
+        "granilite-antracita",
+        "tauari-termotratado"
+      ],
+      "service_ids": [
+        "pisos",
+        "revestimentos-e-acabamentos",
+        "marcenaria-sob-medida",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "hall",
+          "media_id": "FR-M-D405D8D548A405C2",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "granilite-antracita",
+            "tauari-termotratado"
+          ],
+          "media_id": "FR-M-54CA6326E4C1F6BF"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-6B9AED818E37970F",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/hall/hall-piso-granilite-residencial-137/conteudo-hall-piso-granilite-residencial-137.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR114",
+      "project_id": "FR-I114",
+      "title": "Estudo de materialidade — Hall de entrada em Microcimento greige",
+      "environment_id": "hall",
+      "material_ids": [
+        "microcimento-greige",
+        "carvalho-ebanizado"
+      ],
+      "service_ids": [
+        "pisos",
+        "revestimentos-e-acabamentos",
+        "marcenaria-sob-medida",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "hall",
+          "media_id": "FR-M-D405D8D548A405C2",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "microcimento-greige",
+            "carvalho-ebanizado"
+          ],
+          "media_id": "FR-M-BA0729261A310DAA"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-EA12A88DB29938AD",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/hall/hall-revestimento-microcimento-residencial-114/conteudo-hall-revestimento-microcimento-residencial-114.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR132",
+      "project_id": "FR-I132",
+      "title": "Estudo de materialidade — Lavabo em Ameixa intensa",
+      "environment_id": "lavabo",
+      "material_ids": [
+        "ameixa-intensa",
+        "cobre-escovado"
+      ],
+      "service_ids": [
+        "bancadas",
+        "revestimentos-e-acabamentos",
+        "marcenaria-sob-medida",
+        "iluminacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "lavabo",
+          "media_id": "FR-M-1A529F6C4805ACE6",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "ameixa-intensa",
+            "cobre-escovado"
+          ],
+          "media_id": "FR-M-6F4545E989AFB357"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-B625EA35B1A5D4A4",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/lavabo/lavabo-revestimento-ameixa-residencial-132/conteudo-lavabo-revestimento-ameixa-residencial-132.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR140",
+      "project_id": "FR-I140",
+      "title": "Estudo de materialidade — Lavabo em Ônix Verde Persa",
+      "environment_id": "lavabo",
+      "material_ids": [
+        "onix-verde-persa",
+        "cobre-oxidado"
+      ],
+      "service_ids": [
+        "bancadas",
+        "revestimentos-e-acabamentos",
+        "marcenaria-sob-medida",
+        "iluminacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "lavabo",
+          "media_id": "FR-M-1A529F6C4805ACE6",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "onix-verde-persa",
+            "cobre-oxidado"
+          ],
+          "media_id": "FR-M-CCA6BAD9775C2890"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-86FF6FCCFE3EA6A2",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/lavabo/lavabo-revestimento-onix-verde-residencial-140/conteudo-lavabo-revestimento-onix-verde-residencial-140.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR113",
+      "project_id": "FR-I113",
+      "title": "Estudo de materialidade — Lavabo em Mármore Verde Guatemala",
+      "environment_id": "lavabo",
+      "material_ids": [
+        "marmore-verde-guatemala",
+        "cumaru-natural"
+      ],
+      "service_ids": [
+        "bancadas",
+        "revestimentos-e-acabamentos",
+        "marcenaria-sob-medida",
+        "iluminacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "lavabo",
+          "media_id": "FR-M-1A529F6C4805ACE6",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "marmore-verde-guatemala",
+            "cumaru-natural"
+          ],
+          "media_id": "FR-M-391B329FBF7DBAD6"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-76E2BA61C4E6623B",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/lavabo/lavabo-revestimento-verde-guatemala-residencial-113/conteudo-lavabo-revestimento-verde-guatemala-residencial-113.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR147",
+      "project_id": "FR-I147",
+      "title": "Estudo de materialidade — Pavilhão de piscina em Basalto flamejado",
+      "environment_id": "pavilhao-piscina",
+      "material_ids": [
+        "madeira-yakisugi",
+        "basalto-flamejado"
+      ],
+      "service_ids": [
+        "revestimentos-e-acabamentos",
+        "marcenaria-sob-medida",
+        "iluminacao",
+        "forros",
+        "paisagismo",
+        "projeto-e-compatibilizacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "pavilhao-piscina",
+          "media_id": "FR-M-FD93920D56C9D248",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "madeira-yakisugi",
+            "basalto-flamejado"
+          ],
+          "media_id": "FR-M-9C91617D0BEB2755"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-80D892C71088F476",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/pavilhao-piscina/pavilhao-piscina-revestimento-yakisugi-residencial-147/conteudo-pavilhao-piscina-revestimento-yakisugi-residencial-147.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR134",
+      "project_id": "FR-I134",
+      "title": "Estudo de materialidade — Quarto em Terracota queimada",
+      "environment_id": "quarto",
+      "material_ids": [
+        "oliva-profunda",
+        "terracota-queimada"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "revestimentos-e-acabamentos",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "quarto",
+          "media_id": "FR-M-7001344CDEEECB14",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "oliva-profunda",
+            "terracota-queimada"
+          ],
+          "media_id": "FR-M-DD0153C653B44AAD"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-3A19EE1010A7B9B7",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/quarto/quarto-marcenaria-terracota-residencial-134/conteudo-quarto-marcenaria-terracota-residencial-134.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR139",
+      "project_id": "FR-I139",
+      "title": "Estudo de materialidade — Quarto em Tadelakt terracota",
+      "environment_id": "quarto",
+      "material_ids": [
+        "tadelakt-terracota",
+        "sucupira-natural"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "revestimentos-e-acabamentos",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "quarto",
+          "media_id": "FR-M-7001344CDEEECB14",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "tadelakt-terracota",
+            "sucupira-natural"
+          ],
+          "media_id": "FR-M-CA8B2B3C58A3950B"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-3AACD83FF9529778",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/quarto/quarto-revestimento-tadelakt-residencial-139/conteudo-quarto-revestimento-tadelakt-residencial-139.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR138",
+      "project_id": "FR-I138",
+      "title": "Estudo de materialidade — Sala de áudio em Cortiça fumê",
+      "environment_id": "sala-audio",
+      "material_ids": [
+        "cortica-fume",
+        "la-acustica-caramelo"
+      ],
+      "service_ids": [
+        "acustica",
+        "marcenaria-sob-medida",
+        "iluminacao",
+        "eletrica"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "sala-audio",
+          "media_id": "FR-M-03BFE5EA65D57B19",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "cortica-fume",
+            "la-acustica-caramelo"
+          ],
+          "media_id": "FR-M-62C4BFC6A236ECCB"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-0506B896ABE2365C",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/sala-audio/sala-audio-acustica-cortica-residencial-138/conteudo-sala-audio-acustica-cortica-residencial-138.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR130",
+      "project_id": "FR-I130",
+      "title": "Estudo de materialidade — Sala de estar em Couro conhaque",
+      "environment_id": "sala-estar",
+      "material_ids": [
+        "couro-conhaque",
+        "nogueira-escura"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "revestimentos-e-acabamentos",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "sala-estar",
+          "media_id": "FR-M-7343C8DD62851939",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "couro-conhaque",
+            "nogueira-escura"
+          ],
+          "media_id": "FR-M-3A81F376EA55998F"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-E7560379200A4082",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/sala-estar/sala-estar-marcenaria-couro-residencial-130/conteudo-sala-estar-marcenaria-couro-residencial-130.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR118",
+      "project_id": "FR-I118",
+      "title": "Estudo de materialidade — Sala de estar em Palha indiana",
+      "environment_id": "sala-estar",
+      "material_ids": [
+        "palha-indiana",
+        "carvalho-claro"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "revestimentos-e-acabamentos",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "sala-estar",
+          "media_id": "FR-M-7343C8DD62851939",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "palha-indiana",
+            "carvalho-claro"
+          ],
+          "media_id": "FR-M-DAD7A7434C231554"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-11593EB013F99BDE",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/sala-estar/sala-estar-marcenaria-palha-residencial-118/conteudo-sala-estar-marcenaria-palha-residencial-118.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR107",
+      "project_id": "FR-I107",
+      "title": "Estudo de materialidade — Sala de estar em Quartzito Taj Mahal",
+      "environment_id": "sala-estar",
+      "material_ids": [
+        "nogueira-fume",
+        "quartzito-taj-mahal"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "revestimentos-e-acabamentos",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "sala-estar",
+          "media_id": "FR-M-7343C8DD62851939",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "nogueira-fume",
+            "quartzito-taj-mahal"
+          ],
+          "media_id": "FR-M-A765E32AC633C849"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-CAD07278FFE31694",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/sala-estar/sala-estar-marcenaria-taj-mahal-residencial-107/conteudo-sala-estar-marcenaria-taj-mahal-residencial-107.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR116",
+      "project_id": "FR-I116",
+      "title": "Estudo de materialidade — Sala de estar em Black Fusion",
+      "environment_id": "sala-estar",
+      "material_ids": [
+        "black-fusion",
+        "nogueira-fume"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "revestimentos-e-acabamentos",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "sala-estar",
+          "media_id": "FR-M-7343C8DD62851939",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "black-fusion",
+            "nogueira-fume"
+          ],
+          "media_id": "FR-M-B5EEC432F623DCDF"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-1E89219EB7D0A531",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/sala-estar/sala-estar-painel-black-fusion-residencial-116/conteudo-sala-estar-painel-black-fusion-residencial-116.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR126",
+      "project_id": "FR-I126",
+      "title": "Estudo de materialidade — Sala de estar em Travertino Romano",
+      "environment_id": "sala-estar",
+      "material_ids": [
+        "travertino-romano",
+        "boucle-avela"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "revestimentos-e-acabamentos",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "sala-estar",
+          "media_id": "FR-M-7343C8DD62851939",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "travertino-romano",
+            "boucle-avela"
+          ],
+          "media_id": "FR-M-102719814FBBBA41"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-A4AA6D26829AC6A0",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/sala-estar/sala-estar-revestimento-travertino-residencial-126/conteudo-sala-estar-revestimento-travertino-residencial-126.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR119",
+      "project_id": "FR-I119",
+      "title": "Estudo de materialidade — Sala gamer em Azul petróleo",
+      "environment_id": "sala-gamer",
+      "material_ids": [
+        "azul-petroleo",
+        "ripado-grafite"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "iluminacao",
+        "eletrica",
+        "automacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "sala-gamer",
+          "media_id": "FR-M-5634AF0D80E734C0",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "azul-petroleo",
+            "ripado-grafite"
+          ],
+          "media_id": "FR-M-5296B598ACC770B4"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-75A3EABE0177F947",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/sala-gamer/sala-gamer-automacao-azul-petroleo-residencial-119/conteudo-sala-gamer-automacao-azul-petroleo-residencial-119.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR109",
+      "project_id": "FR-I109",
+      "title": "Estudo de materialidade — Sala gamer em Grafite soft-touch",
+      "environment_id": "sala-gamer",
+      "material_ids": [
+        "grafite-soft-touch",
+        "vidro-fume",
+        "led"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "iluminacao",
+        "eletrica",
+        "automacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "sala-gamer",
+          "media_id": "FR-M-5634AF0D80E734C0",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "grafite-soft-touch",
+            "vidro-fume",
+            "led"
+          ],
+          "media_id": "FR-M-D5D33C39165224D2"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-3F7186AA492D142A",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/sala-gamer/sala-gamer-automacao-grafite-residencial-109/conteudo-sala-gamer-automacao-grafite-residencial-109.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR128",
+      "project_id": "FR-I128",
+      "title": "Estudo de materialidade — Sala gamer em Grafite acetinado",
+      "environment_id": "sala-gamer",
+      "material_ids": [
+        "grafite-acetinado",
+        "azul-petroleo"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "iluminacao",
+        "eletrica",
+        "automacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "sala-gamer",
+          "media_id": "FR-M-5634AF0D80E734C0",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "grafite-acetinado",
+            "azul-petroleo"
+          ],
+          "media_id": "FR-M-4F4C99EE43808044"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-B3AD907DA59F5BBB",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/sala-gamer/sala-gamer-automacao-grafite-residencial-128/conteudo-sala-gamer-automacao-grafite-residencial-128.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR111",
+      "project_id": "FR-I111",
+      "title": "Estudo de materialidade — Sala de jantar em Ônix mel",
+      "environment_id": "sala-jantar",
+      "material_ids": [
+        "onix-mel",
+        "metal-champagne"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "revestimentos-e-acabamentos",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "sala-jantar",
+          "media_id": "FR-M-192A26BCB8AC6426",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "onix-mel",
+            "metal-champagne"
+          ],
+          "media_id": "FR-M-FD82D004C5402E13"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-B6898A912D180F83",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/sala-jantar/sala-jantar-mesa-onix-mel-residencial-111/conteudo-sala-jantar-mesa-onix-mel-residencial-111.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR123",
+      "project_id": "FR-I123",
+      "title": "Estudo de materialidade — Sala de jantar em Travertino Romano",
+      "environment_id": "sala-jantar",
+      "material_ids": [
+        "travertino-romano",
+        "verde-musgo"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "revestimentos-e-acabamentos",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "sala-jantar",
+          "media_id": "FR-M-192A26BCB8AC6426",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "travertino-romano",
+            "verde-musgo"
+          ],
+          "media_id": "FR-M-0E82A04AF7A51964"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-C64ED2BC9ACF0A69",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/sala-jantar/sala-jantar-mesa-travertino-residencial-123/conteudo-sala-jantar-mesa-travertino-residencial-123.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR145",
+      "project_id": "FR-I145",
+      "title": "Estudo de materialidade — Sala de jantar em Marmorino grafite",
+      "environment_id": "sala-jantar",
+      "material_ids": [
+        "marmorino-grafite",
+        "eucalipto-fume"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "revestimentos-e-acabamentos",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "sala-jantar",
+          "media_id": "FR-M-192A26BCB8AC6426",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "marmorino-grafite",
+            "eucalipto-fume"
+          ],
+          "media_id": "FR-M-1B189C326529AB4A"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-A3E97FD89DCB98EC",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/sala-jantar/sala-jantar-revestimento-marmorino-residencial-145/conteudo-sala-jantar-revestimento-marmorino-residencial-145.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR115",
+      "project_id": "FR-I115",
+      "title": "Estudo de materialidade — Suíte em Calcário areia",
+      "environment_id": "quarto",
+      "material_ids": [
+        "calcario-areia",
+        "freijo-natural"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "revestimentos-e-acabamentos",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "quarto",
+          "media_id": "FR-M-F02FF4EEDFA69C7E",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "calcario-areia",
+            "freijo-natural"
+          ],
+          "media_id": "FR-M-8477FB1BE0B0C253"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-96B1F9605BEFC3C2",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/suite/suite-marcenaria-calcario-residencial-115/conteudo-suite-marcenaria-calcario-residencial-115.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR105",
+      "project_id": "FR-I105",
+      "title": "Estudo de materialidade — Suíte em Limestone areia",
+      "environment_id": "quarto",
+      "material_ids": [
+        "freijo-natural",
+        "limestone-areia"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "revestimentos-e-acabamentos",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "quarto",
+          "media_id": "FR-M-F02FF4EEDFA69C7E",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "freijo-natural",
+            "limestone-areia"
+          ],
+          "media_id": "FR-M-33E05A9B4D23EB8A"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-FA51CBA2D7AD3D6D",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/suite/suite-marcenaria-limestone-residencial-105/conteudo-suite-marcenaria-limestone-residencial-105.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR125",
+      "project_id": "FR-I125",
+      "title": "Estudo de materialidade — Suíte em Microcimento areia",
+      "environment_id": "quarto",
+      "material_ids": [
+        "carvalho-claro",
+        "microcimento-areia"
+      ],
+      "service_ids": [
+        "marcenaria-sob-medida",
+        "revestimentos-e-acabamentos",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "environment_id": "quarto",
+          "media_id": "FR-M-F02FF4EEDFA69C7E",
+          "role": "FAMILY_CONTEXT_NOT_PROJECT_PROOF"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "material_ids": [
+            "carvalho-claro",
+            "microcimento-areia"
+          ],
+          "media_id": "FR-M-FED6FADB891BB1AB"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-BD66F74EA142A008",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "AMBIENTE → MATERIAL → EXEMPLO ILUSTRATIVO",
+      "source_document": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/suite/suite-marcenaria-microcimento-residencial-125/conteudo-suite-marcenaria-microcimento-residencial-125.md"
+      }
+    },
+    {
+      "trail_id": "FR-TR-C001",
+      "project_id": "FR-C001",
+      "title": "Cozinha com mini-ilha — superfície clara, ripado e LED",
+      "environment_id": "cozinha",
+      "material_ids": [
+        "quartzo-calacatta",
+        "acabamento-amadeirado",
+        "led"
+      ],
+      "service_ids": [
+        "bancadas",
+        "marcenaria-sob-medida"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "media_id": "FR-M-986CF342224E81F1",
+          "environment_id": "cozinha"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "media_id": "FR-M-D0CA9C7352C86C81",
+          "material_ids": [
+            "quartzo-calacatta",
+            "acabamento-amadeirado",
+            "led"
+          ],
+          "interpretation": "ILLUSTRATIVE_MATERIALITY_DETAIL_NOT_LAB_SAMPLE"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-F4512475BCC65053",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "ESTUDO DE PROJETO — EXEMPLO ILUSTRATIVO",
+      "chronology_verified": false
+    },
+    {
+      "trail_id": "FR-TR-C002",
+      "project_id": "FR-C001",
+      "title": "Bancada esquerda — superfície clara e cuba Kokay",
+      "environment_id": "cozinha",
+      "material_ids": [
+        "quartzo-calacatta"
+      ],
+      "service_ids": [
+        "bancadas",
+        "hidraulica"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "media_id": "FR-M-2DD45B193B9D9702",
+          "environment_id": "cozinha"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "media_id": "FR-M-C9098D450C5629A5",
+          "material_ids": [
+            "quartzo-calacatta"
+          ],
+          "interpretation": "ILLUSTRATIVE_MATERIALITY_DETAIL_NOT_LAB_SAMPLE"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-B239E5912188239C",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "ESTUDO DE PROJETO — EXEMPLO ILUSTRATIVO",
+      "chronology_verified": false
+    },
+    {
+      "trail_id": "FR-TR-C003",
+      "project_id": "FR-C001",
+      "title": "Lavanderia — bancada, marcenaria e luz",
+      "environment_id": "lavanderia",
+      "material_ids": [
+        "quartzo-calacatta"
+      ],
+      "service_ids": [
+        "bancadas",
+        "marcenaria-sob-medida",
+        "portas-e-esquadrias",
+        "hidraulica",
+        "revestimentos-e-acabamentos"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "type": "ENVIRONMENT",
+          "media_id": "FR-M-85813FC193F39D38",
+          "environment_id": "lavanderia"
+        },
+        {
+          "order": 2,
+          "type": "MATERIAL",
+          "media_id": "FR-M-15E6787FB27EEAE9",
+          "material_ids": [
+            "quartzo-calacatta"
+          ],
+          "interpretation": "ILLUSTRATIVE_MATERIALITY_DETAIL_NOT_LAB_SAMPLE"
+        },
+        {
+          "order": 3,
+          "type": "EXAMPLE",
+          "media_id": "FR-M-AD9F695AA3938F46",
+          "nature": "ILLUSTRATIVE",
+          "execution_documented": false
+        }
+      ],
+      "status": "COMPLETE_ILLUSTRATIVE",
+      "required_public_label": "ESTUDO DE PROJETO — EXEMPLO ILUSTRATIVO",
+      "chronology_verified": false
+    }
+  ]
+}

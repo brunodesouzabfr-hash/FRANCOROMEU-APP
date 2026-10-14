@@ -1,0 +1,48 @@
+# Relatório de portabilidade do build
+
+## Falha histórica comprovada
+
+O deployment Vercel `dpl_BgEg3WvsgTexJ5xB6h5VvJZgZRuc`, do commit candidato `f9a5f1147719`, falhou em 13/10/2026. Os logs registram como primeiro erro fatal:
+
+`ENOENT: no such file or directory, lstat '/vercel/path0/CODEX USE AQUI'`
+
+A pilha aponta para `realpathSync` em `src/media-library.cjs`, chamado por `scripts/prepare-project-library.cjs` durante `npm run build`. Portanto, a causa raiz não era hipotética: o build dependia de uma pasta privada ausente no clone Vercel.
+
+## Correção implementada
+
+- `CODEX USE AQUI` tornou-se fonte histórica opcional.
+- Dados públicos necessários vêm de `content/`, `prepared-media/editorial/`, `assets/media/` e snapshots versionados.
+- `docs/additions/LEGACY_PROJECT_ROUTES_MAP.json` substitui a leitura de `CODEX USE AQUI/dist/projetos.html`.
+- Ausência de fonte histórica é mantida como `SOURCE_UNAVAILABLE`.
+- Caches, inventários, mapas transitórios e relatórios do build são gravados em `.artifacts/build/`, ignorado pelo Git.
+- O build não reescreve CSVs ou documentos versionados.
+- A saída pública é recriada em `dist/` e contém somente allowlists/ativos referenciados.
+
+## Allowlist pública de raiz
+
+- `robots.txt`
+- `sitemap.xml`
+- `site.webmanifest`
+- `browserconfig.xml`
+- `favicon.ico`
+- `BingSiteAuth.xml`
+- `15371fdcae5446498483cb1385b2ccc3.txt`
+
+## Evidência local
+
+- `npm ci`: PASS, 54 pacotes, 0 vulnerabilidades reportadas.
+- `npm run build`: PASS sem `CODEX USE AQUI` na worktree isolada.
+- Output: 832 arquivos, 332 rotas e 284 mídias normalizadas.
+- SHA-256 do HTML público final: `0e0e3cb52e5c89ba1700fc403160161e63f2edc901c08768d334c55c7429255e`.
+- Fingerprint da árvore pública final: `f83093b5bb5629ea71e3a8e09d36ac407490482a8f434716eff6dc043f128604`.
+- `node scripts/check-project-library.cjs`: PASS; 6.788 links, 2.919 imagens, 332 JSON-LD e 5 sitemaps verificados.
+- `node scripts/check-build-idempotence.cjs`: PASS antes do ajuste final de CSS; será repetido no checkpoint final.
+- Fontes privadas, ZIPs, CSVs, Markdown, God Mode e dados administrativos ausentes da `dist`.
+
+## Ambiente Vercel
+
+- Projeto confirmado por leitura: equipe `franco-romeu`, projeto `francoromeu-app`, root directory `.`.
+- `vercel.json` define `npm run build`, output `dist` e `cleanUrls: true`, sobrepondo os defaults genéricos do projeto.
+- Nenhum deploy manual foi executado.
+- A confirmação definitiva de portabilidade será feita também em uma worktree limpa do commit e pelo preview Git da branch.
+

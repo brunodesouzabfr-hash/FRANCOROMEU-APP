@@ -1,0 +1,13 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),assert=require('node:assert/strict'),{execFileSync}=require('node:child_process');
+const artifactDir=path.resolve(process.env.FR_ARTIFACT_DIR||'.artifacts/build'),reportFile=path.join(artifactDir,'IMAGE_BUILD_REPORT.json');
+const hash=file=>crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
+const tracked=execFileSync('git',['ls-files','-z'],{encoding:'utf8',maxBuffer:20e6}).split('\0').filter(Boolean);
+const snapshot=()=>Object.fromEntries(tracked.map(file=>[file,fs.existsSync(file)?hash(file):null]));
+const sourcesBefore=snapshot(),before=JSON.parse(fs.readFileSync(reportFile,'utf8'));
+console.log(execFileSync('npm',['run','build'],{encoding:'utf8',maxBuffer:4e6}));
+const after=JSON.parse(fs.readFileSync(reportFile,'utf8')),sourcesAfter=snapshot();
+assert.equal(after.publicFingerprint,before.publicFingerprint,'public artifact bytes changed on repeat');
+assert.deepEqual(sourcesAfter,sourcesBefore,'build changed a tracked source file');
+const report={status:'PASS',publicFingerprint:after.publicFingerprint,artifacts:Object.keys(after.artifacts).length,trackedSources:tracked.length,media:after.media,routes:after.routes};
+fs.mkdirSync(artifactDir,{recursive:true});fs.writeFileSync(path.join(artifactDir,'IMAGE_IDEMPOTENCE.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));

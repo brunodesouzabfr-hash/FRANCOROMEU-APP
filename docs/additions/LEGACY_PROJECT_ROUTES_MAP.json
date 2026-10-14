@@ -1,0 +1,790 @@
+{
+  "generated_from": "CODEX USE AQUI/dist/projetos.html",
+  "identified": 111,
+  "project_entries": 109,
+  "excluded": [
+    {
+      "project_id": "FR-I124",
+      "reason": "Não integrava as 109 leituras do dist e possui ambiente a confirmar"
+    }
+  ],
+  "routes": [
+    {
+      "oldRoute": "/projetos/",
+      "title": "Índice de projetos",
+      "newRoute": "/projetos/",
+      "type": "CollectionPage",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/projetos/estudo-area-gourmet-cozinha-planejada-madeira-casa-010",
+      "title": "Estudo ilustrativo — Área gourmet — Cozinha planejada — 010",
+      "newRoute": "/projetos/antes-depois/area-gourmet-cozinha-planejada-madeira-casa-010/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "REDIRECT"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA040",
+      "title": "Estudo ilustrativo — Área gourmet — Cozinha planejada — 040",
+      "newRoute": "/projetos/antes-depois/area-gourmet-cozinha-planejada-madeira-casa-040/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA019",
+      "title": "Estudo ilustrativo — Área gourmet — Cozinha planejada — 019",
+      "newRoute": "/projetos/antes-depois/area-gourmet-cozinha-planejada-pedra-natural-casa-019/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA058",
+      "title": "Estudo ilustrativo — Área gourmet — Forro — 058",
+      "newRoute": "/projetos/antes-depois/area-gourmet-forro-madeira-casa-058/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/projetos/estudo-banheiro-bancada-pedra-natural-apto-037",
+      "title": "Estudo ilustrativo — Banheiro — Bancada — 037",
+      "newRoute": "/projetos/antes-depois/banheiro-bancada-pedra-natural-apto-037/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "REDIRECT"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA007",
+      "title": "Estudo ilustrativo — Banheiro — Bancada — 007",
+      "newRoute": "/projetos/antes-depois/banheiro-bancada-pedra-natural-casa-007/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA015",
+      "title": "Estudo ilustrativo — Banheiro — Revestimento — 015",
+      "newRoute": "/projetos/antes-depois/banheiro-revestimento-pedra-natural-casa-015/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA046",
+      "title": "Estudo ilustrativo — Banheiro — Revestimento — 046",
+      "newRoute": "/projetos/antes-depois/banheiro-revestimento-porcelanato-apto-046/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/projetos/estudo-closet-closet-planejado-madeira-apto-030",
+      "title": "Estudo ilustrativo — Closet — Closet planejado — 030",
+      "newRoute": "/projetos/antes-depois/closet-closet-planejado-madeira-apto-030/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "REDIRECT"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA006",
+      "title": "Estudo ilustrativo — Closet — Closet planejado — 006",
+      "newRoute": "/projetos/antes-depois/closet-closet-planejado-madeira-casa-006/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA017",
+      "title": "Estudo ilustrativo — Corredor — Iluminação — 017",
+      "newRoute": "/projetos/antes-depois/corredor-iluminacao-madeira-casa-017/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/projetos/estudo-cozinha-bancada-calacatta-apto-055",
+      "title": "Estudo ilustrativo — Cozinha — Bancada — 055",
+      "newRoute": "/projetos/antes-depois/cozinha-bancada-calacatta-apto-055/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "REDIRECT"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA013",
+      "title": "Estudo ilustrativo — Cozinha — Cozinha planejada — 013",
+      "newRoute": "/projetos/antes-depois/cozinha-cozinha-planejada-madeira-casa-013/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA032",
+      "title": "Estudo ilustrativo — Cozinha — Cozinha planejada — 032",
+      "newRoute": "/projetos/antes-depois/cozinha-cozinha-planejada-mdf-apto-032/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA045",
+      "title": "Estudo ilustrativo — Cozinha — Cozinha planejada — 045",
+      "newRoute": "/projetos/antes-depois/cozinha-cozinha-planejada-mdf-apto-045/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA004",
+      "title": "Estudo ilustrativo — Cozinha — Cozinha planejada — 004",
+      "newRoute": "/projetos/antes-depois/cozinha-cozinha-planejada-pedra-natural-casa-004/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA044",
+      "title": "Estudo ilustrativo — Cozinha — Marcenaria — 044",
+      "newRoute": "/projetos/antes-depois/cozinha-marcenaria-mdf-apto-044/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA051",
+      "title": "Estudo ilustrativo — Escritório — Drywall — 051",
+      "newRoute": "/projetos/antes-depois/escritorio-drywall-apto-051/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA053",
+      "title": "Estudo ilustrativo — Escritório — Elétrica — 053",
+      "newRoute": "/projetos/antes-depois/escritorio-eletrica-apto-053/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA057",
+      "title": "Estudo ilustrativo — Escritório — Instalação — 057",
+      "newRoute": "/projetos/antes-depois/escritorio-instalacao-comercial-057/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/projetos/estudo-escritorio-marcenaria-madeira-casa-008",
+      "title": "Estudo ilustrativo — Escritório — Marcenaria — 008",
+      "newRoute": "/projetos/antes-depois/escritorio-marcenaria-madeira-casa-008/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "REDIRECT"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA016",
+      "title": "Estudo ilustrativo — Escritório — Marcenaria — 016",
+      "newRoute": "/projetos/antes-depois/escritorio-marcenaria-madeira-casa-016/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA023",
+      "title": "Estudo ilustrativo — Escritório — Textura — 023",
+      "newRoute": "/projetos/antes-depois/escritorio-textura-madeira-apto-023/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA059",
+      "title": "Estudo ilustrativo — Fachada — Revestimento — 059",
+      "newRoute": "/projetos/antes-depois/fachada-revestimento-madeira-comercial-059/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA009",
+      "title": "Estudo ilustrativo — Fachada — Revestimento — 009",
+      "newRoute": "/projetos/antes-depois/fachada-revestimento-pedra-natural-casa-009/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA048",
+      "title": "Estudo ilustrativo — Garagem — Porcelanato líquido — 048",
+      "newRoute": "/projetos/antes-depois/garagem-porcelanato-liquido-epoxi-casa-048/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA001",
+      "title": "Estudo ilustrativo — Hall — Escada — 001",
+      "newRoute": "/projetos/antes-depois/hall-escada-madeira-casa-001/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA035",
+      "title": "Estudo ilustrativo — Hall — LED sequencial — 035",
+      "newRoute": "/projetos/antes-depois/hall-led-sequencial-casa-035/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA039",
+      "title": "Estudo ilustrativo — Hall — Mesa — 039",
+      "newRoute": "/projetos/antes-depois/hall-mesa-madeira-casa-039/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA056",
+      "title": "Estudo ilustrativo — Hall — Porta — 056",
+      "newRoute": "/projetos/antes-depois/hall-porta-madeira-casa-056/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/projetos/estudo-hall-textura-travertino-casa-021",
+      "title": "Estudo ilustrativo — Hall — Textura — 021",
+      "newRoute": "/projetos/antes-depois/hall-textura-travertino-casa-021/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "REDIRECT"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA049",
+      "title": "Estudo ilustrativo — Lavabo — Microcimento — 049",
+      "newRoute": "/projetos/antes-depois/lavabo-microcimento-casa-049/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA054",
+      "title": "Estudo ilustrativo — Lavanderia — Hidráulica — 054",
+      "newRoute": "/projetos/antes-depois/lavanderia-hidraulica-apto-054/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA052",
+      "title": "Estudo ilustrativo — Quarto — Forro — 052",
+      "newRoute": "/projetos/antes-depois/quarto-forro-casa-052/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA050",
+      "title": "Estudo ilustrativo — Quarto — Piso — 050",
+      "newRoute": "/projetos/antes-depois/quarto-piso-vinilico-apto-050/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA020",
+      "title": "Estudo ilustrativo — Quintal — Iluminação — 020",
+      "newRoute": "/projetos/antes-depois/quintal-iluminacao-pedra-natural-casa-020/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA018",
+      "title": "Estudo ilustrativo — Quintal — Piso — 018",
+      "newRoute": "/projetos/antes-depois/quintal-piso-pedra-natural-casa-018/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA060",
+      "title": "Estudo ilustrativo — Quintal — Piso — 060",
+      "newRoute": "/projetos/antes-depois/quintal-piso-pedra-natural-casa-060/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA034",
+      "title": "Estudo ilustrativo — Sala de estar — Automação — 034",
+      "newRoute": "/projetos/antes-depois/sala-estar-automacao-apto-034/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA043",
+      "title": "Estudo ilustrativo — Sala de estar — Boiserie — 043",
+      "newRoute": "/projetos/antes-depois/sala-estar-boiserie-apto-043/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA011",
+      "title": "Estudo ilustrativo — Sala de estar — Lareira — 011",
+      "newRoute": "/projetos/antes-depois/sala-estar-lareira-travertino-casa-011/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA002",
+      "title": "Estudo ilustrativo — Sala de estar — Marcenaria — 002",
+      "newRoute": "/projetos/antes-depois/sala-estar-marcenaria-madeira-casa-002/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA033",
+      "title": "Estudo ilustrativo — Sala de estar — Painel — 033",
+      "newRoute": "/projetos/antes-depois/sala-estar-painel-madeira-apto-033/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA041",
+      "title": "Estudo ilustrativo — Sala de estar — Pintura — 041",
+      "newRoute": "/projetos/antes-depois/sala-estar-pintura-apto-041/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA029",
+      "title": "Estudo ilustrativo — Sala de estar — Piso — 029",
+      "newRoute": "/projetos/antes-depois/sala-estar-piso-madeira-apto-029/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA027",
+      "title": "Estudo ilustrativo — Sala de estar — Piso — 027",
+      "newRoute": "/projetos/antes-depois/sala-estar-piso-porcelanato-apto-027/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA047",
+      "title": "Estudo ilustrativo — Sala de estar — Piso — 047",
+      "newRoute": "/projetos/antes-depois/sala-estar-piso-porcelanato-apto-047/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA024",
+      "title": "Estudo ilustrativo — Sala de estar — Revestimento de parede — 024",
+      "newRoute": "/projetos/antes-depois/sala-estar-revestimento-parede-pedra-natural-apto-024/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA026",
+      "title": "Estudo ilustrativo — Sala de estar — Revestimento de parede — 026",
+      "newRoute": "/projetos/antes-depois/sala-estar-revestimento-parede-porcelanato-apto-026/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA036",
+      "title": "Estudo ilustrativo — Sala de estar — Ripado — 036",
+      "newRoute": "/projetos/antes-depois/sala-estar-ripado-madeira-casa-036/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA031",
+      "title": "Estudo ilustrativo — Sala de jantar — Adega — 031",
+      "newRoute": "/projetos/antes-depois/sala-jantar-adega-madeira-apto-031/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA003",
+      "title": "Estudo ilustrativo — Sala de jantar — Iluminação — 003",
+      "newRoute": "/projetos/antes-depois/sala-jantar-iluminacao-latao-casa-003/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA012",
+      "title": "Estudo ilustrativo — Sala de jantar — Iluminação — 012",
+      "newRoute": "/projetos/antes-depois/sala-jantar-iluminacao-latao-casa-012/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA038",
+      "title": "Estudo ilustrativo — Sala de jantar — Rivertable — 038",
+      "newRoute": "/projetos/antes-depois/sala-jantar-rivertable-resina-apto-038/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA042",
+      "title": "Estudo ilustrativo — Sala de jantar — Textura — 042",
+      "newRoute": "/projetos/antes-depois/sala-jantar-textura-marmore-apto-042/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA022",
+      "title": "Estudo ilustrativo — Sala de jantar — Textura — 022",
+      "newRoute": "/projetos/antes-depois/sala-jantar-textura-microcimento-apto-022/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA005",
+      "title": "Estudo ilustrativo — Suíte — Painel — 005",
+      "newRoute": "/projetos/antes-depois/suite-painel-madeira-casa-005/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA014",
+      "title": "Estudo ilustrativo — Suíte — Piso — 014",
+      "newRoute": "/projetos/antes-depois/suite-piso-madeira-casa-014/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA028",
+      "title": "Estudo ilustrativo — Suíte — Piso — 028",
+      "newRoute": "/projetos/antes-depois/suite-piso-vinilico-apto-028/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-BA025",
+      "title": "Estudo ilustrativo — Suíte — Textura — 025",
+      "newRoute": "/projetos/antes-depois/suite-textura-casa-025/",
+      "type": "ILLUSTRATIVE_BEFORE_AFTER",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR146",
+      "title": "Estudo de materialidade — Adega em Limestone Moleanos",
+      "newRoute": "/projetos/estudos-3d/adega-marcenaria-limestone-residencial-146/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR142",
+      "title": "Estudo de materialidade — Área gourmet em Pedra-sabão",
+      "newRoute": "/projetos/estudos-3d/area-gourmet-bancada-pedra-sabao-residencial-142/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR144",
+      "title": "Estudo de materialidade — Ateliê residencial em Terra compactada",
+      "newRoute": "/projetos/estudos-3d/atelie-revestimento-terra-residencial-144/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR120",
+      "title": "Estudo de materialidade — Banheiro em Ônix mel",
+      "newRoute": "/projetos/estudos-3d/banheiro-revestimento-onix-mel-residencial-120/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR127",
+      "title": "Estudo de materialidade — Banheiro em Quartzito Taj Mahal",
+      "newRoute": "/projetos/estudos-3d/banheiro-revestimento-taj-mahal-residencial-127/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR106",
+      "title": "Estudo de materialidade — Banheiro em Travertino Romano",
+      "newRoute": "/projetos/estudos-3d/banheiro-revestimento-travertino-residencial-106/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR135",
+      "title": "Estudo de materialidade — Banheiro em Zellige verde floresta",
+      "newRoute": "/projetos/estudos-3d/banheiro-revestimento-zellige-residencial-135/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR141",
+      "title": "Estudo de materialidade — Biblioteca em Rosso Levanto",
+      "newRoute": "/projetos/estudos-3d/biblioteca-marcenaria-rosso-levanto-residencial-141/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR149",
+      "title": "Estudo de materialidade — Cinema residencial em Feltro acústico",
+      "newRoute": "/projetos/estudos-3d/cinema-acustica-feltro-residencial-149/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR133",
+      "title": "Estudo de materialidade — Cinema residencial em Azul noite",
+      "newRoute": "/projetos/estudos-3d/cinema-automacao-azul-noite-residencial-133/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR148",
+      "title": "Estudo de materialidade — Closet-galeria em Espelho bronze",
+      "newRoute": "/projetos/estudos-3d/closet-closet-planejado-espelho-bronze-residencial-148/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR122",
+      "title": "Estudo de materialidade — Closet em Linho areia",
+      "newRoute": "/projetos/estudos-3d/closet-closet-planejado-linho-residencial-122/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR112",
+      "title": "Estudo de materialidade — Closet em Fendi matte",
+      "newRoute": "/projetos/estudos-3d/closet-closet-planejado-vidro-reflecta-residencial-112/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR102",
+      "title": "Estudo de materialidade — Cozinha em Quartzito Black Fusion",
+      "newRoute": "/projetos/estudos-3d/cozinha-bancada-black-fusion-residencial-102/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR101",
+      "title": "Estudo de materialidade — Cozinha em Calacatta Gold",
+      "newRoute": "/projetos/estudos-3d/cozinha-bancada-calacatta-residencial-101/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR136",
+      "title": "Estudo de materialidade — Cozinha em Quartzito Patagonia",
+      "newRoute": "/projetos/estudos-3d/cozinha-bancada-patagonia-residencial-136/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR103",
+      "title": "Estudo de materialidade — Cozinha em Quartzito Taj Mahal",
+      "newRoute": "/projetos/estudos-3d/cozinha-bancada-taj-mahal-residencial-103/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR104",
+      "title": "Estudo de materialidade — Cozinha em Travertino Romano",
+      "newRoute": "/projetos/estudos-3d/cozinha-bancada-travertino-residencial-104/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR121",
+      "title": "Estudo de materialidade — Cozinha em Concreto aparente",
+      "newRoute": "/projetos/estudos-3d/cozinha-marcenaria-concreto-residencial-121/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR143",
+      "title": "Estudo de materialidade — Escada-galeria em Vidro fundido",
+      "newRoute": "/projetos/estudos-3d/escada-vidro-vidro-fundido-residencial-143/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR131",
+      "title": "Estudo de materialidade — Escritório em Bordeaux profundo",
+      "newRoute": "/projetos/estudos-3d/escritorio-marcenaria-bordeaux-residencial-131/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR110",
+      "title": "Estudo de materialidade — Escritório em Nogueira americana",
+      "newRoute": "/projetos/estudos-3d/escritorio-marcenaria-nogueira-residencial-110/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR108",
+      "title": "Estudo de materialidade — Fachada em Concreto aparente",
+      "newRoute": "/projetos/estudos-3d/fachada-revestimento-concreto-residencial-108/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR129",
+      "title": "Estudo de materialidade — Fachada em Concreto arquitetônico",
+      "newRoute": "/projetos/estudos-3d/fachada-revestimento-concreto-residencial-129/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR117",
+      "title": "Estudo de materialidade — Fachada em Pedra moledo",
+      "newRoute": "/projetos/estudos-3d/fachada-revestimento-pedra-moledo-residencial-117/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR137",
+      "title": "Estudo de materialidade — Hall de entrada em Granilite antracita",
+      "newRoute": "/projetos/estudos-3d/hall-piso-granilite-residencial-137/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR114",
+      "title": "Estudo de materialidade — Hall de entrada em Microcimento greige",
+      "newRoute": "/projetos/estudos-3d/hall-revestimento-microcimento-residencial-114/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR132",
+      "title": "Estudo de materialidade — Lavabo em Ameixa intensa",
+      "newRoute": "/projetos/estudos-3d/lavabo-revestimento-ameixa-residencial-132/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR140",
+      "title": "Estudo de materialidade — Lavabo em Ônix Verde Persa",
+      "newRoute": "/projetos/estudos-3d/lavabo-revestimento-onix-verde-residencial-140/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR113",
+      "title": "Estudo de materialidade — Lavabo em Mármore Verde Guatemala",
+      "newRoute": "/projetos/estudos-3d/lavabo-revestimento-verde-guatemala-residencial-113/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR147",
+      "title": "Estudo de materialidade — Pavilhão de piscina em Basalto flamejado",
+      "newRoute": "/projetos/estudos-3d/pavilhao-piscina-revestimento-yakisugi-residencial-147/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR134",
+      "title": "Estudo de materialidade — Quarto em Terracota queimada",
+      "newRoute": "/projetos/estudos-3d/quarto-marcenaria-terracota-residencial-134/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR139",
+      "title": "Estudo de materialidade — Quarto em Tadelakt terracota",
+      "newRoute": "/projetos/estudos-3d/quarto-revestimento-tadelakt-residencial-139/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR138",
+      "title": "Estudo de materialidade — Sala de áudio em Cortiça fumê",
+      "newRoute": "/projetos/estudos-3d/sala-audio-acustica-cortica-residencial-138/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR130",
+      "title": "Estudo de materialidade — Sala de estar em Couro conhaque",
+      "newRoute": "/projetos/estudos-3d/sala-estar-marcenaria-couro-residencial-130/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR118",
+      "title": "Estudo de materialidade — Sala de estar em Palha indiana",
+      "newRoute": "/projetos/estudos-3d/sala-estar-marcenaria-palha-residencial-118/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR107",
+      "title": "Estudo de materialidade — Sala de estar em Quartzito Taj Mahal",
+      "newRoute": "/projetos/estudos-3d/sala-estar-marcenaria-taj-mahal-residencial-107/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR116",
+      "title": "Estudo de materialidade — Sala de estar em Black Fusion",
+      "newRoute": "/projetos/estudos-3d/sala-estar-painel-black-fusion-residencial-116/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR126",
+      "title": "Estudo de materialidade — Sala de estar em Travertino Romano",
+      "newRoute": "/projetos/estudos-3d/sala-estar-revestimento-travertino-residencial-126/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR119",
+      "title": "Estudo de materialidade — Sala gamer em Azul petróleo",
+      "newRoute": "/projetos/estudos-3d/sala-gamer-automacao-azul-petroleo-residencial-119/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR109",
+      "title": "Estudo de materialidade — Sala gamer em Grafite soft-touch",
+      "newRoute": "/projetos/estudos-3d/sala-gamer-automacao-grafite-residencial-109/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR128",
+      "title": "Estudo de materialidade — Sala gamer em Grafite acetinado",
+      "newRoute": "/projetos/estudos-3d/sala-gamer-automacao-grafite-residencial-128/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR111",
+      "title": "Estudo de materialidade — Sala de jantar em Ônix mel",
+      "newRoute": "/projetos/estudos-3d/sala-jantar-mesa-onix-mel-residencial-111/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR123",
+      "title": "Estudo de materialidade — Sala de jantar em Travertino Romano",
+      "newRoute": "/projetos/estudos-3d/sala-jantar-mesa-travertino-residencial-123/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR145",
+      "title": "Estudo de materialidade — Sala de jantar em Marmorino grafite",
+      "newRoute": "/projetos/estudos-3d/sala-jantar-revestimento-marmorino-residencial-145/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR115",
+      "title": "Estudo de materialidade — Suíte em Calcário areia",
+      "newRoute": "/projetos/estudos-3d/suite-marcenaria-calcario-residencial-115/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR105",
+      "title": "Estudo de materialidade — Suíte em Limestone areia",
+      "newRoute": "/projetos/estudos-3d/suite-marcenaria-limestone-residencial-105/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/inspiracoes#FR-TR125",
+      "title": "Estudo de materialidade — Suíte em Microcimento areia",
+      "newRoute": "/projetos/estudos-3d/suite-marcenaria-microcimento-residencial-125/",
+      "type": "MATERIAL_APPLICATION_STUDY",
+      "status": "RECONSTRUÍDA"
+    },
+    {
+      "oldRoute": "/projetos-3d/cozinha-lavanderia-estudo-fr",
+      "title": "Cozinha e lavanderia — estudo de projeto e materialidade",
+      "newRoute": "/projetos/cozinha-lavanderia",
+      "type": "ILLUSTRATIVE_DESIGN_CASE",
+      "status": "REDIRECT"
+    },
+    {
+      "oldRoute": "/projetos/cozinha-lavanderia",
+      "title": "Cozinha e lavanderia",
+      "newRoute": "/projetos/cozinha-lavanderia",
+      "type": "ILLUSTRATIVE_DESIGN_CASE",
+      "status": "PRESERVADA"
+    }
+  ]
+}

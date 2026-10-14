@@ -1,0 +1,214 @@
+{
+  "capturedAt": "2026-10-11T05:58:01.659Z",
+  "publicFingerprint": "0151633538195b2ab61ce2f5e114fad6240b300fac9d51dd29bbce4f5f06d8c0",
+  "synthetic": true,
+  "engine": "Chromium emulation, not a physical device",
+  "profiles": [
+    {
+      "width": 390,
+      "height": 844,
+      "errors": [],
+      "media": 57,
+      "gaps": 17,
+      "referenceCodes": 94,
+      "quantityEntryCycles": 6,
+      "total": 600,
+      "persistence": true,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "errors": [],
+      "media": 57,
+      "gaps": 17,
+      "referenceCodes": 94,
+      "quantityEntryCycles": 6,
+      "total": 600,
+      "persistence": true,
+      "overflow": false
+    }
+  ],
+  "three": [
+    {
+      "blocked": false,
+      "webgl": true,
+      "revision": "161",
+      "compatibleControls": true
+    },
+    {
+      "blocked": true,
+      "webgl": false,
+      "fallback": "load-failure",
+      "compatibleControls": true
+    }
+  ],
+  "quantityClick": [
+    {
+      "type": "pointerdown",
+      "target": "BUTTON",
+      "classes": "",
+      "label": "Aumentar quantidade",
+      "value": "2",
+      "x": 837.6500244140625,
+      "y": 450.30999755859375,
+      "scrollY": 6861,
+      "buttonRect": {
+        "x": 814.2562255859375,
+        "y": 426.9125061035156,
+        "width": 46.79998779296875,
+        "height": 46.79998779296875,
+        "top": 426.9125061035156,
+        "right": 861.0562133789062,
+        "bottom": 473.7124938964844,
+        "left": 814.2562255859375
+      }
+    },
+    {
+      "type": "change",
+      "target": "INPUT",
+      "classes": "w-full bg-[rgba(0,0,0,0.4)] border border-fr-border rounded p-2 text-white text-center font-mono text-xl focus:border-fr-primary outline-none",
+      "label": "Quantidade ou medida do serviço",
+      "value": "2",
+      "scrollY": 6861,
+      "buttonRect": {
+        "x": 814.2562255859375,
+        "y": 426.9125061035156,
+        "width": 46.79998779296875,
+        "height": 46.79998779296875,
+        "top": 426.9125061035156,
+        "right": 861.0562133789062,
+        "bottom": 473.7124938964844,
+        "left": 814.2562255859375
+      }
+    },
+    {
+      "type": "pointerup",
+      "target": "BUTTON",
+      "classes": "",
+      "label": "Aumentar quantidade",
+      "value": "2",
+      "x": 837.6500244140625,
+      "y": 450.30999755859375,
+      "scrollY": 6861,
+      "buttonRect": {
+        "x": 813.65625,
+        "y": 426.3125,
+        "width": 48,
+        "height": 48,
+        "top": 426.3125,
+        "right": 861.65625,
+        "bottom": 474.3125,
+        "left": 813.65625
+      }
+    },
+    {
+      "type": "click",
+      "target": "BUTTON",
+      "classes": "",
+      "label": "Aumentar quantidade",
+      "value": "2",
+      "x": 837,
+      "y": 450,
+      "scrollY": 6861,
+      "buttonRect": {
+        "x": 813.65625,
+        "y": 426.3125,
+        "width": 48,
+        "height": 48,
+        "top": 426.3125,
+        "right": 861.65625,
+        "bottom": 474.3125,
+        "left": 813.65625
+      }
+    },
+    {
+      "type": "input",
+      "target": "INPUT",
+      "classes": "w-full bg-[rgba(0,0,0,0.4)] border border-fr-border rounded p-2 text-white text-center font-mono text-xl focus:border-fr-primary outline-none",
+      "label": "Quantidade ou medida do serviço",
+      "value": "3",
+      "scrollY": 6861,
+      "buttonRect": {
+        "x": 813.65625,
+        "y": 426.3125,
+        "width": 48,
+        "height": 48,
+        "top": 426.3125,
+        "right": 861.65625,
+        "bottom": 474.3125,
+        "left": 813.65625
+      }
+    }
+  ],
+  "quantityAncestors": [
+    {
+      "tag": "INPUT",
+      "id": "",
+      "classes": "w-full bg-[rgba(0,0,0,0.4)] border border-fr-border rounded p-2 text-white text-center font-mono text-xl focus:border-fr-primary outline-none fr-quantity-change",
+      "transform": "matrix(1, 0, 0, 1, 0, 2)"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "classes": "fr-quantity",
+      "transform": "none"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "classes": "mb-6 bg-[rgba(0,0,0,0.2)] p-4 rounded border border-fr-border",
+      "transform": "none"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "classes": "animate-fadeIn",
+      "transform": "none"
+    },
+    {
+      "tag": "DIV",
+      "id": "step-content-container",
+      "classes": "bg-[rgba(10,47,38,0.7)] backdrop-blur-md border border-fr-border/60 rounded-2xl p-6 shadow-2xl min-h-[420px] fr-motion-item fr-motion-left is-motion-visible step-enter fr-quantity-editor",
+      "transform": "none"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "classes": "lg:col-span-2",
+      "transform": "none"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "classes": "grid grid-cols-1 lg:grid-cols-3 gap-8",
+      "transform": "none"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "classes": "orc-main-wrapper max-w-6xl mx-auto px-4 py-4 fr14-lazy-section fr-motion-line",
+      "transform": "none"
+    },
+    {
+      "tag": "MAIN",
+      "id": "view-orcamento",
+      "classes": "view-section min-h-screen pb-40 active",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    {
+      "tag": "BODY",
+      "id": "",
+      "classes": "antialiased selection:bg-fr-primary selection:text-white relative fr14-ready fr16-cursor-ready fr8-cursor-active fr6-pointer-ready fr10-budget-active fr8-cursor-hover",
+      "transform": "none"
+    },
+    {
+      "tag": "HTML",
+      "id": "",
+      "classes": "scroll-smooth fr-gsap-fallback fr16-cursor-managed fr-motion-ready fr16-cursor-on",
+      "transform": "none"
+    }
+  ],
+  "unavailableReference": "PASS; base calculator total 179 preserved",
+  "status": "PASS"
+}

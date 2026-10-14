@@ -1,0 +1,824 @@
+{
+  "status": "DRAFT_DO_NOT_DEPLOY",
+  "canonical": "https://www.francoromeufr.com.br",
+  "page_count": 109,
+  "eligible_image_records": 264,
+  "schema_namespace": "http://www.google.com/schemas/sitemap-image/1.1",
+  "activation_required": [
+    "CREATE_AND_VALIDATE_PAGE_URLS",
+    "EXPORT_AND_VALIDATE_IMAGE_URLS",
+    "CONFIRM_RIGHTS_AND_CONTEXT",
+    "RELEASE_PUBLICATION_STATUS"
+  ],
+  "pages": [
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-adega-marcenaria-limestone-residencial-146",
+      "media_ids": [
+        "FR-M-9978DE0B620AF82F",
+        "FR-M-0D3506EFDE3FD8E9"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-area-gourmet-bancada-pedra-sabao-residencial-142",
+      "media_ids": [
+        "FR-M-89FE8AEC0CD681A5",
+        "FR-M-496C23577E2DA23D"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-area-gourmet-cozinha-planejada-madeira-casa-010",
+      "media_ids": [
+        "FR-M-88BE5E11FBC003E6",
+        "FR-M-28F3A287384DEA43"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-area-gourmet-cozinha-planejada-madeira-casa-040",
+      "media_ids": [
+        "FR-M-A49087DE2DF28C85",
+        "FR-M-6BBF823585AB0D30"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-area-gourmet-cozinha-planejada-pedra-natural-casa-019",
+      "media_ids": [
+        "FR-M-71D49D024AE25D8B",
+        "FR-M-446AE2B3F99E9426"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-area-gourmet-forro-madeira-casa-058",
+      "media_ids": [
+        "FR-M-2215DA77FB9C0A36",
+        "FR-M-3B8B6266C700679D"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-atelie-revestimento-terra-residencial-144",
+      "media_ids": [
+        "FR-M-B1C99AD5B504A588",
+        "FR-M-2E4B9CE12259F76E"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-banheiro-bancada-pedra-natural-apto-037",
+      "media_ids": [
+        "FR-M-884D7FE6A1F39944",
+        "FR-M-AB2DD6F575807AFE"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-banheiro-bancada-pedra-natural-casa-007",
+      "media_ids": [
+        "FR-M-E8F100A794C06BED",
+        "FR-M-618C5BDABDF84BD8"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-banheiro-revestimento-onix-mel-residencial-120",
+      "media_ids": [
+        "FR-M-E9E039D3D1147A98",
+        "FR-M-4791AF2308E976EC"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-banheiro-revestimento-pedra-natural-casa-015",
+      "media_ids": [
+        "FR-M-A8B7C044EC921A9D",
+        "FR-M-A33A0FFF54DB9CB8"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-banheiro-revestimento-porcelanato-apto-046",
+      "media_ids": [
+        "FR-M-AA325AEA2D4C52E7",
+        "FR-M-0C7D1AB7771B406D"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-banheiro-revestimento-taj-mahal-residencial-127",
+      "media_ids": [
+        "FR-M-835087A9ACB7BCFF",
+        "FR-M-16F8CF5B3FA870F4"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-banheiro-revestimento-travertino-residencial-106",
+      "media_ids": [
+        "FR-M-AD3EF4B11502B91A",
+        "FR-M-EC35905A83A02DC0"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-banheiro-revestimento-zellige-residencial-135",
+      "media_ids": [
+        "FR-M-2E94B6C1800E029F",
+        "FR-M-9F01F45DA21E9ED1"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-biblioteca-marcenaria-rosso-levanto-residencial-141",
+      "media_ids": [
+        "FR-M-AE6FCAE144C9FD81",
+        "FR-M-0F59DBE4EB22E23D"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-cinema-acustica-feltro-residencial-149",
+      "media_ids": [
+        "FR-M-597EAA20858074EF",
+        "FR-M-5FC5CB760F74F3FE"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-cinema-automacao-azul-noite-residencial-133",
+      "media_ids": [
+        "FR-M-8071CD91AA2D7BBF",
+        "FR-M-EA7BA8BEE381003F"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-closet-closet-planejado-espelho-bronze-residencial-148",
+      "media_ids": [
+        "FR-M-BE34B1A15361BB2E",
+        "FR-M-D51FE8727A625B8B"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-closet-closet-planejado-linho-residencial-122",
+      "media_ids": [
+        "FR-M-E96FD2A58AD7CACC",
+        "FR-M-9AA0A07EEEF24289"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-closet-closet-planejado-madeira-apto-030",
+      "media_ids": [
+        "FR-M-98045C2D558D242D",
+        "FR-M-9E8E9E58ADB500AF"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-closet-closet-planejado-madeira-casa-006",
+      "media_ids": [
+        "FR-M-D692056D9B7AB967",
+        "FR-M-24E5E0DDDD33E69D"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-closet-closet-planejado-vidro-reflecta-residencial-112",
+      "media_ids": [
+        "FR-M-AFEACC74D6840CEA",
+        "FR-M-07E4F6580C2E6F1C"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-corredor-iluminacao-madeira-casa-017",
+      "media_ids": [
+        "FR-M-32AA81E9E08156FC",
+        "FR-M-C09C417DBF1BF82A"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-cozinha-bancada-black-fusion-residencial-102",
+      "media_ids": [
+        "FR-M-8F86A2FC0B9A46F3",
+        "FR-M-58B51DA38CB04D09"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-cozinha-bancada-calacatta-apto-055",
+      "media_ids": [
+        "FR-M-65F7FF115D1C1061",
+        "FR-M-1DDFA8E0C5B05623"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-cozinha-bancada-calacatta-residencial-101",
+      "media_ids": [
+        "FR-M-FF6FB66521DA7A1B",
+        "FR-M-F9B87E87B5BD6EC0"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-cozinha-bancada-patagonia-residencial-136",
+      "media_ids": [
+        "FR-M-11A08C4C25E59CEB",
+        "FR-M-C2F7F1D917A8BECA"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-cozinha-bancada-taj-mahal-residencial-103",
+      "media_ids": [
+        "FR-M-6839429975B59F3A",
+        "FR-M-FF1D7BDF3045C558"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-cozinha-bancada-travertino-residencial-104",
+      "media_ids": [
+        "FR-M-6E007F88481955F5",
+        "FR-M-F8CC9967F759994D"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-cozinha-cozinha-planejada-madeira-casa-013",
+      "media_ids": [
+        "FR-M-89240238FCBCE63B",
+        "FR-M-ACC89D3FB0C8D91A"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-cozinha-cozinha-planejada-mdf-apto-032",
+      "media_ids": [
+        "FR-M-FCB58A4B828C296C",
+        "FR-M-B65AA04715671C4F"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-cozinha-cozinha-planejada-mdf-apto-045",
+      "media_ids": [
+        "FR-M-6E38649A0F126D55",
+        "FR-M-19B7A80EBC516E09"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-cozinha-cozinha-planejada-pedra-natural-casa-004",
+      "media_ids": [
+        "FR-M-27B6A66AFFFDBD04",
+        "FR-M-764C1CFF80E3B908"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-cozinha-marcenaria-concreto-residencial-121",
+      "media_ids": [
+        "FR-M-45DCEC99F26AB8A7",
+        "FR-M-87BC7D8C7362F515"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-cozinha-marcenaria-mdf-apto-044",
+      "media_ids": [
+        "FR-M-D05E88873F26FBD3",
+        "FR-M-3B930FFBE5800CBA"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-escada-vidro-vidro-fundido-residencial-143",
+      "media_ids": [
+        "FR-M-E84E680CEFEF54F8",
+        "FR-M-566E71C811F5DE53"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-escritorio-drywall-apto-051",
+      "media_ids": [
+        "FR-M-D77E6BD437FD018F",
+        "FR-M-0DB2F25CC3DCCD55"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-escritorio-eletrica-apto-053",
+      "media_ids": [
+        "FR-M-F6CF2609215E034F",
+        "FR-M-4CD1F7390E4FCE14"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-escritorio-instalacao-comercial-057",
+      "media_ids": [
+        "FR-M-A4807A550E296BC6",
+        "FR-M-342DAC0DF469A7E1"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-escritorio-marcenaria-bordeaux-residencial-131",
+      "media_ids": [
+        "FR-M-A41CCD96F018EF23",
+        "FR-M-716EC1A866FE8CEC"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-escritorio-marcenaria-madeira-casa-008",
+      "media_ids": [
+        "FR-M-4F9258A655E61390",
+        "FR-M-73EE93DC80530079"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-escritorio-marcenaria-madeira-casa-016",
+      "media_ids": [
+        "FR-M-E4738863BE84D463",
+        "FR-M-1C8C153E56F10205"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-escritorio-marcenaria-nogueira-residencial-110",
+      "media_ids": [
+        "FR-M-2C1CC4014737033A",
+        "FR-M-655E521A8E6DF4C7"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-escritorio-textura-madeira-apto-023",
+      "media_ids": [
+        "FR-M-5E54BFE23E0ACD91",
+        "FR-M-BA27344010D5C39F"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-fachada-revestimento-concreto-residencial-108",
+      "media_ids": [
+        "FR-M-89AF8E313FB4F286",
+        "FR-M-9875F6925F5893AD"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-fachada-revestimento-concreto-residencial-129",
+      "media_ids": [
+        "FR-M-367FAB8B2D96C986",
+        "FR-M-A8765D3C5621C76B"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-fachada-revestimento-madeira-comercial-059",
+      "media_ids": [
+        "FR-M-D68FA32E798DD152",
+        "FR-M-9A96D631F3BF543C"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-fachada-revestimento-pedra-moledo-residencial-117",
+      "media_ids": [
+        "FR-M-486DE074FA0D6C3A",
+        "FR-M-9C5F8D0424D0EA1C"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-fachada-revestimento-pedra-natural-casa-009",
+      "media_ids": [
+        "FR-M-C3886DF84A3AB678",
+        "FR-M-4479292428BDAF91"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-garagem-porcelanato-liquido-epoxi-casa-048",
+      "media_ids": [
+        "FR-M-D368FEE3945F873A",
+        "FR-M-72751FE14AAE5D79"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-hall-escada-madeira-casa-001",
+      "media_ids": [
+        "FR-M-F9FC620F1791EBB6",
+        "FR-M-89CA826B21DB487A"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-hall-led-sequencial-casa-035",
+      "media_ids": [
+        "FR-M-4B717289A9D4D99C",
+        "FR-M-3DDBA3C62BFAD2BF"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-hall-mesa-madeira-casa-039",
+      "media_ids": [
+        "FR-M-17A4BB756BB03594",
+        "FR-M-FCBBBA0B55ED5669"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-hall-piso-granilite-residencial-137",
+      "media_ids": [
+        "FR-M-54CA6326E4C1F6BF",
+        "FR-M-6B9AED818E37970F"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-hall-porta-madeira-casa-056",
+      "media_ids": [
+        "FR-M-2754A1619D1669CC",
+        "FR-M-CEFF8272E8EE812E"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-hall-revestimento-microcimento-residencial-114",
+      "media_ids": [
+        "FR-M-BA0729261A310DAA",
+        "FR-M-EA12A88DB29938AD"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-hall-textura-travertino-casa-021",
+      "media_ids": [
+        "FR-M-1F3D6F71B718483A",
+        "FR-M-AAF41770DEF3B075"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-lavabo-microcimento-casa-049",
+      "media_ids": [
+        "FR-M-F49F4D1A3D3CCE1B",
+        "FR-M-E3FB067070F9E89C"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-lavabo-revestimento-ameixa-residencial-132",
+      "media_ids": [
+        "FR-M-6F4545E989AFB357",
+        "FR-M-B625EA35B1A5D4A4"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-lavabo-revestimento-onix-verde-residencial-140",
+      "media_ids": [
+        "FR-M-CCA6BAD9775C2890",
+        "FR-M-86FF6FCCFE3EA6A2"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-lavabo-revestimento-verde-guatemala-residencial-113",
+      "media_ids": [
+        "FR-M-391B329FBF7DBAD6",
+        "FR-M-76E2BA61C4E6623B"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-lavanderia-hidraulica-apto-054",
+      "media_ids": [
+        "FR-M-532F7144003D62D5",
+        "FR-M-644DD38F8571066A"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-pavilhao-piscina-revestimento-yakisugi-residencial-147",
+      "media_ids": [
+        "FR-M-9C91617D0BEB2755",
+        "FR-M-80D892C71088F476"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-quarto-forro-casa-052",
+      "media_ids": [
+        "FR-M-6838407049F3CD5B",
+        "FR-M-2859D620516609CA"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-quarto-marcenaria-terracota-residencial-134",
+      "media_ids": [
+        "FR-M-DD0153C653B44AAD",
+        "FR-M-3A19EE1010A7B9B7"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-quarto-piso-vinilico-apto-050",
+      "media_ids": [
+        "FR-M-AAE8441EE68BACFB",
+        "FR-M-6F2B86AB82E82A91"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-quarto-revestimento-tadelakt-residencial-139",
+      "media_ids": [
+        "FR-M-CA8B2B3C58A3950B",
+        "FR-M-3AACD83FF9529778"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-quintal-iluminacao-pedra-natural-casa-020",
+      "media_ids": [
+        "FR-M-242C6B5D03BA9958",
+        "FR-M-3B1E3D210BB4624A"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-quintal-piso-pedra-natural-casa-018",
+      "media_ids": [
+        "FR-M-2892FD5AE0C92990",
+        "FR-M-B79E1798F1C76B27"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-quintal-piso-pedra-natural-casa-060",
+      "media_ids": [
+        "FR-M-2D4626C942A7178A",
+        "FR-M-6B108622D9DC5C38"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-sala-audio-acustica-cortica-residencial-138",
+      "media_ids": [
+        "FR-M-62C4BFC6A236ECCB",
+        "FR-M-0506B896ABE2365C"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-sala-estar-automacao-apto-034",
+      "media_ids": [
+        "FR-M-AF7998C19F7C1851",
+        "FR-M-F537364E9D096661"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-sala-estar-boiserie-apto-043",
+      "media_ids": [
+        "FR-M-EDE0D6DEE3A368E5",
+        "FR-M-C5E26D9137706E9A"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-sala-estar-lareira-travertino-casa-011",
+      "media_ids": [
+        "FR-M-BE8623B077BFCA20",
+        "FR-M-9E89126F63640262"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-sala-estar-marcenaria-couro-residencial-130",
+      "media_ids": [
+        "FR-M-3A81F376EA55998F",
+        "FR-M-E7560379200A4082"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-sala-estar-marcenaria-madeira-casa-002",
+      "media_ids": [
+        "FR-M-BB3BFDE55DC23974",
+        "FR-M-8D9DF51BA4421AFF"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-sala-estar-marcenaria-palha-residencial-118",
+      "media_ids": [
+        "FR-M-DAD7A7434C231554",
+        "FR-M-11593EB013F99BDE"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-sala-estar-marcenaria-taj-mahal-residencial-107",
+      "media_ids": [
+        "FR-M-A765E32AC633C849",
+        "FR-M-CAD07278FFE31694"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-sala-estar-painel-black-fusion-residencial-116",
+      "media_ids": [
+        "FR-M-B5EEC432F623DCDF",
+        "FR-M-1E89219EB7D0A531"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-sala-estar-painel-madeira-apto-033",
+      "media_ids": [
+        "FR-M-EF1A03531C86D281",
+        "FR-M-81D0843AFCA2BB80"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-sala-estar-pintura-apto-041",
+      "media_ids": [
+        "FR-M-99251B1F02CFB8A4",
+        "FR-M-8BBAD7EA1836A798"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-sala-estar-piso-madeira-apto-029",
+      "media_ids": [
+        "FR-M-B3E60B1A29779F49",
+        "FR-M-1D1E6FF8CE88A498"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-sala-estar-piso-porcelanato-apto-027",
+      "media_ids": [
+        "FR-M-0144FAEF0B919345",
+        "FR-M-F4E2B9747D963C2F"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-sala-estar-piso-porcelanato-apto-047",
+      "media_ids": [
+        "FR-M-30393224AC333FD9",
+        "FR-M-D8973A8C79016A8B"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-sala-estar-revestimento-parede-pedra-natural-apto-024",
+      "media_ids": [
+        "FR-M-19BD4FE8F4EEBFDC",
+        "FR-M-01204B2B0074E034"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-sala-estar-revestimento-parede-porcelanato-apto-026",
+      "media_ids": [
+        "FR-M-4A0F97819721F03A",
+        "FR-M-4CEC8114CB79C158"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-sala-estar-revestimento-travertino-residencial-126",
+      "media_ids": [
+        "FR-M-102719814FBBBA41",
+        "FR-M-A4AA6D26829AC6A0"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-sala-estar-ripado-madeira-casa-036",
+      "media_ids": [
+        "FR-M-9D6C9E068F6CAA62",
+        "FR-M-77F255159F096CF2"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-sala-gamer-automacao-azul-petroleo-residencial-119",
+      "media_ids": [
+        "FR-M-5296B598ACC770B4",
+        "FR-M-75A3EABE0177F947"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-sala-gamer-automacao-grafite-residencial-109",
+      "media_ids": [
+        "FR-M-D5D33C39165224D2",
+        "FR-M-3F7186AA492D142A"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-sala-gamer-automacao-grafite-residencial-128",
+      "media_ids": [
+        "FR-M-4F4C99EE43808044",
+        "FR-M-B3AD907DA59F5BBB"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-sala-jantar-adega-madeira-apto-031",
+      "media_ids": [
+        "FR-M-FDDA54336CB23912",
+        "FR-M-3EC911EEF901B599"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-sala-jantar-iluminacao-latao-casa-003",
+      "media_ids": [
+        "FR-M-34908CE47F52BB1E",
+        "FR-M-DF2C138A7A2890FD"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-sala-jantar-iluminacao-latao-casa-012",
+      "media_ids": [
+        "FR-M-443B4D01122ED7BE",
+        "FR-M-5B8BF8C7E5ADD900"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-sala-jantar-mesa-onix-mel-residencial-111",
+      "media_ids": [
+        "FR-M-FD82D004C5402E13",
+        "FR-M-B6898A912D180F83"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-sala-jantar-mesa-travertino-residencial-123",
+      "media_ids": [
+        "FR-M-0E82A04AF7A51964",
+        "FR-M-C64ED2BC9ACF0A69"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-sala-jantar-revestimento-marmorino-residencial-145",
+      "media_ids": [
+        "FR-M-1B189C326529AB4A",
+        "FR-M-A3E97FD89DCB98EC"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-sala-jantar-rivertable-resina-apto-038",
+      "media_ids": [
+        "FR-M-14BD266B9626B8F4",
+        "FR-M-D287A48923B8ABE3"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-sala-jantar-textura-marmore-apto-042",
+      "media_ids": [
+        "FR-M-E3452D3B262ABB2D",
+        "FR-M-8FF7A63F34D365A5"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-sala-jantar-textura-microcimento-apto-022",
+      "media_ids": [
+        "FR-M-514F95E8EE9775C5",
+        "FR-M-8160F10DD49C91AE"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-suite-marcenaria-calcario-residencial-115",
+      "media_ids": [
+        "FR-M-8477FB1BE0B0C253",
+        "FR-M-96B1F9605BEFC3C2"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-suite-marcenaria-limestone-residencial-105",
+      "media_ids": [
+        "FR-M-33E05A9B4D23EB8A",
+        "FR-M-FA51CBA2D7AD3D6D"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-suite-marcenaria-microcimento-residencial-125",
+      "media_ids": [
+        "FR-M-FED6FADB891BB1AB",
+        "FR-M-BD66F74EA142A008"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-suite-painel-madeira-casa-005",
+      "media_ids": [
+        "FR-M-1C12983B18084E3E",
+        "FR-M-035B1FE5812B5853"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-suite-piso-madeira-casa-014",
+      "media_ids": [
+        "FR-M-46C2B6BA450B26AE",
+        "FR-M-B34FBF4D45BB54BC"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-suite-piso-vinilico-apto-028",
+      "media_ids": [
+        "FR-M-DF845264FDAD6509",
+        "FR-M-E0C268416A71BC83"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/inspiracoes/estudo-suite-textura-casa-025",
+      "media_ids": [
+        "FR-M-274445157CA9DD28",
+        "FR-M-7DF6B3D9E7986221"
+      ]
+    },
+    {
+      "planned_page_url": "https://www.francoromeufr.com.br/projetos-3d/cozinha-lavanderia-estudo-fr",
+      "media_ids": [
+        "FR-M-F95547B93191E812",
+        "FR-M-F48E737A207C219A",
+        "FR-M-8C633189E65ED5DC",
+        "FR-M-1ACE6819D27F62F7",
+        "FR-M-D0CA9C7352C86C81",
+        "FR-M-44C59154F0F9D77F",
+        "FR-M-8B1BE5288E9A1455",
+        "FR-M-45222B69BBC5B8EE",
+        "FR-M-986CF342224E81F1",
+        "FR-M-A2E373872F20CE3D",
+        "FR-M-97FD574B27A24F85",
+        "FR-M-76E855065475CBC5",
+        "FR-M-E4B37AC18D80C473",
+        "FR-M-F4512475BCC65053",
+        "FR-M-2D491895A6800A73",
+        "FR-M-B0C4A0D6AF236DC2",
+        "FR-M-9FE2462DD482033A",
+        "FR-M-041CB06DF6088FB5",
+        "FR-M-4B216C7E0B01FE5C",
+        "FR-M-E3F45A71E307B2CB",
+        "FR-M-CBE97078012F15B9",
+        "FR-M-55A2676B5DF88A57",
+        "FR-M-78D797DA36E52BEE",
+        "FR-M-33EC3B99BA4271D8",
+        "FR-M-60C773787F71530B",
+        "FR-M-C9098D450C5629A5",
+        "FR-M-09B62863B656A8A6",
+        "FR-M-6D1E19DB75067AB7",
+        "FR-M-6B28E6ADD278BD6B",
+        "FR-M-3FE2CB429D6C9CFD",
+        "FR-M-B7A04EF330A8B618",
+        "FR-M-5C5D18DD1BE565DC",
+        "FR-M-134FAB7C78074791",
+        "FR-M-88353144B4C87AAB",
+        "FR-M-66DF774C0E8C74DB",
+        "FR-M-2DD45B193B9D9702",
+        "FR-M-9313FB13273C5711",
+        "FR-M-85813FC193F39D38",
+        "FR-M-31180D4C47247154",
+        "FR-M-A88A9F59C3D6FE95",
+        "FR-M-AD9F695AA3938F46",
+        "FR-M-80A427276CEF2366",
+        "FR-M-8C6CD031AF8654B3",
+        "FR-M-2213E004D668FFE7",
+        "FR-M-6A31D21C884E6892",
+        "FR-M-FEF2552A9B9435F9",
+        "FR-M-B239E5912188239C",
+        "FR-M-15E6787FB27EEAE9"
+      ]
+    }
+  ]
+}

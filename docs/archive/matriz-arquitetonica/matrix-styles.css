@@ -1,0 +1,17 @@
+/* Arquivo histórico. Não carregado pela aplicação. */
+.fr14-matrix-stage{position:relative;z-index:4;min-height:min(820px,92vh);display:grid;grid-template-columns:minmax(0,1.7fr) minmax(280px,.65fr);width:min(1500px,calc(100% - 2rem));margin:1rem auto 7rem;border:1px solid rgba(113,229,244,.2);background:rgba(2,7,9,.82);overflow:hidden;box-shadow:0 50px 140px rgba(0,0,0,.52)}
+.fr14-matrix-viewport{position:relative;min-height:620px;overflow:hidden;background:radial-gradient(circle at 50% 50%,rgba(113,229,244,.09),transparent 46%),linear-gradient(180deg,#02070a,#05090b)}
+.fr14-matrix-viewport::before{content:"";position:absolute;z-index:1;inset:0;background-image:linear-gradient(rgba(113,229,244,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(113,229,244,.04) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(180deg,#000,transparent 90%);pointer-events:none}
+#fr14-three-canvas{position:absolute;z-index:2;inset:0;width:100%;height:100%;touch-action:pan-y}
+.fr14-matrix-fallback{position:absolute;z-index:2;inset:0;display:none;perspective:900px;overflow:hidden}
+.fr14-matrix-fallback-grid{position:absolute;left:50%;top:46%;display:grid;grid-template-columns:repeat(3,clamp(105px,18vw,220px));gap:clamp(14px,3vw,42px);transform:translate(-50%,-50%) rotateX(57deg) rotateZ(-8deg);transform-style:preserve-3d}
+.fr14-matrix-fallback button{min-height:100px;aspect-ratio:4/3;border:1px solid rgba(113,229,244,.36);background:rgba(5,15,18,.64);color:#e6d6b5;cursor:pointer}
+.fr14-matrix-ui{position:relative;z-index:4;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(1.4rem,3.2vw,3.2rem);border-left:1px solid rgba(113,229,244,.15);background:linear-gradient(180deg,rgba(3,13,16,.88),rgba(8,18,16,.97))}
+.fr14-matrix-index{font:700 clamp(4rem,9vw,8rem)/.82 Georgia,serif;color:transparent;-webkit-text-stroke:1px rgba(113,229,244,.23)}
+.fr14-matrix-actions{display:grid;grid-template-columns:1fr 1fr;gap:1px;margin-top:2rem}
+.fr14-matrix-actions button{min-height:52px}
+.fr14-matrix-stage.is-fallback .fr14-matrix-fallback{display:block}.fr14-matrix-stage.is-fallback #fr14-three-canvas{display:none}
+@media(max-width:1050px){.fr14-matrix-stage{grid-template-columns:1fr}.fr14-matrix-ui{border-left:0;border-top:1px solid rgba(113,229,244,.15)}}
+@media(max-width:760px){.fr14-matrix-stage{width:calc(100% - 12px)}.fr14-matrix-fallback-grid{grid-template-columns:repeat(2,minmax(112px,34vw))}}
+@media(prefers-reduced-motion:reduce){.fr14-matrix-fallback button{transition:none}}
+

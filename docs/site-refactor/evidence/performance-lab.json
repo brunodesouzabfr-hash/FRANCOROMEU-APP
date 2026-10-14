@@ -1,0 +1,1001 @@
+{
+  "kind": "instrumented-lab-not-CrUX-not-INP",
+  "capturedAt": "2026-10-11T03:49:19.167Z",
+  "conditions": {
+    "viewport": "390x844",
+    "cpuThrottle": 4,
+    "networkThrottle": "none; external CDNs variable",
+    "cache": "disabled per browser context",
+    "analytics": "blocked",
+    "clsMethod": "maximum session window; gap <1s, duration <5s; recomputed from captured shift entries; observed loading period only"
+  },
+  "runs": [
+    {
+      "name": "baseline",
+      "run": 1,
+      "lcp": 2396,
+      "lcpElement": "IMG",
+      "cls": 0.05788325504000849,
+      "shifts": [
+        {
+          "time": 3479.4000000059605,
+          "value": 0.002362065956774072,
+          "elements": [
+            "nav-items font-rokkitt font-bold tracking-wider text-sm"
+          ]
+        },
+        {
+          "time": 4027.9000000059605,
+          "value": 0.001625637339682397,
+          "elements": [
+            "smart-nav"
+          ]
+        },
+        {
+          "time": 4438.4000000059605,
+          "value": 0.004134635902158532,
+          "elements": [
+            "::before"
+          ]
+        },
+        {
+          "time": 7732.800000011921,
+          "value": 0.057744268482814796,
+          "elements": [
+            "view-home",
+            "fr-seo-breadcrumb",
+            "nav-cta bg-fr-primary text-white px-3 sm:px-5 py-1.5 sm:py-2 gap-1.5 rounded-full text-[10px] sm:text-xs shrink-0 hover:brightness-110 hover:scale-105 transition-all duration-300"
+          ]
+        },
+        {
+          "time": 8454.90000000596,
+          "value": 0.0001389865571936954,
+          "elements": [
+            "fr6-loader-status"
+          ]
+        },
+        {
+          "time": 10383.70000000298,
+          "value": 0.00014492584599949665,
+          "elements": [
+            "nav-label leading-none",
+            "nav-label leading-none",
+            "nav-label leading-none",
+            "nav-label leading-none",
+            "nav-label"
+          ]
+        },
+        {
+          "time": 11219.60000000894,
+          "value": 0.0026920852389451483,
+          "elements": [
+            null,
+            null,
+            null,
+            "fr6-btn-icon",
+            "fr6-btn-icon"
+          ]
+        },
+        {
+          "time": 11868.10000000894,
+          "value": 0.006241436625412726,
+          "elements": [
+            "fr-ai-context-bubble is-visible"
+          ]
+        },
+        {
+          "time": 12617.5,
+          "value": 0.006367781496372498,
+          "elements": [
+            "fr-ai-context-bubble is-visible"
+          ]
+        }
+      ],
+      "longTasks": 40,
+      "longTaskMs": 7653,
+      "domContentLoaded": 7352.5,
+      "initialThree": [],
+      "iframes": 0,
+      "hero": "http://127.0.0.1:4182/assets/media/home-hero-960.jpg",
+      "resources": [
+        {
+          "path": "/assets/media/home-hero-960.jpg",
+          "bytes": 77550
+        },
+        {
+          "path": "/assets/brand/franco-romeu-logo-remaster-384.webp",
+          "bytes": 12952
+        },
+        {
+          "path": "/assets/brand/franco-romeu-profile-remaster-256.webp",
+          "bytes": 5822
+        },
+        {
+          "path": "/assets/media/sobre-essencia.jpg",
+          "bytes": 112195
+        },
+        {
+          "path": "/assets/media/manifesto-materia-01.jpg",
+          "bytes": 76656
+        },
+        {
+          "path": "/assets/media/manifesto-proporcao-01.jpg",
+          "bytes": 104093
+        },
+        {
+          "path": "/assets/media/manifesto-luz-01.jpg",
+          "bytes": 82263
+        },
+        {
+          "path": "/assets/media/manifesto-detalhe-01.jpg",
+          "bytes": 106949
+        },
+        {
+          "path": "/assets/media/home-servico-superficies.jpg",
+          "bytes": 76656
+        },
+        {
+          "path": "/assets/media/home-servico-marcenaria.jpg",
+          "bytes": 104093
+        },
+        {
+          "path": "/assets/media/home-hero-960.jpg",
+          "bytes": 77550
+        },
+        {
+          "path": "/assets/media/ambiente-mansory-01.jpg",
+          "bytes": 113448
+        },
+        {
+          "path": "/assets/media/portfolio-porcelanato.jpg",
+          "bytes": 101463
+        },
+        {
+          "path": "/assets/media/portfolio-marmore.jpg",
+          "bytes": 104537
+        },
+        {
+          "path": "/assets/media/portfolio-automacao.jpg",
+          "bytes": 100063
+        },
+        {
+          "path": "/assets/media/portfolio-iluminacao.jpg",
+          "bytes": 85165
+        },
+        {
+          "path": "/assets/media/portfolio-eventos.jpg",
+          "bytes": 158348
+        },
+        {
+          "path": "/assets/media/portfolio-banheiro.jpg",
+          "bytes": 116545
+        },
+        {
+          "path": "/assets/media/portfolio-resina.jpg",
+          "bytes": 101463
+        },
+        {
+          "path": "/assets/media/portfolio-suite.jpg",
+          "bytes": 112268
+        },
+        {
+          "path": "/assets/media/portfolio-fachada.jpg",
+          "bytes": 160599
+        },
+        {
+          "path": "/assets/media/portfolio-marcenaria.jpg",
+          "bytes": 67253
+        },
+        {
+          "path": "/assets/media/portfolio-eletrica.jpg",
+          "bytes": 129711
+        },
+        {
+          "path": "/assets/media/portfolio-pintura.jpg",
+          "bytes": 131616
+        },
+        {
+          "path": "/assets/media/portfolio-reforma.jpg",
+          "bytes": 96738
+        },
+        {
+          "path": "/favicon.ico",
+          "bytes": 0
+        },
+        {
+          "path": "/assets/icons/favicon-32x32.png",
+          "bytes": 2319
+        }
+      ],
+      "layoutShiftSum": 0.08145182344535337
+    },
+    {
+      "name": "baseline",
+      "run": 2,
+      "lcp": 2224,
+      "lcpElement": "IMG",
+      "cls": 0.057744268482814796,
+      "shifts": [
+        {
+          "time": 3301.4000000059605,
+          "value": 0.0024745452880490276,
+          "elements": [
+            "nav-items font-rokkitt font-bold tracking-wider text-sm"
+          ]
+        },
+        {
+          "time": 3553.7000000029802,
+          "value": 0.001625637339682397,
+          "elements": [
+            "smart-nav"
+          ]
+        },
+        {
+          "time": 3953.2999999970198,
+          "value": 0.004134635902158532,
+          "elements": [
+            "::before"
+          ]
+        },
+        {
+          "time": 7277.29999999702,
+          "value": 0.057744268482814796,
+          "elements": [
+            "view-home",
+            "fr-seo-breadcrumb",
+            "nav-cta bg-fr-primary text-white px-3 sm:px-5 py-1.5 sm:py-2 gap-1.5 rounded-full text-[10px] sm:text-xs shrink-0 hover:brightness-110 hover:scale-105 transition-all duration-300"
+          ]
+        },
+        {
+          "time": 9152.79999999702,
+          "value": 0.00014492584599949665,
+          "elements": [
+            "nav-label leading-none",
+            "nav-label leading-none",
+            "nav-label leading-none",
+            "nav-label leading-none",
+            "nav-label"
+          ]
+        },
+        {
+          "time": 10044.10000000894,
+          "value": 0.000002596864041112261,
+          "elements": [
+            "fas fa-couch text-sm"
+          ]
+        },
+        {
+          "time": 10583.70000000298,
+          "value": 0.002684374962204526,
+          "elements": [
+            null,
+            null,
+            null,
+            "fr6-btn-icon",
+            "fr6-btn-icon"
+          ]
+        },
+        {
+          "time": 11182.79999999702,
+          "value": 0.006241436625412726,
+          "elements": [
+            "fr-ai-context-bubble is-visible"
+          ]
+        },
+        {
+          "time": 11807.40000000596,
+          "value": 0.006367781496372498,
+          "elements": [
+            "fr-ai-context-bubble is-visible"
+          ]
+        }
+      ],
+      "longTasks": 33,
+      "longTaskMs": 7276,
+      "domContentLoaded": 6881.100000008941,
+      "initialThree": [],
+      "iframes": 0,
+      "hero": "http://127.0.0.1:4182/assets/media/home-hero-960.jpg",
+      "resources": [
+        {
+          "path": "/assets/media/home-hero-960.jpg",
+          "bytes": 77550
+        },
+        {
+          "path": "/assets/brand/franco-romeu-logo-remaster-384.webp",
+          "bytes": 12952
+        },
+        {
+          "path": "/assets/brand/franco-romeu-profile-remaster-256.webp",
+          "bytes": 5822
+        },
+        {
+          "path": "/assets/media/sobre-essencia.jpg",
+          "bytes": 112195
+        },
+        {
+          "path": "/assets/media/manifesto-materia-01.jpg",
+          "bytes": 76656
+        },
+        {
+          "path": "/assets/media/manifesto-proporcao-01.jpg",
+          "bytes": 104093
+        },
+        {
+          "path": "/assets/media/manifesto-luz-01.jpg",
+          "bytes": 82263
+        },
+        {
+          "path": "/assets/media/manifesto-detalhe-01.jpg",
+          "bytes": 106949
+        },
+        {
+          "path": "/assets/media/home-servico-superficies.jpg",
+          "bytes": 76656
+        },
+        {
+          "path": "/assets/media/home-servico-marcenaria.jpg",
+          "bytes": 104093
+        },
+        {
+          "path": "/assets/media/home-hero-960.jpg",
+          "bytes": 77550
+        },
+        {
+          "path": "/assets/media/ambiente-mansory-01.jpg",
+          "bytes": 113448
+        },
+        {
+          "path": "/assets/media/portfolio-porcelanato.jpg",
+          "bytes": 101463
+        },
+        {
+          "path": "/assets/media/portfolio-marmore.jpg",
+          "bytes": 104537
+        },
+        {
+          "path": "/assets/media/portfolio-automacao.jpg",
+          "bytes": 100063
+        },
+        {
+          "path": "/assets/media/portfolio-iluminacao.jpg",
+          "bytes": 85165
+        },
+        {
+          "path": "/assets/media/portfolio-eventos.jpg",
+          "bytes": 158348
+        },
+        {
+          "path": "/assets/media/portfolio-banheiro.jpg",
+          "bytes": 116545
+        },
+        {
+          "path": "/assets/media/portfolio-resina.jpg",
+          "bytes": 101463
+        },
+        {
+          "path": "/assets/media/portfolio-suite.jpg",
+          "bytes": 112268
+        },
+        {
+          "path": "/assets/media/portfolio-fachada.jpg",
+          "bytes": 160599
+        },
+        {
+          "path": "/assets/media/portfolio-marcenaria.jpg",
+          "bytes": 67253
+        },
+        {
+          "path": "/assets/media/portfolio-eletrica.jpg",
+          "bytes": 129711
+        },
+        {
+          "path": "/assets/media/portfolio-pintura.jpg",
+          "bytes": 131616
+        },
+        {
+          "path": "/assets/media/portfolio-reforma.jpg",
+          "bytes": 96738
+        },
+        {
+          "path": "/favicon.ico",
+          "bytes": 0
+        },
+        {
+          "path": "/assets/icons/favicon-32x32.png",
+          "bytes": 2319
+        }
+      ],
+      "layoutShiftSum": 0.0814202028067351
+    },
+    {
+      "name": "baseline",
+      "run": 3,
+      "lcp": 2224,
+      "lcpElement": "IMG",
+      "cls": 0.057744268482814796,
+      "shifts": [
+        {
+          "time": 3072.8999999910593,
+          "value": 0.002362065956774072,
+          "elements": [
+            "nav-items font-rokkitt font-bold tracking-wider text-sm"
+          ]
+        },
+        {
+          "time": 3436.8999999910593,
+          "value": 0.001625637339682397,
+          "elements": [
+            "smart-nav"
+          ]
+        },
+        {
+          "time": 3789.2999999970198,
+          "value": 0.004134635902158532,
+          "elements": [
+            "::before"
+          ]
+        },
+        {
+          "time": 6683.79999999702,
+          "value": 0.057744268482814796,
+          "elements": [
+            "view-home",
+            "fr-seo-breadcrumb",
+            "nav-cta bg-fr-primary text-white px-3 sm:px-5 py-1.5 sm:py-2 gap-1.5 rounded-full text-[10px] sm:text-xs shrink-0 hover:brightness-110 hover:scale-105 transition-all duration-300"
+          ]
+        },
+        {
+          "time": 9106.199999988079,
+          "value": 0.00014492584599949665,
+          "elements": [
+            "nav-label leading-none",
+            "nav-label leading-none",
+            "nav-label leading-none",
+            "nav-label leading-none",
+            "nav-label"
+          ]
+        },
+        {
+          "time": 9969.39999999106,
+          "value": 0.0026920852389451483,
+          "elements": [
+            null,
+            null,
+            null,
+            "fr6-btn-icon",
+            "fr6-btn-icon"
+          ]
+        },
+        {
+          "time": 10793.79999999702,
+          "value": 0.006241436625412726,
+          "elements": [
+            "fr-ai-context-bubble is-visible"
+          ]
+        },
+        {
+          "time": 11412.59999999404,
+          "value": 0.006367781496372498,
+          "elements": [
+            "fr-ai-context-bubble is-visible"
+          ]
+        }
+      ],
+      "longTasks": 36,
+      "longTaskMs": 6921,
+      "domContentLoaded": 6288.399999991059,
+      "initialThree": [],
+      "iframes": 0,
+      "hero": "http://127.0.0.1:4182/assets/media/home-hero-960.jpg",
+      "resources": [
+        {
+          "path": "/assets/media/home-hero-960.jpg",
+          "bytes": 77550
+        },
+        {
+          "path": "/assets/brand/franco-romeu-logo-remaster-384.webp",
+          "bytes": 12952
+        },
+        {
+          "path": "/assets/brand/franco-romeu-profile-remaster-256.webp",
+          "bytes": 5822
+        },
+        {
+          "path": "/assets/media/sobre-essencia.jpg",
+          "bytes": 112195
+        },
+        {
+          "path": "/assets/media/manifesto-materia-01.jpg",
+          "bytes": 76656
+        },
+        {
+          "path": "/assets/media/manifesto-proporcao-01.jpg",
+          "bytes": 104093
+        },
+        {
+          "path": "/assets/media/manifesto-luz-01.jpg",
+          "bytes": 82263
+        },
+        {
+          "path": "/assets/media/manifesto-detalhe-01.jpg",
+          "bytes": 106949
+        },
+        {
+          "path": "/assets/media/home-servico-superficies.jpg",
+          "bytes": 76656
+        },
+        {
+          "path": "/assets/media/home-servico-marcenaria.jpg",
+          "bytes": 104093
+        },
+        {
+          "path": "/assets/media/home-hero-960.jpg",
+          "bytes": 77550
+        },
+        {
+          "path": "/assets/media/ambiente-mansory-01.jpg",
+          "bytes": 113448
+        },
+        {
+          "path": "/assets/media/portfolio-porcelanato.jpg",
+          "bytes": 101463
+        },
+        {
+          "path": "/assets/media/portfolio-marmore.jpg",
+          "bytes": 104537
+        },
+        {
+          "path": "/assets/media/portfolio-automacao.jpg",
+          "bytes": 100063
+        },
+        {
+          "path": "/assets/media/portfolio-iluminacao.jpg",
+          "bytes": 85165
+        },
+        {
+          "path": "/assets/media/portfolio-eventos.jpg",
+          "bytes": 158348
+        },
+        {
+          "path": "/assets/media/portfolio-banheiro.jpg",
+          "bytes": 116545
+        },
+        {
+          "path": "/assets/media/portfolio-resina.jpg",
+          "bytes": 101463
+        },
+        {
+          "path": "/assets/media/portfolio-suite.jpg",
+          "bytes": 112268
+        },
+        {
+          "path": "/assets/media/portfolio-fachada.jpg",
+          "bytes": 160599
+        },
+        {
+          "path": "/assets/media/portfolio-marcenaria.jpg",
+          "bytes": 67253
+        },
+        {
+          "path": "/assets/media/portfolio-eletrica.jpg",
+          "bytes": 129711
+        },
+        {
+          "path": "/assets/media/portfolio-pintura.jpg",
+          "bytes": 131616
+        },
+        {
+          "path": "/assets/media/portfolio-reforma.jpg",
+          "bytes": 96738
+        },
+        {
+          "path": "/favicon.ico",
+          "bytes": 0
+        },
+        {
+          "path": "/assets/icons/favicon-32x32.png",
+          "bytes": 2319
+        }
+      ],
+      "layoutShiftSum": 0.08131283688815967
+    },
+    {
+      "name": "candidate",
+      "run": 1,
+      "lcp": 2124,
+      "lcpElement": "IMG",
+      "cls": 0.002684374962204526,
+      "shifts": [
+        {
+          "time": 8391.20000000298,
+          "value": 0.002684374962204526,
+          "elements": [
+            null,
+            null,
+            null,
+            "fr6-btn-icon",
+            "fr6-btn-icon"
+          ]
+        },
+        {
+          "time": 10460.90000000596,
+          "value": 7.401235816730861e-7,
+          "elements": [
+            "fr-ai-mouth"
+          ]
+        }
+      ],
+      "longTasks": 21,
+      "longTaskMs": 5616,
+      "domContentLoaded": 4902.29999999702,
+      "initialThree": [],
+      "iframes": 0,
+      "hero": "http://127.0.0.1:4181/assets/optimized/franco-romeu-interiores-referencia-640.e51ed3a8d173.avif",
+      "resources": [
+        {
+          "path": "/assets/brand/franco-romeu-logo-remaster-384.webp",
+          "bytes": 12952
+        },
+        {
+          "path": "/assets/brand/franco-romeu-profile-remaster-256.webp",
+          "bytes": 5822
+        },
+        {
+          "path": "/assets/optimized/franco-romeu-interiores-referencia-640.e51ed3a8d173.avif",
+          "bytes": 9992
+        },
+        {
+          "path": "/assets/media/sobre-essencia.jpg",
+          "bytes": 112195
+        },
+        {
+          "path": "/assets/media/manifesto-materia-01.jpg",
+          "bytes": 76656
+        },
+        {
+          "path": "/assets/media/manifesto-proporcao-01.jpg",
+          "bytes": 104093
+        },
+        {
+          "path": "/assets/media/manifesto-luz-01.jpg",
+          "bytes": 82263
+        },
+        {
+          "path": "/assets/media/manifesto-detalhe-01.jpg",
+          "bytes": 106949
+        },
+        {
+          "path": "/assets/media/ambiente-mansory-01.jpg",
+          "bytes": 113448
+        },
+        {
+          "path": "/assets/media/portfolio-porcelanato.jpg",
+          "bytes": 101463
+        },
+        {
+          "path": "/assets/media/portfolio-marmore.jpg",
+          "bytes": 104537
+        },
+        {
+          "path": "/assets/media/portfolio-automacao.jpg",
+          "bytes": 100063
+        },
+        {
+          "path": "/assets/media/portfolio-iluminacao.jpg",
+          "bytes": 85165
+        },
+        {
+          "path": "/assets/media/portfolio-eventos.jpg",
+          "bytes": 158348
+        },
+        {
+          "path": "/assets/media/portfolio-banheiro.jpg",
+          "bytes": 116545
+        },
+        {
+          "path": "/assets/media/portfolio-resina.jpg",
+          "bytes": 101463
+        },
+        {
+          "path": "/assets/media/portfolio-suite.jpg",
+          "bytes": 112268
+        },
+        {
+          "path": "/assets/media/portfolio-fachada.jpg",
+          "bytes": 160599
+        },
+        {
+          "path": "/assets/media/portfolio-marcenaria.jpg",
+          "bytes": 67253
+        },
+        {
+          "path": "/assets/media/portfolio-eletrica.jpg",
+          "bytes": 129711
+        },
+        {
+          "path": "/assets/media/portfolio-pintura.jpg",
+          "bytes": 131616
+        },
+        {
+          "path": "/assets/media/portfolio-reforma.jpg",
+          "bytes": 96738
+        },
+        {
+          "path": "/favicon.ico",
+          "bytes": 0
+        },
+        {
+          "path": "/assets/icons/favicon-32x32.png",
+          "bytes": 2319
+        }
+      ],
+      "layoutShiftSum": 0.002685115085786199
+    },
+    {
+      "name": "candidate",
+      "run": 2,
+      "lcp": 2088,
+      "lcpElement": "IMG",
+      "cls": 0.002684374962204526,
+      "shifts": [
+        {
+          "time": 8403,
+          "value": 0.002684374962204526,
+          "elements": [
+            null,
+            null,
+            null,
+            "fr6-btn-icon",
+            "fr6-btn-icon"
+          ]
+        }
+      ],
+      "longTasks": 24,
+      "longTaskMs": 5910,
+      "domContentLoaded": 4736,
+      "initialThree": [],
+      "iframes": 0,
+      "hero": "http://127.0.0.1:4181/assets/optimized/franco-romeu-interiores-referencia-640.e51ed3a8d173.avif",
+      "resources": [
+        {
+          "path": "/assets/brand/franco-romeu-logo-remaster-384.webp",
+          "bytes": 12952
+        },
+        {
+          "path": "/assets/brand/franco-romeu-profile-remaster-256.webp",
+          "bytes": 5822
+        },
+        {
+          "path": "/assets/optimized/franco-romeu-interiores-referencia-640.e51ed3a8d173.avif",
+          "bytes": 9992
+        },
+        {
+          "path": "/assets/media/sobre-essencia.jpg",
+          "bytes": 112195
+        },
+        {
+          "path": "/assets/media/manifesto-materia-01.jpg",
+          "bytes": 76656
+        },
+        {
+          "path": "/assets/media/manifesto-proporcao-01.jpg",
+          "bytes": 104093
+        },
+        {
+          "path": "/assets/media/manifesto-luz-01.jpg",
+          "bytes": 82263
+        },
+        {
+          "path": "/assets/media/manifesto-detalhe-01.jpg",
+          "bytes": 106949
+        },
+        {
+          "path": "/assets/media/ambiente-mansory-01.jpg",
+          "bytes": 113448
+        },
+        {
+          "path": "/assets/media/portfolio-porcelanato.jpg",
+          "bytes": 101463
+        },
+        {
+          "path": "/assets/media/portfolio-marmore.jpg",
+          "bytes": 104537
+        },
+        {
+          "path": "/assets/media/portfolio-automacao.jpg",
+          "bytes": 100063
+        },
+        {
+          "path": "/assets/media/portfolio-iluminacao.jpg",
+          "bytes": 85165
+        },
+        {
+          "path": "/assets/media/portfolio-eventos.jpg",
+          "bytes": 158348
+        },
+        {
+          "path": "/assets/media/portfolio-banheiro.jpg",
+          "bytes": 116545
+        },
+        {
+          "path": "/assets/media/portfolio-resina.jpg",
+          "bytes": 101463
+        },
+        {
+          "path": "/assets/media/portfolio-suite.jpg",
+          "bytes": 112268
+        },
+        {
+          "path": "/assets/media/portfolio-fachada.jpg",
+          "bytes": 160599
+        },
+        {
+          "path": "/assets/media/portfolio-marcenaria.jpg",
+          "bytes": 67253
+        },
+        {
+          "path": "/assets/media/portfolio-eletrica.jpg",
+          "bytes": 129711
+        },
+        {
+          "path": "/assets/media/portfolio-pintura.jpg",
+          "bytes": 131616
+        },
+        {
+          "path": "/assets/media/portfolio-reforma.jpg",
+          "bytes": 96738
+        },
+        {
+          "path": "/favicon.ico",
+          "bytes": 0
+        },
+        {
+          "path": "/assets/icons/favicon-32x32.png",
+          "bytes": 2319
+        }
+      ],
+      "layoutShiftSum": 0.002684374962204526
+    },
+    {
+      "name": "candidate",
+      "run": 3,
+      "lcp": 2008,
+      "lcpElement": "IMG",
+      "cls": 0.002684374962204526,
+      "shifts": [
+        {
+          "time": 8184,
+          "value": 0.002684374962204526,
+          "elements": [
+            null,
+            null,
+            null,
+            "fr6-btn-icon",
+            "fr6-btn-icon"
+          ]
+        }
+      ],
+      "longTasks": 26,
+      "longTaskMs": 5796,
+      "domContentLoaded": 4679,
+      "initialThree": [],
+      "iframes": 0,
+      "hero": "http://127.0.0.1:4181/assets/optimized/franco-romeu-interiores-referencia-640.e51ed3a8d173.avif",
+      "resources": [
+        {
+          "path": "/assets/brand/franco-romeu-logo-remaster-384.webp",
+          "bytes": 12952
+        },
+        {
+          "path": "/assets/brand/franco-romeu-profile-remaster-256.webp",
+          "bytes": 5822
+        },
+        {
+          "path": "/assets/optimized/franco-romeu-interiores-referencia-640.e51ed3a8d173.avif",
+          "bytes": 9992
+        },
+        {
+          "path": "/assets/media/sobre-essencia.jpg",
+          "bytes": 112195
+        },
+        {
+          "path": "/assets/media/manifesto-materia-01.jpg",
+          "bytes": 76656
+        },
+        {
+          "path": "/assets/media/manifesto-proporcao-01.jpg",
+          "bytes": 104093
+        },
+        {
+          "path": "/assets/media/manifesto-luz-01.jpg",
+          "bytes": 82263
+        },
+        {
+          "path": "/assets/media/manifesto-detalhe-01.jpg",
+          "bytes": 106949
+        },
+        {
+          "path": "/assets/media/ambiente-mansory-01.jpg",
+          "bytes": 113448
+        },
+        {
+          "path": "/assets/media/portfolio-porcelanato.jpg",
+          "bytes": 101463
+        },
+        {
+          "path": "/assets/media/portfolio-marmore.jpg",
+          "bytes": 104537
+        },
+        {
+          "path": "/assets/media/portfolio-automacao.jpg",
+          "bytes": 100063
+        },
+        {
+          "path": "/assets/media/portfolio-iluminacao.jpg",
+          "bytes": 85165
+        },
+        {
+          "path": "/assets/media/portfolio-eventos.jpg",
+          "bytes": 158348
+        },
+        {
+          "path": "/assets/media/portfolio-banheiro.jpg",
+          "bytes": 116545
+        },
+        {
+          "path": "/assets/media/portfolio-resina.jpg",
+          "bytes": 101463
+        },
+        {
+          "path": "/assets/media/portfolio-suite.jpg",
+          "bytes": 112268
+        },
+        {
+          "path": "/assets/media/portfolio-fachada.jpg",
+          "bytes": 160599
+        },
+        {
+          "path": "/assets/media/portfolio-marcenaria.jpg",
+          "bytes": 67253
+        },
+        {
+          "path": "/assets/media/portfolio-eletrica.jpg",
+          "bytes": 129711
+        },
+        {
+          "path": "/assets/media/portfolio-pintura.jpg",
+          "bytes": 131616
+        },
+        {
+          "path": "/assets/media/portfolio-reforma.jpg",
+          "bytes": 96738
+        },
+        {
+          "path": "/favicon.ico",
+          "bytes": 0
+        },
+        {
+          "path": "/assets/icons/favicon-32x32.png",
+          "bytes": 2319
+        }
+      ],
+      "layoutShiftSum": 0.002684374962204526
+    }
+  ],
+  "buildSha256": "9f2d2e405997f416c121365e3de458956209e63b1c4d99fc7b6975d03798d131",
+  "medians": {
+    "baseline": {
+      "lcp": 2224,
+      "cls": 0.057744268482814796,
+      "longTaskMs": 7276,
+      "domContentLoaded": 6881.100000008941
+    },
+    "candidate": {
+      "lcp": 2088,
+      "cls": 0.002684374962204526,
+      "longTaskMs": 5796,
+      "domContentLoaded": 4736
+    }
+  }
+}

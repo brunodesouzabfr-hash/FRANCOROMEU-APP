@@ -1,0 +1,3276 @@
+{
+  "base": "http://127.0.0.1:4180",
+  "capturedAt": "2026-10-11T00:40:10.051Z",
+  "engine": "Chromium headless; emulation",
+  "profiles": [
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "failed": [
+        {
+          "url": "https://www.googletagmanager.com/gtag/js?id=G-22Z85RCGQC",
+          "error": "net::ERR_FAILED"
+        },
+        {
+          "url": "https://www.clarity.ms/tag/yvdvt0rcy6",
+          "error": "net::ERR_FAILED"
+        }
+      ],
+      "views": [
+        {
+          "id": "view-home",
+          "active": true,
+          "pathname": "/",
+          "title": "Reformas e Projetos em SP | Franco Romeu — Porcelanato e Interiores",
+          "canonical": "https://francoromeu-app.vercel.app/",
+          "width": 390,
+          "scrollWidth": 390,
+          "overflow": false,
+          "loader": {
+            "hidden": false,
+            "pointer": "none"
+          },
+          "brokenImages": [],
+          "smallControls": [
+            {
+              "text": "Adicionar ao orçamento",
+              "width": 185,
+              "height": 40
+            },
+            {
+              "text": "Adicionar ao orçamento",
+              "width": 185,
+              "height": 40
+            },
+            {
+              "text": "Explorar projetos",
+              "width": 153,
+              "height": 40
+            },
+            {
+              "text": "Sobre",
+              "width": 31,
+              "height": 44
+            }
+          ],
+          "counters": [
+            "0",
+            "0",
+            "0"
+          ],
+          "coreKeys": [
+            "CATEGORIES",
+            "SERVICES",
+            "MATERIALS_BY_CATEGORY",
+            "CAT_TO_MAT_KEY",
+            "COUPONS",
+            "appState",
+            "handle",
+            "calculateTotal",
+            "ADMIN_DB_KEY",
+            "renderApp",
+            "saveAndRender",
+            "saveAdminData"
+          ],
+          "resources": [
+            {
+              "name": "https://www.googletagmanager.com/gtag/js?id=G-22Z85RCGQC",
+              "bytes": 0,
+              "duration": 124
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-hero-960.jpg",
+              "bytes": 77550,
+              "duration": 146
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/brand/franco-romeu-logo-remaster-384.webp",
+              "bytes": 12952,
+              "duration": 127
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/brand/franco-romeu-profile-remaster-256.webp",
+              "bytes": 5822,
+              "duration": 188
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/sobre-essencia.jpg",
+              "bytes": 112195,
+              "duration": 199
+            },
+            {
+              "name": "https://www.clarity.ms/tag/yvdvt0rcy6",
+              "bytes": 0,
+              "duration": 126
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-materia-01.jpg",
+              "bytes": 76656,
+              "duration": 86
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-proporcao-01.jpg",
+              "bytes": 104093,
+              "duration": 156
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-luz-01.jpg",
+              "bytes": 82263,
+              "duration": 130
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-detalhe-01.jpg",
+              "bytes": 106949,
+              "duration": 154
+            },
+            {
+              "name": "http://127.0.0.1:4180/config.json",
+              "bytes": 635,
+              "duration": 1491
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-servico-superficies.jpg",
+              "bytes": 76656,
+              "duration": 1168
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-servico-marcenaria.jpg",
+              "bytes": 104093,
+              "duration": 1254
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-mansory-01.jpg",
+              "bytes": 113448,
+              "duration": 489
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-porcelanato.jpg",
+              "bytes": 101463,
+              "duration": 457
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-marmore.jpg",
+              "bytes": 104537,
+              "duration": 459
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-automacao.jpg",
+              "bytes": 100063,
+              "duration": 459
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-iluminacao.jpg",
+              "bytes": 85165,
+              "duration": 475
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-eventos.jpg",
+              "bytes": 158348,
+              "duration": 661
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-banheiro.jpg",
+              "bytes": 116545,
+              "duration": 665
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-resina.jpg",
+              "bytes": 101463,
+              "duration": 669
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-suite.jpg",
+              "bytes": 112268,
+              "duration": 701
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-fachada.jpg",
+              "bytes": 160599,
+              "duration": 711
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-marcenaria.jpg",
+              "bytes": 67253,
+              "duration": 730
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-eletrica.jpg",
+              "bytes": 129711,
+              "duration": 756
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-pintura.jpg",
+              "bytes": 131616,
+              "duration": 771
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-reforma.jpg",
+              "bytes": 96738,
+              "duration": 768
+            },
+            {
+              "name": "http://127.0.0.1:4180/favicon.ico",
+              "bytes": 0,
+              "duration": 7
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/icons/favicon-32x32.png",
+              "bytes": 2319,
+              "duration": 22
+            },
+            {
+              "name": "https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;700&family=Share+Tech+Mono&family=Stardos+Stencil:wght@400;700;900&display=swap",
+              "bytes": 916,
+              "duration": 240
+            },
+            {
+              "name": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
+              "bytes": 19052,
+              "duration": 159
+            }
+          ],
+          "iframes": 0
+        },
+        {
+          "id": "view-sobre",
+          "active": true,
+          "pathname": "/",
+          "title": "Franco Romeu — MANIFESTO / Arte & Engenharia",
+          "canonical": "https://francoromeu-app.vercel.app/",
+          "width": 390,
+          "scrollWidth": 390,
+          "overflow": false,
+          "loader": {
+            "hidden": false,
+            "pointer": "none"
+          },
+          "brokenImages": [],
+          "smallControls": [],
+          "counters": [],
+          "coreKeys": [
+            "CATEGORIES",
+            "SERVICES",
+            "MATERIALS_BY_CATEGORY",
+            "CAT_TO_MAT_KEY",
+            "COUPONS",
+            "appState",
+            "handle",
+            "calculateTotal",
+            "ADMIN_DB_KEY",
+            "renderApp",
+            "saveAndRender",
+            "saveAdminData"
+          ],
+          "resources": [
+            {
+              "name": "https://www.googletagmanager.com/gtag/js?id=G-22Z85RCGQC",
+              "bytes": 0,
+              "duration": 124
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-hero-960.jpg",
+              "bytes": 77550,
+              "duration": 146
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/brand/franco-romeu-logo-remaster-384.webp",
+              "bytes": 12952,
+              "duration": 127
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/brand/franco-romeu-profile-remaster-256.webp",
+              "bytes": 5822,
+              "duration": 188
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/sobre-essencia.jpg",
+              "bytes": 112195,
+              "duration": 199
+            },
+            {
+              "name": "https://www.clarity.ms/tag/yvdvt0rcy6",
+              "bytes": 0,
+              "duration": 126
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-materia-01.jpg",
+              "bytes": 76656,
+              "duration": 86
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-proporcao-01.jpg",
+              "bytes": 104093,
+              "duration": 156
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-luz-01.jpg",
+              "bytes": 82263,
+              "duration": 130
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-detalhe-01.jpg",
+              "bytes": 106949,
+              "duration": 154
+            },
+            {
+              "name": "http://127.0.0.1:4180/config.json",
+              "bytes": 635,
+              "duration": 1491
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-servico-superficies.jpg",
+              "bytes": 76656,
+              "duration": 1168
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-servico-marcenaria.jpg",
+              "bytes": 104093,
+              "duration": 1254
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-mansory-01.jpg",
+              "bytes": 113448,
+              "duration": 489
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-porcelanato.jpg",
+              "bytes": 101463,
+              "duration": 457
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-marmore.jpg",
+              "bytes": 104537,
+              "duration": 459
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-automacao.jpg",
+              "bytes": 100063,
+              "duration": 459
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-iluminacao.jpg",
+              "bytes": 85165,
+              "duration": 475
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-eventos.jpg",
+              "bytes": 158348,
+              "duration": 661
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-banheiro.jpg",
+              "bytes": 116545,
+              "duration": 665
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-resina.jpg",
+              "bytes": 101463,
+              "duration": 669
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-suite.jpg",
+              "bytes": 112268,
+              "duration": 701
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-fachada.jpg",
+              "bytes": 160599,
+              "duration": 711
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-marcenaria.jpg",
+              "bytes": 67253,
+              "duration": 730
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-eletrica.jpg",
+              "bytes": 129711,
+              "duration": 756
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-pintura.jpg",
+              "bytes": 131616,
+              "duration": 771
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-reforma.jpg",
+              "bytes": 96738,
+              "duration": 768
+            },
+            {
+              "name": "http://127.0.0.1:4180/favicon.ico",
+              "bytes": 0,
+              "duration": 7
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/icons/favicon-32x32.png",
+              "bytes": 2319,
+              "duration": 22
+            },
+            {
+              "name": "https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;700&family=Share+Tech+Mono&family=Stardos+Stencil:wght@400;700;900&display=swap",
+              "bytes": 916,
+              "duration": 240
+            },
+            {
+              "name": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
+              "bytes": 19052,
+              "duration": 159
+            }
+          ],
+          "iframes": 0
+        },
+        {
+          "id": "view-ambientes",
+          "active": true,
+          "pathname": "/",
+          "title": "Franco Romeu — ARTE MATERIAL / Arte & Engenharia",
+          "canonical": "https://francoromeu-app.vercel.app/",
+          "width": 390,
+          "scrollWidth": 390,
+          "overflow": false,
+          "loader": {
+            "hidden": false,
+            "pointer": "none"
+          },
+          "brokenImages": [],
+          "smallControls": [],
+          "counters": [],
+          "coreKeys": [
+            "CATEGORIES",
+            "SERVICES",
+            "MATERIALS_BY_CATEGORY",
+            "CAT_TO_MAT_KEY",
+            "COUPONS",
+            "appState",
+            "handle",
+            "calculateTotal",
+            "ADMIN_DB_KEY",
+            "renderApp",
+            "saveAndRender",
+            "saveAdminData"
+          ],
+          "resources": [
+            {
+              "name": "https://www.googletagmanager.com/gtag/js?id=G-22Z85RCGQC",
+              "bytes": 0,
+              "duration": 124
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-hero-960.jpg",
+              "bytes": 77550,
+              "duration": 146
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/brand/franco-romeu-logo-remaster-384.webp",
+              "bytes": 12952,
+              "duration": 127
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/brand/franco-romeu-profile-remaster-256.webp",
+              "bytes": 5822,
+              "duration": 188
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/sobre-essencia.jpg",
+              "bytes": 112195,
+              "duration": 199
+            },
+            {
+              "name": "https://www.clarity.ms/tag/yvdvt0rcy6",
+              "bytes": 0,
+              "duration": 126
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-materia-01.jpg",
+              "bytes": 76656,
+              "duration": 86
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-proporcao-01.jpg",
+              "bytes": 104093,
+              "duration": 156
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-luz-01.jpg",
+              "bytes": 82263,
+              "duration": 130
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-detalhe-01.jpg",
+              "bytes": 106949,
+              "duration": 154
+            },
+            {
+              "name": "http://127.0.0.1:4180/config.json",
+              "bytes": 635,
+              "duration": 1491
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-servico-superficies.jpg",
+              "bytes": 76656,
+              "duration": 1168
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-servico-marcenaria.jpg",
+              "bytes": 104093,
+              "duration": 1254
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-mansory-01.jpg",
+              "bytes": 113448,
+              "duration": 489
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-porcelanato.jpg",
+              "bytes": 101463,
+              "duration": 457
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-marmore.jpg",
+              "bytes": 104537,
+              "duration": 459
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-automacao.jpg",
+              "bytes": 100063,
+              "duration": 459
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-iluminacao.jpg",
+              "bytes": 85165,
+              "duration": 475
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-eventos.jpg",
+              "bytes": 158348,
+              "duration": 661
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-banheiro.jpg",
+              "bytes": 116545,
+              "duration": 665
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-resina.jpg",
+              "bytes": 101463,
+              "duration": 669
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-suite.jpg",
+              "bytes": 112268,
+              "duration": 701
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-fachada.jpg",
+              "bytes": 160599,
+              "duration": 711
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-marcenaria.jpg",
+              "bytes": 67253,
+              "duration": 730
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-eletrica.jpg",
+              "bytes": 129711,
+              "duration": 756
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-pintura.jpg",
+              "bytes": 131616,
+              "duration": 771
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-reforma.jpg",
+              "bytes": 96738,
+              "duration": 768
+            },
+            {
+              "name": "http://127.0.0.1:4180/favicon.ico",
+              "bytes": 0,
+              "duration": 7
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/icons/favicon-32x32.png",
+              "bytes": 2319,
+              "duration": 22
+            },
+            {
+              "name": "https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;700&family=Share+Tech+Mono&family=Stardos+Stencil:wght@400;700;900&display=swap",
+              "bytes": 916,
+              "duration": 240
+            },
+            {
+              "name": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
+              "bytes": 19052,
+              "duration": 159
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-industrial-01.jpg",
+              "bytes": 132617,
+              "duration": 187
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-contemporaneo-01.jpg",
+              "bytes": 122584,
+              "duration": 160
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-minimalista-01.jpg",
+              "bytes": 87467,
+              "duration": 182
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-rustico-01.jpg",
+              "bytes": 147835,
+              "duration": 192
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-brutalismo-01.jpg",
+              "bytes": 118691,
+              "duration": 186
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-classico-contemporaneo-01.jpg",
+              "bytes": 104483,
+              "duration": 195
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-japandi-01.jpg",
+              "bytes": 109576,
+              "duration": 233
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-art-deco-01.jpg",
+              "bytes": 120920,
+              "duration": 228
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-tropical-modern-01.jpg",
+              "bytes": 178381,
+              "duration": 240
+            }
+          ],
+          "iframes": 0
+        },
+        {
+          "id": "view-projetos3d",
+          "active": true,
+          "pathname": "/",
+          "title": "Franco Romeu — MODELING SPACE / Arte & Engenharia",
+          "canonical": "https://francoromeu-app.vercel.app/",
+          "width": 390,
+          "scrollWidth": 390,
+          "overflow": false,
+          "loader": {
+            "hidden": false,
+            "pointer": "none"
+          },
+          "brokenImages": [],
+          "smallControls": [
+            {
+              "text": "02 / Sala de Estar Integrada",
+              "width": 114,
+              "height": 43
+            },
+            {
+              "text": "Mostrar Suíte Master Premium",
+              "width": 26,
+              "height": 7
+            },
+            {
+              "text": "Mostrar Sala de Estar Integrada",
+              "width": 7,
+              "height": 7
+            },
+            {
+              "text": "Mostrar Escritório Executivo",
+              "width": 7,
+              "height": 7
+            },
+            {
+              "text": "Mostrar Cozinha Gourmet",
+              "width": 7,
+              "height": 7
+            },
+            {
+              "text": "Mostrar Terraço Gourmet",
+              "width": 7,
+              "height": 7
+            },
+            {
+              "text": "Mostrar Banheiro Spa",
+              "width": 7,
+              "height": 7
+            }
+          ],
+          "counters": [],
+          "coreKeys": [
+            "CATEGORIES",
+            "SERVICES",
+            "MATERIALS_BY_CATEGORY",
+            "CAT_TO_MAT_KEY",
+            "COUPONS",
+            "appState",
+            "handle",
+            "calculateTotal",
+            "ADMIN_DB_KEY",
+            "renderApp",
+            "saveAndRender",
+            "saveAdminData"
+          ],
+          "resources": [
+            {
+              "name": "https://www.googletagmanager.com/gtag/js?id=G-22Z85RCGQC",
+              "bytes": 0,
+              "duration": 124
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-hero-960.jpg",
+              "bytes": 77550,
+              "duration": 146
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/brand/franco-romeu-logo-remaster-384.webp",
+              "bytes": 12952,
+              "duration": 127
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/brand/franco-romeu-profile-remaster-256.webp",
+              "bytes": 5822,
+              "duration": 188
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/sobre-essencia.jpg",
+              "bytes": 112195,
+              "duration": 199
+            },
+            {
+              "name": "https://www.clarity.ms/tag/yvdvt0rcy6",
+              "bytes": 0,
+              "duration": 126
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-materia-01.jpg",
+              "bytes": 76656,
+              "duration": 86
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-proporcao-01.jpg",
+              "bytes": 104093,
+              "duration": 156
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-luz-01.jpg",
+              "bytes": 82263,
+              "duration": 130
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-detalhe-01.jpg",
+              "bytes": 106949,
+              "duration": 154
+            },
+            {
+              "name": "http://127.0.0.1:4180/config.json",
+              "bytes": 635,
+              "duration": 1491
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-servico-superficies.jpg",
+              "bytes": 76656,
+              "duration": 1168
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-servico-marcenaria.jpg",
+              "bytes": 104093,
+              "duration": 1254
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-mansory-01.jpg",
+              "bytes": 113448,
+              "duration": 489
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-porcelanato.jpg",
+              "bytes": 101463,
+              "duration": 457
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-marmore.jpg",
+              "bytes": 104537,
+              "duration": 459
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-automacao.jpg",
+              "bytes": 100063,
+              "duration": 459
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-iluminacao.jpg",
+              "bytes": 85165,
+              "duration": 475
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-eventos.jpg",
+              "bytes": 158348,
+              "duration": 661
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-banheiro.jpg",
+              "bytes": 116545,
+              "duration": 665
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-resina.jpg",
+              "bytes": 101463,
+              "duration": 669
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-suite.jpg",
+              "bytes": 112268,
+              "duration": 701
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-fachada.jpg",
+              "bytes": 160599,
+              "duration": 711
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-marcenaria.jpg",
+              "bytes": 67253,
+              "duration": 730
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-eletrica.jpg",
+              "bytes": 129711,
+              "duration": 756
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-pintura.jpg",
+              "bytes": 131616,
+              "duration": 771
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-reforma.jpg",
+              "bytes": 96738,
+              "duration": 768
+            },
+            {
+              "name": "http://127.0.0.1:4180/favicon.ico",
+              "bytes": 0,
+              "duration": 7
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/icons/favicon-32x32.png",
+              "bytes": 2319,
+              "duration": 22
+            },
+            {
+              "name": "https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;700&family=Share+Tech+Mono&family=Stardos+Stencil:wght@400;700;900&display=swap",
+              "bytes": 916,
+              "duration": 240
+            },
+            {
+              "name": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
+              "bytes": 19052,
+              "duration": 159
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-industrial-01.jpg",
+              "bytes": 132617,
+              "duration": 187
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-contemporaneo-01.jpg",
+              "bytes": 122584,
+              "duration": 160
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-minimalista-01.jpg",
+              "bytes": 87467,
+              "duration": 182
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-rustico-01.jpg",
+              "bytes": 147835,
+              "duration": 192
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-brutalismo-01.jpg",
+              "bytes": 118691,
+              "duration": 186
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-classico-contemporaneo-01.jpg",
+              "bytes": 104483,
+              "duration": 195
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-japandi-01.jpg",
+              "bytes": 109576,
+              "duration": 233
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-art-deco-01.jpg",
+              "bytes": 120920,
+              "duration": 228
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-tropical-modern-01.jpg",
+              "bytes": 178381,
+              "duration": 240
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-reforma-residencial-01.jpg",
+              "bytes": 96738,
+              "duration": 529
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-reforma-residencial-02.jpg",
+              "bytes": 80642,
+              "duration": 529
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-reforma-residencial-03.jpg",
+              "bytes": 75716,
+              "duration": 525
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-retrofit-comercial-01.jpg",
+              "bytes": 156005,
+              "duration": 513
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-bancada-calacatta-01.jpg",
+              "bytes": 92930,
+              "duration": 595
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-marcenaria-integrada-01.jpg",
+              "bytes": 67253,
+              "duration": 578
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-brinquedomovel-01.jpg",
+              "bytes": 132493,
+              "duration": 643
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-arena-futebol-x1-01.jpg",
+              "bytes": 150003,
+              "duration": 650
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-basquete-aco-01.jpg",
+              "bytes": 120269,
+              "duration": 622
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-patinacao-dmx-01.jpg",
+              "bytes": 104638,
+              "duration": 680
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-iluminacao-integrada-01.jpg",
+              "bytes": 85165,
+              "duration": 678
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-suite-luxo-01.jpg",
+              "bytes": 112268,
+              "duration": 547
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-retrofit-comercial-02.jpg",
+              "bytes": 136874,
+              "duration": 283
+            }
+          ],
+          "iframes": 0
+        },
+        {
+          "id": "view-projetos",
+          "active": true,
+          "pathname": "/",
+          "title": "Franco Romeu — ARQUIVO VIVO / Arte & Engenharia",
+          "canonical": "https://francoromeu-app.vercel.app/",
+          "width": 390,
+          "scrollWidth": 390,
+          "overflow": false,
+          "loader": {
+            "hidden": false,
+            "pointer": "none"
+          },
+          "brokenImages": [],
+          "smallControls": [],
+          "counters": [],
+          "coreKeys": [
+            "CATEGORIES",
+            "SERVICES",
+            "MATERIALS_BY_CATEGORY",
+            "CAT_TO_MAT_KEY",
+            "COUPONS",
+            "appState",
+            "handle",
+            "calculateTotal",
+            "ADMIN_DB_KEY",
+            "renderApp",
+            "saveAndRender",
+            "saveAdminData"
+          ],
+          "resources": [
+            {
+              "name": "https://www.googletagmanager.com/gtag/js?id=G-22Z85RCGQC",
+              "bytes": 0,
+              "duration": 124
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-hero-960.jpg",
+              "bytes": 77550,
+              "duration": 146
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/brand/franco-romeu-logo-remaster-384.webp",
+              "bytes": 12952,
+              "duration": 127
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/brand/franco-romeu-profile-remaster-256.webp",
+              "bytes": 5822,
+              "duration": 188
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/sobre-essencia.jpg",
+              "bytes": 112195,
+              "duration": 199
+            },
+            {
+              "name": "https://www.clarity.ms/tag/yvdvt0rcy6",
+              "bytes": 0,
+              "duration": 126
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-materia-01.jpg",
+              "bytes": 76656,
+              "duration": 86
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-proporcao-01.jpg",
+              "bytes": 104093,
+              "duration": 156
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-luz-01.jpg",
+              "bytes": 82263,
+              "duration": 130
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-detalhe-01.jpg",
+              "bytes": 106949,
+              "duration": 154
+            },
+            {
+              "name": "http://127.0.0.1:4180/config.json",
+              "bytes": 635,
+              "duration": 1491
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-servico-superficies.jpg",
+              "bytes": 76656,
+              "duration": 1168
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-servico-marcenaria.jpg",
+              "bytes": 104093,
+              "duration": 1254
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-mansory-01.jpg",
+              "bytes": 113448,
+              "duration": 489
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-porcelanato.jpg",
+              "bytes": 101463,
+              "duration": 457
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-marmore.jpg",
+              "bytes": 104537,
+              "duration": 459
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-automacao.jpg",
+              "bytes": 100063,
+              "duration": 459
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-iluminacao.jpg",
+              "bytes": 85165,
+              "duration": 475
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-eventos.jpg",
+              "bytes": 158348,
+              "duration": 661
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-banheiro.jpg",
+              "bytes": 116545,
+              "duration": 665
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-resina.jpg",
+              "bytes": 101463,
+              "duration": 669
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-suite.jpg",
+              "bytes": 112268,
+              "duration": 701
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-fachada.jpg",
+              "bytes": 160599,
+              "duration": 711
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-marcenaria.jpg",
+              "bytes": 67253,
+              "duration": 730
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-eletrica.jpg",
+              "bytes": 129711,
+              "duration": 756
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-pintura.jpg",
+              "bytes": 131616,
+              "duration": 771
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-reforma.jpg",
+              "bytes": 96738,
+              "duration": 768
+            },
+            {
+              "name": "http://127.0.0.1:4180/favicon.ico",
+              "bytes": 0,
+              "duration": 7
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/icons/favicon-32x32.png",
+              "bytes": 2319,
+              "duration": 22
+            },
+            {
+              "name": "https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;700&family=Share+Tech+Mono&family=Stardos+Stencil:wght@400;700;900&display=swap",
+              "bytes": 916,
+              "duration": 240
+            },
+            {
+              "name": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
+              "bytes": 19052,
+              "duration": 159
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-industrial-01.jpg",
+              "bytes": 132617,
+              "duration": 187
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-contemporaneo-01.jpg",
+              "bytes": 122584,
+              "duration": 160
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-minimalista-01.jpg",
+              "bytes": 87467,
+              "duration": 182
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-rustico-01.jpg",
+              "bytes": 147835,
+              "duration": 192
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-brutalismo-01.jpg",
+              "bytes": 118691,
+              "duration": 186
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-classico-contemporaneo-01.jpg",
+              "bytes": 104483,
+              "duration": 195
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-japandi-01.jpg",
+              "bytes": 109576,
+              "duration": 233
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-art-deco-01.jpg",
+              "bytes": 120920,
+              "duration": 228
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-tropical-modern-01.jpg",
+              "bytes": 178381,
+              "duration": 240
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-reforma-residencial-01.jpg",
+              "bytes": 96738,
+              "duration": 529
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-reforma-residencial-02.jpg",
+              "bytes": 80642,
+              "duration": 529
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-reforma-residencial-03.jpg",
+              "bytes": 75716,
+              "duration": 525
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-retrofit-comercial-01.jpg",
+              "bytes": 156005,
+              "duration": 513
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-bancada-calacatta-01.jpg",
+              "bytes": 92930,
+              "duration": 595
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-marcenaria-integrada-01.jpg",
+              "bytes": 67253,
+              "duration": 578
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-brinquedomovel-01.jpg",
+              "bytes": 132493,
+              "duration": 643
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-arena-futebol-x1-01.jpg",
+              "bytes": 150003,
+              "duration": 650
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-basquete-aco-01.jpg",
+              "bytes": 120269,
+              "duration": 622
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-patinacao-dmx-01.jpg",
+              "bytes": 104638,
+              "duration": 680
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-iluminacao-integrada-01.jpg",
+              "bytes": 85165,
+              "duration": 678
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-suite-luxo-01.jpg",
+              "bytes": 112268,
+              "duration": 547
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-retrofit-comercial-02.jpg",
+              "bytes": 136874,
+              "duration": 283
+            }
+          ],
+          "iframes": 0
+        },
+        {
+          "id": "view-orcamento",
+          "active": true,
+          "pathname": "/",
+          "title": "Franco Romeu — ENGENHARIA DE CUSTO / Arte & Engenharia",
+          "canonical": "https://francoromeu-app.vercel.app/",
+          "width": 390,
+          "scrollWidth": 390,
+          "overflow": false,
+          "loader": {
+            "hidden": false,
+            "pointer": "none"
+          },
+          "brokenImages": [],
+          "smallControls": [
+            {
+              "text": "✍️ Prefiro fazer manualmente",
+              "width": 288,
+              "height": 42
+            },
+            {
+              "text": "",
+              "width": 258,
+              "height": 38
+            },
+            {
+              "text": "Aplicar",
+              "width": 56,
+              "height": 38
+            },
+            {
+              "text": "(11) 99002-1603",
+              "width": 107,
+              "height": 15
+            },
+            {
+              "text": "romeudifranco@gmail.com",
+              "width": 175,
+              "height": 15
+            },
+            {
+              "text": "Abrir WhatsApp da Franco Romeu",
+              "width": 21,
+              "height": 32
+            },
+            {
+              "text": "Abrir Instagram da Franco Romeu",
+              "width": 21,
+              "height": 32
+            },
+            {
+              "text": "Abrir Pinterest da Franco Romeu",
+              "width": 23,
+              "height": 32
+            },
+            {
+              "text": "×",
+              "width": 26,
+              "height": 34
+            }
+          ],
+          "counters": [],
+          "coreKeys": [
+            "CATEGORIES",
+            "SERVICES",
+            "MATERIALS_BY_CATEGORY",
+            "CAT_TO_MAT_KEY",
+            "COUPONS",
+            "appState",
+            "handle",
+            "calculateTotal",
+            "ADMIN_DB_KEY",
+            "renderApp",
+            "saveAndRender",
+            "saveAdminData"
+          ],
+          "resources": [
+            {
+              "name": "https://www.googletagmanager.com/gtag/js?id=G-22Z85RCGQC",
+              "bytes": 0,
+              "duration": 124
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-hero-960.jpg",
+              "bytes": 77550,
+              "duration": 146
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/brand/franco-romeu-logo-remaster-384.webp",
+              "bytes": 12952,
+              "duration": 127
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/brand/franco-romeu-profile-remaster-256.webp",
+              "bytes": 5822,
+              "duration": 188
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/sobre-essencia.jpg",
+              "bytes": 112195,
+              "duration": 199
+            },
+            {
+              "name": "https://www.clarity.ms/tag/yvdvt0rcy6",
+              "bytes": 0,
+              "duration": 126
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-materia-01.jpg",
+              "bytes": 76656,
+              "duration": 86
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-proporcao-01.jpg",
+              "bytes": 104093,
+              "duration": 156
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-luz-01.jpg",
+              "bytes": 82263,
+              "duration": 130
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-detalhe-01.jpg",
+              "bytes": 106949,
+              "duration": 154
+            },
+            {
+              "name": "http://127.0.0.1:4180/config.json",
+              "bytes": 635,
+              "duration": 1491
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-servico-superficies.jpg",
+              "bytes": 76656,
+              "duration": 1168
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-servico-marcenaria.jpg",
+              "bytes": 104093,
+              "duration": 1254
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-mansory-01.jpg",
+              "bytes": 113448,
+              "duration": 489
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-porcelanato.jpg",
+              "bytes": 101463,
+              "duration": 457
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-marmore.jpg",
+              "bytes": 104537,
+              "duration": 459
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-automacao.jpg",
+              "bytes": 100063,
+              "duration": 459
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-iluminacao.jpg",
+              "bytes": 85165,
+              "duration": 475
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-eventos.jpg",
+              "bytes": 158348,
+              "duration": 661
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-banheiro.jpg",
+              "bytes": 116545,
+              "duration": 665
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-resina.jpg",
+              "bytes": 101463,
+              "duration": 669
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-suite.jpg",
+              "bytes": 112268,
+              "duration": 701
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-fachada.jpg",
+              "bytes": 160599,
+              "duration": 711
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-marcenaria.jpg",
+              "bytes": 67253,
+              "duration": 730
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-eletrica.jpg",
+              "bytes": 129711,
+              "duration": 756
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-pintura.jpg",
+              "bytes": 131616,
+              "duration": 771
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-reforma.jpg",
+              "bytes": 96738,
+              "duration": 768
+            },
+            {
+              "name": "http://127.0.0.1:4180/favicon.ico",
+              "bytes": 0,
+              "duration": 7
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/icons/favicon-32x32.png",
+              "bytes": 2319,
+              "duration": 22
+            },
+            {
+              "name": "https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;700&family=Share+Tech+Mono&family=Stardos+Stencil:wght@400;700;900&display=swap",
+              "bytes": 916,
+              "duration": 240
+            },
+            {
+              "name": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
+              "bytes": 19052,
+              "duration": 159
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-industrial-01.jpg",
+              "bytes": 132617,
+              "duration": 187
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-contemporaneo-01.jpg",
+              "bytes": 122584,
+              "duration": 160
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-minimalista-01.jpg",
+              "bytes": 87467,
+              "duration": 182
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-rustico-01.jpg",
+              "bytes": 147835,
+              "duration": 192
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-brutalismo-01.jpg",
+              "bytes": 118691,
+              "duration": 186
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-classico-contemporaneo-01.jpg",
+              "bytes": 104483,
+              "duration": 195
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-japandi-01.jpg",
+              "bytes": 109576,
+              "duration": 233
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-art-deco-01.jpg",
+              "bytes": 120920,
+              "duration": 228
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-tropical-modern-01.jpg",
+              "bytes": 178381,
+              "duration": 240
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-reforma-residencial-01.jpg",
+              "bytes": 96738,
+              "duration": 529
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-reforma-residencial-02.jpg",
+              "bytes": 80642,
+              "duration": 529
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-reforma-residencial-03.jpg",
+              "bytes": 75716,
+              "duration": 525
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-retrofit-comercial-01.jpg",
+              "bytes": 156005,
+              "duration": 513
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-bancada-calacatta-01.jpg",
+              "bytes": 92930,
+              "duration": 595
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-marcenaria-integrada-01.jpg",
+              "bytes": 67253,
+              "duration": 578
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-brinquedomovel-01.jpg",
+              "bytes": 132493,
+              "duration": 643
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-arena-futebol-x1-01.jpg",
+              "bytes": 150003,
+              "duration": 650
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-basquete-aco-01.jpg",
+              "bytes": 120269,
+              "duration": 622
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-patinacao-dmx-01.jpg",
+              "bytes": 104638,
+              "duration": 680
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-iluminacao-integrada-01.jpg",
+              "bytes": 85165,
+              "duration": 678
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-suite-luxo-01.jpg",
+              "bytes": 112268,
+              "duration": 547
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-retrofit-comercial-02.jpg",
+              "bytes": 136874,
+              "duration": 283
+            }
+          ],
+          "iframes": 0
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "errors": [],
+      "failed": [
+        {
+          "url": "https://www.googletagmanager.com/gtag/js?id=G-22Z85RCGQC",
+          "error": "net::ERR_FAILED"
+        },
+        {
+          "url": "https://www.clarity.ms/tag/yvdvt0rcy6",
+          "error": "net::ERR_FAILED"
+        },
+        {
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/three.js/0.161.0/three.min.js",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "views": [
+        {
+          "id": "view-home",
+          "active": true,
+          "pathname": "/",
+          "title": "Reformas e Projetos em SP | Franco Romeu — Porcelanato e Interiores",
+          "canonical": "https://francoromeu-app.vercel.app/",
+          "width": 1440,
+          "scrollWidth": 1434,
+          "overflow": false,
+          "loader": {
+            "hidden": false,
+            "pointer": "none"
+          },
+          "brokenImages": [],
+          "smallControls": [
+            {
+              "text": "Adicionar ao orçamento",
+              "width": 185,
+              "height": 40
+            },
+            {
+              "text": "Adicionar ao orçamento",
+              "width": 185,
+              "height": 40
+            },
+            {
+              "text": "Explorar projetos",
+              "width": 153,
+              "height": 40
+            },
+            {
+              "text": "Sobre",
+              "width": 31,
+              "height": 44
+            }
+          ],
+          "counters": [
+            "0",
+            "0",
+            "0"
+          ],
+          "coreKeys": [
+            "CATEGORIES",
+            "SERVICES",
+            "MATERIALS_BY_CATEGORY",
+            "CAT_TO_MAT_KEY",
+            "COUPONS",
+            "appState",
+            "handle",
+            "calculateTotal",
+            "ADMIN_DB_KEY",
+            "renderApp",
+            "saveAndRender",
+            "saveAdminData"
+          ],
+          "resources": [
+            {
+              "name": "https://www.googletagmanager.com/gtag/js?id=G-22Z85RCGQC",
+              "bytes": 0,
+              "duration": 106
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-hero-1600.jpg",
+              "bytes": 200164,
+              "duration": 216
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/brand/franco-romeu-logo-remaster-384.webp",
+              "bytes": 12952,
+              "duration": 146
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/brand/franco-romeu-profile-remaster-256.webp",
+              "bytes": 5822,
+              "duration": 170
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/sobre-essencia.jpg",
+              "bytes": 112195,
+              "duration": 183
+            },
+            {
+              "name": "https://www.clarity.ms/tag/yvdvt0rcy6",
+              "bytes": 0,
+              "duration": 95
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-materia-01.jpg",
+              "bytes": 76656,
+              "duration": 170
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-proporcao-01.jpg",
+              "bytes": 104093,
+              "duration": 177
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-luz-01.jpg",
+              "bytes": 82263,
+              "duration": 183
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-detalhe-01.jpg",
+              "bytes": 106949,
+              "duration": 190
+            },
+            {
+              "name": "http://127.0.0.1:4180/config.json",
+              "bytes": 635,
+              "duration": 1846
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-servico-superficies.jpg",
+              "bytes": 76656,
+              "duration": 1258
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-servico-marcenaria.jpg",
+              "bytes": 104093,
+              "duration": 1256
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-mansory-01.jpg",
+              "bytes": 113448,
+              "duration": 379
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-porcelanato.jpg",
+              "bytes": 101463,
+              "duration": 441
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-marmore.jpg",
+              "bytes": 104537,
+              "duration": 349
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-automacao.jpg",
+              "bytes": 100063,
+              "duration": 489
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-iluminacao.jpg",
+              "bytes": 85165,
+              "duration": 515
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-eventos.jpg",
+              "bytes": 158348,
+              "duration": 549
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-banheiro.jpg",
+              "bytes": 116545,
+              "duration": 554
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-resina.jpg",
+              "bytes": 101463,
+              "duration": 535
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-suite.jpg",
+              "bytes": 112268,
+              "duration": 569
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-fachada.jpg",
+              "bytes": 160599,
+              "duration": 627
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-marcenaria.jpg",
+              "bytes": 67253,
+              "duration": 623
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-eletrica.jpg",
+              "bytes": 129711,
+              "duration": 633
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-pintura.jpg",
+              "bytes": 131616,
+              "duration": 632
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-reforma.jpg",
+              "bytes": 96738,
+              "duration": 625
+            },
+            {
+              "name": "http://127.0.0.1:4180/favicon.ico",
+              "bytes": 0,
+              "duration": 7
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/icons/favicon-32x32.png",
+              "bytes": 2319,
+              "duration": 35
+            },
+            {
+              "name": "https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;700&family=Share+Tech+Mono&family=Stardos+Stencil:wght@400;700;900&display=swap",
+              "bytes": 916,
+              "duration": 312
+            },
+            {
+              "name": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
+              "bytes": 19052,
+              "duration": 116
+            }
+          ],
+          "iframes": 0
+        },
+        {
+          "id": "view-sobre",
+          "active": true,
+          "pathname": "/",
+          "title": "Franco Romeu — MANIFESTO / Arte & Engenharia",
+          "canonical": "https://francoromeu-app.vercel.app/",
+          "width": 1440,
+          "scrollWidth": 1434,
+          "overflow": false,
+          "loader": {
+            "hidden": false,
+            "pointer": "none"
+          },
+          "brokenImages": [],
+          "smallControls": [],
+          "counters": [],
+          "coreKeys": [
+            "CATEGORIES",
+            "SERVICES",
+            "MATERIALS_BY_CATEGORY",
+            "CAT_TO_MAT_KEY",
+            "COUPONS",
+            "appState",
+            "handle",
+            "calculateTotal",
+            "ADMIN_DB_KEY",
+            "renderApp",
+            "saveAndRender",
+            "saveAdminData"
+          ],
+          "resources": [
+            {
+              "name": "https://www.googletagmanager.com/gtag/js?id=G-22Z85RCGQC",
+              "bytes": 0,
+              "duration": 106
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-hero-1600.jpg",
+              "bytes": 200164,
+              "duration": 216
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/brand/franco-romeu-logo-remaster-384.webp",
+              "bytes": 12952,
+              "duration": 146
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/brand/franco-romeu-profile-remaster-256.webp",
+              "bytes": 5822,
+              "duration": 170
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/sobre-essencia.jpg",
+              "bytes": 112195,
+              "duration": 183
+            },
+            {
+              "name": "https://www.clarity.ms/tag/yvdvt0rcy6",
+              "bytes": 0,
+              "duration": 95
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-materia-01.jpg",
+              "bytes": 76656,
+              "duration": 170
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-proporcao-01.jpg",
+              "bytes": 104093,
+              "duration": 177
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-luz-01.jpg",
+              "bytes": 82263,
+              "duration": 183
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-detalhe-01.jpg",
+              "bytes": 106949,
+              "duration": 190
+            },
+            {
+              "name": "http://127.0.0.1:4180/config.json",
+              "bytes": 635,
+              "duration": 1846
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-servico-superficies.jpg",
+              "bytes": 76656,
+              "duration": 1258
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-servico-marcenaria.jpg",
+              "bytes": 104093,
+              "duration": 1256
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-mansory-01.jpg",
+              "bytes": 113448,
+              "duration": 379
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-porcelanato.jpg",
+              "bytes": 101463,
+              "duration": 441
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-marmore.jpg",
+              "bytes": 104537,
+              "duration": 349
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-automacao.jpg",
+              "bytes": 100063,
+              "duration": 489
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-iluminacao.jpg",
+              "bytes": 85165,
+              "duration": 515
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-eventos.jpg",
+              "bytes": 158348,
+              "duration": 549
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-banheiro.jpg",
+              "bytes": 116545,
+              "duration": 554
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-resina.jpg",
+              "bytes": 101463,
+              "duration": 535
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-suite.jpg",
+              "bytes": 112268,
+              "duration": 569
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-fachada.jpg",
+              "bytes": 160599,
+              "duration": 627
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-marcenaria.jpg",
+              "bytes": 67253,
+              "duration": 623
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-eletrica.jpg",
+              "bytes": 129711,
+              "duration": 633
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-pintura.jpg",
+              "bytes": 131616,
+              "duration": 632
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-reforma.jpg",
+              "bytes": 96738,
+              "duration": 625
+            },
+            {
+              "name": "http://127.0.0.1:4180/favicon.ico",
+              "bytes": 0,
+              "duration": 7
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/icons/favicon-32x32.png",
+              "bytes": 2319,
+              "duration": 35
+            },
+            {
+              "name": "https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;700&family=Share+Tech+Mono&family=Stardos+Stencil:wght@400;700;900&display=swap",
+              "bytes": 916,
+              "duration": 312
+            },
+            {
+              "name": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
+              "bytes": 19052,
+              "duration": 116
+            }
+          ],
+          "iframes": 0
+        },
+        {
+          "id": "view-ambientes",
+          "active": true,
+          "pathname": "/",
+          "title": "Franco Romeu — ARTE MATERIAL / Arte & Engenharia",
+          "canonical": "https://francoromeu-app.vercel.app/",
+          "width": 1440,
+          "scrollWidth": 1434,
+          "overflow": false,
+          "loader": {
+            "hidden": false,
+            "pointer": "none"
+          },
+          "brokenImages": [],
+          "smallControls": [],
+          "counters": [],
+          "coreKeys": [
+            "CATEGORIES",
+            "SERVICES",
+            "MATERIALS_BY_CATEGORY",
+            "CAT_TO_MAT_KEY",
+            "COUPONS",
+            "appState",
+            "handle",
+            "calculateTotal",
+            "ADMIN_DB_KEY",
+            "renderApp",
+            "saveAndRender",
+            "saveAdminData"
+          ],
+          "resources": [
+            {
+              "name": "https://www.googletagmanager.com/gtag/js?id=G-22Z85RCGQC",
+              "bytes": 0,
+              "duration": 106
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-hero-1600.jpg",
+              "bytes": 200164,
+              "duration": 216
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/brand/franco-romeu-logo-remaster-384.webp",
+              "bytes": 12952,
+              "duration": 146
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/brand/franco-romeu-profile-remaster-256.webp",
+              "bytes": 5822,
+              "duration": 170
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/sobre-essencia.jpg",
+              "bytes": 112195,
+              "duration": 183
+            },
+            {
+              "name": "https://www.clarity.ms/tag/yvdvt0rcy6",
+              "bytes": 0,
+              "duration": 95
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-materia-01.jpg",
+              "bytes": 76656,
+              "duration": 170
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-proporcao-01.jpg",
+              "bytes": 104093,
+              "duration": 177
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-luz-01.jpg",
+              "bytes": 82263,
+              "duration": 183
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-detalhe-01.jpg",
+              "bytes": 106949,
+              "duration": 190
+            },
+            {
+              "name": "http://127.0.0.1:4180/config.json",
+              "bytes": 635,
+              "duration": 1846
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-servico-superficies.jpg",
+              "bytes": 76656,
+              "duration": 1258
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-servico-marcenaria.jpg",
+              "bytes": 104093,
+              "duration": 1256
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-mansory-01.jpg",
+              "bytes": 113448,
+              "duration": 379
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-porcelanato.jpg",
+              "bytes": 101463,
+              "duration": 441
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-marmore.jpg",
+              "bytes": 104537,
+              "duration": 349
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-automacao.jpg",
+              "bytes": 100063,
+              "duration": 489
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-iluminacao.jpg",
+              "bytes": 85165,
+              "duration": 515
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-eventos.jpg",
+              "bytes": 158348,
+              "duration": 549
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-banheiro.jpg",
+              "bytes": 116545,
+              "duration": 554
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-resina.jpg",
+              "bytes": 101463,
+              "duration": 535
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-suite.jpg",
+              "bytes": 112268,
+              "duration": 569
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-fachada.jpg",
+              "bytes": 160599,
+              "duration": 627
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-marcenaria.jpg",
+              "bytes": 67253,
+              "duration": 623
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-eletrica.jpg",
+              "bytes": 129711,
+              "duration": 633
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-pintura.jpg",
+              "bytes": 131616,
+              "duration": 632
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-reforma.jpg",
+              "bytes": 96738,
+              "duration": 625
+            },
+            {
+              "name": "http://127.0.0.1:4180/favicon.ico",
+              "bytes": 0,
+              "duration": 7
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/icons/favicon-32x32.png",
+              "bytes": 2319,
+              "duration": 35
+            },
+            {
+              "name": "https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;700&family=Share+Tech+Mono&family=Stardos+Stencil:wght@400;700;900&display=swap",
+              "bytes": 916,
+              "duration": 312
+            },
+            {
+              "name": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
+              "bytes": 19052,
+              "duration": 116
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-industrial-01.jpg",
+              "bytes": 132617,
+              "duration": 280
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-contemporaneo-01.jpg",
+              "bytes": 122584,
+              "duration": 269
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-minimalista-01.jpg",
+              "bytes": 87467,
+              "duration": 269
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-rustico-01.jpg",
+              "bytes": 147835,
+              "duration": 290
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-brutalismo-01.jpg",
+              "bytes": 118691,
+              "duration": 282
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-classico-contemporaneo-01.jpg",
+              "bytes": 104483,
+              "duration": 265
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-japandi-01.jpg",
+              "bytes": 109576,
+              "duration": 307
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-art-deco-01.jpg",
+              "bytes": 120920,
+              "duration": 306
+            }
+          ],
+          "iframes": 0
+        },
+        {
+          "id": "view-projetos3d",
+          "active": true,
+          "pathname": "/",
+          "title": "Franco Romeu — MODELING SPACE / Arte & Engenharia",
+          "canonical": "https://francoromeu-app.vercel.app/",
+          "width": 1440,
+          "scrollWidth": 1434,
+          "overflow": false,
+          "loader": {
+            "hidden": false,
+            "pointer": "none"
+          },
+          "brokenImages": [],
+          "smallControls": [
+            {
+              "text": "Mostrar Suíte Master Premium",
+              "width": 26,
+              "height": 7
+            },
+            {
+              "text": "Mostrar Sala de Estar Integrada",
+              "width": 7,
+              "height": 7
+            },
+            {
+              "text": "Mostrar Escritório Executivo",
+              "width": 7,
+              "height": 7
+            },
+            {
+              "text": "Mostrar Cozinha Gourmet",
+              "width": 7,
+              "height": 7
+            },
+            {
+              "text": "Mostrar Terraço Gourmet",
+              "width": 7,
+              "height": 7
+            },
+            {
+              "text": "Mostrar Banheiro Spa",
+              "width": 7,
+              "height": 7
+            }
+          ],
+          "counters": [],
+          "coreKeys": [
+            "CATEGORIES",
+            "SERVICES",
+            "MATERIALS_BY_CATEGORY",
+            "CAT_TO_MAT_KEY",
+            "COUPONS",
+            "appState",
+            "handle",
+            "calculateTotal",
+            "ADMIN_DB_KEY",
+            "renderApp",
+            "saveAndRender",
+            "saveAdminData"
+          ],
+          "resources": [
+            {
+              "name": "https://www.googletagmanager.com/gtag/js?id=G-22Z85RCGQC",
+              "bytes": 0,
+              "duration": 106
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-hero-1600.jpg",
+              "bytes": 200164,
+              "duration": 216
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/brand/franco-romeu-logo-remaster-384.webp",
+              "bytes": 12952,
+              "duration": 146
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/brand/franco-romeu-profile-remaster-256.webp",
+              "bytes": 5822,
+              "duration": 170
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/sobre-essencia.jpg",
+              "bytes": 112195,
+              "duration": 183
+            },
+            {
+              "name": "https://www.clarity.ms/tag/yvdvt0rcy6",
+              "bytes": 0,
+              "duration": 95
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-materia-01.jpg",
+              "bytes": 76656,
+              "duration": 170
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-proporcao-01.jpg",
+              "bytes": 104093,
+              "duration": 177
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-luz-01.jpg",
+              "bytes": 82263,
+              "duration": 183
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-detalhe-01.jpg",
+              "bytes": 106949,
+              "duration": 190
+            },
+            {
+              "name": "http://127.0.0.1:4180/config.json",
+              "bytes": 635,
+              "duration": 1846
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-servico-superficies.jpg",
+              "bytes": 76656,
+              "duration": 1258
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-servico-marcenaria.jpg",
+              "bytes": 104093,
+              "duration": 1256
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-mansory-01.jpg",
+              "bytes": 113448,
+              "duration": 379
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-porcelanato.jpg",
+              "bytes": 101463,
+              "duration": 441
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-marmore.jpg",
+              "bytes": 104537,
+              "duration": 349
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-automacao.jpg",
+              "bytes": 100063,
+              "duration": 489
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-iluminacao.jpg",
+              "bytes": 85165,
+              "duration": 515
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-eventos.jpg",
+              "bytes": 158348,
+              "duration": 549
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-banheiro.jpg",
+              "bytes": 116545,
+              "duration": 554
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-resina.jpg",
+              "bytes": 101463,
+              "duration": 535
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-suite.jpg",
+              "bytes": 112268,
+              "duration": 569
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-fachada.jpg",
+              "bytes": 160599,
+              "duration": 627
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-marcenaria.jpg",
+              "bytes": 67253,
+              "duration": 623
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-eletrica.jpg",
+              "bytes": 129711,
+              "duration": 633
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-pintura.jpg",
+              "bytes": 131616,
+              "duration": 632
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-reforma.jpg",
+              "bytes": 96738,
+              "duration": 625
+            },
+            {
+              "name": "http://127.0.0.1:4180/favicon.ico",
+              "bytes": 0,
+              "duration": 7
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/icons/favicon-32x32.png",
+              "bytes": 2319,
+              "duration": 35
+            },
+            {
+              "name": "https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;700&family=Share+Tech+Mono&family=Stardos+Stencil:wght@400;700;900&display=swap",
+              "bytes": 916,
+              "duration": 312
+            },
+            {
+              "name": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
+              "bytes": 19052,
+              "duration": 116
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-industrial-01.jpg",
+              "bytes": 132617,
+              "duration": 280
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-contemporaneo-01.jpg",
+              "bytes": 122584,
+              "duration": 269
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-minimalista-01.jpg",
+              "bytes": 87467,
+              "duration": 269
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-rustico-01.jpg",
+              "bytes": 147835,
+              "duration": 290
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-brutalismo-01.jpg",
+              "bytes": 118691,
+              "duration": 282
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-classico-contemporaneo-01.jpg",
+              "bytes": 104483,
+              "duration": 265
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-japandi-01.jpg",
+              "bytes": 109576,
+              "duration": 307
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-art-deco-01.jpg",
+              "bytes": 120920,
+              "duration": 306
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-reforma-residencial-01.jpg",
+              "bytes": 96738,
+              "duration": 1085
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-reforma-residencial-02.jpg",
+              "bytes": 80642,
+              "duration": 1086
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-reforma-residencial-03.jpg",
+              "bytes": 75716,
+              "duration": 1081
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-retrofit-comercial-01.jpg",
+              "bytes": 156005,
+              "duration": 1090
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-bancada-calacatta-01.jpg",
+              "bytes": 92930,
+              "duration": 1079
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-marcenaria-integrada-01.jpg",
+              "bytes": 67253,
+              "duration": 1068
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-brinquedomovel-01.jpg",
+              "bytes": 132493,
+              "duration": 1222
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-arena-futebol-x1-01.jpg",
+              "bytes": 150003,
+              "duration": 1224
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-basquete-aco-01.jpg",
+              "bytes": 120269,
+              "duration": 1209
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-patinacao-dmx-01.jpg",
+              "bytes": 104638,
+              "duration": 1211
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-iluminacao-integrada-01.jpg",
+              "bytes": 85165,
+              "duration": 1223
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-suite-luxo-01.jpg",
+              "bytes": 112268,
+              "duration": 1194
+            },
+            {
+              "name": "https://cdnjs.cloudflare.com/ajax/libs/three.js/0.161.0/three.min.js",
+              "bytes": 0,
+              "duration": 1256
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-retrofit-comercial-02.jpg",
+              "bytes": 136874,
+              "duration": 322
+            }
+          ],
+          "iframes": 0
+        },
+        {
+          "id": "view-projetos",
+          "active": true,
+          "pathname": "/",
+          "title": "Franco Romeu — ARQUIVO VIVO / Arte & Engenharia",
+          "canonical": "https://francoromeu-app.vercel.app/",
+          "width": 1440,
+          "scrollWidth": 1434,
+          "overflow": false,
+          "loader": {
+            "hidden": false,
+            "pointer": "none"
+          },
+          "brokenImages": [],
+          "smallControls": [],
+          "counters": [],
+          "coreKeys": [
+            "CATEGORIES",
+            "SERVICES",
+            "MATERIALS_BY_CATEGORY",
+            "CAT_TO_MAT_KEY",
+            "COUPONS",
+            "appState",
+            "handle",
+            "calculateTotal",
+            "ADMIN_DB_KEY",
+            "renderApp",
+            "saveAndRender",
+            "saveAdminData"
+          ],
+          "resources": [
+            {
+              "name": "https://www.googletagmanager.com/gtag/js?id=G-22Z85RCGQC",
+              "bytes": 0,
+              "duration": 106
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-hero-1600.jpg",
+              "bytes": 200164,
+              "duration": 216
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/brand/franco-romeu-logo-remaster-384.webp",
+              "bytes": 12952,
+              "duration": 146
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/brand/franco-romeu-profile-remaster-256.webp",
+              "bytes": 5822,
+              "duration": 170
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/sobre-essencia.jpg",
+              "bytes": 112195,
+              "duration": 183
+            },
+            {
+              "name": "https://www.clarity.ms/tag/yvdvt0rcy6",
+              "bytes": 0,
+              "duration": 95
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-materia-01.jpg",
+              "bytes": 76656,
+              "duration": 170
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-proporcao-01.jpg",
+              "bytes": 104093,
+              "duration": 177
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-luz-01.jpg",
+              "bytes": 82263,
+              "duration": 183
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-detalhe-01.jpg",
+              "bytes": 106949,
+              "duration": 190
+            },
+            {
+              "name": "http://127.0.0.1:4180/config.json",
+              "bytes": 635,
+              "duration": 1846
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-servico-superficies.jpg",
+              "bytes": 76656,
+              "duration": 1258
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-servico-marcenaria.jpg",
+              "bytes": 104093,
+              "duration": 1256
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-mansory-01.jpg",
+              "bytes": 113448,
+              "duration": 379
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-porcelanato.jpg",
+              "bytes": 101463,
+              "duration": 441
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-marmore.jpg",
+              "bytes": 104537,
+              "duration": 349
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-automacao.jpg",
+              "bytes": 100063,
+              "duration": 489
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-iluminacao.jpg",
+              "bytes": 85165,
+              "duration": 515
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-eventos.jpg",
+              "bytes": 158348,
+              "duration": 549
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-banheiro.jpg",
+              "bytes": 116545,
+              "duration": 554
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-resina.jpg",
+              "bytes": 101463,
+              "duration": 535
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-suite.jpg",
+              "bytes": 112268,
+              "duration": 569
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-fachada.jpg",
+              "bytes": 160599,
+              "duration": 627
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-marcenaria.jpg",
+              "bytes": 67253,
+              "duration": 623
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-eletrica.jpg",
+              "bytes": 129711,
+              "duration": 633
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-pintura.jpg",
+              "bytes": 131616,
+              "duration": 632
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-reforma.jpg",
+              "bytes": 96738,
+              "duration": 625
+            },
+            {
+              "name": "http://127.0.0.1:4180/favicon.ico",
+              "bytes": 0,
+              "duration": 7
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/icons/favicon-32x32.png",
+              "bytes": 2319,
+              "duration": 35
+            },
+            {
+              "name": "https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;700&family=Share+Tech+Mono&family=Stardos+Stencil:wght@400;700;900&display=swap",
+              "bytes": 916,
+              "duration": 312
+            },
+            {
+              "name": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
+              "bytes": 19052,
+              "duration": 116
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-industrial-01.jpg",
+              "bytes": 132617,
+              "duration": 280
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-contemporaneo-01.jpg",
+              "bytes": 122584,
+              "duration": 269
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-minimalista-01.jpg",
+              "bytes": 87467,
+              "duration": 269
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-rustico-01.jpg",
+              "bytes": 147835,
+              "duration": 290
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-brutalismo-01.jpg",
+              "bytes": 118691,
+              "duration": 282
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-classico-contemporaneo-01.jpg",
+              "bytes": 104483,
+              "duration": 265
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-japandi-01.jpg",
+              "bytes": 109576,
+              "duration": 307
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-art-deco-01.jpg",
+              "bytes": 120920,
+              "duration": 306
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-reforma-residencial-01.jpg",
+              "bytes": 96738,
+              "duration": 1085
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-reforma-residencial-02.jpg",
+              "bytes": 80642,
+              "duration": 1086
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-reforma-residencial-03.jpg",
+              "bytes": 75716,
+              "duration": 1081
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-retrofit-comercial-01.jpg",
+              "bytes": 156005,
+              "duration": 1090
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-bancada-calacatta-01.jpg",
+              "bytes": 92930,
+              "duration": 1079
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-marcenaria-integrada-01.jpg",
+              "bytes": 67253,
+              "duration": 1068
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-brinquedomovel-01.jpg",
+              "bytes": 132493,
+              "duration": 1222
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-arena-futebol-x1-01.jpg",
+              "bytes": 150003,
+              "duration": 1224
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-basquete-aco-01.jpg",
+              "bytes": 120269,
+              "duration": 1209
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-patinacao-dmx-01.jpg",
+              "bytes": 104638,
+              "duration": 1211
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-iluminacao-integrada-01.jpg",
+              "bytes": 85165,
+              "duration": 1223
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-suite-luxo-01.jpg",
+              "bytes": 112268,
+              "duration": 1194
+            },
+            {
+              "name": "https://cdnjs.cloudflare.com/ajax/libs/three.js/0.161.0/three.min.js",
+              "bytes": 0,
+              "duration": 1256
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-retrofit-comercial-02.jpg",
+              "bytes": 136874,
+              "duration": 322
+            }
+          ],
+          "iframes": 0
+        },
+        {
+          "id": "view-orcamento",
+          "active": true,
+          "pathname": "/",
+          "title": "Franco Romeu — ENGENHARIA DE CUSTO / Arte & Engenharia",
+          "canonical": "https://francoromeu-app.vercel.app/",
+          "width": 1440,
+          "scrollWidth": 1434,
+          "overflow": false,
+          "loader": {
+            "hidden": false,
+            "pointer": "none"
+          },
+          "brokenImages": [],
+          "smallControls": [
+            {
+              "text": "✍️ Prefiro fazer manualmente",
+              "width": 288,
+              "height": 42
+            },
+            {
+              "text": "🧠 Usar orçamento automatizado",
+              "width": 313,
+              "height": 42
+            },
+            {
+              "text": "",
+              "width": 267,
+              "height": 38
+            },
+            {
+              "text": "Aplicar",
+              "width": 56,
+              "height": 38
+            },
+            {
+              "text": "(11) 99002-1603",
+              "width": 107,
+              "height": 15
+            },
+            {
+              "text": "romeudifranco@gmail.com",
+              "width": 175,
+              "height": 15
+            },
+            {
+              "text": "Abrir WhatsApp da Franco Romeu",
+              "width": 21,
+              "height": 32
+            },
+            {
+              "text": "Abrir Instagram da Franco Romeu",
+              "width": 21,
+              "height": 32
+            },
+            {
+              "text": "Abrir Pinterest da Franco Romeu",
+              "width": 23,
+              "height": 32
+            },
+            {
+              "text": "×",
+              "width": 26,
+              "height": 34
+            }
+          ],
+          "counters": [],
+          "coreKeys": [
+            "CATEGORIES",
+            "SERVICES",
+            "MATERIALS_BY_CATEGORY",
+            "CAT_TO_MAT_KEY",
+            "COUPONS",
+            "appState",
+            "handle",
+            "calculateTotal",
+            "ADMIN_DB_KEY",
+            "renderApp",
+            "saveAndRender",
+            "saveAdminData"
+          ],
+          "resources": [
+            {
+              "name": "https://www.googletagmanager.com/gtag/js?id=G-22Z85RCGQC",
+              "bytes": 0,
+              "duration": 106
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-hero-1600.jpg",
+              "bytes": 200164,
+              "duration": 216
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/brand/franco-romeu-logo-remaster-384.webp",
+              "bytes": 12952,
+              "duration": 146
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/brand/franco-romeu-profile-remaster-256.webp",
+              "bytes": 5822,
+              "duration": 170
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/sobre-essencia.jpg",
+              "bytes": 112195,
+              "duration": 183
+            },
+            {
+              "name": "https://www.clarity.ms/tag/yvdvt0rcy6",
+              "bytes": 0,
+              "duration": 95
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-materia-01.jpg",
+              "bytes": 76656,
+              "duration": 170
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-proporcao-01.jpg",
+              "bytes": 104093,
+              "duration": 177
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-luz-01.jpg",
+              "bytes": 82263,
+              "duration": 183
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/manifesto-detalhe-01.jpg",
+              "bytes": 106949,
+              "duration": 190
+            },
+            {
+              "name": "http://127.0.0.1:4180/config.json",
+              "bytes": 635,
+              "duration": 1846
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-servico-superficies.jpg",
+              "bytes": 76656,
+              "duration": 1258
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/home-servico-marcenaria.jpg",
+              "bytes": 104093,
+              "duration": 1256
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-mansory-01.jpg",
+              "bytes": 113448,
+              "duration": 379
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-porcelanato.jpg",
+              "bytes": 101463,
+              "duration": 441
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-marmore.jpg",
+              "bytes": 104537,
+              "duration": 349
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-automacao.jpg",
+              "bytes": 100063,
+              "duration": 489
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-iluminacao.jpg",
+              "bytes": 85165,
+              "duration": 515
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-eventos.jpg",
+              "bytes": 158348,
+              "duration": 549
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-banheiro.jpg",
+              "bytes": 116545,
+              "duration": 554
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-resina.jpg",
+              "bytes": 101463,
+              "duration": 535
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-suite.jpg",
+              "bytes": 112268,
+              "duration": 569
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-fachada.jpg",
+              "bytes": 160599,
+              "duration": 627
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-marcenaria.jpg",
+              "bytes": 67253,
+              "duration": 623
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-eletrica.jpg",
+              "bytes": 129711,
+              "duration": 633
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-pintura.jpg",
+              "bytes": 131616,
+              "duration": 632
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/portfolio-reforma.jpg",
+              "bytes": 96738,
+              "duration": 625
+            },
+            {
+              "name": "http://127.0.0.1:4180/favicon.ico",
+              "bytes": 0,
+              "duration": 7
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/icons/favicon-32x32.png",
+              "bytes": 2319,
+              "duration": 35
+            },
+            {
+              "name": "https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;700&family=Share+Tech+Mono&family=Stardos+Stencil:wght@400;700;900&display=swap",
+              "bytes": 916,
+              "duration": 312
+            },
+            {
+              "name": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
+              "bytes": 19052,
+              "duration": 116
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-industrial-01.jpg",
+              "bytes": 132617,
+              "duration": 280
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-contemporaneo-01.jpg",
+              "bytes": 122584,
+              "duration": 269
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-minimalista-01.jpg",
+              "bytes": 87467,
+              "duration": 269
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-rustico-01.jpg",
+              "bytes": 147835,
+              "duration": 290
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-brutalismo-01.jpg",
+              "bytes": 118691,
+              "duration": 282
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-classico-contemporaneo-01.jpg",
+              "bytes": 104483,
+              "duration": 265
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-japandi-01.jpg",
+              "bytes": 109576,
+              "duration": 307
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/ambiente-art-deco-01.jpg",
+              "bytes": 120920,
+              "duration": 306
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-reforma-residencial-01.jpg",
+              "bytes": 96738,
+              "duration": 1085
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-reforma-residencial-02.jpg",
+              "bytes": 80642,
+              "duration": 1086
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-reforma-residencial-03.jpg",
+              "bytes": 75716,
+              "duration": 1081
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-retrofit-comercial-01.jpg",
+              "bytes": 156005,
+              "duration": 1090
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-bancada-calacatta-01.jpg",
+              "bytes": 92930,
+              "duration": 1079
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-marcenaria-integrada-01.jpg",
+              "bytes": 67253,
+              "duration": 1068
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-brinquedomovel-01.jpg",
+              "bytes": 132493,
+              "duration": 1222
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-arena-futebol-x1-01.jpg",
+              "bytes": 150003,
+              "duration": 1224
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-basquete-aco-01.jpg",
+              "bytes": 120269,
+              "duration": 1209
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-patinacao-dmx-01.jpg",
+              "bytes": 104638,
+              "duration": 1211
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-iluminacao-integrada-01.jpg",
+              "bytes": 85165,
+              "duration": 1223
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-suite-luxo-01.jpg",
+              "bytes": 112268,
+              "duration": 1194
+            },
+            {
+              "name": "https://cdnjs.cloudflare.com/ajax/libs/three.js/0.161.0/three.min.js",
+              "bytes": 0,
+              "duration": 1256
+            },
+            {
+              "name": "http://127.0.0.1:4180/assets/media/p3d-retrofit-comercial-02.jpg",
+              "bytes": 136874,
+              "duration": 322
+            }
+          ],
+          "iframes": 0
+        }
+      ]
+    }
+  ]
+}

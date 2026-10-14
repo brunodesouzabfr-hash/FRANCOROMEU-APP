@@ -29,6 +29,9 @@ test('grafo estruturado é válido e usa 16 IDs reais sem avaliações fictícia
   assert.ok(nodes.some(node => node['@type'] === 'WebSite'));
   assert.ok(nodes.some(node => node['@type'] === 'BreadcrumbList'));
   const localBusiness = nodes.find(node => Array.isArray(node['@type']) && node['@type'].includes('LocalBusiness'));
+  assert.ok(localBusiness['@type'].includes('Organization'));
+  assert.ok(localBusiness['@type'].includes('HomeAndConstructionBusiness'));
+  assert.equal(localBusiness['@id'], `${ORIGIN}/#organization`);
   assert.equal(localBusiness.name, 'Franco Romeu');
   assert.deepEqual(localBusiness.alternateName, ['FR', 'ꟻR', 'Franco Romeu — Arte & Engenharia']);
   assert.deepEqual(localBusiness.sameAs, [
@@ -44,16 +47,20 @@ test('grafo estruturado é válido e usa 16 IDs reais sem avaliações fictícia
   assert.equal(localBusiness.email, 'romeudifranco@gmail.com');
   assert.equal(localBusiness.address.addressLocality, 'São Paulo');
   assert.equal(localBusiness.address.addressRegion, 'SP');
-  assert.deepEqual(localBusiness.geo, { '@type': 'GeoCoordinates', latitude: -23.5505, longitude: -46.6333 });
+  assert.equal(localBusiness.geo, undefined, 'coordenadas genéricas não podem afirmar uma sede não comprovada');
   assert.deepEqual(localBusiness.areaServed.map(city => city.name), ['São Paulo', 'Guarulhos', 'Osasco', 'Barueri', 'Santo André', 'São Bernardo do Campo']);
   assert.ok(localBusiness.openingHoursSpecification.length > 0);
   assert.ok(localBusiness.paymentAccepted.length > 0);
   assert.ok(localBusiness.priceRange);
   const website = nodes.find(node => node['@type'] === 'WebSite');
   assert.equal(website.potentialAction?.['@type'], 'SearchAction');
+  assert.equal(website.publisher?.['@id'], `${ORIGIN}/#organization`);
   assert.ok(doc.querySelector('meta[name="google-site-verification"]'));
 
-  assert.equal(nodes.find(node => node['@type'] === 'FAQPage').mainEntity.length, 5);
+  const faq = nodes.find(node => node['@type'] === 'FAQPage');
+  assert.equal(faq.mainEntity.length, 5);
+  const visibleQuestions = [...doc.querySelectorAll('#fr-budget-faq details summary')].map(node => node.textContent.trim());
+  assert.deepEqual(visibleQuestions, faq.mainEntity.map(item => item.name));
   assert.equal(html.includes('aggregateRating'), false);
 });
 
@@ -68,6 +75,8 @@ test('as seis views têm links HTTP e configuração de rota', () => {
   assert.match(doc.querySelector('#fr-seo-spa-router').textContent, /popstate/);
   assert.match(doc.querySelector('#fr-seo-spa-router').textContent, /history\.pushState/);
   assert.match(doc.querySelector('#fr-seo-spa-router').textContent, /https:\/\/www\.francoromeufr\.com\.br/);
+  assert.match(doc.querySelector('#fr-seo-spa-router').textContent, /URLSearchParams\(location\.search\)\.get\('busca'\)/);
+  assert.match(doc.querySelector('#fr-seo-spa-router').textContent, /FR_ASSISTANT\.search\(query\)/);
 });
 
 test('arquivos de rastreamento usam o domínio canônico', () => {

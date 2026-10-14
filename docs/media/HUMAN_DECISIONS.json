@@ -1,0 +1,110 @@
+[
+  {
+    "decision_id": "D01",
+    "decision_required": "Acervo sem comprovação de execução",
+    "context": "60 comparativos declarados simulados e case gerado; o nome executado não é prova.",
+    "option_a": "Adicionar fotografias originais e documentos que comprovem obra, autoria e sequência.",
+    "option_b": "Publicar como estudos ilustrativos com rótulo visível.",
+    "impact": "Afeta Portfólio, Sobre / Serviços em matéria e qualquer alegação de resultado real.",
+    "recommendation": "Opção B para este acervo; avaliar A somente com novas evidências."
+  },
+  {
+    "decision_id": "D02",
+    "decision_required": "Autoria e direitos por mídia",
+    "context": "A disponibilização do arquivo e a marca FR impressa não comprovam autoria de fotografia, geração ou composição.",
+    "option_a": "Confirmar criador e direitos com uma fonte identificável por media_id.",
+    "option_b": "Usar crédito de curadoria e omitir creator/copyright/license até confirmação.",
+    "impact": "Define creator, creditText e autorização de publicação. Não cria perfis sociais ou licença.",
+    "recommendation": "Opção B; o publisher pode apontar para a Organization FR."
+  },
+  {
+    "decision_id": "D03",
+    "decision_required": "Falta de web desing",
+    "context": "O ZIP recuperado contém três conjuntos. A pasta de referências interativas e captures.zip não estão disponíveis.",
+    "option_a": "Fornecer a pasta e seus registros para avaliar IMPLEMENT/ADAPT.",
+    "option_b": "Manter Spiral Gallery, Sergio Ayala e cards orbitais em REFERENCE_ONLY, sem implementação.",
+    "impact": "A avaliação visual dessas referências ainda não é possível; não bloqueia os manifests do acervo recebido.",
+    "recommendation": "Opção B nesta etapa."
+  },
+  {
+    "decision_id": "D04",
+    "decision_required": "Imagem original 021 truncada",
+    "context": "Não existe pai íntegro nem fonte equivalente com cadeia verificável para o arquivo ID 021 do pack de cozinha.",
+    "option_a": "Recuperar o original íntegro correspondente ao hash/documento correto.",
+    "option_b": "Preservar o arquivo e manter HOLD.",
+    "impact": "O conteúdo integral e a aprovação ficam indisponíveis.",
+    "recommendation": "Opção B; nunca completar a imagem por IA."
+  },
+  {
+    "decision_id": "D05",
+    "decision_required": "Conjunto 124 incompleto",
+    "context": "Há material Greige fosco + Carvalho ebanizado, mas não há ambiente identificado nem imagem de aplicação.",
+    "option_a": "Fornecer aplicação e contexto do ambiente.",
+    "option_b": "Manter a trilha e a mídia de materiais em HOLD.",
+    "impact": "A terceira etapa não pode ser criada por suposição.",
+    "recommendation": "Opção B; não inventar ambiente."
+  },
+  {
+    "decision_id": "D06",
+    "decision_required": "Cotas, modelos e variantes em HOLD",
+    "context": "Alguns estudos apresentam cotas sem memorial, controles Kokay antigos, três pendentes ou ilha divergente da seleção.",
+    "option_a": "Validar a variante individual com documentação e desenho técnico existente.",
+    "option_b": "Manter HOLD e consumir apenas a seleção aprovada, identificada como ilustração.",
+    "impact": "Afeta fidelidade do case; aprovação de uma imagem não libera a prancha inteira.",
+    "recommendation": "Opção B. O painel direito M047 isolado possui aprovação própria; a prancha cotada continua bloqueada."
+  },
+  {
+    "decision_id": "D07",
+    "decision_required": "Domínio e informações embutidos nos cards",
+    "context": "Peças sociais contêm rodapés, contatos e referências de domínio legado. O canônico atual é www.francoromeufr.com.br.",
+    "option_a": "Produzir depois um derivado editorial com rodapé atualizado e rastreabilidade.",
+    "option_b": "Manter a peça integral arquivada e sem destaque/OG.",
+    "impact": "A fonte não será editada; impede que o site reutilize contatos/domínio não confirmados automaticamente.",
+    "recommendation": "Opção A para derivado futuro; B até lá."
+  },
+  {
+    "decision_id": "D08",
+    "decision_required": "Materiais comerciais não verificados",
+    "context": "Os nomes Calacatta, Taj Mahal, Black Fusion e outros descrevem o estudo. Nenhuma marca, lote ou desempenho de produto foi comprovado.",
+    "option_a": "Confirmar a especificação física por projeto com ficha e fornecedor.",
+    "option_b": "Publicar como referência de aparência/especificação ilustrativa e marcar confirmação pendente.",
+    "impact": "Não autoriza alegações técnicas, preço, fornecedor ou material instalado.",
+    "recommendation": "Opção B. No P055, usar efeito Calacatta; quartzo versus pedra permanece desconhecido."
+  },
+  {
+    "decision_id": "D09",
+    "decision_required": "Publicações sociais sem URL",
+    "context": "Há 49 conjuntos de assets e roteiros; não há URLs ou datas de posts verificadas.",
+    "option_a": "Relacionar URLs oficiais e datas depois de verificá-las.",
+    "option_b": "Usar arquivo local de estudos com status DRAFT_ASSET_ONLY e sem embed/VideoObject.",
+    "impact": "Evita publicar postagens, prova social ou uploadDate inventados.",
+    "recommendation": "Opção B."
+  },
+  {
+    "decision_id": "D10",
+    "decision_required": "Fontes originais ausentes com variantes disponíveis",
+    "context": "Sete cabeças semânticas complementares possuem variantes WebP e fichas verificadas no branch; não recuperam o original ausente.",
+    "option_a": "Localizar os originais e conferir seu hash antes de ampliar/resubstituir variantes.",
+    "option_b": "Reutilizar as variantes existentes, dentro de sua resolução e com identificação ilustrativa.",
+    "impact": "Permite consumo seguro das variantes; não autoriza reconstrução, upscale ou falsa origem.",
+    "recommendation": "Opção B. Preservar original_source_available=false."
+  },
+  {
+    "decision_id": "D11",
+    "decision_required": "Organização editorial versus página própria",
+    "context": "110 conjuntos não equivalem a 110 páginas obrigatórias, e 148 termos materiais não equivalem a 148 páginas prontas.",
+    "option_a": "Criar páginas somente quando houver narrativa própria e contexto suficiente.",
+    "option_b": "Publicar uma página para todo registro automaticamente.",
+    "impact": "Evita páginas repetitivas, keyword stuffing e baixa densidade editorial.",
+    "recommendation": "Opção A. Começar pelo case aprofundado e pelos atlas de ambiente/material."
+  },
+  {
+    "decision_id": "D12",
+    "decision_required": "Capas de biblioteca e área gourmet trocadas",
+    "context": "Os pixels e cabeçalhos contradizem os nomes de duas capas PNG e de duas instâncias JPEG.",
+    "option_a": "Aceitar as relações corrigidas nos manifests e usar o master certo por ambiente.",
+    "option_b": "Reproduzir a classificação antiga baseada no nome do arquivo.",
+    "impact": "Opção A corrige posters dos conjuntos 141 e 142 sem editar fontes.",
+    "recommendation": "Opção A; correção documentada em SOURCE_CORRECTIONS.json."
+  }
+]

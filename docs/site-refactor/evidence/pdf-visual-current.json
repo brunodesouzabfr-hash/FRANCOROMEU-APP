@@ -1,0 +1,9 @@
+{
+  "synthetic": true,
+  "publicFingerprint": "0151633538195b2ab61ce2f5e114fad6240b300fac9d51dd29bbce4f5f06d8c0",
+  "render": "pdftoppm -png -r 90; Poppler",
+  "short": { "pages": 1, "bytes": 175664, "reviewedPages": [1] },
+  "long": { "pages": 3, "bytes": 587659, "reviewedPages": [1, 2, 3] },
+  "visualReview": "PASS for inspected four pages: no clipped rows, header or footer overlap; pt-BR date and currency, waived visit, unpriced scope label",
+  "limitations": ["raster PDF, no selectable text or accessibility tagging", "synthetic fixtures, not a customer quote"]
+}

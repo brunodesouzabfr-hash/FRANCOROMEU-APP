@@ -1,0 +1,40 @@
+[
+  {
+    "viewport": {
+      "n": "desktop",
+      "width": 1440,
+      "height": 900
+    },
+    "label": "Depois em estudo · Estudo integrado de interiores · 48 registrosCozinha + LavanderiaExplorar dossier ↗",
+    "tabs": [
+      "Todos",
+      "Projeto 3D",
+      "Detalhes",
+      "Materialidade",
+      "Antes / referência inicial",
+      "Visão geral"
+    ],
+    "overflow": false,
+    "thumbs": 48,
+    "errors": []
+  },
+  {
+    "viewport": {
+      "n": "mobile",
+      "width": 390,
+      "height": 844
+    },
+    "label": "Depois em estudo · Estudo integrado de interiores · 48 registrosCozinha + LavanderiaExplorar dossier ↗",
+    "tabs": [
+      "Todos",
+      "Projeto 3D",
+      "Detalhes",
+      "Materialidade",
+      "Antes / referência inicial",
+      "Visão geral"
+    ],
+    "overflow": false,
+    "thumbs": 48,
+    "errors": []
+  }
+]

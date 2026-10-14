@@ -1,0 +1,15 @@
+{
+  "capturedAt": "2026-10-11T05:39:41Z",
+  "method": "Authenticated read-only Vercel GET project and domains; filtered metadata only",
+  "project": "francoromeu-app",
+  "repository": "brunodesouzabfr-hash/FRANCOROMEU-APP",
+  "productionBranch": "main",
+  "domains": [
+    { "name": "francoromeufr.com.br", "verified": true, "redirect": "www.francoromeufr.com.br", "redirectStatusCode": 308 },
+    { "name": "www.francoromeufr.com.br", "verified": true, "redirect": null, "redirectStatusCode": null },
+    { "name": "francoromeu-app.vercel.app", "verified": true, "redirect": "www.francoromeufr.com.br", "redirectStatusCode": 307 }
+  ],
+  "externalWriteActions": 0,
+  "productionDeploymentActions": 0,
+  "requiredGate": "Explicit approval before production host or redirect mutation; never add inverse redirects while apex still redirects to www"
+}

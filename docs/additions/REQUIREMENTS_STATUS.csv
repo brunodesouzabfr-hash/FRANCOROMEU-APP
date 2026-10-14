@@ -1,0 +1,118 @@
+id,fonte,classe,evidencia_local,modulo,dependencia,estado,criterio_de_aceite,bloqueio,proxima_acao
+R01,A09,TAREFA_ATUAL,docs/media/IMAGE_INTEGRATION_REPORT.md,AD00,fonte,COBERTO_PELA_TAREFA_ATUAL,raizes resolvidas,-,preservar
+R02,A09,TAREFA_ATUAL,docs/media/IMAGE_INTEGRATION_INVENTORY.json,AD00,originais,COBERTO_PELA_TAREFA_ATUAL,originais intactos,-,preservar
+R03,A09,TAREFA_ATUAL,.gitignore,AD00,fonte,COBERTO_PELA_TAREFA_ATUAL,transporte fora do build,-,preservar
+R04,A09,TAREFA_ATUAL,docs/media/PUBLIC_MEDIA_MAP.json,AD00,manifests,COBERTO_PELA_TAREFA_ATUAL,curadoria unica,-,preservar
+R05,A09,TAREFA_ATUAL,content/media/media-master.json,AD00,acervo,COBERTO_PELA_TAREFA_ATUAL,escopo amplo,-,preservar
+R06,A09,TAREFA_ATUAL,docs/media/IMAGE_INTEGRATION_INVENTORY.json,AD01,manifests,COBERTO_PELA_TAREFA_ATUAL,proveniencia,-,preservar
+R07,A04,TAREFA_ATUAL,src/media-library.cjs,AD00,manifests,COBERTO_PELA_TAREFA_ATUAL,IDs e hashes,-,preservar
+R08,A04,TAREFA_ATUAL,docs/media/HUMAN_DECISIONS.json,AD00,curadoria,COBERTO_PELA_TAREFA_ATUAL,alternativas bloqueadas,-,preservar
+R09,A04,TAREFA_ATUAL,docs/media/RENAMING_EXECUTION.csv,AD00,derivados,COBERTO_PELA_TAREFA_ATUAL,nome e resolucao,-,preservar
+R10,A09,TAREFA_ATUAL,docs/media/IMAGE_INTEGRATION_REPORT.md,AD00,Markdown,COBERTO_PELA_TAREFA_ATUAL,contexto de fonte,-,preservar
+R11,A00,TAREFA_ATUAL,assets/js/fr-project-media.js,AD11,pares,SATISFEITO_VERIFICADO,60 pares com narrativas,-,regressao
+R12,A00,TAREFA_ATUAL,assets/js/fr-media-case.js,AD11,C001,SATISFEITO_VERIFICADO,setores e filtros,-,regressao
+R13,A08,ADITIVO,index.html,AD11,midias,ADITIVO,midia no fluxo animado,-,revisar 3D legado
+R14,A00,TAREFA_ATUAL,assets/js/fr-project-media.js,AD11,trilhas,SATISFEITO_VERIFICADO,capa material aplicacao,-,regressao
+R15,A07,ADITIVO,assets/css/fr-project-media.css,AD11,viewer,SATISFEITO_VERIFICADO,proporcao preservada,-,QA mobile
+R16,A07,ADITIVO,assets/js/fr-project-media.js,AD11,viewer,SATISFEITO_VERIFICADO,setas e foco,-,QA mobile
+R17,A10,TAREFA_ATUAL,dist/projetos/cozinha-lavanderia.html,AD00,C001,ADITIVO,case completo e especifico,-,revisao visual final
+R18,A07,ADICAO,scripts/build-site.cjs,AD00,build,SATISFEITO_VERIFICADO,uma saida dist,-,confirmar processos
+R19,A01,DECISAO,docs/additions/POST_INTEGRATION_BASELINE.md,AD00,Git,SATISFEITO_VERIFICADO,branch mantida,-,sem troca de branch
+R20,A08,ADICAO,docs/additions/POST_INTEGRATION_BASELINE.md,AD00,Git,SATISFEITO_VERIFICADO,estado registrado,-,revisar status final
+R21,A01,ADICAO,scripts/build-site.cjs,AD01,HTML,ADITIVO,fonte compartilhada,-,estender aos hubs
+R22,A01,ADICAO,dist/inspiracoes/index.html,AD03,rotas,ADITIVO,paginas densas,-,ampliar apenas hubs com fontes verificadas
+R23,A01,ADICAO,src/media-library.cjs,AD01,relacoes,ADITIVO,grafo unico,-,estender estilos artigos
+R24,A07,ADICAO,dist/jornal/index.html,AD02,conteudo,ADITIVO,jornal com materias e fichas proprias,faltam narrativas confirmadas,manter indice e criar artigos verificados
+R25,A08,ADICAO,index.html,AD02,navegacao,SATISFEITO_VERIFICADO,entrada e retorno,-,testar foco
+R26,A07,ADICAO,scripts/build-journal.cjs,AD02,identidade,ADITIVO,fundador sem cargo inventado,-,confirmar biografia
+R27,A07,ADICAO,scripts/build-journal.cjs,AD08,perfis,ADITIVO,links fornecidos,identidade de conta nao reconfirmada,verificar contas
+R28,A08,ADICAO,assets/css/fr-journal.css,AD02,layout,ADITIVO,editorial responsivo,-,QA mobile
+R29,A07,ADICAO,scripts/prepare-project-library.cjs,AD01,copy,ADITIVO,sem pendencia tecnica publica,-,varrer telas legadas
+R30,A07,ADICAO,docs/media/HUMAN_DECISIONS.json,AD01,autoria,BLOQUEADO_POR_INSUMO,credito por ativo,prova documental ausente,confirmar por ID
+R31,A08,ADICAO,src/media-library.cjs,AD08,autoria,ADITIVO,creator condicional,-,verificar direitos
+R32,A04,ADICAO,dist/inspiracoes/index.html,AD03,trilhas,ADITIVO,hub ligado a 48 sequencias,-,estender narrativas especificas
+R33,A01,ADICAO,dist/materiais/index.html,AD03,material,ADITIVO,indice por relacao,fontes tecnicas por produto,detalhes por material apos ficha
+R34,A01,ADICAO,index.html,AD03,estilos,ADITIVO,12 estilos preservados,-,integrar relacoes
+R35,A01,ADICAO,index.html,AD03,metodo,ADITIVO,processo descrito,-,criar pagina propria
+R36,A01,ADICAO,content/projects/projects.json,AD03,fichas,BLOQUEADO_POR_INSUMO,caderno tecnico util,documentacao tecnica de produto e medidas nao confirmada,obter fichas e escopos por tema
+R37,A02,ADICAO,index.html,AD03,contatos,ADITIVO,links reais,-,centralizar config
+R38,A01,ADICAO,content/services/media-service-map.json,AD04,IDs,BLOQUEADO_POR_INSUMO,hubs com CTA real,18 grupos com budget_core_id nulo e escopo comercial nao validado,aprovar correspondencias e inclusoes antes de criar CTA de adicao
+R39,A07,ADICAO,scripts/build-site.cjs,AD05,pesquisa,SATISFEITO_VERIFICADO,Leroy fora da saida,-,confirmar varredura final
+R40,A08,ADICAO,docs/additions/SERVICE_RECONCILIATION.csv,AD05,escopo,BLOQUEADO_POR_INSUMO,ventiladores precificados,unidade e valor,definir modalidade
+R41,A08,ADICAO,docs/additions/SERVICE_RECONCILIATION.csv,AD05,escopo,BLOQUEADO_POR_INSUMO,cortinas precificadas,unidade e valor,definir modalidade
+R42,A08,ADICAO,docs/additions/SERVICE_RECONCILIATION.csv,AD05,escopo,BLOQUEADO_POR_INSUMO,papel de parede precificado,sistema e valor,definir modalidade
+R43,A08,ADICAO,docs/additions/SERVICE_RECONCILIATION.csv,AD05,escopo,BLOQUEADO_POR_INSUMO,exaustor precificado,duto e valor,definir modalidade
+R44,A08,ADICAO,docs/additions/SERVICE_RECONCILIATION.csv,AD05,escopo,BLOQUEADO_POR_INSUMO,cameras precificadas,capacidade e valor,confirmar operacao
+R45,A08,ADICAO,docs/additions/SERVICE_RECONCILIATION.csv,AD05,escopo,BLOQUEADO_POR_INSUMO,toldo precificado,fixacao e valor,confirmar operacao
+R46,A08,ADICAO,docs/additions/SERVICE_RECONCILIATION.csv,AD05,escopo,BLOQUEADO_POR_INSUMO,deposito precificado,modelo e valor,confirmar operacao
+R47,A08,ADICAO,docs/additions/SERVICE_RECONCILIATION.csv,AD05,escopo,BLOQUEADO_POR_INSUMO,estofados precificados,capacidade e valor,confirmar operacao
+R48,A08,ADICAO,docs/additions/SERVICE_RECONCILIATION.csv,AD05,escopo,BLOQUEADO_POR_INSUMO,limpeza AC precificada,procedimento e valor,confirmar operacao
+R49,A08,ADICAO,docs/additions/SERVICE_RECONCILIATION.csv,AD05,escopo,BLOQUEADO_POR_INSUMO,espelho LED precificado,fixacao e valor,definir modalidade
+R50,A08,ADICAO,docs/additions/SERVICE_RECONCILIATION.csv,AD05,escopo,BLOQUEADO_POR_INSUMO,box janelas precificados,produto e valor,definir modalidade
+R51,A08,ADICAO,docs/additions/SERVICE_RECONCILIATION.csv,AD05,escopo,BLOQUEADO_POR_INSUMO,eletros precificados,produto e valor,definir modalidades
+R52,A08,ADICAO,docs/additions/SERVICE_RECONCILIATION.csv,AD05,escopo,BLOQUEADO_POR_INSUMO,suporte TV precificado,fixacao e valor,definir modalidade
+R53,A08,ADICAO,docs/additions/SERVICE_RECONCILIATION.csv,AD05,escopo,BLOQUEADO_POR_INSUMO,tanque cuba precificados,ligacoes e valor,definir variante
+R54,A08,ADICAO,docs/additions/SERVICE_RECONCILIATION.csv,AD05,escopo,BLOQUEADO_POR_INSUMO,gabinete arara precificados,produto e valor,definir variante
+R55,A08,ADICAO,docs/additions/SERVICE_RECONCILIATION.csv,AD05,escopo,BLOQUEADO_POR_INSUMO,disjuntor precificado,circuito e valor,definir modalidade
+R56,A08,ADICAO,docs/additions/SERVICE_RECONCILIATION.csv,AD05,escopo,BLOQUEADO_POR_INSUMO,pisos minimos precificados,unidade e regra,definir pacote
+R57,A07,ADICAO,src/budget-core.js,AD05,financeiro,ADITIVO,visita unica preservada,-,testar limiar
+R58,A08,ADICAO,docs/additions/FINANCIAL_CHANGE_PROPOSALS.md,AD05,financeiro,BLOQUEADO_POR_INSUMO,chuveiro diferenciado,escopo confirmado,decidir combinacao
+R59,A08,ADICAO,docs/additions/FINANCIAL_CHANGE_PROPOSALS.md,AD05,financeiro,BLOQUEADO_POR_INSUMO,cuba e filtro coerentes,escopo confirmado,decidir aliases
+R60,A08,ADICAO,docs/additions/FINANCIAL_CHANGE_PROPOSALS.md,AD05,financeiro,BLOQUEADO_POR_INSUMO,telhado com unidade real,unidade nao confirmada,confirmar escopo
+R61,A08,ADICAO,docs/additions/FINANCIAL_CHANGE_PROPOSALS.md,AD05,financeiro,ADITIVO,zero nao anunciado gratis,-,definir politica de selecao
+R62,A08,ADICAO,docs/additions/FINANCIAL_CHANGE_PROPOSALS.md,AD05,financeiro,BLOQUEADO_POR_INSUMO,inclusoes explicitas,escopos a confirmar,detalhar propostas
+R63,A08,ADICAO,docs/additions/FINANCIAL_CHANGE_PROPOSALS.md,AD05,tecnico,BLOQUEADO_POR_INSUMO,vinilico descrito com fonte,produto nao definido,obter ficha
+R64,A08,ADICAO,docs/additions/FINANCIAL_CHANGE_PROPOSALS.md,AD05,financeiro,BLOQUEADO_POR_INSUMO,limiar validado,decisao comercial,simular casos
+R65,A01,ADICAO,docs/additions/FINANCIAL_CHANGE_PROPOSALS.md,AD05,pesquisa,ADITIVO,custo proprio antes de preco,-,compor valores
+R66,A08,ADICAO,index.html,AD01,copy,ADITIVO,HUD sem codigo inutil,-,varrer restantes
+R67,A02,ADICAO,dist/sobre.html,AD07,projetos,SATISFEITO_VERIFICADO,servicos em materia com tres estudos e links reais,-,revisar curadoria na proxima rodada
+R68,A06,ADICAO,assets/js/fr-project-media.js,AD07,pares,ADITIVO,chamada sem duplicar,-,inserir em Sobre
+R69,A04,ADICAO,assets/js/fr-project-media.js,AD07,gates,SATISFEITO_VERIFICADO,documentadas vazio,-,manter ate prova
+R70,A02,ADICAO,content/social/social-archive.json,AD06,URL,BLOQUEADO_POR_INSUMO,arquivo de posts reais,URLs ausentes,obter URLs
+R71,A04,ADICAO,content/social/social-archive.json,AD06,schema,ADITIVO,modelo unico,-,estender apos URLs
+R72,A02,ADICAO,content/social/social-archive.json,AD06,URL,BLOQUEADO_POR_INSUMO,registros reais,URLs ausentes,nao fabricar meta
+R73,A02,ADICAO,index.html,AD06,adapters,ADITIVO,provedores fail closed,-,testar URLs reais
+R74,A02,ADICAO,index.html,AD06,adapters,ADITIVO,poster antes de embed,-,testar com URL real
+R75,A02,ADITIVO,index.html,AD11,social,ADITIVO,galeria social acessivel,posts nao confirmados,ativar so depois
+R76,A02,ADITIVO,index.html,AD11,3D,ADITIVO,indice e progressao,-,ligar mais vistas comprovadas
+R77,A02,ADITIVO,index.html,AD11,portfolio,ADITIVO,atmosfera com fallback,-,medir custo
+R78,A02,ADITIVO,assets/js/fr-quantity-control.js,AD11,orcamento,ADITIVO,controle unico,-,regressao
+R79,A02,ADITIVO,index.html,AD11,motion,ADITIVO,pausa e reduced motion,-,medir performance
+R80,A01,FUTURO_CONDICIONAL,content/projects/projects.json,AD12,GLB,BLOQUEADO_POR_INSUMO,modelo real manipulado,modelo real ausente,aguardar arquivo
+R81,A06,DECISAO,docs/media/HUMAN_DECISIONS.json,AD12,GLB,SATISFEITO_VERIFICADO,sem geometria inventada,-,preservar
+R82,A04,ADICAO,content/media/organization.json,AD08,contatos,ADITIVO,entidade unica,contatos a conferir,centralizar
+R83,A09,ADICAO,docs/media/HUMAN_DECISIONS.json,AD08,perfil,BLOQUEADO_POR_INSUMO,area de servico real,acesso a conta,preparar checklist
+R84,A09,ADICAO,docs/media/SEO_IMAGE_PLAN.md,AD08,Google,FUTURO_CONDICIONAL,sem promessa de painel,painel externo,monitorar apos publicar
+R85,A08,ADICAO,scripts/build-journal.cjs,AD08,biografia,ADITIVO,fundador separado da organizacao,-,confirmar detalhes
+R86,A03,ADICAO,api/google-reviews.js,AD09,credenciais,BLOQUEADO_POR_INSUMO,reviews live reais,Place ID e chave,configurar server side
+R87,A02,ADICAO,api/google-reviews.js,AD09,politica,BLOQUEADO_POR_INSUMO,atribuicao e estados reais,conta nao configurada,testar integracao
+R88,A05,ADICAO,index.html,AD09,links,ADITIVO,perfil e avaliar preservados,-,verificar destinos
+R89,A04,DECISAO,scripts/build-site.cjs,AD08,host,SATISFEITO_VERIFICADO,www no build,-,verificar remoto antes publicar
+R90,A03,ADICAO,vercel.json,AD15,host,BLOQUEADO_POR_INSUMO,redirect remoto observado,producao fora de escopo,testar apos autorizacao
+R91,A03,ADICAO,docs/media/IMAGE_INTEGRATION_REPORT.md,AD15,conta,BLOQUEADO_POR_INSUMO,inspecao real,Search Console indisponivel,executar apos publicar
+R92,A01,ADICAO,dist/jornal/index.html,AD03,rotas,ADITIVO,hubs densos,-,expandir apenas quando houver fontes suficientes
+R93,A04,TAREFA_ATUAL,scripts/build-project-pages.cjs,AD15,direitos,COBERTO_PELA_TAREFA_ATUAL,ImageObject condicional,direitos pendentes,nao liberar
+R94,A05,TAREFA_ATUAL,dist/sitemap.xml,AD15,gates,COBERTO_PELA_TAREFA_ATUAL,sitemap sem bloqueados,-,regressao
+R95,A02,TAREFA_ATUAL,assets/brand,AD08,marca,COBERTO_PELA_TAREFA_ATUAL,logo preservado,-,regressao
+R96,A03,ADICAO,docs/additions/qa/PERFORMANCE_BASELINE.md,AD14,medicao,SATISFEITO_VERIFICADO,LCP comparavel em laboratorio,-,seguir com dados de campo apos publicacao autorizada
+R97,A02,ADICAO,scripts/build-site.cjs,AD14,medicao,ADITIVO,otimizar residuos medidos,LCP mediano 3816 ms ainda acima da meta,perfil de HTML e long tasks antes de nova alteracao
+R98,A06,DECISAO,src/budget-core.js,AD14,financeiro,SATISFEITO_VERIFICADO,core sem worker,-,preservar
+R99,A02,ADICAO,index.html,AD10,conta,BLOQUEADO_POR_INSUMO,tag unica correta,propriedade nao confirmada,auditar conta
+R100,A02,ADICAO,index.html,AD10,conta,BLOQUEADO_POR_INSUMO,eventos sem PII,conta nao confirmada,definir estrategia unica
+R101,A05,ADICAO,index.html,AD10,conta,BLOQUEADO_POR_INSUMO,integracoes reais,IDs externos ausentes,nao inventar
+R102,A05,ADICAO,site.webmanifest,AD13,PWA,ADITIVO,worker sem cache antigo,-,testar instalacao
+R103,A05,FUTURO_CONDICIONAL,docs/additions/PWA_COMPATIBILITY.md,AD13,WebView,ADITIVO,compatibilidade documentada,teste em WebView real pendente,validar dispositivo e fluxo offline
+R104,A02,ADICAO,tests/image-integration.test.cjs,AD14,QA,ADITIVO,regressoes reais,-,ampliar componentes
+R105,A02,ADICAO,scripts/image-integration-qa.mjs,AD14,QA,ADITIVO,resolucoes e zoom,-,ampliar matriz
+R106,A03,ADICAO,docs/media/IMAGE_INTEGRATION_REPORT.md,AD14,iOS,BLOQUEADO_POR_INSUMO,QA fisico real,dispositivo ausente,testar externamente
+R107,A01,ADICAO,tests/budget-core.test.js,AD14,core,ADITIVO,orcamento e PDF preservados,-,repetir final
+R108,A01,ADICAO,docs/additions/POST_INTEGRATION_BASELINE.md,AD15,Git,ADITIVO,rollback por modulo,-,detalhar no final
+R109,A03,ADICAO,scripts/preview-site.cjs,AD15,preview,ADITIVO,local separado de producao,-,registrar processo final
+R110,A06,DECISAO,git status,AD15,Git,SATISFEITO_VERIFICADO,sem commit ou deploy,-,status final
+R111,A01,FUTURO_CONDICIONAL,AGENTS.md,AD16,arquitetura,FUTURO_CONDICIONAL,migracao avaliada,depois da candidata,ADR futuro
+R112,A01,ADICAO,assets/css/fr-journal.css,AD01,marca,ADITIVO,voz e visual FR,-,revisao visual
+R113,A09,HISTORICO_FORA_DO_BACKLOG,docs/media/IMAGE_INTEGRATION_REPORT.md,AD00,historico,MESCLADO,nao repetir,-,arquivar
+R114,A07,HISTORICO_FORA_DO_BACKLOG,docs/additions/POST_INTEGRATION_BASELINE.md,AD00,transcricao,MESCLADO,nao converter em comandos,-,preservar como evidencia
+R115,A01,ADICAO,content/social/social-archive.json,AD06,video,BLOQUEADO_POR_INSUMO,poster e video reais,URLs e videos ausentes,aguardar ativos
+R116,A02,ADICAO,scripts/build-journal.cjs,AD15,imagem,ADITIVO,OG principal existente,direitos nao liberados,manter noindex
+R117,A00,ADICAO,docs/media/IMAGE_INTEGRATION_REPORT.md,AD15,publicacao,BLOQUEADO_POR_INSUMO,teste externo em URL final,nao publicado,executar depois

@@ -1,0 +1,18 @@
+[
+  {
+    "file": "ENTREGA_FRANCO_ROMEU_parte_01.zip",
+    "sha256": "e16d4dd6cf3d25f4ff28a27461de6fda554b725100779d0069a515f6a59071f4",
+    "entries": 911,
+    "uncompressedBytes": 173080303,
+    "crcFailure": null,
+    "extracted": false
+  },
+  {
+    "file": "FR_COZINHA_LAVANDERIA_FORENSICS_v1.1.0.zip",
+    "sha256": "e3312499228f2505eb0c9a4eaf4a8ba5560890b7b5ba36f75dff8eed2c0762b6",
+    "entries": 136,
+    "uncompressedBytes": 9560424,
+    "crcFailure": null,
+    "extracted": false
+  }
+]

@@ -1,6 +1,7 @@
 # Dependências e builds web
 node_modules/
 dist/
+.artifacts/
 .vite/
 coverage/
 

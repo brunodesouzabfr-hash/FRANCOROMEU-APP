@@ -1,0 +1,27 @@
+[
+  {
+    "path": "/workspace/scratch/e4b1f2c582df/upload/parte_aa",
+    "size": 188743680,
+    "sha256": "beaa4c9b841aab1917c3756ed2d49993d57f116c474e1e1f570b2ebd3abc4bf3"
+  },
+  {
+    "path": "/workspace/scratch/e4b1f2c582df/upload/parte_ab",
+    "size": 188743680,
+    "sha256": "b5359b4bd84d674c0227e5c1d532512ac04dab9a3cc896ad60c21c4011b0e5b7"
+  },
+  {
+    "path": "/workspace/scratch/e4b1f2c582df/upload/parte_ac",
+    "size": 188743680,
+    "sha256": "3348816a09525f82e8ca16c7763ea4e0a272986b6ef63874bb2a1f64e8df2e5a"
+  },
+  {
+    "path": "/workspace/scratch/e4b1f2c582df/upload/parte_ad",
+    "size": 188743680,
+    "sha256": "e8dfaf5c21af58ec0865201a854611e975b67e8f1a268abd1a1449ec1f159bb5"
+  },
+  {
+    "path": "/workspace/scratch/e4b1f2c582df/upload/parte_ae",
+    "size": 108513421,
+    "sha256": "c89481aa878533572c4309d7c75c2740e7d55c00176ed2a8c808a3ac1aa69692"
+  }
+]
