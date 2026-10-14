@@ -43,8 +43,10 @@ A pilha aponta para `realpathSync` em `src/media-library.cjs`, chamado por `scri
 
 - Projeto confirmado por leitura: equipe `franco-romeu`, projeto `francoromeu-app`, root directory `.`.
 - `vercel.json` define `npm run build`, output `dist` e `cleanUrls: true`, sobrepondo os defaults genéricos do projeto.
-- Nenhum deploy manual foi executado.
+- Nenhum deploy manual foi executado; o Git criou automaticamente um preview.
 - O commit `a969729` foi aberto em uma segunda worktree limpa, sem `.vercel`, `CODEX USE AQUI`, `dist`, `node_modules` ou artefatos herdados.
 - Nessa worktree, `npm ci`, `npm run build`, `node scripts/check-project-library.cjs` e `node scripts/check-build-idempotence.cjs` passaram e reproduziram o fingerprint `f83093b5bb5629ea71e3a8e09d36ac407490482a8f434716eff6dc043f128604`.
-- A validação restante de portabilidade é o preview Git da branch na infraestrutura Vercel.
+- O preview Git `dpl_6zM7Ne5NeSLwswUwM2Hoc4Vw1A3v`, commit `90dba44`, terminou `READY`. O log confirma clone sem cache, 54 dependências instaladas, build de 832 artefatos, ausência de mutação de fontes e remoção do God Mode público.
+- A Home, as seis rotas institucionais, `/projetos/`, uma página editorial, a 404 real, `robots.txt`, sitemaps, Bing, IndexNow e favicon responderam corretamente via acesso autenticado ao preview.
+- O preview aplica `X-Robots-Tag: noindex` e gera sitemap principal vazio; o build de produção local mantém as seis URLs canônicas. Essa diferença é deliberada e impede indexação da prévia.
 

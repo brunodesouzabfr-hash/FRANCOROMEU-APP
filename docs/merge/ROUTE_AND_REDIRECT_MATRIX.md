@@ -4,9 +4,9 @@
 
 | Entrada | Destino | Preserva path/query | Estado |
 | --- | --- | --- | --- |
-| `francoromeu-app.vercel.app/:path*` | `https://www.francoromeufr.com.br/:path*` | sim, pela regra `:path*`; query é preservada pela plataforma | configurado, validação remota pendente do preview |
-| `francoromeufr.com.br/:path*` | `https://www.francoromeufr.com.br/:path*` | sim | configurado, validação remota pendente do preview |
-| `www.francoromeufr.com.br` | conteúdo canônico | n/a | canonical final |
+| `francoromeu-app.vercel.app/:path*` | `https://www.francoromeufr.com.br/:path*` | sim | 308 remoto verificado com `/sobre?utm_test=codex` |
+| `francoromeufr.com.br/:path*` | `https://www.francoromeufr.com.br/:path*` | sim | 308 remoto verificado com `/sobre?utm_test=codex` |
+| `www.francoromeufr.com.br` | conteúdo canônico | n/a | domínio vinculado; Home atual 200; novas rotas validadas no preview integrado |
 
 ## Rotas institucionais
 
@@ -38,8 +38,8 @@ O mapa gerado contém 332 rotas e arquivos correspondentes. As 326 rotas além d
 ## 404 e segurança de roteamento
 
 - Não existe rewrite SPA genérico para `index.html`.
-- URL inexistente responde 404 no servidor local de preview.
+- URL inexistente responde 404 no servidor local e no preview Vercel.
 - `/base-original/FRANCO_ROMEU_ETAPA13_ORIGINAL.html` responde 404 no output público.
 - History API, navegação interna e `popstate` mantêm path e canonical da rota.
-- A validação remota dos redirects de host será repetida no preview criado pelo Git após o push; não é inferida apenas do arquivo de configuração.
+- O preview Vercel integrado respondeu 200 nas seis rotas institucionais, em `/projetos/` e em uma rota editorial individual. A produção anterior ainda responde 404 em `/sobre`; esse delta só será corrigido após merge e promoção autorizados.
 

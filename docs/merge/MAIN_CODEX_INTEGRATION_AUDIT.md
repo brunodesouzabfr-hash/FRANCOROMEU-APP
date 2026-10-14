@@ -53,5 +53,5 @@ Os relatórios históricos não foram reescritos para aparentar publicação atu
 
 ## Resultado atual
 
-O build local reproduz a nova arquitetura e elimina a causa comprovada da falha Vercel da candidata. O gate técnico local passa; a release permanece em rascunho porque o LCP sintético mediano foi 3.896 ms e o check Cloudflare Workers da candidata segue como falha externa ainda não diagnosticada por logs acessíveis nesta sessão.
+O build local e o preview Git reproduzem a nova arquitetura e eliminam a causa comprovada da falha Vercel da candidata. O deployment `dpl_6zM7Ne5NeSLwswUwM2Hoc4Vw1A3v` terminou `READY`, e as rotas, a 404 real e os arquivos públicos foram verificados. O gate técnico e o CI principal passam; a release permanece em rascunho porque o LCP sintético mediano foi 3.896 ms e o check Cloudflare Workers da integração falhou sem expor logs no GitHub.
 
