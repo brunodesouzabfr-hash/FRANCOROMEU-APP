@@ -27,6 +27,7 @@
          BASE AUDITADA: FRANCO_ROMEU_ETAPA14_AWWWARDS_UNIVERSES.html
          RASTREABILIDADE: docs/ANEXO_EVOLUCAO_VISUAL_AWWWARDS.md -->
     <meta charset="UTF-8">
+    <script id="fr-quiety-money-preflight">(function(d,w){if(w.FR_QUIETY_FLAGS&&w.FR_QUIETY_FLAGS.enabled===false)return;var r=d.documentElement,p={'/':'forja','/sobre':'palimpsesto','/ambientes':'patina','/projetos-3d':'wireframe','/portfolio':'arquivo','/orcamento':'ledger'},m=w.matchMedia('(prefers-reduced-motion: reduce)').matches;r.classList.add(m?'frqm-lite':'frqm-ready');r.dataset.frqmWorld=p[w.location.pathname]||'forja';if(m)r.classList.add('frqm-reduced');if(!m&&w.matchMedia('(hover: hover) and (pointer: fine)').matches)r.classList.add('frqm-fine-pointer')})(document,window);</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Reformas e Projetos em SP | Franco Romeu — Porcelanato e Interiores</title>
     <!-- Franco Romeu — identidade vetorial e favicons oficiais -->
@@ -18539,6 +18540,229 @@ function boot(){
 if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',boot,{once:true});else boot();
 })();
 </script>
+<style id="fr-quiety-money-css">
+/*
+ * QUIETY MONEY / PALIMPSESTO DE FORJA
+ * Camada tardia, reversível e sem dependências. Todo o sistema depende de
+ * html.frqm-ready; remover a classe devolve a apresentação canônica anterior.
+ */
+html.frqm-ready :is(#smart-nav,.frqm-atmosphere,.frqm-spine,.frqm-veil,.frqm-inscription,.view-section.active){--frqm-cut-open:polygon(0 0,100% 0,100% 100%,0 100%);--frqm-expo:cubic-bezier(.16,1,.3,1)}
+html.frqm-ready{scrollbar-color:var(--frqm-accent,#fc7016) #050706}
+html.frqm-ready ::selection{background:var(--frqm-accent);color:#050706}
+html.frqm-ready body{background:#050706}
+html.frqm-ready .view-section.active{position:relative;isolation:isolate;animation:frqmViewWake .9s var(--frqm-expo) both}
+html.frqm-ready[data-frqm-world="forja"] :is(#smart-nav,.frqm-atmosphere,.frqm-spine,.frqm-veil,.frqm-inscription,.view-section.active){--frqm-bg:#050706;--frqm-rgb:252,112,22;--frqm-axis:17deg;--frqm-accent:#fc7016;--frqm-trace:#f6a700;--frqm-paper:#e6d6b5;--frqm-cut:polygon(0 0,88% 0,100% 14%,100% 100%,8% 100%,0 92%)}
+html.frqm-ready[data-frqm-world="palimpsesto"] :is(#smart-nav,.frqm-atmosphere,.frqm-spine,.frqm-veil,.frqm-inscription,.view-section.active){--frqm-bg:#090806;--frqm-rgb:216,183,104;--frqm-axis:-12deg;--frqm-accent:#d8b768;--frqm-trace:#f1e5c9;--frqm-paper:#f1e5c9;--frqm-cut:polygon(3% 0,100% 0,100% 94%,96% 100%,0 100%,0 5%)}
+html.frqm-ready[data-frqm-world="patina"] :is(#smart-nav,.frqm-atmosphere,.frqm-spine,.frqm-veil,.frqm-inscription,.view-section.active){--frqm-bg:#07100d;--frqm-rgb:200,152,106;--frqm-axis:29deg;--frqm-accent:#c8986a;--frqm-trace:#f6a700;--frqm-paper:#eadbc0;--frqm-cut:polygon(0 0,94% 0,100% 9%,96% 100%,4% 97%,0 83%)}
+html.frqm-ready[data-frqm-world="wireframe"] :is(#smart-nav,.frqm-atmosphere,.frqm-spine,.frqm-veil,.frqm-inscription,.view-section.active){--frqm-bg:#03070d;--frqm-rgb:113,229,244;--frqm-axis:-23deg;--frqm-accent:#71e5f4;--frqm-trace:#c8986a;--frqm-paper:#e5f4f1;--frqm-cut:polygon(7% 0,93% 0,100% 8%,100% 92%,92% 100%,8% 100%,0 92%,0 8%)}
+html.frqm-ready[data-frqm-world="arquivo"] :is(#smart-nav,.frqm-atmosphere,.frqm-spine,.frqm-veil,.frqm-inscription,.view-section.active){--frqm-bg:#0a0809;--frqm-rgb:246,167,0;--frqm-axis:9deg;--frqm-accent:#f6a700;--frqm-trace:#8f1133;--frqm-paper:#e6d6b5;--frqm-cut:polygon(0 0,100% 0,100% 88%,91% 100%,0 100%,0 12%)}
+html.frqm-ready[data-frqm-world="ledger"] :is(#smart-nav,.frqm-atmosphere,.frqm-spine,.frqm-veil,.frqm-inscription,.view-section.active){--frqm-bg:#06110d;--frqm-rgb:169,216,189;--frqm-axis:-7deg;--frqm-accent:#a9d8bd;--frqm-trace:#f6a700;--frqm-paper:#e9e0ca;--frqm-cut:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,0 100%)}
+html.frqm-ready .view-section.active{background-color:var(--frqm-bg)!important}
+
+/* Fallback estático para quem solicita menos movimento: mantém hierarquia e correções sem carregar a cascata imersiva. */
+html.frqm-lite #smart-nav:is(.nav-state-header,.nav-state-floating,.nav-state-hidden){border-radius:0!important;border-color:rgba(246,167,0,.28)!important;box-shadow:inset 3px 0 0 rgba(246,167,0,.62)!important}
+html.frqm-lite .frx-world-tag{display:none!important}
+html.frqm-lite #view-sobre>.fr-sobre-jornal-link{position:absolute!important;z-index:38!important;top:max(130px,calc(114px + env(safe-area-inset-top)))!important;left:clamp(1rem,4vw,4rem)!important;margin:0!important;background:#090806!important}
+html.frqm-lite #view-sobre #sobre-hero-section{min-height:max(100svh,800px)!important;padding-top:max(130px,calc(108px + env(safe-area-inset-top)))!important;padding-bottom:6rem!important}
+html.frqm-lite #view-sobre #sobre-hero-section>div:last-child{width:min(100%,1120px);max-width:1120px!important;padding-inline:clamp(1rem,6vw,6rem)!important}
+html.frqm-lite #view-sobre #sobre-hero-section h2{display:grid;gap:clamp(.2rem,1vw,.7rem);margin:0 auto clamp(3rem,6vh,5rem)!important}
+html.frqm-lite #view-sobre .sobre-hero-word{display:block!important;overflow:visible!important;padding:.03em 0 .12em!important;line-height:.84!important;letter-spacing:-.065em}
+html.frqm-lite #view-sobre .sobre-hero-word>span{display:block;overflow:visible!important;line-height:inherit!important}
+html.frqm-lite #view-sobre.active .sobre-hero-word>span,html.frqm-lite #view-sobre.active #sobre-hero-body{opacity:1!important;transform:none!important}
+html.frqm-lite #view-sobre #sw3{max-width:16ch;margin:.5rem auto 0!important;line-height:.94!important}
+html.frqm-lite #view-sobre #sobre-hero-body{position:relative;z-index:2;margin:0 auto 3rem!important;padding-top:1.25rem;border-top:1px solid rgba(216,183,104,.26)}
+@media(max-width:760px){
+  html.frqm-lite #view-sobre>.fr-sobre-jornal-link{top:max(116px,calc(100px + env(safe-area-inset-top)))!important;right:1rem!important;left:1rem!important;justify-content:center}
+  html.frqm-lite #view-sobre #sobre-hero-section{min-height:max(100svh,760px)!important;padding-top:max(120px,calc(100px + env(safe-area-inset-top)))!important}
+  html.frqm-lite #view-sobre #sobre-hero-section>div:last-child{max-width:100%!important;padding-inline:1rem!important}
+  html.frqm-lite #view-sobre #sw1,html.frqm-lite #view-sobre #sw2{font-size:clamp(2.75rem,13vw,5.2rem)!important}
+  html.frqm-lite #view-sobre #sw3{font-size:clamp(1.62rem,8vw,2.8rem)!important}
+}
+
+/* Campo cartográfico: redesenha apenas em interação; não há loop ocioso. */
+.frqm-atmosphere{position:fixed;z-index:37;inset:0;overflow:hidden;pointer-events:none!important;contain:strict}
+.frqm-field{position:absolute;inset:0;width:100%;height:100%;opacity:.86;mix-blend-mode:screen;transition:opacity .5s ease}
+.frqm-grain{position:absolute;inset:-30%;opacity:.22;mix-blend-mode:soft-light;background-image:repeating-linear-gradient(117deg,rgba(255,255,255,.026) 0 1px,transparent 1px 7px),repeating-linear-gradient(23deg,rgba(0,0,0,.08) 0 1px,transparent 1px 11px);transform:rotate(var(--frqm-axis));transform-origin:center}
+.frqm-datum{position:absolute;right:clamp(1rem,3vw,3rem);bottom:clamp(5rem,9vh,8rem);width:38px;height:38px;border-top:1px solid rgba(var(--frqm-rgb),.36);border-left:1px solid rgba(var(--frqm-rgb),.36)}
+.frqm-datum::before{content:"X / Y";position:absolute;right:5px;bottom:5px;color:rgba(var(--frqm-rgb),.58);font:700 8px/1 'Share Tech Mono',monospace;letter-spacing:.13em}
+
+/* Espinha editorial: localização como planta, não como barra genérica. */
+.frqm-spine{position:fixed;z-index:47;left:max(13px,env(safe-area-inset-left));top:50%;display:grid;grid-template-columns:auto 1px auto;align-items:center;gap:12px;width:min(270px,22vw);height:min(56vh,520px);color:var(--frqm-paper);pointer-events:none;transform:translateY(-50%)}
+.frqm-spine-coordinate{align-self:start;color:rgba(var(--frqm-rgb),.58);font:700 8px/1 'Share Tech Mono',monospace;letter-spacing:.18em;text-transform:uppercase;writing-mode:vertical-rl;transform:rotate(180deg)}
+.frqm-spine-track{position:relative;display:block;width:1px;height:100%;background:linear-gradient(180deg,transparent,rgba(var(--frqm-rgb),.5) 16%,rgba(var(--frqm-rgb),.16) 84%,transparent)}
+.frqm-spine-marker{--frqm-marker:0;position:absolute;top:calc(var(--frqm-marker)*100%);left:50%;display:block;width:11px;height:11px;border:1px solid var(--frqm-accent);background:var(--frqm-bg);transform:translate(-50%,-50%) rotate(45deg);box-shadow:0 0 22px rgba(var(--frqm-rgb),.36);transition:top .12s linear}
+.frqm-spine-copy{align-self:end;display:grid;gap:7px;max-width:190px;padding-bottom:10px;text-shadow:0 2px 18px #000}
+.frqm-spine-index{color:var(--frqm-accent);font:700 9px/1 'Share Tech Mono',monospace;letter-spacing:.18em}
+.frqm-spine-title{color:#fff;font:700 clamp(15px,1.4vw,21px)/.9 'Stardos Stencil',serif;letter-spacing:-.025em;text-transform:uppercase}
+.frqm-spine-line{color:rgba(230,214,181,.66);font:400 12px/1.35 'Rokkitt',serif}
+
+/* A navegação vira placa de acervo, mas conserva todos os controles. */
+html.frqm-ready #smart-nav:is(.nav-state-header,.nav-state-floating,.nav-state-hidden){max-width:1500px!important;border:1px solid rgba(var(--frqm-rgb),.27)!important;border-radius:0!important;background:linear-gradient(105deg,rgba(3,13,10,.97),rgba(7,24,18,.95))!important;box-shadow:0 16px 55px rgba(0,0,0,.34),inset 3px 0 0 rgba(var(--frqm-rgb),.72)!important;clip-path:polygon(0 0,calc(100% - 15px) 0,100% 15px,100% 100%,15px 100%,0 calc(100% - 15px))}
+html.frqm-ready #smart-nav:is(.nav-state-header,.nav-state-floating,.nav-state-hidden)::after{content:"";position:absolute;left:72px;right:16px;bottom:5px;height:1px;background:linear-gradient(90deg,rgba(var(--frqm-rgb),.58),transparent 64%);transform:scaleX(calc(.06 + var(--frqm-progress)*.94));transform-origin:left;pointer-events:none}
+html.frqm-ready #smart-nav .nav-link,html.frqm-ready #smart-nav .nav-cta{border-radius:0!important;letter-spacing:.035em!important}
+html.frqm-ready #smart-nav .nav-link.active-nav,html.frqm-ready #smart-nav .nav-cta.active-nav{background:transparent!important;box-shadow:inset 0 -2px 0 var(--frqm-accent)!important;color:#fff!important}
+html.frqm-ready #smart-nav-brand .frx-top-logo{border-color:rgba(var(--frqm-rgb),.46)!important;box-shadow:0 0 0 5px rgba(var(--frqm-rgb),.055)}
+html.frqm-ready .frx-world-tag{display:none!important}
+@media(min-width:1051px){
+  html.frqm-ready #smart-nav:is(.nav-state-header,.nav-state-floating,.nav-state-hidden) #smart-nav-brand{flex:0 0 230px!important;width:230px!important;min-width:230px!important;max-width:230px!important;overflow:visible!important}
+  html.frqm-ready #smart-nav:is(.nav-state-header,.nav-state-floating,.nav-state-hidden) .nav-items{gap:5px!important}
+  html.frqm-ready #smart-nav:is(.nav-state-header,.nav-state-floating,.nav-state-hidden) .nav-items :is(.nav-link,.nav-cta,#fr-global-search-nav){padding-inline:11px!important;white-space:nowrap}
+}
+
+/* Tipografia tectônica: longhands preservam transforms dos motores existentes. */
+html.frqm-ready.frqm-fine-pointer:not(.frqm-reduced) .view-section.active :is(.fr6-hero-title,#sobre-hero-section h2,.amb-hero-title,.p3d-hero-title,.fr16-portfolio-title,.orc-hero-title,.orc-hero h1){translate:calc(var(--frqm-px)*9px) calc(var(--frqm-py)*6px);rotate:calc(var(--frqm-px)*.22deg);transition:translate .7s var(--frqm-expo),rotate .7s var(--frqm-expo)}
+html.frqm-ready .view-section.active :is(.fr6-section-title,.manifesto-quote,.amb-section-title,.p3d-section-title,.fr16-portfolio-insight h2,.fr10-section-title){position:relative;text-wrap:balance}
+html.frqm-ready .view-section.active :is(.fr6-section-title,.manifesto-quote,.amb-section-title,.p3d-section-title,.fr16-portfolio-insight h2,.fr10-section-title)::before{content:"";position:absolute;top:-.55em;left:0;width:clamp(34px,5vw,84px);height:1px;background:linear-gradient(90deg,var(--frqm-accent),transparent)}
+
+/* Aberturas materiais variam por mundo, mas sempre se abrem no hover/foco. */
+html.frqm-ready [data-frqm-aperture]{clip-path:var(--frqm-cut);transition:clip-path .85s var(--frqm-expo),filter .65s ease}
+html.frqm-ready [data-frqm-node].frqm-source [data-frqm-aperture],html.frqm-ready [data-frqm-aperture]:is(:hover,:focus-within){clip-path:var(--frqm-cut-open)}
+
+/* Ressonância simpática: os irmãos respondem, nenhum conteúdo desaparece. */
+html.frqm-ready.frqm-fine-pointer:not(.frqm-reduced) [data-frqm-node]{transition:translate .7s var(--frqm-expo),rotate .8s var(--frqm-expo),border-color .5s ease,filter .5s ease!important}
+html.frqm-ready.frqm-fine-pointer:not(.frqm-reduced) [data-frqm-node].frqm-source{translate:0 -7px;rotate:calc((var(--frqm-node-index,0) - 4)*.08deg);border-color:rgba(var(--frqm-rgb),.68)!important;filter:saturate(1.06)}
+html.frqm-ready.frqm-fine-pointer:not(.frqm-reduced) [data-frqm-node].frqm-echo{translate:0 calc(var(--frqm-wave,.2)*3px);rotate:calc(var(--frqm-wave,.2)*-.25deg);border-color:rgba(var(--frqm-rgb),calc(.16 + var(--frqm-wave,.2)*.18))!important}
+
+@media(min-width:761px){
+/* Home / Forja — frase monumental quebrada como uma chapa em tensão. */
+html.frqm-ready #view-home{background:radial-gradient(circle at 78% 16%,rgba(252,112,22,.15),transparent 29%),radial-gradient(circle at 20% 92%,rgba(246,167,0,.08),transparent 34%),#050706!important}
+html.frqm-ready #view-home .fr6-hero{min-height:max(100svh,720px);background:transparent!important}
+html.frqm-ready #view-home .fr6-hero::before{content:"01";position:absolute;z-index:1;right:-.08em;bottom:-.19em;color:transparent;-webkit-text-stroke:1px rgba(246,167,0,.13);font:700 clamp(16rem,39vw,42rem)/.8 'Stardos Stencil',serif;letter-spacing:-.1em;pointer-events:none}
+html.frqm-ready #view-home .fr6-hero-media::after{background:linear-gradient(102deg,rgba(4,7,6,.97) 0%,rgba(4,7,6,.72) 43%,rgba(4,7,6,.35) 69%,rgba(4,7,6,.88) 100%),linear-gradient(180deg,rgba(5,7,6,.24),transparent 43%,#050706 100%)}
+html.frqm-ready #view-home .fr6-hero-copy{max-width:1280px}
+html.frqm-ready #view-home .fr6-hero-title{max-width:13ch;font-size:clamp(4rem,10.8vw,12.2rem);line-height:.75;letter-spacing:-.083em}
+html.frqm-ready #view-home .fr6-hero-line:nth-child(1){margin-left:0}
+html.frqm-ready #view-home .fr6-hero-line:nth-child(2){margin-left:clamp(1.2rem,12vw,13rem);-webkit-text-stroke-color:rgba(246,167,0,.95)}
+html.frqm-ready #view-home .fr6-hero-line:nth-child(3){margin-left:clamp(.3rem,3vw,3.5rem);color:#efe5cf}
+html.frqm-ready #view-home .fr6-hero-bottom{grid-template-columns:minmax(260px,540px) auto;margin-left:clamp(0rem,15vw,15rem);padding-left:0;border-left:1px solid rgba(252,112,22,.35);padding-inline-start:clamp(1rem,3vw,3rem)}
+html.frqm-ready #view-home .fr6-service,html.frqm-ready #view-home .fr6-work-panel{border-radius:0!important;box-shadow:0 32px 90px rgba(0,0,0,.24)}
+html.frqm-ready #view-home .fr6-service:nth-child(2){translate:0 calc(-12px + var(--frqm-py)*5px)}
+html.frqm-ready #view-home .fr6-work{position:relative;background:#e7ddc8!important}
+html.frqm-ready #view-home .fr6-work::before{content:"ARQUIVO / MATÉRIA / PROCESSO";position:absolute;right:clamp(1rem,5vw,5rem);top:2rem;color:rgba(16,19,16,.44);font:700 9px/1 'Share Tech Mono',monospace;letter-spacing:.2em;writing-mode:vertical-rl}
+
+/* Sobre / Palimpsesto — corrige a colisão real e assume o manifesto como página impressa. */
+html.frqm-ready #view-sobre{background:#090806!important}
+html.frqm-ready #view-sobre>.fr-sobre-jornal-link{position:absolute!important;z-index:38!important;top:max(130px,calc(114px + env(safe-area-inset-top)))!important;left:clamp(1rem,4vw,4rem)!important;margin:0!important;background:rgba(9,8,6,.9)!important;backdrop-filter:blur(8px)}
+html.frqm-ready #view-sobre #sobre-hero-section{min-height:max(100svh,820px)!important;padding-top:max(130px,calc(108px + env(safe-area-inset-top)))!important;padding-bottom:clamp(6rem,12vh,10rem)!important;background:radial-gradient(circle at 78% 12%,rgba(216,183,104,.12),transparent 33%),linear-gradient(142deg,#080706,#110d09 62%,#080706)!important}
+html.frqm-ready #view-sobre #sobre-hero-section::before{content:"02 / SOBRE";position:absolute;left:clamp(1rem,8vw,9rem);top:30%;color:rgba(216,183,104,.42);font:700 9px/1 'Share Tech Mono',monospace;letter-spacing:.24em;writing-mode:vertical-rl}
+html.frqm-ready #view-sobre #sobre-hero-section>div:last-child{width:min(100%,1120px);max-width:1120px!important;padding-inline:clamp(1rem,6vw,6rem)!important}
+html.frqm-ready #view-sobre #sobre-hero-section h2{display:grid;gap:clamp(.25rem,1vw,.8rem);margin:0 auto clamp(3.25rem,7vh,6rem)!important}
+html.frqm-ready #view-sobre .sobre-hero-word{display:block!important;overflow:visible!important;padding:.03em 0 .12em!important;line-height:.82!important;letter-spacing:-.065em;text-wrap:balance}
+html.frqm-ready #view-sobre .sobre-hero-word>span{display:block;overflow:visible!important;line-height:inherit!important}
+html.frqm-ready #view-sobre.active .sobre-hero-word>span,html.frqm-ready #view-sobre.active #sobre-hero-body{opacity:1!important;transform:none!important}
+html.frqm-ready #view-sobre #sw1,html.frqm-ready #view-sobre #sw2{font-size:clamp(3.6rem,9.3vw,8.6rem)!important}
+html.frqm-ready #view-sobre #sw3{max-width:16ch;margin:.55rem auto 0!important;font-size:clamp(2rem,4.6vw,4.25rem)!important;line-height:.92!important}
+html.frqm-ready #view-sobre #sobre-hero-body{position:relative;z-index:2;margin:0 auto 3rem!important;padding-top:1.5rem;border-top:1px solid rgba(216,183,104,.26);font-size:clamp(1.08rem,1.7vw,1.35rem)!important;color:rgba(241,229,201,.72)!important}
+html.frqm-ready #view-sobre>.sobre-section{border-top:1px solid rgba(216,183,104,.15);background:linear-gradient(110deg,#090806,#15110c)!important}
+html.frqm-ready #view-sobre>.sobre-section:nth-of-type(odd){background:linear-gradient(110deg,#0a1210,#090806)!important}
+html.frqm-ready #view-sobre .manifesto-quote{max-width:16ch;letter-spacing:-.045em}
+
+/* Ambientes / Pátina — catálogo entendido como sequência sensorial. */
+html.frqm-ready #view-ambientes{background:radial-gradient(circle at 18% 16%,rgba(200,152,106,.14),transparent 30%),#07100d!important}
+html.frqm-ready #view-ambientes .amb-hero{background:linear-gradient(117deg,rgba(4,16,13,.96),rgba(18,35,29,.74)),radial-gradient(circle at 82% 28%,rgba(200,152,106,.2),transparent 36%)!important}
+html.frqm-ready #view-ambientes .amb-hero::before{content:"03";position:absolute;right:-.04em;bottom:-.21em;color:transparent;-webkit-text-stroke:1px rgba(200,152,106,.16);font:700 clamp(18rem,42vw,44rem)/.8 'Stardos Stencil',serif;pointer-events:none}
+html.frqm-ready #view-ambientes .amb-hero-title{max-width:10ch;letter-spacing:-.055em}
+html.frqm-ready #view-ambientes .amb-museum,html.frqm-ready #view-ambientes .fr16-amb-dossier{background:linear-gradient(180deg,#07100d,#10221b)!important}
+html.frqm-ready #view-ambientes .fr16-amb-row{border-color:rgba(200,152,106,.22)!important}
+
+/* Projetos 3D / Wireframe — uma prancheta luminosa, não estética gamer. */
+html.frqm-ready #view-projetos3d{background-color:#03070d!important;background-image:linear-gradient(rgba(113,229,244,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(113,229,244,.045) 1px,transparent 1px)!important;background-size:48px 48px!important}
+html.frqm-ready #view-projetos3d .p3d-hero{background:radial-gradient(circle at 70% 32%,rgba(26,96,105,.34),transparent 38%),linear-gradient(120deg,rgba(3,7,13,.98),rgba(7,24,38,.72))!important}
+html.frqm-ready #view-projetos3d .p3d-hero::before{content:"AXON / 04";position:absolute;right:clamp(1rem,5vw,5rem);bottom:clamp(1rem,5vh,4rem);color:rgba(113,229,244,.4);font:700 9px/1 'Share Tech Mono',monospace;letter-spacing:.24em}
+html.frqm-ready #view-projetos3d .p3d-showcase,html.frqm-ready #view-projetos3d .p3d-process{background:rgba(3,7,13,.82)!important}
+html.frqm-ready #view-projetos3d :is(.p3d-card,.p3d-how-card,.p3d-info-panel){border-radius:0!important;border-color:rgba(113,229,244,.2)!important}
+html.frqm-ready #view-projetos3d .p3d-section-title{text-transform:uppercase;letter-spacing:-.045em}
+
+/* Portfólio / Arquivo Vivo — bordô como vestígio, ouro apenas como inscrição. */
+html.frqm-ready #view-projetos .fr16-portfolio{background:#0a0809!important}
+html.frqm-ready #view-projetos .fr16-portfolio-orbit{background:radial-gradient(circle at 82% 19%,rgba(143,17,51,.34),transparent 30%),radial-gradient(circle at 14% 74%,rgba(11,61,62,.4),transparent 37%),#0a0809!important}
+html.frqm-ready #view-projetos .fr16-portfolio-title{max-width:10ch;font-size:clamp(3.3rem,7.1vw,8rem);letter-spacing:-.067em}
+html.frqm-ready #view-projetos .fr16-portfolio-shell{padding-left:max(clamp(9rem,14vw,14rem),calc(env(safe-area-inset-left) + .75rem))}
+html.frqm-ready #view-projetos .fr16-portfolio-card{border-radius:0!important;box-shadow:0 30px 80px rgba(0,0,0,.3)}
+html.frqm-ready #view-projetos .fr16-portfolio-card:nth-child(even){translate:0 clamp(10px,2vw,28px)}
+html.frqm-ready #view-projetos .fr16-portfolio-insight{background:linear-gradient(155deg,#0a0809,#111d18 62%,#090809)!important}
+
+/* Orçamento / Ledger — a invenção termina em legibilidade e rastreabilidade. */
+html.frqm-ready #view-orcamento{background-color:#06110d!important;background-image:linear-gradient(rgba(169,216,189,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(169,216,189,.035) 1px,transparent 1px)!important;background-size:32px 32px!important}
+html.frqm-ready #view-orcamento .orc-hero{background:radial-gradient(circle at 83% 24%,rgba(169,216,189,.12),transparent 33%),linear-gradient(125deg,#06110d,#0d2119)!important;border-bottom:1px solid rgba(169,216,189,.18)}
+html.frqm-ready #view-orcamento .orc-hero::before{content:"06 / LEDGER";position:absolute;right:clamp(1rem,5vw,5rem);top:50%;color:rgba(169,216,189,.38);font:700 9px/1 'Share Tech Mono',monospace;letter-spacing:.24em;writing-mode:vertical-rl}
+html.frqm-ready #view-orcamento :is(.orc-card,.service-card,.category-card,#step-content-container,#summary-container){border-radius:0!important;border-color:rgba(169,216,189,.2)!important}
+html.frqm-ready #view-orcamento :is(input,select,textarea){border-radius:0!important}
+html.frqm-ready[data-frqm-world="arquivo"] .frqm-spine-copy,
+html.frqm-ready[data-frqm-world="ledger"] .frqm-spine-copy{display:none}
+}
+
+/* Inscrições: a ação deixa uma marca temporária, nunca captura interação. */
+.frqm-inscription{position:fixed;z-index:2147483645;width:1px;height:1px;color:var(--frqm-accent);pointer-events:none;animation:frqmMark 2.4s var(--frqm-expo) both}
+.frqm-inscription-ring{position:absolute;inset:-30px;display:block;border:1px solid currentColor;border-radius:50%;transform:scale(.18);animation:frqmRing 1.15s var(--frqm-expo) both}
+.frqm-inscription-slash{position:absolute;left:-42px;top:0;display:block;width:84px;height:1px;background:currentColor;transform:rotate(-31deg) scaleX(.1);animation:frqmSlash .85s var(--frqm-expo) both}
+.frqm-inscription-label{position:absolute;left:16px;top:15px;width:max-content;color:currentColor;font:700 8px/1 'Share Tech Mono',monospace;letter-spacing:.13em;white-space:nowrap}
+
+/* Transição entre mundos: corte de página, sem bloquear foco ou clique. */
+.frqm-veil{position:fixed;z-index:2147483644;inset:0;visibility:hidden;overflow:hidden;pointer-events:none}
+.frqm-veil-plane{position:absolute;inset:0;display:block;background:linear-gradient(118deg,#030504 0 48%,var(--frqm-accent) 48% 48.35%,#030504 48.35%);clip-path:polygon(0 0,0 0,0 100%,0 100%)}
+.frqm-veil-code{position:absolute;left:50%;top:50%;color:var(--frqm-paper);font:700 clamp(1.2rem,3vw,2.8rem)/1 'Stardos Stencil',serif;letter-spacing:.08em;text-transform:uppercase;opacity:0;transform:translate(-50%,-50%)}
+.frqm-veil.is-active{visibility:visible;animation:frqmVeilLife .92s linear both}
+.frqm-veil.is-active .frqm-veil-plane{animation:frqmVeilCut .92s var(--frqm-expo) both}
+.frqm-veil.is-active .frqm-veil-code{animation:frqmVeilCode .92s ease both}
+
+@keyframes frqmViewWake{from{opacity:.72}to{opacity:1}}
+@keyframes frqmMark{0%,72%{opacity:1}100%{opacity:0}}
+@keyframes frqmRing{0%{opacity:0;transform:scale(.18)}22%{opacity:.9}100%{opacity:0;transform:scale(1.85)}}
+@keyframes frqmSlash{0%{opacity:0;transform:rotate(-31deg) scaleX(.1)}35%{opacity:1;transform:rotate(-31deg) scaleX(1)}100%{opacity:0;transform:rotate(-31deg) scaleX(1.15)}}
+@keyframes frqmVeilLife{0%,100%{visibility:hidden}1%,99%{visibility:visible}}
+@keyframes frqmVeilCut{0%{clip-path:polygon(0 0,0 0,0 100%,0 100%)}46%,58%{clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}100%{clip-path:polygon(100% 0,100% 0,100% 100%,100% 100%)}}
+@keyframes frqmVeilCode{0%,32%,74%,100%{opacity:0}47%,61%{opacity:1}}
+
+@media(max-width:1180px){
+  .frqm-spine{width:44px}.frqm-spine-copy{display:none}
+  html.frqm-ready #view-home .fr6-hero-bottom{margin-left:clamp(0rem,8vw,6rem)}
+}
+@media(max-width:760px){
+  .frqm-atmosphere{display:none}.frqm-field{display:none}.frqm-datum{display:none}
+  .frqm-spine{left:max(8px,env(safe-area-inset-left));top:auto;bottom:max(14px,env(safe-area-inset-bottom));grid-template-columns:auto auto;width:auto;height:auto;gap:7px;padding:7px 8px;border:1px solid rgba(var(--frqm-rgb),.25);background:rgba(3,12,9,.74);transform:none}
+  .frqm-spine-coordinate{writing-mode:horizontal-tb;transform:none;font-size:7px}.frqm-spine-track{width:36px;height:1px}.frqm-spine-marker{top:50%;left:calc(var(--frqm-marker)*100%)}
+  html.frqm-ready #smart-nav:is(.nav-state-header,.nav-state-floating,.nav-state-hidden){clip-path:polygon(0 0,calc(100% - 11px) 0,100% 11px,100% 100%,11px 100%,0 calc(100% - 11px))}
+  html.frqm-ready #view-home{background:radial-gradient(circle at 78% 16%,rgba(252,112,22,.13),transparent 29%),#050706!important}
+  html.frqm-ready #view-home .fr6-hero{min-height:100svh;background:transparent!important}
+  html.frqm-ready #view-home .fr6-hero::before{content:"01";position:absolute;z-index:1;right:-.08em;bottom:-.06em;color:transparent;-webkit-text-stroke:1px rgba(246,167,0,.13);font:700 75vw/.8 'Stardos Stencil',serif;pointer-events:none}
+  html.frqm-ready #view-home .fr6-hero-media::after{background:linear-gradient(102deg,rgba(4,7,6,.94),rgba(4,7,6,.54) 68%,rgba(4,7,6,.82)),linear-gradient(180deg,transparent 42%,#050706 100%)}
+  html.frqm-ready #view-home .fr6-hero-title{max-width:13ch;font-size:clamp(3.35rem,17vw,6.6rem);line-height:.78;letter-spacing:-.075em}
+  html.frqm-ready #view-home .fr6-hero-line:nth-child(2){margin-left:clamp(.4rem,7vw,2rem);-webkit-text-stroke-color:rgba(246,167,0,.95)}
+  html.frqm-ready #view-home .fr6-hero-line:nth-child(3){margin-left:0;color:#efe5cf}
+  html.frqm-ready #view-home .fr6-hero-bottom{display:block;margin-left:0;padding-left:1rem;border-left:1px solid rgba(252,112,22,.35)}
+  html.frqm-ready #view-home .fr6-service:nth-child(2){translate:none}
+  html.frqm-ready #view-sobre{background:#090806!important}
+  html.frqm-ready #view-sobre #sobre-hero-section{min-height:max(100svh,760px)!important;padding-top:max(120px,calc(100px + env(safe-area-inset-top)))!important;padding-bottom:6rem!important;background:linear-gradient(142deg,#080706,#110d09 62%,#080706)!important}
+  html.frqm-ready #view-sobre>.fr-sobre-jornal-link{position:absolute!important;z-index:38!important;top:max(116px,calc(100px + env(safe-area-inset-top)))!important;right:1rem!important;left:1rem!important;justify-content:center;margin:0!important;background:rgba(9,8,6,.94)!important}
+  html.frqm-ready #view-sobre #sobre-hero-section>div:last-child{width:100%;max-width:100%!important;padding-inline:1rem!important}
+  html.frqm-ready #view-sobre #sobre-hero-section::before{display:none}
+  html.frqm-ready #view-sobre #sobre-hero-section h2{display:grid;gap:.15rem;margin:0 auto 3rem!important}
+  html.frqm-ready #view-sobre .sobre-hero-word{display:block!important;overflow:visible!important;padding:.03em 0 .12em!important;line-height:.84!important;letter-spacing:-.075em}
+  html.frqm-ready #view-sobre .sobre-hero-word>span{display:block;overflow:visible!important;line-height:inherit!important}
+  html.frqm-ready #view-sobre #sw1,html.frqm-ready #view-sobre #sw2{font-size:clamp(2.75rem,13vw,5.2rem)!important;line-height:.84!important}
+  html.frqm-ready #view-sobre #sw3{font-size:clamp(1.62rem,8vw,2.8rem)!important;line-height:.98!important}
+  html.frqm-ready #view-sobre #sobre-hero-body{position:relative;z-index:2;margin:0 auto 3rem!important;padding-top:1.25rem;border-top:1px solid rgba(216,183,104,.26);font-size:1.05rem!important;line-height:1.58!important;color:rgba(241,229,201,.72)!important}
+  html.frqm-ready #view-projetos .fr16-portfolio-shell{padding-left:max(1rem,calc(env(safe-area-inset-left) + .75rem))}
+  html.frqm-ready #view-projetos .fr16-portfolio-title,html.frqm-ready #view-projetos .fr16-portfolio-title span{max-width:none!important;font-size:clamp(2.1rem,10vw,4rem)!important;letter-spacing:-.08em!important;word-break:keep-all!important;overflow-wrap:normal!important;hyphens:none!important}
+  html.frqm-ready #view-projetos .fr16-portfolio-card:nth-child(even){translate:none}
+  html.frqm-ready[data-frqm-world="ledger"] .frqm-spine{bottom:max(92px,calc(env(safe-area-inset-bottom) + 82px))}
+  html.frqm-ready [data-frqm-aperture]{clip-path:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,0 100%)}
+}
+@media(hover:none),(pointer:coarse){
+  html.frqm-ready [data-frqm-node]{translate:none!important;rotate:none!important}
+  html.frqm-ready [data-frqm-aperture]{clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,0 100%)}
+}
+@media(prefers-reduced-motion:reduce){
+  html.frqm-ready .view-section.active{animation:none!important}
+  .frqm-atmosphere,.frqm-veil,.frqm-inscription{display:none!important}
+  html.frqm-ready{scroll-behavior:auto!important}
+  html.frqm-ready [data-frqm-node],html.frqm-ready [data-frqm-aperture]{transition:none!important;translate:none!important;rotate:none!important}
+}
+@media(forced-colors:active){.frqm-atmosphere,.frqm-spine,.frqm-veil{display:none!important}}
+@media print{.frqm-atmosphere,.frqm-spine,.frqm-veil,.frqm-inscription{display:none!important}}
+</style>
+<script defer src="assets/js/fr-quiety-money.js"></script>
 <script defer src="assets/js/fr-quantity-control.js"></script>
 <script defer src="assets/js/fr-quote-pdf.js"></script>
 <script src="assets/js/media-catalog.js"></script>
