@@ -1,0 +1,57 @@
+{
+  "id": "fr-home-hero",
+  "original": "assets/media/home-hero-2200.jpg",
+  "originalSha256": "a6f1e09fbaf3170e573d5c3f436c1a65a6c66b8bf3741458c56ff7dd7fa19f74",
+  "nature": "reference-visual-not-execution",
+  "context": "Home",
+  "variants": [
+    {
+      "path": "assets/optimized/franco-romeu-interiores-referencia-640.fce5cd7790e0.webp",
+      "format": "webp",
+      "width": 640,
+      "height": 427,
+      "bytes": 21996,
+      "sha256": "fce5cd7790e0f99c6ccb7573328499fc97be0084a002c7d699b9a7b50d660043"
+    },
+    {
+      "path": "assets/optimized/franco-romeu-interiores-referencia-640.e51ed3a8d173.avif",
+      "format": "avif",
+      "width": 640,
+      "height": 426,
+      "bytes": 9692,
+      "sha256": "e51ed3a8d173aee8fd8eed9760cce4ba7361ff084715febbf32e70f31c6fc1ee"
+    },
+    {
+      "path": "assets/optimized/franco-romeu-interiores-referencia-960.99b818ab6ab4.webp",
+      "format": "webp",
+      "width": 960,
+      "height": 640,
+      "bytes": 41090,
+      "sha256": "99b818ab6ab48ca600eaf851dd659d30c19ddd37ef076ad1f38d5ee54714a430"
+    },
+    {
+      "path": "assets/optimized/franco-romeu-interiores-referencia-960.450e5f0e3c31.avif",
+      "format": "avif",
+      "width": 960,
+      "height": 640,
+      "bytes": 16020,
+      "sha256": "450e5f0e3c3165eaec4f6e46dce80e7794bcc23b7dcc7b8747ff4e48082e3df2"
+    },
+    {
+      "path": "assets/optimized/franco-romeu-interiores-referencia-1600.51c8f04c1554.webp",
+      "format": "webp",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 86464,
+      "sha256": "51c8f04c1554d740ac98368ed53c97772fd79b54d11fc86b7c3fe043acf4029a"
+    },
+    {
+      "path": "assets/optimized/franco-romeu-interiores-referencia-1600.055c8dcb1c70.avif",
+      "format": "avif",
+      "width": 1600,
+      "height": 1066,
+      "bytes": 30702,
+      "sha256": "055c8dcb1c70cdded14e21f35f403730e00592a36aae4a8de4f15d18cf9e07b9"
+    }
+  ]
+}

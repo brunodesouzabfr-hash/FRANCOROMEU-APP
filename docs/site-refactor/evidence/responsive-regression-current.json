@@ -1,0 +1,567 @@
+{
+  "base": "http://127.0.0.1:4181",
+  "capturedAt": "2026-10-11T06:00:47.592Z",
+  "engine": "Chromium headless; emulation, not physical Safari/iOS",
+  "profiles": [
+    {
+      "width": 320,
+      "height": 568,
+      "errors": [],
+      "views": [
+        {
+          "view": "home",
+          "path": "/",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "sobre",
+          "path": "/sobre",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "ambientes",
+          "path": "/ambientes",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "projetos3d",
+          "path": "/projetos-3d",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "projetos",
+          "path": "/portfolio",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "orcamento",
+          "path": "/orcamento",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        }
+      ]
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "errors": [],
+      "views": [
+        {
+          "view": "home",
+          "path": "/",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "sobre",
+          "path": "/sobre",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "ambientes",
+          "path": "/ambientes",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "projetos3d",
+          "path": "/projetos-3d",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "projetos",
+          "path": "/portfolio",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "orcamento",
+          "path": "/orcamento",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "errors": [],
+      "views": [
+        {
+          "view": "home",
+          "path": "/",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "sobre",
+          "path": "/sobre",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "ambientes",
+          "path": "/ambientes",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "projetos3d",
+          "path": "/projetos-3d",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "projetos",
+          "path": "/portfolio",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "orcamento",
+          "path": "/orcamento",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        }
+      ]
+    },
+    {
+      "width": 412,
+      "height": 915,
+      "errors": [],
+      "views": [
+        {
+          "view": "home",
+          "path": "/",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "sobre",
+          "path": "/sobre",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "ambientes",
+          "path": "/ambientes",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "projetos3d",
+          "path": "/projetos-3d",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "projetos",
+          "path": "/portfolio",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "orcamento",
+          "path": "/orcamento",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "errors": [],
+      "views": [
+        {
+          "view": "home",
+          "path": "/",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "sobre",
+          "path": "/sobre",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "ambientes",
+          "path": "/ambientes",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "projetos3d",
+          "path": "/projetos-3d",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "projetos",
+          "path": "/portfolio",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "orcamento",
+          "path": "/orcamento",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "errors": [],
+      "views": [
+        {
+          "view": "home",
+          "path": "/",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "sobre",
+          "path": "/sobre",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "ambientes",
+          "path": "/ambientes",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "projetos3d",
+          "path": "/projetos-3d",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "projetos",
+          "path": "/portfolio",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "orcamento",
+          "path": "/orcamento",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "errors": [],
+      "views": [
+        {
+          "view": "home",
+          "path": "/",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "sobre",
+          "path": "/sobre",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "ambientes",
+          "path": "/ambientes",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "projetos3d",
+          "path": "/projetos-3d",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "projetos",
+          "path": "/portfolio",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "orcamento",
+          "path": "/orcamento",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "errors": [],
+      "views": [
+        {
+          "view": "home",
+          "path": "/",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "sobre",
+          "path": "/sobre",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "ambientes",
+          "path": "/ambientes",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "projetos3d",
+          "path": "/projetos-3d",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "projetos",
+          "path": "/portfolio",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "orcamento",
+          "path": "/orcamento",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "errors": [],
+      "views": [
+        {
+          "view": "home",
+          "path": "/",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "sobre",
+          "path": "/sobre",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "ambientes",
+          "path": "/ambientes",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "projetos3d",
+          "path": "/projetos-3d",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "projetos",
+          "path": "/portfolio",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        },
+        {
+          "view": "orcamento",
+          "path": "/orcamento",
+          "active": true,
+          "overflow": false,
+          "publicEditor": false,
+          "navVisible": true,
+          "iframes": 0
+        }
+      ]
+    }
+  ],
+  "flows": [
+    "native menu, Escape, focus restore, link and back",
+    "Home CTA, real quantity editor, save, reload and financial parity",
+    "JSON export, valid import, isolated browser recovery and atomic rejection",
+    "six direct routes, own metadata, real 404 and admin query harmless",
+    "Google success, empty and unavailable; synthetic responses, no real paid API",
+    "reduced motion, immediate usable content"
+  ],
+  "buildSha256": "1491c2b5a7247103e009fcff2aede3ca950e83ab629bbadcc090fab4a50f3539",
+  "buildFingerprint": "0151633538195b2ab61ce2f5e114fad6240b300fac9d51dd29bbce4f5f06d8c0",
+  "status": "PASS"
+}

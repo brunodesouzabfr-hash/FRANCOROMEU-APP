@@ -1,0 +1,15 @@
+{
+  "sourceBytes": 1417487,
+  "publicBytes": 1164042,
+  "publicSha256": "f37716e9c8bb803ecbfe647dd0953a3b3c31c599bbb13e43d9940523cd8a520b",
+  "removed": [
+    "exportConfig",
+    "logoClick",
+    "toggleGodMode",
+    "renderAdminPanel",
+    "validateAdminImport",
+    "God Mode 2.0 script",
+    "installGodMode"
+  ],
+  "buildMutatesSource": false
+}

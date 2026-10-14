@@ -1,0 +1,22 @@
+{
+  "synthetic": true,
+  "cases": [
+    {
+      "name": "short",
+      "services": 2,
+      "downloaded": true,
+      "bytes": 175664,
+      "preservesFinancialState": true,
+      "containsUnpricedScope": true
+    },
+    {
+      "name": "long",
+      "services": 28,
+      "downloaded": true,
+      "bytes": 587659,
+      "preservesFinancialState": true,
+      "containsUnpricedScope": false
+    }
+  ],
+  "errors": []
+}

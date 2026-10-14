@@ -1,0 +1,18 @@
+family_id,familia,existing_service_id,decisao_preliminar,status_oferta,unidade_pendente,escopo_pendente,valor_fr_pendente,proxima_acao
+F01,Ventiladores de teto e parede,ele_eletrodomesticos,Servico relacionado mas nao equivalente,NAO_PRECIFICADO,por unidade,fixacao comando infraestrutura e modelo,sim,Confirmar capacidade e compor modalidade
+F02,Cortinas e persianas,ele_automacao,Automacao relacionada apenas se motorizada,NAO_PRECIFICADO,por unidade ou metro,suporte altura comprimento e motorizacao,sim,Separar instalacao simples e motorizada
+F03,Papel de parede,revestimento_parede,Acabamento relacionado mas sistema distinto,NAO_PRECIFICADO,m2,preparo aplicacao e remocao,sim,Confirmar sistemas e mao de obra
+F04,Exaustores,ele_eletrodomesticos,Equipamento relacionado mas duto nao incluido,NAO_PRECIFICADO,por unidade,abertura duto ligacao e fixacao,sim,Definir modalidades
+F05,Cameras e video porteiros,ele_automacao,Automacao relacionada mas nao escopo completo,NAO_PRECIFICADO,por unidade ou ponto,cabeamento alimentacao configuracao e produto,sim,Confirmar capacidade tecnica
+F06,Toldo retratil e cortina de protecao,,Nao equivale a cortina interna,NAO_PRECIFICADO,por unidade ou m2,produto base ancoragem e altura,sim,Confirmar fornecimento e instalacao
+F07,Deposito de jardim,,Montagem de produto pronto distinta de jardinagem,NAO_PRECIFICADO,por unidade,base modelo dimensoes e ancoragem,sim,Confirmar operacao
+F08,Higienizacao e impermeabilizacao de estofados,,Nao equivale a limpeza de obra,NAO_PRECIFICADO,por peca,tecido produto equipamento e processo,sim,Confirmar operacao
+F09,Limpeza de ar-condicionado,ar_condicionado,Manutencao distinta de instalacao,NAO_PRECIFICADO,por aparelho,limpeza reparo e troca de componentes,sim,Confirmar modalidade
+F10,Espelho com LED,ilu_fita_led,Iluminacao relacionada mas fixacao nao incluida,NAO_PRECIFICADO,por unidade,produto suporte alimentacao e infraestrutura,sim,Confirmar modalidade
+F11,Box e janelas,portas,Esquadria relacionada mas produto distinto,NAO_PRECIFICADO,por unidade,medidas fixacao vedacao e fornecimento,sim,Definir escopo de instalacao
+F12,Forno cooktop e coifa,ele_eletrodomesticos,Equipamento relacionado com variantes possiveis,NAO_PRECIFICADO,por unidade,recorte duto ligacoes e fixacao,sim,Separar cada equipamento
+F13,Suporte de TV,ele_eletrodomesticos,Refinar instalacao de equipamento,NAO_PRECIFICADO,por unidade,base peso suporte e cabos,sim,Confirmar se item atual inclui fixacao
+F14,Tanque e cuba dupla,hid_cuba_pia,Instalacao hidraulica relacionada,NAO_PRECIFICADO,por unidade,produto bancada ligacoes e adaptacoes,sim,Definir variantes
+F15,Gabinete pronto e arara,mar_instalacao_movel,Montagem pronta distinta de fabricacao,NAO_PRECIFICADO,por unidade,pecas fixacao e ferragens,sim,Definir variantes
+F16,Disjuntor avulso e kits eletricos,ele_quadro,Quadro relacionado mas troca avulsa distinta,NAO_PRECIFICADO,por circuito ou unidade,dimensionamento circuito novo e material,sim,Confirmar modalidades
+F17,Pisos com minimos degraus e combos,porcelanato,Familia existente requer regra comercial,NAO_PRECIFICADO,m2 ou degrau,area minima preparo remocao e pacotes,sim,Definir unidade e minimo sem alterar regra atual

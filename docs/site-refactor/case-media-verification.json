@@ -1,0 +1,3573 @@
+{
+  "verifiedAt": "2026-10-11T04:58:06.625Z",
+  "delivery": "/home/romeu/Downloads/ENTREGA_FRANCO_ROMEU/08_SITE",
+  "originalCount": 120,
+  "originals": [
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/004__exec-d05e8127-fa14-436f-99cc-9a2887e1fe6a.png",
+      "sha256": "10a3d7a3f67575961d94a1800276ede4c185ca5eb31a21b150ad3f93fa508bbe",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/005__exec-d87dfb4f-c474-4d2e-b40b-20ef2cd37b1e.png",
+      "sha256": "f95547b93191e8129eb0c6e027d79ad89819be9b7527eced89c8e47cbc0b7286",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/020__exec-753d3e0b-ebc7-41a8-a4fb-70df43458e75.png",
+      "sha256": "80a427276cef236642098bef4e5eea2810f7558acdca30ba11d1635f05a13a4a",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/021__exec-e6c0910a-3674-44ac-9aa8-4b7208b5d876.png",
+      "sha256": "bb389b3707019bb269b0b561e15760784a050b8c1c160de07c1b00d3c0005e51",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/040__exec-14e461ad-e91e-4dc5-bd68-ec1375f12029.png",
+      "sha256": "f48e737a207c219a672756cc9449f89bba8ba3aebd60e89a536ed0d297f281b5",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/043__exec-1ad84d93-df43-4660-a1b7-d6bfda67fc61.png",
+      "sha256": "343d0651684027dcbeabbfc0fae40056d3427bde4c73ea7e5943304b55de9b04",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/045__exec-48309691-99cd-4e71-8441-b60d871fe4a9.png",
+      "sha256": "8c633189e65ed5dcf007b93563ba2c9e7b418313fbfd9235f3f9fd9e71b2abd4",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/046__FR_PILOT_V2_CAM_MINI_ILHA_01_EXECUTADO_4X5_CANDIDATE.png",
+      "sha256": "f980ab5bf787b158465c06d1b0d96643df463da73e7ad87879d07d00015c3d87",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/061__FR_G05_CAM02_C_PROJETO_CLOSE_COOKTOP_v1_CANDIDATE.png",
+      "sha256": "1ace6819d27f62f71dcb694a12f439c72da0b843d33361593e747f66841d9a84",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/063__FR_G05_CAM02_D_EXECUTADO_CLOSE_COOKTOP_v1_CANDIDATE.png",
+      "sha256": "1e0bbd778ea37dc6e872ba82edc40adc9f74b0337405fe9b767f01aaefd5aec4",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/065__FR_G05_CAM01_D_EXECUTADO_45G_v1_CANDIDATE.png",
+      "sha256": "60f4a0c110cb40f1f79aa8a72a0905426553753d151dca43b17458a336b0b505",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/066__FR_G05_CAM01_C_PROJETO_45G_v1_CANDIDATE.png",
+      "sha256": "d0ca9c7352c86c81bd9b389a07ffdc13fa8e960940f0dab2f7c8e822a087c76f",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/068__FR_G06_CAM01_D_EXECUTADO_LED_ACESO_v1_CANDIDATE.png",
+      "sha256": "0f1e7b3db762f8c7493e607cf988dd403461f12d4344b9311301e689e57745b4",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/126__FR_G10_CAM09_D_EXECUTADO_RIPADO_v1_CANDIDATE.png",
+      "sha256": "17afd9ed8677e257976b37f73f54ff4fffcd02cc2183551055aecf283fd978d2",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/158__FR_G11_CAM01_D_EXECUTADO_COOKTOP_NZ64H37070K_v1_CANDIDATE.png",
+      "sha256": "7e1fdb284ac93b4e4caa292af10126cc0a210f2349fb16bd72dbd7ed7374ffd1",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/160__FR_G11_CAM01_C_PROJETO_COOKTOP_NZ64H37070K_v1_CANDIDATE.png",
+      "sha256": "44c59154f0f9d77faaa085937bb60f3d6ab5fd483f913fc39a1b8eb2dbaefea9",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/179__FR_G08_CAM01_D_EXECUTADO_COZINHA_ACESO_v1_CANDIDATE.png",
+      "sha256": "5afcbc450a7188a661530d2ee6aa91b94b6a5975c09e4a4c9670ad62fe97d26f",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Bancada cinza e Calacatta na cozinha-12.png",
+      "sha256": "8b1be5288e9a1455ac7c40c08202b6d79b6de04801d7b3af203ed22c6d43ef95",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Bancada cinza em L com frontão Calacatta-2.png",
+      "sha256": "45222b69bbc5b8eeac090a8f84275e271fb476ce4be5c59574bac60c177c7942",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Correção do LED esquerdo da cozinha-11.png",
+      "sha256": "986cf342224e81f1832c0d84df08bdf046b8a6981ebb164a9d61427944e9ce86",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Cozinha Calacatta com torneira Kokay sem alavanca-3.png",
+      "sha256": "39e6e58ac45362c6c091501cfc8371e3801c33146349c535fb76c720338533e4",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Cozinha contemporânea com lavanderia integrada-5.png",
+      "sha256": "2e9a1d36454418aeb915fd9c24da3d1f5f44d80ccd9b3e26c5b1cb3ecfea8246",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Cozinha demolida com azulejos brancos antigos-1.png",
+      "sha256": "a2e373872f20ce3d5ee0cf0474a4ede42e90d795f1d4b7822dbfe7f494e0663a",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Cozinha desmontada, azulejos brancos e teto original-18.png",
+      "sha256": "97fd574b27a24f8591199d282d586e8ad0166ba2e5bb56deb4d0ef54b8fbe284",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Cozinha em L com ilha técnica-4.png",
+      "sha256": "baca27c082382836d88591b8d292b7b92d65fac85396140ccefb1bdb62e6d9ed",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Cozinha em demolição com azulejos originais-15.png",
+      "sha256": "76e855065475cbc5077a6b2603a1010f5c2489117d4d00969d06123177085237",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Cozinha moderna com LEDs em L-8.png",
+      "sha256": "e4b37ac18d80c473938b8dabab3c4e02f81e5632bd7f5a8c07f65aaa5e15d16b",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Cozinha moderna com ilha e painel ripado-1.png",
+      "sha256": "f4512475bcc65053c12db4e5e83ffcd79c5748a0f621c1f2c3a37f52f49650ac",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Cozinha planejada com bancada Calacatta.png",
+      "sha256": "4da90c1f3d26fc815387624d4be97b7cb4232baa5a0b8b68c653607e66c2e56e",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Cozinha planejada com torre quente e vitrine-1.png",
+      "sha256": "877c8391e5a81e23ed74187064a06dc21a9f3bb11038614fd4fb9ce11fd57c9a",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Cozinha técnica 3D em cinza-2.png",
+      "sha256": "7df3e185c2754cfa200dcaa753b835ce0d18fab39aee08d75a9f260fdc4e14a0",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Cozinha vazia com azulejos brancos originais-16.png",
+      "sha256": "2d491895a6800a73db0760f3e1e1cdb7443b4e84335c6bceaf99db33e458b790",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Dois perfis de LED em L-3.png",
+      "sha256": "b0c4a0d6af236dc21b3a79a031bd7e329c919291da77452029e29ce5d3f91c1b",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/FR_V3_CAM04_RIPADO_LED_PENDENTES_45_EXECUTADO_4X5_CANDIDATE.png",
+      "sha256": "f9abaacdbe450f2572db93f2718afa731183b8e9c337517be4aadaefd99d30a3",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/FR_V3_CAM05_RIPADO_CLOSE_CINEMATICO_EXECUTADO_4X5_CANDIDATE.png",
+      "sha256": "8634c39bcf47db0c420301a3ee375a6ec733b7dcc2dbddea04ec5b6785120ce2",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Frontão Calacatta em L na cozinha-3.png",
+      "sha256": "a008a941270433b08a510c1ce419aa2abcc673291886c927ae37a6493a7548ea",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Frontão L direito em quartzo branco.png",
+      "sha256": "34d6041412bdef54155096dca07566aa07cc95b97d4af6062c4328b5298742f2",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Ilha de pedra com dois nichos-4.png",
+      "sha256": "39e83ae3cdb95fade61501a242d63358685293d9708522d451bd98d492b473a8",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Mini-ilha_ antes, projeto e execução-4.png",
+      "sha256": "aaf8fc200021e77577062bfa5cd28750f615866e091c878f8ae78a04e7c6b5e5",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Painel central de vidro escuro-6.png",
+      "sha256": "9fe2462dd482033a80744bcb121d29287cf754dee057a0769506d69ab6b85d33",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Painel inferior único em vidro escuro-7.png",
+      "sha256": "f725814fd7fc93209c4571139fa4cb93e841ba377f0acfdf80275e834c48fd4f",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Parede plana revelada com contrapiso cinza-7.png",
+      "sha256": "041cb06df6088fb5a8b07da4be758be850a39a23e2b8f1b8ea169db45ba4fdbe",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Prévia 3D técnica sem cotas-4.png",
+      "sha256": "4b216c7e0b01fe5c2f909b88efdb5a0e9943afa5d158d0725ef673238175f463",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Prévia arquitetônica da cozinha com ilha-14.png",
+      "sha256": "e3f45a71e307b2cb69b7ff097da12c55b084d05e076528a8d4e9fa5c10c24d66",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Prévia técnica 3D sem cotas-3.png",
+      "sha256": "cbe97078012f15b954a1abd7818233058505a87e68bbcbbcfa838bc762573d08",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Prévia técnica da cozinha com ilha-13.png",
+      "sha256": "9ef5cf080814f30438d48777c812a5f47e448562c586d19b503d73cece12022c",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Prévia volumétrica da cozinha com ilha-9.png",
+      "sha256": "55a2676b5df88a573d8e531b4d1e7f9902d5a12e18adc01f74c39693ad364670",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Torre de forno e micro-ondas-1.png",
+      "sha256": "78d797da36e52beea068763d8beff3599217e27dd06637a0a6e3fc5ce42896a9",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Vista técnica da torre quente cinza-4.png",
+      "sha256": "33ec3b99ba4271d89ce947965f6384fcd1c1cc8da5efcb73d9f3c72cf3b889f3",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Vista técnica do tampo cinza-3.png",
+      "sha256": "c6eb8354c773e8bcecc4e8627754ddecac8c26b36f68fbf3587e111d2a55803b",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/006__exec-66c8a5c9-62f6-4f68-953a-c53f6a6fc705.png",
+      "sha256": "3694d6635fe93cee867d5fbccbf713e2d3285d4420383f9d851ffd6a497769b1",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/011__exec-6f41dcea-75b0-4b6c-a52f-93224f86d6c4.png",
+      "sha256": "c4d0ce23c6dcce776b70e6c2597753690ffc844bbf2deae8c4338dbeb5d31d7e",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/013__exec-035d4ee0-a13c-407b-9552-5d5ba040d091.png",
+      "sha256": "60c773787f71530b03713ea978df38c091d0fd327a65731ddd4ee784f6a9404e",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/018__exec-ecbe877f-b081-4c36-94dd-e7d477c27e96.png",
+      "sha256": "519b3afd4826065f859a3f476fa54004f58115a16e8c4824bf08a505f0cb9c9e",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/023__exec-7f3998d1-f6f0-4f04-ae77-b9ff733a91b7.png",
+      "sha256": "fdb6e220af414d1fbcf7244ea33e6294769b17fdd7eb1c0d395eb90f25ba31de",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/025__exec-87eec336-8742-43e2-9ece-f82a7590c6ee.png",
+      "sha256": "6a31d21c884e68924afdcf5ee2407e448ef6f74aaad961ef93d144898885a4d5",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/029__exec-169d8e1c-8872-461d-b812-f77cf09c7a47.png",
+      "sha256": "c9098d450c5629a52f12e189e08a547c868c299ede27a56d16b5b378f281837f",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/030__exec-fc9003cb-689f-4479-b32b-f9ed9486cc36.png",
+      "sha256": "5fbdc555a37866ba758b2f6916ecdf1a14746a4cd627610666a8a6f9c5037897",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/035__exec-35230136-d86e-412a-a8a7-93769f6235c9.png",
+      "sha256": "09b62863b656a8a6e511a08567ed11195b6fe318fb1a5ace63424cc6b79524e8",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/036__exec-fa5f948c-6e21-4da5-8c0a-5d1ff3cd3d4f.png",
+      "sha256": "3dda9463c4f31c07c7ddbab91fe2bd8eecb4bc0ffbbf7db68494f30a1272412a",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/038__exec-1856c518-ccf7-41d2-962d-8e93d2f52dda.png",
+      "sha256": "6d4491050adabf420fa48e6b3a091cfa371a56b1b178f35c49ccfa3cf3a8aa54",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/094__FR_G10_CAM03_D_EXECUTADO_PERNA_LATERAL_v1_CANDIDATE.png",
+      "sha256": "437bc843bb5251e5b1c9ff94a8323559012e51bc64ecfe7624e975d7c03d7659",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/095__FR_G10_CAM05_B_PROCESSO_RECORTE_LIXEIRA_v1_CANDIDATE.png",
+      "sha256": "ff718d30a5a5a4f754c8452537dabf42d3769bec8e1bbd6cf2082f95ef9ac297",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/101__FR_G10_CAM08_D_EXECUTADO_PORTA_VIDRO_v1_CANDIDATE.png",
+      "sha256": "d102d0d1aff3014562c61c1c9cb632941ae1fc699956135df1556a23ae43cbe1",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/102__FR_G10_CAM07_D_EXECUTADO_MARCENARIA_AMADEIRADA_v1_CANDIDATE.png",
+      "sha256": "a3d791e9aa53f5af32fcaa1ecf6c749c36373f7126b89de934a48a79259a4a19",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/109__FR_G10_CAM06_B_PROCESSO_MARCENARIA_GRAFITE_v1_CANDIDATE.png",
+      "sha256": "225f9414985a4a7ee19bdbeb35cb63487ecc96e188f7a8ff67394a808040f9bb",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/120__FR_G10_CAM03_B_PROCESSO_PERNA_LATERAL_v1_CANDIDATE.png",
+      "sha256": "55edbae01cd0fbd8dfe47c8e24f5b7cf1b8838b39eaf142fabd51c31dac73537",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/122__FR_G10_CAM11_D_EXECUTADO_ENCONTRO_MOVEL_PEDRA_v1_CANDIDATE.png",
+      "sha256": "26226004ddb43cbd8e1dd4287982e18b554b9bca8a69f436f2fd9207002a6fe6",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/128__FR_G10_CAM05_D_EXECUTADO_RECORTE_LIXEIRA_v1_CANDIDATE.png",
+      "sha256": "37277556c74b2efdb78080408d7bb1f4ea0b9916076c723943a316da54d51580",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/131__FR_G01_CAM01_C_PROJETO_FRONTAL_v1_CANDIDATE.png",
+      "sha256": "7ff3ea650a289f04fcbe54aff8c1b0c3ebc79932b3fbc39cbc1c192874c7c858",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/132__FR_G01_CAM01_D_EXECUTADO_FRONTAL_v1_CANDIDATE.png",
+      "sha256": "5751563a5e918a6276bed6848da7b0d5d084960829e529e2b10dc404df6adb90",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/133__FR_G02_CAM01_D_EXECUTADO_45G_v1_CANDIDATE.png",
+      "sha256": "9578b1b00ec0f5b17180bd3c53b8fc1fc597608e565d07c82433773046cd19cf",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/134__FR_G02_CAM01_C_PROJETO_45G_v1_CANDIDATE.png",
+      "sha256": "c6925723a8ef1be6e9ce3c55ccaf856beb718c03b9ec5a0d0b8307527f5023cd",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/141__FR_G12_CAM08_B_PROCESSO_INSTALACAO_PORTAS_v1_CANDIDATE.png",
+      "sha256": "3b26be1d0f83e0fa7d267416465ec6c5441bde86f154ef0c25ca98006fff8916",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/144__FR_G12_CAM07_B_PROCESSO_INSTALACAO_MARCENARIA_v1_CANDIDATE.png",
+      "sha256": "071f892b337fa5ddf2e3d8bf0bb689a2da8ee28147ee319f47b3ffea678bda95",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/145__FR_G03_CAM02_B_PROCESSO_CLOSE_ENCONTROS_v1_CANDIDATE.png",
+      "sha256": "71d68e898301d7482c19510732cb654b0c7c077418a2111af6d8981241d5f79c",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/146__FR_G03_CAM02_D_EXECUTADO_CLOSE_ENCONTROS_v1_CANDIDATE.png",
+      "sha256": "468727e89a603a4f9d810b2e4b44c06ebe74399d0304a032995cf6adfbe94374",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/147__FR_G03_CAM01_B_PROCESSO_45G_v1_CANDIDATE.png",
+      "sha256": "af42cee17410db87d197b7f303f1f4afb44c7e4b9142ffd25eb26e60a8350283",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/149__FR_G03_CAM02_C_PROJETO_CLOSE_ENCONTROS_v1_CANDIDATE.png",
+      "sha256": "6d1e19db75067ab7971fb0a1c1c6ee9037c75e6bfd100321b31d5738a6f3cc12",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/186__FR_G03_CAM03_D_EXECUTADO_CLOSE_RECORTES_v1_CANDIDATE.png",
+      "sha256": "885465571ac43045ed238b65b0d28551f3a3382ac72ad280e41f4737d28f6d3d",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/187__FR_G03_CAM01_D_EXECUTADO_45G_v1_CANDIDATE.png",
+      "sha256": "a4bd44ba2b5cb46af9355f67ee2de42defac6af791637c75f64ed9e37830186c",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Afastamento direito corrigido para 5 cm.png",
+      "sha256": "05eb01d8976517e1f9601351c4b96093213e25367f4c2e27f66aa5cc21d9cdc1",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Bancada Calacatta com cuba e aéreos assimétricos-2.png",
+      "sha256": "1f5bb38a4070e00d2a91252fcf91d1457a93add300fecd9575ff86b97c6f7069",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Cozinha desmontada, azulejos brancos e teto original-18.png",
+      "sha256": "97fd574b27a24f8591199d282d586e8ad0166ba2e5bb56deb4d0ef54b8fbe284",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Cozinha em L com ilha técnica-4.png",
+      "sha256": "baca27c082382836d88591b8d292b7b92d65fac85396140ccefb1bdb62e6d9ed",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Cozinha em L com torre quente-2.png",
+      "sha256": "32499ad2d3dd10935766a5ea94715c9b242cba835e29c91041ee4de54b6d1618",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Cozinha em demolição com azulejos originais-15.png",
+      "sha256": "76e855065475cbc5077a6b2603a1010f5c2489117d4d00969d06123177085237",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Cozinha frontal em CAD, clay e wireframe-2.png",
+      "sha256": "86059cdf6d75169caf87f9c06a13d89de2cd61cf2900b074d9afeb463a2d583a",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Cozinha moderna com ilha e painel ripado-1.png",
+      "sha256": "f4512475bcc65053c12db4e5e83ffcd79c5748a0f621c1f2c3a37f52f49650ac",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Cozinha planejada com bancada Calacatta.png",
+      "sha256": "4da90c1f3d26fc815387624d4be97b7cb4232baa5a0b8b68c653607e66c2e56e",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Cozinha técnica 3D em cinza-2.png",
+      "sha256": "7df3e185c2754cfa200dcaa753b835ce0d18fab39aee08d75a9f260fdc4e14a0",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Estante vazada de madeira na lavanderia-2.png",
+      "sha256": "6b28e6add278bd6b2699a780e28f72f1a723ec855955324160200be23333d4e4",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Estação Kokay preta sobre bancada Calacatta-3.png",
+      "sha256": "8cfe99f411949a79860c20448eff02ea00a3c56f4e5cac9aa13a94c56ae27599",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Estudo volumétrico da cozinha com ilha-10.png",
+      "sha256": "3fe2cb429d6c9cfd5ccb8f54e8868f3d8408538e2121c0eaf1b1e0b27b179c74",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/FR_V3_CAM01_COZINHA_LADO_DIREITO_GELADEIRA_45_EXECUTADO_4X5_CANDIDATE.png",
+      "sha256": "b7a04ef330a8b618033c13c608bd19be739ba755aa5ac73d463389aff4ab28f0",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/FR_V3_CAM02_COZINHA_INTEGRACAO_AMPLA_EXECUTADO_4X5_CANDIDATE.png",
+      "sha256": "ee74ab3ef2bd65e37bbdfd111fe3c05ca5dc14c741597560e418848a79fa65cd",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/FR_V3_CAM06_CUBA_KOKAY_CALACATTA_CLOSE_EXECUTADO_4X5_CANDIDATE.png",
+      "sha256": "704cae5d352263d33b8fab827152868ef78b3788c396c74c42f3eff2e73f2e68",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Geladeira BlackInox com tela e janela-5.png",
+      "sha256": "0c3916ba68feaeb28ff897610b893d601b12d070e2513fc7b1df5d213e71a795",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Modelo 3D técnico_ geladeira lado a lado-1.png",
+      "sha256": "5c5d18dd1be565dc3c45cf3ef5420b8e7e38b9390cdf14782d68fdea3568589e",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Modelo técnico 3D de cozinha com cuba-7.png",
+      "sha256": "e855f80e2529b38be16cdcdeea36aaf1ff83b6311fb52428022dfe90f3863729",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Modelo técnico frontal de quatro frentes-2.png",
+      "sha256": "134fab7c7807479197ea08932a22de70b9845756a98a40c94efc42a95cdf1740",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Painel de vidro único em cinza escuro-8.png",
+      "sha256": "f63a72fefd63ca8b1913e9d54ab19e656cb058e9f0e474f17fd10b987f0f62ec",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Parede de azulejos contínua sem saliência-6.png",
+      "sha256": "88353144b4c87aabf759b4b13d1f2c9cadfa0329acb4e97fe983e851625f9098",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Peça L de pedra com cotas técnicas-4.png",
+      "sha256": "699e9d8ac1febb7c2d87d679dbd3d2b83098c729604ea9768d769ce6671487f7",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Prévia 3D cinza com contornos azuis-2.png",
+      "sha256": "66df774c0e8c74db6e9650ad9f1cd79de06e4591d39675b32bdd507f825e1bf4",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Prévia 3D técnica sem anotações-3.png",
+      "sha256": "9c5025f2a1ec77f0ea03db54107ccbfe2651794eef11d72e2acc237e866166e2",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Prévia 3D técnica sem cotas-1.png",
+      "sha256": "2dd45b193b9d970257c119a58a275e52c4709a6011fb8eb6b9a10007291a1e24",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Teto da cozinha_ dois LEDs em L-6.png",
+      "sha256": "9313fb13273c5711ad05d61f238562c1d0604cd59027b72f098845deb1824b05",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Torneira minimalista com seletor preto-4.png",
+      "sha256": "b239e5912188239c8346597a3ceb6ac0385e4880ff0ba3800527ee4220a4518c",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lavanderia moveis led sequencial teto e pia de marmore da cozinha de frente a janela/008__exec-0b39e0bc-cd13-4ed8-86a3-bb83e5aede44.png",
+      "sha256": "85813fc193f39d38750eff4c85cbf9a04163b0cf73859eb3a52a8fc52913eda4",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lavanderia moveis led sequencial teto e pia de marmore da cozinha de frente a janela/012__exec-955ac94f-571c-4ee9-b4db-e7f8b7c40408.png",
+      "sha256": "31180d4c47247154dadeb4dd4c1b16dd82e82d3dd390d7d03680906e03fd0f0b",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lavanderia moveis led sequencial teto e pia de marmore da cozinha de frente a janela/024__exec-0fad86d0-b44c-4021-b8c0-3566d8f8ad67.png",
+      "sha256": "2f50725789c0e791eb1d7b59c52aba74bb73607c79d914eb01f4ba071be585a6",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lavanderia moveis led sequencial teto e pia de marmore da cozinha de frente a janela/037__exec-221b8260-2447-4111-840d-a6a8995d6843.png",
+      "sha256": "a88a9f59c3d6fe95611a28ed40a3344f9afb4863a8b3320e07893c061a346a48",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lavanderia moveis led sequencial teto e pia de marmore da cozinha de frente a janela/047__FR_PILOT_V2_CAM_HERO_LAVANDERIA_01_EXECUTADO_4X5_CANDIDATE.png",
+      "sha256": "3f4e92fbe0c837d1e428fd6687714746b88d12bdc5c04a2cc27f5dda75372790",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lavanderia moveis led sequencial teto e pia de marmore da cozinha de frente a janela/054__FR_V2_CAM_LAVANDERIA_DUPLO_L_CLOSE_01_EXECUTADO_4X5_CANDIDATE.png",
+      "sha256": "ed27d28ee6493869ec70a9007fe47b608e2e0f1714fedcc1bb334b782bf10ce1",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lavanderia moveis led sequencial teto e pia de marmore da cozinha de frente a janela/170__FR_G08_CAM02_D_EXECUTADO_LAVANDERIA_ACESO_v1_CANDIDATE.png",
+      "sha256": "be0c6b6ccdf8534d722ff70f895365a7cdee43bc1a9fcf38385c6183e6a9f44d",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lavanderia moveis led sequencial teto e pia de marmore da cozinha de frente a janela/Lavanderia estreita com bancada de quartzo-6.png",
+      "sha256": "ad9f695aa3938f469c5ee8516704c5ea51f9df6c88562a84748124f8c764a045",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lavanderia moveis led sequencial teto e pia de marmore da cozinha de frente a janela/Lavanderia estreita com linhas de luz-7.png",
+      "sha256": "31180d4c47247154dadeb4dd4c1b16dd82e82d3dd390d7d03680906e03fd0f0b",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lavanderia moveis led sequencial teto e pia de marmore da cozinha de frente a janela/Lavanderia estreita com perfis de LED paralelos-3.png",
+      "sha256": "2f50725789c0e791eb1d7b59c52aba74bb73607c79d914eb01f4ba071be585a6",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lavanderia moveis led sequencial teto e pia de marmore da cozinha de frente a janela/SKIILS.png",
+      "sha256": "c61732147e5a6162efe1d1ec9b1ecf3f45610cf1b156c2a6217e23b93faf5ce3",
+      "publication": "not_published_original"
+    }
+  ],
+  "assets": [
+    {
+      "id": "M005",
+      "context": "docs/site-refactor/media-context/FR_COZ_DIR_ILHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M005_MASTER.md",
+      "contextSha256": "d5ee27e3806f52db86451d45f3467561dba79ed6a401c6190ac72bc03f356c2c",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_DIR_ILHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M005_MASTER.md",
+      "sourceHash": "f95547b93191e8129eb0c6e027d79ad89819be9b7527eced89c8e47cbc0b7286",
+      "label": "IMAGEM ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M005-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M005",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "6e739ba2c9c725465abba509681add4ebf8f9228d7ac696b3272663172ca2fcc",
+          "bytes": 29072
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M005-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M005",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "a97061557b3a8d901ca0feeeca8640d6d63cfd149cd4970f019897613ef89ea6",
+          "bytes": 67438
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M005-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M005",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "90a14e23624a5a4a36a0be7988ca3e37f9bf507a2743dd058e5233a666f40ea5",
+          "bytes": 86340
+        }
+      ]
+    },
+    {
+      "id": "M020",
+      "context": "docs/site-refactor/media-context/FR_COZ_DIR_ILHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M020_MASTER.md",
+      "contextSha256": "718ad872f43e2318681e71f7bc7dfafd6a16bb180186a52f7d5c69be3e9295dd",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_DIR_ILHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M020_MASTER.md",
+      "sourceHash": "80a427276cef236642098bef4e5eea2810f7558acdca30ba11d1635f05a13a4a",
+      "label": "IMAGEM ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M020-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M020",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "f1a8cb6b6a1f291f8744d0135489280c3981b45a3ae07670d85869e26807848a",
+          "bytes": 22262
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M020-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M020",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "56ed2d4df818af33ddb1a7f0e1a73926aac77bac5940f45607c4d8e84a43b66c",
+          "bytes": 55260
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M020-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M020",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "5e13b584079db2d4aa199526f53592791753d4cf8c18a623d4b4571fb090f838",
+          "bytes": 71798
+        }
+      ]
+    },
+    {
+      "id": "M022",
+      "context": "docs/site-refactor/media-context/FR_COZ_DIR_TETO_COZINHA_PROJETO_3D_ILUSTRACAO_M022_MASTER.md",
+      "contextSha256": "f1310a711c3cf6f43a76c3983169f85f5d25c9a048b129622c7c8706d53afa43",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_DIR_TETO_COZINHA_PROJETO_3D_ILUSTRACAO_M022_MASTER.md",
+      "sourceHash": "8c6cd031af8654b388aa915e8f76ac53b1c14815bd01e10737e4196dce6450f8",
+      "label": "ESTUDO 3D ILUSTRATIVO",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M022-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M022",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "09b8e588f49fc6ae6c1a8f01502dcf8c4bdd26a0ba453c4116c8a6b6ffce76a2",
+          "bytes": 23344
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M022-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M022",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "6720dcec9b34f0a09df5cf308eee57aa20371ccf7d26e77544f630ee1e70b223",
+          "bytes": 68658
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M022-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M022",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "adecaa13129ee1f7b530be4a64b01870c583dfa48d82763bd3835ab36eb707a4",
+          "bytes": 86008
+        }
+      ]
+    },
+    {
+      "id": "M040",
+      "context": "docs/site-refactor/media-context/FR_COZ_DIR_TETO_COZINHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M040_MASTER.md",
+      "contextSha256": "e8a6f38ab43f93ac29a19372e4148e74db84419c8c549c463de7b6470805e2c4",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_DIR_TETO_COZINHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M040_MASTER.md",
+      "sourceHash": "f48e737a207c219a672756cc9449f89bba8ba3aebd60e89a536ed0d297f281b5",
+      "label": "IMAGEM ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M040-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M040",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "51fa8b94179fdde7581c4a9abab3d009a7be02a99896333361d6a5ac602ca7f9",
+          "bytes": 21094
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M040-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M040",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "67cbca7325b0a028d88e5d9dc7a8d4314dafcf2c13ca43cf60301a13ff9f65f3",
+          "bytes": 62072
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M040-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M040",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "3a5008dcbe9b1e6370025d8befa5f8d1cabb4498ddb87a76ee8d9ef6e65816ff",
+          "bytes": 84902
+        }
+      ]
+    },
+    {
+      "id": "M045",
+      "context": "docs/site-refactor/media-context/FR_COZ_DIR_ILHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M045_MASTER.md",
+      "contextSha256": "10a9e38d50385b9f78a23277b4d3ad0f47fb4bcc0f6d19a516113fefd730a325",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_DIR_ILHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M045_MASTER.md",
+      "sourceHash": "8c633189e65ed5dcf007b93563ba2c9e7b418313fbfd9235f3f9fd9e71b2abd4",
+      "label": "IMAGEM ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M045-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M045",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "7617cc545d8d7b5a4f23b3edffb06de4b9f954d374579787843144450096dc17",
+          "bytes": 32874
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M045-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M045",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "2b568ca2e80689a4c0d424a2c047a4081f23c3e8703522d3d9c1ba4b6180a7ae",
+          "bytes": 93170
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M045-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M045",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "a3247d2844a5c3ff2b1f3848e0a5f00e0923bdb3d658d07550c91c1b09eb618d",
+          "bytes": 124818
+        }
+      ]
+    },
+    {
+      "id": "M061",
+      "context": "docs/site-refactor/media-context/FR_COZ_DIR_ILHA_PROJETO_3D_ILUSTRACAO_M061_MASTER.md",
+      "contextSha256": "898711aed468431b7c251ed60fca8f951d84cd1b62400b7163fe6e0f5ea466c8",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_DIR_ILHA_PROJETO_3D_ILUSTRACAO_M061_MASTER.md",
+      "sourceHash": "1ace6819d27f62f71dcb694a12f439c72da0b843d33361593e747f66841d9a84",
+      "label": "ESTUDO 3D ILUSTRATIVO",
+      "state": "aprovado",
+      "native": [
+        2160,
+        2700
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M061-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M061",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "ae29e1d21ad1a0bb7681a53ce4391fc6b349d8bfaa9036b98162531baec57b2d",
+          "bytes": 25588
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M061-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M061",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "bb34fc6fb330d9ef5e52a1014d7be84cfe06b139302c36f75d936c406e57640a",
+          "bytes": 72344
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M061-1600.webp",
+          "width": 1600,
+          "height": 2000,
+          "source_media_id": "M061",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "6089ade47189a9304ac65bba289547a6cb2c7cfd6319062f2af66e2abcc00ef5",
+          "bytes": 155334
+        }
+      ]
+    },
+    {
+      "id": "M066",
+      "context": "docs/site-refactor/media-context/FR_COZ_DIR_ILHA_PROJETO_3D_ILUSTRACAO_M066_MASTER.md",
+      "contextSha256": "d486409a7863b73fa0d3b66638247d4b1a95cfe678668510e7debe5c8e63ef7f",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_DIR_ILHA_PROJETO_3D_ILUSTRACAO_M066_MASTER.md",
+      "sourceHash": "d0ca9c7352c86c81bd9b389a07ffdc13fa8e960940f0dab2f7c8e822a087c76f",
+      "label": "ESTUDO 3D ILUSTRATIVO",
+      "state": "aprovado",
+      "native": [
+        2160,
+        2700
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M066-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M066",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "72c6c670fff29b22e13c397ea537067df63755e4630b6c02389350c09a5a8f71",
+          "bytes": 26086
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M066-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M066",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "a9a8fa3d81b64f7297e6620b9a758df9a621c36862f6fa9654ed7302387cfa1b",
+          "bytes": 76764
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M066-1600.webp",
+          "width": 1600,
+          "height": 2000,
+          "source_media_id": "M066",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "d5cd6add09f4d74f512365382cef1457b836ce497c154a13fbe24d9ac992fe0a",
+          "bytes": 165546
+        }
+      ]
+    },
+    {
+      "id": "M160",
+      "context": "docs/site-refactor/media-context/FR_COZ_DIR_ILHA_PROJETO_3D_ILUSTRACAO_M160_MASTER.md",
+      "contextSha256": "b88991fdc414bcaf3879d69f64636bac6a684ce572a031f7935d112f5571083c",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_DIR_ILHA_PROJETO_3D_ILUSTRACAO_M160_MASTER.md",
+      "sourceHash": "44c59154f0f9d77faaa085937bb60f3d6ab5fd483f913fc39a1b8eb2dbaefea9",
+      "label": "ESTUDO 3D ILUSTRATIVO",
+      "state": "aprovado",
+      "native": [
+        2160,
+        2700
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M160-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M160",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "6c94cd952acedc733b04f224133cefe3b74876416ea69c2325c174d81bb6f624",
+          "bytes": 27882
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M160-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M160",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "49ec60fcfb91d0540e480d394994d78649accbb4c995faff0134a1f14840d852",
+          "bytes": 86500
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M160-1600.webp",
+          "width": 1600,
+          "height": 2000,
+          "source_media_id": "M160",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "ec4994d30240717ad41dcdc0ac25dedbb306a4224ef42f16ce6b5f495a769396",
+          "bytes": 200442
+        }
+      ]
+    },
+    {
+      "id": "M_8b1be5288e",
+      "context": "docs/site-refactor/media-context/FR_COZ_DIR_FRONTAO_DIREITO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_8b1be5288e_MASTER.md",
+      "contextSha256": "56470268272e2154954a945cc800893151e376067ba9cf860fdeb1cd63974000",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_DIR_FRONTAO_DIREITO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_8b1be5288e_MASTER.md",
+      "sourceHash": "8b1be5288e9a1455ac7c40c08202b6d79b6de04801d7b3af203ed22c6d43ef95",
+      "label": "IMAGEM ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_8b1be5288e-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M_8b1be5288e",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "b5b657c0c56d0e7d5d6e3b73ea998f7e54a0ac26acb0b82df578d88dc8ac30e6",
+          "bytes": 39964
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_8b1be5288e-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M_8b1be5288e",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "ab4af3f8d2f6a06a8ebd1d99975b6765162038e0ccaf6d967cd9fe8bad670e35",
+          "bytes": 109292
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_8b1be5288e-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M_8b1be5288e",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "09bae9ea25c5359bd1aab3dba82ecde6187098f61f29b23aa6865dea6cc22e87",
+          "bytes": 134352
+        }
+      ]
+    },
+    {
+      "id": "M_45222b69bb",
+      "context": "docs/site-refactor/media-context/FR_COZ_DIR_FRONTAO_DIREITO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_45222b69bb_MASTER.md",
+      "contextSha256": "b0adf677c32527ba4e861de26ce463730133a3320cee8dd7e883a9c9286e9c55",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_DIR_FRONTAO_DIREITO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_45222b69bb_MASTER.md",
+      "sourceHash": "45222b69bbc5b8eeac090a8f84275e271fb476ce4be5c59574bac60c177c7942",
+      "label": "IMAGEM ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_45222b69bb-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M_45222b69bb",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "0817a3a65b4355b064490fa1edc132e023e3bd7ed119cb30294e846e6af356f8",
+          "bytes": 23424
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_45222b69bb-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M_45222b69bb",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "19e6ea9424b7d9709d5235c53485e35dbbbb875a4ebabd56dc4ba13c2d019a08",
+          "bytes": 70072
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_45222b69bb-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M_45222b69bb",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "644d59546f9b3d47321ae550497b06cc6415e3533231215fc88d9594459386b0",
+          "bytes": 92656
+        }
+      ]
+    },
+    {
+      "id": "M_986cf34222",
+      "context": "docs/site-refactor/media-context/FR_INT_INTEGRACAO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_986cf34222_MASTER.md",
+      "contextSha256": "ef843ffa9f75066b7d4a394fbc253713ca17ea2ea4c23646baaf4c7250204a95",
+      "sourceContext": "IMAGENS/leiamecodex/FR_INT_INTEGRACAO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_986cf34222_MASTER.md",
+      "sourceHash": "986cf342224e81f1832c0d84df08bdf046b8a6981ebb164a9d61427944e9ce86",
+      "label": "IMAGEM ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_986cf34222-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M_986cf34222",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "ecb0c1c28685c90f29993dc118a08bb523c33f75106f3cda22833e46b61142c4",
+          "bytes": 44336
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_986cf34222-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M_986cf34222",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "88152a17cea29a5659e62e44d92f00497903a23349dd04dda155242799efc76a",
+          "bytes": 118470
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_986cf34222-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M_986cf34222",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "a691bac134aea0e4613f4984aeabacb7fe6184f919e72bea42d971fe3c552030",
+          "bytes": 150452
+        }
+      ]
+    },
+    {
+      "id": "M_2e9a1d3645",
+      "context": "docs/site-refactor/media-context/FR_INT_INTEGRACAO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_2e9a1d3645_MASTER.md",
+      "contextSha256": "37ec8764c487fcbb436d82e9697aed75c859f8b32389b7cb1b592d4a813f1b6a",
+      "sourceContext": "IMAGENS/leiamecodex/FR_INT_INTEGRACAO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_2e9a1d3645_MASTER.md",
+      "sourceHash": "2e9a1d36454418aeb915fd9c24da3d1f5f44d80ccd9b3e26c5b1cb3ecfea8246",
+      "label": "IMAGEM ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_2e9a1d3645-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M_2e9a1d3645",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "7f005ffa9ed796f563e16bd25e2f9844f8524e1967519fa7d5d536371f2e4ab0",
+          "bytes": 44240
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_2e9a1d3645-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M_2e9a1d3645",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "acc9a15825a5ef88c7790be6d97720a3aed25251d4387b17084d6901d0f7d9e9",
+          "bytes": 123944
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_2e9a1d3645-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M_2e9a1d3645",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "99f0756e804198aabe4417d6f752ff1ed7a7ace525b6a67c686282fa6c13d6e5",
+          "bytes": 160396
+        }
+      ]
+    },
+    {
+      "id": "M_a2e373872f",
+      "context": "docs/site-refactor/media-context/FR_INT_ANTES_PAREDE_ANTES_DEMOLIDO_ILUSTRACAO_M_a2e373872f_MASTER.md",
+      "contextSha256": "c94f9c50347c411905c77f4f6b546a85f5b5ab0ea240db071781b5735274ac32",
+      "sourceContext": "IMAGENS/leiamecodex/FR_INT_ANTES_PAREDE_ANTES_DEMOLIDO_ILUSTRACAO_M_a2e373872f_MASTER.md",
+      "sourceHash": "a2e373872f20ce3d5ee0cf0474a4ede42e90d795f1d4b7822dbfe7f494e0663a",
+      "label": "RECONSTITUIÇÃO ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        1402,
+        1122
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_a2e373872f-480.webp",
+          "width": 480,
+          "height": 384,
+          "source_media_id": "M_a2e373872f",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "antes_demolido",
+          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "f4cc146da6adb5e051d8e383fc1ef415a04f8545034a3c66f17c3fbacc308cc1",
+          "bytes": 15504
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_a2e373872f-960.webp",
+          "width": 960,
+          "height": 768,
+          "source_media_id": "M_a2e373872f",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "antes_demolido",
+          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "b7115e8ea0c892fa3f7ba88ebb39c178386f607cdc322da217bceb63330ea2d6",
+          "bytes": 58010
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_a2e373872f-1402.webp",
+          "width": 1402,
+          "height": 1122,
+          "source_media_id": "M_a2e373872f",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "antes_demolido",
+          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "4f0c64a37678ee704d5eee8264e29f3294099f717cd41a58204528d83cf07f07",
+          "bytes": 112300
+        }
+      ]
+    },
+    {
+      "id": "M_2213e004d6",
+      "context": "docs/site-refactor/media-context/FR_INT_INTEGRACAO_ANTES_DEMOLIDO_ILUSTRACAO_M_2213e004d6_MASTER.md",
+      "contextSha256": "0e7ee33b90cb58ec0dc3fdaa14c996db28b82edcf7a8e570d79e19f92eaaafb2",
+      "sourceContext": "IMAGENS/leiamecodex/FR_INT_INTEGRACAO_ANTES_DEMOLIDO_ILUSTRACAO_M_2213e004d6_MASTER.md",
+      "sourceHash": "2213e004d668ffe74f3a9ce594d9d1b90cc8cc87346ae365a308bae4e001ee8e",
+      "label": "RECONSTITUIÇÃO ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_2213e004d6-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M_2213e004d6",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "antes_demolido",
+          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "1ba2012b6312be8335d514811e398c3073c5f265eb1ea03d681f92f4738aa7df",
+          "bytes": 69528
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_2213e004d6-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M_2213e004d6",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "antes_demolido",
+          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "7b965cb8f2d5b3464d01db772f47359d3e048d337461f42d3d3b4665a014866a",
+          "bytes": 255906
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_2213e004d6-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M_2213e004d6",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "antes_demolido",
+          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "d9833190596cd7f221fdb16b1091b79586500ac53a075cea92ee794d431995b7",
+          "bytes": 346678
+        }
+      ]
+    },
+    {
+      "id": "M_97fd574b27",
+      "context": "docs/site-refactor/media-context/FR_INT_INTEGRACAO_ANTES_DEMOLIDO_ILUSTRACAO_M_97fd574b27_MASTER.md",
+      "contextSha256": "57b6847753a68b0e6770b66393c0734bd18995115320dd48ac67eb7dc37fbf57",
+      "sourceContext": "IMAGENS/leiamecodex/FR_INT_INTEGRACAO_ANTES_DEMOLIDO_ILUSTRACAO_M_97fd574b27_MASTER.md",
+      "sourceHash": "97fd574b27a24f8591199d282d586e8ad0166ba2e5bb56deb4d0ef54b8fbe284",
+      "label": "RECONSTITUIÇÃO ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_97fd574b27-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M_97fd574b27",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "antes_demolido",
+          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "6587273514d4590c4e92946e7e6e4c49da37c7716e514d3263af5794522c5c7d",
+          "bytes": 35886
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_97fd574b27-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M_97fd574b27",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "antes_demolido",
+          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "c0d0dc095fec817b827f16d0e491e7b34d3d55a224de3a23d1cd0efb283cedda",
+          "bytes": 129812
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_97fd574b27-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M_97fd574b27",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "antes_demolido",
+          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "e2cf874e3abc8bfea88a7d1b118248b5f63588390c8752545e98e46b74ba7040",
+          "bytes": 176032
+        }
+      ]
+    },
+    {
+      "id": "M_76e8550654",
+      "context": "docs/site-refactor/media-context/FR_INT_INTEGRACAO_ANTES_DEMOLIDO_ILUSTRACAO_M_76e8550654_MASTER.md",
+      "contextSha256": "7688d717f70ed688737772c5f347c2696156c3d07f0de5e382476438aa82948b",
+      "sourceContext": "IMAGENS/leiamecodex/FR_INT_INTEGRACAO_ANTES_DEMOLIDO_ILUSTRACAO_M_76e8550654_MASTER.md",
+      "sourceHash": "76e855065475cbc5077a6b2603a1010f5c2489117d4d00969d06123177085237",
+      "label": "RECONSTITUIÇÃO ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_76e8550654-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M_76e8550654",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "antes_demolido",
+          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "e8ec8750985a3c495e70e45b07038714e293eb456f494bbcde90410f7d7ae8b1",
+          "bytes": 47512
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_76e8550654-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M_76e8550654",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "antes_demolido",
+          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "e72ffade86551cba57769196f9194f403ebded43193f3c3aae89f0acc1dd3be5",
+          "bytes": 171416
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_76e8550654-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M_76e8550654",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "antes_demolido",
+          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "cc17da6ce222753536ceafaddce0281377cec568fa9c12a2eb6fc91838a39b87",
+          "bytes": 230558
+        }
+      ]
+    },
+    {
+      "id": "M_e4b37ac18d",
+      "context": "docs/site-refactor/media-context/FR_COZ_DIR_TORRE_QUENTE_DEPOIS_REPRESENTADO_ILUSTRACAO_M_e4b37ac18d_MASTER.md",
+      "contextSha256": "7d7bad91345c27df83457ad59d0e07ecf1981197c2a5bf8f3289c07b36cd108b",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_DIR_TORRE_QUENTE_DEPOIS_REPRESENTADO_ILUSTRACAO_M_e4b37ac18d_MASTER.md",
+      "sourceHash": "e4b37ac18d80c473938b8dabab3c4e02f81e5632bd7f5a8c07f65aaa5e15d16b",
+      "label": "IMAGEM ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_e4b37ac18d-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M_e4b37ac18d",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "60cc8a849ee154c841153aae14bd2c5332c47f2e301fefb698e5e88e001deb20",
+          "bytes": 38688
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_e4b37ac18d-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M_e4b37ac18d",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "e6d9f24468b2f82ac243055a1851c01f6f8970229881a12b09fe676755ef0cb2",
+          "bytes": 103524
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_e4b37ac18d-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M_e4b37ac18d",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "535dd6bccfa4169c73f303a4fca6c6e192c59e22e5e5f5d245d96924ab1ed824",
+          "bytes": 131488
+        }
+      ]
+    },
+    {
+      "id": "M_f4512475bc",
+      "context": "docs/site-refactor/media-context/FR_COZ_DIR_ILHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_f4512475bc_MASTER.md",
+      "contextSha256": "614514a6b695c49916b182219a2d7a71dd57264b72f44a2bbd324870f6748136",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_DIR_ILHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_f4512475bc_MASTER.md",
+      "sourceHash": "f4512475bcc65053c12db4e5e83ffcd79c5748a0f621c1f2c3a37f52f49650ac",
+      "label": "IMAGEM ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        941,
+        1672
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_f4512475bc-480.webp",
+          "width": 480,
+          "height": 853,
+          "source_media_id": "M_f4512475bc",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "ff2999992b4703648f0ffafc47f75bff95e3fd39415f094c3c5f3e6478e02dfc",
+          "bytes": 56960
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_f4512475bc-941.webp",
+          "width": 941,
+          "height": 1672,
+          "source_media_id": "M_f4512475bc",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "433af225941a734ada1ffa2f9dfd0d16d66dbb81a31d4a7174d24bf7365b5706",
+          "bytes": 151922
+        }
+      ]
+    },
+    {
+      "id": "M_2d491895a6",
+      "context": "docs/site-refactor/media-context/FR_INT_ANTES_PAREDE_ANTES_DEMOLIDO_ILUSTRACAO_M_2d491895a6_MASTER.md",
+      "contextSha256": "62af48ab5ecb328addf3104ef1d697b1e520b8ee006d3cae4495dac78ba250e2",
+      "sourceContext": "IMAGENS/leiamecodex/FR_INT_ANTES_PAREDE_ANTES_DEMOLIDO_ILUSTRACAO_M_2d491895a6_MASTER.md",
+      "sourceHash": "2d491895a6800a73db0760f3e1e1cdb7443b4e84335c6bceaf99db33e458b790",
+      "label": "RECONSTITUIÇÃO ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        941,
+        1672
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_2d491895a6-480.webp",
+          "width": 480,
+          "height": 853,
+          "source_media_id": "M_2d491895a6",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "antes_demolido",
+          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "c572c6f17f43e60d83d792c585ab98ecec18289c9012fcf276e356fed3c5cb70",
+          "bytes": 66540
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_2d491895a6-941.webp",
+          "width": 941,
+          "height": 1672,
+          "source_media_id": "M_2d491895a6",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "antes_demolido",
+          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "bcb00b4943380e3d79d39230533d1974bae4251a7de3e86ad7d5864431b9d7d1",
+          "bytes": 214696
+        }
+      ]
+    },
+    {
+      "id": "M_b0c4a0d6af",
+      "context": "docs/site-refactor/media-context/FR_COZ_DIR_TETO_COZINHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_b0c4a0d6af_MASTER.md",
+      "contextSha256": "b70be2c73c77da015c5afa03d60c3362d6c43f2cb44844c9dfae76d7a153a574",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_DIR_TETO_COZINHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_b0c4a0d6af_MASTER.md",
+      "sourceHash": "b0c4a0d6af236dc21b3a79a031bd7e329c919291da77452029e29ce5d3f91c1b",
+      "label": "IMAGEM ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        941,
+        1672
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_b0c4a0d6af-480.webp",
+          "width": 480,
+          "height": 853,
+          "source_media_id": "M_b0c4a0d6af",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "7468571ca7076849fb79b16bd8f482e269f4535e9d6e6068479a7fc630177710",
+          "bytes": 53114
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_b0c4a0d6af-941.webp",
+          "width": 941,
+          "height": 1672,
+          "source_media_id": "M_b0c4a0d6af",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "7a05a82bfe27c3de9d22f87462f96b490603cc0fc897ff2286f2639812fb3237",
+          "bytes": 132160
+        }
+      ]
+    },
+    {
+      "id": "M_a008a94127",
+      "context": "docs/site-refactor/media-context/FR_COZ_DIR_FRONTAO_DIREITO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_a008a94127_MASTER.md",
+      "contextSha256": "116b2db8fc4a593dce219cd145cef55e3f2f33edb2b402c051c9e011ec7bbaaf",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_DIR_FRONTAO_DIREITO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_a008a94127_MASTER.md",
+      "sourceHash": "a008a941270433b08a510c1ce419aa2abcc673291886c927ae37a6493a7548ea",
+      "label": "IMAGEM ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_a008a94127-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M_a008a94127",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "f34181eb598d761ea11f54b5d2534a4216e646411dcfd2ca8fdaf6d829dbb483",
+          "bytes": 28084
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_a008a94127-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M_a008a94127",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "ecd7a2a8157f3e5b35b451eb4ea021794a97d0c437b8684a8f3d34ddab88ef6c",
+          "bytes": 82636
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_a008a94127-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M_a008a94127",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "cb24aa75d5c668eb4fc263d1d388831b49091da372d955bd0c9485b186061d37",
+          "bytes": 109370
+        }
+      ]
+    },
+    {
+      "id": "M_39e83ae3cd",
+      "context": "docs/site-refactor/media-context/FR_COZ_DIR_ILHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_39e83ae3cd_MASTER.md",
+      "contextSha256": "87adcc3db6b426c402edccbdea3afeca3fb3903b582fac8f9fdcd52f7287ba4c",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_DIR_ILHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_39e83ae3cd_MASTER.md",
+      "sourceHash": "39e83ae3cdb95fade61501a242d63358685293d9708522d451bd98d492b473a8",
+      "label": "IMAGEM ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        941,
+        1672
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_39e83ae3cd-480.webp",
+          "width": 480,
+          "height": 853,
+          "source_media_id": "M_39e83ae3cd",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "ea72de82a42cbd3721df0f5f807783d99b2b75e0921d529a92d67983788cbb0e",
+          "bytes": 55990
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_39e83ae3cd-941.webp",
+          "width": 941,
+          "height": 1672,
+          "source_media_id": "M_39e83ae3cd",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "31c45bee7025433b9a00588da200919add70aca3ee2faafff0991f27bf17ce46",
+          "bytes": 150630
+        }
+      ]
+    },
+    {
+      "id": "M_9fe2462dd4",
+      "context": "docs/site-refactor/media-context/FR_COZ_ESQ_AEREOS_PROJETO_3D_ILUSTRACAO_M_9fe2462dd4_MASTER.md",
+      "contextSha256": "15b077252cc8d31e48c4c0f241b72bd01d14e937c41f9efb23e906ea0b949509",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_ESQ_AEREOS_PROJETO_3D_ILUSTRACAO_M_9fe2462dd4_MASTER.md",
+      "sourceHash": "9fe2462dd482033a80744bcb121d29287cf754dee057a0769506d69ab6b85d33",
+      "label": "ESTUDO 3D ILUSTRATIVO",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_9fe2462dd4-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M_9fe2462dd4",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "7827f32ecaacfb3c3d557f51206600057f21b87ebf61c20b4261cbe345595d26",
+          "bytes": 27894
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_9fe2462dd4-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M_9fe2462dd4",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "fd134f2f838897a3c90b2a0c5d0e80cd874521484fc4c8a439db09dd4bbe1583",
+          "bytes": 79096
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_9fe2462dd4-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M_9fe2462dd4",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "b7f7cdebed8909d6321ab8e4bf34abbf8a67185c46ff16f378d977aa2d7b9e7e",
+          "bytes": 101652
+        }
+      ]
+    },
+    {
+      "id": "M_f725814fd7",
+      "context": "docs/site-refactor/media-context/FR_COZ_ESQ_AEREOS_PROJETO_3D_ILUSTRACAO_M_f725814fd7_MASTER.md",
+      "contextSha256": "bb848ee62b043a41fa86cf57945b48f96b40dae8df73d280dfbe0ef69a1d7fb1",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_ESQ_AEREOS_PROJETO_3D_ILUSTRACAO_M_f725814fd7_MASTER.md",
+      "sourceHash": "f725814fd7fc93209c4571139fa4cb93e841ba377f0acfdf80275e834c48fd4f",
+      "label": "ESTUDO 3D ILUSTRATIVO",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_f725814fd7-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M_f725814fd7",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "b346b5b66e1afa3d144ff90f1871eda29ed552feea3253062362f6fedef5fc62",
+          "bytes": 28758
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_f725814fd7-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M_f725814fd7",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "104392977aed993ba7bb2875cdf753558e573aae2e835dfea57f2e98d12722ef",
+          "bytes": 83250
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_f725814fd7-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M_f725814fd7",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "9c7959caa6c1a34e255af090b2d71cb8b4d468b5fc4da652e073f840d4f1e4c9",
+          "bytes": 106704
+        }
+      ]
+    },
+    {
+      "id": "M_041cb06df6",
+      "context": "docs/site-refactor/media-context/FR_INT_INTEGRACAO_ANTES_DEMOLIDO_ILUSTRACAO_M_041cb06df6_MASTER.md",
+      "contextSha256": "bf8b318e594fe215e15fa832c3b6201f6de703874319b5d79aca7a21c3eb1210",
+      "sourceContext": "IMAGENS/leiamecodex/FR_INT_INTEGRACAO_ANTES_DEMOLIDO_ILUSTRACAO_M_041cb06df6_MASTER.md",
+      "sourceHash": "041cb06df6088fb5a8b07da4be758be850a39a23e2b8f1b8ea169db45ba4fdbe",
+      "label": "RECONSTITUIÇÃO ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_041cb06df6-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M_041cb06df6",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "antes_demolido",
+          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "b57c38ae84d3cd09a2eac686893f54ef2935d8b25dcce6e1f61f25dc799d549c",
+          "bytes": 38206
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_041cb06df6-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M_041cb06df6",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "antes_demolido",
+          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "14bb1a2709b85ed5fe3cfa2048fdb890d8752f2abdb8aeb39ed46260d0bec61e",
+          "bytes": 138098
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_041cb06df6-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M_041cb06df6",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "antes_demolido",
+          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "c2aaeb20d2b11700977d789f6b488824b4cd97f6cf46f07aa74f233c4cc32c96",
+          "bytes": 187724
+        }
+      ]
+    },
+    {
+      "id": "M_4b216c7e0b",
+      "context": "docs/site-refactor/media-context/FR_COZ_DIR_FRONTAO_DIREITO_PROJETO_3D_ILUSTRACAO_M_4b216c7e0b_MASTER.md",
+      "contextSha256": "810e33ef8606458595d490173754bfb7f4feddf2dfddc1f2fee6f01241b26b77",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_DIR_FRONTAO_DIREITO_PROJETO_3D_ILUSTRACAO_M_4b216c7e0b_MASTER.md",
+      "sourceHash": "4b216c7e0b01fe5c2f909b88efdb5a0e9943afa5d158d0725ef673238175f463",
+      "label": "ESTUDO 3D ILUSTRATIVO",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_4b216c7e0b-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M_4b216c7e0b",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "89bdd604daf867c6bd0d26249ebb43f1c7207088b4292af6d7ca706f676fe78f",
+          "bytes": 27124
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_4b216c7e0b-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M_4b216c7e0b",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "7eea902c736e38e4ee3da4aa4bb854f325d8aa7301a8357bd8d4cd2de078435b",
+          "bytes": 77212
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_4b216c7e0b-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M_4b216c7e0b",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "492fb9c0aa46980154be72c7111ef5507ffaeb04f96dcd6be63cd4d826a45f01",
+          "bytes": 98872
+        }
+      ]
+    },
+    {
+      "id": "M_e3f45a71e3",
+      "context": "docs/site-refactor/media-context/FR_INT_INTEGRACAO_PROJETO_3D_ILUSTRACAO_M_e3f45a71e3_MASTER.md",
+      "contextSha256": "90125edba135defd2ef51c09c3b6848d8c1d5e8ace833bb12dcfdd16cf7e2648",
+      "sourceContext": "IMAGENS/leiamecodex/FR_INT_INTEGRACAO_PROJETO_3D_ILUSTRACAO_M_e3f45a71e3_MASTER.md",
+      "sourceHash": "e3f45a71e307b2cb69b7ff097da12c55b084d05e076528a8d4e9fa5c10c24d66",
+      "label": "ESTUDO 3D ILUSTRATIVO",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_e3f45a71e3-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M_e3f45a71e3",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "9f807c56a7199fdf6fd75bf3547037dd43624494360a916bdc265ab9b73ba56d",
+          "bytes": 40424
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_e3f45a71e3-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M_e3f45a71e3",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "a89aea4d763d8746a0e6d5f1f8d44f9e97a9c103a948080165c3680317385e79",
+          "bytes": 117170
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_e3f45a71e3-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M_e3f45a71e3",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "e837869d45d6c2f905a5399cae08b5a5e7c1801ef09ca97f278a01d2936af49e",
+          "bytes": 150476
+        }
+      ]
+    },
+    {
+      "id": "M_cbe9707801",
+      "context": "docs/site-refactor/media-context/FR_INT_INTEGRACAO_PROJETO_3D_ILUSTRACAO_M_cbe9707801_MASTER.md",
+      "contextSha256": "5a50d5e96deac14015703fd971ba1b944cce526b26484372ee722d874b8e80da",
+      "sourceContext": "IMAGENS/leiamecodex/FR_INT_INTEGRACAO_PROJETO_3D_ILUSTRACAO_M_cbe9707801_MASTER.md",
+      "sourceHash": "cbe97078012f15b954a1abd7818233058505a87e68bbcbbcfa838bc762573d08",
+      "label": "ESTUDO 3D ILUSTRATIVO",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_cbe9707801-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M_cbe9707801",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "9d9fe46009627de9a8e285fdda4f93f9cd83494112ba3aa5f7fb21b07236e0be",
+          "bytes": 28354
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_cbe9707801-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M_cbe9707801",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "c772293bc80b70258141ed77664c0edf5358330a53d70571e22fdec2fb5137aa",
+          "bytes": 80304
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_cbe9707801-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M_cbe9707801",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "b955ffb8437797fb39bf70b1011090172d97f473cf9eab04a94b96ee1ca46c75",
+          "bytes": 102320
+        }
+      ]
+    },
+    {
+      "id": "M_55a2676b5d",
+      "context": "docs/site-refactor/media-context/FR_COZ_DIR_ILHA_PROJETO_3D_ILUSTRACAO_M_55a2676b5d_MASTER.md",
+      "contextSha256": "6fb645e6d19e1882f4833fe1c8c1c8106ca174cca4834b527b27645e8ea8e27d",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_DIR_ILHA_PROJETO_3D_ILUSTRACAO_M_55a2676b5d_MASTER.md",
+      "sourceHash": "55a2676b5df88a573d8e531b4d1e7f9902d5a12e18adc01f74c39693ad364670",
+      "label": "ESTUDO 3D ILUSTRATIVO",
+      "state": "aprovado",
+      "native": [
+        941,
+        1672
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_55a2676b5d-480.webp",
+          "width": 480,
+          "height": 853,
+          "source_media_id": "M_55a2676b5d",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "57b30340aee53448b9ea9db7ba1b6d7f6fc22e0e7819fa2a3b8c6a12d2ce0baa",
+          "bytes": 53916
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_55a2676b5d-941.webp",
+          "width": 941,
+          "height": 1672,
+          "source_media_id": "M_55a2676b5d",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "3b6813e75bbdda93b54d24d3f6bdb4b0ba0bc3a9ef9ac6ca4425ded5a6892968",
+          "bytes": 151266
+        }
+      ]
+    },
+    {
+      "id": "M_78d797da36",
+      "context": "docs/site-refactor/media-context/FR_COZ_DIR_TORRE_QUENTE_DEPOIS_REPRESENTADO_ILUSTRACAO_M_78d797da36_MASTER.md",
+      "contextSha256": "1d48827df7384de710bd0bd0f65ccf2e7b5b0d130eb55d08c994264f619424a4",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_DIR_TORRE_QUENTE_DEPOIS_REPRESENTADO_ILUSTRACAO_M_78d797da36_MASTER.md",
+      "sourceHash": "78d797da36e52beea068763d8beff3599217e27dd06637a0a6e3fc5ce42896a9",
+      "label": "IMAGEM ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_78d797da36-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M_78d797da36",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "fa766cf5d3cf7a464c456b428e83a61a43f1da6fb9431ded4d57f5ed82542f77",
+          "bytes": 22714
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_78d797da36-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M_78d797da36",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "5a9c6bf775ac0b796a1b6d58c62a61ee6abb0563b862b11f102dbcad89fdb77b",
+          "bytes": 63774
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_78d797da36-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M_78d797da36",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "00087990049dbbd07dd2a55a82c3f855abe7d857fddf245f9c83f5e4ed0aaead",
+          "bytes": 86494
+        }
+      ]
+    },
+    {
+      "id": "M_33ec3b99ba",
+      "context": "docs/site-refactor/media-context/FR_COZ_DIR_TORRE_QUENTE_PROJETO_3D_ILUSTRACAO_M_33ec3b99ba_MASTER.md",
+      "contextSha256": "3839dcfd341124803669d70bcdcb9257c5347caa584d3168a47a7047c6235a89",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_DIR_TORRE_QUENTE_PROJETO_3D_ILUSTRACAO_M_33ec3b99ba_MASTER.md",
+      "sourceHash": "33ec3b99ba4271d89ce947965f6384fcd1c1cc8da5efcb73d9f3c72cf3b889f3",
+      "label": "ESTUDO 3D ILUSTRATIVO",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_33ec3b99ba-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M_33ec3b99ba",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "c3601dd1754d4d86f015c48227add79fb7b5812e7b24ec911cc0d1ff9d727865",
+          "bytes": 19014
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_33ec3b99ba-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M_33ec3b99ba",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "c9249fba80603da8872d1f344294bbf7628604745fe9461d3a0d7a20fb00c37a",
+          "bytes": 55102
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_33ec3b99ba-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M_33ec3b99ba",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "5214325765d82994c053057f5c17cc80308128c0f67987ba2bf860067e7d6a0d",
+          "bytes": 71758
+        }
+      ]
+    },
+    {
+      "id": "M_c6eb8354c7",
+      "context": "docs/site-refactor/media-context/FR_COZ_DIR_FRONTAO_DIREITO_PROJETO_3D_ILUSTRACAO_M_c6eb8354c7_MASTER.md",
+      "contextSha256": "e9a78619e6f8a156342dd418eb9dbf3dd6f14d53842fbc6e35ac7d30e7ff29c3",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_DIR_FRONTAO_DIREITO_PROJETO_3D_ILUSTRACAO_M_c6eb8354c7_MASTER.md",
+      "sourceHash": "c6eb8354c773e8bcecc4e8627754ddecac8c26b36f68fbf3587e111d2a55803b",
+      "label": "ESTUDO 3D ILUSTRATIVO",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_c6eb8354c7-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M_c6eb8354c7",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "02184a615daebfdadd0779b38c9d06323861b11ec2b6e0939fa23962da71f6ca",
+          "bytes": 23214
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_c6eb8354c7-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M_c6eb8354c7",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "2bca01ea04783be58d59073e8dc71a3bf86ca3ae7ad9145c6b0348de57a8f806",
+          "bytes": 65480
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_c6eb8354c7-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M_c6eb8354c7",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "ca0fb37f0c95a4004b71719504a1e58d31a034144b45f6fd9e590732f3323007",
+          "bytes": 81900
+        }
+      ]
+    },
+    {
+      "id": "M013",
+      "context": "docs/site-refactor/media-context/FR_COZ_ESQ_BANCADA_INTEGRADA_PROJETO_3D_ILUSTRACAO_M013_MASTER.md",
+      "contextSha256": "09d8517816e92444500c5f206dc7ffe7252156fc8c0070366d8564679b1a8013",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_ESQ_BANCADA_INTEGRADA_PROJETO_3D_ILUSTRACAO_M013_MASTER.md",
+      "sourceHash": "60c773787f71530b03713ea978df38c091d0fd327a65731ddd4ee784f6a9404e",
+      "label": "ESTUDO 3D ILUSTRATIVO",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M013-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M013",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "b3a8f6c2e5ff96eac6041a92a8e4083d968e5cc0d21f65792fd3aa319c05330f",
+          "bytes": 35948
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M013-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M013",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "4b2d47bc95b243308ba2b6637c94f5f5890ebfeaa03b025718c23ab1958848ba",
+          "bytes": 120190
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M013-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M013",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "f51431137ecbd8e5300183eb2778600f45005fdb0ec3a6bed8685a8911bae9da",
+          "bytes": 163174
+        }
+      ]
+    },
+    {
+      "id": "M025",
+      "context": "docs/site-refactor/media-context/FR_COZ_ESQ_BANCADA_INTEGRADA_PROJETO_3D_ILUSTRACAO_M025_MASTER.md",
+      "contextSha256": "33a725f5142c25b9635d9567a3ac120fcb8f0a189f6c742501ab059942695ba0",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_ESQ_BANCADA_INTEGRADA_PROJETO_3D_ILUSTRACAO_M025_MASTER.md",
+      "sourceHash": "6a31d21c884e68924afdcf5ee2407e448ef6f74aaad961ef93d144898885a4d5",
+      "label": "ESTUDO 3D ILUSTRATIVO",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M025-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M025",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "484097330c017ab7d9fae7816d63144d6791ebdba28181e310613dd59af82836",
+          "bytes": 25000
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M025-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M025",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "9d08189a5bdca2184bdf4cb5dc14f3a6e2c32b3f17bd2322d4b5250382ecf796",
+          "bytes": 87762
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M025-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M025",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "8636d0d9d429685762db3cd6e15bf4ccff185d723301b60aa990c12f814b40a0",
+          "bytes": 120680
+        }
+      ]
+    },
+    {
+      "id": "M027",
+      "context": "docs/site-refactor/media-context/FR_INT_ANTES_PAREDE_ANTES_DEMOLIDO_ILUSTRACAO_M027_MASTER.md",
+      "contextSha256": "7b1f391c98af66e95c68d323e7aa8fb48b5c164c376d8fbf39e3091c05a0c670",
+      "sourceContext": "IMAGENS/leiamecodex/FR_INT_ANTES_PAREDE_ANTES_DEMOLIDO_ILUSTRACAO_M027_MASTER.md",
+      "sourceHash": "fef2552a9b9435f9c5de37c359e3e82ed32957edcd332cf5c0234f9f98f17e10",
+      "label": "RECONSTITUIÇÃO ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M027-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M027",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "antes_demolido",
+          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "e72f84077c15e0a6ce419ea3c9ce61978ab8084ed6adb3d52f393cc372f3fbb2",
+          "bytes": 39520
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M027-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M027",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "antes_demolido",
+          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "8b66c8f806b9ee54ca83a05dcea79e260642ddcb5930840b6a8aaf6126f0d2ed",
+          "bytes": 141190
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M027-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M027",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "antes_demolido",
+          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "9e7cea3faa330bcd8d631477ce06cc60159aa5097fc5257f9a97982c29300b2e",
+          "bytes": 189560
+        }
+      ]
+    },
+    {
+      "id": "M029",
+      "context": "docs/site-refactor/media-context/FR_COZ_ESQ_BANCADA_SOLO_DEPOIS_REPRESENTADO_ILUSTRACAO_M029_MASTER.md",
+      "contextSha256": "6e22123cafde859bb662b7b51248c1502742cb0993cbcd35d964aca3c02f7f94",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_ESQ_BANCADA_SOLO_DEPOIS_REPRESENTADO_ILUSTRACAO_M029_MASTER.md",
+      "sourceHash": "c9098d450c5629a52f12e189e08a547c868c299ede27a56d16b5b378f281837f",
+      "label": "IMAGEM ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M029-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M029",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "f8ebc65541469374a9207a76236007c50f3a7f4b8f157c4c70174af573c5cda2",
+          "bytes": 14906
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M029-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M029",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "fce8c1caaa1a10e8446d91c206ab1cde2c918d9157f32a45177cbca4329b144f",
+          "bytes": 48698
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M029-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M029",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "87e0b3189c2be0d6b18840a9dcf2775eaa52606748c0831bb9cd0550eb5b8726",
+          "bytes": 69446
+        }
+      ]
+    },
+    {
+      "id": "M035",
+      "context": "docs/site-refactor/media-context/FR_COZ_ESQ_BANCADA_INTEGRADA_DEPOIS_REPRESENTADO_ILUSTRACAO_M035_MASTER.md",
+      "contextSha256": "7c32952f6c9016dc4ccdaa570d66a99176bc5f46f54a2d2bf3e6bc004e8d1e3d",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_ESQ_BANCADA_INTEGRADA_DEPOIS_REPRESENTADO_ILUSTRACAO_M035_MASTER.md",
+      "sourceHash": "09b62863b656a8a6e511a08567ed11195b6fe318fb1a5ace63424cc6b79524e8",
+      "label": "IMAGEM ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M035-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M035",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "e8fd0b92e6792c36ca0ee5aa53e4f2eb703b0b0ca7cc34fa9074b864da30b0e4",
+          "bytes": 25212
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M035-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M035",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "f4c6fe3a622615b41f854c97e1e094649524ff89430f3ab572791d07ce7fb799",
+          "bytes": 69686
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M035-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M035",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "0c3bcffcb0eb3b54ff256876b519f7adb99d2a9d638520f5b13d62c0814e4c1e",
+          "bytes": 91820
+        }
+      ]
+    },
+    {
+      "id": "M149",
+      "context": "docs/site-refactor/media-context/FR_COZ_ESQ_BANCADA_SOLO_PROJETO_3D_ILUSTRACAO_M149_MASTER.md",
+      "contextSha256": "3906ee60957b02bf4a459a8a7b6a02580acf8c9115b9d16ced9b8cd41e132927",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_ESQ_BANCADA_SOLO_PROJETO_3D_ILUSTRACAO_M149_MASTER.md",
+      "sourceHash": "6d1e19db75067ab7971fb0a1c1c6ee9037c75e6bfd100321b31d5738a6f3cc12",
+      "label": "ESTUDO 3D ILUSTRATIVO",
+      "state": "aprovado",
+      "native": [
+        2160,
+        2700
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M149-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M149",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "aba34c3fdcbfbadf3dfb8765f8191303236bc66e240516702bdd8cb97b1ba9e0",
+          "bytes": 16428
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M149-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M149",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "f604c2065586af8bded3632bcc8c23e9f9e188c1c8e63c75b78270506b572c7c",
+          "bytes": 47340
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M149-1600.webp",
+          "width": 1600,
+          "height": 2000,
+          "source_media_id": "M149",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "29ed4fdf6c6e82c0e160a84200983101bef82df39fe8bff9d149f8c456d3f3fd",
+          "bytes": 105258
+        }
+      ]
+    },
+    {
+      "id": "M186",
+      "context": "docs/site-refactor/media-context/FR_COZ_ESQ_BANCADA_SOLO_DEPOIS_REPRESENTADO_ILUSTRACAO_M186_MASTER.md",
+      "contextSha256": "1ab192ce96b686ac863cc6886744335760f72b29ff47e3d6882658c3dc9794e4",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_ESQ_BANCADA_SOLO_DEPOIS_REPRESENTADO_ILUSTRACAO_M186_MASTER.md",
+      "sourceHash": "885465571ac43045ed238b65b0d28551f3a3382ac72ad280e41f4737d28f6d3d",
+      "label": "IMAGEM ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        2160,
+        2700
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M186-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M186",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "3727f5d67727e110fed33954501c040d23484d692a410de8fbb72994a1cfd0f1",
+          "bytes": 15850
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M186-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M186",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "7775a745ce963c3b9928d9065f564f04a72b365b56079a159e68659c1f6383a5",
+          "bytes": 43376
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M186-1600.webp",
+          "width": 1600,
+          "height": 2000,
+          "source_media_id": "M186",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "41056c9d0454634075b9403bdbbacb827aa407c774922684e15a54c24e7de63c",
+          "bytes": 98586
+        }
+      ]
+    },
+    {
+      "id": "M_6b28e6add2",
+      "context": "docs/site-refactor/media-context/FR_INT_ESTANTE_TRANSICAO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_6b28e6add2_MASTER.md",
+      "contextSha256": "122eed8a75c836c724b1aa2e8c9e1338f3f176522d2d67f845909f71e149f58e",
+      "sourceContext": "IMAGENS/leiamecodex/FR_INT_ESTANTE_TRANSICAO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_6b28e6add2_MASTER.md",
+      "sourceHash": "6b28e6add278bd6b2699a780e28f72f1a723ec855955324160200be23333d4e4",
+      "label": "IMAGEM ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        941,
+        1672
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_6b28e6add2-480.webp",
+          "width": 480,
+          "height": 853,
+          "source_media_id": "M_6b28e6add2",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "2b844ebd50ae427727abf1f6ce87a96c09fd82632c403d334953b2f0b701bda4",
+          "bytes": 37202
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_6b28e6add2-941.webp",
+          "width": 941,
+          "height": 1672,
+          "source_media_id": "M_6b28e6add2",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "c705dbb82f362f55a2056b0e765f9443a595e3dc505c72080d621dc6cde60132",
+          "bytes": 111586
+        }
+      ]
+    },
+    {
+      "id": "M_3fe2cb429d",
+      "context": "docs/site-refactor/media-context/FR_INT_ESTANTE_TRANSICAO_PROJETO_3D_ILUSTRACAO_M_3fe2cb429d_MASTER.md",
+      "contextSha256": "4f9da1548824423a05e90458dcccf93fd6e583aeffaf9f747a36d300efca37ca",
+      "sourceContext": "IMAGENS/leiamecodex/FR_INT_ESTANTE_TRANSICAO_PROJETO_3D_ILUSTRACAO_M_3fe2cb429d_MASTER.md",
+      "sourceHash": "3fe2cb429d6c9cfd5ccb8f54e8868f3d8408538e2121c0eaf1b1e0b27b179c74",
+      "label": "ESTUDO 3D ILUSTRATIVO",
+      "state": "aprovado",
+      "native": [
+        941,
+        1672
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_3fe2cb429d-480.webp",
+          "width": 480,
+          "height": 853,
+          "source_media_id": "M_3fe2cb429d",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "cf940ead4c78aa78e1baf4d9d5acb3539b5f283adfc5026eb605bb4245175505",
+          "bytes": 34914
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_3fe2cb429d-941.webp",
+          "width": 941,
+          "height": 1672,
+          "source_media_id": "M_3fe2cb429d",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "6cfdf2e747649051b295ea2cc66b3178c795374257b8b9ead02decfa6ae534e4",
+          "bytes": 95264
+        }
+      ]
+    },
+    {
+      "id": "M_b7a04ef330",
+      "context": "docs/site-refactor/media-context/FR_COZ_ESQ_GELADEIRA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_b7a04ef330_MASTER.md",
+      "contextSha256": "7f56a73f31b55293991d7ee444b7f1f5533c7e77b8761552f340ace7079efdd5",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_ESQ_GELADEIRA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_b7a04ef330_MASTER.md",
+      "sourceHash": "b7a04ef330a8b618033c13c608bd19be739ba755aa5ac73d463389aff4ab28f0",
+      "label": "IMAGEM ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_b7a04ef330-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M_b7a04ef330",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "be5b9af117265f4f205a52c5432d7afe1f1960784f971beaaad4cf0e412795cd",
+          "bytes": 29392
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_b7a04ef330-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M_b7a04ef330",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "d584e204689add80eaefbb8836277f6032552cbb5e667b32b2f3ea91bb6094da",
+          "bytes": 87750
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_b7a04ef330-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M_b7a04ef330",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "46347e37893be49eb6f733937ac4b099471d6fed1decea73b7ecb16c9c5a6be3",
+          "bytes": 118456
+        }
+      ]
+    },
+    {
+      "id": "M_0c3916ba68",
+      "context": "docs/site-refactor/media-context/FR_COZ_ESQ_GELADEIRA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_0c3916ba68_MASTER.md",
+      "contextSha256": "0706f61e54d0388b87109296e8853ebd036d1234af1f4a57a33d13d9229029aa",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_ESQ_GELADEIRA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_0c3916ba68_MASTER.md",
+      "sourceHash": "0c3916ba68feaeb28ff897610b893d601b12d070e2513fc7b1df5d213e71a795",
+      "label": "IMAGEM ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_0c3916ba68-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M_0c3916ba68",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "9e90c40832a899a30f46bd66dd954f147ec62e1c0f485c22a3567ad0a35aa7ac",
+          "bytes": 22590
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_0c3916ba68-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M_0c3916ba68",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "4423b0ffbb42e280465e51566babd0c5e694935dc849b6c02121dba761e61298",
+          "bytes": 60054
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_0c3916ba68-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M_0c3916ba68",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "92d57943d3a2c790aa940fc79bf3347d8c18a9c05781745ae708c2917fd9401d",
+          "bytes": 78854
+        }
+      ]
+    },
+    {
+      "id": "M_5c5d18dd1b",
+      "context": "docs/site-refactor/media-context/FR_COZ_ESQ_GELADEIRA_PROJETO_3D_ILUSTRACAO_M_5c5d18dd1b_MASTER.md",
+      "contextSha256": "b85db33860f515a7ba11bce3da4ed385717ba65433cd5b2ca0fe4606fc86b2ec",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_ESQ_GELADEIRA_PROJETO_3D_ILUSTRACAO_M_5c5d18dd1b_MASTER.md",
+      "sourceHash": "5c5d18dd1be565dc3c45cf3ef5420b8e7e38b9390cdf14782d68fdea3568589e",
+      "label": "ESTUDO 3D ILUSTRATIVO",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_5c5d18dd1b-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M_5c5d18dd1b",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "91775c9995428dc5d2ffddf745588f8a6b44b55eb80c0fc8d0fd2be5d03ca331",
+          "bytes": 19898
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_5c5d18dd1b-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M_5c5d18dd1b",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "58c32595337c7fc06b855495f51fee5f344f290d5c60bad263664210b36bb9f2",
+          "bytes": 56708
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_5c5d18dd1b-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M_5c5d18dd1b",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "b7838c7e2551a6a4c5c6feef2d941677d321685f38afe23138b121a439ce368c",
+          "bytes": 74180
+        }
+      ]
+    },
+    {
+      "id": "M_134fab7c78",
+      "context": "docs/site-refactor/media-context/FR_COZ_ESQ_AEREOS_PROJETO_3D_ILUSTRACAO_M_134fab7c78_MASTER.md",
+      "contextSha256": "e7d11b354a32f854e4fbd2c873a41713f61ee976003b25ea8fc095ff16db7ec4",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_ESQ_AEREOS_PROJETO_3D_ILUSTRACAO_M_134fab7c78_MASTER.md",
+      "sourceHash": "134fab7c7807479197ea08932a22de70b9845756a98a40c94efc42a95cdf1740",
+      "label": "ESTUDO 3D ILUSTRATIVO",
+      "state": "aprovado",
+      "native": [
+        1402,
+        1122
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_134fab7c78-480.webp",
+          "width": 480,
+          "height": 384,
+          "source_media_id": "M_134fab7c78",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "1585424bbf59d0faca8a4b8e9a6b9f571dde07ad6b8be5775772bf67204c5390",
+          "bytes": 6688
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_134fab7c78-960.webp",
+          "width": 960,
+          "height": 768,
+          "source_media_id": "M_134fab7c78",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "1a60e8c1eb5f6fa415156ef5c6c751fe85629e1e75b764062b48707d8030225d",
+          "bytes": 25440
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_134fab7c78-1402.webp",
+          "width": 1402,
+          "height": 1122,
+          "source_media_id": "M_134fab7c78",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "1765b3622f577f7ecbe9a4834fbfa134dacca92c5a965cc7cee277a08806c4c8",
+          "bytes": 53644
+        }
+      ]
+    },
+    {
+      "id": "M_f63a72fefd",
+      "context": "docs/site-refactor/media-context/FR_COZ_ESQ_AEREOS_PROJETO_3D_ILUSTRACAO_M_f63a72fefd_MASTER.md",
+      "contextSha256": "fd6f7836061f80c12c9dec0fd5dad51422e73d982ab8880145328b6b5cd1749d",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_ESQ_AEREOS_PROJETO_3D_ILUSTRACAO_M_f63a72fefd_MASTER.md",
+      "sourceHash": "f63a72fefd63ca8b1913e9d54ab19e656cb058e9f0e474f17fd10b987f0f62ec",
+      "label": "ESTUDO 3D ILUSTRATIVO",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_f63a72fefd-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M_f63a72fefd",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "c62c3b9f07307c48e98ddb93d757170acab262b44dcced9c477b3cc4a8d7d83e",
+          "bytes": 26872
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_f63a72fefd-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M_f63a72fefd",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "8700e1d5e7101798e39b1fb74420973d9bf8e02ff3aec5214ce735aab2a47d74",
+          "bytes": 81996
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_f63a72fefd-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M_f63a72fefd",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "2c57ad5ae7bde6deb67dba5f81d70222efbaadc71acba0170b180cd428de854c",
+          "bytes": 106344
+        }
+      ]
+    },
+    {
+      "id": "M_88353144b4",
+      "context": "docs/site-refactor/media-context/FR_INT_ANTES_PAREDE_ANTES_DEMOLIDO_ILUSTRACAO_M_88353144b4_MASTER.md",
+      "contextSha256": "a71c49152e8f36d9d0abc1677cdb23532c4eaf1fdeedf337798b505f45bbe1a8",
+      "sourceContext": "IMAGENS/leiamecodex/FR_INT_ANTES_PAREDE_ANTES_DEMOLIDO_ILUSTRACAO_M_88353144b4_MASTER.md",
+      "sourceHash": "88353144b4c87aabf759b4b13d1f2c9cadfa0329acb4e97fe983e851625f9098",
+      "label": "RECONSTITUIÇÃO ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        1402,
+        1122
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_88353144b4-480.webp",
+          "width": 480,
+          "height": 384,
+          "source_media_id": "M_88353144b4",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "antes_demolido",
+          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "c149b69300876e87e2e3dc3d1505cb8a7532507b6c3b33b4e4ad7e8ca541e89b",
+          "bytes": 14234
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_88353144b4-960.webp",
+          "width": 960,
+          "height": 768,
+          "source_media_id": "M_88353144b4",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "antes_demolido",
+          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "fe230557d7741ca607c6c8ddd8c4cd1eb18099b5661a9e88e4f3ada734fab4c9",
+          "bytes": 46312
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_88353144b4-1402.webp",
+          "width": 1402,
+          "height": 1122,
+          "source_media_id": "M_88353144b4",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "antes_demolido",
+          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "93271a6dd850d40b9c8e0ebe78def01a54222bddff4bae3dd19d7b6dcbc984da",
+          "bytes": 89036
+        }
+      ]
+    },
+    {
+      "id": "M_66df774c0e",
+      "context": "docs/site-refactor/media-context/FR_COZ_ESQ_BANCADA_SOLO_PROJETO_3D_ILUSTRACAO_M_66df774c0e_MASTER.md",
+      "contextSha256": "802ceddfbc74a699c0d4f458dc3a90bd8dc14c148e8727d7cdf4b98e89c47781",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_ESQ_BANCADA_SOLO_PROJETO_3D_ILUSTRACAO_M_66df774c0e_MASTER.md",
+      "sourceHash": "66df774c0e8c74db6e9650ad9f1cd79de06e4591d39675b32bdd507f825e1bf4",
+      "label": "ESTUDO 3D ILUSTRATIVO",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_66df774c0e-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M_66df774c0e",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "d962a7b59688072f11dd9594683f421390d940c8a5db7659ca7a642d45c1eaf2",
+          "bytes": 17664
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_66df774c0e-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M_66df774c0e",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "2ced72de861ace83a8b2b3876980261d0c055109fe8e28e2047d97a0f7a7cf9d",
+          "bytes": 48028
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_66df774c0e-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M_66df774c0e",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "417fc18b2d116c5ff267210e963e79f6ad82eee754f0053fac0553806d963b80",
+          "bytes": 60826
+        }
+      ]
+    },
+    {
+      "id": "M_2dd45b193b",
+      "context": "docs/site-refactor/media-context/FR_COZ_ESQ_BANCADA_INTEGRADA_PROJETO_3D_ILUSTRACAO_M_2dd45b193b_MASTER.md",
+      "contextSha256": "1288369a91d511209e4c8f654ca6e18cd46a402b612f9161860f2130c28350b0",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_ESQ_BANCADA_INTEGRADA_PROJETO_3D_ILUSTRACAO_M_2dd45b193b_MASTER.md",
+      "sourceHash": "2dd45b193b9d970257c119a58a275e52c4709a6011fb8eb6b9a10007291a1e24",
+      "label": "ESTUDO 3D ILUSTRATIVO",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_2dd45b193b-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M_2dd45b193b",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "06c1affe0ac1d81ed22fb26f7fafc8d50a2f2d08c86e2fd74bed469b699b0373",
+          "bytes": 28516
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_2dd45b193b-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M_2dd45b193b",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "f46198cc409dca1fb874d0695cc9cd27b6e6da5133bd0d720557a3104dd5b688",
+          "bytes": 85512
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_2dd45b193b-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M_2dd45b193b",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "projeto_3d",
+          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "status": "READY_WITH_LABEL",
+          "sha256": "df07a29b8b99dae0a102788df008d90daf7152412a2b476e0c509a4ba38f8886",
+          "bytes": 110234
+        }
+      ]
+    },
+    {
+      "id": "M_9313fb1327",
+      "context": "docs/site-refactor/media-context/FR_COZ_DIR_TETO_COZINHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_9313fb1327_MASTER.md",
+      "contextSha256": "8f6810270eecf90b2f81d8c7009c4059b15cc4cd73f1a7e7f28123ec6fef2b30",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_DIR_TETO_COZINHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_9313fb1327_MASTER.md",
+      "sourceHash": "9313fb13273c5711ad05d61f238562c1d0604cd59027b72f098845deb1824b05",
+      "label": "IMAGEM ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_9313fb1327-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M_9313fb1327",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "c516deff3e2c1dd68e72d70dbb31db8f80acf4ba283d86e8aaf162a3924187c5",
+          "bytes": 42104
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_9313fb1327-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M_9313fb1327",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "e35e14a59c7ddf13ac14950a805f678ba64365d1d47ec2712f749e39d5fe4d40",
+          "bytes": 115584
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_9313fb1327-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M_9313fb1327",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "6d74ec32469c5e5a011d8bb879281ce0ac81cd5ceceeeaa1ed00fd6fa3ea1235",
+          "bytes": 147764
+        }
+      ]
+    },
+    {
+      "id": "M_b239e59121",
+      "context": "docs/site-refactor/media-context/FR_COZ_ESQ_BANCADA_INTEGRADA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_b239e59121_MASTER.md",
+      "contextSha256": "3196e5eea4ab5ac35a1481cca950804cb395b3faf490fcf94b1962694c5853d1",
+      "sourceContext": "IMAGENS/leiamecodex/FR_COZ_ESQ_BANCADA_INTEGRADA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_b239e59121_MASTER.md",
+      "sourceHash": "b239e5912188239c8346597a3ceb6ac0385e4880ff0ba3800527ee4220a4518c",
+      "label": "IMAGEM ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_b239e59121-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M_b239e59121",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "90f03f81d8bcdf0ff1d8b537565016e9e36db6b7694233854284b6a7f8a97405",
+          "bytes": 26636
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_b239e59121-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M_b239e59121",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "9cc4efab8ea673c8007a476794e3867109c4736eaedcccc0134d76236bb63500",
+          "bytes": 78032
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_b239e59121-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M_b239e59121",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "eed22fc3b170ab5970a61880529af914bdd569cbff13015d39e25bac758dcdb1",
+          "bytes": 102102
+        }
+      ]
+    },
+    {
+      "id": "M008",
+      "context": "docs/site-refactor/media-context/FR_LAV_LAVANDERIA_DEPOIS_REPRESENTADO_ILUSTRACAO_M008_MASTER.md",
+      "contextSha256": "94a64f516c0c3d3c831ab23115ac6de3025c4631fa5998c90637f91699485c78",
+      "sourceContext": "IMAGENS/leiamecodex/FR_LAV_LAVANDERIA_DEPOIS_REPRESENTADO_ILUSTRACAO_M008_MASTER.md",
+      "sourceHash": "85813fc193f39d38750eff4c85cbf9a04163b0cf73859eb3a52a8fc52913eda4",
+      "label": "IMAGEM ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M008-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M008",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "6c95a6bb6b28f5d3c4f23d568dd4e8e47bc636aa542b63942d5a6370c715cf34",
+          "bytes": 20882
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M008-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M008",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "bbc3186455ac2e63a3e0c0e0d8a9eeca6efc24686d9dae7322646418264cdfed",
+          "bytes": 61256
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M008-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M008",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "0ad255a10f681548c82a660d0c94ea556530755dcc96108513f1561cb7b4c1f9",
+          "bytes": 81870
+        }
+      ]
+    },
+    {
+      "id": "M012",
+      "context": "docs/site-refactor/media-context/FR_LAV_LAVANDERIA_DEPOIS_REPRESENTADO_ILUSTRACAO_M012_MASTER.md",
+      "contextSha256": "72e401684ae01bd036f0fff072d6d614e53db4f0d3a04f5c763fc030e544c605",
+      "sourceContext": "IMAGENS/leiamecodex/FR_LAV_LAVANDERIA_DEPOIS_REPRESENTADO_ILUSTRACAO_M012_MASTER.md",
+      "sourceHash": "31180d4c47247154dadeb4dd4c1b16dd82e82d3dd390d7d03680906e03fd0f0b",
+      "label": "IMAGEM ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M012-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M012",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "94a101ba9a1ac16610cc79cb950630fcc1d72d7d9b737375f9d2d2078de47571",
+          "bytes": 20274
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M012-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M012",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "d87e79d26a6ed4c98be670f4bfc696cb7e6cfa3c79392122ab28063aaf144bdf",
+          "bytes": 55400
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M012-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M012",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "58f94463778666717a00d0d7e51eda450ec5249fbebd1f428425e3d74f2fe4dc",
+          "bytes": 73352
+        }
+      ]
+    },
+    {
+      "id": "M024",
+      "context": "docs/site-refactor/media-context/FR_LAV_LAVANDERIA_DEPOIS_REPRESENTADO_ILUSTRACAO_M024_MASTER.md",
+      "contextSha256": "7b96e90d444681cc57ba224457c523fdfb25cbb058b3d80d4b250668cc49829e",
+      "sourceContext": "IMAGENS/leiamecodex/FR_LAV_LAVANDERIA_DEPOIS_REPRESENTADO_ILUSTRACAO_M024_MASTER.md",
+      "sourceHash": "2f50725789c0e791eb1d7b59c52aba74bb73607c79d914eb01f4ba071be585a6",
+      "label": "IMAGEM ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M024-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M024",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "a2042e2089ef5f220809c61025df6204b65354ffd4a7a108c1d331bb7983615e",
+          "bytes": 21302
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M024-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M024",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "eb2cd9aebe359c06ab01ba7e217606950f36ecfe88934daba468ccbc23b9d02a",
+          "bytes": 64798
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M024-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M024",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "b4fd11178aa032a2e28eafb15371353a179fee3e575e1ea40062d28d73e33b53",
+          "bytes": 87276
+        }
+      ]
+    },
+    {
+      "id": "M037",
+      "context": "docs/site-refactor/media-context/FR_LAV_LAVANDERIA_DEPOIS_REPRESENTADO_ILUSTRACAO_M037_MASTER.md",
+      "contextSha256": "4d2d786a868d6eff08263885484df55767b3db36f7d05926ac9fc665ebc61e2c",
+      "sourceContext": "IMAGENS/leiamecodex/FR_LAV_LAVANDERIA_DEPOIS_REPRESENTADO_ILUSTRACAO_M037_MASTER.md",
+      "sourceHash": "a88a9f59c3d6fe95611a28ed40a3344f9afb4863a8b3320e07893c061a346a48",
+      "label": "IMAGEM ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M037-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M037",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "f5b0faa487b0c698e8600f1fc0e1c35903273fa07588136a2e93a58e397bfbd3",
+          "bytes": 15604
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M037-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M037",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "4f4d6248f04f221c3aa7233cec3137026eee52bb0f401c24e1b17eda19e15081",
+          "bytes": 47936
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M037-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M037",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "29b6f804028be1ff94b4884a4ee6ee859821632b9781aea06d5f3bfd1ada7e19",
+          "bytes": 68730
+        }
+      ]
+    },
+    {
+      "id": "M_ad9f695aa3",
+      "context": "docs/site-refactor/media-context/FR_LAV_LAVANDERIA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_ad9f695aa3_MASTER.md",
+      "contextSha256": "30af08949977484ad12fadb64fdfbba19866e6e7d2f56c8b8961b21293264f98",
+      "sourceContext": "IMAGENS/leiamecodex/FR_LAV_LAVANDERIA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_ad9f695aa3_MASTER.md",
+      "sourceHash": "ad9f695aa3938f469c5ee8516704c5ea51f9df6c88562a84748124f8c764a045",
+      "label": "IMAGEM ILUSTRATIVA",
+      "state": "aprovado",
+      "native": [
+        1122,
+        1402
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M_ad9f695aa3-480.webp",
+          "width": 480,
+          "height": 600,
+          "source_media_id": "M_ad9f695aa3",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "bbe2b9289a06c2ba1f4e905cc6d987fe811d127baac5d77dc54a71b0401d6159",
+          "bytes": 22310
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_ad9f695aa3-960.webp",
+          "width": 960,
+          "height": 1200,
+          "source_media_id": "M_ad9f695aa3",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "9848272dda4a829e6439e2f08baa642cd1a508a9b3d84ec14ca31242172e4b8b",
+          "bytes": 63552
+        },
+        {
+          "file": "assets/media/fr-coz-lav/M_ad9f695aa3-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "source_media_id": "M_ad9f695aa3",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "41269d3716cac270bd2eb86c202c70f25e83ee2586fb0635e626b884505dc881",
+          "bytes": 85300
+        }
+      ]
+    },
+    {
+      "id": "M047_PANEL_DIREITO",
+      "context": "docs/site-refactor/media-context/FR_LAV_BANCADA_JANELA_ILUSTRACAO_M047_PANEL_MASTER.md",
+      "contextSha256": "40c132607190fe5b0a1f67a57b79b544a3dbec957462bc0190cd34577e4b1529",
+      "sourceContext": "IMAGENS/leiamecodex/FR_LAV_BANCADA_JANELA_ILUSTRACAO_M047_PANEL_MASTER.md",
+      "sourceHash": "9e8ec18164ba81bada602406510117217c8f6f018d3245be53784d5aeeea12c3",
+      "label": "IMAGEM ILUSTRATIVA",
+      "state": "candidato",
+      "native": [
+        472,
+        881
+      ],
+      "variants": [
+        {
+          "file": "assets/media/fr-coz-lav/M047_PANEL_DIREITO-472.webp",
+          "width": 472,
+          "height": 881,
+          "source_media_id": "M047_PANEL_DIREITO",
+          "transform": "resize_lanczos_only_from_graded_master",
+          "crop_box": null,
+          "stage": "depois_terminado",
+          "publication_label": "IMAGEM ILUSTRATIVA",
+          "status": "READY_WITH_LABEL",
+          "sha256": "a9bfdc90fd0856d40d6804d74ca743ad31ce86c1b764a55f0dec64966c835d0a",
+          "bytes": 36122
+        }
+      ]
+    }
+  ],
+  "holdPublished": 0,
+  "documentaryExecutionProven": false,
+  "model3D": null
+}

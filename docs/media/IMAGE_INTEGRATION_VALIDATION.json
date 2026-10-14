@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "checks": {
+    "routes": 332,
+    "links": 6788,
+    "images": 2919,
+    "jsonld": 332,
+    "sitemaps": 5,
+    "protected": 0
+  },
+  "errors": [],
+  "media": 284,
+  "newImageIndexingEnabled": 0,
+  "publicFiles": 840,
+  "output": "/home/romeu/###PROGRAMAS###/FRANCO ROMEU/FRANCOROMEU-APP/dist"
+}

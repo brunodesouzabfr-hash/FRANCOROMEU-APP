@@ -1,0 +1,2286 @@
+{
+  "schema_version": "fr-editorial-1.0.0",
+  "generated_at": "2026-10-11",
+  "canonical": "https://www.francoromeufr.com.br",
+  "publication_state": "PRE_IMPLEMENTATION",
+  "auto_publish": false,
+  "provider_vocabulary": [
+    "Instagram",
+    "Pinterest",
+    "YouTube",
+    "Facebook",
+    "X",
+    "Threads",
+    "TikTok",
+    "Google"
+  ],
+  "published_posts_verified": 0,
+  "socialArchive": [
+    {
+      "id": "FR-SOC146",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-B5773FD4FC95ED6C",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para adega, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Adega em Limestone Moleanos",
+      "description": "Aplicação visual em adega, com hierarquia entre Limestone Moleanos + Malha de bronze, mobiliário e luz",
+      "projectId": "FR-I146",
+      "environmentIds": [
+        "adega"
+      ],
+      "serviceIds": [
+        "marcenaria-sob-medida",
+        "iluminacao",
+        "climatizacao",
+        "revestimentos-e-acabamentos"
+      ],
+      "materialIds": [
+        "limestone-moleanos",
+        "malha-de-bronze"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-9978DE0B620AF82F",
+        "FR-M-0D3506EFDE3FD8E9",
+        "FR-M-B5773FD4FC95ED6C"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/adega/adega-marcenaria-limestone-residencial-146/conteudo-adega-marcenaria-limestone-residencial-146.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC124",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-55F19132FB6AFEC5",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para ambiente a confirmar, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Ambiente em Greige fosco",
+      "description": "",
+      "projectId": "FR-I124",
+      "environmentIds": [],
+      "serviceIds": [
+        "revestimentos-e-acabamentos",
+        "projeto-e-compatibilizacao",
+        "marcenaria-sob-medida"
+      ],
+      "materialIds": [
+        "greige-fosco",
+        "carvalho-ebanizado"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "HOLD",
+      "mediaIds": [
+        "FR-M-C80EEEF057E3E342"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/ambiente-a-confirmar/ambiente-a-confirmar-revestimento-greige-residencial-124/conteudo-ambiente-a-confirmar-revestimento-greige-residencial-124.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC142",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-83EFB6DCE0B7B856",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para area gourmet, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Área gourmet em Pedra-sabão",
+      "description": "Aplicação visual em área gourmet, com hierarquia entre Pedra-sabão + Nogueira Canaletto, mobiliário e luz",
+      "projectId": "FR-I142",
+      "environmentIds": [
+        "area-gourmet"
+      ],
+      "serviceIds": [
+        "bancadas",
+        "marcenaria-sob-medida",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "materialIds": [
+        "pedra-sabao",
+        "nogueira-canaletto"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-89FE8AEC0CD681A5",
+        "FR-M-496C23577E2DA23D",
+        "FR-M-83EFB6DCE0B7B856"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/area-gourmet/area-gourmet-bancada-pedra-sabao-residencial-142/conteudo-area-gourmet-bancada-pedra-sabao-residencial-142.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC144",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-F8AF1967EFCB77C2",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para atelie, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Ateliê residencial em Terra compactada",
+      "description": "Aplicação visual em ateliê residencial, com hierarquia entre Terra compactada + Freijó natural, mobiliário e luz",
+      "projectId": "FR-I144",
+      "environmentIds": [
+        "atelie"
+      ],
+      "serviceIds": [
+        "bancadas",
+        "marcenaria-sob-medida",
+        "iluminacao",
+        "revestimentos-e-acabamentos"
+      ],
+      "materialIds": [
+        "terra-compactada",
+        "freijo-natural"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-B1C99AD5B504A588",
+        "FR-M-2E4B9CE12259F76E",
+        "FR-M-F8AF1967EFCB77C2"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/atelie/atelie-revestimento-terra-residencial-144/conteudo-atelie-revestimento-terra-residencial-144.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC120",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-D1B5E15E3819530F",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para banheiro, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Banheiro em Ônix mel",
+      "description": "Aplicação visual em banheiro, com hierarquia entre Ônix mel + Latão champagne, mobiliário e luz",
+      "projectId": "FR-I120",
+      "environmentIds": [
+        "banheiro"
+      ],
+      "serviceIds": [
+        "pisos",
+        "revestimentos-e-acabamentos",
+        "bancadas",
+        "marcenaria-sob-medida",
+        "iluminacao"
+      ],
+      "materialIds": [
+        "onix-mel",
+        "latao-champagne"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-E9E039D3D1147A98",
+        "FR-M-4791AF2308E976EC",
+        "FR-M-D1B5E15E3819530F"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/banheiro/banheiro-revestimento-onix-mel-residencial-120/conteudo-banheiro-revestimento-onix-mel-residencial-120.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC127",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-D1B5E15E3819530F",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para banheiro, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Banheiro em Quartzito Taj Mahal",
+      "description": "Aplicação visual em banheiro, com hierarquia entre Quartzito Taj Mahal + Latão escovado, mobiliário e luz",
+      "projectId": "FR-I127",
+      "environmentIds": [
+        "banheiro"
+      ],
+      "serviceIds": [
+        "pisos",
+        "revestimentos-e-acabamentos",
+        "bancadas",
+        "marcenaria-sob-medida",
+        "iluminacao"
+      ],
+      "materialIds": [
+        "quartzito-taj-mahal",
+        "latao-escovado"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-835087A9ACB7BCFF",
+        "FR-M-16F8CF5B3FA870F4",
+        "FR-M-D1B5E15E3819530F"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/banheiro/banheiro-revestimento-taj-mahal-residencial-127/conteudo-banheiro-revestimento-taj-mahal-residencial-127.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC106",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-D1B5E15E3819530F",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para banheiro, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Banheiro em Travertino Romano",
+      "description": "Aplicação visual em banheiro, com hierarquia entre Travertino Romano + Carvalho claro, mobiliário e luz",
+      "projectId": "FR-I106",
+      "environmentIds": [
+        "banheiro"
+      ],
+      "serviceIds": [
+        "pisos",
+        "revestimentos-e-acabamentos",
+        "bancadas",
+        "marcenaria-sob-medida",
+        "iluminacao"
+      ],
+      "materialIds": [
+        "travertino-romano",
+        "carvalho-claro"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-AD3EF4B11502B91A",
+        "FR-M-EC35905A83A02DC0",
+        "FR-M-D1B5E15E3819530F"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/banheiro/banheiro-revestimento-travertino-residencial-106/conteudo-banheiro-revestimento-travertino-residencial-106.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC135",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-D1B5E15E3819530F",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para banheiro, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Banheiro em Zellige verde floresta",
+      "description": "Aplicação visual em banheiro, com hierarquia entre Zellige verde floresta + Níquel escovado, mobiliário e luz",
+      "projectId": "FR-I135",
+      "environmentIds": [
+        "banheiro"
+      ],
+      "serviceIds": [
+        "pisos",
+        "revestimentos-e-acabamentos",
+        "bancadas",
+        "marcenaria-sob-medida",
+        "iluminacao"
+      ],
+      "materialIds": [
+        "zellige-verde-floresta",
+        "niquel-escovado"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-2E94B6C1800E029F",
+        "FR-M-9F01F45DA21E9ED1",
+        "FR-M-D1B5E15E3819530F"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/banheiro/banheiro-revestimento-zellige-residencial-135/conteudo-banheiro-revestimento-zellige-residencial-135.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC141",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-14B94B3E47FB47E6",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para biblioteca, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Biblioteca em Rosso Levanto",
+      "description": "Aplicação visual em biblioteca, com hierarquia entre Rosso Levanto + Palha natural, mobiliário e luz",
+      "projectId": "FR-I141",
+      "environmentIds": [
+        "biblioteca"
+      ],
+      "serviceIds": [
+        "marcenaria-sob-medida",
+        "iluminacao",
+        "projeto-e-compatibilizacao",
+        "revestimentos-e-acabamentos"
+      ],
+      "materialIds": [
+        "rosso-levanto",
+        "palha-natural"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-AE6FCAE144C9FD81",
+        "FR-M-0F59DBE4EB22E23D",
+        "FR-M-14B94B3E47FB47E6"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/biblioteca/biblioteca-marcenaria-rosso-levanto-residencial-141/conteudo-biblioteca-marcenaria-rosso-levanto-residencial-141.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC149",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-4F14F4455772DA2D",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para cinema, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Cinema residencial em Feltro acústico",
+      "description": "Aplicação visual em cinema residencial, com hierarquia entre Feltro acústico + Carvalho microperfurado, mobiliário e luz",
+      "projectId": "FR-I149",
+      "environmentIds": [
+        "cinema"
+      ],
+      "serviceIds": [
+        "acustica",
+        "marcenaria-sob-medida",
+        "iluminacao",
+        "automacao"
+      ],
+      "materialIds": [
+        "feltro-acustico",
+        "carvalho-microperfurado"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-597EAA20858074EF",
+        "FR-M-5FC5CB760F74F3FE",
+        "FR-M-4F14F4455772DA2D"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/cinema/cinema-acustica-feltro-residencial-149/conteudo-cinema-acustica-feltro-residencial-149.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC133",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-4F14F4455772DA2D",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para cinema, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Cinema residencial em Azul noite",
+      "description": "Aplicação visual em cinema residencial, com hierarquia entre Azul noite + Cherry vintage, mobiliário e luz",
+      "projectId": "FR-I133",
+      "environmentIds": [
+        "cinema"
+      ],
+      "serviceIds": [
+        "acustica",
+        "marcenaria-sob-medida",
+        "iluminacao",
+        "automacao"
+      ],
+      "materialIds": [
+        "azul-noite",
+        "cherry-vintage"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-8071CD91AA2D7BBF",
+        "FR-M-EA7BA8BEE381003F",
+        "FR-M-4F14F4455772DA2D"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/cinema/cinema-automacao-azul-noite-residencial-133/conteudo-cinema-automacao-azul-noite-residencial-133.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC148",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-0FD1B97EC8FFF658",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para closet, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Closet-galeria em Espelho bronze",
+      "description": "Aplicação visual em closet-galeria, com hierarquia entre Espelho bronze + Couro nobucke, mobiliário e luz",
+      "projectId": "FR-I148",
+      "environmentIds": [
+        "closet"
+      ],
+      "serviceIds": [
+        "closets",
+        "portas-e-esquadrias",
+        "iluminacao",
+        "bancadas"
+      ],
+      "materialIds": [
+        "espelho-bronze",
+        "couro-nobucke"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-BE34B1A15361BB2E",
+        "FR-M-D51FE8727A625B8B",
+        "FR-M-0FD1B97EC8FFF658"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/closet/closet-closet-planejado-espelho-bronze-residencial-148/conteudo-closet-closet-planejado-espelho-bronze-residencial-148.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC122",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-0FD1B97EC8FFF658",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para closet, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Closet em Linho areia",
+      "description": "Aplicação visual em closet, com hierarquia entre Linho areia + Bronze escovado, mobiliário e luz",
+      "projectId": "FR-I122",
+      "environmentIds": [
+        "closet"
+      ],
+      "serviceIds": [
+        "closets",
+        "portas-e-esquadrias",
+        "iluminacao",
+        "bancadas"
+      ],
+      "materialIds": [
+        "linho-areia",
+        "bronze-escovado"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-E96FD2A58AD7CACC",
+        "FR-M-9AA0A07EEEF24289",
+        "FR-M-0FD1B97EC8FFF658"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/closet/closet-closet-planejado-linho-residencial-122/conteudo-closet-closet-planejado-linho-residencial-122.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC112",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-0FD1B97EC8FFF658",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para closet, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Closet em Fendi matte",
+      "description": "Aplicação visual em closet, com hierarquia entre Fendi matte + Vidro Reflecta bronze, mobiliário e luz",
+      "projectId": "FR-I112",
+      "environmentIds": [
+        "closet"
+      ],
+      "serviceIds": [
+        "closets",
+        "portas-e-esquadrias",
+        "iluminacao",
+        "bancadas"
+      ],
+      "materialIds": [
+        "fendi-matte",
+        "vidro-reflecta-bronze"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-AFEACC74D6840CEA",
+        "FR-M-07E4F6580C2E6F1C",
+        "FR-M-0FD1B97EC8FFF658"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/closet/closet-closet-planejado-vidro-reflecta-residencial-112/conteudo-closet-closet-planejado-vidro-reflecta-residencial-112.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC102",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-C3EEB5AC24308F9D",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para cozinha, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Cozinha em Quartzito Black Fusion",
+      "description": "Aplicação visual em cozinha, com hierarquia entre Laca grafite acetinada + Quartzito Black Fusion, mobiliário e luz",
+      "projectId": "FR-I102",
+      "environmentIds": [
+        "cozinha"
+      ],
+      "serviceIds": [
+        "marcenaria-sob-medida",
+        "bancadas",
+        "iluminacao",
+        "revestimentos-e-acabamentos",
+        "projeto-e-compatibilizacao"
+      ],
+      "materialIds": [
+        "laca-grafite-acetinada",
+        "quartzito-black-fusion"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-8F86A2FC0B9A46F3",
+        "FR-M-58B51DA38CB04D09",
+        "FR-M-C3EEB5AC24308F9D"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/cozinha/cozinha-bancada-black-fusion-residencial-102/conteudo-cozinha-bancada-black-fusion-residencial-102.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC101",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-C3EEB5AC24308F9D",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para cozinha, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Cozinha em Calacatta Gold",
+      "description": "Aplicação visual em cozinha, com hierarquia entre Carvalho natural canelado + Calacatta Gold, mobiliário e luz",
+      "projectId": "FR-I101",
+      "environmentIds": [
+        "cozinha"
+      ],
+      "serviceIds": [
+        "marcenaria-sob-medida",
+        "bancadas",
+        "iluminacao",
+        "revestimentos-e-acabamentos",
+        "projeto-e-compatibilizacao"
+      ],
+      "materialIds": [
+        "carvalho-natural-canelado",
+        "calacatta-gold"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-FF6FB66521DA7A1B",
+        "FR-M-F9B87E87B5BD6EC0",
+        "FR-M-C3EEB5AC24308F9D"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/cozinha/cozinha-bancada-calacatta-residencial-101/conteudo-cozinha-bancada-calacatta-residencial-101.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC136",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-C3EEB5AC24308F9D",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para cozinha, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Cozinha em Quartzito Patagonia",
+      "description": "Aplicação visual em cozinha, com hierarquia entre Quartzito Patagonia + Laca café, mobiliário e luz",
+      "projectId": "FR-I136",
+      "environmentIds": [
+        "cozinha"
+      ],
+      "serviceIds": [
+        "marcenaria-sob-medida",
+        "bancadas",
+        "iluminacao",
+        "revestimentos-e-acabamentos",
+        "projeto-e-compatibilizacao"
+      ],
+      "materialIds": [
+        "quartzito-patagonia",
+        "laca-cafe"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-11A08C4C25E59CEB",
+        "FR-M-C2F7F1D917A8BECA",
+        "FR-M-C3EEB5AC24308F9D"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/cozinha/cozinha-bancada-patagonia-residencial-136/conteudo-cozinha-bancada-patagonia-residencial-136.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC103",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-C3EEB5AC24308F9D",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para cozinha, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Cozinha em Quartzito Taj Mahal",
+      "description": "Aplicação visual em cozinha, com hierarquia entre Off-white fosco + Quartzito Taj Mahal, mobiliário e luz",
+      "projectId": "FR-I103",
+      "environmentIds": [
+        "cozinha"
+      ],
+      "serviceIds": [
+        "marcenaria-sob-medida",
+        "bancadas",
+        "iluminacao",
+        "revestimentos-e-acabamentos",
+        "projeto-e-compatibilizacao"
+      ],
+      "materialIds": [
+        "off-white-fosco",
+        "quartzito-taj-mahal"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-6839429975B59F3A",
+        "FR-M-FF1D7BDF3045C558",
+        "FR-M-C3EEB5AC24308F9D"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/cozinha/cozinha-bancada-taj-mahal-residencial-103/conteudo-cozinha-bancada-taj-mahal-residencial-103.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC104",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-C3EEB5AC24308F9D",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para cozinha, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Cozinha em Travertino Romano",
+      "description": "Aplicação visual em cozinha, com hierarquia entre Verde petróleo fosco + Travertino Romano, mobiliário e luz",
+      "projectId": "FR-I104",
+      "environmentIds": [
+        "cozinha"
+      ],
+      "serviceIds": [
+        "marcenaria-sob-medida",
+        "bancadas",
+        "iluminacao",
+        "revestimentos-e-acabamentos",
+        "projeto-e-compatibilizacao"
+      ],
+      "materialIds": [
+        "verde-petroleo-fosco",
+        "travertino-romano"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-6E007F88481955F5",
+        "FR-M-F8CC9967F759994D",
+        "FR-M-C3EEB5AC24308F9D"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/cozinha/cozinha-bancada-travertino-residencial-104/conteudo-cozinha-bancada-travertino-residencial-104.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC121",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-C3EEB5AC24308F9D",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para cozinha, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Cozinha em Concreto aparente",
+      "description": "Aplicação visual em cozinha, com hierarquia entre Concreto aparente + Nogueira escura, mobiliário e luz",
+      "projectId": "FR-I121",
+      "environmentIds": [
+        "cozinha"
+      ],
+      "serviceIds": [
+        "marcenaria-sob-medida",
+        "bancadas",
+        "iluminacao",
+        "revestimentos-e-acabamentos",
+        "projeto-e-compatibilizacao"
+      ],
+      "materialIds": [
+        "concreto-aparente",
+        "nogueira-escura"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-45DCEC99F26AB8A7",
+        "FR-M-87BC7D8C7362F515",
+        "FR-M-C3EEB5AC24308F9D"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/cozinha/cozinha-marcenaria-concreto-residencial-121/conteudo-cozinha-marcenaria-concreto-residencial-121.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC143",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-A975E2A8E65DB14D",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para escada, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Escada-galeria em Vidro fundido",
+      "description": "Aplicação visual em escada-galeria, com hierarquia entre Vidro fundido + Aço azulado, mobiliário e luz",
+      "projectId": "FR-I143",
+      "environmentIds": [
+        "escada"
+      ],
+      "serviceIds": [
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "materialIds": [
+        "vidro-fundido",
+        "aco-azulado"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-E84E680CEFEF54F8",
+        "FR-M-566E71C811F5DE53",
+        "FR-M-A975E2A8E65DB14D"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/escada/escada-vidro-vidro-fundido-residencial-143/conteudo-escada-vidro-vidro-fundido-residencial-143.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC131",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-FFF7AE5E8C667A6E",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para escritorio, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Escritório em Bordeaux profundo",
+      "description": "Aplicação visual em escritório, com hierarquia entre Bordeaux profundo + Ébano fosco, mobiliário e luz",
+      "projectId": "FR-I131",
+      "environmentIds": [
+        "escritorio"
+      ],
+      "serviceIds": [
+        "marcenaria-sob-medida",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "materialIds": [
+        "bordeaux-profundo",
+        "ebano-fosco"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-A41CCD96F018EF23",
+        "FR-M-716EC1A866FE8CEC",
+        "FR-M-FFF7AE5E8C667A6E"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/escritorio/escritorio-marcenaria-bordeaux-residencial-131/conteudo-escritorio-marcenaria-bordeaux-residencial-131.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC110",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-FFF7AE5E8C667A6E",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para escritorio, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Escritório em Nogueira americana",
+      "description": "Aplicação visual em escritório, com hierarquia entre Nogueira americana + Couro caramelo, mobiliário e luz",
+      "projectId": "FR-I110",
+      "environmentIds": [
+        "escritorio"
+      ],
+      "serviceIds": [
+        "marcenaria-sob-medida",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "materialIds": [
+        "nogueira-americana",
+        "couro-caramelo"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-2C1CC4014737033A",
+        "FR-M-655E521A8E6DF4C7",
+        "FR-M-FFF7AE5E8C667A6E"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/escritorio/escritorio-marcenaria-nogueira-residencial-110/conteudo-escritorio-marcenaria-nogueira-residencial-110.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC108",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-A22B3E149551C0F5",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para fachada, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Fachada em Concreto aparente",
+      "description": "Aplicação visual em fachada, com hierarquia entre Concreto aparente + Cumaru natural, mobiliário e luz",
+      "projectId": "FR-I108",
+      "environmentIds": [
+        "fachada"
+      ],
+      "serviceIds": [
+        "revestimentos-e-acabamentos",
+        "marcenaria-sob-medida",
+        "portas-e-esquadrias",
+        "iluminacao",
+        "paisagismo",
+        "projeto-e-compatibilizacao"
+      ],
+      "materialIds": [
+        "concreto-aparente",
+        "cumaru-natural"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-89AF8E313FB4F286",
+        "FR-M-9875F6925F5893AD",
+        "FR-M-A22B3E149551C0F5"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/fachada/fachada-revestimento-concreto-residencial-108/conteudo-fachada-revestimento-concreto-residencial-108.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC129",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-A22B3E149551C0F5",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para fachada, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Fachada em Concreto arquitetônico",
+      "description": "Aplicação visual em fachada, com hierarquia entre Concreto arquitetônico + Cumaru natural, mobiliário e luz",
+      "projectId": "FR-I129",
+      "environmentIds": [
+        "fachada"
+      ],
+      "serviceIds": [
+        "revestimentos-e-acabamentos",
+        "marcenaria-sob-medida",
+        "portas-e-esquadrias",
+        "iluminacao",
+        "paisagismo",
+        "projeto-e-compatibilizacao"
+      ],
+      "materialIds": [
+        "concreto-arquitetonico",
+        "cumaru-natural"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-367FAB8B2D96C986",
+        "FR-M-A8765D3C5621C76B",
+        "FR-M-A22B3E149551C0F5"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/fachada/fachada-revestimento-concreto-residencial-129/conteudo-fachada-revestimento-concreto-residencial-129.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC117",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-A22B3E149551C0F5",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para fachada, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Fachada em Pedra moledo",
+      "description": "Aplicação visual em fachada, com hierarquia entre Pedra moledo + Aço Corten, mobiliário e luz",
+      "projectId": "FR-I117",
+      "environmentIds": [
+        "fachada"
+      ],
+      "serviceIds": [
+        "revestimentos-e-acabamentos",
+        "marcenaria-sob-medida",
+        "portas-e-esquadrias",
+        "iluminacao",
+        "paisagismo",
+        "projeto-e-compatibilizacao"
+      ],
+      "materialIds": [
+        "pedra-moledo",
+        "aco-corten"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-486DE074FA0D6C3A",
+        "FR-M-9C5F8D0424D0EA1C",
+        "FR-M-A22B3E149551C0F5"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/fachada/fachada-revestimento-pedra-moledo-residencial-117/conteudo-fachada-revestimento-pedra-moledo-residencial-117.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC137",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-D405D8D548A405C2",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para hall, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Hall de entrada em Granilite antracita",
+      "description": "Aplicação visual em hall de entrada, com hierarquia entre Granilite antracita + Tauari termotratado, mobiliário e luz",
+      "projectId": "FR-I137",
+      "environmentIds": [
+        "hall"
+      ],
+      "serviceIds": [
+        "pisos",
+        "revestimentos-e-acabamentos",
+        "marcenaria-sob-medida",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "materialIds": [
+        "granilite-antracita",
+        "tauari-termotratado"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-54CA6326E4C1F6BF",
+        "FR-M-6B9AED818E37970F",
+        "FR-M-D405D8D548A405C2"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/hall/hall-piso-granilite-residencial-137/conteudo-hall-piso-granilite-residencial-137.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC114",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-D405D8D548A405C2",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para hall, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Hall de entrada em Microcimento greige",
+      "description": "Aplicação visual em hall de entrada, com hierarquia entre Microcimento greige + Carvalho ebanizado, mobiliário e luz",
+      "projectId": "FR-I114",
+      "environmentIds": [
+        "hall"
+      ],
+      "serviceIds": [
+        "pisos",
+        "revestimentos-e-acabamentos",
+        "marcenaria-sob-medida",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "materialIds": [
+        "microcimento-greige",
+        "carvalho-ebanizado"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-BA0729261A310DAA",
+        "FR-M-EA12A88DB29938AD",
+        "FR-M-D405D8D548A405C2"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/hall/hall-revestimento-microcimento-residencial-114/conteudo-hall-revestimento-microcimento-residencial-114.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC132",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-1A529F6C4805ACE6",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para lavabo, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Lavabo em Ameixa intensa",
+      "description": "Aplicação visual em lavabo, com hierarquia entre Ameixa intensa + Cobre escovado, mobiliário e luz",
+      "projectId": "FR-I132",
+      "environmentIds": [
+        "lavabo"
+      ],
+      "serviceIds": [
+        "bancadas",
+        "revestimentos-e-acabamentos",
+        "marcenaria-sob-medida",
+        "iluminacao"
+      ],
+      "materialIds": [
+        "ameixa-intensa",
+        "cobre-escovado"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-6F4545E989AFB357",
+        "FR-M-B625EA35B1A5D4A4",
+        "FR-M-1A529F6C4805ACE6"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/lavabo/lavabo-revestimento-ameixa-residencial-132/conteudo-lavabo-revestimento-ameixa-residencial-132.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC140",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-1A529F6C4805ACE6",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para lavabo, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Lavabo em Ônix Verde Persa",
+      "description": "Aplicação visual em lavabo, com hierarquia entre Ônix Verde Persa + Cobre oxidado, mobiliário e luz",
+      "projectId": "FR-I140",
+      "environmentIds": [
+        "lavabo"
+      ],
+      "serviceIds": [
+        "bancadas",
+        "revestimentos-e-acabamentos",
+        "marcenaria-sob-medida",
+        "iluminacao"
+      ],
+      "materialIds": [
+        "onix-verde-persa",
+        "cobre-oxidado"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-CCA6BAD9775C2890",
+        "FR-M-86FF6FCCFE3EA6A2",
+        "FR-M-1A529F6C4805ACE6"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/lavabo/lavabo-revestimento-onix-verde-residencial-140/conteudo-lavabo-revestimento-onix-verde-residencial-140.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC113",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-1A529F6C4805ACE6",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para lavabo, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Lavabo em Mármore Verde Guatemala",
+      "description": "Aplicação visual em lavabo, com hierarquia entre Mármore Verde Guatemala + Cumaru natural, mobiliário e luz",
+      "projectId": "FR-I113",
+      "environmentIds": [
+        "lavabo"
+      ],
+      "serviceIds": [
+        "bancadas",
+        "revestimentos-e-acabamentos",
+        "marcenaria-sob-medida",
+        "iluminacao"
+      ],
+      "materialIds": [
+        "marmore-verde-guatemala",
+        "cumaru-natural"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-391B329FBF7DBAD6",
+        "FR-M-76E2BA61C4E6623B",
+        "FR-M-1A529F6C4805ACE6"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/lavabo/lavabo-revestimento-verde-guatemala-residencial-113/conteudo-lavabo-revestimento-verde-guatemala-residencial-113.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC147",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-FD93920D56C9D248",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para pavilhao piscina, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Pavilhão de piscina em Basalto flamejado",
+      "description": "Aplicação visual em pavilhão de piscina, com hierarquia entre Madeira Yakisugi + Basalto flamejado, mobiliário e luz",
+      "projectId": "FR-I147",
+      "environmentIds": [
+        "pavilhao-piscina"
+      ],
+      "serviceIds": [
+        "revestimentos-e-acabamentos",
+        "marcenaria-sob-medida",
+        "iluminacao",
+        "forros",
+        "paisagismo",
+        "projeto-e-compatibilizacao"
+      ],
+      "materialIds": [
+        "madeira-yakisugi",
+        "basalto-flamejado"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-9C91617D0BEB2755",
+        "FR-M-80D892C71088F476",
+        "FR-M-FD93920D56C9D248"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/pavilhao-piscina/pavilhao-piscina-revestimento-yakisugi-residencial-147/conteudo-pavilhao-piscina-revestimento-yakisugi-residencial-147.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC134",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-7001344CDEEECB14",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para quarto, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Quarto em Terracota queimada",
+      "description": "Aplicação visual em quarto, com hierarquia entre Oliva profunda + Terracota queimada, mobiliário e luz",
+      "projectId": "FR-I134",
+      "environmentIds": [
+        "quarto"
+      ],
+      "serviceIds": [
+        "marcenaria-sob-medida",
+        "revestimentos-e-acabamentos",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "materialIds": [
+        "oliva-profunda",
+        "terracota-queimada"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-DD0153C653B44AAD",
+        "FR-M-3A19EE1010A7B9B7",
+        "FR-M-7001344CDEEECB14"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/quarto/quarto-marcenaria-terracota-residencial-134/conteudo-quarto-marcenaria-terracota-residencial-134.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC139",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-7001344CDEEECB14",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para quarto, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Quarto em Tadelakt terracota",
+      "description": "Aplicação visual em quarto, com hierarquia entre Tadelakt terracota + Sucupira natural, mobiliário e luz",
+      "projectId": "FR-I139",
+      "environmentIds": [
+        "quarto"
+      ],
+      "serviceIds": [
+        "marcenaria-sob-medida",
+        "revestimentos-e-acabamentos",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "materialIds": [
+        "tadelakt-terracota",
+        "sucupira-natural"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-CA8B2B3C58A3950B",
+        "FR-M-3AACD83FF9529778",
+        "FR-M-7001344CDEEECB14"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/quarto/quarto-revestimento-tadelakt-residencial-139/conteudo-quarto-revestimento-tadelakt-residencial-139.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC138",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-03BFE5EA65D57B19",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para sala audio, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Sala de áudio em Cortiça fumê",
+      "description": "Aplicação visual em sala de áudio, com hierarquia entre Cortiça fumê + Lã acústica caramelo, mobiliário e luz",
+      "projectId": "FR-I138",
+      "environmentIds": [
+        "sala-audio"
+      ],
+      "serviceIds": [
+        "acustica",
+        "marcenaria-sob-medida",
+        "iluminacao",
+        "eletrica"
+      ],
+      "materialIds": [
+        "cortica-fume",
+        "la-acustica-caramelo"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-62C4BFC6A236ECCB",
+        "FR-M-0506B896ABE2365C",
+        "FR-M-03BFE5EA65D57B19"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/sala-audio/sala-audio-acustica-cortica-residencial-138/conteudo-sala-audio-acustica-cortica-residencial-138.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC130",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-7343C8DD62851939",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para sala estar, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Sala de estar em Couro conhaque",
+      "description": "Aplicação visual em sala de estar, com hierarquia entre Couro conhaque + Nogueira escura, mobiliário e luz",
+      "projectId": "FR-I130",
+      "environmentIds": [
+        "sala-estar"
+      ],
+      "serviceIds": [
+        "marcenaria-sob-medida",
+        "revestimentos-e-acabamentos",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "materialIds": [
+        "couro-conhaque",
+        "nogueira-escura"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-3A81F376EA55998F",
+        "FR-M-E7560379200A4082",
+        "FR-M-7343C8DD62851939"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/sala-estar/sala-estar-marcenaria-couro-residencial-130/conteudo-sala-estar-marcenaria-couro-residencial-130.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC118",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-7343C8DD62851939",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para sala estar, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Sala de estar em Palha indiana",
+      "description": "Aplicação visual em sala de estar, com hierarquia entre Palha indiana + Carvalho claro, mobiliário e luz",
+      "projectId": "FR-I118",
+      "environmentIds": [
+        "sala-estar"
+      ],
+      "serviceIds": [
+        "marcenaria-sob-medida",
+        "revestimentos-e-acabamentos",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "materialIds": [
+        "palha-indiana",
+        "carvalho-claro"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-DAD7A7434C231554",
+        "FR-M-11593EB013F99BDE",
+        "FR-M-7343C8DD62851939"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/sala-estar/sala-estar-marcenaria-palha-residencial-118/conteudo-sala-estar-marcenaria-palha-residencial-118.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC107",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-7343C8DD62851939",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para sala estar, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Sala de estar em Quartzito Taj Mahal",
+      "description": "Aplicação visual em sala de estar, com hierarquia entre Nogueira fumê + Quartzito Taj Mahal, mobiliário e luz",
+      "projectId": "FR-I107",
+      "environmentIds": [
+        "sala-estar"
+      ],
+      "serviceIds": [
+        "marcenaria-sob-medida",
+        "revestimentos-e-acabamentos",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "materialIds": [
+        "nogueira-fume",
+        "quartzito-taj-mahal"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-A765E32AC633C849",
+        "FR-M-CAD07278FFE31694",
+        "FR-M-7343C8DD62851939"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/sala-estar/sala-estar-marcenaria-taj-mahal-residencial-107/conteudo-sala-estar-marcenaria-taj-mahal-residencial-107.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC116",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-7343C8DD62851939",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para sala estar, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Sala de estar em Black Fusion",
+      "description": "Aplicação visual em sala de estar, com hierarquia entre Black Fusion + Nogueira fumê, mobiliário e luz",
+      "projectId": "FR-I116",
+      "environmentIds": [
+        "sala-estar"
+      ],
+      "serviceIds": [
+        "marcenaria-sob-medida",
+        "revestimentos-e-acabamentos",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "materialIds": [
+        "black-fusion",
+        "nogueira-fume"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-B5EEC432F623DCDF",
+        "FR-M-1E89219EB7D0A531",
+        "FR-M-7343C8DD62851939"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/sala-estar/sala-estar-painel-black-fusion-residencial-116/conteudo-sala-estar-painel-black-fusion-residencial-116.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC126",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-7343C8DD62851939",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para sala estar, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Sala de estar em Travertino Romano",
+      "description": "Aplicação visual em sala de estar, com hierarquia entre Travertino Romano + Bouclé avelã, mobiliário e luz",
+      "projectId": "FR-I126",
+      "environmentIds": [
+        "sala-estar"
+      ],
+      "serviceIds": [
+        "marcenaria-sob-medida",
+        "revestimentos-e-acabamentos",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "materialIds": [
+        "travertino-romano",
+        "boucle-avela"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-102719814FBBBA41",
+        "FR-M-A4AA6D26829AC6A0",
+        "FR-M-7343C8DD62851939"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/sala-estar/sala-estar-revestimento-travertino-residencial-126/conteudo-sala-estar-revestimento-travertino-residencial-126.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC119",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-5634AF0D80E734C0",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para sala gamer, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Sala gamer em Azul petróleo",
+      "description": "Aplicação visual em sala gamer, com hierarquia entre Azul petróleo + Ripado grafite, mobiliário e luz",
+      "projectId": "FR-I119",
+      "environmentIds": [
+        "sala-gamer"
+      ],
+      "serviceIds": [
+        "marcenaria-sob-medida",
+        "iluminacao",
+        "eletrica",
+        "automacao"
+      ],
+      "materialIds": [
+        "azul-petroleo",
+        "ripado-grafite"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-5296B598ACC770B4",
+        "FR-M-75A3EABE0177F947",
+        "FR-M-5634AF0D80E734C0"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/sala-gamer/sala-gamer-automacao-azul-petroleo-residencial-119/conteudo-sala-gamer-automacao-azul-petroleo-residencial-119.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC109",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-5634AF0D80E734C0",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para sala gamer, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Sala gamer em Grafite soft-touch",
+      "description": "Aplicação visual em sala gamer, com hierarquia entre Grafite soft-touch + Vidro fumê + LED, mobiliário e luz",
+      "projectId": "FR-I109",
+      "environmentIds": [
+        "sala-gamer"
+      ],
+      "serviceIds": [
+        "marcenaria-sob-medida",
+        "iluminacao",
+        "eletrica",
+        "automacao"
+      ],
+      "materialIds": [
+        "grafite-soft-touch",
+        "vidro-fume",
+        "led"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-D5D33C39165224D2",
+        "FR-M-3F7186AA492D142A",
+        "FR-M-5634AF0D80E734C0"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/sala-gamer/sala-gamer-automacao-grafite-residencial-109/conteudo-sala-gamer-automacao-grafite-residencial-109.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC128",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-5634AF0D80E734C0",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para sala gamer, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Sala gamer em Grafite acetinado",
+      "description": "Aplicação visual em sala gamer, com hierarquia entre Grafite acetinado + Azul petróleo, mobiliário e luz",
+      "projectId": "FR-I128",
+      "environmentIds": [
+        "sala-gamer"
+      ],
+      "serviceIds": [
+        "marcenaria-sob-medida",
+        "iluminacao",
+        "eletrica",
+        "automacao"
+      ],
+      "materialIds": [
+        "grafite-acetinado",
+        "azul-petroleo"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-4F4C99EE43808044",
+        "FR-M-B3AD907DA59F5BBB",
+        "FR-M-5634AF0D80E734C0"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/sala-gamer/sala-gamer-automacao-grafite-residencial-128/conteudo-sala-gamer-automacao-grafite-residencial-128.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC111",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-192A26BCB8AC6426",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para sala jantar, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Sala de jantar em Ônix mel",
+      "description": "Aplicação visual em sala de jantar, com hierarquia entre Ônix mel + Metal champagne, mobiliário e luz",
+      "projectId": "FR-I111",
+      "environmentIds": [
+        "sala-jantar"
+      ],
+      "serviceIds": [
+        "marcenaria-sob-medida",
+        "revestimentos-e-acabamentos",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "materialIds": [
+        "onix-mel",
+        "metal-champagne"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-FD82D004C5402E13",
+        "FR-M-B6898A912D180F83",
+        "FR-M-192A26BCB8AC6426"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/sala-jantar/sala-jantar-mesa-onix-mel-residencial-111/conteudo-sala-jantar-mesa-onix-mel-residencial-111.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC123",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-192A26BCB8AC6426",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para sala jantar, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Sala de jantar em Travertino Romano",
+      "description": "Aplicação visual em sala de jantar, com hierarquia entre Travertino Romano + Verde musgo, mobiliário e luz",
+      "projectId": "FR-I123",
+      "environmentIds": [
+        "sala-jantar"
+      ],
+      "serviceIds": [
+        "marcenaria-sob-medida",
+        "revestimentos-e-acabamentos",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "materialIds": [
+        "travertino-romano",
+        "verde-musgo"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-0E82A04AF7A51964",
+        "FR-M-C64ED2BC9ACF0A69",
+        "FR-M-192A26BCB8AC6426"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/sala-jantar/sala-jantar-mesa-travertino-residencial-123/conteudo-sala-jantar-mesa-travertino-residencial-123.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC145",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-192A26BCB8AC6426",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para sala jantar, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Sala de jantar em Marmorino grafite",
+      "description": "Aplicação visual em sala de jantar, com hierarquia entre Marmorino grafite + Eucalipto fumê, mobiliário e luz",
+      "projectId": "FR-I145",
+      "environmentIds": [
+        "sala-jantar"
+      ],
+      "serviceIds": [
+        "marcenaria-sob-medida",
+        "revestimentos-e-acabamentos",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "materialIds": [
+        "marmorino-grafite",
+        "eucalipto-fume"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-1B189C326529AB4A",
+        "FR-M-A3E97FD89DCB98EC",
+        "FR-M-192A26BCB8AC6426"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/sala-jantar/sala-jantar-revestimento-marmorino-residencial-145/conteudo-sala-jantar-revestimento-marmorino-residencial-145.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC115",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-F02FF4EEDFA69C7E",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para suite, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Suíte em Calcário areia",
+      "description": "Aplicação visual em suíte, com hierarquia entre Calcário areia + Freijó natural, mobiliário e luz",
+      "projectId": "FR-I115",
+      "environmentIds": [
+        "quarto"
+      ],
+      "serviceIds": [
+        "marcenaria-sob-medida",
+        "revestimentos-e-acabamentos",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "materialIds": [
+        "calcario-areia",
+        "freijo-natural"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-8477FB1BE0B0C253",
+        "FR-M-96B1F9605BEFC3C2",
+        "FR-M-F02FF4EEDFA69C7E"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/suite/suite-marcenaria-calcario-residencial-115/conteudo-suite-marcenaria-calcario-residencial-115.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC105",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-F02FF4EEDFA69C7E",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para suite, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Suíte em Limestone areia",
+      "description": "Aplicação visual em suíte, com hierarquia entre Freijó natural + Limestone areia, mobiliário e luz",
+      "projectId": "FR-I105",
+      "environmentIds": [
+        "quarto"
+      ],
+      "serviceIds": [
+        "marcenaria-sob-medida",
+        "revestimentos-e-acabamentos",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "materialIds": [
+        "freijo-natural",
+        "limestone-areia"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-33E05A9B4D23EB8A",
+        "FR-M-FA51CBA2D7AD3D6D",
+        "FR-M-F02FF4EEDFA69C7E"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/suite/suite-marcenaria-limestone-residencial-105/conteudo-suite-marcenaria-limestone-residencial-105.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    },
+    {
+      "id": "FR-SOC125",
+      "provider": null,
+      "url": null,
+      "poster": "FR-M-F02FF4EEDFA69C7E",
+      "posterAlt": "Capa editorial ilustrativa Franco Romeu para suite, com texto e colagem de ambientes",
+      "title": "Estudo de materialidade — Suíte em Microcimento areia",
+      "description": "Aplicação visual em suíte, com hierarquia entre Carvalho claro + Microcimento areia, mobiliário e luz",
+      "projectId": "FR-I125",
+      "environmentIds": [
+        "quarto"
+      ],
+      "serviceIds": [
+        "marcenaria-sob-medida",
+        "revestimentos-e-acabamentos",
+        "iluminacao",
+        "projeto-e-compatibilizacao"
+      ],
+      "materialIds": [
+        "carvalho-claro",
+        "microcimento-areia"
+      ],
+      "contentType": "material",
+      "availableAssetTypes": [
+        "carousel",
+        "reel-script",
+        "story-poster"
+      ],
+      "publishedAt": null,
+      "featured": false,
+      "indexable": false,
+      "embedStrategy": "LOCAL_POSTER_NO_EMBED",
+      "status": "DRAFT_ASSET_ONLY",
+      "mediaIds": [
+        "FR-M-FED6FADB891BB1AB",
+        "FR-M-BD66F74EA142A008",
+        "FR-M-F02FF4EEDFA69C7E"
+      ],
+      "sourceDocument": {
+        "root": "CODEX_ROOT",
+        "path": "reels_design_organized/ambientes/suite/suite-marcenaria-microcimento-residencial-125/conteudo-suite-marcenaria-microcimento-residencial-125.md"
+      },
+      "publicationLabel": "ESTUDO ILUSTRATIVO",
+      "video_file": null,
+      "uploadDate": null
+    }
+  ]
+}

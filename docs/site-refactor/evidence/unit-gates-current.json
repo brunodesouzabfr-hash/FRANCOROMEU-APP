@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-11",
+  "runtime": "Node.js 20.20.2",
+  "commands": [
+    { "command": "npm test", "exitCode": 0, "tests": 64, "failures": 0, "suiteCounts": [3, 6, 6, 12, 4, 7, 26] },
+    { "command": "npm run check:html", "exitCode": 0, "uniqueIds": 253, "views": 6 },
+    { "command": "npm run check:source-media", "exitCode": 0, "unchangedOriginals": 120, "unchangedSourceContexts": 57, "localOnly": true }
+  ],
+  "publicFingerprint": "0151633538195b2ab61ce2f5e114fad6240b300fac9d51dd29bbce4f5f06d8c0",
+  "rawLogs": "Kept in local /tmp; not copied into the public repository",
+  "remoteCiExecuted": false,
+  "browserAndPdfEvidence": "Recorded separately; not inferred from unit tests"
+}

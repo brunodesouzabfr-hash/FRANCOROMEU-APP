@@ -1,0 +1,812 @@
+[
+  {
+    "route": "/",
+    "viewport": {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900
+    },
+    "status": 200,
+    "errors": [],
+    "metrics": {
+      "title": "Reformas e Projetos em SP | Franco Romeu — Porcelanato e Interiores",
+      "h1": [
+        "Espaços\n                        Forjados\n                        Para durar."
+      ],
+      "scrollWidth": 1434,
+      "clientWidth": 1440,
+      "overflow": false,
+      "activeView": "view-home"
+    },
+    "home": {
+      "manifesto": "/assets/media/projects/cozinha-lavanderia/cozinha-env-lavanderia-imagem-ilustrativa-986cf34222.webp",
+      "specialties": [
+        {
+          "title": "Superfícies autorais",
+          "src": "/assets/media/projects/cozinha-lavanderia/cozinha-bancada-l-imagem-ilustrativa-b239e59121.webp"
+        },
+        {
+          "title": "Design & marcenaria",
+          "src": "/assets/media/projects/cozinha-lavanderia/cozinha-torre-quente-imagem-ilustrativa-78d797da36.webp"
+        },
+        {
+          "title": "Projeto 3D",
+          "src": "/assets/media/projects/cozinha-lavanderia/cozinha-ilha-cooktop-estudo-3d-ilustrativo-55a2676b5d.webp"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/projetos-3d",
+    "viewport": {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900
+    },
+    "status": 200,
+    "errors": [],
+    "metrics": {
+      "title": "Projetos 3D de Interiores em SP | Franco Romeu",
+      "h1": [
+        "Projetos\n                    em 3D"
+      ],
+      "scrollWidth": 1434,
+      "clientWidth": 1440,
+      "overflow": false,
+      "activeView": "view-projetos3d"
+    },
+    "p3d": {
+      "count": 10,
+      "selected": "03Bancada Calacatta em Órbita",
+      "names": [
+        "Reforma Residencial Integral",
+        "Retrofit Comercial de Precisão",
+        "Bancada Calacatta em Órbita",
+        "Armários & Guarda-Roupas Integrados",
+        "Brinquedomóvel FR",
+        "Arena Futebol X1",
+        "Tabela de Basquete em Aço",
+        "Patinação + Luz DMX",
+        "Iluminação Integrada ao Móvel",
+        "Suíte de Luxo Silencioso"
+      ],
+      "squares": [
+        {
+          "width": 259,
+          "height": 259
+        },
+        {
+          "width": 259,
+          "height": 259
+        },
+        {
+          "width": 259,
+          "height": 259
+        },
+        {
+          "width": 259,
+          "height": 259
+        },
+        {
+          "width": 259,
+          "height": 259
+        },
+        {
+          "width": 259,
+          "height": 259
+        },
+        {
+          "width": 259,
+          "height": 259
+        },
+        {
+          "width": 259,
+          "height": 259
+        },
+        {
+          "width": 259,
+          "height": 259
+        },
+        {
+          "width": 259,
+          "height": 259
+        }
+      ],
+      "cube": true,
+      "dossier": true
+    }
+  },
+  {
+    "route": "/sobre",
+    "viewport": {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900
+    },
+    "status": 200,
+    "errors": [],
+    "metrics": {
+      "title": "Franco Romeu — Arte, Engenharia e Método em São Paulo",
+      "h1": [
+        "Nós não\n                    \n                    \n                        construímos\n                    \n                    \n                        espaços. Nós os curamos."
+      ],
+      "scrollWidth": 1434,
+      "clientWidth": 1440,
+      "overflow": false,
+      "activeView": "view-sobre"
+    },
+    "about": {
+      "googleQuiet": true,
+      "googleBeforeServices": true,
+      "servicesPresent": true,
+      "removedArchive": true
+    }
+  },
+  {
+    "route": "/ambientes",
+    "viewport": {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900
+    },
+    "status": 200,
+    "errors": [],
+    "metrics": {
+      "title": "Ambientes e Interiores em São Paulo | Franco Romeu",
+      "h1": [
+        "Arquitetura é\n                    a linguagem\n                    que você escolhe para viver."
+      ],
+      "scrollWidth": 1434,
+      "clientWidth": 1440,
+      "overflow": false,
+      "activeView": "view-ambientes"
+    },
+    "dossier": {
+      "open": true,
+      "tabs": [
+        "Todos",
+        "Projeto 3D",
+        "Detalhes",
+        "Antes / referência inicial",
+        "Visão geral"
+      ],
+      "thumbs": 48,
+      "classification": "Classificação factualEstudo visual ilustrativo · Antes reconstituído quando identificadoMateriais relacionadosQuartzo Calacatta · Acabamento amadeirado · Cerâmica · LED · MDP cinza · Acabamento cinza · Vidro escuroLer o caderno técnico →"
+    }
+  },
+  {
+    "route": "/portfolio",
+    "viewport": {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900
+    },
+    "status": 200,
+    "errors": [],
+    "metrics": {
+      "title": "Portfólio de Reformas e Interiores | Franco Romeu SP",
+      "h1": [
+        "ArquivoVivo"
+      ],
+      "scrollWidth": 1434,
+      "clientWidth": 1440,
+      "overflow": false,
+      "activeView": "view-projetos"
+    },
+    "portfolio": {
+      "cards": 36,
+      "removed": true,
+      "thesis": "Projetos visuais organizados por ambiente, matéria e decisão."
+    }
+  },
+  {
+    "route": "/projetos/",
+    "viewport": {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900
+    },
+    "status": 200,
+    "errors": [],
+    "metrics": {
+      "title": "Jornal Técnico Franco Romeu — projetos, materiais e decisões",
+      "h1": [
+        "A matéria encontra o método."
+      ],
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflow": false,
+      "activeView": null
+    },
+    "journal": {
+      "canonical": "https://www.francoromeufr.com.br/projetos/",
+      "cards": 109,
+      "filters": 3,
+      "explore": [
+        "/projetos/",
+        "/projetos/antes-depois/",
+        "/projetos/estudos-3d/",
+        "/projetos/materiais/",
+        "/projetos/servicos/",
+        "/projetos/ambientes/"
+      ]
+    }
+  },
+  {
+    "route": "/projetos/antes-depois/suite-piso-madeira-casa-014/",
+    "viewport": {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900
+    },
+    "status": 200,
+    "errors": [],
+    "metrics": {
+      "title": "Suíte — Piso — 014 | Jornal Técnico Franco Romeu",
+      "h1": [
+        "Suíte — Piso — 014"
+      ],
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflow": false,
+      "activeView": null
+    },
+    "article": {
+      "canonical": "https://www.francoromeufr.com.br/projetos/antes-depois/suite-piso-madeira-casa-014/",
+      "h1": "Suíte — Piso — 014",
+      "breadcrumbs": [],
+      "schema": [
+        [
+          "Organization",
+          "CreativeWork",
+          "BreadcrumbList"
+        ]
+      ]
+    }
+  },
+  {
+    "route": "/",
+    "viewport": {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    },
+    "status": 200,
+    "errors": [],
+    "metrics": {
+      "title": "Reformas e Projetos em SP | Franco Romeu — Porcelanato e Interiores",
+      "h1": [
+        "Espaços\n                        Forjados\n                        Para durar."
+      ],
+      "scrollWidth": 384,
+      "clientWidth": 390,
+      "overflow": false,
+      "activeView": "view-home"
+    },
+    "home": {
+      "manifesto": "/assets/media/projects/cozinha-lavanderia/cozinha-env-lavanderia-imagem-ilustrativa-986cf34222.webp",
+      "specialties": [
+        {
+          "title": "Superfícies autorais",
+          "src": "/assets/media/projects/cozinha-lavanderia/cozinha-bancada-l-imagem-ilustrativa-b239e59121.webp"
+        },
+        {
+          "title": "Design & marcenaria",
+          "src": "/assets/media/projects/cozinha-lavanderia/cozinha-torre-quente-imagem-ilustrativa-78d797da36.webp"
+        },
+        {
+          "title": "Projeto 3D",
+          "src": "/assets/media/projects/cozinha-lavanderia/cozinha-ilha-cooktop-estudo-3d-ilustrativo-55a2676b5d.webp"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/projetos-3d",
+    "viewport": {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    },
+    "status": 200,
+    "errors": [],
+    "metrics": {
+      "title": "Projetos 3D de Interiores em SP | Franco Romeu",
+      "h1": [
+        "Projetos\n                    em 3D"
+      ],
+      "scrollWidth": 384,
+      "clientWidth": 390,
+      "overflow": false,
+      "activeView": "view-projetos3d"
+    },
+    "p3d": {
+      "count": 10,
+      "selected": "03Bancada Calacatta em Órbita",
+      "names": [
+        "Reforma Residencial Integral",
+        "Retrofit Comercial de Precisão",
+        "Bancada Calacatta em Órbita",
+        "Armários & Guarda-Roupas Integrados",
+        "Brinquedomóvel FR",
+        "Arena Futebol X1",
+        "Tabela de Basquete em Aço",
+        "Patinação + Luz DMX",
+        "Iluminação Integrada ao Móvel",
+        "Suíte de Luxo Silencioso"
+      ],
+      "squares": [
+        {
+          "width": 126,
+          "height": 126
+        },
+        {
+          "width": 126,
+          "height": 126
+        },
+        {
+          "width": 126,
+          "height": 126
+        },
+        {
+          "width": 126,
+          "height": 126
+        },
+        {
+          "width": 126,
+          "height": 126
+        },
+        {
+          "width": 126,
+          "height": 126
+        },
+        {
+          "width": 126,
+          "height": 126
+        },
+        {
+          "width": 126,
+          "height": 126
+        },
+        {
+          "width": 126,
+          "height": 126
+        },
+        {
+          "width": 126,
+          "height": 126
+        }
+      ],
+      "cube": true,
+      "dossier": true
+    }
+  },
+  {
+    "route": "/sobre",
+    "viewport": {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    },
+    "status": 200,
+    "errors": [],
+    "metrics": {
+      "title": "Franco Romeu — Arte, Engenharia e Método em São Paulo",
+      "h1": [
+        "Nós não\n                    \n                    \n                        construímos\n                    \n                    \n                        espaços. Nós os curamos."
+      ],
+      "scrollWidth": 384,
+      "clientWidth": 390,
+      "overflow": false,
+      "activeView": "view-sobre"
+    },
+    "about": {
+      "googleQuiet": true,
+      "googleBeforeServices": true,
+      "servicesPresent": true,
+      "removedArchive": true
+    }
+  },
+  {
+    "route": "/ambientes",
+    "viewport": {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    },
+    "status": 200,
+    "errors": [],
+    "metrics": {
+      "title": "Ambientes e Interiores em São Paulo | Franco Romeu",
+      "h1": [
+        "Arquitetura é\n                    a linguagem\n                    que você escolhe para viver."
+      ],
+      "scrollWidth": 384,
+      "clientWidth": 390,
+      "overflow": false,
+      "activeView": "view-ambientes"
+    },
+    "dossier": {
+      "open": true,
+      "tabs": [
+        "Todos",
+        "Projeto 3D",
+        "Detalhes",
+        "Antes / referência inicial",
+        "Visão geral"
+      ],
+      "thumbs": 48,
+      "classification": "Classificação factualEstudo visual ilustrativo · Antes reconstituído quando identificadoMateriais relacionadosQuartzo Calacatta · Acabamento amadeirado · Cerâmica · LED · MDP cinza · Acabamento cinza · Vidro escuroLer o caderno técnico →"
+    }
+  },
+  {
+    "route": "/portfolio",
+    "viewport": {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    },
+    "status": 200,
+    "errors": [],
+    "metrics": {
+      "title": "Portfólio de Reformas e Interiores | Franco Romeu SP",
+      "h1": [
+        "ArquivoVivo"
+      ],
+      "scrollWidth": 384,
+      "clientWidth": 390,
+      "overflow": false,
+      "activeView": "view-projetos"
+    },
+    "portfolio": {
+      "cards": 36,
+      "removed": true,
+      "thesis": "Projetos visuais organizados por ambiente, matéria e decisão."
+    }
+  },
+  {
+    "route": "/projetos/",
+    "viewport": {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    },
+    "status": 200,
+    "errors": [],
+    "metrics": {
+      "title": "Jornal Técnico Franco Romeu — projetos, materiais e decisões",
+      "h1": [
+        "A matéria encontra o método."
+      ],
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflow": false,
+      "activeView": null
+    },
+    "journal": {
+      "canonical": "https://www.francoromeufr.com.br/projetos/",
+      "cards": 109,
+      "filters": 3,
+      "explore": [
+        "/projetos/",
+        "/projetos/antes-depois/",
+        "/projetos/estudos-3d/",
+        "/projetos/materiais/",
+        "/projetos/servicos/",
+        "/projetos/ambientes/"
+      ]
+    }
+  },
+  {
+    "route": "/projetos/antes-depois/suite-piso-madeira-casa-014/",
+    "viewport": {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    },
+    "status": 200,
+    "errors": [],
+    "metrics": {
+      "title": "Suíte — Piso — 014 | Jornal Técnico Franco Romeu",
+      "h1": [
+        "Suíte — Piso — 014"
+      ],
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflow": false,
+      "activeView": null
+    },
+    "article": {
+      "canonical": "https://www.francoromeufr.com.br/projetos/antes-depois/suite-piso-madeira-casa-014/",
+      "h1": "Suíte — Piso — 014",
+      "breadcrumbs": [],
+      "schema": [
+        [
+          "Organization",
+          "CreativeWork",
+          "BreadcrumbList"
+        ]
+      ]
+    }
+  },
+  {
+    "route": "/",
+    "viewport": {
+      "name": "narrow-360",
+      "width": 360,
+      "height": 760
+    },
+    "status": 200,
+    "errors": [],
+    "metrics": {
+      "title": "Reformas e Projetos em SP | Franco Romeu — Porcelanato e Interiores",
+      "h1": [
+        "Espaços\n                        Forjados\n                        Para durar."
+      ],
+      "scrollWidth": 354,
+      "clientWidth": 360,
+      "overflow": false,
+      "activeView": "view-home"
+    }
+  },
+  {
+    "route": "/projetos-3d",
+    "viewport": {
+      "name": "narrow-360",
+      "width": 360,
+      "height": 760
+    },
+    "status": 200,
+    "errors": [],
+    "metrics": {
+      "title": "Projetos 3D de Interiores em SP | Franco Romeu",
+      "h1": [
+        "Projetos\n                    em 3D"
+      ],
+      "scrollWidth": 354,
+      "clientWidth": 360,
+      "overflow": false,
+      "activeView": "view-projetos3d"
+    }
+  },
+  {
+    "route": "/sobre",
+    "viewport": {
+      "name": "narrow-360",
+      "width": 360,
+      "height": 760
+    },
+    "status": 200,
+    "errors": [],
+    "metrics": {
+      "title": "Franco Romeu — Arte, Engenharia e Método em São Paulo",
+      "h1": [
+        "Nós não\n                    \n                    \n                        construímos\n                    \n                    \n                        espaços. Nós os curamos."
+      ],
+      "scrollWidth": 354,
+      "clientWidth": 360,
+      "overflow": false,
+      "activeView": "view-sobre"
+    }
+  },
+  {
+    "route": "/ambientes",
+    "viewport": {
+      "name": "narrow-360",
+      "width": 360,
+      "height": 760
+    },
+    "status": 200,
+    "errors": [],
+    "metrics": {
+      "title": "Ambientes e Interiores em São Paulo | Franco Romeu",
+      "h1": [
+        "Arquitetura é\n                    a linguagem\n                    que você escolhe para viver."
+      ],
+      "scrollWidth": 354,
+      "clientWidth": 360,
+      "overflow": false,
+      "activeView": "view-ambientes"
+    }
+  },
+  {
+    "route": "/portfolio",
+    "viewport": {
+      "name": "narrow-360",
+      "width": 360,
+      "height": 760
+    },
+    "status": 200,
+    "errors": [],
+    "metrics": {
+      "title": "Portfólio de Reformas e Interiores | Franco Romeu SP",
+      "h1": [
+        "ArquivoVivo"
+      ],
+      "scrollWidth": 354,
+      "clientWidth": 360,
+      "overflow": false,
+      "activeView": "view-projetos"
+    }
+  },
+  {
+    "route": "/projetos/",
+    "viewport": {
+      "name": "narrow-360",
+      "width": 360,
+      "height": 760
+    },
+    "status": 200,
+    "errors": [],
+    "metrics": {
+      "title": "Jornal Técnico Franco Romeu — projetos, materiais e decisões",
+      "h1": [
+        "A matéria encontra o método."
+      ],
+      "scrollWidth": 360,
+      "clientWidth": 360,
+      "overflow": false,
+      "activeView": null
+    }
+  },
+  {
+    "route": "/projetos/antes-depois/suite-piso-madeira-casa-014/",
+    "viewport": {
+      "name": "narrow-360",
+      "width": 360,
+      "height": 760
+    },
+    "status": 200,
+    "errors": [],
+    "metrics": {
+      "title": "Suíte — Piso — 014 | Jornal Técnico Franco Romeu",
+      "h1": [
+        "Suíte — Piso — 014"
+      ],
+      "scrollWidth": 360,
+      "clientWidth": 360,
+      "overflow": false,
+      "activeView": null
+    }
+  },
+  {
+    "route": "/",
+    "viewport": {
+      "name": "narrow-320",
+      "width": 320,
+      "height": 760
+    },
+    "status": 200,
+    "errors": [],
+    "metrics": {
+      "title": "Reformas e Projetos em SP | Franco Romeu — Porcelanato e Interiores",
+      "h1": [
+        "Espaços\n                        Forjados\n                        Para durar."
+      ],
+      "scrollWidth": 314,
+      "clientWidth": 320,
+      "overflow": false,
+      "activeView": "view-home"
+    }
+  },
+  {
+    "route": "/projetos-3d",
+    "viewport": {
+      "name": "narrow-320",
+      "width": 320,
+      "height": 760
+    },
+    "status": 200,
+    "errors": [],
+    "metrics": {
+      "title": "Projetos 3D de Interiores em SP | Franco Romeu",
+      "h1": [
+        "Projetos\n                    em 3D"
+      ],
+      "scrollWidth": 314,
+      "clientWidth": 320,
+      "overflow": false,
+      "activeView": "view-projetos3d"
+    }
+  },
+  {
+    "route": "/sobre",
+    "viewport": {
+      "name": "narrow-320",
+      "width": 320,
+      "height": 760
+    },
+    "status": 200,
+    "errors": [],
+    "metrics": {
+      "title": "Franco Romeu — Arte, Engenharia e Método em São Paulo",
+      "h1": [
+        "Nós não\n                    \n                    \n                        construímos\n                    \n                    \n                        espaços. Nós os curamos."
+      ],
+      "scrollWidth": 314,
+      "clientWidth": 320,
+      "overflow": false,
+      "activeView": "view-sobre"
+    }
+  },
+  {
+    "route": "/ambientes",
+    "viewport": {
+      "name": "narrow-320",
+      "width": 320,
+      "height": 760
+    },
+    "status": 200,
+    "errors": [],
+    "metrics": {
+      "title": "Ambientes e Interiores em São Paulo | Franco Romeu",
+      "h1": [
+        "Arquitetura é\n                    a linguagem\n                    que você escolhe para viver."
+      ],
+      "scrollWidth": 314,
+      "clientWidth": 320,
+      "overflow": false,
+      "activeView": "view-ambientes"
+    }
+  },
+  {
+    "route": "/portfolio",
+    "viewport": {
+      "name": "narrow-320",
+      "width": 320,
+      "height": 760
+    },
+    "status": 200,
+    "errors": [],
+    "metrics": {
+      "title": "Portfólio de Reformas e Interiores | Franco Romeu SP",
+      "h1": [
+        "ArquivoVivo"
+      ],
+      "scrollWidth": 314,
+      "clientWidth": 320,
+      "overflow": false,
+      "activeView": "view-projetos"
+    }
+  },
+  {
+    "route": "/projetos/",
+    "viewport": {
+      "name": "narrow-320",
+      "width": 320,
+      "height": 760
+    },
+    "status": 200,
+    "errors": [],
+    "metrics": {
+      "title": "Jornal Técnico Franco Romeu — projetos, materiais e decisões",
+      "h1": [
+        "A matéria encontra o método."
+      ],
+      "scrollWidth": 320,
+      "clientWidth": 320,
+      "overflow": false,
+      "activeView": null
+    }
+  },
+  {
+    "route": "/projetos/antes-depois/suite-piso-madeira-casa-014/",
+    "viewport": {
+      "name": "narrow-320",
+      "width": 320,
+      "height": 760
+    },
+    "status": 200,
+    "errors": [],
+    "metrics": {
+      "title": "Suíte — Piso — 014 | Jornal Técnico Franco Romeu",
+      "h1": [
+        "Suíte — Piso — 014"
+      ],
+      "scrollWidth": 320,
+      "clientWidth": 320,
+      "overflow": false,
+      "activeView": null
+    }
+  }
+]

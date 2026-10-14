@@ -1,0 +1,31 @@
+id,requisito,modulo,estado,evidencia_ou_dependencia,rollback
+FR01,Preflight e base canônica,M0,PARCIAL,source-register.md; 57 mídias liberadas revisadas; captures.zip ausente,Sem alteração de fontes
+FR02,Baseline seis views e motor,M1,PARCIAL,baseline.md; 6 views e testes existentes; golden IQE e combinações manuais completos pendentes,Preservar commit-base e evidências
+FR03,Domínio canonical redirects DNS HTTPS,M2,GATE_PRODUCAO,Leitura autenticada disponível; apex para www; portfolio 404; mudança do tráfego público aguarda aprovação,Snapshot do painel antes de mudança autorizada
+FR04,God Mode fora do build público,P0,IMPLEMENTADO,scripts/build-site.cjs; tests/public-build.test.cjs,Retirar build público somente se suspender publicação; fonte local preservada
+FR05,Intro e logo proporcional,M3,IMPLEMENTADO,index.html; PNGs antes/depois,Reverter hunks de intro/foundation
+FR06,Contadores e CTA duplicado,P0,IMPLEMENTADO,index.html; valores estáticos e efeito ajustado,Reverter hunks do bloco Home
+FR07,Header Instagram WhatsApp drawer mobile,M3,IMPLEMENTADO,FR_SITE_CONFIG; dialog nativo; teclado e 9 perfis emulados; físico pendente,Reverter header/foundation sem alterar orçamento
+FR08,Contato rápido no orçamento,M3,IMPLEMENTADO,fr-quick-contact fora da área rerenderizada,Retirar painel mantendo contratos
+FR09,Recuperação entre origens,M1,IMPLEMENTADO,JSON explícito validado e backup local,Preservar formato e backup; remover apenas UI nova
+FR10,Tokens e acessibilidade transversal,M3,PARCIAL,foundation namespaced; sem refactor amplo de CSS legado,Reverter somente CSS novo
+FR11,Modelo de entidades e novas páginas,M4-M5,PARCIAL,architecture-spike.md; primeiro case estático; modelo editorial global pendente,Manter IDs e shell atuais
+FR12,HTML e metadata seis URLs atuais,M5,PARCIAL,build pré-renderiza URLs; ainda conserva DOM SPA inativo,Retirar geração por rota com mapa e preview testados
+FR13,Catálogo e comparação Leroy,M6,IMPLEMENTADO_REFERENCIA,115 serviços e 94 códigos históricos; escopo e visita pelo motor existente; preços intactos,Retirar módulo de referência sem alterar banco
+FR14,Cases reais e modelos 3D relacionados,M7,BLOQUEADO_FONTE,Modelos HOLD e ausência de tripletas documentais aprovadas,Preservar experiência 3D existente
+FR15,Ambientes antes/depois materiais,M8-M9,BLOQUEADO_FONTE,Pares e mídia exigem aprovação específica,Não publicar substitutos fictícios
+FR16,Portfólio e Arquivo Social NK Spiral,M8,PARCIAL,Galeria ilustrativa integrada; captures.zip posts e direitos ausentes para novo arquivo social,Preservar Arquivo Vivo e registros existentes
+FR17,Execuções reais no final Sobre,M10,BLOQUEADO_FONTE,Ilustração aprovada não equivale a fotografia de execução,Não publicar cards fictícios
+FR18,Avaliações Google links fallback,M10,IMPLEMENTADO,Links fornecidos e painel sem nota inventada,Desligar API e manter links
+FR19,Avaliações Google fonte atualizada,M10,BLOQUEADO_CREDENCIAL,Endpoint testável desativado; chave quotas faturamento e política pendentes,FR_GOOGLE_REVIEWS_ENABLED=false
+FR20,Hero AVIF WebP dimensões sitemap imagens,M11-M12,PARCIAL,Hero e 162 WebP liberados; sitemap e case próprio; demais originais preservados,Restaurar picture JPEG sem apagar originais
+FR21,Minificação e cache por hash,M12,IMPLEMENTADO,Pipeline explícito e immutable apenas derivados hashados,Voltar configuração/build após preservar artefatos
+FR22,Performance CWV campo e Lighthouse,M12,LCP_REPROVADO_LAB,Revisão final 3 execuções por versão LCP 2740 para 3328 ms e CLS 0.05774 para 0.00268; campo INP e Lighthouse pendentes,Não publicar alegação de CWV atingidos
+FR23,QA layout teclado motion PDF,M13-M15,PARCIAL_QA_EXECUTADO,64 testes; 9 perfis e 6 views; anexo 390 e 1440; PDFs 1 e 3 A4 renderizados revisados; dispositivos físicos pendentes,Rollback localizado de renderer sem alterar valores
+FR24,GTM GA4 eventos sem PII,M14,PENDENTE,Tags atuais auditadas mas implantação central/eventos não executada,Não duplicar tags
+FR25,Rollout produção e monitoramento,M16,NAO_AUTORIZADO_PRODUCAO,Preparação de PR rascunho conforme pedido; sem merge produção ou automação recorrente,Revisão manual antes de publicar
+FR26,Mídias do anexo e subseções,M7-M11,IMPLEMENTADO_CANDIDATO,57 registros e 162 variantes; labels fichas hashes; zero HOLD,Retirar módulos e derivados pelo inventário sem apagar fontes
+FR27,Quantidade acessível animada,M6,IMPLEMENTADO_CANDIDATO,Input original preservado; teclado digitação limites e reduced motion,Retirar wrapper mantendo input e handler
+FR28,Novas famílias sem preço aprovado,M6,IMPLEMENTADO_SOLICITACAO,17 pedidos via WhatsApp; fora do total e sob avaliação,Retirar links de solicitação sem alterar catálogo
+FR29,Loader Three e fallback,M7,IMPLEMENTADO_CANDIDATO,ESM mesma versão 0.161.0; sucesso erro e perda simulada de contexto,Reverter loader sem introduzir modelo novo
+FR30,Página própria de estudo ilustrativo,M5-M11,IMPLEMENTADO_CANDIDATO,/projetos/cozinha-lavanderia; HTML imagens metadata e CTA orçamento,Retirar gerador link e sitemap no mesmo diff

@@ -1,0 +1,9 @@
+provider,verified_post_urls,local_assets,status,missing_input
+Instagram,0,content/social/social-archive.json,NO_VERIFIED_POST_URL,official post URL and date
+Pinterest,0,content/social/social-archive.json,NO_VERIFIED_POST_URL,official post URL and date
+YouTube,0,content/social/social-archive.json,NO_VERIFIED_POST_URL,official video URL and date
+Facebook,0,content/social/social-archive.json,NO_VERIFIED_POST_URL,official post URL and date
+X,0,content/social/social-archive.json,NO_VERIFIED_POST_URL,official post URL and date
+Threads,0,content/social/social-archive.json,NO_VERIFIED_POST_URL,official post URL and date
+TikTok,0,content/social/social-archive.json,NO_VERIFIED_POST_URL,official post URL and date
+Google,0,content/social/social-archive.json,NO_VERIFIED_POST_URL,official content URL and date

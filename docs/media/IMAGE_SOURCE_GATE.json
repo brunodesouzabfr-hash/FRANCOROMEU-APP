@@ -1,0 +1,475 @@
+{
+  "status": "INCOMPLETE_EXTERNAL_SOURCES",
+  "expected": 120,
+  "verified": 107,
+  "missing": [
+    {
+      "file": "IMAGENS/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/020__exec-753d3e0b-ebc7-41a8-a4fb-70df43458e75.png",
+      "sha256": "80a427276cef236642098bef4e5eea2810f7558acdca30ba11d1635f05a13a4a",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/006__exec-66c8a5c9-62f6-4f68-953a-c53f6a6fc705.png",
+      "sha256": "3694d6635fe93cee867d5fbccbf713e2d3285d4420383f9d851ffd6a497769b1",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/023__exec-7f3998d1-f6f0-4f04-ae77-b9ff733a91b7.png",
+      "sha256": "fdb6e220af414d1fbcf7244ea33e6294769b17fdd7eb1c0d395eb90f25ba31de",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/025__exec-87eec336-8742-43e2-9ece-f82a7590c6ee.png",
+      "sha256": "6a31d21c884e68924afdcf5ee2407e448ef6f74aaad961ef93d144898885a4d5",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/030__exec-fc9003cb-689f-4479-b32b-f9ed9486cc36.png",
+      "sha256": "5fbdc555a37866ba758b2f6916ecdf1a14746a4cd627610666a8a6f9c5037897",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/038__exec-1856c518-ccf7-41d2-962d-8e93d2f52dda.png",
+      "sha256": "6d4491050adabf420fa48e6b3a091cfa371a56b1b178f35c49ccfa3cf3a8aa54",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/132__FR_G01_CAM01_D_EXECUTADO_FRONTAL_v1_CANDIDATE.png",
+      "sha256": "5751563a5e918a6276bed6848da7b0d5d084960829e529e2b10dc404df6adb90",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/133__FR_G02_CAM01_D_EXECUTADO_45G_v1_CANDIDATE.png",
+      "sha256": "9578b1b00ec0f5b17180bd3c53b8fc1fc597608e565d07c82433773046cd19cf",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/134__FR_G02_CAM01_C_PROJETO_45G_v1_CANDIDATE.png",
+      "sha256": "c6925723a8ef1be6e9ce3c55ccaf856beb718c03b9ec5a0d0b8307527f5023cd",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/141__FR_G12_CAM08_B_PROCESSO_INSTALACAO_PORTAS_v1_CANDIDATE.png",
+      "sha256": "3b26be1d0f83e0fa7d267416465ec6c5441bde86f154ef0c25ca98006fff8916",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Estação Kokay preta sobre bancada Calacatta-3.png",
+      "sha256": "8cfe99f411949a79860c20448eff02ea00a3c56f4e5cac9aa13a94c56ae27599",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Torneira minimalista com seletor preto-4.png",
+      "sha256": "b239e5912188239c8346597a3ceb6ac0385e4880ff0ba3800527ee4220a4518c",
+      "publication": "not_published_original"
+    },
+    {
+      "file": "IMAGENS/aproved/lavanderia moveis led sequencial teto e pia de marmore da cozinha de frente a janela/SKIILS.png",
+      "sha256": "c61732147e5a6162efe1d1ec9b1ecf3f45610cf1b156c2a6217e23b93faf5ce3",
+      "publication": "not_published_original"
+    }
+  ],
+  "contexts_verified": 57,
+  "source_contexts_missing": [
+    "IMAGENS/leiamecodex/FR_COZ_DIR_ILHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M005_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_DIR_ILHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M020_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_DIR_TETO_COZINHA_PROJETO_3D_ILUSTRACAO_M022_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_DIR_TETO_COZINHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M040_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_DIR_ILHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M045_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_DIR_ILHA_PROJETO_3D_ILUSTRACAO_M061_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_DIR_ILHA_PROJETO_3D_ILUSTRACAO_M066_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_DIR_ILHA_PROJETO_3D_ILUSTRACAO_M160_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_DIR_FRONTAO_DIREITO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_8b1be5288e_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_DIR_FRONTAO_DIREITO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_45222b69bb_MASTER.md",
+    "IMAGENS/leiamecodex/FR_INT_INTEGRACAO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_986cf34222_MASTER.md",
+    "IMAGENS/leiamecodex/FR_INT_INTEGRACAO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_2e9a1d3645_MASTER.md",
+    "IMAGENS/leiamecodex/FR_INT_ANTES_PAREDE_ANTES_DEMOLIDO_ILUSTRACAO_M_a2e373872f_MASTER.md",
+    "IMAGENS/leiamecodex/FR_INT_INTEGRACAO_ANTES_DEMOLIDO_ILUSTRACAO_M_2213e004d6_MASTER.md",
+    "IMAGENS/leiamecodex/FR_INT_INTEGRACAO_ANTES_DEMOLIDO_ILUSTRACAO_M_97fd574b27_MASTER.md",
+    "IMAGENS/leiamecodex/FR_INT_INTEGRACAO_ANTES_DEMOLIDO_ILUSTRACAO_M_76e8550654_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_DIR_TORRE_QUENTE_DEPOIS_REPRESENTADO_ILUSTRACAO_M_e4b37ac18d_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_DIR_ILHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_f4512475bc_MASTER.md",
+    "IMAGENS/leiamecodex/FR_INT_ANTES_PAREDE_ANTES_DEMOLIDO_ILUSTRACAO_M_2d491895a6_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_DIR_TETO_COZINHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_b0c4a0d6af_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_DIR_FRONTAO_DIREITO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_a008a94127_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_DIR_ILHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_39e83ae3cd_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_ESQ_AEREOS_PROJETO_3D_ILUSTRACAO_M_9fe2462dd4_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_ESQ_AEREOS_PROJETO_3D_ILUSTRACAO_M_f725814fd7_MASTER.md",
+    "IMAGENS/leiamecodex/FR_INT_INTEGRACAO_ANTES_DEMOLIDO_ILUSTRACAO_M_041cb06df6_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_DIR_FRONTAO_DIREITO_PROJETO_3D_ILUSTRACAO_M_4b216c7e0b_MASTER.md",
+    "IMAGENS/leiamecodex/FR_INT_INTEGRACAO_PROJETO_3D_ILUSTRACAO_M_e3f45a71e3_MASTER.md",
+    "IMAGENS/leiamecodex/FR_INT_INTEGRACAO_PROJETO_3D_ILUSTRACAO_M_cbe9707801_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_DIR_ILHA_PROJETO_3D_ILUSTRACAO_M_55a2676b5d_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_DIR_TORRE_QUENTE_DEPOIS_REPRESENTADO_ILUSTRACAO_M_78d797da36_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_DIR_TORRE_QUENTE_PROJETO_3D_ILUSTRACAO_M_33ec3b99ba_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_DIR_FRONTAO_DIREITO_PROJETO_3D_ILUSTRACAO_M_c6eb8354c7_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_ESQ_BANCADA_INTEGRADA_PROJETO_3D_ILUSTRACAO_M013_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_ESQ_BANCADA_INTEGRADA_PROJETO_3D_ILUSTRACAO_M025_MASTER.md",
+    "IMAGENS/leiamecodex/FR_INT_ANTES_PAREDE_ANTES_DEMOLIDO_ILUSTRACAO_M027_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_ESQ_BANCADA_SOLO_DEPOIS_REPRESENTADO_ILUSTRACAO_M029_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_ESQ_BANCADA_INTEGRADA_DEPOIS_REPRESENTADO_ILUSTRACAO_M035_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_ESQ_BANCADA_SOLO_PROJETO_3D_ILUSTRACAO_M149_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_ESQ_BANCADA_SOLO_DEPOIS_REPRESENTADO_ILUSTRACAO_M186_MASTER.md",
+    "IMAGENS/leiamecodex/FR_INT_ESTANTE_TRANSICAO_DEPOIS_REPRESENTADO_ILUSTRACAO_M_6b28e6add2_MASTER.md",
+    "IMAGENS/leiamecodex/FR_INT_ESTANTE_TRANSICAO_PROJETO_3D_ILUSTRACAO_M_3fe2cb429d_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_ESQ_GELADEIRA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_b7a04ef330_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_ESQ_GELADEIRA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_0c3916ba68_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_ESQ_GELADEIRA_PROJETO_3D_ILUSTRACAO_M_5c5d18dd1b_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_ESQ_AEREOS_PROJETO_3D_ILUSTRACAO_M_134fab7c78_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_ESQ_AEREOS_PROJETO_3D_ILUSTRACAO_M_f63a72fefd_MASTER.md",
+    "IMAGENS/leiamecodex/FR_INT_ANTES_PAREDE_ANTES_DEMOLIDO_ILUSTRACAO_M_88353144b4_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_ESQ_BANCADA_SOLO_PROJETO_3D_ILUSTRACAO_M_66df774c0e_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_ESQ_BANCADA_INTEGRADA_PROJETO_3D_ILUSTRACAO_M_2dd45b193b_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_DIR_TETO_COZINHA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_9313fb1327_MASTER.md",
+    "IMAGENS/leiamecodex/FR_COZ_ESQ_BANCADA_INTEGRADA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_b239e59121_MASTER.md",
+    "IMAGENS/leiamecodex/FR_LAV_LAVANDERIA_DEPOIS_REPRESENTADO_ILUSTRACAO_M008_MASTER.md",
+    "IMAGENS/leiamecodex/FR_LAV_LAVANDERIA_DEPOIS_REPRESENTADO_ILUSTRACAO_M012_MASTER.md",
+    "IMAGENS/leiamecodex/FR_LAV_LAVANDERIA_DEPOIS_REPRESENTADO_ILUSTRACAO_M024_MASTER.md",
+    "IMAGENS/leiamecodex/FR_LAV_LAVANDERIA_DEPOIS_REPRESENTADO_ILUSTRACAO_M037_MASTER.md",
+    "IMAGENS/leiamecodex/FR_LAV_LAVANDERIA_DEPOIS_REPRESENTADO_ILUSTRACAO_M_ad9f695aa3_MASTER.md",
+    "IMAGENS/leiamecodex/FR_LAV_BANCADA_JANELA_ILUSTRACAO_M047_PANEL_MASTER.md"
+  ],
+  "publication_enabled": false,
+  "relocated": [
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/004__exec-d05e8127-fa14-436f-99cc-9a2887e1fe6a.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/modulo direito bancada com ripado e led sequencial do ripado e teto/004__exec-d05e8127-fa14-436f-99cc-9a2887e1fe6a.png",
+      "sha256": "10a3d7a3f67575961d94a1800276ede4c185ca5eb31a21b150ad3f93fa508bbe"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/005__exec-d87dfb4f-c474-4d2e-b40b-20ef2cd37b1e.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/ilha do cooktop com nicho lateral e tampo em quartzo calacata/005__exec-d87dfb4f-c474-4d2e-b40b-20ef2cd37b1e.png",
+      "sha256": "f95547b93191e8129eb0c6e027d79ad89819be9b7527eced89c8e47cbc0b7286"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/021__exec-e6c0910a-3674-44ac-9aa8-4b7208b5d876.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/ilha do cooktop com nicho lateral e tampo em quartzo calacata/021__exec-e6c0910a-3674-44ac-9aa8-4b7208b5d876.png",
+      "sha256": "bb389b3707019bb269b0b561e15760784a050b8c1c160de07c1b00d3c0005e51"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/040__exec-14e461ad-e91e-4dc5-bd68-ec1375f12029.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/modulo direito bancada com ripado e led sequencial do ripado e teto/040__exec-14e461ad-e91e-4dc5-bd68-ec1375f12029.png",
+      "sha256": "f48e737a207c219a672756cc9449f89bba8ba3aebd60e89a536ed0d297f281b5"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/043__exec-1ad84d93-df43-4660-a1b7-d6bfda67fc61.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/modulo direito bancada com ripado e led sequencial do ripado e teto/043__exec-1ad84d93-df43-4660-a1b7-d6bfda67fc61.png",
+      "sha256": "343d0651684027dcbeabbfc0fae40056d3427bde4c73ea7e5943304b55de9b04"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/045__exec-48309691-99cd-4e71-8441-b60d871fe4a9.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/ilha do cooktop com nicho lateral e tampo em quartzo calacata/045__exec-48309691-99cd-4e71-8441-b60d871fe4a9.png",
+      "sha256": "8c633189e65ed5dcf007b93563ba2c9e7b418313fbfd9235f3f9fd9e71b2abd4"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/046__FR_PILOT_V2_CAM_MINI_ILHA_01_EXECUTADO_4X5_CANDIDATE.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/ilha do cooktop com nicho lateral e tampo em quartzo calacata/046__FR_PILOT_V2_CAM_MINI_ILHA_01_EXECUTADO_4X5_CANDIDATE.png",
+      "sha256": "f980ab5bf787b158465c06d1b0d96643df463da73e7ad87879d07d00015c3d87"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/061__FR_G05_CAM02_C_PROJETO_CLOSE_COOKTOP_v1_CANDIDATE.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/ilha do cooktop com nicho lateral e tampo em quartzo calacata/061__FR_G05_CAM02_C_PROJETO_CLOSE_COOKTOP_v1_CANDIDATE.png",
+      "sha256": "1ace6819d27f62f71dcb694a12f439c72da0b843d33361593e747f66841d9a84"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/063__FR_G05_CAM02_D_EXECUTADO_CLOSE_COOKTOP_v1_CANDIDATE.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/ilha do cooktop com nicho lateral e tampo em quartzo calacata/063__FR_G05_CAM02_D_EXECUTADO_CLOSE_COOKTOP_v1_CANDIDATE.png",
+      "sha256": "1e0bbd778ea37dc6e872ba82edc40adc9f74b0337405fe9b767f01aaefd5aec4"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/065__FR_G05_CAM01_D_EXECUTADO_45G_v1_CANDIDATE.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/ilha do cooktop com nicho lateral e tampo em quartzo calacata/065__FR_G05_CAM01_D_EXECUTADO_45G_v1_CANDIDATE.png",
+      "sha256": "60f4a0c110cb40f1f79aa8a72a0905426553753d151dca43b17458a336b0b505"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/066__FR_G05_CAM01_C_PROJETO_45G_v1_CANDIDATE.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/ilha do cooktop com nicho lateral e tampo em quartzo calacata/066__FR_G05_CAM01_C_PROJETO_45G_v1_CANDIDATE.png",
+      "sha256": "d0ca9c7352c86c81bd9b389a07ffdc13fa8e960940f0dab2f7c8e822a087c76f"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/068__FR_G06_CAM01_D_EXECUTADO_LED_ACESO_v1_CANDIDATE.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/modulo direito bancada com ripado e led sequencial do ripado e teto/068__FR_G06_CAM01_D_EXECUTADO_LED_ACESO_v1_CANDIDATE.png",
+      "sha256": "0f1e7b3db762f8c7493e607cf988dd403461f12d4344b9311301e689e57745b4"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/126__FR_G10_CAM09_D_EXECUTADO_RIPADO_v1_CANDIDATE.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/modulo direito bancada com ripado e led sequencial do ripado e teto/126__FR_G10_CAM09_D_EXECUTADO_RIPADO_v1_CANDIDATE.png",
+      "sha256": "17afd9ed8677e257976b37f73f54ff4fffcd02cc2183551055aecf283fd978d2"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/158__FR_G11_CAM01_D_EXECUTADO_COOKTOP_NZ64H37070K_v1_CANDIDATE.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/ilha do cooktop com nicho lateral e tampo em quartzo calacata/158__FR_G11_CAM01_D_EXECUTADO_COOKTOP_NZ64H37070K_v1_CANDIDATE.png",
+      "sha256": "7e1fdb284ac93b4e4caa292af10126cc0a210f2349fb16bd72dbd7ed7374ffd1"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/160__FR_G11_CAM01_C_PROJETO_COOKTOP_NZ64H37070K_v1_CANDIDATE.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/ilha do cooktop com nicho lateral e tampo em quartzo calacata/160__FR_G11_CAM01_C_PROJETO_COOKTOP_NZ64H37070K_v1_CANDIDATE.png",
+      "sha256": "44c59154f0f9d77faaa085937bb60f3d6ab5fd483f913fc39a1b8eb2dbaefea9"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/179__FR_G08_CAM01_D_EXECUTADO_COZINHA_ACESO_v1_CANDIDATE.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/modulo direito bancada com ripado e led sequencial do ripado e teto/179__FR_G08_CAM01_D_EXECUTADO_COZINHA_ACESO_v1_CANDIDATE.png",
+      "sha256": "5afcbc450a7188a661530d2ee6aa91b94b6a5975c09e4a4c9670ad62fe97d26f"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Bancada cinza e Calacatta na cozinha-12.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/modulo direito bancada com ripado e led sequencial do ripado e teto/Bancada cinza e Calacatta na cozinha-12.png",
+      "sha256": "8b1be5288e9a1455ac7c40c08202b6d79b6de04801d7b3af203ed22c6d43ef95"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Bancada cinza em L com frontão Calacatta-2.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/modulo de moveis direito/Bancada cinza em L com frontão Calacatta-2.png",
+      "sha256": "45222b69bbc5b8eeac090a8f84275e271fb476ce4be5c59574bac60c177c7942"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Correção do LED esquerdo da cozinha-11.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/vista frontal/Correção do LED esquerdo da cozinha-11.png",
+      "sha256": "986cf342224e81f1832c0d84df08bdf046b8a6981ebb164a9d61427944e9ce86"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Cozinha Calacatta com torneira Kokay sem alavanca-3.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/vista frontal/Cozinha Calacatta com torneira Kokay sem alavanca-3.png",
+      "sha256": "39e6e58ac45362c6c091501cfc8371e3801c33146349c535fb76c720338533e4"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Cozinha contemporânea com lavanderia integrada-5.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/vista frontal/Cozinha contemporânea com lavanderia integrada-5.png",
+      "sha256": "2e9a1d36454418aeb915fd9c24da3d1f5f44d80ccd9b3e26c5b1cb3ecfea8246"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Cozinha demolida com azulejos brancos antigos-1.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Cozinha demolida com azulejos brancos antigos-1.png",
+      "sha256": "a2e373872f20ce3d5ee0cf0474a4ede42e90d795f1d4b7822dbfe7f494e0663a"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Cozinha desmontada, azulejos brancos e teto original-18.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/vista frontal/Cozinha desmontada, azulejos brancos e teto original-18.png",
+      "sha256": "97fd574b27a24f8591199d282d586e8ad0166ba2e5bb56deb4d0ef54b8fbe284"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Cozinha em L com ilha técnica-4.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/3D frames/Cozinha em L com ilha técnica-4.png",
+      "sha256": "baca27c082382836d88591b8d292b7b92d65fac85396140ccefb1bdb62e6d9ed"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Cozinha em demolição com azulejos originais-15.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/vista frontal/Cozinha em demolição com azulejos originais-15.png",
+      "sha256": "76e855065475cbc5077a6b2603a1010f5c2489117d4d00969d06123177085237"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Cozinha moderna com LEDs em L-8.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/modulo direito bancada com ripado e led sequencial do ripado e teto/Cozinha moderna com LEDs em L-8.png",
+      "sha256": "e4b37ac18d80c473938b8dabab3c4e02f81e5632bd7f5a8c07f65aaa5e15d16b"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Cozinha moderna com ilha e painel ripado-1.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/vista frontal/Cozinha moderna com ilha e painel ripado-1.png",
+      "sha256": "f4512475bcc65053c12db4e5e83ffcd79c5748a0f621c1f2c3a37f52f49650ac"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Cozinha planejada com bancada Calacatta.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Cozinha planejada com bancada Calacatta.png",
+      "sha256": "4da90c1f3d26fc815387624d4be97b7cb4232baa5a0b8b68c653607e66c2e56e"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Cozinha planejada com torre quente e vitrine-1.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/vista frontal/Cozinha planejada com torre quente e vitrine-1.png",
+      "sha256": "877c8391e5a81e23ed74187064a06dc21a9f3bb11038614fd4fb9ce11fd57c9a"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Cozinha técnica 3D em cinza-2.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/vista frontal/Cozinha técnica 3D em cinza-2.png",
+      "sha256": "7df3e185c2754cfa200dcaa753b835ce0d18fab39aee08d75a9f260fdc4e14a0"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Cozinha vazia com azulejos brancos originais-16.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/modulo de moveis direito/Cozinha vazia com azulejos brancos originais-16.png",
+      "sha256": "2d491895a6800a73db0760f3e1e1cdb7443b4e84335c6bceaf99db33e458b790"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Dois perfis de LED em L-3.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/modulo direito bancada com ripado e led sequencial do ripado e teto/Dois perfis de LED em L-3.png",
+      "sha256": "b0c4a0d6af236dc21b3a79a031bd7e329c919291da77452029e29ce5d3f91c1b"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/FR_V3_CAM04_RIPADO_LED_PENDENTES_45_EXECUTADO_4X5_CANDIDATE.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/modulo direito bancada com ripado e led sequencial do ripado e teto/FR_V3_CAM04_RIPADO_LED_PENDENTES_45_EXECUTADO_4X5_CANDIDATE.png",
+      "sha256": "f9abaacdbe450f2572db93f2718afa731183b8e9c337517be4aadaefd99d30a3"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/FR_V3_CAM05_RIPADO_CLOSE_CINEMATICO_EXECUTADO_4X5_CANDIDATE.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/modulo direito bancada com ripado e led sequencial do ripado e teto/FR_V3_CAM05_RIPADO_CLOSE_CINEMATICO_EXECUTADO_4X5_CANDIDATE.png",
+      "sha256": "8634c39bcf47db0c420301a3ee375a6ec733b7dcc2dbddea04ec5b6785120ce2"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Frontão Calacatta em L na cozinha-3.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/modulo de moveis direito/Frontão Calacatta em L na cozinha-3.png",
+      "sha256": "a008a941270433b08a510c1ce419aa2abcc673291886c927ae37a6493a7548ea"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Frontão L direito em quartzo branco.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/modulo de moveis direito/Frontão L direito em quartzo branco.png",
+      "sha256": "34d6041412bdef54155096dca07566aa07cc95b97d4af6062c4328b5298742f2"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Ilha de pedra com dois nichos-4.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/modulo direito bancada com ripado e led sequencial do ripado e teto/Ilha de pedra com dois nichos-4.png",
+      "sha256": "39e83ae3cdb95fade61501a242d63358685293d9708522d451bd98d492b473a8"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Mini-ilha_ antes, projeto e execução-4.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/ilha do cooktop com nicho lateral e tampo em quartzo calacata/Mini-ilha_ antes, projeto e execução-4.png",
+      "sha256": "aaf8fc200021e77577062bfa5cd28750f615866e091c878f8ae78a04e7c6b5e5"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Painel central de vidro escuro-6.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/vista frontal/Painel central de vidro escuro-6.png",
+      "sha256": "9fe2462dd482033a80744bcb121d29287cf754dee057a0769506d69ab6b85d33"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Painel inferior único em vidro escuro-7.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/vista frontal/Painel inferior único em vidro escuro-7.png",
+      "sha256": "f725814fd7fc93209c4571139fa4cb93e841ba377f0acfdf80275e834c48fd4f"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Parede plana revelada com contrapiso cinza-7.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/modulo de moveis direito/Parede plana revelada com contrapiso cinza-7.png",
+      "sha256": "041cb06df6088fb5a8b07da4be758be850a39a23e2b8f1b8ea169db45ba4fdbe"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Prévia 3D técnica sem cotas-4.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/modulo de moveis direito/Prévia 3D técnica sem cotas-4.png",
+      "sha256": "4b216c7e0b01fe5c2f909b88efdb5a0e9943afa5d158d0725ef673238175f463"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Prévia arquitetônica da cozinha com ilha-14.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/modulo direito bancada com ripado e led sequencial do ripado e teto/Prévia arquitetônica da cozinha com ilha-14.png",
+      "sha256": "e3f45a71e307b2cb69b7ff097da12c55b084d05e076528a8d4e9fa5c10c24d66"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Prévia técnica 3D sem cotas-3.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/vista frontal/Prévia técnica 3D sem cotas-3.png",
+      "sha256": "cbe97078012f15b954a1abd7818233058505a87e68bbcbbcfa838bc762573d08"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Prévia técnica da cozinha com ilha-13.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/vista frontal/Prévia técnica da cozinha com ilha-13.png",
+      "sha256": "9ef5cf080814f30438d48777c812a5f47e448562c586d19b503d73cece12022c"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Prévia volumétrica da cozinha com ilha-9.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/modulo direito bancada com ripado e led sequencial do ripado e teto/Prévia volumétrica da cozinha com ilha-9.png",
+      "sha256": "55a2676b5df88a573d8e531b4d1e7f9902d5a12e18adc01f74c39693ad364670"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Torre de forno e micro-ondas-1.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/modulo de moveis direito/Torre de forno e micro-ondas-1.png",
+      "sha256": "78d797da36e52beea068763d8beff3599217e27dd06637a0a6e3fc5ce42896a9"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Vista técnica da torre quente cinza-4.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/modulo de moveis direito/Vista técnica da torre quente cinza-4.png",
+      "sha256": "33ec3b99ba4271d89ce947965f6384fcd1c1cc8da5efcb73d9f3c72cf3b889f3"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/Vista técnica do tampo cinza-3.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/modulo de moveis direito/Vista técnica do tampo cinza-3.png",
+      "sha256": "c6eb8354c773e8bcecc4e8627754ddecac8c26b36f68fbf3587e111d2a55803b"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/029__exec-169d8e1c-8872-461d-b812-f77cf09c7a47.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/3D frames/029__exec-169d8e1c-8872-461d-b812-f77cf09c7a47.png",
+      "sha256": "c9098d450c5629a52f12e189e08a547c868c299ede27a56d16b5b378f281837f"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/131__FR_G01_CAM01_C_PROJETO_FRONTAL_v1_CANDIDATE.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/3D frames/131__FR_G01_CAM01_C_PROJETO_FRONTAL_v1_CANDIDATE.png",
+      "sha256": "7ff3ea650a289f04fcbe54aff8c1b0c3ebc79932b3fbc39cbc1c192874c7c858"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/149__FR_G03_CAM02_C_PROJETO_CLOSE_ENCONTROS_v1_CANDIDATE.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/3D frames/149__FR_G03_CAM02_C_PROJETO_CLOSE_ENCONTROS_v1_CANDIDATE.png",
+      "sha256": "6d1e19db75067ab7971fb0a1c1c6ee9037c75e6bfd100321b31d5738a6f3cc12"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/186__FR_G03_CAM03_D_EXECUTADO_CLOSE_RECORTES_v1_CANDIDATE.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/3D frames/186__FR_G03_CAM03_D_EXECUTADO_CLOSE_RECORTES_v1_CANDIDATE.png",
+      "sha256": "885465571ac43045ed238b65b0d28551f3a3382ac72ad280e41f4737d28f6d3d"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/187__FR_G03_CAM01_D_EXECUTADO_45G_v1_CANDIDATE.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/3D frames/187__FR_G03_CAM01_D_EXECUTADO_45G_v1_CANDIDATE.png",
+      "sha256": "a4bd44ba2b5cb46af9355f67ee2de42defac6af791637c75f64ed9e37830186c"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Afastamento direito corrigido para 5 cm.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/3D frames/Afastamento direito corrigido para 5 cm.png",
+      "sha256": "05eb01d8976517e1f9601351c4b96093213e25367f4c2e27f66aa5cc21d9cdc1"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Cozinha em L com ilha técnica-4.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/3D frames/Cozinha em L com ilha técnica-4.png",
+      "sha256": "baca27c082382836d88591b8d292b7b92d65fac85396140ccefb1bdb62e6d9ed"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Cozinha frontal em CAD, clay e wireframe-2.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/vista frontal/Cozinha frontal em CAD, clay e wireframe-2.png",
+      "sha256": "86059cdf6d75169caf87f9c06a13d89de2cd61cf2900b074d9afeb463a2d583a"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Cozinha técnica 3D em cinza-2.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/vista frontal/Cozinha técnica 3D em cinza-2.png",
+      "sha256": "7df3e185c2754cfa200dcaa753b835ce0d18fab39aee08d75a9f260fdc4e14a0"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Estudo volumétrico da cozinha com ilha-10.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/3D frames/Estudo volumétrico da cozinha com ilha-10.png",
+      "sha256": "3fe2cb429d6c9cfd5ccb8f54e8868f3d8408538e2121c0eaf1b1e0b27b179c74"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Modelo 3D técnico_ geladeira lado a lado-1.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/3D frames/Modelo 3D técnico_ geladeira lado a lado-1.png",
+      "sha256": "5c5d18dd1be565dc3c45cf3ef5420b8e7e38b9390cdf14782d68fdea3568589e"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Modelo técnico 3D de cozinha com cuba-7.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/3D frames/Modelo técnico 3D de cozinha com cuba-7.png",
+      "sha256": "e855f80e2529b38be16cdcdeea36aaf1ff83b6311fb52428022dfe90f3863729"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Modelo técnico frontal de quatro frentes-2.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/3D frames/Modelo técnico frontal de quatro frentes-2.png",
+      "sha256": "134fab7c7807479197ea08932a22de70b9845756a98a40c94efc42a95cdf1740"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Painel de vidro único em cinza escuro-8.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/3D frames/Painel de vidro único em cinza escuro-8.png",
+      "sha256": "f63a72fefd63ca8b1913e9d54ab19e656cb058e9f0e474f17fd10b987f0f62ec"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Peça L de pedra com cotas técnicas-4.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/3D frames/Peça L de pedra com cotas técnicas-4.png",
+      "sha256": "699e9d8ac1febb7c2d87d679dbd3d2b83098c729604ea9768d769ce6671487f7"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Prévia 3D cinza com contornos azuis-2.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/3D frames/Prévia 3D cinza com contornos azuis-2.png",
+      "sha256": "66df774c0e8c74db6e9650ad9f1cd79de06e4591d39675b32bdd507f825e1bf4"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Prévia 3D técnica sem anotações-3.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/3D frames/Prévia 3D técnica sem anotações-3.png",
+      "sha256": "9c5025f2a1ec77f0ea03db54107ccbfe2651794eef11d72e2acc237e866166e2"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Prévia 3D técnica sem cotas-1.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/3D frames/Prévia 3D técnica sem cotas-1.png",
+      "sha256": "2dd45b193b9d970257c119a58a275e52c4709a6011fb8eb6b9a10007291a1e24"
+    },
+    {
+      "expected": "IMAGENS-CODEX/aproved/lado esquerdo cozinha pia com cuba kokay pedra e moveis inferiores superiores e geladeira/Teto da cozinha_ dois LEDs em L-6.png",
+      "resolved": "IMAGENS-CODEX/aproved/lado direito ripado com mesa led sequencial e ilha com pedra e nicho/modulo de moveis direito/Teto da cozinha_ dois LEDs em L-6.png",
+      "sha256": "9313fb13273c5711ad05d61f238562c1d0604cd59027b72f098845deb1824b05"
+    }
+  ]
+}

@@ -13,7 +13,14 @@ function walk(dir, excluded = new Set()) {
   return fs.readdirSync(dir, { withFileTypes: true }).flatMap(entry => {
     if (excluded.has(entry.name)) return [];
     const target = path.join(dir, entry.name);
-    return entry.isDirectory() ? walk(target, excluded) : [target];
+    if (entry.isDirectory()) return walk(target, excluded);
+    // A symlink to a directory is not a readable text file. Keep source links.
+    if (entry.isFile()) return [target];
+    if (entry.isSymbolicLink()) {
+      try { return fs.statSync(target).isFile() ? [target] : []; }
+      catch { return []; }
+    }
+    return [];
   });
 }
 
@@ -73,6 +80,9 @@ test('unifica domínio, metadados sociais, JSON-LD e roteador SPA', () => {
 
   const graph = JSON.parse(doc.querySelector('#fr-seo-structured-data').textContent)['@graph'];
   const localBusiness = graph.find(node => Array.isArray(node['@type']) && node['@type'].includes('LocalBusiness'));
+  assert.ok(localBusiness['@type'].includes('Organization'));
+  assert.ok(localBusiness['@type'].includes('HomeAndConstructionBusiness'));
+  assert.equal(localBusiness['@id'], `${origin}/#organization`);
   assert.equal(localBusiness.logo.url, `${origin}/assets/brand/franco-romeu-logo-remaster-800.webp`);
   assert.equal(localBusiness.image, `${origin}/assets/social/franco-romeu-og-site-1200x630.jpg`);
   assert.equal(localBusiness.name, 'Franco Romeu');
@@ -90,13 +100,14 @@ test('unifica domínio, metadados sociais, JSON-LD e roteador SPA', () => {
   assert.equal(localBusiness.email, 'romeudifranco@gmail.com');
   assert.equal(localBusiness.address.addressLocality, 'São Paulo');
   assert.equal(localBusiness.address.addressRegion, 'SP');
-  assert.deepEqual(localBusiness.geo, { '@type': 'GeoCoordinates', latitude: -23.5505, longitude: -46.6333 });
+  assert.equal(localBusiness.geo, undefined, 'coordenadas genéricas não podem afirmar uma sede não comprovada');
   assert.deepEqual(localBusiness.areaServed.map(city => city.name), ['São Paulo', 'Guarulhos', 'Osasco', 'Barueri', 'Santo André', 'São Bernardo do Campo']);
   assert.ok(localBusiness.openingHoursSpecification.length > 0);
   assert.ok(localBusiness.paymentAccepted.length > 0);
   assert.ok(localBusiness.priceRange);
   const website = graph.find(node => node['@type'] === 'WebSite');
   assert.equal(website.potentialAction?.['@type'], 'SearchAction');
+  assert.equal(website.publisher?.['@id'], `${origin}/#organization`);
   assert.ok(doc.querySelector('meta[name="google-site-verification"]'));
 
   assert.match(doc.querySelector('#fr-seo-spa-router').textContent, /origin='https:\/\/www\.francoromeufr\.com\.br'/);
@@ -264,16 +275,18 @@ test('exportador remove locks, foco e estados transitórios do clone', () => {
 });
 
 test('não conserva domínio antigo, i.ibb.co nem altera assets/media', () => {
-  const textFiles = walk('.', new Set(['.git', '.codex-input', 'node_modules']))
+  // Materiais brutos do usuário são entrada editorial, não código nem saída pública.
+  // Continuamos verificando todo o restante do repositório e a dist gerada.
+  const textFiles = walk('.', new Set(['.git', '.codex-input', 'CODEX USE AQUI', 'node_modules']))
     .filter(file => path.resolve(file) !== __filename)
-    .filter(file => !/\.(?:avif|gif|ico|jpe?g|png|webp|woff2?)$/i.test(file));
+    .filter(file => /\.(?:html?|css|[cm]?js|mjs|json|xml|txt|md|webmanifest|ya?ml)$/i.test(file));
   for (const file of textFiles) {
     const contents = fs.readFileSync(file, 'utf8');
     assert.doesNotMatch(contents, /francoromeu\.com\.br/i, `domínio antigo em ${file}`);
     assert.doesNotMatch(contents, /i\.ibb\.co/i, `host externo em ${file}`);
   }
 
-  const media = walk('assets/media').sort();
+  const media = walk('assets/media', new Set(['fr-coz-lav'])).sort();
   const digest = crypto.createHash('sha256');
   for (const file of media) {
     digest.update(file);

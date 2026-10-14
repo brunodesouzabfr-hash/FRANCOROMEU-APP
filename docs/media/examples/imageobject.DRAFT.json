@@ -1,0 +1,24 @@
+{
+  "status": "DRAFT_EXAMPLE_NOT_DEPLOYED",
+  "media_id": "FR-M-B239E5912188239C",
+  "activation_required": [
+    "PUBLICATION_STATUS_RELEASED",
+    "CANONICAL_PAGE_AND_IMAGE_URL_RESOLVE",
+    "VISIBLE_ACCURATE_CONTEXT",
+    "RIGHTS_AND_ATTRIBUTION_CONFIRMED"
+  ],
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "ImageObject",
+    "@id": "https://www.francoromeufr.com.br/#image-fr-m-b239e5912188239c",
+    "name": "Imagem ilustrativa — Vista corrigida da bancada esquerda: seletor preto separado entre torneira sem alavanca e bebedouro",
+    "description": "Vista corrigida da bancada esquerda: seletor preto separado entre torneira sem alavanca e bebedouro. Visualização ilustrativa; não comprova execução real.",
+    "contentUrl": "https://www.francoromeufr.com.br/assets/media/fr-editorial/cozinha-bancada-l-imagem-ilustrativa-b239e59121.webp",
+    "caption": "Vista corrigida da bancada esquerda: seletor preto separado entre torneira sem alavanca e bebedouro. Visualização ilustrativa; não comprova execução real.",
+    "creditText": "Curadoria Franco Romeu — imagem ilustrativa",
+    "publisher": {
+      "@id": "https://www.francoromeufr.com.br/#organization"
+    }
+  },
+  "creator_policy": "Omitted while unknown; only add the confirmed Organization or Person who actually created this media."
+}
