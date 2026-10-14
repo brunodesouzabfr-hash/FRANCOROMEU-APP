@@ -7,7 +7,7 @@ Versão avaliada: branch `codex/integracao-portfolio-seo-main-2026-10-13`, build
 | Área | Estado | Evidência | Pendência |
 | --- | --- | --- | --- |
 | Git/preservação | PASS | worktree isolada; branches originais e stash intactos | confirmar status final após commits |
-| Build | PASS | 832 arquivos; 332 rotas; fingerprint estável no ciclo medido | repetir em checkout limpo do commit |
+| Build | PASS | 832 arquivos; 332 rotas; fingerprint reproduzido em checkout limpo do commit `a969729` | validar também no preview Git |
 | Orçamento | PASS | 115 serviços, 15 categorias, 7 cupons; núcleo com hash idêntico | nenhuma mudança financeira autorizada ou feita |
 | SEO técnico local | PASS | canonical `www`, 16 serviços, FAQ coerente, sitemaps XML, robots, redirects e 404 | indexação real é UNKNOWN até publicação/GSC |
 | Rastreadores | PASS local | GA4, Ahrefs e Clarity únicos por HTML aplicável | política de consentimento externa |

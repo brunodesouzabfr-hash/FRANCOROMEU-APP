@@ -36,7 +36,7 @@ A pilha aponta para `realpathSync` em `src/media-library.cjs`, chamado por `scri
 - SHA-256 do HTML público final: `0e0e3cb52e5c89ba1700fc403160161e63f2edc901c08768d334c55c7429255e`.
 - Fingerprint da árvore pública final: `f83093b5bb5629ea71e3a8e09d36ac407490482a8f434716eff6dc043f128604`.
 - `node scripts/check-project-library.cjs`: PASS; 6.788 links, 2.919 imagens, 332 JSON-LD e 5 sitemaps verificados.
-- `node scripts/check-build-idempotence.cjs`: PASS antes do ajuste final de CSS; será repetido no checkpoint final.
+- `node scripts/check-build-idempotence.cjs`: PASS no estado final, com o mesmo fingerprint em duas execuções.
 - Fontes privadas, ZIPs, CSVs, Markdown, God Mode e dados administrativos ausentes da `dist`.
 
 ## Ambiente Vercel
@@ -44,5 +44,7 @@ A pilha aponta para `realpathSync` em `src/media-library.cjs`, chamado por `scri
 - Projeto confirmado por leitura: equipe `franco-romeu`, projeto `francoromeu-app`, root directory `.`.
 - `vercel.json` define `npm run build`, output `dist` e `cleanUrls: true`, sobrepondo os defaults genéricos do projeto.
 - Nenhum deploy manual foi executado.
-- A confirmação definitiva de portabilidade será feita também em uma worktree limpa do commit e pelo preview Git da branch.
+- O commit `a969729` foi aberto em uma segunda worktree limpa, sem `.vercel`, `CODEX USE AQUI`, `dist`, `node_modules` ou artefatos herdados.
+- Nessa worktree, `npm ci`, `npm run build`, `node scripts/check-project-library.cjs` e `node scripts/check-build-idempotence.cjs` passaram e reproduziram o fingerprint `f83093b5bb5629ea71e3a8e09d36ac407490482a8f434716eff6dc043f128604`.
+- A validação restante de portabilidade é o preview Git da branch na infraestrutura Vercel.
 
