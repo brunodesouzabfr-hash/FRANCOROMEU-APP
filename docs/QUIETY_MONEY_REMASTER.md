@@ -5,7 +5,7 @@
 **Branch de trabalho:** `codex/quiety-money`
 
 **Base canônica:** `main` em `44b76f734f816e8fb842138a555887d596143c77`
-**Estado:** candidato local; sem publicação, merge ou alteração de produção.
+**Estado:** candidato em preview automatizado e protegido; sem merge ou alteração de produção.
 
 ## Intenção
 
@@ -77,6 +77,8 @@ Rollback estrutural: remover a tag `script` de `assets/js/fr-quiety-money.js` e 
 
 O texto de entrada afirmava que `sitemap.xml` retornava 404 e que havia loop entre domínio com e sem `www`. A verificação em 2026-10-14 encontrou `200` no sitemap e redirecionamento finito do apex/Vercel para `www`; nenhuma “correção” especulativa foi aplicada. Ahrefs não liberou a auditoria no plano conectado. O Search Console respondeu, mas nenhuma solicitação de indexação ou submissão de sitemap foi feita porque esta branch ainda não é uma versão publicada e aprovada.
 
+O push autorizado da branch acionou automaticamente um preview protegido na Vercel. O deployment correspondeu à branch e ao commit enviados, terminou `Ready`, manteve `noindex` e respondeu `200` nas seis rotas, em `sitemap.xml`, `robots.txt` e `/api/google-reviews`; o endpoint de avaliações respondeu explicitamente `not_configured`. A integração automática Cloudflare Workers registrou falha de deployment, mas os logs detalhados exigem acesso ao dashboard. A produção foi verificada separadamente com `200` e sem a camada Quiety.
+
 ## Evidência do candidato local
 
 Validado em 2026-10-14, por Chromium headless com emulação local:
@@ -94,6 +96,8 @@ Validado em 2026-10-14, por Chromium headless com emulação local:
 
 - `npm test` completo precisa ser repetido se houver qualquer mudança adicional de implementação;
 - performance precisa ser repetida em runner isolado ou preview estável antes de aprovação de release; não há alegação de meta Lighthouse ou Core Web Vitals aprovada;
-- não houve teste em dispositivo físico, Lighthouse oficial, PDF visual manual, deploy de preview Vercel, publicação, submissão ao Search Console ou validação por Ahrefs;
+- não houve teste em dispositivo físico, Lighthouse oficial, PDF visual manual, promoção para produção, submissão ao Search Console ou validação por Ahrefs;
+- o preview protegido teve rotas e build verificados por CLI autenticada, mas não recebeu uma segunda auditoria visual completa em navegador remoto;
+- a falha automática da Cloudflare permanece bloqueada por falta de acesso aos logs do dashboard e impede considerar o gate multihost concluído;
 - comparação visual foi feita com screenshots identificados por viewport; a revisão é interna, não independente;
 - merge e produção continuam dependentes de revisão e autorização explícita do proprietário.
