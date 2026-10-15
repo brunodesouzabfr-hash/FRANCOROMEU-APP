@@ -11,12 +11,18 @@ const TRACKING = Object.freeze({
 });
 
 function trackingHead() {
+  // Keep verification metadata public, but collect only on the canonical
+  // production hostname. Local and Vercel preview pages are not site visits.
   return '<meta name="google-site-verification" content="'+TRACKING.googleVerification+'">'
     +'<meta name="p:domain_verify" content="'+TRACKING.pinterestVerification+'">'
-    +'<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","'+TRACKING.clarity+'");</script>'
-    +'<script async src="https://www.googletagmanager.com/gtag/js?id='+TRACKING.ga4+'"></script>'
-    +'<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","'+TRACKING.ga4+'");</script>'
-    +'<script src="https://analytics.ahrefs.com/analytics.js" data-key="'+TRACKING.ahrefs+'" async></script>';
+    +'<script>(function(){'
+    +'if(window.location.hostname!=="www.francoromeufr.com.br")return;'
+    +'(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","'+TRACKING.clarity+'");'
+    +'window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){window.dataLayer.push(arguments)};'
+    +'window.gtag("js",new Date());window.gtag("config","'+TRACKING.ga4+'");'
+    +'var ga4=document.createElement("script");ga4.async=true;ga4.src="https://www.googletagmanager.com/gtag/js?id='+TRACKING.ga4+'";document.head.appendChild(ga4);'
+    +'var ahrefs=document.createElement("script");ahrefs.async=true;ahrefs.src="https://analytics.ahrefs.com/analytics.js";ahrefs.setAttribute("data-key","'+TRACKING.ahrefs+'");document.head.appendChild(ahrefs);'
+    +'})();</script>';
 }
 
 function normalize(value) {
