@@ -1,0 +1,56 @@
+/* Franco Romeu / IQE avatar phase 6 — ONLY persistent assistant visuals.
+   Six real CSS faces, matte bone/chamfered geometry, gold/orange light. No canvas/WebGL. */
+#fr-ai-root.fr6iqe-ready{--fr6iqe-bone:#e6d6b5;--fr6iqe-gold:#f6a700;--fr6iqe-orange:#ff6b00;--fr6iqe-shadow:#031812}
+#fr-ai-root.fr6iqe-ready .fr-ai-launcher{background:linear-gradient(142deg,#123f34,#031812);border:1px solid #f6a7008c;border-radius:19px;box-shadow:0 10px 28px #031812a8,0 0 0 1px #e6d6b521}
+#fr-ai-root.fr6iqe-ready .fr-ai-launcher:hover,
+#fr-ai-root.fr6iqe-ready .fr-ai-launcher:focus-visible{box-shadow:0 14px 34px #031812d4,0 0 0 2px #f6a700a8}
+#fr-ai-root.fr6iqe-ready .fr-ai-launcher::before,
+#fr-ai-root.fr6iqe-ready .fr-ai-launcher::after{animation:none;opacity:.16}
+#fr-ai-root.fr6iqe-ready .fr-ai-launcher .fr-ai-robot{width:48px;height:48px;border:0;border-radius:0;background:none;box-shadow:none;display:grid;place-items:center;overflow:visible}
+#fr-ai-root.fr6iqe-ready .fr-ai-robot::before,
+#fr-ai-root.fr6iqe-ready .fr-ai-robot::after{display:none!important}
+#fr-ai-root.fr6iqe-ready .fr-ai-avatar{background:linear-gradient(143deg,#174537,#031812);border:1px solid #f6a70075;box-shadow:0 4px 15px #0318128c;border-radius:10px;overflow:visible}
+#fr-ai-root.fr6iqe-ready .fr6iqe-scene{--fr6iqe-size:42px;position:relative;width:var(--fr6iqe-size);height:var(--fr6iqe-size);display:grid;place-items:center;perspective:450px;transform:translateZ(0);pointer-events:none;contain:layout style}
+#fr-ai-root.fr6iqe-ready .fr-ai-avatar .fr6iqe-scene{--fr6iqe-size:32px}
+#fr-ai-root.fr6iqe-ready .fr6iqe-cube{position:absolute;inset:0;transform-style:preserve-3d;transform:rotateX(-13deg) rotateY(-20deg) rotateZ(0deg);animation:fr6iqe-organic 18s cubic-bezier(.4,0,.55,1) infinite;backface-visibility:visible}
+#fr-ai-root.fr6iqe-ready .fr6iqe-face{position:absolute;inset:0;box-sizing:border-box;display:grid;place-items:center;overflow:hidden;background:linear-gradient(145deg,#f0e2c3 0%,#e6d6b5 45%,#c7b995 100%);border:1px solid #f6a7006d;clip-path:polygon(12% 0,88% 0,100% 12%,100% 88%,88% 100%,12% 100%,0 88%,0 12%);box-shadow:inset 0 0 0 2px #fff3d96d,inset -8px -8px 15px #81683b18;backface-visibility:hidden}
+#fr-ai-root.fr6iqe-ready .fr6iqe-face[data-face="front"]{transform:translateZ(calc(var(--fr6iqe-size)*.5));background:linear-gradient(138deg,#f2e6c9 0%,#e6d6b5 57%,#ceba91 100%)}
+#fr-ai-root.fr6iqe-ready .fr6iqe-face[data-face="back"]{transform:rotateY(180deg) translateZ(calc(var(--fr6iqe-size)*.5))}
+#fr-ai-root.fr6iqe-ready .fr6iqe-face[data-face="right"]{transform:rotateY(90deg) translateZ(calc(var(--fr6iqe-size)*.5));background:linear-gradient(135deg,#cfb98e,#f5d7a1)}
+#fr-ai-root.fr6iqe-ready .fr6iqe-face[data-face="left"]{transform:rotateY(-90deg) translateZ(calc(var(--fr6iqe-size)*.5));background:linear-gradient(135deg,#f6a7005b,#d8c69d)}
+#fr-ai-root.fr6iqe-ready .fr6iqe-face[data-face="top"]{transform:rotateX(90deg) translateZ(calc(var(--fr6iqe-size)*.5));background:linear-gradient(135deg,#ffe8bc,#f6a7008b)}
+#fr-ai-root.fr6iqe-ready .fr6iqe-face[data-face="bottom"]{transform:rotateX(-90deg) translateZ(calc(var(--fr6iqe-size)*.5));background:#bba779}
+#fr-ai-root.fr6iqe-ready .fr6iqe-face[data-face="front"]::before{content:"";position:absolute;inset:2px;border:1px solid #f6a7008a;clip-path:inherit;pointer-events:none}
+#fr-ai-root.fr6iqe-ready .fr6iqe-edge{position:absolute;left:8%;right:8%;top:8%;height:1px;background:linear-gradient(90deg,transparent,#f6a7009c,transparent);opacity:.78}
+#fr-ai-root.fr6iqe-ready .fr6iqe-visor{position:relative;z-index:1;width:83%;height:45%;display:flex;gap:10%;align-items:center;justify-content:center;padding:5% 0 0}
+#fr-ai-root.fr6iqe-ready .fr6iqe-eye{width:36%;aspect-ratio:1;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));grid-template-rows:repeat(5,minmax(0,1fr));gap:1px}
+#fr-ai-root.fr6iqe-ready .fr6iqe-pixel{min-width:0;min-height:0;background:transparent}
+#fr-ai-root.fr6iqe-ready .fr6iqe-pixel.is-on{background:#183d31;box-shadow:0 0 1px #f6a70066}
+#fr-ai-root.fr6iqe-ready .fr6iqe-mouth{position:absolute;width:19%;height:4%;top:71%;left:40.5%;background:#0a2f26;border-radius:1px}
+#fr-ai-root.fr6iqe-ready [data-fr6iqe-expression="happy"] .fr6iqe-mouth,
+#fr-ai-root.fr6iqe-ready [data-fr6iqe-expression="smile"] .fr6iqe-mouth{height:11%;border:2px solid #0a2f26;border-top:0;background:transparent;border-radius:0 0 80% 80%}
+#fr-ai-root.fr6iqe-ready [data-fr6iqe-expression="surprise"] .fr6iqe-mouth{width:10%;height:11%;border-radius:50%;left:45%}
+#fr-ai-root.fr6iqe-ready [data-fr6iqe-expression="thinking"] .fr6iqe-mouth{width:13%;left:45%;transform:rotate(-16deg)}
+#fr-ai-root.fr6iqe-ready [data-fr6iqe-expression="sleepy"] .fr6iqe-mouth{height:2%;opacity:.5}
+#fr-ai-root.fr6iqe-ready [data-fr6iqe-expression="glitch"] .fr6iqe-pixel.is-on{background:#ff6b00}
+#fr-ai-root.fr6iqe-ready .fr6iqe-mark{font:700 calc(var(--fr6iqe-size)*.33)/1 'Rokkitt',Georgia,serif;color:#0a2f26;letter-spacing:-.09em;text-shadow:0 1px #f6a70080}
+#fr-ai-root.fr6iqe-ready .fr6iqe-side-stroke{width:48%;height:48%;border:2px solid #f6a70072;transform:rotate(45deg);background:linear-gradient(135deg,#ff6b0023,transparent)}
+#fr-ai-root.fr6iqe-ready .fr-ai-status-dot{background:#f6a700;border-color:#031812;box-shadow:0 0 0 1px #ff6b0070,0 0 10px #f6a70070}
+@keyframes fr6iqe-organic{
+0%,100%{transform:rotateX(-13deg) rotateY(-20deg) rotateZ(0deg)}
+18%{transform:rotateX(-8deg) rotateY(3deg) rotateZ(2deg)}
+42%{transform:rotateX(-17deg) rotateY(20deg) rotateZ(-2deg)}
+68%{transform:rotateX(5deg) rotateY(-6deg) rotateZ(2deg)}
+85%{transform:rotateX(-10deg) rotateY(-26deg) rotateZ(-1deg)}
+}
+#fr-ai-root.fr6iqe-ready[data-fr6iqe-state="engaged"] .fr6iqe-cube{animation-duration:13s}
+#fr-ai-root.fr6iqe-ready[data-fr6iqe-state="paused"] .fr6iqe-cube,
+html.fr7-low-power #fr-ai-root.fr6iqe-ready .fr6iqe-cube{animation:none!important;transform:rotateX(-12deg) rotateY(-17deg)}
+@media(prefers-reduced-motion:reduce){
+#fr-ai-root.fr6iqe-ready .fr6iqe-cube{animation:none!important;transform:rotateX(-12deg) rotateY(-17deg)}
+#fr-ai-root.fr6iqe-ready .fr-ai-launcher{transition:none}
+}
+@media(max-width:390px){
+#fr-ai-root.fr6iqe-ready .fr-ai-launcher .fr-ai-robot{width:44px;height:44px}
+#fr-ai-root.fr6iqe-ready .fr-ai-launcher .fr6iqe-scene{--fr6iqe-size:38px}
+}
