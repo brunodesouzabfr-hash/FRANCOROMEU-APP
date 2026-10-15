@@ -23,6 +23,7 @@
  function mount(){
   if(mounted||!root||!rail||!footer)return false;
   if(root.querySelectorAll('.froutro4-panel').length!==4)return false;
+  root.hidden=false;
   mounted=true;
   w.addEventListener('scroll',schedule,{passive:true});
   w.addEventListener('resize',schedule,{passive:true});
@@ -39,6 +40,7 @@
   w.removeEventListener('pageshow',schedule);
   if(skip&&clickFn){skip.removeEventListener('click',clickFn);clickFn=null;}
   mounted=false;
+  if(root)root.hidden=true;
   if(rail)rail.style.transform='';
   if(progress)progress.style.width='';
  }

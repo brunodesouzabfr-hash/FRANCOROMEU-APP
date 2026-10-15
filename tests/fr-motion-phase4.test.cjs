@@ -58,6 +58,10 @@ test('Phase 4 / Home: real scroll controller mounts, skips to original footer an
  assert.equal(skipped,true);
  w.FRHomeOutro4.destroy();
  assert.equal(w.FRHomeOutro4.getState().mounted,false);
+ assert.equal(d.getElementById('froutro4').hidden,true);
+ assert.equal(w.FRHomeOutro4.mount(),true);
+ assert.equal(d.getElementById('froutro4').hidden,false);
+ w.FRHomeOutro4.destroy();
  assert.equal(d.querySelector('#froutro4 .froutro4-rail').style.transform,'');
  f.dom.window.close();
 });
