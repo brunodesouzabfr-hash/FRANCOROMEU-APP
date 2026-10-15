@@ -60,3 +60,34 @@
 }
 @media(forced-colors:active){.frms-card{background:Canvas!important;color:CanvasText!important;border:2px solid CanvasText}.frms-top,.frms-bottom{color:CanvasText!important;background:Canvas}.frms-frame:after{display:none}}
 @media print{.frms-section{height:auto!important;break-inside:avoid}.frms-pin{height:420px;position:relative}.frms-frame:not([data-frms-order="0"]),.frms-card:not([data-frms-order="0"]){display:none!important}.frms-card[data-frms-order="0"]{opacity:1;visibility:visible}.frms-index{display:none}}
+
+/* Phase 2: indexed access to all documented transformations, with cinematic portfolio navigation. */
+.frms-index li{display:flex;align-items:center;gap:8px;justify-content:space-between;border-bottom:1px solid #e6d6b52a;padding:4px 0}
+.frms-index-jump{min-height:38px;flex:1;min-width:0;background:none;border:0;padding:7px 3px;color:inherit;text-align:left;font:inherit;cursor:pointer}
+.frms-index-jump:hover{color:#ffad69}
+.frms-index-link{padding:7px 4px;font:600 10px/1.2 'Share Tech Mono',monospace;white-space:nowrap}
+.frms-index-jump:focus-visible,.frms-index-link:focus-visible,.frms-skip:focus-visible,.frms-collection:focus-visible{outline:3px solid #ff6b00;outline-offset:3px}
+.frms-skip{position:absolute;left:clamp(22px,4.5vw,80px);bottom:68px;z-index:32;border:1px solid #e6d6b56b;background:#031812b5;color:#e6d6b5;padding:9px 15px;letter-spacing:.13em;text-transform:uppercase;font:500 10px/1.5 'Share Tech Mono',monospace;cursor:pointer;backdrop-filter:blur(6px)}
+.frms-skip:hover{background:#123f34}
+.frms-section[data-frms-kind="portfolio"] .frms-card{border-color:currentColor}
+.frms-portfolio-links{position:relative;z-index:1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2px;background:#031812;padding:clamp(20px,4vw,65px);width:100%;max-width:100%;overflow:hidden}
+.frms-collection{min-width:0;min-height:clamp(160px,24vw,295px);padding:clamp(19px,2.6vw,44px);background:#0a2f26;color:#e6d6b5;border:1px solid #e6d6b54d;display:flex;flex-direction:column;justify-content:space-between;gap:14px;text-decoration:none;transition:background .3s,transform .3s;position:relative;overflow:hidden}
+.frms-collection:before{content:"";position:absolute;inset:8px;border:1px solid #e6d6b52a;pointer-events:none}
+.frms-collection:hover{background:#123f34}
+.frms-collection-number{font:400 28px/1 'Cormorant Garamond',Georgia,serif;color:#f6a700}
+.frms-collection strong{font:400 clamp(27px,3vw,48px)/1.05 'Stardos Stencil',Georgia,serif;letter-spacing:-.04em;overflow-wrap:break-word}
+.frms-collection small{font:400 12px/1.4 'Rokkitt',Georgia,serif;letter-spacing:.05em}
+.frms-collection-arrow{position:absolute;right:30px;bottom:26px;font:24px/1 system-ui;color:#f6a700}
+@media(max-width:750px){
+.frms-skip{bottom:46px;left:18px;font-size:8px;max-width:46vw;min-height:44px;padding:9px}
+.frms-index{bottom:48px;right:17px;max-width:52vw}
+.frms-index[open]{max-width:90vw}
+.frms-index-jump{font-size:11px}
+.frms-portfolio-links{grid-template-columns:1fr;padding:16px;gap:10px}
+.frms-collection{min-height:172px}
+.frms-card-foot p{max-width:73%}
+}
+@media(prefers-reduced-motion:reduce){
+.frms-skip,.frms-index-jump{display:none}
+.frms-collection{transition:none}
+}
