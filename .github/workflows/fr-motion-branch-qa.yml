@@ -16,6 +16,9 @@ jobs:
     steps:
       - name: Checkout isolated feature branch
         uses: actions/checkout@v4
+        with:
+          # Legacy regression compares pricing against an older pinned commit.
+          fetch-depth: 0
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
