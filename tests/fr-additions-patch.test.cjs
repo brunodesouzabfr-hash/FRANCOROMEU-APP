@@ -5,6 +5,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
+const { execFileSync } = require('node:child_process');
 const { createHash } = require('node:crypto');
 const { JSDOM } = require('jsdom');
 
@@ -105,6 +106,7 @@ test('prévia do orçamento é irmã aditiva e não substitui seletor de serviç
 });
 
 test('build público conserva Jornal e acrescenta somente a seção isolada', () => {
+  execFileSync(process.execPath, ['scripts/build-site.cjs'], { cwd: root, stdio: 'pipe' });
   const journal = read('dist/projetos/index.html');
   assert.match(journal, /id="frap-journal"/);
   assert.equal((journal.match(/class="frap-journal-card frap-scene"/g) || []).length, 5);
