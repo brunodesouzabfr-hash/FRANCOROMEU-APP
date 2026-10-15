@@ -34,7 +34,7 @@ module.exports=function installFRMotion(doc,prepared){
    items.forEach(function(pair,i){
     const frame=element('figure','frms-frame');frame.dataset.frmsOrder=String(i);
     frame.style.zIndex=String(i+1);
-    frame.appendChild(media(side==='left'?pair.before_media_id:pair.after_media_id,side,i,pair.title));
+    frame.appendChild(media(side==='left'?pair.before_media_id:pair.after_media_id,side,i,(side==='left'?'Antes — ':'Depois — ')+pair.title));
     host.appendChild(frame);
    });
    sides.push(host);pin.appendChild(host);
