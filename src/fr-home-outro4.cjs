@@ -15,8 +15,8 @@ function pick(prepared){
 function install(doc,prepared){
  if(!doc||!prepared?.data)throw Error('FR finale: canonical media catalog required');
  const final=doc.querySelector('#view-home .fr6-final'),footer=doc.querySelector('#view-home .fr6-footer');
- if(!final||!footer||final.nextElementSibling!==footer)throw Error('FR finale: Home final CTA/footer anchors changed');
  if(doc.getElementById('froutro4'))throw Error('FR finale: duplicate section');
+ if(!final||!footer||final.nextElementSibling!==footer)throw Error('FR finale: Home final CTA/footer anchors changed');
  const selected=pick(prepared);
  const section=e(doc,'section','froutro4');
  section.id='froutro4';section.dataset.froutro4Count='4';
