@@ -27,7 +27,8 @@ module.exports=function installFRMotion(doc,prepared){
   section.id=kind==='home'?'frms-home':'frms-portfolio';
   section.dataset.frmsKind=kind;
   section.setAttribute('aria-label',kind==='home'?'Transformações Franco Romeu — destaque':'Arquivo de transformações Franco Romeu');
-  section.style.height=(100+(items.length-1)*85)+'svh';
+  section.dataset.frmsScrollHeight=String(100+(items.length-1)*85);
+  section.style.height=section.dataset.frmsScrollHeight+'svh';
   const pin=element('div','frms-pin'),sides=[];
   for(const side of ['left','right']){
    const host=element('div','frms-side');host.dataset.frmsSide=side;host.setAttribute('aria-hidden','true');
