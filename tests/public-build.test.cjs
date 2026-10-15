@@ -98,3 +98,17 @@ test('página própria do estudo tem HTML e imagens sem motor financeiro nem mod
   assert.doesNotMatch(fs.readFileSync('dist/sitemap.xml','utf8'),/projetos\/cozinha-lavanderia/, 'noindex study is not an active sitemap entry');
   assert.doesNotMatch(fs.readFileSync('dist/sitemap-images.xml','utf8'),/projetos\/cozinha-lavanderia/);
 });
+
+test('intro V04 e laboratório não indexável chegam à saída pública com imagem oficial', () => {
+  const introFile = 'dist/assets/intro/fr-intro-cinematic.js';
+  const monogram = 'dist/assets/brand/franco-romeu-monograma-dourado-384.webp';
+  const profile = 'dist/assets/brand/franco-romeu-medalhao-esmeralda-256.webp';
+  const lab = 'dist/intro-franco-romeu-laboratorio.html';
+  for (const asset of [introFile,monogram,profile,lab]) {
+    assert.ok(fs.existsSync(asset), 'arquivo público ausente: '+asset);
+  }
+  assert.match(fs.readFileSync(lab,'utf8'), /name="robots" content="noindex,nofollow"/);
+  assert.match(fs.readFileSync(introFile,'utf8'), /monograma-dourado-384\.webp/);
+  assert.equal(document.querySelector('#loader'), null);
+  assert.ok(document.querySelector('script[src="/assets/intro/fr-intro-cinematic.js"]'));
+});

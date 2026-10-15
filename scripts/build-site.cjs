@@ -193,9 +193,18 @@ async function build() {
   }
   const publicRootFiles=['robots.txt','sitemap.xml','site.webmanifest','browserconfig.xml','favicon.ico','BingSiteAuth.xml','15371fdcae5446498483cb1385b2ccc3.txt'];
   for (const file of publicRootFiles){if(!fs.existsSync(file)||!fs.statSync(file).isFile())throw new Error('Arquivo público obrigatório ausente: '+file);fs.copyFileSync(file,path.join(output,file));}
+  // Laboratório de testes separado, explicitamente não indexável e sem navegação pública.
+  const introLab='intro-franco-romeu-laboratorio.html';
+  const labMarkup=fs.readFileSync(introLab,'utf8');
+  if(!/name="robots" content="noindex,nofollow"/.test(labMarkup))throw new Error('Laboratório precisa de noindex');
+  fs.copyFileSync(introLab,path.join(output,introLab));
   // Copy only assets referenced by the approved source and its existing modules.
   const referenced=new Set([...source.matchAll(/assets\/[a-zA-Z0-9_./-]+\.(?:avif|webp|png|jpe?g|svg|ico|json|js|css|woff2?)/g)].map(m=>m[0]));
   for(const v of media.variants)referenced.add(v.path);
+  // Intro V04 usa um asset na sua própria camada JS, não exposto diretamente no index.html.
+  const introMonogram='assets/brand/franco-romeu-monograma-dourado-384.webp';
+  if(!fs.existsSync(introMonogram))throw new Error('Monograma da intro ausente: '+introMonogram);
+  referenced.add(introMonogram);
   for(const file of referenced){if(file.startsWith('assets/media/fr-coz-lav/')||file==='assets/js/media-catalog.js')continue;if(!fs.existsSync(file)||!fs.statSync(file).isFile())continue;const target=path.join(output,file);fs.mkdirSync(path.dirname(target),{recursive:true});fs.copyFileSync(file,target);}
   // The public catalog contains only the reconciled selection, no archived URLs.
   fs.writeFileSync(path.join(output,'assets/js/media-catalog.js'),'window.FR_MEDIA_CATALOG='+JSON.stringify(prepared.data.caseCatalog).replaceAll('<','\\u003c')+';');

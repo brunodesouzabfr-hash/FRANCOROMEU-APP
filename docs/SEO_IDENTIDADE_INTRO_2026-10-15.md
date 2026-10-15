@@ -18,3 +18,5 @@ Foram removidos apenas o HTML e CSS específicos do Forge, e substituída a fun�
 Pós-publicação: npm test; npm run check:html; verificar Home e outras views, orçamento, IQE, PDF, console, links de imagens, mobile 390x844, fonte offline e reduz-motion. Confirmar deploy Vercel, SEO canonical e solicitar reindexação no Search Console. Sem garantia do texto literal do snippet Google.
 
 Rollback: reverter o commit sem force-push e preservar todo trabalho posterior.
+
+Build público: scripts/build-site.cjs inclui explicitamente o monograma referenciado no JavaScript da intro e publica a página isolada intro-franco-romeu-laboratorio.html, com noindex. tests/public-build.test.cjs valida a presença dos arquivos e ausência do loader legado.
