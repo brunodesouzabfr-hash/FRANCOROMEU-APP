@@ -196,7 +196,7 @@
   }
 
   function mountEnvironments() {
-    if (!flags.environments) return;
+    if (!flags.environments || document.getElementById('framb363-atlas')) return;
     var view = document.getElementById('view-ambientes');
     var museum = view && view.querySelector('.amb-museum');
     var styles = Array.isArray(global.AMB_STYLES) ? global.AMB_STYLES.slice(0, 3) : [];
