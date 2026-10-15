@@ -1,0 +1,58 @@
+/* FR Outro 4 · horizontal cinematic finish, fully scoped to the Home. */
+#froutro4{position:relative;isolation:isolate;background:#031812;color:#e6d6b5;--froutro-ink:#031812;--froutro-paper:#e6d6b5;--froutro-gold:#f6a700}
+#froutro4 *,#froutro4 *::before,#froutro4 *::after{box-sizing:border-box}
+#froutro4 .froutro4-pin{position:sticky;top:0;width:100%;height:100vh;height:100svh;overflow:hidden;isolation:isolate}
+#froutro4 .froutro4-rail{display:flex;flex-wrap:nowrap;height:100%;width:400%;will-change:transform;transform:translate3d(0,0,0)}
+#froutro4 .froutro4-panel{width:25%;height:100%;flex:0 0 25%;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;isolation:isolate;border-right:1px solid #e6d6b53b}
+#froutro4 .froutro4-panel-media{background:#0a2f26}
+#froutro4 .froutro4-image{position:absolute;inset:-3%;overflow:hidden}
+#froutro4 .froutro4-image img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.04);filter:saturate(.73) contrast(1.13)}
+#froutro4 .froutro4-shade{position:absolute;inset:0;background:linear-gradient(90deg,#031812db 0%,#03181276 55%,#03181278 100%),linear-gradient(0deg,#031812ca,transparent 42%);pointer-events:none}
+#froutro4 .froutro4-content{position:relative;z-index:2;display:flex;flex-direction:column;align-items:flex-start;gap:clamp(16px,2vw,32px);width:min(1150px,88%);margin:0 auto;min-width:0}
+#froutro4 .froutro4-kicker{font:600 11px/1.5 'Share Tech Mono',monospace;letter-spacing:.25em;color:#f6a700}
+#froutro4 .froutro4-counter{font:400 clamp(50px,9vw,160px)/.8 'Cormorant Garamond',Georgia,serif;color:#e6d6b53f;font-style:italic}
+#froutro4 .froutro4-heading{font:400 clamp(45px,7.8vw,145px)/.95 'Stardos Stencil',Georgia,serif;letter-spacing:-.05em;max-width:14ch;color:#e6d6b5;text-wrap:balance;margin:0}
+#froutro4 .froutro4-text{font:400 clamp(17px,2.2vw,26px)/1.45 'Rokkitt',Georgia,serif;max-width:650px;margin:0;color:#e6d6b5dd}
+#froutro4 .froutro4-work{font:500 11px/1.5 'Share Tech Mono',monospace;letter-spacing:.17em;border-left:2px solid #f6a700;padding-left:18px;text-transform:uppercase}
+#froutro4 .froutro4-panel-cta{background:radial-gradient(ellipse at 20% 18%,#1a4b3b 0%,#0a2f26 40%,#031812 88%);border-right:0}
+#froutro4 .froutro4-panel-cta:before{content:"";pointer-events:none;position:absolute;inset:0;opacity:.27;background:linear-gradient(90deg,transparent 49.95%,#e6d6b542 50%,transparent 50.05%),linear-gradient(0deg,transparent 49.95%,#e6d6b542 50%,transparent 50.05%);background-size:100px 100px}
+#froutro4 .froutro4-cta-inner{z-index:2;position:relative;display:flex;flex-direction:column;gap:clamp(18px,2.5vw,36px);width:min(1600px,90%);padding:clamp(15px,3vw,48px)}
+#froutro4 .froutro4-panel-cta .froutro4-heading{font-size:clamp(42px,6.1vw,112px);max-width:14ch}
+#froutro4 .froutro4-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(10px,1.1vw,18px);max-width:1250px}
+#froutro4 .froutro4-link{position:relative;min-width:0;min-height:clamp(138px,16vw,230px);border:1px solid #e6d6b571;color:#e6d6b5;text-decoration:none;display:flex;flex-direction:column;justify-content:space-between;gap:14px;padding:clamp(16px,2.4vw,36px);background:#03181288;transition:background .3s ease,border-color .3s ease,transform .3s ease}
+#froutro4 .froutro4-link:before{content:"";position:absolute;inset:8px;border:1px solid #e6d6b52c;pointer-events:none}
+#froutro4 .froutro4-link:hover{border-color:#f6a700;background:#174336;transform:translateY(-3px)}
+#froutro4 .froutro4-link-primary{border-color:#f6a700a3;background:#123f3488}
+#froutro4 .froutro4-link strong{font:400 clamp(22px,2.7vw,47px)/1.05 'Stardos Stencil',Georgia,serif;letter-spacing:-.025em}
+#froutro4 .froutro4-link>span:last-child{position:absolute;right:clamp(16px,2vw,30px);bottom:clamp(18px,2vw,30px);font-size:27px;color:#f6a700}
+#froutro4 .froutro4-icon{height:clamp(38px,5vw,76px);width:clamp(38px,5vw,76px);display:flex;align-items:center;justify-content:flex-start;color:#f6a700;font-size:clamp(35px,4.4vw,67px)}
+#froutro4 .froutro4-progress{position:absolute;z-index:5;left:0;right:0;bottom:0;height:3px;background:#e6d6b53e}
+#froutro4 .froutro4-progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,#ff6b00,#f6a700)}
+#froutro4 .froutro4-skip{position:absolute;z-index:8;right:clamp(20px,4vw,70px);top:clamp(26px,5vw,80px);min-height:44px;cursor:pointer;border:1px solid #e6d6b589;background:#031812a6;color:#e6d6b5;padding:12px 18px;font:600 10px/1.4 'Share Tech Mono',monospace;letter-spacing:.16em;text-transform:uppercase}
+#froutro4 a:focus-visible,#froutro4 button:focus-visible{outline:3px solid #ff6b00;outline-offset:4px}
+#view-home #froutro4+.fr6-footer{position:relative;border-top:1px solid #f6a70055;background:#031812}
+@media(max-width:800px){
+#froutro4{height:auto!important;min-height:100svh}
+#froutro4 .froutro4-pin{height:auto;position:relative;overflow:visible}
+#froutro4 .froutro4-rail{width:100%;display:block;height:auto;transform:none!important;will-change:auto}
+#froutro4 .froutro4-panel{width:100%;height:auto;min-height:85svh;overflow:hidden;display:flex}
+#froutro4 .froutro4-content{padding:110px 0 70px;gap:24px}
+#froutro4 .froutro4-heading{font-size:clamp(43px,11vw,75px)}
+#froutro4 .froutro4-panel-cta{min-height:100svh}
+#froutro4 .froutro4-panel-cta .froutro4-heading{font-size:clamp(39px,9vw,75px)}
+#froutro4 .froutro4-actions{grid-template-columns:1fr}
+#froutro4 .froutro4-link{min-height:125px;display:grid;grid-template-columns:auto 1fr auto;align-items:center}
+#froutro4 .froutro4-link>span:last-child{position:static}
+#froutro4 .froutro4-icon{font-size:38px}
+#froutro4 .froutro4-cta-inner{padding:80px 10px 42px}
+#froutro4 .froutro4-skip,#froutro4 .froutro4-progress{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+#froutro4{height:auto!important}
+#froutro4 .froutro4-pin{position:relative;height:auto}
+#froutro4 .froutro4-rail{transform:none!important;width:100%;display:block}
+#froutro4 .froutro4-panel{width:100%;min-height:70vh;height:auto;padding:60px 0}
+#froutro4 .froutro4-link{transition:none}
+#froutro4 .froutro4-skip,#froutro4 .froutro4-progress{display:none}
+}
+@media print{#froutro4{height:auto!important}#froutro4 .froutro4-rail{width:100%;transform:none!important;display:block}#froutro4 .froutro4-pin{height:auto;position:relative}#froutro4 .froutro4-panel{width:100%;height:400px;break-inside:avoid}}
