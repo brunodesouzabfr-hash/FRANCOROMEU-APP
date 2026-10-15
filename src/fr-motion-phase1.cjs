@@ -60,9 +60,10 @@ module.exports=function installFRMotion(doc,prepared){
   const e=doc.createElement(tag);if(className)e.className=className;
   if(text!==undefined)e.textContent=text;return e;
  }
+ function pairType(text){return /PROJETO 3D/i.test(text)?'3d':'photo';}
  function media(id,where,index,label){
   const data=prepared.data.media[id],image=element('img');
-  image.setAttribute('alt',label+' — registro fotográfico da obra Franco Romeu');
+  image.setAttribute('alt',label+(pairType(label)==='3d'?' — visualização tridimensional criada pela Franco Romeu':' — registro fotográfico da obra Franco Romeu'));
   image.setAttribute('decoding','async');
   image.setAttribute('loading',index===0?'eager':'lazy');
   const canonical=data.variants.find(v=>v.canonical)||data.variants[data.variants.length-1];
