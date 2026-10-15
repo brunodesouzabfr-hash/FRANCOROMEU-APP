@@ -40,7 +40,7 @@ test('todas as rotas públicas usam canonical www e um único conjunto de analyt
     assert.match(document.querySelector('link[rel="canonical"]')?.href || '', /^https:\/\/www\.francoromeufr\.com\.br\//, file);
     assert.doesNotMatch(text, /https:\/\/francoromeufr\.com\.br(?=[/"'#])/, file);
     assert.equal(count(text, 'analytics.ahrefs.com/analytics.js'), 1, `Ahrefs duplicado em ${file}`);
-    assert.equal(count(text, 'www.googletagmanager.com/gtag/js?id=G-C3FMZ4NGGY'), 1, `GA4 duplicado em ${file}`);
+    assert.equal(count(text, 'www.googletagmanager.com/gtag/js?id=G-22Z85RCGQC'), 1, `GA4 duplicado em ${file}`);
     assert.equal(count(text, 'clarity.ms/tag/'), 1, `Clarity duplicado em ${file}`);
     assert.equal(document.querySelectorAll('meta[name="google-site-verification"]').length, 1, file);
     assert.equal(document.querySelectorAll('meta[name="p:domain_verify"]').length, 1, file);
