@@ -2,7 +2,7 @@
 .frms-section{position:relative;isolation:isolate;background:#031812;color:#e6d6b5;contain:layout style;--frms-paper:#e6d6b5}
 .frms-section *{box-sizing:border-box}
 .frms-pin{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;isolation:isolate;background:#0a2f26}
-.frms-side{position:absolute;top:0;bottom:0;width:50%;overflow:hidden;background:#123f34}
+.frms-side{position:absolute;z-index:1;isolation:isolate;top:0;bottom:0;width:50%;overflow:hidden;background:#123f34}
 .frms-side[data-frms-side="left"]{left:0}
 .frms-side[data-frms-side="right"]{right:0}
 .frms-frame{position:absolute;inset:0;margin:0;overflow:hidden;clip-path:inset(100% 0 0 0);background:linear-gradient(145deg,#123f34,#433a2f)}
