@@ -26,13 +26,19 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci --no-audit --no-fund
+      - name: Verify phase 1-3 motion and atlas independently
+        run: node --test tests/fr-ambientes-363.test.cjs tests/fr-motion-phase1.test.cjs
       - name: Run all regression suites
         run: npm test
       - name: Check canonical HTML
+        if: always()
         run: npm run check:html
       - name: Build production-formatted HTML in isolation
+        if: always()
         run: npm run build
       - name: Audit links and project library
+        if: always()
         run: npm run check:project-library
       - name: Verify reproducible build
+        if: always()
         run: npm run check:idempotence
