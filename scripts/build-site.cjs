@@ -63,6 +63,8 @@ async function build() {
   // Only publish the generated public directory, never source HTMLs or documentation.
   fs.mkdirSync(output, { recursive: true });
   const prepared = require('./prepare-project-library.cjs')(output);
+  // Motion Phase 1: server-render split scenes from the reconciled media catalog.
+  require('../src/fr-motion-phase1.cjs')(doc, prepared);
   prepared.sourceGraph = sourceGraph;
   dom.window.FR_MEDIA_PRERENDER = true;
   dom.window.FR_MEDIA_LIBRARY = prepared.data;

@@ -1,0 +1,62 @@
+/* FR Motion / Phase 1 — isolated split-scroll component. Source: user-approved concept, reimplemented for the canonical FR SPA. */
+.frms-section{position:relative;isolation:isolate;background:#031812;color:#e6d6b5;contain:layout style;--frms-paper:#e6d6b5}
+.frms-section *{box-sizing:border-box}
+.frms-pin{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;isolation:isolate;background:#0a2f26}
+.frms-side{position:absolute;top:0;bottom:0;width:50%;overflow:hidden;background:#123f34}
+.frms-side[data-frms-side="left"]{left:0}
+.frms-side[data-frms-side="right"]{right:0}
+.frms-frame{position:absolute;inset:0;overflow:hidden;clip-path:inset(100% 0 0 0);background:linear-gradient(145deg,#123f34,#433a2f)}
+.frms-frame[data-frms-order="0"]{clip-path:inset(0)}
+.frms-frame img{height:100%;width:100%;object-fit:cover;display:block;filter:saturate(.83) contrast(1.08);transform:scale(1.045)}
+.frms-frame:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#03181242,transparent 70%);pointer-events:none}
+.frms-side[data-frms-side="right"] .frms-frame:after{background:linear-gradient(-90deg,#03181242,transparent 70%)}
+.frms-divider{position:absolute;left:50%;top:0;bottom:0;width:1px;background:#e6d6b566;z-index:14;pointer-events:none}
+.frms-top{position:absolute;z-index:31;top:clamp(85px,10vh,145px);left:clamp(22px,4.5vw,80px);right:clamp(22px,4.5vw,80px);display:flex;justify-content:space-between;align-items:center;gap:18px;font:500 10px/1.5 'Share Tech Mono',monospace;letter-spacing:.19em;color:#fff7e9;text-transform:uppercase;text-shadow:0 2px 10px #0008;pointer-events:none}
+.frms-bottom{position:absolute;z-index:30;left:clamp(22px,4.5vw,80px);right:clamp(22px,4.5vw,80px);bottom:clamp(23px,4vh,50px);display:flex;align-items:center;gap:25px;font:500 10px/1.4 'Share Tech Mono',monospace;letter-spacing:.16em;color:#fff7e9;text-shadow:0 2px 8px #000a}
+.frms-progress{height:2px;flex:1;overflow:hidden;background:#e6d6b580}.frms-progress span{display:block;height:100%;width:0;background:#ff6b00}
+.frms-cards{position:absolute;inset:0;display:grid;place-items:center;z-index:25;pointer-events:none}
+.frms-card{position:absolute;width:clamp(310px,34vw,560px);min-height:clamp(268px,38svh,410px);max-height:70svh;padding:clamp(27px,3vw,45px);display:flex;flex-direction:column;justify-content:space-between;gap:22px;color:#031812;background:#e6d6b5;border:1px solid currentColor;box-shadow:0 25px 75px #0008;overflow:hidden;opacity:0;visibility:hidden;transform:translateY(22px);pointer-events:none;transition:background .28s linear,color .28s linear}
+.frms-card[data-frms-order="0"]{opacity:1;visibility:visible;transform:none;pointer-events:auto}
+.frms-card:before{content:"";position:absolute;inset:9px;border:1px solid currentColor;opacity:.35;pointer-events:none}
+.frms-card-top,.frms-card-foot{display:flex;justify-content:space-between;align-items:center;gap:14px;position:relative}
+.frms-card-top{font:600 10px/1.5 'Share Tech Mono',monospace;letter-spacing:.11em;text-transform:uppercase}
+.frms-card-index{font:italic 24px/1 'Cormorant Garamond',Georgia,serif;letter-spacing:0}
+.frms-card-copy{position:relative}.frms-card-kicker{font:500 10px/1.4 'Share Tech Mono',monospace;letter-spacing:.14em;text-transform:uppercase;margin:0 0 16px}
+.frms-card-title{font:400 clamp(32px,3.4vw,56px)/.99 'Stardos Stencil',Georgia,serif;letter-spacing:-.035em;max-width:16ch;overflow-wrap:break-word;margin:0}
+.frms-card-foot p{font:400 13px/1.45 'Rokkitt',Georgia,serif;margin:0;max-width:70%}
+.frms-card-foot a{flex:none;display:grid;place-items:center;width:52px;height:52px;border:1px solid currentColor;border-radius:50%;color:inherit;text-decoration:none;font:24px/1 system-ui;transition:background .2s,transform .2s}
+.frms-card-foot a:hover{background:#ff6b0030;transform:rotate(45deg)}
+.frms-card-foot a:focus-visible,.frms-index summary:focus-visible,.frms-index a:focus-visible{outline:3px solid #ff6b00;outline-offset:4px}
+.frms-index{position:absolute;right:clamp(20px,4vw,60px);bottom:80px;z-index:31;color:#e6d6b5;font:12px/1.5 system-ui;max-width:min(300px,85vw)}
+.frms-index summary{cursor:pointer;text-shadow:0 2px 8px #000;list-style-position:inside}
+.frms-index[open]{background:#031812ed;padding:14px;border:1px solid #e6d6b580}
+.frms-index ol{overflow:auto;max-height:38svh;padding-left:20px;margin:10px 0 0}
+.frms-index a{color:#e6d6b5}.frms-index li{padding:3px 0}
+.frms-section[data-frms-kind="home"] .frms-card{min-height:300px}
+@media(max-width:750px){
+ .frms-side{width:100%;height:50%;bottom:auto;left:0!important;right:0!important}
+ .frms-side[data-frms-side="left"]{top:0}
+ .frms-side[data-frms-side="right"]{top:50%}
+ .frms-divider{top:50%;left:0;width:100%;height:1px;bottom:auto}
+ .frms-top{top:clamp(72px,10svh,104px);left:18px;right:18px;font-size:8px}
+ .frms-bottom{bottom:16px;left:18px;right:18px;font-size:8px;gap:10px}
+ .frms-bottom>span:last-child{display:none}
+ .frms-card{width:min(86vw,460px);min-height:245px;max-height:calc(100svh - 182px);padding:24px;gap:15px}
+ .frms-card:before{inset:7px}
+ .frms-card-title{font-size:clamp(28px,7vw,42px)}
+ .frms-card-top,.frms-card-kicker{font-size:8px}
+ .frms-card-foot p{font-size:12px}
+ .frms-card-foot a{width:44px;height:44px}
+ .frms-index{right:17px;bottom:53px;font-size:11px}
+ .frms-index ol{max-height:25svh}
+}
+@media(max-width:390px){.frms-card{width:88vw;padding:17px;min-height:218px;gap:10px}.frms-card-title{font-size:30px}.frms-top{font-size:7px}}
+@media(prefers-reduced-motion:reduce){
+ .frms-section{height:100svh!important}
+ .frms-frame:not([data-frms-order="0"]),.frms-card:not([data-frms-order="0"]){display:none!important}
+ .frms-frame[data-frms-order="0"]{clip-path:none!important}
+ .frms-card[data-frms-order="0"]{opacity:1!important;visibility:visible!important;transform:none!important}
+ .frms-card,.frms-card-foot a{transition:none!important}
+}
+@media(forced-colors:active){.frms-card{background:Canvas!important;color:CanvasText!important;border:2px solid CanvasText}.frms-top,.frms-bottom{color:CanvasText!important;background:Canvas}.frms-frame:after{display:none}}
+@media print{.frms-section{height:auto!important;break-inside:avoid}.frms-pin{height:420px;position:relative}.frms-frame:not([data-frms-order="0"]),.frms-card:not([data-frms-order="0"]){display:none!important}.frms-card[data-frms-order="0"]{opacity:1;visibility:visible}.frms-index{display:none}}
