@@ -71,6 +71,8 @@ async function build() {
   require('../src/fr-home-outro4.cjs')(doc,prepared);
   // Phase 5: additive three-card / square cube P3D presentation. Stage 15 handlers remain canonical.
   require('../src/fr-projects3d-phase5.cjs')(doc);
+  // Phase 6: visual-only IQE assistant avatar, preserving the wizard and FRBudgetCore.
+  require('../src/fr-iqe-avatar-phase6.cjs')(doc);
   prepared.sourceGraph = sourceGraph;
   dom.window.FR_MEDIA_PRERENDER = true;
   dom.window.FR_MEDIA_LIBRARY = prepared.data;
