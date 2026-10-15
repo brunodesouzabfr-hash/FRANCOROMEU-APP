@@ -13,7 +13,7 @@ module.exports=function installFRMotion(doc,prepared){
  }
  function media(id,where,index,label){
   const data=prepared.data.media[id],image=element('img');
-  image.setAttribute('alt',label+' — '+(data.alt||data.title||'Registro Franco Romeu'));
+  image.setAttribute('alt',label+' — registro fotográfico da obra Franco Romeu');
   image.setAttribute('decoding','async');
   image.setAttribute('loading',index===0?'eager':'lazy');
   const canonical=data.variants.find(v=>v.canonical)||data.variants[data.variants.length-1];
