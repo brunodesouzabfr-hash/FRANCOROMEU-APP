@@ -158,11 +158,32 @@ test('favicons, PWA e derivados remasterizados existem nas dimensões corretas',
   manifest.icons.forEach(icon => assert.ok(fs.existsSync(icon.src), `ícone PWA ausente: ${icon.src}`));
 });
 
-test('superfícies de marca usam os masters aprovados e recipiente circular sem distorção', () => {
-  assert.equal(doc.querySelector('#loader img').getAttribute('src'), 'assets/brand/franco-romeu-logo-remaster-384.webp');
-  assert.equal(doc.querySelector('#smart-nav-brand img').getAttribute('src'), 'assets/brand/franco-romeu-profile-remaster-256.webp');
-  assert.match(html, /criarConteudoPDF[\s\S]*?franco-romeu-profile-remaster-256\.webp/);
-  assert.match(html, /renderHeader[\s\S]*?franco-romeu-profile-remaster-256\.webp/);
+test('superfícies de marca usam imagens aprovadas, intro V04 e recipientes sem distorção', () => {
+  // O loader Forge foi removido por decisão do proprietário. A intro não fica
+  // escondida atrás de #loader: há um único overlay efêmero em Shadow DOM.
+  assert.equal(doc.querySelector('#loader'), null, 'o loader Forge não deve existir');
+  assert.equal(doc.querySelector('#fr6-loader-status'), null);
+  const introTag = doc.querySelector('script[src="/assets/intro/fr-intro-cinematic.js"]');
+  assert.ok(introTag, 'entrada única da intro V04 ausente');
+  const intro = fs.readFileSync('assets/intro/fr-intro-cinematic.js', 'utf8');
+  assert.match(intro, /entry:'cascade',exit:'fracture',background:'fault',color:'#E6D6B5',duration:17,speed:1\.8,motion:2\.5,fog:100/);
+  assert.match(intro, /fr:intro-complete/);
+  assert.match(intro, /fr-intro-v04-seen|fr_intro_v04_seen/);
+  assert.match(intro, /\/assets\/brand\/franco-romeu-monograma-dourado-384\.webp/);
+  const lab = fs.readFileSync('intro-franco-romeu-laboratorio.html', 'utf8');
+  assert.match(lab, /name="robots" content="noindex,nofollow"/);
+  assert.match(lab, /\/assets\/brand\/franco-romeu-monograma-dourado-384\.webp/);
+  const profile = 'assets/brand/franco-romeu-medalhao-esmeralda-256.webp';
+  const monogram = 'assets/brand/franco-romeu-monograma-dourado-384.webp';
+  for(const asset of [profile,monogram]){
+    const bytes=fs.readFileSync(asset);
+    assert.ok(bytes.length>4000, 'ícone vazio ou ausente: '+asset);
+    assert.equal(bytes.toString('ascii',0,4),'RIFF', 'WebP inválido: '+asset);
+    assert.equal(bytes.toString('ascii',8,12),'WEBP','formato WebP inválido: '+asset);
+  }
+  assert.equal(doc.querySelector('#smart-nav-brand img').getAttribute('src'), profile);
+  assert.match(html, /criarConteudoPDF[\s\S]*?franco-romeu-medalhao-esmeralda-256\.webp/);
+  assert.match(html, /renderHeader[\s\S]*?franco-romeu-medalhao-esmeralda-256\.webp/);
   assert.match(html, /renderFooter[\s\S]*?franco-romeu-logo-remaster-384\.webp/);
   assert.doesNotMatch(html, /assets\/brand\/[^"']*(?:logomark|lockup|selo)[^"']*\.svg/i);
 
@@ -174,12 +195,11 @@ test('superfícies de marca usam os masters aprovados e recipiente circular sem 
   assert.match(css, /#smart-nav\.nav-state-header #fr-global-search-nav,[\s\S]*?min-width:44px!important[^}]*min-height:44px!important[^}]*aspect-ratio:1\/1!important/);
 
   const staticCircles = [
-    doc.querySelector('#loader img'),
     doc.querySelector('#smart-nav-brand img'),
     doc.querySelector('#header-container img'),
     doc.querySelector('#footer-container img')
   ];
-  staticCircles.forEach(image => assert.ok(image.closest('.fr-brand-circle'), `imagem sem recipiente circular: ${image?.outerHTML}`));
+  staticCircles.forEach(image => assert.ok(image && image.closest('.fr-brand-circle'), `imagem sem recipiente circular: ${image?.outerHTML}`));
 });
 
 test('mantém um único h1 e alt em todas as imagens declaradas', () => {
