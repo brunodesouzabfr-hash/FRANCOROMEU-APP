@@ -5,7 +5,7 @@
  if(w.FRProjects3DPhase5)return;
  var view=d.getElementById('view-projetos3d'),lab=null,rail=null,orbit=null,toolbar=null;
  var viewButtons=[],mutation=null,bootstrap=null,flipping=false,active=-1,installed=false;
- var listenerPairs=[],animationEnd=null;
+ var listenerPairs=[],animationEnd=null,faceHold=false;
  function reduced(){return Boolean(w.matchMedia&&w.matchMedia('(prefers-reduced-motion: reduce)').matches);}
  function closest(node,sel){return node&&node.closest?node.closest(sel):null;}
  function el(tag,cls,text){var x=d.createElement(tag);if(cls)x.className=cls;if(text!==undefined)x.textContent=String(text);return x;}
@@ -31,6 +31,7 @@
   if(previous)previous.disabled=current===0;
   if(next)next.disabled=current===projects.length-1;
   if(changed){
+   viewButtons.forEach(function(button,i){button.classList.toggle('fr5d-flip-target',Math.abs(i-current)<=1);});
    focusTile(current);
    if(!reduced()&&lab){
     lab.classList.remove('fr5d-flipping');
@@ -40,15 +41,22 @@
    }
   }
  }
+ function releaseCube(){
+  if(!faceHold||!orbit)return;
+  if(typeof w.CustomEvent==='function')orbit.dispatchEvent(new w.CustomEvent('fr16P3DSnap',{detail:{release:true}}));
+  faceHold=false;
+ }
  function choose(index){
   var projects=getProjects(),api=legacy();
   if(!projects||!api||typeof api.selectProject3D!=='function')return;
   var idx=Math.min(projects.length-1,Math.max(0,Number(index)));
   if(!Number.isFinite(idx))return;
+  releaseCube();
   api.selectProject3D(idx,true);
   mark();
  }
  function openInspector(){
+  releaseCube();
   var api=legacy();if(api&&typeof api.openProject3D==='function')api.openProject3D(selected());
  }
  function face(index){
@@ -58,7 +66,7 @@
   var cubes=orbit.querySelectorAll('.fr15-p3d-cube');
   if(!cubes.length)return;
   if(w.FR_STAGE16_FLAGS&&w.FR_STAGE16_FLAGS.cubeNarrativeScroll===true){
-   orbit.dispatchEvent(new CustomEvent('fr16P3DSnap',{bubbles:false,detail:{yaw:yaw,pitch:pitch,hold:true}}));
+   orbit.dispatchEvent(new w.CustomEvent('fr16P3DSnap',{bubbles:false,detail:{yaw:yaw,pitch:pitch,hold:true}}));faceHold=true;
   }else{
    // Stage 16 narrative interaction is not active. Set temporary visible face without
    // replacing the original pointer/auto-rotation controller.
@@ -132,13 +140,14 @@
   return true;
  }
  function destroy(){
+  releaseCube();
   if(bootstrap){bootstrap.disconnect();bootstrap=null;}
   if(mutation){mutation.disconnect();mutation=null;}
   listenerPairs.forEach(function(row){row[0].removeEventListener(row[1],row[2],row[3]);});listenerPairs=[];
   if(lab)lab.classList.remove('fr5d-ready','fr5d-flipping');
   if(toolbar){toolbar.remove();toolbar=null;}
   if(lab){var controls=lab.querySelector('.fr5d-face-controls');if(controls)controls.remove();}
-  viewButtons.forEach(function(button){button.style.removeProperty('--fr5d-card-index');});
+  viewButtons.forEach(function(button){button.style.removeProperty('--fr5d-card-index');button.classList.remove('fr5d-flip-target');});
   viewButtons=[];installed=false;active=-1;lab=null;rail=null;orbit=null;
  }
  function discover(){
