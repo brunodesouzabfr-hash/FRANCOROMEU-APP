@@ -37,7 +37,7 @@
 #view-projetos3d .fr5d-ready .fr5d-face-controls{display:flex;gap:5px;position:absolute;z-index:12;top:12px;left:12px;max-width:calc(100% - 24px)}
 #view-projetos3d .fr5d-ready .fr5d-face-controls button{background:#031812df;color:#e6d6b5;border:1px solid #f6a7007a;min-width:44px;min-height:44px;padding:6px;font:600 10px/1 'Share Tech Mono',monospace;cursor:pointer}
 #view-projetos3d .fr5d-ready .fr5d-face-controls button[aria-pressed=true]{border-color:#f6a700;color:#f6a700}
-#view-projetos3d .fr5d-ready.fr5d-flipping .fr15-p3d-index button{animation:fr5d-face-swap .63s cubic-bezier(.25,.77,.14,1) both;animation-delay:calc(var(--fr5d-card-index,0)*55ms)}
+#view-projetos3d .fr5d-ready.fr5d-flipping .fr15-p3d-index button.fr5d-flip-target{animation:fr5d-face-swap .63s cubic-bezier(.25,.77,.14,1) both;animation-delay:calc(var(--fr5d-card-index,0)*55ms)}
 #view-projetos3d .fr5d-ready.fr5d-flipping #fr15-p3d-orbit{animation:fr5d-cube-swap .66s cubic-bezier(.25,.77,.14,1) both}
 @keyframes fr5d-face-swap{0%{transform:perspective(950px) rotateY(0)}40%{transform:perspective(950px) rotateY(-80deg) scale(.94)}100%{transform:perspective(950px) rotateY(0)}}
 @keyframes fr5d-cube-swap{0%{transform:rotateY(0deg)}45%{transform:rotateY(27deg) scale(.93)}100%{transform:rotateY(0deg)}}
@@ -62,7 +62,7 @@
 #view-projetos3d .fr5d-ready .fr15-p3d-modes button{min-width:65px;font-size:8px}
 }
 @media(prefers-reduced-motion:reduce){
-#view-projetos3d .fr5d-ready.fr5d-flipping .fr15-p3d-index button,
+#view-projetos3d .fr5d-ready.fr5d-flipping .fr15-p3d-index button.fr5d-flip-target,
 #view-projetos3d .fr5d-ready.fr5d-flipping #fr15-p3d-orbit{animation:none!important}
 #view-projetos3d .fr5d-ready .fr15-p3d-index button{transition:none!important}
 }
