@@ -5,7 +5,7 @@
 .frms-side{position:absolute;top:0;bottom:0;width:50%;overflow:hidden;background:#123f34}
 .frms-side[data-frms-side="left"]{left:0}
 .frms-side[data-frms-side="right"]{right:0}
-.frms-frame{position:absolute;inset:0;overflow:hidden;clip-path:inset(100% 0 0 0);background:linear-gradient(145deg,#123f34,#433a2f)}
+.frms-frame{position:absolute;inset:0;margin:0;overflow:hidden;clip-path:inset(100% 0 0 0);background:linear-gradient(145deg,#123f34,#433a2f)}
 .frms-frame[data-frms-order="0"]{clip-path:inset(0)}
 .frms-frame img{height:100%;width:100%;object-fit:cover;display:block;filter:saturate(.83) contrast(1.08);transform:scale(1.045)}
 .frms-frame:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#03181242,transparent 70%);pointer-events:none}
