@@ -12953,6 +12953,8 @@ class HeroField{
     canvas.parentElement.addEventListener('pointermove',e=>{const r=canvas.getBoundingClientRect();this.pointer.x=(e.clientX-r.left)/r.width;this.pointer.y=(e.clientY-r.top)/r.height;this.pointer.active=true},{passive:true});
     canvas.parentElement.addEventListener('pointerleave',()=>{this.pointer.active=false});
     document.addEventListener('visibilitychange',this.start,{passive:true});
+    // Canvas da Home espera a introducao; evita dois loops graficos simultaneos.
+    window.addEventListener('fr:intro-complete',this.start,{once:true});
     new MutationObserver(this.start).observe(home(),{attributes:true,attributeFilter:['class']});
     this.start();
   }
@@ -12960,7 +12962,7 @@ class HeroField{
     const r=this.canvas.getBoundingClientRect();const low=document.documentElement.classList.contains('fr7-low-power');this.dpr=Math.min(window.devicePixelRatio||1,low?1:1.5);this.w=Math.max(1,r.width);this.h=Math.max(1,r.height);this.canvas.width=Math.round(this.w*this.dpr);this.canvas.height=Math.round(this.h*this.dpr);this.ctx.setTransform(this.dpr,0,0,this.dpr,0,0);
     const count=reduceMotion.matches?12:(low?(this.w<600?16:26):(this.w<600?28:52));this.points=Array.from({length:count},()=>({x:Math.random()*this.w,y:Math.random()*this.h,vx:(Math.random()-.5)*.18,vy:(Math.random()-.5)*.18,r:Math.random()*1.15+.35,a:Math.random()*.42+.12}));
   }
-  canRun(){return this.visible&&isHomeActive()&&!document.hidden&&!reduceMotion.matches}
+  canRun(){return this.visible&&isHomeActive()&&!document.hidden&&!reduceMotion.matches&&!document.documentElement.classList.contains('fr-intro-active')}
   start(){if(!this.frame&&this.canRun())this.frame=requestAnimationFrame(this.loop)}
   loop(){
     this.frame=0;if(!this.canRun())return;

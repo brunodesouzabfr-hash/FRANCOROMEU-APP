@@ -22,4 +22,6 @@ test('Preserva configuracao, SPA e bloqueio de pintura de fundo',()=>{
  assert.match(html,/html\.fr-intro-active body > :not\(#fr-cinema-overlay\)\{visibility:hidden!important\}/);
  assert.match(html,/src="\/assets\/intro\/fr-intro-cinematic\.js"/);
  assert.ok(html.includes('id="fr-budget-core"'));
+ assert.match(html,/window\.addEventListener\('fr:intro-complete',this\.start/);
+ assert.match(html,/!document\.documentElement\.classList\.contains\('fr-intro-active'\)/);
 });

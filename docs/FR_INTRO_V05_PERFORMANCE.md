@@ -23,3 +23,6 @@ O motor V04 executava requestAnimationFrame junto a deadline=setTimeout. Em disp
 
 ## Rollback
 Reverter este commit, sem modificar orçamento, rotas ou base de serviços.
+
+## Eliminação de trabalho gráfico concorrente
+O Canvas HeroField da Home agora verifica fr-intro-active e recebe fr:intro-complete para iniciar após a vinheta. Evita a disputa de RAF entre dois canvas na abertura.
