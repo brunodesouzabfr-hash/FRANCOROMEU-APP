@@ -111,7 +111,7 @@
   var workbench=lab.querySelector('.fr15-p3d-workbench');
   if(!workbench)return false;
   toolbar=createToolbar(projects);workbench.before(toolbar);
-  var faces=createFaces();orbit.append(faces);
+  var faces=createFaces();lab.querySelector('.fr15-p3d-viewport').append(faces);
   viewButtons.forEach(function(button,i){button.style.setProperty('--fr5d-card-index',String(i%3));});
   lab.classList.add('fr5d-ready');installed=true;
   bind(lab,'animationend',function(e){if(e.animationName==='fr5d-cube-swap')lab.classList.remove('fr5d-flipping');});
@@ -137,7 +137,7 @@
   listenerPairs.forEach(function(row){row[0].removeEventListener(row[1],row[2],row[3]);});listenerPairs=[];
   if(lab)lab.classList.remove('fr5d-ready','fr5d-flipping');
   if(toolbar){toolbar.remove();toolbar=null;}
-  if(orbit){var controls=orbit.querySelector('.fr5d-face-controls');if(controls)controls.remove();}
+  if(lab){var controls=lab.querySelector('.fr5d-face-controls');if(controls)controls.remove();}
   viewButtons.forEach(function(button){button.style.removeProperty('--fr5d-card-index');});
   viewButtons=[];installed=false;active=-1;lab=null;rail=null;orbit=null;
  }
