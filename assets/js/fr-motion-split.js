@@ -87,31 +87,50 @@
   var root=rec.root,view=root.closest('.view-section');
   if(view&&!view.classList.contains('active'))return;
   var rect=root.getBoundingClientRect(),h=w.innerHeight||1,travel=Math.max(1,rect.height-h);
-  var p=clamp(-rect.top/travel),at=p*(rec.count-1),index=Math.min(rec.count-1,Math.floor(at)),fraction=clamp(at-index);
-  if(index>=rec.count-1)fraction=0;
-  if(rec.active!==index){
+  // Respect real CSS layout, including 100svh and mobile dynamic browser chrome.
+  var p=clamp(-rect.top/travel),at=p*(rec.count-1);
+  var index=Math.min(rec.count-1,Math.floor(at)),fraction=clamp(at-index);
+  if(index===rec.count-1)fraction=0;
+  var prev=rec.active;
+  if(prev!==index){
+   // Sparse transition: settle only scenes crossed since the previous active frame.
+   // A direct jump from the index remains correct, but normal scroll touches O(1) layers.
+   var low=Math.min(prev<0?0:prev,index),high=Math.max(prev<0?0:prev,index)+1;
+   rec.frames.forEach(function(arr,side){
+    for(var j=low;j<=Math.min(rec.count-1,high);j++){
+     var el=arr[j],revealed=j<=index;
+     el.style.clipPath=revealed?'inset(0)':'inset(100% 0 0 0)';
+     el.style.visibility=revealed?'visible':'hidden';
+     if(revealed)el.querySelector('img').style.transform='';
+    }
+   });
+   var touched=[prev-1,prev,prev+1,index-1,index,index+1];
+   touched.forEach(function(i){
+    if(i<0||i>=rec.count)return;
+    var card=rec.cards[i];card.style.opacity='0';card.style.visibility='hidden';
+    card.style.transform='translateY(20px)';card.style.pointerEvents='none';card.inert=true;
+    card.setAttribute('aria-hidden','true');
+   });
    rec.active=index;
    for(var look=Math.max(0,index-1);look<=Math.min(rec.count-1,index+2);look++)hydrate(sceneImages(rec,look),rec.cards[look]);
   }
   rec.frames.forEach(function(arr,side){
-   arr.forEach(function(frame,i){
-    var open=i<=index?1:i===index+1?fraction:0;
-    frame.style.clipPath=side===0?'inset('+((1-open)*100)+'% 0 0 0)':'inset(0 0 '+((1-open)*100)+'% 0)';
+   for(var i=index;i<=Math.min(rec.count-1,index+1);i++){
+    var frame=arr[i],open=i===index?1:fraction;
+    frame.style.clipPath=side===0?'inset('+((1-open)*100).toFixed(2)+'% 0 0 0)':'inset(0 0 '+((1-open)*100).toFixed(2)+'% 0)';
     frame.style.visibility=open>0?'visible':'hidden';
     var img=frame.querySelector('img');
-    if(img&&(i===index||i===index+1))img.style.transform='translateY('+((side===0?-1:1)*(1-open)*12)+'%) scale(1.055)';
-    else if(img)img.style.transform='';
-   });
+    if(img)img.style.transform='translate3d(0,'+((side===0?-1:1)*(1-open)*12).toFixed(2)+'%,0) scale(1.055)';
+   }
   });
-  rec.cards.forEach(function(card,i){
-   var opacity=i===index?1-fraction:i===index+1?fraction:0;
-   if(index===rec.count-1&&i===index)opacity=1;
-   card.style.opacity=String(opacity);
-   card.style.visibility=opacity>0?'visible':'hidden';
-   card.style.transform='translateY('+((1-opacity)*20)+'px)';
-   var active=opacity>.5;card.inert=!active;card.setAttribute('aria-hidden',String(!active));
-   card.style.pointerEvents=active?'auto':'none';
-  });
+  for(var c=index;c<=Math.min(rec.count-1,index+1);c++){
+   var card=rec.cards[c],opacity=c===index?1-fraction:fraction;
+   card.style.opacity=String(opacity);card.style.visibility=opacity>0?'visible':'hidden';
+   card.style.transform='translateY('+((1-opacity)*20).toFixed(1)+'px)';
+   var accessible=opacity>0.5||(index===rec.count-1&&c===index);
+   card.inert=!accessible;card.setAttribute('aria-hidden',String(!accessible));
+   card.style.pointerEvents=accessible?'auto':'none';
+  }
   if(rec.bar)rec.bar.style.width=(100*p).toFixed(2)+'%';
   if(rec.counter)rec.counter.textContent=String(index+1).padStart(2,'0')+' / '+String(rec.count).padStart(2,'0');
  }
