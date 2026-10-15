@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth" style="scroll-behavior: smooth;"><head>
+<link rel="preload" as="script" href="/assets/intro/fr-intro-cinematic.js" fetchpriority="high">
 <!-- Ahrefs Web Analytics: tag assíncrona única -->
 <script src="https://analytics.ahrefs.com/analytics.js" data-key="R5uObk7S/kmy79NyRbbXsA" async></script>
 <link rel="stylesheet" href="assets/css/fr-quantity-control.css">
@@ -2428,10 +2429,14 @@ body.fr8-over-project .fr8-project-hover-label{opacity:1}
         }
     </style>
 
-<style id="fr-intro-cinematic-v04-lock">html.fr-intro-active{overflow:hidden!important}</style>
+<style id="fr-intro-cinematic-v04-lock">
+html.fr-intro-active{overflow:hidden!important}
+html.fr-intro-active body > :not(#fr-cinema-overlay){visibility:hidden!important}
+html.fr-intro-active body > :not(#fr-cinema-overlay),html.fr-intro-active body > :not(#fr-cinema-overlay) *{animation-play-state:paused!important}
+</style>
 </head>
 <body class="antialiased selection:bg-fr-primary selection:text-white relative" style="">
-<!-- FR INTRO V04 — configurações fixas cascade/fracture/fault -->
+<!-- FR INTRO V05 — conclusão por quadro, qualidade adaptativa, cascade/fracture/fault -->
 <script src="/assets/intro/fr-intro-cinematic.js"></script>
 
 
