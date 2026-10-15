@@ -1,0 +1,35 @@
+name: FR Motion Branch QA
+
+on:
+  push:
+    branches:
+      - feature/fr-motion-phase1-2026-10-15
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  motion-quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout isolated feature branch
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+      - name: Run all regression suites
+        run: npm test
+      - name: Check canonical HTML
+        run: npm run check:html
+      - name: Build production-formatted HTML in isolation
+        run: npm run build
+      - name: Audit links and project library
+        run: npm run check:project-library
+      - name: Verify reproducible build
+        run: npm run check:idempotence
