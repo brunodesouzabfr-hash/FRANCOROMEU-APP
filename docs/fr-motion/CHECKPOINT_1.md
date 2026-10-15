@@ -24,3 +24,11 @@ Executar `node --check assets/js/fr-motion-split.js`, `node --test tests/fr-moti
 Reverter o commit único deste checkpoint ou remover apenas a chamada `require('../src/fr-motion-phase1.cjs')(doc,prepared)` do build. Não existem alterações de `localStorage` ou APIs financeiras.
 
 Sem merge e sem deploy. Revisão independente pendente.
+
+## Evidências observadas no chat (15/10/2026)
+- GitHub: branch criada sobre `main@239ba510`, diff isolado e commits de fase, nenhum merge/deploy.
+- V8: código fonte do adaptador e runtime compilado com sucesso.
+- Mock de build DOM com 60 pares: inserção de 5 cenas na Home e 60 no Portfólio, dois conjuntos independentes; assets e hook do build vinculados.
+- Mock de scroll: máscaras esquerda/direita em sentidos opostos, transição 02/05→03/05, progresso cromático de cenas, inicialização e teardown sem exceção.
+- Originais de imagem e SPA completos não disponíveis para testes integrados no ambiente conectado. `npm test`, `npm run check:html`, `npm run build` e Chromium sobre o site compilado seguem PENDENTES. O workflow existente só reage a push na `main` ou PR, portanto não foi acionado (sem PR ou publicação autorizada).
+- Nenhuma mudança da estrutura 3+6+3 em Ambientes nesta fase; mantém-se como checkpoint futuro aprovado.
