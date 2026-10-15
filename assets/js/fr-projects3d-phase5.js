@@ -65,7 +65,7 @@
    cubes[0].style.setProperty('--ry',yaw+'deg');
    cubes[0].style.setProperty('--rx',pitch+'deg');
   }
-  var buttons=toolbar&&toolbar.querySelectorAll('[data-fr5d-face]')||[];
+  var buttons=lab&&lab.querySelectorAll('[data-fr5d-face]')||[];
   Array.prototype.forEach.call(buttons,function(btn){btn.setAttribute('aria-pressed',String(Number(btn.dataset.fr5dFace)===index));});
  }
  function createToolbar(projects){
