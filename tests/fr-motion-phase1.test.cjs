@@ -12,7 +12,7 @@ test('Phase 1: mounts independent full-viewport Home and Portfolio split scenes 
  const result=build(dom.window.document,prepared);
  assert.equal(result.home,5);assert.equal(result.portfolio,7);
  const home=dom.window.document.querySelector('#frms-home'),port=dom.window.document.querySelector('#frms-portfolio');
- assert.equal(home.style.height,'440svh');assert.equal(port.style.height,'610svh');
+ assert.equal(home.dataset.frmsScrollHeight,'440');assert.equal(port.dataset.frmsScrollHeight,'610');
  assert.equal(home.querySelectorAll('.frms-card').length,5);assert.equal(port.querySelectorAll('.frms-card').length,7);
  assert.equal(home.querySelectorAll('.frms-frame').length,10);assert.equal(port.querySelectorAll('.frms-frame').length,14);
  assert.equal(home.previousElementSibling.className,'fr6-hero');
