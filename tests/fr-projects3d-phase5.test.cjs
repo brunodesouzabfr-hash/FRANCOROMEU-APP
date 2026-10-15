@@ -45,7 +45,7 @@ test('Phase 5 / build hook adds only a CSS+runtime and keeps the original showca
 test('Phase 5 / runtime mounts exactly ten original 1:1 gallery cards plus one original cube and unchanged inspector',()=>{
  const f=fixture(),api=bootstrap(f);
  const state=api.getState();
- assert.deepEqual(state,{installed:true,count:10,selected:0,originalCube:true,originalInspector:true});
+ assert.deepEqual(JSON.parse(JSON.stringify(state)),{installed:true,count:10,selected:0,originalCube:true,originalInspector:true});
  assert.equal(f.d.querySelectorAll('.fr15-p3d-index button').length,10);
  assert.equal(f.d.querySelectorAll('#fr15-p3d-orbit .fr15-p3d-cube').length,1);
  assert.equal(f.d.querySelectorAll('#fr15-p3d-orbit .fr15-p3d-face').length,6);
