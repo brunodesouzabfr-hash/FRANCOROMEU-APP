@@ -5,6 +5,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const { JSDOM } = require('jsdom');
+const vm = require('node:vm');
 
 const ORIGIN = 'https://www.francoromeufr.com.br';
 const output = path.resolve('dist');
@@ -145,4 +146,46 @@ test('há um único workflow IndexNow e ele deriva URLs do sitemap após prontid
   assert.match(workflow, /grep -Fxq/);
   assert.match(workflow, /dict\.fromkeys/);
   assert.match(workflow, /www\.francoromeufr\.com\.br/);
+});
+
+test('analytics are limited to canonical production host while verification metadata stays public', () => {
+  const { trackingHead } = require('../src/public-site-meta.cjs');
+  const markup = trackingHead();
+  assert.equal(count(markup, 'name="google-site-verification"'), 1);
+  assert.equal(count(markup, 'name="p:domain_verify"'), 1);
+  const code = markup.match(/<script>([\s\S]*?)<\/script>/)?.[1];
+  assert.ok(code, 'inline conditional analytics loader is present');
+
+  function simulate(hostname) {
+    const inserted = [];
+    const document = {
+      createElement(tagName) {
+        return { tagName, setAttribute(key, value) { this[key] = value; } };
+      },
+      getElementsByTagName() {
+        return [{ parentNode: { insertBefore(node) { inserted.push(node); } } }];
+      },
+      head: { appendChild(node) { inserted.push(node); } }
+    };
+    const window = { location: { hostname } };
+    vm.runInNewContext(code, { window, document, Date }, { timeout: 1000 });
+    return { inserted, window };
+  }
+
+  for (const hostname of [
+    '127.0.0.1',
+    'localhost',
+    'francoromeu-app.vercel.app',
+    'francoromeu-preview-franco-romeu.vercel.app'
+  ]) {
+    const preview = simulate(hostname);
+    assert.equal(preview.inserted.length, 0, hostname);
+    assert.equal(preview.window.dataLayer, undefined, hostname);
+  }
+  const production = simulate('www.francoromeufr.com.br');
+  assert.equal(production.inserted.length, 3, 'Clarity, GA4 and Ahrefs should each load once');
+  assert.equal(production.inserted.filter(x => String(x.src).includes('gtag/js?id=G-C3FMZ4NGGY')).length, 1);
+  assert.equal(production.inserted.filter(x => String(x.src).includes('clarity.ms/tag/')).length, 1);
+  assert.equal(production.inserted.filter(x => String(x.src).includes('analytics.ahrefs.com/analytics.js')).length, 1);
+  assert.equal(production.window.dataLayer.length, 2, 'gtag initialization + one config');
 });
