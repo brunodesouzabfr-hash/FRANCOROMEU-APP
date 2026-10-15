@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "fr-additions-patch-1.0.0",
+  "artifactVersion": "2026-10-14",
+  "baseSha": "ee983ed9eb1d600aa42dd57ae6e61c84431e528b",
+  "policy": {
+    "additiveOnly": true,
+    "hideExistingLayout": false,
+    "replaceExistingLayout": false,
+    "financialMutation": false,
+    "scrollOwner": "native",
+    "externalReferenceAssets": false
+  },
+  "blocks": [
+    {
+      "id": "HOME-01",
+      "route": "/",
+      "view": "view-home",
+      "insertAfter": "#fr6-manifesto",
+      "kicker": "FORJA / O INVISÍVEL",
+      "title": "O que sustenta o resultado também merece ser visto.",
+      "image": "/assets/media/projects/cozinha-lavanderia/cozinha-env-lavanderia-imagem-ilustrativa-986cf34222.webp",
+      "factualClass": "imagem ilustrativa",
+      "animation": "gravity-depth"
+    },
+    {
+      "id": "HOME-02",
+      "route": "/",
+      "view": "view-home",
+      "insertAfter": "#fr6-expertise",
+      "kicker": "MATÉRIA / APLICAÇÃO",
+      "title": "Observe a superfície. Entenda a aplicação.",
+      "image": "/assets/media/projects/cozinha-lavanderia/cozinha-bancada-l-imagem-ilustrativa-b239e59121.webp",
+      "factualClass": "imagem ilustrativa",
+      "animation": "surface-window"
+    },
+    {
+      "id": "ABOUT-01",
+      "route": "/sobre",
+      "view": "view-sobre",
+      "insertAfter": "#sobre-hero-section",
+      "title": "Camadas que explicam critério.",
+      "cards": ["O que se observa", "O que se decide", "O que se verifica"],
+      "factualClass": "texto autoral",
+      "animation": "palimpsest-layers"
+    },
+    {
+      "id": "ENV-01",
+      "route": "/ambientes",
+      "view": "view-ambientes",
+      "insertBefore": ".amb-museum",
+      "title": "Matéria, luz e proporção.",
+      "images": ["assets/media/ambiente-mansory-01.jpg", "assets/media/ambiente-industrial-01.jpg", "assets/media/ambiente-contemporaneo-01.jpg"],
+      "factualClass": "referência visual de linguagem",
+      "animation": "spatial-depth"
+    },
+    {
+      "id": "P3D-01",
+      "route": "/projetos-3d",
+      "view": "view-projetos3d",
+      "insertAfter": ".p3d-hero",
+      "title": "O espaço ensaia antes de existir.",
+      "imageSource": "window.P3D_PROJECTS[0].img",
+      "resolvedMediaOnBase": {
+        "title": "Suíte Master Premium",
+        "image": "/assets/media/p3d-suite-luxo-01.jpg"
+      },
+      "factualClass": "estudo 3D conceitual",
+      "animation": "wireframe-forge"
+    },
+    {
+      "id": "PORT-01",
+      "route": "/portfolio",
+      "view": "view-projetos",
+      "insertBefore": ".fr10-portfolio-stage",
+      "title": "Cada imagem pede contexto.",
+      "imageSource": "five distinct categories from window.GM_PROJECTS",
+      "resolvedMediaOnBase": [
+        {"title": "Porcelanato Líquido Sala", "image": "/assets/media/portfolio-porcelanato.jpg"},
+        {"title": "Efeito Mármore Premium", "image": "/assets/media/portfolio-marmore.jpg"},
+        {"title": "Automação Residencial Smart", "image": "/assets/media/portfolio-automacao.jpg"},
+        {"title": "Iluminação Arquitetural", "image": "/assets/media/portfolio-iluminacao.jpg"},
+        {"title": "Produção de Eventos Corporativos", "image": "/assets/media/portfolio-eventos.jpg"}
+      ],
+      "factualClass": "conceito visual",
+      "animation": "frame-resonance"
+    },
+    {
+      "id": "BUDGET-01",
+      "route": "/orcamento",
+      "view": "view-orcamento",
+      "insertAdjacent": "[data-action=selectService][data-service-id]",
+      "title": "Exemplo visual do acervo",
+      "imageSource": "service-media-map.json by exact serviceId",
+      "factualClass": "referência visual ou conceito visual",
+      "animation": "popover-drawer"
+    },
+    {
+      "id": "JOURNAL-01",
+      "route": "/projetos/",
+      "insertBefore": "#arquivo",
+      "title": "A imagem encontra contexto.",
+      "imageSource": "five eligible prepared editorial records",
+      "resolvedMediaOnBase": [
+        {"title": "Cozinha e lavanderia — estudo de projeto e materialidade", "image": "/assets/media/projects/cozinha-lavanderia/cozinha-env-lavanderia-imagem-ilustrativa-986cf34222.webp"},
+        {"title": "Área gourmet — Cozinha planejada — 010", "image": "/assets/media/projects/before-after/area-gourmet-cozinha-planejada-madeira-casa-010/area-gourmet-cozinha-planejada-madeira-depois-ilustrativo-010.webp"},
+        {"title": "Banheiro — Bancada — 037", "image": "/assets/media/projects/before-after/banheiro-bancada-pedra-natural-apto-037/lavabo-bancada-pedra-clara-depois-ilustrativo-037.webp"},
+        {"title": "Banheiro — Bancada — 007", "image": "/assets/media/projects/before-after/banheiro-bancada-pedra-natural-casa-007/banheiro-bancada-pedra-clara-depois-ilustrativo-007.webp"},
+        {"title": "Closet — Closet planejado — 030", "image": "/assets/media/projects/before-after/closet-closet-planejado-madeira-apto-030/closet-closet-planejado-madeira-depois-ilustrativo-030.webp"}
+      ],
+      "factualClass": "natureza herdada do catálogo editorial",
+      "animation": "clip-reveal-capillarity"
+    }
+  ],
+  "code": {
+    "domAndMotion": "assets/patches/fr-additions-2026-10-14/fr-additions.js",
+    "servicePreview": "assets/patches/fr-additions-2026-10-14/fr-service-preview.js",
+    "styles": "assets/patches/fr-additions-2026-10-14/fr-additions.css",
+    "shader": "assets/patches/fr-additions-2026-10-14/fr-additions-shader.js",
+    "journalBuilder": "patches/fr-additions-2026-10-14/journal-additions.cjs",
+    "serviceMap": "assets/patches/fr-additions-2026-10-14/service-media-map.json"
+  }
+}

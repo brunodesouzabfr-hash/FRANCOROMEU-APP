@@ -194,7 +194,7 @@ async function build() {
   const publicRootFiles=['robots.txt','sitemap.xml','site.webmanifest','browserconfig.xml','favicon.ico','BingSiteAuth.xml','15371fdcae5446498483cb1385b2ccc3.txt'];
   for (const file of publicRootFiles){if(!fs.existsSync(file)||!fs.statSync(file).isFile())throw new Error('Arquivo público obrigatório ausente: '+file);fs.copyFileSync(file,path.join(output,file));}
   // Copy only assets referenced by the approved source and its existing modules.
-  const referenced=new Set([...source.matchAll(/assets\/[a-zA-Z0-9_./-]+\.(?:avif|webp|png|jpe?g|svg|ico|js|css|json|woff2?)/g)].map(m=>m[0]));
+  const referenced=new Set([...source.matchAll(/assets\/[a-zA-Z0-9_./-]+\.(?:avif|webp|png|jpe?g|svg|ico|json|js|css|woff2?)/g)].map(m=>m[0]));
   for(const v of media.variants)referenced.add(v.path);
   for(const file of referenced){if(file.startsWith('assets/media/fr-coz-lav/')||file==='assets/js/media-catalog.js')continue;if(!fs.existsSync(file)||!fs.statSync(file).isFile())continue;const target=path.join(output,file);fs.mkdirSync(path.dirname(target),{recursive:true});fs.copyFileSync(file,target);}
   // The public catalog contains only the reconciled selection, no archived URLs.
