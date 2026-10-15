@@ -67,6 +67,8 @@ async function build() {
   require('../src/fr-motion-phase1.cjs')(doc, prepared);
   // Phase 3: inject a reversible 3+6+3 visual atlas, leaving canonical data and nodes unchanged.
   require('../src/fr-ambientes-363.cjs')(doc);
+  // Phase 4: horizontal Home outro, preserving the existing final CTA and footer.
+  require('../src/fr-home-outro4.cjs')(doc,prepared);
   prepared.sourceGraph = sourceGraph;
   dom.window.FR_MEDIA_PRERENDER = true;
   dom.window.FR_MEDIA_LIBRARY = prepared.data;
