@@ -51,12 +51,14 @@ function install(doc,prepared){
  const links=e(doc,'div','froutro4-actions');
  const wa=e(doc,'a','froutro4-link froutro4-link-primary');wa.href='https://wa.me/5511990021603';wa.target='_blank';wa.rel='noopener noreferrer';
  wa.setAttribute('aria-label','Conversar com a Franco Romeu no WhatsApp');
- wa.append(e(doc,'span','froutro4-icon','◉'),e(doc,'strong','','WhatsApp'),e(doc,'span','','↗'));
+ wa.append(e(doc,'span','froutro4-icon',''),e(doc,'strong','','WhatsApp'),e(doc,'span','','↗'));
  const ig=e(doc,'a','froutro4-link');ig.href='https://www.instagram.com/francoromeu.fr/';ig.target='_blank';ig.rel='noopener noreferrer';
  ig.setAttribute('aria-label','Abrir Instagram oficial da Franco Romeu');
- ig.append(e(doc,'span','froutro4-icon','◎'),e(doc,'strong','','Instagram'),e(doc,'span','','↗'));
+ ig.append(e(doc,'span','froutro4-icon',''),e(doc,'strong','','Instagram'),e(doc,'span','','↗'));
  const budget=e(doc,'a','froutro4-link');budget.href='/orcamento';budget.setAttribute('aria-label','Abrir a calculadora de orçamento Franco Romeu');
- budget.append(e(doc,'span','froutro4-icon','▤'),e(doc,'strong','','Calculadora'),e(doc,'span','','↗'));
+ budget.append(e(doc,'span','froutro4-icon',''),e(doc,'strong','','Calculadora'),e(doc,'span','','↗'));
+ const brandIcons=[['fa-brands fa-whatsapp',wa],['fa-brands fa-instagram',ig],['fa-solid fa-calculator',budget]];
+ brandIcons.forEach(function(entry){const icon=e(doc,'i',entry[0]);icon.setAttribute('aria-hidden','true');entry[1].querySelector('.froutro4-icon').append(icon);});
  links.append(wa,ig,budget);
  const content=e(doc,'div','froutro4-cta-inner');content.append(label,heading,description,links);
  last.append(content);rail.append(last);pin.append(rail);
