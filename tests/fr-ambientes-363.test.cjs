@@ -33,7 +33,7 @@ test('Phase 3: build creates only an additive shell preserving the canonical mus
 });
 test('Phase 3: exact 3+6+3 order, original catalog, 12 names and service IDs retained',()=>{
  const f=fixture(),before=JSON.stringify(f.w.AMB_STYLES),original=f.d.querySelector('.amb-museum');
- mountShell(f.d);f.w.eval(runtime);
+ mountShell(f.d);f.w.eval(runtime);f.d.dispatchEvent(new f.w.Event('DOMContentLoaded'));
  const state=f.w.FRAmbientes363.getState();
  assert.equal(state.mounted,true);assert.equal(state.rendered,12);
  assert.equal(state.originalAtlasIntact,true);
@@ -53,7 +53,7 @@ test('Phase 3: exact 3+6+3 order, original catalog, 12 names and service IDs ret
  f.w.close();
 });
 test('Phase 3: detail buttons call the original openAmbDetail with the original index; teardown restores the old atlas',()=>{
- const f=fixture();mountShell(f.d);f.w.eval(runtime);
+ const f=fixture();mountShell(f.d);f.w.eval(runtime);f.d.dispatchEvent(new f.w.Event('DOMContentLoaded'));
  const btns=f.d.querySelectorAll('[data-fa-open]');
  btns[0].click();btns[5].click();btns[11].click();
  assert.deepEqual(f.opened,[0,5,11]);
@@ -66,7 +66,7 @@ test('Phase 3: detail buttons call the original openAmbDetail with the original 
  f.w.FRAmbientes363.destroy();f.w.close();
 });
 test('Phase 3: missing original catalog fields preserve legacy presentation, never partial 3+6+3',()=>{
- const f=fixture();f.w.AMB_STYLES.pop();mountShell(f.d);f.w.eval(runtime);
+ const f=fixture();f.w.AMB_STYLES.pop();mountShell(f.d);f.w.eval(runtime);f.d.dispatchEvent(new f.w.Event('DOMContentLoaded'));
  assert.equal(f.w.FRAmbientes363.getState().mounted,false);
  assert.equal(f.d.getElementById('view-ambientes').classList.contains('framb363-ready'),false);
  assert.equal(f.d.getElementById('legacy-amb-btn').isConnected,true);
