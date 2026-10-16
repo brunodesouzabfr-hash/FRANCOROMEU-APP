@@ -130,7 +130,7 @@ test('F7.1: destroy restores old navbar and all original links without duplicati
 });
 test('F7.1: CSS enforces single centered, round, mobile-safe budget geometry and real vertical morph',()=>{
  assert.match(css,/border-radius:999px!important/);
- assert.match(css,/left:50%!important;right:auto!important/);
+ assert.match(css,/left:50vw!important;right:auto!important/);
  assert.match(css,/transform:translate3d\(-50%,0,0\)!important/);
  assert.match(css,/body\.fr10-budget-active #smart-nav\.fr-nav7-ready/);
  assert.match(css,/100dvh - var\(--fr-nav7-h\)/);
