@@ -66,7 +66,7 @@ async function audit(page,width,height,pathname,name){
    document.getElementById('fr-site-menu-open').click();
   });
   await page.waitForFunction(()=>document.getElementById('fr-site-menu')?.open,{timeout:10000});
-  assert.equal(await page.locator('#fr-site-menu').getAttribute('aria-label')!==null,true);
+  assert.ok(await page.locator('#fr-site-menu').getAttribute('aria-labelledby'));
   await page.evaluate(()=>document.getElementById('fr-site-menu-close').click());
   await page.waitForFunction(()=>!document.getElementById('fr-site-menu')?.open,{timeout:10000});
   await page.waitForFunction(()=>!document.getElementById('smart-nav').inert,{timeout:10000});
@@ -81,7 +81,7 @@ async function audit(page,width,height,pathname,name){
  try{
   await ready();
   browser=await chromium.launch({headless:true,args:['--disable-dev-shm-usage']});
-  const context=await browser.newContext({reducedMotion:'reduce',deviceScaleFactor:1});
+  const context=await browser.newContext({reducedMotion:'no-preference',deviceScaleFactor:1});
   const page=await context.newPage();
   await audit(page,1440,900,'/','home-desktop');
   await audit(page,1440,900,'/orcamento','budget-desktop');
