@@ -55,7 +55,7 @@ test('F7.1: moving downward docks at footer; remains visible and interactive, ne
  assert.deepEqual(Array.from(f.nav.querySelectorAll('a')).map(x=>x.href),f.links);
  api.destroy();f.dom.window.close();
 });
-test('F7.1: Orçamento cannot force navbar left/right full screen or prevent bottom dock',async()=>{
+test('F7.2: Orçamento remains fixed in the centered header after all scroll and legacy mutations',async()=>{
  const f=fixture(),api=boot(f);
  f.d.querySelector('#view-home').classList.remove('active');
  f.d.querySelector('#view-orcamento').classList.add('active');
@@ -64,22 +64,50 @@ test('F7.1: Orçamento cannot force navbar left/right full screen or prevent bot
  f.nav.classList.add('nav-state-floating');
  f.d.dispatchEvent(new f.w.CustomEvent('frViewChanged',{detail:{viewId:'view-orcamento'}}));
  await Promise.resolve();f.flush();
+ assert.equal(api.getState().budgetPinned,true);
  assert.equal(f.nav.dataset.frNav7View,'view-orcamento');
  assert.equal(f.nav.querySelector('a[href="/orcamento"]').getAttribute('aria-current'),'page');
- f.scroll(380);assert.equal(api.getState().position,'footer');
- assert.equal(f.nav.inert,false);assert.equal(f.nav.classList.contains('fr-nav7-docked'),true);
- f.nav.classList.remove('nav-state-floating');f.nav.classList.add('nav-state-header');
- await Promise.resolve();f.flush();
- assert.equal(f.nav.classList.contains('fr-nav7-docked'),true);
- // Legacy engines may remove ALL nav-state classes during scroll; geometry
- // must still be styled by fr-nav7-ready and docked state alone.
+ for(const y of [180,380,1100,220,490]){
+  f.scroll(y);
+  assert.equal(api.getState().position,'header','Orçamento cannot dock at scrollY='+y);
+  assert.equal(f.nav.dataset.frNav7Position,'header');
+  assert.equal(f.nav.classList.contains('fr-nav7-docked'),false);
+  assert.equal(f.nav.inert,false);
+ }
  f.nav.className='nav-state-floating flex items-center justify-center text-fr-text';
  await Promise.resolve();f.flush();
  assert.equal(f.nav.classList.contains('fr-nav7-ready'),true);
  assert.equal(f.nav.dataset.frNav7Version,'7.1');
+ assert.equal(f.nav.dataset.frNav7Position,'header');
+ assert.equal(f.nav.classList.contains('fr-nav7-docked'),false);
+ // All other views keep the animation: leaving budget with scroll > 160 docks.
+ f.d.querySelector('#view-orcamento').classList.remove('active');
+ f.d.querySelector('#view-sobre').classList.add('active');
+ f.d.body.classList.remove('fr10-budget-active');
+ f.d.dispatchEvent(new f.w.CustomEvent('frViewChanged',{detail:{viewId:'view-sobre'}}));
+ await Promise.resolve();f.flush();
+ assert.equal(api.getState().budgetPinned,false);
+ assert.equal(api.getState().position,'footer');
  assert.equal(f.nav.dataset.frNav7Position,'footer');
- assert.equal(f.nav.classList.contains('fr-nav7-docked'),true);
- f.scroll(0);assert.equal(api.getState().position,'header');
+ // Re-enter budget without resetting scroll. It immediately returns to header.
+ f.d.querySelector('#view-sobre').classList.remove('active');
+ f.d.querySelector('#view-orcamento').classList.add('active');
+ f.d.body.classList.add('fr10-budget-active');
+ f.d.dispatchEvent(new f.w.CustomEvent('frViewChanged',{detail:{viewId:'view-orcamento'}}));
+ assert.equal(api.getState().position,'header');
+ assert.equal(f.nav.dataset.frNav7Position,'header');
+ api.destroy();f.dom.window.close();
+});
+test('F7.2: direct loading of budget at deep scroll initializes the navbar at header',()=>{
+ const f=fixture();
+ f.d.querySelector('#view-home').classList.remove('active');
+ f.d.querySelector('#view-orcamento').classList.add('active');
+ f.d.body.classList.add('fr10-budget-active');
+ f.scroll(510);
+ const api=boot(f);
+ assert.equal(api.getState().position,'header');
+ assert.equal(api.getState().budgetPinned,true);
+ assert.equal(f.nav.dataset.frNav7Position,'header');
  api.destroy();f.dom.window.close();
 });
 test('F7.1: native mobile menu/search unaffected and restores keyboard operability on close',async()=>{
