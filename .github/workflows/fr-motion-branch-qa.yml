@@ -42,3 +42,34 @@ jobs:
       - name: Verify reproducible build
         if: always()
         run: npm run check:idempotence
+
+  nav-chromium:
+    name: Phase 7 Chromium geometry
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - name: Checkout feature branch without deployment
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Install pinned site dependencies
+        run: npm ci --no-audit --no-fund
+      - name: Build isolated public preview
+        run: npm run build
+      - name: Install pinned browser harness (not a production dependency)
+        run: npm install --no-save --package-lock=false --no-audit --no-fund playwright@1.56.1
+      - name: Install headless Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Measure centered dock, round corners, real scroll and budget route
+        run: node tests/fr-nav-browser-phase7.cjs
+      - name: Save desktop/mobile navigation screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fr-phase7-navbar-chromium
+          path: artifacts/nav-phase7/
+          if-no-files-found: ignore
+          retention-days: 7
