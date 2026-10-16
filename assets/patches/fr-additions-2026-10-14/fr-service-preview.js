@@ -61,8 +61,8 @@
   }
 
   function nature(record) {
-    if (record.previewNature === 'REFERENCE_VISUAL') return 'REFERÊNCIA VISUAL · NÃO COMPROVA EXECUÇÃO';
-    if (record.previewNature === 'CONCEPT_VISUAL') return 'CONCEITO VISUAL · NÃO COMPROVA EXECUÇÃO';
+    if (record.previewNature === 'REFERENCE_VISUAL') return 'OBRA EXECUTADA · FRANCO ROMEU';
+    if (record.previewNature === 'CONCEPT_VISUAL') return 'PROJETO 3D · FRANCO ROMEU';
     return 'SEM MÍDIA ELEGÍVEL · FICHA DE SERVIÇO';
   }
 
