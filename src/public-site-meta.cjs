@@ -3,7 +3,7 @@
 const ORIGIN = 'https://www.francoromeufr.com.br';
 
 const TRACKING = Object.freeze({
-  ga4: 'G-C3FMZ4NGGY',
+  ga4: 'G-22Z85RCGQC',
   clarity: 'yvdvt0rcy6',
   ahrefs: 'R5uObk7S/kmy79NyRbbXsA',
   googleVerification: 'E_RRRPq5Hdni9bYjyrxFS2487bqKtuc9KijeiIeoLBg',
