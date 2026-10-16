@@ -52,15 +52,22 @@ function routes(viewId){
  });
  nav.dataset.frNav7View=active;
 }
+function budgetViewActive(){
+ // The public SPA marks exactly one section as active. Budget is the sole
+ // route that must NEVER become a bottom floating dock.
+ return activeView()==='view-orcamento';
+}
 function sync(){
  raf=0;if(!mounted)return;
  // Historical engines replace nav.className during scroll. The data-* marker
  // is the CSS contract; recover the class only for legacy diagnostics.
  if(!nav.classList.contains('fr-nav7-ready'))nav.classList.add('fr-nav7-ready');
  var y=offset(),blocked=overlaysOpen();
- // Hysteresis avoids chattering at the threshold. Scroll direction has no
- // role: the dock remains centered at the bottom on budget and other views.
- var docked=position==='footer'?y>90:y>=160;
+ // Only Orçamento stays fixed at the TOP throughout scrolling.
+ // All other SPA routes retain the original top↔bottom organic transition.
+ // The budget guard overrides any old dock state immediately on route entry.
+ var budget=budgetViewActive();
+ var docked=!budget&&(position==='footer'?y>90:y>=160);
  position=docked?'footer':'header';
  var hideForModal=blocked;
  if(nav.classList.contains('fr-nav7-docked')!==docked)nav.classList.toggle('fr-nav7-docked',docked);
@@ -79,7 +86,8 @@ function restoreOnDialogClose(){
 }
 function routeChange(event){
  routes(event&&event.detail&&event.detail.viewId||activeView());
- schedule();
+ // Reconcile position synchronously to avoid a frame of dock in Orçamento.
+ sync();
 }
 function mount(){
  if(mounted)return true;
@@ -92,7 +100,7 @@ function mount(){
  nav.dataset.frNav7Version='7.1';
  if(!opener.getAttribute('aria-label'))opener.setAttribute('aria-label','Abrir menu');
  routes();
- position=offset()>=160?'footer':'header';
+ position=!budgetViewActive()&&offset()>=160?'footer':'header';
  listen(w,'scroll',schedule,{passive:true});
  listen(w,'resize',schedule,{passive:true});
  listen(w,'pageshow',schedule);
@@ -133,7 +141,7 @@ function destroy(){
 }
 w.FRNav7={version:'7.1',mount:mount,destroy:destroy,refresh:function(){routes();schedule();},
  getState:function(){return {mounted:mounted,position:position,modal:overlaysOpen(),
-  centered:true,view:active,menuIntact:!!d.getElementById('fr-site-menu'),
+  centered:true,budgetPinned:budgetViewActive(),view:active,menuIntact:!!d.getElementById('fr-site-menu'),
   iqeIntact:!!d.getElementById('fr-ai-root')};}};
 if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',mount,{once:true});
 else mount();
