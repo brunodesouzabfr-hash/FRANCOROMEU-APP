@@ -40,3 +40,17 @@ if (seoServices.length !== 16 || missingSeoLinks.length || trackingFiles.length 
   process.exit(1);
 }
 console.log('SEO check OK: JSON-LD com 16 serviços, 6 links de view, roteador e arquivos de rastreamento.');
+
+
+// Regressão: apenas a view Orçamento pode permanecer presa ao topo durante o scroll.
+const navFoundation = deployedHtml.match(/<style id="fr-site-foundation">([\s\S]*?)<\/style>/)?.[1] || '';
+const globalTopPin = /#smart-nav:is\(\.nav-state-header,\.nav-state-floating,\.nav-state-hidden\)\s*\{[^}]*\btop\s*:/.test(navFoundation);
+const floatingDock = /#smart-nav\.nav-state-floating\s*\{\s*position:fixed!important;\s*top:auto!important;/.test(deployedHtml);
+const budgetOnly = deployedHtml.includes("const budgetActive = document.querySelector('#view-orcamento.active') !== null;") && deployedHtml.includes("if (budgetActive || scrollY < 100)");
+const routeSync = deployedHtml.includes("document.addEventListener('frViewChanged', () => {");
+const budgetPin = deployedHtml.includes('body.fr10-budget-active #smart-nav.nav-state-floating');
+if (globalTopPin || !floatingDock || !budgetOnly || !routeSync || !budgetPin) {
+  console.error('Nav regression:', { globalTopPin, floatingDock, budgetOnly, routeSync, budgetPin });
+  process.exit(1);
+}
+console.log('Nav check OK: rodapé nas views comuns, topo fixo exclusivo do Orçamento e atualização após troca de view.');

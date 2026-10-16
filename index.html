@@ -6639,7 +6639,8 @@ html.fr-intro-active body > :not(#fr-cinema-overlay),html.fr-intro-active body >
             if (!smartNav) return;
             const scrollY = window.scrollY;
             const maxScroll = Math.max(document.documentElement.scrollHeight - window.innerHeight, 1);
-            if (scrollY < 100) {
+            const budgetActive = document.querySelector('#view-orcamento.active') !== null;
+            if (budgetActive || scrollY < 100) {
                 smartNav.className = 'nav-state-header flex items-center justify-between text-fr-text';
                 locationIndicator?.classList.remove('visible');
             } else if (scrollY > maxScroll - 150) {
@@ -6656,6 +6657,9 @@ html.fr-intro-active body > :not(#fr-cinema-overlay),html.fr-intro-active body >
         window.addEventListener('resize', () => {
             if (!smartNavFrame) smartNavFrame = requestAnimationFrame(updateSmartNav);
         }, { passive:true });
+        document.addEventListener('frViewChanged', () => {
+            if (!smartNavFrame) smartNavFrame = requestAnimationFrame(updateSmartNav);
+        });
         updateSmartNav();
 
         // --- 2b. TOOLTIP DE NOME DA ABA (estado flutuante, só ícones) ---
@@ -18369,7 +18373,7 @@ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',boot,{once:tru
 #loader[hidden]{display:none!important}
 #loader.fr-site-intro{visibility:visible!important;opacity:1!important;pointer-events:none!important;animation:frSiteIntro .6s ease both!important}
 @keyframes frSiteIntro{0%,45%{opacity:1}100%{opacity:0;visibility:hidden}}
-#smart-nav:is(.nav-state-header,.nav-state-floating,.nav-state-hidden){position:fixed!important;top:calc(8px + env(safe-area-inset-top,0px))!important;bottom:auto!important;left:50%!important;right:auto!important;transform:translateX(-50%)!important;width:calc(100% - 24px)!important;max-width:1440px!important;min-height:64px!important;height:auto!important;padding:8px 16px!important;gap:12px!important;border-radius:16px!important;background:rgba(3,24,18,.96)!important;opacity:1!important;visibility:visible!important;pointer-events:auto!important;backdrop-filter:none!important}
+/* A navbar segue os estados da Etapa 13; somente Orçamento permanece fixa no topo. */
 html #smart-nav:is(.nav-state-header,.nav-state-floating,.nav-state-hidden) #smart-nav-brand{flex:0 0 auto!important;width:auto!important;max-width:none!important;min-width:44px!important;height:44px!important}
 html #smart-nav:is(.nav-state-header,.nav-state-floating,.nav-state-hidden) #smart-nav-brand .frx-brand-copy{display:grid!important;gap:4px!important}
 html #smart-nav:is(.nav-state-header,.nav-state-floating,.nav-state-hidden) #smart-nav-brand .frx-brand-copy strong{font:700 17px/1 'Rokkitt',serif!important;letter-spacing:.05em!important}
