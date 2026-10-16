@@ -71,6 +71,11 @@ test('F7.1: Orçamento cannot force navbar left/right full screen or prevent bot
  f.nav.classList.remove('nav-state-floating');f.nav.classList.add('nav-state-header');
  await Promise.resolve();f.flush();
  assert.equal(f.nav.classList.contains('fr-nav7-docked'),true);
+ // Legacy engines may remove ALL nav-state classes during scroll; geometry
+ // must still be styled by fr-nav7-ready and docked state alone.
+ f.nav.classList.remove('nav-state-header','nav-state-floating','nav-state-hidden');
+ await Promise.resolve();f.flush();
+ assert.equal(f.nav.classList.contains('fr-nav7-docked'),true);
  f.scroll(0);assert.equal(api.getState().position,'header');
  api.destroy();f.dom.window.close();
 });
@@ -135,6 +140,7 @@ test('F7.1: CSS enforces single centered, round, mobile-safe budget geometry and
  assert.match(css,/body\.fr10-budget-active #smart-nav\.fr-nav7-ready/);
  assert.match(css,/100dvh - var\(--fr-nav7-h\)/);
  assert.match(css,/transition:top \.82s/);
+ assert.doesNotMatch(css,/:is\(\.nav-state-header,\.nav-state-floating,\.nav-state-hidden\)/);
  assert.match(css,/@media\(max-width:1100px\)/);
  assert.match(css,/@media\(max-width:600px\)/);
  assert.match(css,/prefers-reduced-motion:reduce/);
