@@ -71,8 +71,8 @@ function chooseVisible(){
  // Ensure initial and restored SPA views have a usable navbar.
  if(nav.dataset.frNav7Force==='show'&&!modal)hidden=false;
  lastY=y;visible=!hidden;compact=y>=75;
- nav.classList.toggle('fr-nav7-compact',compact);
- nav.classList.toggle('fr-nav7-concealed',hidden);
+ if(nav.classList.contains('fr-nav7-compact')!==compact)nav.classList.toggle('fr-nav7-compact',compact);
+ if(nav.classList.contains('fr-nav7-concealed')!==hidden)nav.classList.toggle('fr-nav7-concealed',hidden);
  nav.inert=hidden;
  nav.dataset.frNav7State=modal?'modal':hidden?'concealed':compact?'compact':'expanded';
 }
@@ -113,7 +113,7 @@ function mount(){
  listen(nav,'focusin',forceShow);
  listen(d,'keydown',function(e){if(e.key==='Escape'||e.key==='Tab')request();});
  listen(d,'click',afterInteraction,true);
- listen(menu,'close',function(){visible=true;forceShow();});
+ listen(menu,'close',function(){nav.inert=false;visible=true;nav.classList.remove('fr-nav7-concealed');forceShow();},true);
  listen(menu,'cancel',function(){visible=true;forceShow();});
  listen(d,'visibilitychange',request);
  observe(menu,{attributes:true,attributeFilter:['open','class']},request);
