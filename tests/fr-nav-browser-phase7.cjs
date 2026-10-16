@@ -52,10 +52,19 @@ async function audit(page,width,height,pathname,name){
  let start=await metrics(page);validate(start,name+' top','header');
  await page.screenshot({path:OUT+'/'+name+'-top.png',animations:'disabled',timeout:25000});
  await page.evaluate(()=>window.scrollTo({top:Math.min(510,Math.max(300,document.documentElement.scrollHeight-innerHeight-5)),behavior:'instant'}));
- await page.waitForFunction(()=>window.FRNav7?.getState()?.position==='footer',{timeout:16000});
+ const onBudget=pathname==='/orcamento';
+ await page.waitForFunction((budget)=>window.scrollY>=160&&window.FRNav7?.getState()?.position===(budget?'header':'footer'),onBudget,{timeout:16000});
  await page.waitForTimeout(1050);
- let dock=await metrics(page);validate(dock,name+' footer','footer');
- await page.screenshot({path:OUT+'/'+name+'-footer.png',animations:'disabled',timeout:25000});
+ let dock=await metrics(page);
+ validate(dock,name+(onBudget?' fixed top after scroll':' footer'),onBudget?'header':'footer');
+ assert.ok(dock.scrollY>=160,'Page did not actually scroll: '+JSON.stringify(dock));
+ if(onBudget){
+  assert.ok(dock.bodyBudget,'Budget view must retain the original budget state');
+  assert.ok(near(dock.rect.top,start.rect.top,3),'Budget nav moved from header on scroll');
+ }else{
+  assert.ok(dock.rect.top>start.rect.top+100,'Other view did not actually move nav to the bottom');
+ }
+ await page.screenshot({path:OUT+'/'+name+(onBudget?'-fixed-top-scrolled.png':'-footer.png'),animations:'disabled',timeout:25000});
  await page.evaluate(()=>window.scrollTo({top:0,behavior:'instant'}));
  await page.waitForFunction(()=>window.FRNav7?.getState()?.position==='header',{timeout:16000});
  await page.waitForTimeout(950);
@@ -88,7 +97,7 @@ async function audit(page,width,height,pathname,name){
   await audit(page,390,844,'/','home-mobile-390');
   await audit(page,390,844,'/orcamento','budget-mobile-390');
   await audit(page,320,568,'/','home-mobile-320');
-  console.log('NAV_CHROMIUM_AUDIT_PASS',5);
+  console.log('NAV_CHROMIUM_AUDIT_PASS',5,'budget header always; other routes dock');
   await context.close();
  }finally{
   if(browser)await browser.close();
