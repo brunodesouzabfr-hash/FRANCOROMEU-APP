@@ -23,7 +23,7 @@ async function metrics(page){
  return page.evaluate(()=>{
   const n=document.getElementById('smart-nav'),r=n.getBoundingClientRect(),c=getComputedStyle(n);
   return {viewport:{width:innerWidth,height:innerHeight},rect:{left:r.left,right:r.right,top:r.top,bottom:r.bottom,width:r.width,height:r.height},
-   radius:c.borderTopLeftRadius,position:window.FRNav7?.getState().position,
+   radius:c.borderTopLeftRadius,navClasses:n.className,position:window.FRNav7?.getState().position,
    navState:n.dataset.frNav7Position,bodyBudget:document.body.classList.contains('fr10-budget-active'),
    scrollY:window.scrollY,cssLeft:c.left,cssTop:c.top,inert:n.inert,menu:getComputedStyle(document.getElementById('fr-site-menu-open')).display,
    instagram:!!n.querySelector('[data-fr-contact="instagram"]'),whatsapp:!!n.querySelector('[data-fr-contact="whatsapp"]')};
