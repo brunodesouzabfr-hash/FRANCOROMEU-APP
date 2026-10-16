@@ -73,3 +73,23 @@ Todos os cinco cenários passaram nas condições de centro geométrico ±3 px, 
 **Pendências preservadas fora desta correção:** GA4 (suíte integral), divergência com main, revisão visual global das outras partes do site e performance em dispositivos físicos. Esta correção não autoriza merge nem deploy.
 
 **Rollback:** window.FRNav7.destroy(), que remove os atributos e classes visuais, devolvendo a navbar à apresentação original sem apagar links, dialog, IQE ou Orçamento.
+
+
+## AJUSTE F7.2 — ORÇAMENTO EXCLUSIVAMENTE FIXO NO HEADER (16/10/2026)
+
+**Instrução do proprietário:** a aba Orçamento é a única em que a navbar deve permanecer fixa no topo para não conflitar com a calculadora e o conteúdo de orçamento. As demais abas continuam com a transição orgânica entre header e dock inferior no scroll.
+
+**Alteração efetiva:** em `assets/js/fr-nav-phase7.js`, o controlador verifica `view-orcamento.active` e inibe o dock independentemente da rolagem. Na troca de rota, sincroniza imediatamente a posição, evitando um frame com a barra no rodapé ao abrir o Orçamento. O comportamento do dock permanece ativo em todas as outras views. Nenhum roteador, botão, popup, IQE ou código de orçamento foi substituído.
+
+**Regressões novas:** `tests/fr-nav-phase7.test.cjs` testa Orçamento sob múltiplas profundidades de scroll, escrita de `className` pelo legado, navegação de saída para Sobre em scroll profundo e retorno ao Orçamento, além de carregamento inicial da aba com scroll alto. `tests/fr-nav-browser-phase7.cjs` testa explicitamente navbar fixa no topo do Orçamento após scroll real e dock inferior na Home, com capturas nos dois estados.
+
+**Medições reais no Chromium:** https://github.com/brunodesouzabfr-hash/FRANCOROMEU-APP/actions/runs/38972807276
+- Home desktop 1440×900, após scroll 510: dock `top=822px, bottom=884px`, centro `720px`.
+- Orçamento desktop 1440×900, após scroll 510: header `top=12px, bottom=84px`, centro `720px`.
+- Home mobile 390×844, após scroll 510: dock `top=774px, bottom=832px`, centro `195px`.
+- Orçamento mobile 390×844, após scroll 510: header `top=12px, bottom=72px`, centro `195px`.
+- Home mobile 320×568, após scroll 510: dock `top=498px, bottom=556px`, centro `160px`.
+
+**Resultado:** cinco cenários Chromium aprovados, incluindo Orçamento desktop/mobile. Evidências: https://github.com/brunodesouzabfr-hash/FRANCOROMEU-APP/actions/runs/38972807276/artifacts/12076544799.
+
+**Condições preservadas:** sem merge, rebase ou deploy manual; bloqueio legado GA4, divergência da main e QA global continuam para fase posterior.
