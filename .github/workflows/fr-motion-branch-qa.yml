@@ -73,3 +73,34 @@ jobs:
           path: artifacts/nav-phase7/
           if-no-files-found: ignore
           retention-days: 7
+
+  phase8-integrated:
+    name: Phase 8 cross-route Chromium QA
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout isolated feature branch, no deployment
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Install locked dependencies
+        run: npm ci --no-audit --no-fund
+      - name: Build all canonical public routes
+        run: npm run build
+      - name: Install isolated browser harness
+        run: npm install --no-save --package-lock=false --no-audit --no-fund playwright@1.56.1
+      - name: Install Chromium for real visual validation
+        run: npx playwright install --with-deps chromium
+      - name: Audit six routes, nav, menu, IQE, GA4, images and mobile
+        run: node tests/fr-phase8-browser-audit.cjs
+      - name: Save QA screenshots and evidence report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fr-phase8-cross-route-qa
+          path: artifacts/phase8/
+          if-no-files-found: ignore
+          retention-days: 14
