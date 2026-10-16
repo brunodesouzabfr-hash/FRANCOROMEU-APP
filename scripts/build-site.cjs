@@ -73,6 +73,8 @@ async function build() {
   require('../src/fr-projects3d-phase5.cjs')(doc);
   // Phase 6: visual-only IQE assistant avatar, preserving the wizard and FRBudgetCore.
   require('../src/fr-iqe-avatar-phase6.cjs')(doc);
+  // Phase 7: reversible navbar layout and native SPA/dialog interaction preservation.
+  require('../src/fr-nav-phase7.cjs')(doc);
   prepared.sourceGraph = sourceGraph;
   dom.window.FR_MEDIA_PRERENDER = true;
   dom.window.FR_MEDIA_LIBRARY = prepared.data;
