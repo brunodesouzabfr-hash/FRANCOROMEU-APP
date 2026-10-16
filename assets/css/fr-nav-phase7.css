@@ -1,7 +1,7 @@
 /* Franco Romeu · NAV F7.1 · ONE GEOMETRY, TWO POSITIONS.
    Explicitly outranks the old header/floating/hidden and budget !important rules.
    Never changes DOM routes, original dialog, IQE, or finance logic. */
-html body #smart-nav.fr-nav7-ready:is(.nav-state-header,.nav-state-floating,.nav-state-hidden){
+html body #smart-nav.fr-nav7-ready:not(.fr-nav7-disabled){
  --fr-nav7-h:72px;--fr-nav7-gap:clamp(6px,.7vw,12px);
  position:fixed!important;display:flex!important;align-items:center!important;justify-content:space-between!important;
  top:calc(12px + env(safe-area-inset-top,0px))!important;bottom:auto!important;
@@ -21,7 +21,7 @@ html body #smart-nav.fr-nav7-ready:is(.nav-state-header,.nav-state-floating,.nav
  z-index:560!important;isolation:isolate!important;
  transition:top .82s cubic-bezier(.22,1,.32,1),width .82s cubic-bezier(.22,1,.32,1),height .72s cubic-bezier(.22,1,.32,1),min-height .72s cubic-bezier(.22,1,.32,1),max-height .72s cubic-bezier(.22,1,.32,1),background .45s ease,box-shadow .45s ease,opacity .2s ease!important;
 }
-html body.fr10-budget-active #smart-nav.fr-nav7-ready:is(.nav-state-header,.nav-state-floating,.nav-state-hidden){
+html body.fr10-budget-active #smart-nav.fr-nav7-ready:not(.fr-nav7-disabled){
  left:50vw!important;right:auto!important;bottom:auto!important;margin:0!important;
  width:min(1280px,calc(100vw - 32px))!important;max-width:1280px!important;
  border-radius:999px!important;transform:translate3d(-50%,0,0)!important;
@@ -29,8 +29,8 @@ html body.fr10-budget-active #smart-nav.fr-nav7-ready:is(.nav-state-header,.nav-
  z-index:560!important;
 }
 /* This is a genuine repositioning, not an animation that fades away. The bar stays accessible. */
-html body #smart-nav.fr-nav7-ready.fr-nav7-docked:is(.nav-state-header,.nav-state-floating,.nav-state-hidden),
-html body.fr10-budget-active #smart-nav.fr-nav7-ready.fr-nav7-docked:is(.nav-state-header,.nav-state-floating,.nav-state-hidden){
+html body #smart-nav.fr-nav7-ready.fr-nav7-docked:not(.fr-nav7-disabled),
+html body.fr10-budget-active #smart-nav.fr-nav7-ready.fr-nav7-docked:not(.fr-nav7-disabled){
  --fr-nav7-h:62px;
  top:calc(100vh - var(--fr-nav7-h) - max(16px,env(safe-area-inset-bottom,0px)))!important;
  top:calc(100dvh - var(--fr-nav7-h) - max(16px,env(safe-area-inset-bottom,0px)))!important;
@@ -42,8 +42,8 @@ html body.fr10-budget-active #smart-nav.fr-nav7-ready.fr-nav7-docked:is(.nav-sta
  box-shadow:0 16px 52px #000b,0 2px 0 #f6a70022!important;
  transform:translate3d(-50%,0,0)!important;
 }
-html body #smart-nav.fr-nav7-ready.fr-nav7-modal:is(.nav-state-header,.nav-state-floating,.nav-state-hidden),
-html body.fr10-budget-active #smart-nav.fr-nav7-ready.fr-nav7-modal:is(.nav-state-header,.nav-state-floating,.nav-state-hidden){
+html body #smart-nav.fr-nav7-ready.fr-nav7-modal:not(.fr-nav7-disabled),
+html body.fr10-budget-active #smart-nav.fr-nav7-ready.fr-nav7-modal:not(.fr-nav7-disabled){
  opacity:0!important;visibility:hidden!important;pointer-events:none!important;
  transform:translate3d(-50%,0,0)!important;
 }
@@ -173,21 +173,21 @@ html body #fr-site-menu.fr-nav7-dialog::backdrop{background:#010b09d9!important}
   flex:0 0 46px!important;max-width:46px!important;
  }
  html body #smart-nav.fr-nav7-ready.fr-nav7-docked #smart-nav-brand .frx-brand-copy{display:none!important}
- html body #smart-nav.fr-nav7-ready.fr-nav7-docked:is(.nav-state-header,.nav-state-floating,.nav-state-hidden),
- html body.fr10-budget-active #smart-nav.fr-nav7-ready.fr-nav7-docked:is(.nav-state-header,.nav-state-floating,.nav-state-hidden){
+ html body #smart-nav.fr-nav7-ready.fr-nav7-docked:not(.fr-nav7-disabled),
+ html body.fr10-budget-active #smart-nav.fr-nav7-ready.fr-nav7-docked:not(.fr-nav7-disabled){
   width:min(310px,calc(100vw - 28px))!important;max-width:310px!important;
   padding:7px 12px!important;justify-content:center!important;
  }
 }
 @media(max-width:600px){
- html body #smart-nav.fr-nav7-ready:is(.nav-state-header,.nav-state-floating,.nav-state-hidden),
- html body.fr10-budget-active #smart-nav.fr-nav7-ready:is(.nav-state-header,.nav-state-floating,.nav-state-hidden){
+ html body #smart-nav.fr-nav7-ready:not(.fr-nav7-disabled),
+ html body.fr10-budget-active #smart-nav.fr-nav7-ready:not(.fr-nav7-disabled){
   --fr-nav7-h:60px;
   width:calc(100vw - 16px)!important;max-width:100%!important;
   padding:6px 10px!important;gap:6px!important;
  }
- html body #smart-nav.fr-nav7-ready.fr-nav7-docked:is(.nav-state-header,.nav-state-floating,.nav-state-hidden),
- html body.fr10-budget-active #smart-nav.fr-nav7-ready.fr-nav7-docked:is(.nav-state-header,.nav-state-floating,.nav-state-hidden){
+ html body #smart-nav.fr-nav7-ready.fr-nav7-docked:not(.fr-nav7-disabled),
+ html body.fr10-budget-active #smart-nav.fr-nav7-ready.fr-nav7-docked:not(.fr-nav7-disabled){
   --fr-nav7-h:58px;
   width:min(290px,calc(100vw - 24px))!important;max-width:290px!important;
   top:calc(100dvh - var(--fr-nav7-h) - max(12px,env(safe-area-inset-bottom,0px)))!important;
@@ -203,11 +203,11 @@ html body #fr-site-menu.fr-nav7-dialog::backdrop{background:#010b09d9!important}
  html body #smart-nav.fr-nav7-ready.fr-nav7-docked #smart-nav-brand{flex:0 0 44px!important;width:44px!important;max-width:44px!important}
 }
 @media(prefers-reduced-motion:reduce){
- html body #smart-nav.fr-nav7-ready:is(.nav-state-header,.nav-state-floating,.nav-state-hidden){
+ html body #smart-nav.fr-nav7-ready:not(.fr-nav7-disabled){
   transition:none!important;backdrop-filter:none!important;
  }
 }
-html.fr7-low-power body #smart-nav.fr-nav7-ready:is(.nav-state-header,.nav-state-floating,.nav-state-hidden){
+html.fr7-low-power body #smart-nav.fr-nav7-ready:not(.fr-nav7-disabled){
  backdrop-filter:none!important;transition:none!important;
 }
 @media print{html body #smart-nav.fr-nav7-ready{display:none!important}}
