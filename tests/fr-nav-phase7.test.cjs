@@ -79,6 +79,7 @@ test('Phase 7 / original mobile native dialog, close and search handlers operate
  assert.equal(f.getClosed(),1);
  assert.equal(f.menu.open,false);
  assert.equal(f.open.getAttribute('aria-expanded'),'false');
+ assert.equal(f.nav.inert,false);
  api.destroy();f.dom.window.close();
 });
 test('Phase 7 / modal and IQE activation conceal navbar without changing popup or assistant state',async()=>{
