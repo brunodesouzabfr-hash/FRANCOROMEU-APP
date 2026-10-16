@@ -5,7 +5,7 @@ html body #smart-nav.fr-nav7-ready:is(.nav-state-header,.nav-state-floating,.nav
  --fr-nav7-h:72px;--fr-nav7-gap:clamp(6px,.7vw,12px);
  position:fixed!important;display:flex!important;align-items:center!important;justify-content:space-between!important;
  top:calc(12px + env(safe-area-inset-top,0px))!important;bottom:auto!important;
- left:50%!important;right:auto!important;margin:0!important;
+ left:50vw!important;right:auto!important;margin:0!important;
  width:min(1280px,calc(100vw - 32px))!important;max-width:1280px!important;min-width:0!important;
  height:var(--fr-nav7-h)!important;min-height:var(--fr-nav7-h)!important;max-height:var(--fr-nav7-h)!important;
  padding:8px clamp(12px,1.6vw,22px)!important;gap:var(--fr-nav7-gap)!important;
@@ -22,7 +22,7 @@ html body #smart-nav.fr-nav7-ready:is(.nav-state-header,.nav-state-floating,.nav
  transition:top .82s cubic-bezier(.22,1,.32,1),width .82s cubic-bezier(.22,1,.32,1),height .72s cubic-bezier(.22,1,.32,1),min-height .72s cubic-bezier(.22,1,.32,1),max-height .72s cubic-bezier(.22,1,.32,1),background .45s ease,box-shadow .45s ease,opacity .2s ease!important;
 }
 html body.fr10-budget-active #smart-nav.fr-nav7-ready:is(.nav-state-header,.nav-state-floating,.nav-state-hidden){
- left:50%!important;right:auto!important;bottom:auto!important;margin:0!important;
+ left:50vw!important;right:auto!important;bottom:auto!important;margin:0!important;
  width:min(1280px,calc(100vw - 32px))!important;max-width:1280px!important;
  border-radius:999px!important;transform:translate3d(-50%,0,0)!important;
  opacity:1!important;visibility:visible!important;pointer-events:auto!important;
@@ -34,7 +34,7 @@ html body.fr10-budget-active #smart-nav.fr-nav7-ready.fr-nav7-docked:is(.nav-sta
  --fr-nav7-h:62px;
  top:calc(100vh - var(--fr-nav7-h) - max(16px,env(safe-area-inset-bottom,0px)))!important;
  top:calc(100dvh - var(--fr-nav7-h) - max(16px,env(safe-area-inset-bottom,0px)))!important;
- bottom:auto!important;left:50%!important;right:auto!important;margin:0!important;
+ bottom:auto!important;left:50vw!important;right:auto!important;margin:0!important;
  width:min(560px,calc(100vw - 36px))!important;max-width:560px!important;
  padding:7px 14px!important;gap:8px!important;
  border-radius:999px!important;clip-path:none!important;overflow:visible!important;
