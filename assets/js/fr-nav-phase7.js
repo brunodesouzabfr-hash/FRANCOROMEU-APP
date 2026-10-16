@@ -54,6 +54,9 @@ function routes(viewId){
 }
 function sync(){
  raf=0;if(!mounted)return;
+ // Historical engines replace nav.className during scroll. The data-* marker
+ // is the CSS contract; recover the class only for legacy diagnostics.
+ if(!nav.classList.contains('fr-nav7-ready'))nav.classList.add('fr-nav7-ready');
  var y=offset(),blocked=overlaysOpen();
  // Hysteresis avoids chattering at the threshold. Scroll direction has no
  // role: the dock remains centered at the bottom on budget and other views.
