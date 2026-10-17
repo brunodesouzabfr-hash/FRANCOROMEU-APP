@@ -123,6 +123,8 @@ async function build() {
   for (const link of [...doc.querySelectorAll('link[rel="stylesheet"]')]) doc.head.appendChild(link);
   // F8.2: keep each Home hero word unbroken at 320px, without editing source HTML.
   const narrowHeroCss=doc.createElement('link');narrowHeroCss.rel='stylesheet';narrowHeroCss.href='/assets/css/fr-home-mobile-phase8.css';doc.head.appendChild(narrowHeroCss);
+  // F8.3: preserve intact words in outlined Portfolio mobile editorial heading.
+  const portfolioMobileCss=doc.createElement('link');portfolioMobileCss.rel='stylesheet';portfolioMobileCss.href='/assets/css/fr-portfolio-mobile-phase8.css';doc.head.appendChild(portfolioMobileCss);
   // Preview blocks indexing; production permits eligible visual discovery.
   {
     let robots = doc.querySelector('meta[name="robots"]');
