@@ -27,6 +27,13 @@
     width: 44px !important;
     height: 44px !important;
     border-radius: 50% !important;
+    /* The legacy fixed root stays 68px tall; anchor the 44px control
+       to its bottom-right instead of its original top-left. */
+    position: absolute !important;
+    top: auto !important;
+    left: auto !important;
+    right: 0 !important;
+    bottom: 0 !important;
   }
   body:has(#view-home.active):has(#smart-nav[data-fr-nav7-position="footer"]) #fr-ai-root:not(.is-open) {
     bottom: calc(74px + env(safe-area-inset-bottom, 0px)) !important;
