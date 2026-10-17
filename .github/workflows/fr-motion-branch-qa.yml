@@ -36,6 +36,9 @@ jobs:
       - name: Build production-formatted HTML in isolation
         if: always()
         run: npm run build
+      - name: Audit public executed-work copy
+        if: always()
+        run: node --test tests/fr-executed-media-claims.test.cjs
       - name: Audit links and project library
         if: always()
         run: npm run check:project-library
