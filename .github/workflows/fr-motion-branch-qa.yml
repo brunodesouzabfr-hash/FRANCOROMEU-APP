@@ -182,10 +182,10 @@ jobs:
           set -e
           if [ "$merge_status" -ne 0 ]; then
             conflict_files="$(git diff --name-only --diff-filter=U | sort)"
-            expected="$(printf 'package.json\\ntests/integration-release.test.cjs' | sort)"
+            expected="$(printf 'package.json\ntests/integration-release.test.cjs' | sort)"
             if [ "$conflict_files" != "$expected" ]; then
               echo "::error::Unexpected merge conflicts; refusing automatic resolution"
-              printf '%s\\n' "$conflict_files"
+              printf '%s\n' "$conflict_files"
               exit 1
             fi
             # Both originals were reviewed against main. Keep the stricter GA4
@@ -194,7 +194,7 @@ jobs:
             git show :2:package.json > package.json
           fi
           # Preserve all existing motion/public tests AND the approved V05 intro QA.
-          node -e 'const fs=require("fs");const p="package.json",v=JSON.parse(fs.readFileSync(p,"utf8")),t="node --test tests/fr-intro-performance.test.cjs";if(!v.scripts.test.includes(t))v.scripts.test+=" && "+t;fs.writeFileSync(p,JSON.stringify(v,null,2)+"\\n");'
+          node -e 'const fs=require("fs");const p="package.json",v=JSON.parse(fs.readFileSync(p,"utf8")),t="node --test tests/fr-intro-performance.test.cjs";if(!v.scripts.test.includes(t))v.scripts.test+=" && "+t;fs.writeFileSync(p,JSON.stringify(v,null,2)+"\n");'
           test -f assets/intro/fr-intro-cinematic.js
           test -f tests/fr-intro-performance.test.cjs
           test -f assets/brand/franco-romeu-medalhao-esmeralda-256.webp
