@@ -7,7 +7,8 @@
   padding:0!important;
   background:transparent!important;
   border:0!important;
-  border-radius:12px!important;
+  border-radius:0!important;
+  clip-path:none!important;mask:none!important;-webkit-mask:none!important;
   box-shadow:none!important;
   filter:none!important;
   overflow:visible!important;
@@ -24,19 +25,25 @@
   border:0!important;background:transparent!important;box-shadow:none!important;
   filter:none!important;transform:none!important;overflow:visible!important;
   position:relative!important;isolation:isolate;
+  border-radius:0!important;clip-path:none!important;mask:none!important;-webkit-mask:none!important;
 }
 #fr-ai-root.fr-block-iqe-staging .fr-ai-avatar{
   position:relative!important;isolation:isolate;
   background:transparent!important;border:0!important;box-shadow:none!important;
-  overflow:visible!important;
+  overflow:visible!important;border-radius:0!important;
+  clip-path:none!important;mask:none!important;-webkit-mask:none!important;
 }
 /* The former status LED is part of the old artwork, not the functional launcher. */
 #fr-ai-root.fr-block-iqe-staging #fr-ai-launcher .fr-ai-status-dot{
   display:none!important;
 }
 #fr-ai-root.fr-block-iqe-staging canvas[data-fr-block-avatar="visual-only"]{
-  display:block!important;inset:0!important;
-  width:100%!important;height:100%!important;
+  display:block!important;
+  inset:-34%!important;left:-34%!important;top:-34%!important;
+  width:168%!important;height:168%!important;
+  background:transparent!important;border-radius:0!important;
+  clip-path:none!important;mask:none!important;-webkit-mask:none!important;
+  overflow:visible!important;
   pointer-events:none!important;user-select:none!important;
 }
 #fr-ai-root.fr-block-iqe-staging #fr-ai-launcher:focus-visible{
@@ -67,4 +74,14 @@
 @media(prefers-reduced-motion:reduce){
  #fr-ai-root.fr-block-iqe-staging canvas[data-fr-block-avatar="visual-only"],
  .fr-block-tip{animation:none!important;transition:none!important;}
+}
+
+/* The old circular launcher and its avatar shells may clip the canvas even
+   when the outer button is transparent. Scope removal to avatar ancestry. */
+#fr-ai-root.fr-block-iqe-staging #fr-ai-launcher .fr-ai-robot,
+#fr-ai-root.fr-block-iqe-staging #fr-ai-launcher,
+#fr-ai-root.fr-block-iqe-staging .fr-ai-avatar {
+  contain:none!important;clip-path:none!important;
+  overflow:visible!important;border-radius:0!important;
+  mask-image:none!important;-webkit-mask-image:none!important;
 }
