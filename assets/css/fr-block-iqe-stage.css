@@ -51,13 +51,14 @@
   border:1px solid #C9A24Daa;border-radius:13px;
   box-shadow:0 10px 26px #010C0Bcf,0 0 12px #C9A24D28;
   color:#EDE8D8;font:500 12px/1.5 system-ui,sans-serif;
+  pointer-events:none; /* never block the site's CTA or navigation */
   transition:opacity .22s ease,transform .22s ease;
 }
 .fr-block-tip[hidden]{display:none!important;}
 .fr-block-tip strong{color:#F4CF81;font-size:12px;letter-spacing:.02em;}
 .fr-block-tip p{margin:3px 0 0;}
 .fr-block-tip button{border:0;background:transparent;color:#EDE8D8;
-  min-width:22px;min-height:24px;padding:0;font:700 18px/1 system-ui;cursor:pointer;}
+  min-width:22px;min-height:24px;padding:0;font:700 18px/1 system-ui;cursor:pointer;pointer-events:auto;}
 .fr-block-tip button:focus-visible{outline:2px solid #F6A700;outline-offset:2px;border-radius:3px;}
 @media(max-width:520px){
  #fr-ai-root.fr-block-iqe-staging #fr-ai-launcher{width:68px;height:68px;min-width:68px;min-height:68px;}
