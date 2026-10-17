@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>Block • Mascote Franco Romeu — Laboratório 3D isolado</title>
+<style>
+/* ==========================================================
+   IQE SANDBOX — Estilos totalmente escopados.
+   Este HTML não consulta nem altera páginas ou serviços da FR.
+   ========================================================== */
+.iqe-sandbox-root{--iqe-bg:#080f15;--iqe-surface:#111c24;--iqe-border:rgba(167,211,212,.15);--iqe-muted:#91a9b2;--iqe-text:#e7f6f2;--iqe-accent:#83e6cf;--iqe-hot:#ffb56d;position:fixed;inset:0;z-index:1;overflow:hidden;background:radial-gradient(ellipse at 48% 39%,#173037 0%,#0b1820 43%,#080f15 83%);color:var(--iqe-text);font:13px/1.45 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;isolation:isolate}
+.iqe-sandbox-root *{box-sizing:border-box}
+.iqe-sandbox-root button,.iqe-sandbox-root input,.iqe-sandbox-root select{font:inherit}
+.iqe-sandbox-root button{cursor:pointer}
+.iqe-sandbox-root button:focus-visible,.iqe-sandbox-root select:focus-visible,.iqe-sandbox-root input:focus-visible,.iqe-sandbox-root summary:focus-visible{outline:2px solid #a8f7e5;outline-offset:2px}
+.iqe-sandbox-root .iqe-sandbox-stage{position:absolute;inset:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;scrollbar-color:#39575c transparent;scrollbar-width:thin}
+.iqe-sandbox-root .iqe-sandbox-scroll-content{height:310%;position:relative}
+.iqe-sandbox-root .iqe-sandbox-sticky{height:32.2580645%;height:calc(100% / 3.1);position:sticky;top:0;overflow:hidden}
+.iqe-sandbox-root .iqe-sandbox-scene{position:absolute;inset:0;width:100%;height:100%;cursor:grab;touch-action:pan-y;display:block}
+.iqe-sandbox-root .iqe-sandbox-scene:active{cursor:grabbing}
+.iqe-sandbox-root .iqe-sandbox-grain{pointer-events:none;position:absolute;inset:0;opacity:.17;background-image:url('data:image/svg+xml,%3Csvg viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="n"%3E%3CfeTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23n)" opacity=".32"/%3E%3C/svg%3E')}
+.iqe-sandbox-root .iqe-sandbox-grid{pointer-events:none;position:absolute;inset:0;background-image:linear-gradient(to right,transparent 49.9%,rgba(115,203,199,.09) 50%,transparent 50.1%),linear-gradient(to bottom,transparent 49.9%,rgba(115,203,199,.06) 50%,transparent 50.1%)}
+.iqe-sandbox-root .iqe-sandbox-vignette{pointer-events:none;position:absolute;inset:0;background:radial-gradient(ellipse at 50% 45%,transparent 13%,rgba(5,12,17,.22) 62%,rgba(5,12,17,.75) 110%)}
+.iqe-sandbox-root .iqe-sandbox-brand{position:absolute;top:22px;left:28px;z-index:5;pointer-events:none}
+.iqe-sandbox-root .iqe-sandbox-kicker{text-transform:uppercase;letter-spacing:.25em;font-size:10px;font-weight:700;color:var(--iqe-accent)}
+.iqe-sandbox-root .iqe-sandbox-title{margin:5px 0 3px;font-size:23px;letter-spacing:-.055em;line-height:1.05;font-weight:700}
+.iqe-sandbox-root .iqe-sandbox-sub{color:var(--iqe-muted);font-size:11px}
+.iqe-sandbox-root .iqe-sandbox-tag{display:inline-flex;gap:6px;align-items:center;padding:5px 9px;border:1px solid var(--iqe-border);border-radius:50px;color:#a9dacf;background:rgba(9,30,32,.74);font-size:10px;letter-spacing:.08em;text-transform:uppercase;margin-top:11px}
+.iqe-sandbox-root .iqe-sandbox-dot{height:6px;width:6px;border-radius:50%;background:#7ff0bd;box-shadow:0 0 9px #7ff0bd}
+.iqe-sandbox-root .iqe-sandbox-scrollmeter{position:absolute;z-index:4;top:35%;bottom:30%;left:29px;width:18px;pointer-events:none;display:flex;gap:6px;align-items:center;flex-direction:column}
+.iqe-sandbox-root .iqe-sandbox-scrollrail{width:2px;min-height:80px;flex:1;background:rgba(168,220,217,.15);border-radius:2px;position:relative}
+.iqe-sandbox-root .iqe-sandbox-scrollfill{position:absolute;top:0;left:0;width:2px;height:0%;background:#a9f4dc;box-shadow:0 0 12px #a9f4dc;border-radius:2px;transition:height .13s ease-out}
+.iqe-sandbox-root .iqe-sandbox-meterlabel{writing-mode:vertical-rl;transform:rotate(180deg);font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:#648b91}
+.iqe-sandbox-root .iqe-sandbox-footer{position:absolute;bottom:19px;left:50%;transform:translateX(-50%);z-index:5;display:flex;gap:10px;align-items:center;max-width:calc(100% - 24px);padding:7px 10px;border:1px solid var(--iqe-border);background:rgba(11,24,29,.76);backdrop-filter:blur(16px);border-radius:60px;box-shadow:0 14px 55px #0005}
+.iqe-sandbox-root .iqe-sandbox-footer button{color:#d5f4ea;background:#1c3439;border:1px solid #375259;border-radius:36px;padding:8px 12px;white-space:nowrap;font-size:11px;transition:background .2s}
+.iqe-sandbox-root .iqe-sandbox-footer button:hover{background:#2b5050}
+.iqe-sandbox-root .iqe-sandbox-footnote{font-size:10px;color:#a6b8b9;white-space:nowrap;padding:0 7px}
+.iqe-sandbox-root .iqe-sandbox-panel{position:absolute;right:18px;top:17px;z-index:20;width:344px;max-width:calc(100vw - 20px);max-height:calc(100% - 35px);display:flex;flex-direction:column;overflow:hidden;background:rgba(13,24,30,.94);border:1px solid rgba(158,220,207,.22);box-shadow:0 24px 90px #000b,0 0 30px rgba(78,205,170,.06);border-radius:16px;backdrop-filter:blur(24px)}
+.iqe-sandbox-root .iqe-sandbox-panelhead{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:14px 14px 12px;border-bottom:1px solid var(--iqe-border);cursor:move;user-select:none;touch-action:none;background:linear-gradient(125deg,rgba(53,120,103,.13),transparent)}
+.iqe-sandbox-root .iqe-sandbox-panelhead strong{display:block;font-size:12px;letter-spacing:.09em}
+.iqe-sandbox-root .iqe-sandbox-panelhead small{display:block;font-size:10px;color:#94adae;margin-top:3px}
+.iqe-sandbox-root .iqe-sandbox-chip{display:inline-block;border:1px solid #467768;border-radius:4px;color:#a8e5d1;padding:2px 5px;margin-right:5px;font:700 9px ui-monospace,monospace}
+.iqe-sandbox-root .iqe-sandbox-minbutton{min-width:30px;padding:3px 6px;border:1px solid #35545a;color:#d4e9e8;background:#182e35;border-radius:7px;font-size:19px;line-height:1.1}
+.iqe-sandbox-root .iqe-sandbox-panelbody{padding:12px 14px 18px;overflow:auto;scrollbar-color:#426566 transparent;scrollbar-width:thin}
+.iqe-sandbox-root .iqe-sandbox-panel.iqe-sandbox-collapsed{width:250px}
+.iqe-sandbox-root .iqe-sandbox-panel.iqe-sandbox-collapsed .iqe-sandbox-panelbody{display:none}
+.iqe-sandbox-root .iqe-sandbox-section{border:1px solid var(--iqe-border);border-radius:11px;margin-bottom:10px;background:rgba(255,255,255,.017);overflow:hidden}
+.iqe-sandbox-root .iqe-sandbox-section summary{padding:10px 11px;cursor:pointer;letter-spacing:.035em;font-weight:650;color:#d5eae6;user-select:none}
+.iqe-sandbox-root .iqe-sandbox-section[open] summary{border-bottom:1px solid var(--iqe-border)}
+.iqe-sandbox-root .iqe-sandbox-sectionbody{padding:11px}
+.iqe-sandbox-root .iqe-sandbox-field{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px;color:#bfd0d3;font-size:11px}
+.iqe-sandbox-root .iqe-sandbox-field:last-child{margin-bottom:0}
+.iqe-sandbox-root .iqe-sandbox-field>label{max-width:57%}
+.iqe-sandbox-root .iqe-sandbox-field select{max-width:55%;min-width:122px}
+.iqe-sandbox-root .iqe-sandbox-field select,.iqe-sandbox-root .iqe-sandbox-input{background:#1b2c35;border:1px solid #35505a;border-radius:7px;padding:7px 8px;color:#ebf6f3;font-size:11px;min-width:0}
+.iqe-sandbox-root .iqe-sandbox-field input[type=color]{appearance:none;width:48px;height:27px;border:1px solid #547076;background:transparent;border-radius:7px;padding:2px;cursor:pointer}
+.iqe-sandbox-root .iqe-sandbox-field input[type=color]::-webkit-color-swatch{border:0;border-radius:4px}
+.iqe-sandbox-root .iqe-sandbox-field input[type=checkbox]{width:15px;height:15px;accent-color:#83e6cf}
+.iqe-sandbox-root .iqe-sandbox-rangefield{display:grid;grid-template-columns:1fr 1fr auto;gap:8px;align-items:center;margin-bottom:10px;font-size:11px;color:#c6d8db}
+.iqe-sandbox-root .iqe-sandbox-rangefield:last-child{margin-bottom:0}
+.iqe-sandbox-root .iqe-sandbox-rangefield input{min-width:0;width:100%;accent-color:#83e6cf}
+.iqe-sandbox-root .iqe-sandbox-rangefield output{text-align:right;font:10px ui-monospace,monospace;color:#91e1cb;min-width:34px}
+.iqe-sandbox-root .iqe-sandbox-palettegrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+.iqe-sandbox-root .iqe-sandbox-palettegrid button,.iqe-sandbox-root .iqe-sandbox-btn{background:#1d323a;border:1px solid #3b5b61;border-radius:7px;color:#d8f4ec;padding:9px 8px;font-size:11px;transition:.17s}
+.iqe-sandbox-root .iqe-sandbox-palettegrid button:hover,.iqe-sandbox-root .iqe-sandbox-btn:hover{border-color:#8cdeca;background:#27434b}
+.iqe-sandbox-root .iqe-sandbox-palettegrid button[aria-pressed=true]{border-color:#a3edcf;background:#244a45;box-shadow:inset 0 0 0 1px #5caa8e}
+.iqe-sandbox-root .iqe-sandbox-btnrow{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:9px}
+.iqe-sandbox-root .iqe-sandbox-btnrow .iqe-sandbox-wide{grid-column:span 2}
+.iqe-sandbox-root .iqe-sandbox-primary{background:linear-gradient(110deg,#295d50,#24614e)!important;color:#e4fff2!important;border-color:#5fbc99!important}
+.iqe-sandbox-root .iqe-sandbox-tip{font-size:10px;color:#8ca6aa;margin:7px 0 0}
+.iqe-sandbox-root .iqe-sandbox-status{font:10px ui-monospace,monospace;color:#9de1d2;margin:9px 0 0;min-height:13px;overflow-wrap:anywhere}
+.iqe-sandbox-root .iqe-sandbox-debug{position:absolute;bottom:82px;left:18px;width:238px;max-width:calc(100% - 36px);z-index:6;background:rgba(10,22,28,.85);border:1px solid var(--iqe-border);border-radius:12px;padding:12px;backdrop-filter:blur(15px);pointer-events:none}
+.iqe-sandbox-root .iqe-sandbox-debugtitle{font:700 10px ui-monospace,monospace;letter-spacing:.15em;color:#81d9c3;text-transform:uppercase;margin:0 0 8px}
+.iqe-sandbox-root .iqe-sandbox-metrics{display:grid;grid-template-columns:1fr auto;gap:4px 9px;font:10px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace}
+.iqe-sandbox-root .iqe-sandbox-metrics span{color:#819fa5}
+.iqe-sandbox-root .iqe-sandbox-metrics b{font-weight:500;color:#d8eee8;text-align:right}
+.iqe-sandbox-root .iqe-sandbox-eventlog{border-top:1px solid var(--iqe-border);margin-top:10px;padding-top:8px;max-height:80px;overflow:hidden;font:9px/1.6 ui-monospace,monospace;color:#82b8aa}
+.iqe-sandbox-root .iqe-sandbox-eventlog div{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.iqe-sandbox-root .iqe-sandbox-notice{position:absolute;z-index:7;left:50%;top:18%;transform:translateX(-50%);color:#eafff6;font-size:11px;letter-spacing:.12em;text-transform:uppercase;opacity:0;transition:opacity .22s;pointer-events:none;text-shadow:0 0 13px #6ed9b2}
+.iqe-sandbox-root .iqe-sandbox-notice.iqe-sandbox-shown{opacity:1}
+.iqe-sandbox-root .iqe-sandbox-watermark{position:absolute;bottom:25px;right:385px;pointer-events:none;color:#526e70;font:10px ui-monospace,monospace;letter-spacing:.12em}
+.iqe-sandbox-root .iqe-sandbox-stage:focus-visible{outline:2px solid #a2e7d5;outline-offset:-2px}
+@media(max-width:880px){.iqe-sandbox-root .iqe-sandbox-panel{width:310px}.iqe-sandbox-root .iqe-sandbox-debug{width:190px}.iqe-sandbox-root .iqe-sandbox-watermark{display:none}.iqe-sandbox-root .iqe-sandbox-brand{left:19px;top:13px}.iqe-sandbox-root .iqe-sandbox-scrollmeter{left:19px}}
+@media(max-width:640px){.iqe-sandbox-root .iqe-sandbox-brand{top:12px;left:14px}.iqe-sandbox-root .iqe-sandbox-title{font-size:17px}.iqe-sandbox-root .iqe-sandbox-sub{font-size:9px}.iqe-sandbox-root .iqe-sandbox-tag{font-size:8px;margin-top:5px}.iqe-sandbox-root .iqe-sandbox-panel{top:11px;right:9px;width:calc(100% - 18px);max-height:62%;transform:translateY(calc(100% - 47px));transition:transform .22s}.iqe-sandbox-root .iqe-sandbox-panel:not(.iqe-sandbox-collapsed){transform:translateY(0);max-height:90%}.iqe-sandbox-root .iqe-sandbox-panel.iqe-sandbox-collapsed{width:190px;transform:none}.iqe-sandbox-root .iqe-sandbox-debug{left:9px;bottom:65px;width:160px;padding:8px}.iqe-sandbox-root .iqe-sandbox-scrollmeter{display:none}.iqe-sandbox-root .iqe-sandbox-footer{bottom:10px;gap:4px;padding:5px}.iqe-sandbox-root .iqe-sandbox-footer button{font-size:9px;padding:7px 6px}.iqe-sandbox-root .iqe-sandbox-footnote{display:none}}
+@media(prefers-reduced-motion:reduce){.iqe-sandbox-root *{transition-duration:.001ms!important;animation-duration:.001ms!important}}
+
+/* ===== BLOCK • laboratório independente / docking à direita ===== */
+.iqe-sandbox-root{background:radial-gradient(ellipse at 80% 66%,#15312c 0%,#0c1c1e 37%,#051211 90%)}
+.iqe-sandbox-root .iqe-sandbox-scene{inset:auto;right:22px;bottom:48px;width:min(32vw,324px);height:min(32vw,324px);min-width:266px;min-height:266px;z-index:9;border-radius:25px;cursor:pointer;touch-action:pan-y}
+.iqe-sandbox-root .iqe-sandbox-ambient{pointer-events:none;position:absolute;right:22px;bottom:48px;width:min(32vw,324px);height:min(32vw,324px);min-width:266px;min-height:266px;z-index:11}
+.iqe-sandbox-root .iqe-sandbox-panel{right:auto;left:18px;top:100px;max-height:calc(100% - 120px)}
+.iqe-sandbox-root .iqe-sandbox-debug{bottom:92px;left:auto;right:365px;width:223px}
+.iqe-sandbox-root .iqe-sandbox-footer{left:45%;bottom:17px;transform:translateX(-50%)}
+.iqe-sandbox-root .iqe-sandbox-brand{left:28px}
+.iqe-sandbox-root .iqe-sandbox-brand .iqe-sandbox-title{letter-spacing:-.055em}
+.iqe-sandbox-root .iqe-sandbox-profile{position:absolute;bottom:20px;right:28px;z-index:13;display:flex;gap:7px;align-items:center;flex-direction:column;pointer-events:none;color:#d8e8d6;text-align:center}
+.iqe-sandbox-root .iqe-sandbox-profile-name{font-size:16px;font-weight:850;letter-spacing:.12em;color:#fee1b2;line-height:1}
+.iqe-sandbox-root .iqe-sandbox-profile-sub{font-size:9px;color:#93c7b8;letter-spacing:.08em;text-transform:uppercase;max-width:250px}
+.iqe-sandbox-root .iqe-sandbox-context{position:absolute;right:32px;bottom:min(32vw,324px);margin-bottom:43px;z-index:12;display:flex;gap:6px;max-width:310px;flex-wrap:wrap;justify-content:flex-end;pointer-events:none}
+.iqe-sandbox-root .iqe-sandbox-context span{font:600 10px/1.3 ui-monospace,monospace;color:#d3efe5;border:1px solid #436559;background:rgba(7,26,25,.78);border-radius:999px;padding:5px 8px;backdrop-filter:blur(10px)}
+.iqe-sandbox-root .iqe-sandbox-popup{position:absolute;z-index:14;right:min(32vw,324px);bottom:153px;max-width:248px;min-width:160px;background:#102b29;border:1px solid #549685;color:#ddf6e9;padding:12px 13px;border-radius:15px 15px 5px 15px;box-shadow:0 14px 50px #0009;opacity:0;transform:translateY(8px) scale(.96);transition:opacity .18s,transform .18s;pointer-events:none}
+.iqe-sandbox-root .iqe-sandbox-popup.iqe-sandbox-shown{opacity:1;transform:translateY(0) scale(1)}
+.iqe-sandbox-root .iqe-sandbox-popup strong{display:block;color:#ffce8c;font-size:11px;letter-spacing:.11em;text-transform:uppercase;margin-bottom:5px}
+.iqe-sandbox-root .iqe-sandbox-popup span{font-size:11px;line-height:1.46}
+.iqe-sandbox-root .iqe-sandbox-artboard{pointer-events:none;position:absolute;inset:0;z-index:2}
+.iqe-sandbox-root .iqe-sandbox-artboard .iqe-sandbox-guideline{position:absolute;right:20%;bottom:20%;width:16vw;height:16vw;max-width:260px;max-height:260px;border:1px dashed rgba(120,230,211,.12);border-radius:8px;transform:rotate(8deg)}
+.iqe-sandbox-root .iqe-sandbox-artboard .iqe-sandbox-guideline:before{content:'45° / EIXO DE OBSERVAÇÃO';position:absolute;top:-16px;left:0;font:9px ui-monospace,monospace;color:#497a70;letter-spacing:.12em}
+.iqe-sandbox-root .iqe-sandbox-simulation{position:absolute;top:135px;left:390px;z-index:3;max-width:350px;color:#7fa99f;pointer-events:none;font-size:11px}
+.iqe-sandbox-root .iqe-sandbox-simulation strong{display:block;color:#c2e2d5;font-size:12px;letter-spacing:.13em;text-transform:uppercase;margin-bottom:9px}
+.iqe-sandbox-root .iqe-sandbox-simulation p{margin:0 0 15px;max-width:290px;line-height:1.7}
+.iqe-sandbox-root .iqe-sandbox-simulation .iqe-sandbox-blueprint{width:245px;height:120px;border:1px solid #21463e;border-radius:6px;background:repeating-linear-gradient(0deg,transparent 0 19px,#1e37345b 20px),repeating-linear-gradient(90deg,transparent 0 19px,#1e37345b 20px);position:relative;opacity:.55}
+.iqe-sandbox-root .iqe-sandbox-simulation .iqe-sandbox-blueprint:after{content:'';position:absolute;inset:19px 32px;border:2px solid #4d8980;box-shadow:38px -8px 0 -30px #ffc274}
+.iqe-sandbox-root .iqe-sandbox-panel .iqe-sandbox-btn{min-height:34px}
+.iqe-sandbox-root .iqe-sandbox-sectionbody .iqe-sandbox-tip em{font-style:normal;color:#d8af83}
+.iqe-sandbox-root .iqe-sandbox-timefield{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.iqe-sandbox-root .iqe-sandbox-timefield .iqe-sandbox-input{width:100%}
+.iqe-sandbox-root .iqe-sandbox-liveclock{font:11px ui-monospace,monospace;color:#ffcb91;margin:7px 0}
+.iqe-sandbox-root .iqe-sandbox-panel .iqe-sandbox-section summary{font-size:11px}
+.iqe-sandbox-root .iqe-sandbox-kbd{font:9px ui-monospace,monospace;border:1px solid #47655d;padding:1px 4px;border-radius:3px}
+@media(max-width:1100px){.iqe-sandbox-root .iqe-sandbox-simulation{display:none}.iqe-sandbox-root .iqe-sandbox-debug{right:335px;bottom:100px;width:195px}.iqe-sandbox-root .iqe-sandbox-footer{left:46%}}
+@media(max-width:680px){.iqe-sandbox-root .iqe-sandbox-scene,.iqe-sandbox-root .iqe-sandbox-ambient{width:230px;height:230px;min-width:0;min-height:0;right:3px;bottom:66px}.iqe-sandbox-root .iqe-sandbox-profile{right:18px;bottom:25px}.iqe-sandbox-root .iqe-sandbox-context{right:5px;bottom:302px;margin:0;max-width:245px}.iqe-sandbox-root .iqe-sandbox-popup{right:165px;bottom:178px;min-width:125px;max-width:170px;padding:9px}.iqe-sandbox-root .iqe-sandbox-panel{left:auto;right:8px;top:11px;max-height:85%}.iqe-sandbox-root .iqe-sandbox-debug{left:8px;right:auto;bottom:84px;max-width:140px;width:140px}.iqe-sandbox-root .iqe-sandbox-footer{left:50%;bottom:6px;width:max-content;max-width:calc(100% - 8px)}.iqe-sandbox-root .iqe-sandbox-brand{left:12px}.iqe-sandbox-root .iqe-sandbox-brand .iqe-sandbox-title{font-size:19px}.iqe-sandbox-root .iqe-sandbox-brand .iqe-sandbox-sub{max-width:180px}.iqe-sandbox-root .iqe-sandbox-watermark{display:none}}
+@media(max-width:400px){.iqe-sandbox-root .iqe-sandbox-popup{right:148px;bottom:176px;max-width:142px}.iqe-sandbox-root .iqe-sandbox-debug{font-size:9px;max-width:116px;width:116px}.iqe-sandbox-root .iqe-sandbox-context span{font-size:9px}}
+
+
+.iqe-sandbox-root .iqe-sandbox-debug{pointer-events:auto}
+.iqe-sandbox-root .iqe-sandbox-debugtitle{display:flex;justify-content:space-between;gap:7px;align-items:center}
+.iqe-sandbox-root .iqe-sandbox-debugtitle button{background:transparent;border:1px solid #41675f;border-radius:4px;color:#91e8d5;font:10px ui-monospace,monospace;padding:2px 5px}
+.iqe-sandbox-root .iqe-sandbox-debug.iqe-sandbox-debug-closed .iqe-sandbox-metrics,.iqe-sandbox-root .iqe-sandbox-debug.iqe-sandbox-debug-closed .iqe-sandbox-eventlog{display:none}
+.iqe-sandbox-root .iqe-sandbox-debug.iqe-sandbox-debug-closed{width:143px}
+.iqe-sandbox-root .iqe-sandbox-debug.iqe-sandbox-debug-closed .iqe-sandbox-debugtitle{margin:0}
+@media(max-width:680px){.iqe-sandbox-root .iqe-sandbox-scene,.iqe-sandbox-root .iqe-sandbox-ambient{bottom:130px}.iqe-sandbox-root .iqe-sandbox-profile{bottom:65px}.iqe-sandbox-root .iqe-sandbox-context{bottom:371px}.iqe-sandbox-root .iqe-sandbox-popup{bottom:247px}.iqe-sandbox-root .iqe-sandbox-debug{bottom:93px;left:9px}.iqe-sandbox-root .iqe-sandbox-debug.iqe-sandbox-debug-closed{width:142px}}
+
+/* BLOCK v4 · cinco estudos cromáticos + calendário contextual */
+.iqe-sandbox-root .iqe-sandbox-palettegrid button{display:flex;flex-direction:column;gap:6px;text-align:left;min-height:49px}
+.iqe-sandbox-root .iqe-sandbox-palette-swatches{display:flex;gap:3px;align-items:center}
+.iqe-sandbox-root .iqe-sandbox-palette-swatches i{width:19px;height:10px;display:inline-block;border-radius:2px;border:1px solid #fff5}
+.iqe-sandbox-root .iqe-sandbox-calendarmonth{padding:10px 9px;border:1px solid #385d53;background:#0b201c;border-radius:8px;margin:8px 0;max-height:150px;overflow:auto}
+.iqe-sandbox-root .iqe-sandbox-calendarmonth h3{font:700 11px ui-monospace,monospace;margin:0 0 7px;color:#e6d6b5}
+.iqe-sandbox-root .iqe-sandbox-calendarmonth ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.iqe-sandbox-root .iqe-sandbox-calendarmonth li{display:grid;grid-template-columns:30px 1fr;gap:7px;font-size:10px;color:#cbe3d8}
+.iqe-sandbox-root .iqe-sandbox-calendarmonth strong{color:#f6a700}
+.iqe-sandbox-root .iqe-sandbox-calendarmonth small{display:block;color:#8aaca3;font-size:9px}
+.iqe-sandbox-root .iqe-sandbox-timemood{font:10px ui-monospace,monospace;color:#e6d6b5;background:#112f26;padding:8px;border-left:2px solid #f6a700;border-radius:4px;margin:7px 0}
+.iqe-sandbox-root .iqe-sandbox-panel{--iqe-accent:#f6a700}
+@media(max-width:680px){.iqe-sandbox-root .iqe-sandbox-calendarmonth{max-height:115px}}
+</style>
+<!-- Three.js fixado na versão 0.152.2. O arquivo mantém fallback local sem CDN. -->
+<!-- Motor Canvas 3D integrado: sem dependências externas. A classe Three.js é opcional para futuro upgrade. -->
+</head>
+<body>
+<div class="iqe-sandbox-root" id="iqe-sandbox-root">
+ <main class="iqe-sandbox-stage" id="iqe-sandbox-scroll-stage" tabindex="0" aria-label="Área de teste de rolagem, use a roda do mouse ou deslize para testar reações">
+  <div class="iqe-sandbox-scroll-content">
+   <div class="iqe-sandbox-sticky" id="iqe-sandbox-viewport">
+    <canvas class="iqe-sandbox-scene" id="iqe-sandbox-canvas" tabindex="0" role="button" aria-label="Interagir com Block, mascote 3D. Pressione Enter ou Espaço."></canvas>
+    <canvas class="iqe-sandbox-ambient" id="iqe-sandbox-ambient" aria-hidden="true"></canvas>
+    <div class="iqe-sandbox-artboard" aria-hidden="true"><span class="iqe-sandbox-guideline"></span></div>
+    <div class="iqe-sandbox-profile"><span class="iqe-sandbox-profile-name">BLOCK <span style="color:#ff9c42">◈</span></span><span class="iqe-sandbox-profile-sub">Nome provisório · Arte + Engenharia</span></div>
+    <div class="iqe-sandbox-context" id="iqe-sandbox-context"><span>Contexto iniciando…</span></div>
+    <div class="iqe-sandbox-popup" id="iqe-sandbox-popup" role="status" aria-live="polite"><strong>Block / protótipo</strong><span id="iqe-sandbox-popup-text"></span></div>
+    <div class="iqe-sandbox-simulation"><strong>Estudo de presença espacial</strong><p>O Block observa o conteúdo à esquerda e ocupa o canto inferior direito. Teste condições naturais, datas e avisos sem conectar ao site.</p><div class="iqe-sandbox-blueprint"></div></div>
+    <div class="iqe-sandbox-grid"></div><div class="iqe-sandbox-grain"></div><div class="iqe-sandbox-vignette"></div>
+    <div class="iqe-sandbox-brand"><div class="iqe-sandbox-kicker">IQE / TEST LAB</div><div class="iqe-sandbox-title">BLOCK LAB<span style="color:#80dabb">.</span></div><div class="iqe-sandbox-sub">Pet digital • Arquitetura, arte e engenharia</div><span class="iqe-sandbox-tag"><i class="iqe-sandbox-dot"></i> Developer Sandbox</span></div>
+    <div class="iqe-sandbox-scrollmeter"><span class="iqe-sandbox-meterlabel">Scroll simulator</span><div class="iqe-sandbox-scrollrail"><div class="iqe-sandbox-scrollfill" id="iqe-sandbox-scrollfill"></div></div><span class="iqe-sandbox-meterlabel" id="iqe-sandbox-progress">00%</span></div>
+    <div class="iqe-sandbox-notice" id="iqe-sandbox-notice" aria-live="polite"></div>
+    <div class="iqe-sandbox-debug" id="iqe-sandbox-debug" aria-live="off"><p class="iqe-sandbox-debugtitle"><span>● TELEMETRIA</span><button type="button" id="iqe-sandbox-debug-toggle" aria-expanded="true" aria-label="Alternar telemetria" title="Abrir ou recolher telemetria">−</button></p><div class="iqe-sandbox-metrics"><span>motor</span><b id="iqe-sandbox-m-render">—</b><span>expressão</span><b id="iqe-sandbox-m-face">Neutro</b><span>FPS</span><b id="iqe-sandbox-m-fps">—</b><span>scroll px/s</span><b id="iqe-sandbox-m-scroll">0</b><span>eixo XYZ</span><b id="iqe-sandbox-m-rot">0 / 0 / 0</b><span>mouse</span><b id="iqe-sandbox-m-mouse">fora</b><span>estado</span><b id="iqe-sandbox-m-state">idle</b><span>contexto</span><b id="iqe-sandbox-m-context">—</b><span>humor</span><b id="iqe-sandbox-m-mood">—</b></div><div class="iqe-sandbox-eventlog" id="iqe-sandbox-eventlog"></div></div>
+    <div class="iqe-sandbox-footer"><button type="button" id="iqe-sandbox-trigger-fall">↓ Queda</button><button type="button" id="iqe-sandbox-trigger-rise">↑ Impulso</button><button type="button" id="iqe-sandbox-trigger-click">✦ Reagir ao clique</button><span class="iqe-sandbox-footnote">Role nesta área · Clique no mascote</span></div>
+    <div class="iqe-sandbox-watermark">PROCEDURAL OBJECT / NOT CONNECTED TO PRODUCTION</div>
+   </div>
+  </div>
+ </main>
+ <aside class="iqe-sandbox-panel" id="iqe-sandbox-panel" aria-label="Painel do desenvolvedor">
+  <div class="iqe-sandbox-panelhead" id="iqe-sandbox-panelhead"><div><strong><span class="iqe-sandbox-chip">DEV</span> FACTORY CONTROLS</strong><small>Ajustes em tempo real · Arraste o cabeçalho</small></div><button class="iqe-sandbox-minbutton" id="iqe-sandbox-toggle-panel" aria-label="Recolher ou expandir painel" aria-expanded="true" type="button">−</button></div>
+  <div class="iqe-sandbox-panelbody">
+   <details open class="iqe-sandbox-section"><summary>01 / Geometria & material</summary><div class="iqe-sandbox-sectionbody">
+    <div class="iqe-sandbox-field"><label for="iqe-sandbox-shape">Forma</label><select id="iqe-sandbox-shape" data-setting="shape"><option value="cube" selected>Cubo · 6 faces</option><option value="octa">Octaedro · 8 faces</option><option value="sphere">Esfera facetada</option><option value="dodeca">Dodecaedro</option><option value="custom">Custom (.glb futuro)</option></select></div>
+    <div class="iqe-sandbox-field"><label for="iqe-sandbox-mode">Superfície</label><select id="iqe-sandbox-mode" data-setting="mode"><option value="solid">Solid</option><option value="wireframe">Wireframe</option><option value="hybrid" selected>Híbrido</option></select></div><p class="iqe-sandbox-tip">“Custom” utiliza um placeholder independente até a futura importação manual de um .glb.</p>
+   </div></details>
+   <details open class="iqe-sandbox-section"><summary>02 / Cores & iluminação</summary><div class="iqe-sandbox-sectionbody">
+    <div class="iqe-sandbox-field"><label for="iqe-sandbox-colorBase">Cor do corpo</label><input type="color" id="iqe-sandbox-colorBase" data-setting="colorBase" value="#984d06"></div>
+    <div class="iqe-sandbox-field"><label for="iqe-sandbox-colorEdge">Arestas / emissivo</label><input type="color" id="iqe-sandbox-colorEdge" data-setting="colorEdge" value="#76f5ff"></div>
+    <div class="iqe-sandbox-field"><label for="iqe-sandbox-colorCore">Iluminação interna</label><input type="color" id="iqe-sandbox-colorCore" data-setting="colorCore" value="#ffe0a1"></div>
+    <div class="iqe-sandbox-field"><label for="iqe-sandbox-colorShadow">Sombra de contato</label><input type="color" id="iqe-sandbox-colorShadow" data-setting="colorShadow" value="#08151e"></div>
+    <div class="iqe-sandbox-rangefield"><label for="iqe-sandbox-glow">Intensidade do brilho</label><input type="range" id="iqe-sandbox-glow" data-setting="glow" min="0" max="1.5" step="0.05" value="1.5"><output for="iqe-sandbox-glow">1.50</output></div>
+    <div class="iqe-sandbox-palettegrid" id="iqe-sandbox-palettes"><button type="button" data-palette="verdeouro">Verde & Ouro</button><button type="button" data-palette="verdelaranja">Verde & Laranja</button><button type="button" data-palette="ouroindustrial">Ouro Industrial</button><button type="button" data-palette="ossoverde">Osso & Verde</button><button type="button" data-palette="oficinanoturna">Oficina Noturna</button></div>
+   </div></details>
+   <details open class="iqe-sandbox-section"><summary>03 / Rosto procedural</summary><div class="iqe-sandbox-sectionbody">
+    <div class="iqe-sandbox-field"><label for="iqe-sandbox-expression">Expressão</label><select id="iqe-sandbox-expression" data-setting="expression"><option value="neutral">Neutro</option><option value="observer" selected>Observador</option><option value="blink">Piscando</option><option value="curious">Curioso</option><option value="happy">Alegre</option><option value="thinking">Pensativo</option><option value="surprised">Surpreso</option><option value="attentive">Atento</option><option value="processing">Processando</option><option value="confirming">Confirmando</option><option value="sleeping">Descansando</option><option value="glitch">Glitch</option></select></div>
+    <div class="iqe-sandbox-btnrow"><button type="button" class="iqe-sandbox-btn iqe-sandbox-primary" id="iqe-sandbox-force">Testar 6,5 s</button><button type="button" class="iqe-sandbox-btn" id="iqe-sandbox-auto-face">Retomar automático</button></div><p class="iqe-sandbox-tip">Padrões de pixels construídos por algoritmo; nenhuma imagem de rosto é utilizada.</p>
+   </div></details>
+   <details class="iqe-sandbox-section" open><summary>04 / Movimento & reações</summary><div class="iqe-sandbox-sectionbody">
+    <div class="iqe-sandbox-field"><label for="iqe-sandbox-idle">Rotação orgânica</label><input type="checkbox" id="iqe-sandbox-idle" data-setting="idle" checked></div>
+    <div class="iqe-sandbox-field"><label for="iqe-sandbox-float">Flutuação / respiração</label><input type="checkbox" id="iqe-sandbox-float" data-setting="floating" checked></div>
+    <div class="iqe-sandbox-field"><label for="iqe-sandbox-blinks">Piscadas aleatórias</label><input type="checkbox" id="iqe-sandbox-blinks" data-setting="blinks" checked></div>
+    <div class="iqe-sandbox-field"><label for="iqe-sandbox-glitches">Glitches esporádicos</label><input type="checkbox" id="iqe-sandbox-glitches" data-setting="glitches" checked></div>
+    <div class="iqe-sandbox-field"><label for="iqe-sandbox-lookAt">Acompanhar cursor</label><input type="checkbox" id="iqe-sandbox-lookAt" data-setting="lookAt" checked></div>
+    <div class="iqe-sandbox-field"><label for="iqe-sandbox-scrollEnabled">Física por scroll</label><input type="checkbox" id="iqe-sandbox-scrollEnabled" data-setting="scrollEnabled" checked></div>
+    <div class="iqe-sandbox-rangefield"><label for="iqe-sandbox-idleSpeed">Velocidade ociosa</label><input type="range" id="iqe-sandbox-idleSpeed" data-setting="idleSpeed" min="0" max="2" step="0.05" value="1.65"><output>1.65</output></div>
+    <div class="iqe-sandbox-rangefield"><label for="iqe-sandbox-spring">Mola / retorno</label><input type="range" id="iqe-sandbox-spring" data-setting="spring" min="0.2" max="1.5" step="0.05" value="1.35"><output>1.35</output></div>
+    <div class="iqe-sandbox-btnrow"><button class="iqe-sandbox-btn" type="button" id="iqe-sandbox-hover">Trigger Hover</button><button class="iqe-sandbox-btn" type="button" id="iqe-sandbox-click">Trigger Click</button><button class="iqe-sandbox-btn iqe-sandbox-wide" type="button" id="iqe-sandbox-double">Trigger Double Click</button></div>
+   </div></details>
+
+   <details class="iqe-sandbox-section" open><summary>05 / Vida própria • contexto do Block</summary><div class="iqe-sandbox-sectionbody">
+    <p class="iqe-sandbox-tip" style="margin-top:0">Horário <em>America/Sao_Paulo</em>. Contextos automáticos podem ser simulados; não são meteorologia real sem consulta autorizada.</p>
+    <div class="iqe-sandbox-field"><label for="iqe-sandbox-autoContext">Rotina automática (dia/noite)</label><input type="checkbox" id="iqe-sandbox-autoContext" data-setting="autoContext" checked></div>
+    <div class="iqe-sandbox-field"><label for="iqe-sandbox-testHour">Horário para simular</label><select class="iqe-sandbox-input" id="iqe-sandbox-testHour" data-setting="testHour"><option value="auto">Relógio real</option><option value="0">00h · simular</option><option value="1">01h · simular</option><option value="2">02h · simular</option><option value="3">03h · simular</option><option value="4">04h · simular</option><option value="5">05h · simular</option><option value="6">06h · simular</option><option value="7">07h · simular</option><option value="8">08h · simular</option><option value="9">09h · simular</option><option value="10">10h · simular</option><option value="11">11h · simular</option><option value="12">12h · simular</option><option value="13">13h · simular</option><option value="14">14h · simular</option><option value="15">15h · simular</option><option value="16">16h · simular</option><option value="17">17h · simular</option><option value="18">18h · simular</option><option value="19">19h · simular</option><option value="20">20h · simular</option><option value="21">21h · simular</option><option value="22">22h · simular</option><option value="23">23h · simular</option></select></div>
+    <div class="iqe-sandbox-field"><label for="iqe-sandbox-weather">Clima (simulação manual)</label><select id="iqe-sandbox-weather" data-setting="weather"><option value="unknown">Não informado</option><option value="sun">Sol / ameno</option><option value="hot">Calor</option><option value="cold">Frio</option><option value="cloud">Nublado</option><option value="rain">Chuva</option><option value="storm">Tempestade moderada</option></select></div>
+    <div class="iqe-sandbox-btnrow"><button type="button" class="iqe-sandbox-btn iqe-sandbox-wide" id="iqe-sandbox-weather-live">Consultar clima (GPS autorizado)</button></div>
+    <div class="iqe-sandbox-field" style="margin-top:10px"><label for="iqe-sandbox-holiday">Data comemorativa</label><select id="iqe-sandbox-holiday" data-setting="holiday"><option value="auto">Calendário BR</option><option value="none">Nenhuma</option><option value="christmas">Natal</option><option value="newyear">Ano Novo</option><option value="easter">Páscoa</option><option value="children">Dia das Crianças</option><option value="carnival">Carnaval</option><option value="june">Festa Junina</option></select></div>
+    <div class="iqe-sandbox-field"><label for="iqe-sandbox-passive">Rotinas passivas</label><input type="checkbox" id="iqe-sandbox-passive" data-setting="passive" checked></div>
+    <div class="iqe-sandbox-field"><label for="iqe-sandbox-ambientEnabled">Efeitos ambientais discretos</label><input type="checkbox" id="iqe-sandbox-ambientEnabled" data-setting="ambientEnabled" checked></div>
+    <div class="iqe-sandbox-field"><label for="iqe-sandbox-popupVibrate">Vibrar quando avisar</label><input type="checkbox" id="iqe-sandbox-popupVibrate" data-setting="popupVibrate" checked></div>
+    <div class="iqe-sandbox-rangefield"><label for="iqe-sandbox-faceScale">Proporção do rosto</label><input type="range" id="iqe-sandbox-faceScale" data-setting="faceScale" min="1" max="1.22" step="0.02" value="1.12"><output>1.12</output></div>
+    <div class="iqe-sandbox-field"><label>Perfil (somente simulação)</label><select data-setting="clientType"><option value="visitor">Novo visitante</option><option value="recurring">Visitante recorrente</option><option value="registered">Cliente cadastrado</option><option value="frequent">Cliente assíduo (simulado)</option></select></div><div class="iqe-sandbox-field"><label>Fidelidade (simulada)</label><select data-setting="loyalty"><option value="none">Sem nível</option><option value="bronze">Bronze</option><option value="silver">Prata</option><option value="gold">Ouro</option><option value="premium">Premium</option><option value="platinum">Platina experimental</option></select></div><div class="iqe-sandbox-field"><label>Jornada (simulada)</label><select data-setting="journey"><option value="exploring">Explorando</option><option value="budget">Orçamento</option><option value="saved">Orçamento salvo</option><option value="support">Atendimento</option><option value="proposal">Proposta em análise</option><option value="followup">Acompanhamento</option><option value="completed">Projeto concluído (simulado)</option></select></div><div class="iqe-sandbox-tip">Rotina: 06h acorda, 12h almoço, 19h jantar, sexta após 14h mais descontraído. Sem acesso a dados reais de clientes.</div><div class="iqe-sandbox-liveclock" id="iqe-sandbox-clock">Relógio contextual…</div>
+    <div class="iqe-sandbox-field"><label for="iqe-sandbox-testDate">Data simulada (opcional)</label><input type="date" id="iqe-sandbox-testDate" data-setting="testDate" aria-label="Data para testar calendário de feriados, sem alterar o relógio do dispositivo"></div>
+    <div class="iqe-sandbox-timemood" id="iqe-sandbox-time-mood" aria-live="off">Comportamento por faixa horária…</div>
+    <div class="iqe-sandbox-calendarmonth" id="iqe-sandbox-calendarmonth" aria-label="Datas e feriados do mês simulado"><h3>Calendário do mês</h3><ul><li>Carregando…</li></ul></div>
+    <div class="iqe-sandbox-btnrow"><button type="button" class="iqe-sandbox-btn" id="iqe-sandbox-wake">☀ Acordar</button><button type="button" class="iqe-sandbox-btn" id="iqe-sandbox-sleep">☾ Dormir</button><button type="button" class="iqe-sandbox-btn" id="iqe-sandbox-inspect">⌖ Inspecionar</button><button type="button" class="iqe-sandbox-btn" id="iqe-sandbox-plan">▤ Projetar</button></div>
+   </div></details>
+   <details class="iqe-sandbox-section" open><summary>06 / Alertas • simulação de pop-up</summary><div class="iqe-sandbox-sectionbody"><p class="iqe-sandbox-tip" style="margin:0 0 9px">Avisos demonstrativos exclusivos desta bancada — não são mensagens ou eventos reais do IQE.</p>
+    <div class="iqe-sandbox-btnrow"><button type="button" class="iqe-sandbox-btn iqe-sandbox-primary" data-demo-popup="welcome">Boas-vindas</button><button type="button" class="iqe-sandbox-btn" data-demo-popup="measurement">Medição</button><button type="button" class="iqe-sandbox-btn" data-demo-popup="design">Projeto</button><button type="button" class="iqe-sandbox-btn" data-demo-popup="notice">Atenção</button></div>
+    <div class="iqe-sandbox-rangefield" style="margin-top:10px"><label for="iqe-sandbox-vibrationPower">Força da vibração</label><input type="range" id="iqe-sandbox-vibrationPower" data-setting="vibrationPower" min="0" max="1.5" step="0.05" value="0.8"><output>0.80</output></div>
+   </div></details>
+   <details class="iqe-sandbox-section"><summary>07 / Performance & acessibilidade</summary><div class="iqe-sandbox-sectionbody"><div class="iqe-sandbox-field"><label for="iqe-sandbox-reduce">Reduzir movimento</label><input type="checkbox" data-setting="reducedMotion" id="iqe-sandbox-reduce"></div><div class="iqe-sandbox-field"><label for="iqe-sandbox-fpscap">Limite FPS</label><select data-setting="fpsCap" id="iqe-sandbox-fpscap"><option value="30">30</option><option value="45">45</option><option value="60" selected>60</option></select></div><p class="iqe-sandbox-tip">A preferência do sistema por movimento reduzido prevalece. Renderização pausa com a aba oculta ou fora da viewport.</p></div></details>
+   <details class="iqe-sandbox-section" open><summary>08 / Exportar & diagnóstico</summary><div class="iqe-sandbox-sectionbody"><div class="iqe-sandbox-btnrow"><button class="iqe-sandbox-btn iqe-sandbox-primary iqe-sandbox-wide" type="button" id="iqe-sandbox-export">↧ Exportar configuração JSON</button><button class="iqe-sandbox-btn" type="button" id="iqe-sandbox-pause">Pausar</button><button class="iqe-sandbox-btn" type="button" id="iqe-sandbox-reset">Reset geral</button></div><div class="iqe-sandbox-status" id="iqe-sandbox-status" aria-live="polite">Aguardando inicialização…</div></div></details>
+  </div>
+ </aside>
+</div>
+<script>
+(()=>{'use strict';
+/* ========================================================================
+   BLOCK LAB — Motor isolado. Todos os seletores partem exclusivamente da
+   raiz #iqe-sandbox-root. Nenhum estado é persistido em storage.
+   ======================================================================== */
+const root=document.getElementById('iqe-sandbox-root');
+const $=id=>root.querySelector('#iqe-sandbox-'+id);
+const defaults={shape:'cube',mode:'hybrid',colorBase:'#123f34',colorEdge:'#f6a700',colorCore:'#e6d6b5',colorShadow:'#031812',glow:1.5,expression:'observer',paletteId:'verdeouro',clientType:'visitor',loyalty:'none',journey:'exploring',idle:true,floating:true,blinks:true,glitches:true,lookAt:true,scrollEnabled:true,idleSpeed:1.65,spring:1.35,reducedMotion:false,fpsCap:60,autoContext:true,testHour:'auto',testDate:'',weather:'unknown',holiday:'auto',passive:true,ambientEnabled:true,popupVibrate:true,faceScale:1.12,vibrationPower:.8};
+const cfg={...defaults};
+const expressionNames={neutral:'Neutro',observer:'Observador',blink:'Piscando',curious:'Curioso',happy:'Alegre',thinking:'Pensativo',surprised:'Surpreso',attentive:'Atento',processing:'Processando',confirming:'Confirmando',sleeping:'Descansando',glitch:'Glitch'};
+const palettes={verdeouro:['#123f34','#f6a700','#e6d6b5','#031812'],verdelaranja:['#0a2f26','#ff6b00','#e6d6b5','#031812'],ouroindustrial:['#c9a24d','#123f34','#031812','#0a2f26'],ossoverde:['#e6d6b5','#123f34','#0a2f26','#031812'],oficinanoturna:['#031812','#c9a24d','#e6d6b5','#123f34']};
+// As paletas são estudos: não significam concessão de categorias ou benefícios comerciais.
+const paletteLabels={verdeouro:'Verde & Ouro',verdelaranja:'Verde & Laranja',ouroindustrial:'Ouro Industrial',ossoverde:'Osso & Verde',oficinanoturna:'Oficina Noturna'};
+const state={running:true,visible:true,pageVisible:!document.hidden,systemReduced:!!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches),t:0,lastFrame:0,frameStart:0,fps:0,frameSamples:[],scrollTop:0,scrollVelocity:0,lastScrollTime:0,lastScrollTop:0,lastImpact:0,mouseX:0,mouseY:0,over:false,hover:false,physY:0,velY:0,tilt:0,velTilt:0,spin:0,spinV:0,squash:0,pulse:0,shake:0,particles:[],face:'sleeping',lockedUntil:0,faceUntil:0,nextBlink:0,blinkEnd:0,glitchUntil:0,nextGlitch:0,dirty:true,mode:'boot',suspended:false,vibration:0,vibrationPhase:0,context:null,lastContextKey:'',nextPassive:0,passiveUntil:0,contextHoldUntil:0,contextManuallySleepUntil:0,manualWeather:false,ambientPhase:0,glance:0,personality:'observador',lastRandomFace:'observer',nextRandomFace:0,glowTemporal:1,ambientBrightness:1,lightWarmth:0,lightPeriod:'',nextContextNotice:0,calendarKey:'',lastRenderedPalette:'',lastRenderedExpression:''};
+const canvas=$('canvas'),ambient=$('ambient'),ambCtx=ambient.getContext('2d',{alpha:true}),viewport=$('viewport'),stage=$('scroll-stage');
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+const mix=(a,b,t)=>a+(b-a)*t;
+const rand=(a,b)=>a+Math.random()*(b-a);
+const now=()=>performance.now();
+const motionReduced=()=>state.systemReduced||cfg.reducedMotion;
+let renderer3D=null,stageWidth=1,stageHeight=1,resizeObserver=null,noticeTimer=0,lastDebug=0;
+const logItems=[];
+function log(msg){const stamp=new Date().toLocaleTimeString('pt-BR',{hour12:false});logItems.unshift(stamp+'  '+msg);logItems.length=5;$('eventlog').replaceChildren(...logItems.map(line=>{let el=document.createElement('div');el.textContent=line;return el}));}
+function status(msg){$('status').textContent=msg;}
+function flash(text){$('notice').textContent=text;$('notice').classList.add('iqe-sandbox-shown');clearTimeout(noticeTimer);noticeTimer=setTimeout(()=>$('notice').classList.remove('iqe-sandbox-shown'),1050);}
+function setFace(name,duration=0){state.face=name;state.faceUntil=duration?now()+duration:0;state.dirty=true;if(renderer3D)renderer3D.updateFace();}
+function reactive(name,ms=950){setFace(name,ms);log('expressão · '+expressionNames[name]);}
+function applyFaceLock(){if(state.faceUntil&&now()>state.faceUntil){state.faceUntil=0;setFace(contextFace());state.nextRandomFace=now()+rand(1000,4500);}}
+function springValue(p,v,target,dt,k,d=10){const accel=(target-p)*k-v*d;v+=accel*dt;p+=v*dt;return[p,v];}
+/* Pixel art 15×11: desenho sempre gerado a partir de primitivas discretas. */
+const NC=15,NR=11;
+function pixelMask(name,phase){const points=new Set();const dot=(x,y)=>{if(x>=0&&x<NC&&y>=0&&y<NR)points.add(x+','+y)};
+ const line=(x,y,w=1,h=1)=>{for(let i=0;i<w;i++)for(let j=0;j<h;j++)dot(x+i,y+j)};
+ const eye=(cx,cy,w=3,h=2)=>line(cx,cy,w,h);
+ const smiling=()=>{dot(4,7);dot(5,8);line(6,9,3);dot(9,8);dot(10,7)};
+ if(name==='blink'){line(3,4,3);line(9,4,3)}
+ else if(name==='sleeping'){line(2,5,4);dot(3,6);line(9,5,4);dot(10,6);line(6,8,3)}
+ else if(name==='surprised'){eye(3,3,3,3);eye(9,3,3,3);line(7,8,1,2);dot(6,8);dot(8,8)}
+ else if(name==='happy'){line(3,5,1);line(4,4,1);line(5,5,1);line(9,5,1);line(10,4,1);line(11,5,1);smiling()}
+ else if(name==='curious'){eye(3,4,2,2);eye(9,3,3,3);line(8,1,3);line(6,8,3)}
+ else if(name==='thinking'){eye(3,4,3);line(9,5,3);dot(8,8);line(9,8,2);dot(4,2);dot(5,2)}
+ else if(name==='observer'){line(2,3,5);line(2,4,1,3);line(6,4,1,3);line(2,7,5);line(9,3,5);line(9,4,1,3);line(13,4,1,3);line(9,7,5);line(3,5,2);line(10,5,2);line(6,9,3)}
+ else if(name==='attentive'){eye(3,3,3,3);eye(9,3,3,3);line(6,8,3);dot(2,2);dot(12,2)}
+ else if(name==='processing'){const n=Math.floor(phase*8)%4;eye(3,4,3);eye(9,4,3);for(let i=0;i<4;i++)if(i<=n)dot(5+i*2,8)}
+ else if(name==='confirming'){eye(3,4,3);eye(9,4,3);[[5,8],[6,9],[7,8],[8,7],[9,6]].forEach(p=>dot(...p))}
+ else if(name==='glitch'){eye(2+(Math.floor(phase*9)%3),3,3);eye(9,5,3);line(4,8,7);dot(0,2);dot(13,6);dot(8,1)}
+ else {eye(3,4,4,3);eye(9,4,4,3);line(6,9,3)}
+ return points;
+}
+function effectiveFace(){if(state.blinkEnd>now())return 'blink';if(state.glitchUntil>now())return 'glitch';return state.face;}
+
+/* ===== Personalidade do Block, tempo local e datas do Brasil (sem rede) ===== */
+const holidayNames={none:'Sem evento',christmas:'Natal',newyear:'Ano Novo',easter:'Páscoa',children:'Dia das Crianças',carnival:'Carnaval',june:'Festa Junina',mothers:'Dia das Mães',fathers:'Dia dos Pais',labor:'Dia do Trabalho',independence:'Independência',republic:'Proclamação da República',conscience:'Consciência Negra',finados:'Finados',tiradentes:'Tiradentes',city:'Data cívica',other:'Data comemorativa'};
+const weatherNames={unknown:'Clima não informado',sun:'Sol',hot:'Calor',cold:'Frio',cloud:'Nublado',rain:'Chuva',storm:'Tempestade'};
+let contextualAt=0,popupTimer=0,weatherInFlight=false,ambientSize={w:1,h:1},lastAmbientStamp=0;
+function spParts(){let f=new Intl.DateTimeFormat('en-US',{timeZone:'America/Sao_Paulo',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'});const parts=Object.fromEntries(f.formatToParts(new Date()).filter(p=>p.type!=='literal').map(p=>[p.type,Number(p.value)]));return{year:parts.year,month:parts.month,day:parts.day,hour:parts.hour,minute:parts.minute};}
+function easterDate(year){const a=year%19,b=Math.floor(year/100),c=year%100,d=Math.floor(b/4),e=b%4,f=Math.floor((b+8)/25),g=Math.floor((b-f+1)/3),h=(19*a+b-d-g+15)%30,i=Math.floor(c/4),k=c%4,l=(32+2*e+2*i-h-k)%7,m=Math.floor((a+11*h+22*l)/451),mm=Math.floor((h+l-7*m+114)/31),dd=(h+l-7*m+114)%31+1;return new Date(Date.UTC(year,mm-1,dd));}
+function plusDays(d,n){return new Date(d.getTime()+n*86400000)}
+function eventFor(year,month,day,name,type='comemorativa',id='other'){return{year,month,day,name,type,id}}
+function monthEvents(year,month){
+ const data=[
+ [1,1,'Confraternização Universal / Ano Novo','feriado nacional','newyear'],[3,8,'Dia Internacional da Mulher','comemorativa','other'],
+ [4,21,'Tiradentes','feriado nacional','tiradentes'],[5,1,'Dia do Trabalho','feriado nacional','labor'],[6,12,'Dia dos Namorados','comemorativa','other'],
+ [6,24,'São João / Festa Junina','comemorativa','june'],[7,9,'Revolução Constitucionalista (SP)','feriado estadual SP','city'],
+ [9,7,'Independência do Brasil','feriado nacional','independence'],[10,12,'Nossa Senhora Aparecida / Dia das Crianças','feriado nacional + data comemorativa','children'],
+ [10,15,'Dia dos Professores','comemorativa','other'],[11,2,'Finados','feriado nacional','finados'],[11,15,'Proclamação da República','feriado nacional','republic'],
+ [11,20,'Dia Nacional de Zumbi e da Consciência Negra','feriado nacional','conscience'],[12,24,'Véspera de Natal','comemorativa','christmas'],
+ [12,25,'Natal','feriado nacional','christmas'],[12,31,'Véspera de Ano Novo','comemorativa','newyear']];
+ const out=data.filter(a=>a[0]===month).map(a=>eventFor(year,a[0],a[1],a[2],a[3],a[4]));
+ const easter=easterDate(year), moving=[[-48,'Segunda de Carnaval','ponto facultativo','carnival'],[-47,'Terça de Carnaval','ponto facultativo','carnival'],[-46,'Quarta-feira de Cinzas','ponto facultativo parcial','carnival'],[-2,'Sexta-feira Santa / Paixão de Cristo','feriado religioso local (ver legislação)','easter'],[0,'Páscoa','data religiosa','easter'],[60,'Corpus Christi','feriado local ou ponto facultativo','other']];
+ for(const [offset,name,type,id] of moving){let d=plusDays(easter,offset);if(d.getUTCMonth()+1===month)out.push(eventFor(year,month,d.getUTCDate(),name,type,id));}
+ function nthSunday(m,n){let day=1;while(new Date(Date.UTC(year,m-1,day)).getUTCDay()!==0)day++;return day+7*(n-1)}
+ if(month===5)out.push(eventFor(year,month,nthSunday(5,2),'Dia das Mães','comemorativa','mothers'));
+ if(month===8)out.push(eventFor(year,month,nthSunday(8,2),'Dia dos Pais','comemorativa','fathers'));
+ if(month===11){let d=new Date(Date.UTC(year,10,1)),fridays=[];for(let k=1;k<=30;k++)if(new Date(Date.UTC(year,10,k)).getUTCDay()===5)fridays.push(k);out.push(eventFor(year,11,fridays.at(-1),'Black Friday (data comercial)','comercial · sem promoção automática','other'));}
+ return out.sort((a,b)=>a.day-b.day||a.name.localeCompare(b.name,'pt-BR'));
+}
+function dateEvents(p){return monthEvents(p.year,p.month).filter(e=>e.day===p.day)}
+function calendarHoliday(p){return dateEvents(p).find(e=>e.id!=='other')?.id || 'none';}
+const monthName=m=>new Intl.DateTimeFormat('pt-BR',{month:'long',timeZone:'UTC'}).format(new Date(Date.UTC(2026,m-1,1)));
+function renderCalendar(p){let key=p.year+'-'+p.month;if(state.calendarKey===key)return;state.calendarKey=key;const el=$('calendarmonth');el.replaceChildren();const head=document.createElement('h3');head.textContent=monthName(p.month)+' de '+p.year+' · Brasil + São Paulo';el.appendChild(head);const list=document.createElement('ul');for(const e of monthEvents(p.year,p.month)){const li=document.createElement('li');const date=document.createElement('strong');date.textContent=String(e.day).padStart(2,'0');const info=document.createElement('span');info.textContent=e.name;const kind=document.createElement('small');kind.textContent=e.type;info.appendChild(kind);li.append(date,info);list.appendChild(li);}if(!list.childElementCount){const li=document.createElement('li');li.textContent='Sem datas cadastradas neste mês.';list.appendChild(li);}el.appendChild(list);}
+function contextFace(){const c=state.context;if(!cfg.autoContext)return cfg.expression;if(!c)return 'observer';if(c.sleeping)return 'sleeping';if(c.hour===6)return 'sleeping';if(c.hour>=12&&c.hour<14||c.hour>=19&&c.hour<21)return 'curious';if(c.weekday===5&&c.hour>=14)return 'happy';if(c.hour<9)return 'curious';if(c.hour<18)return 'attentive';return 'observer';}
+function chooseRandomFace(){const c=state.context;if(!c||!cfg.passive||!cfg.autoContext)return;
+ if(c.sleeping){if(now()>state.nextRandomFace){const expressions=['sleeping','sleeping','blink'];const next=expressions[Math.floor(Math.random()*expressions.length)];if(next!==state.lastRandomFace){state.lastRandomFace=next;setFace(next,rand(550,1400));}state.nextRandomFace=now()+rand(11000,19000);}return;}
+ let pool=['observer','curious','attentive','thinking','happy','neutral','confirming'];
+ if(c.hour===6||c.hour===7)pool=['sleeping','curious','blink','observer','sleeping'];
+ else if(c.hour>=12&&c.hour<14||c.hour>=19&&c.hour<21)pool=['curious','surprised','thinking','happy','curious'];
+ else if(c.hour>=18)pool=['happy','observer','thinking','curious'];
+ if(c.weekday===5&&c.hour>=14)pool.push('happy','happy','surprised','glitch');
+ if(c.weekday===1&&c.hour<=9)pool.push('sleeping','thinking');
+ if(c.weekday===0||c.weekday===6)pool.push('happy','observer','curious');
+ if(c.weather==='rain'||c.weather==='storm')pool.push('observer','thinking');
+ if(c.weather==='hot')pool.push('sleeping','curious');
+ if(c.holiday!=='none')pool.push('happy','surprised','happy');
+ if(cfg.clientType==='recurring'||cfg.clientType==='registered'||cfg.clientType==='frequent')pool.push('happy','confirming');
+ if(['gold','premium','platinum'].includes(cfg.loyalty))pool.push('happy','confirming','surprised');
+ if(['budget','proposal','followup'].includes(cfg.journey))pool.push('thinking','processing','attentive');
+ if(cfg.journey==='saved'||cfg.journey==='completed')pool.push('confirming','happy');
+ const choices=pool.filter(x=>x!==state.lastRandomFace);const next=choices[Math.floor(Math.random()*choices.length)]||'observer';state.lastRandomFace=next;setFace(next,rand(1300,3500));state.nextRandomFace=now()+rand(4000,9000);}
+function updateContext(force=false){const stamp=now();if(!force&&stamp-contextualAt<950)return;contextualAt=stamp;const real=spParts();let p={...real};if(/^\d{4}-\d\d-\d\d$/.test(cfg.testDate)){const [year,month,day]=cfg.testDate.split('-').map(Number);const dt=new Date(Date.UTC(year,month-1,day));if(dt.getUTCFullYear()===year&&dt.getUTCMonth()===month-1&&dt.getUTCDate()===day)p={...p,year,month,day};}
+ const weekday=new Date(Date.UTC(p.year,p.month-1,p.day)).getUTCDay(),hr=cfg.testHour==='auto'?p.hour:Number(cfg.testHour);const sleeping=hr<6||hr>=22,holiday=cfg.holiday==='auto'?calendarHoliday(p):cfg.holiday;const c={...p,weekday,hour:hr,sleeping,holiday,weather:cfg.weather,timeLabel:String(hr).padStart(2,'0')+':'+String(p.minute).padStart(2,'0')};const old=state.context;state.context=c;
+ // Modulação suave de luz por hora; as cores HEX escolhidas permanecem imutáveis.
+ const lightTable=[.28,.28,.27,.26,.28,.35,.48,.62,.78,.90,1,1.08,1.08,1.04,1,1,.96,.89,.76,.60,.47,.40,.34,.30];
+ state.glowTemporal=lightTable[hr];state.ambientBrightness=lightTable[hr];root.style.background='radial-gradient(ellipse at 80% 66%,'+cfg.colorBase+' '+(15+Math.round(state.glowTemporal*16))+'%,'+palettes[cfg.paletteId][3]+' 92%)';state.lightWarmth=(hr>=5&&hr<=8||hr>=17&&hr<=20)?0.22:0;
+ state.lightPeriod=sleeping?'Sono noturno':hr===6?'Despertar sonolento':hr>=12&&hr<14?'Pausa para almoço':hr>=19&&hr<21?'Pausa para jantar':weekday===5&&hr>=14?'Sexta descontraída':hr<9?'Manhã / observação':hr<17?'Produção / engenharia':'Entardecer / descanso';
+ renderCalendar(p);$('time-mood').textContent=state.lightPeriod+' · brilho '+Math.round(state.glowTemporal*100)+'% · '+(cfg.clientType==='visitor'?'visitante novo':cfg.clientType==='frequent'?'assíduo (teste)':cfg.clientType==='registered'?'cadastrado (teste)':'recorrente (teste)');
+ const contextualKey=[c.sleeping,c.holiday,c.weather,c.hour,c.day,c.month,c.year,c.weekday,cfg.clientType,cfg.loyalty,cfg.journey].join('|');if(contextualKey!==state.lastContextKey||force){state.lastContextKey=contextualKey;
+ if(c.sleeping&&!state.faceUntil&&now()>state.contextHoldUntil)setFace('sleeping');
+ if(old&&old.sleeping!==c.sleeping){log(c.sleeping?'Block recolheu para dormir':'Block despertou para observar');state.personality=c.sleeping?'descansando':'explorador';if(!c.sleeping)state.pulse=.12;}
+ const special=dateEvents(p).map(e=>e.name).slice(0,2);$('context').replaceChildren(...[sleeping?'☾ Block descansando':'☀ Block ativo',weatherNames[c.weather]||'Clima não informado',special.length?'✦ '+special.join(' · '):c.holiday!=='none'?'✦ '+holidayNames[c.holiday]:null].filter(Boolean).map(t=>{let el=document.createElement('span');el.textContent=t;return el;}));}
+ $('clock').textContent='São Paulo · '+c.timeLabel+' · '+state.lightPeriod+' · '+(cfg.testHour==='auto'?'horário real':'horário simulado')+(cfg.testDate?' · data simulada':'');
+ if(!state.faceUntil&&now()>state.contextHoldUntil&&now()>state.nextRandomFace)chooseRandomFace();
+}
+function popup(title,message,vibrate=true){$('popup').querySelector('strong').textContent=title;$('popup-text').textContent=message;$('popup').classList.add('iqe-sandbox-shown');clearTimeout(popupTimer);popupTimer=setTimeout(()=>$('popup').classList.remove('iqe-sandbox-shown'),3800);if(vibrate&&cfg.popupVibrate&&!motionReduced()){state.vibration=Math.max(state.vibration,.9*cfg.vibrationPower);state.vibrationPhase=0;state.pulse=.14;createParticles(8);}log('popup de demonstração · '+title);}
+function runPassive(){if(!cfg.passive||motionReduced()||now()<state.nextPassive)return;state.nextPassive=now()+rand(8500,15000);if(!state.context||state.faceUntil||now()<state.contextHoldUntil)return;
+ const c=state.context;if(c.sleeping){state.personality='sonolento';if(Math.random()<.42){state.pulse=.025;}return;}
+ const choices=['inspecionando','desenhando','observando','medindo','curioso','orgulhoso'];const choice=choices[Math.floor(rand(0,choices.length))];state.personality=choice;
+ if(choice==='inspecionando')reactive('attentive',1350);
+ else if(choice==='desenhando'||choice==='medindo')reactive('thinking',1450);
+ else if(choice==='curioso')reactive('curious',1200);
+ else if(choice==='orgulhoso')reactive('happy',1050);
+ else reactive('observer',1150);
+ state.pulse=Math.max(state.pulse,.035);
+}
+/* Só consulta GPS após clique. Não guarda coordenadas ou envia ao site FR. */
+async function lookupWeather(){if(weatherInFlight)return;if(!navigator.geolocation||!window.fetch){status('Consulta indisponível. Use o simulador manual.');return;}weatherInFlight=true;$('weather-live').disabled=true;status('Solicitando permissão de localização…');try{
+ const pos=await new Promise((ok,fail)=>navigator.geolocation.getCurrentPosition(ok,fail,{enableHighAccuracy:false,timeout:9000,maximumAge:1800000}));const lat=pos.coords.latitude,lon=pos.coords.longitude;
+ status('Consultando condição meteorológica atual…');const ctrl=new AbortController();const timeout=setTimeout(()=>ctrl.abort(),8500);let response;try{response=await fetch('https://api.open-meteo.com/v1/forecast?latitude='+encodeURIComponent(lat.toFixed(3))+'&longitude='+encodeURIComponent(lon.toFixed(3))+'&current=temperature_2m,weather_code,precipitation&timezone=auto',{signal:ctrl.signal,cache:'no-store'});}finally{clearTimeout(timeout);}if(!response.ok)throw new Error('Servidor de clima indisponível');const j=await response.json(),wc=j.current?.weather_code,temp=Number(j.current?.temperature_2m);if(wc===undefined||!Number.isFinite(temp))throw new Error('Clima incompleto');let weather=wc>=95?'storm':([51,53,55,56,57,61,63,65,66,67,80,81,82].includes(wc)?'rain':(temp<15?'cold':temp>=29?'hot':([1,2,3,45,48].includes(wc)?'cloud':'sun')));cfg.weather=weather;$('weather').value=weather;updateContext(true);status('Clima consultado mediante permissão. Temperatura '+temp.toFixed(1)+' °C.');log('clima recebido (localização não armazenada)');
+ }catch(e){status('Consulta não concluída ('+(e?.code===1?'acesso negado':e?.message||'sem conexão')+'). O simulador manual continua funcional.');}finally{weatherInFlight=false;$('weather-live').disabled=false;}}
+/* Partículas leves dentro do canvas exclusivo do pet. Sem canvas externo. */
+function resizeAmbience(w,h){if(!ambCtx)return;const dpr=Math.min(window.devicePixelRatio||1,1.75);ambient.width=Math.max(1,Math.floor(w*dpr));ambient.height=Math.max(1,Math.floor(h*dpr));ambCtx.setTransform(dpr,0,0,dpr,0,0);ambientSize={w,h};}
+function renderAmbience(){if(!ambCtx)return;const {w,h}=ambientSize;ambCtx.clearRect(0,0,w,h);const c=state.context;if(!c||!cfg.ambientEnabled||motionReduced())return;const t=state.t;ambCtx.save();
+ if(c.weather==='rain'||c.weather==='storm'){const n=c.weather==='storm'?28:18;ambCtx.strokeStyle='#89c5d9';ambCtx.lineWidth=1.1;for(let i=0;i<n;i++){const x=((i*43.67+t*41*(i%3+1))%(w+22))-9,y=((i*27.2+t*(60+i%5*14))%(h+20))-10;ambCtx.globalAlpha=.16+(i%4)*.065;ambCtx.beginPath();ambCtx.moveTo(x,y);ambCtx.lineTo(x-4,y+12);ambCtx.stroke();}}
+ if(c.weather==='cold'||c.holiday==='christmas'){for(let i=0;i<17;i++){const x=(i*53.7+Math.sin(t*.6+i)*12)%w,y=((i*37.1+t*(9+i%4*3))%(h+25))-12;ambCtx.fillStyle='#cee8e9';ambCtx.globalAlpha=.32+(i%4)*.13;ambCtx.beginPath();ambCtx.arc(x,y,1.2+i%3*.5,0,Math.PI*2);ambCtx.fill();}}
+ if(c.weather==='hot'||c.weather==='sun'){for(let j=0;j<4;j++){let xx=w*.2+(j*37+t*16)%w;ambCtx.strokeStyle='#ffba61';ambCtx.globalAlpha=.16;ambCtx.beginPath();ambCtx.moveTo(xx,h*.22);ambCtx.bezierCurveTo(xx-18,h*.30,xx+12,h*.39,xx-8,h*.45);ambCtx.stroke();}}
+ if(['children','newyear','carnival','easter','june'].includes(c.holiday)){for(let i=0;i<14;i++){let x=(i*33+Math.sin(t*.7+i)*16+w)%w,y=((i*30+t*19)%(h+24))-12;ambCtx.fillStyle=['#76f5ff','#f6a700','#ff6b00','#eee3bb'][i%4];ambCtx.globalAlpha=.45;ambCtx.fillRect(x,y,2.5,4.5);}}
+ if(c.sleeping){ambCtx.fillStyle='#d4e9e9';ambCtx.globalAlpha=.45;ambCtx.font='bold 15px ui-monospace,monospace';for(let i=0;i<3;i++){let yy=h*.24-(t*15+i*25)%75;ambCtx.fillText('z',w*.64+i*11,yy);}}
+ // Pequeno elemento espacial inspirado em desenho técnico.
+ ambCtx.globalAlpha=.3;ambCtx.strokeStyle='#72c2b4';ambCtx.setLineDash([2,5]);ambCtx.strokeRect(w*.08,h*.23,w*.83,h*.60);ambCtx.setLineDash([]);ambCtx.restore();}
+function pulse(type){if(motionReduced()){reactive(type==='double'?'surprised':type==='hover'?'curious':'confirming',700);state.dirty=true;return;}
+ if(type==='hover'){reactive('curious',850);state.pulse=Math.max(.11,state.pulse);}
+ else if(type==='double'){reactive('surprised',1100);state.shake=.20;state.pulse=.17;}
+ else{reactive('confirming',1200);state.pulse=.24;state.velY+=.58;createParticles(14);if(type==='click'){const c=state.context||{};const msg=c.holiday==='christmas'?'Até um bom presente começa com uma ideia bem desenhada.':c.holiday==='newyear'?'Novo ano, novas possibilidades para criar espaços.':c.holiday==='easter'?'Renovar também é imaginar novos começos.':c.holiday==='children'?'A imaginação é parte da construção.':c.weather==='rain'?'Dia de chuva: ideal para observar os detalhes com calma.':c.weather==='cold'?'Frio lá fora, ideias em movimento por aqui.':c.weather==='hot'?'Até no calor, vale projetar com precisão.':c.sleeping?'Eu estava descansando… quer explorar uma ideia?':'Olá! Eu sou o Block, um pequeno observador de grandes ideias.';popup('Block • interação',msg,true);}}
+ state.dirty=true;
+}
+function impact(direction,force=1){if(!cfg.scrollEnabled||motionReduced())return;
+ const t=now();if(t-state.lastImpact<450)return;state.lastImpact=t;
+ if(direction>0){state.velY-=2.25*force;state.velTilt+=1.5*force;state.squash=Math.min(.32,.18*force);reactive('surprised',760);flash('DOWN / BOUNCE');log('scroll rápido ↓  queda amortecida');}
+ else{state.velY+=3.5*force;state.velTilt-=1.35*force;state.spinV-=3.35*force;reactive('curious',900);flash('UP / LAUNCH');log('scroll rápido ↑  arremesso com giro');}
+ state.dirty=true;
+}
+function createParticles(n){if(motionReduced())return;for(let i=0;i<n;i++){const a=2*Math.PI*i/n+rand(-.17,.17);state.particles.push({a,r:.5,v:rand(.55,1.2),age:0,ttl:rand(.5,1.0),size:rand(.012,.03)});}}
+function updatePhysics(dt){const damp=Math.min(dt,.045),quiet=motionReduced();state.t+=damp;
+ const idle=cfg.idle&&!quiet ? (Math.sin(state.t*.54*cfg.idleSpeed)*.055):0;
+ const float=cfg.floating&&!quiet ? Math.sin(state.t*1.28)*.09:0;
+ const cursorPitch=cfg.lookAt&&state.over&&!quiet?(-state.mouseY*.075):0;
+ const cursorYaw=cfg.lookAt&&state.over&&!quiet?(state.mouseX*.085):0;
+ state.scrollVelocity=mix(state.scrollVelocity,0,1-Math.exp(-damp*3.5));
+ const response=springValue(state.physY,state.velY,0,damp,21*cfg.spring,7.3);state.physY=response[0];state.velY=response[1];
+ if(state.physY<-0.38){state.physY=-.38;state.velY=Math.abs(state.velY)*.35;state.squash=Math.max(state.squash,.13);}
+ const tilt=springValue(state.tilt,state.velTilt,0,damp,15*cfg.spring,7.6);state.tilt=tilt[0];state.velTilt=tilt[1];
+ state.spin+=state.spinV*damp;state.spinV*=Math.exp(-damp*5);state.spin*=Math.exp(-damp*3.5);
+ state.vibrationPhase+=damp*37;state.vibration*=Math.exp(-damp*6.4);state.squash*=Math.exp(-damp*7.0);state.pulse*=Math.exp(-damp*5.3);state.shake*=Math.exp(-damp*8);
+ for(const p of state.particles){p.age+=damp;p.r+=p.v*damp;}state.particles=state.particles.filter(p=>p.age<p.ttl);
+ if(!quiet&&cfg.blinks&&now()>state.nextBlink&&state.blinkEnd<now()){state.blinkEnd=now()+125;state.nextBlink=now()+rand(2400,6200);state.dirty=true;}
+ if(cfg.glitches&&!quiet&&now()>state.nextGlitch&&state.glitchUntil<now()){state.glitchUntil=now()+rand(130,260);state.nextGlitch=now()+rand(3700,8800);state.dirty=true;}
+ if(state.blinkEnd&&now()>state.blinkEnd){state.blinkEnd=0;state.dirty=true;}
+ if(state.glitchUntil&&now()>state.glitchUntil){state.glitchUntil=0;state.dirty=true;}
+ const spinX=(cfg.idle&&!quiet? Math.sin(state.t*.31*cfg.idleSpeed)*.035:0)+state.tilt*.33+cursorPitch;
+ const spinY=-.27+idle+cursorYaw+(state.context?.weather==='rain'?.025:0);
+ const spinZ=clamp(state.spin,-.32,.32)+(!quiet?Math.sin(state.t*.43)*.025:0)+state.shake*Math.sin(state.t*41)+(state.vibration&&!quiet?Math.sin(state.vibrationPhase*2.8)*state.vibration*.08:0);
+ const translationY=float+state.physY;
+ const scaleY=1-state.squash+state.pulse*.58,scaleX=1+state.squash*.34+state.pulse*.55;
+ state.pose={x:spinX,y:spinY,z:spinZ,translationY,scaleX,scaleY};
+ applyFaceLock();
+}
+/* ======== THREE.JS: Geometria real, pixels por raycast sobre o sólido ======== */
+function initThree(){if(!window.THREE)return null;const T=window.THREE;let renderer,scene,camera,rig,body,edges,inner,halo,shadow,eyeMeshes=[],pixelsRoot,meshShape='';
+ try{renderer=new T.WebGLRenderer({canvas,alpha:true,antialias:true,powerPreference:'high-performance',preserveDrawingBuffer:false});renderer.setClearColor(0x000000,0);renderer.outputColorSpace=T.SRGBColorSpace;renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=1.35;}catch(e){log('Three.js indisponível: '+e.message);return null;}
+ scene=new T.Scene();camera=new T.PerspectiveCamera(35,1,.1,100);camera.position.set(0,.12,5.20);camera.lookAt(0,0,0);
+ scene.add(new T.AmbientLight(0xd3f5ff,.72));const key=new T.DirectionalLight(0xffffff,2.1);key.position.set(-3.8,4,5);scene.add(key);const rim=new T.DirectionalLight(0x6fffe0,1.45);rim.position.set(3,-1,-4);scene.add(rim);const coreLight=new T.PointLight(cfg.colorCore,1.5,6);coreLight.position.set(0,0,.4);scene.add(coreLight);
+ rig=new T.Group();scene.add(rig);pixelsRoot=new T.Group();rig.add(pixelsRoot);
+ const bodyMat=new T.MeshPhysicalMaterial({color:cfg.colorBase,metalness:.57,roughness:.28,transparent:true,opacity:.87,flatShading:true,side:T.DoubleSide,depthWrite:false,clearcoat:.52,clearcoatRoughness:.23});
+ const lineMat=new T.LineBasicMaterial({color:cfg.colorEdge,transparent:true,opacity:.91});
+ const coreMat=new T.MeshBasicMaterial({color:cfg.colorCore,transparent:true,opacity:.37,blending:T.AdditiveBlending,depthWrite:false});
+ const pixelMaterial=new T.MeshBasicMaterial({color:cfg.colorEdge,transparent:true,opacity:1,side:T.DoubleSide,blending:T.AdditiveBlending,depthWrite:false});
+ const spriteCanvas=document.createElement('canvas');spriteCanvas.width=128;spriteCanvas.height=128;const sctx=spriteCanvas.getContext('2d');
+ const grad=sctx.createRadialGradient(64,64,3,64,64,63);grad.addColorStop(0,'rgba(255,255,255,.52)');grad.addColorStop(.25,'rgba(255,255,255,.24)');grad.addColorStop(1,'rgba(255,255,255,0)');sctx.fillStyle=grad;sctx.fillRect(0,0,128,128);
+ const haloTex=new T.CanvasTexture(spriteCanvas);halo=new T.Sprite(new T.SpriteMaterial({map:haloTex,color:cfg.colorCore,transparent:true,opacity:.19,depthWrite:false,blending:T.AdditiveBlending}));halo.scale.set(4.25,4.25,1);halo.position.z=-.5;scene.add(halo);
+ const shCanvas=document.createElement('canvas');shCanvas.width=128;shCanvas.height=128;const shctx=shCanvas.getContext('2d');const shGrad=shctx.createRadialGradient(64,64,4,64,64,62);shGrad.addColorStop(0,'rgba(255,255,255,.78)');shGrad.addColorStop(.35,'rgba(255,255,255,.24)');shGrad.addColorStop(1,'rgba(255,255,255,0)');shctx.fillStyle=shGrad;shctx.fillRect(0,0,128,128);const shTex=new T.CanvasTexture(shCanvas);
+ shadow=new T.Mesh(new T.PlaneGeometry(3.65,1.10),new T.MeshBasicMaterial({map:shTex,color:cfg.colorShadow,transparent:true,opacity:.63,depthWrite:false,side:T.DoubleSide}));shadow.position.set(0,-1.67,-.45);shadow.rotation.x=-Math.PI/2.7;scene.add(shadow);
+ const facePlateMat=new T.MeshPhysicalMaterial({color:0x071b20,metalness:.26,roughness:.29,transparent:true,opacity:.90,clearcoat:.3,depthWrite:false,side:T.DoubleSide});
+ const pixGeo=new T.PlaneGeometry(.102,.102);
+ for(let row=0;row<NR;row++)for(let col=0;col<NC;col++){const p=new T.Mesh(pixGeo,pixelMaterial.clone());p.userData={col,row};pixelsRoot.add(p);eyeMeshes.push(p);}
+ function geometryFor(s){let g;if(s==='cube')g=new T.BoxGeometry(2.12,2.12,2.12);else if(s==='octa')g=new T.OctahedronGeometry(1.5,0);else if(s==='sphere')g=new T.IcosahedronGeometry(1.37,1);else if(s==='dodeca')g=new T.DodecahedronGeometry(1.40,0);else g=new T.IcosahedronGeometry(1.37,0);if(s!=='cube'){g.rotateY(.12);g.rotateX(-.07)}g.computeVertexNormals();return g;}
+ function rebuild(){if(body){rig.remove(body);body.geometry.dispose();}if(edges){rig.remove(edges);edges.geometry.dispose();}if(inner){rig.remove(inner);inner.geometry.dispose();}if(facePlate){rig.remove(facePlate);facePlate.geometry.dispose();facePlate=null;}const g=geometryFor(cfg.shape);body=new T.Mesh(g,bodyMat);rig.add(body);if(cfg.shape==='cube'){const sh=new T.Shape(),w=.99,h=.82,r=.17;sh.moveTo(-w+r,-h);sh.lineTo(w-r,-h);sh.quadraticCurveTo(w,-h,w,-h+r);sh.lineTo(w,h-r);sh.quadraticCurveTo(w,h,w-r,h);sh.lineTo(-w+r,h);sh.quadraticCurveTo(-w,h,-w,h-r);sh.lineTo(-w,-h+r);sh.quadraticCurveTo(-w,-h,-w+r,-h);facePlate=new T.Mesh(new T.ShapeGeometry(sh),facePlateMat);facePlate.position.z=1.065;rig.add(facePlate);}edges=new T.LineSegments(new T.EdgesGeometry(g,18),lineMat);rig.add(edges);inner=new T.Mesh(cfg.shape==='cube'?new T.BoxGeometry(.94,.94,.94):new T.IcosahedronGeometry(.62,1),coreMat);rig.add(inner);meshShape=cfg.shape;placePixels();updateMaterials();updateFace();}
+ function placePixels(){// Raios interceptam exatamente a superfície visível da geometria.
+  const ray=new T.Raycaster(),normal=new T.Vector3(),pt=new T.Vector3(),forward=new T.Vector3(0,0,1);
+  // Malha temporária neutra: evita depender da transformação atual da rig
+  // quando o desenvolvedor troca a geometria durante uma animação.
+  const referenceMesh=new T.Mesh(body.geometry,new T.MeshBasicMaterial({side:T.DoubleSide}));referenceMesh.updateMatrixWorld(true);
+  for(let i=0;i<eyeMeshes.length;i++){let p=eyeMeshes[i];const x=(p.userData.col-7)*.128*cfg.faceScale,y=(5-p.userData.row)*.131*cfg.faceScale;ray.set(new T.Vector3(x,y,6),new T.Vector3(0,0,-1));let hits=ray.intersectObject(referenceMesh,false);
+   if(hits.length){pt.copy(hits[0].point);normal.copy(hits[0].face.normal);p.position.copy(pt).addScaledVector(normal,.052);p.quaternion.setFromUnitVectors(forward,normal);p.visible=false;p.userData.valid=true;}
+   else{p.userData.valid=false;p.visible=false;}
+  }
+  referenceMesh.material.dispose();
+ }
+ let lastFace='';function updateFace(){let expression=effectiveFace();if(!state.dirty&&expression===lastFace&&expression!=='processing'&&expression!=='glitch')return;lastFace=expression;const visible=pixelMask(expression,state.t);for(const p of eyeMeshes){p.visible=p.userData.valid&&visible.has(p.userData.col+','+p.userData.row);}}
+ function updateMaterials(){bodyMat.color.set(cfg.colorBase);lineMat.color.set(cfg.colorEdge);coreMat.color.set(cfg.colorCore);coreMat.opacity=.28+cfg.glow*.17;pixelMaterial.color.set(cfg.colorEdge);eyeMeshes.forEach(p=>p.material.color.set(cfg.colorEdge));halo.material.color.set(cfg.colorCore);halo.material.opacity=.10+cfg.glow*.18;coreLight.color.set(cfg.colorCore);coreLight.intensity=.45+cfg.glow*1.25;shadow.material.color.set(cfg.colorShadow);body.visible=cfg.mode!=='wireframe';edges.visible=cfg.mode!=='solid';inner.visible=cfg.glow>.02;if(facePlate)facePlate.visible=cfg.shape==='cube';state.dirty=true;}
+ function resize(w,h){renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,w<700?1.3:1.75));renderer.setSize(w,h,false);camera.aspect=w/h;camera.fov=w<700?44:35;camera.updateProjectionMatrix();}
+ function render(){const p=state.pose;const hourDim=state.glowTemporal;coreLight.intensity=(.45+cfg.glow*1.25)*hourDim;halo.material.opacity=(.10+cfg.glow*.18)*hourDim;eyeMeshes.forEach(v=>{v.material.opacity=.36+.64*hourDim;});rig.position.y=p.translationY;rig.position.x=(state.vibration&&!motionReduced()?Math.sin(state.vibrationPhase*1.75)*state.vibration*.11:0);rig.rotation.set(p.x,p.y,p.z);rig.scale.set(p.scaleX,p.scaleY,p.scaleX);halo.position.y=p.translationY;shadow.scale.setScalar(1+Math.max(0,p.translationY)*.16);shadow.material.opacity=clamp(.63-p.translationY*.15,.22,.8);updateFace();renderer.render(scene,camera);state.dirty=false;}
+ function dispose(){renderer.dispose();}
+ rebuild();return{rebuild,updateMaterials,updateFace,resize,render,dispose,hitTest:(x,y)=>{const ray=new T.Raycaster();ray.setFromCamera(new T.Vector2(x,y),camera);return body&&ray.intersectObject(body,false).length>0},name:'Three.js / WebGL'};
+}
+/* ======== CONTINGÊNCIA OFFLINE: projeção de malhas 3D em Canvas 2D ========
+   Sem Three.js por falta de acesso à CDN, ainda é possível testar o painel,
+   faces, gestos, scroll, molas e exportação no MESMO HTML e sem rede.
+   Este modo de contingência não substitui o renderizador Three.js.
+   ======================================================================== */
+function initOffline(){const ctx=canvas.getContext('2d',{alpha:true});if(!ctx)return null;let w=1,h=1;let cache=null;
+ const V=(x,y,z)=>[x,y,z],norm=v=>{const l=Math.hypot(...v)||1;return v.map(x=>x/l)},cross=(a,b)=>[a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]],sub=(a,b)=>a.map((x,i)=>x-b[i]);
+ function ico(){const p=(1+Math.sqrt(5))/2;const verts=[[-1,p,0],[1,p,0],[-1,-p,0],[1,-p,0],[0,-1,p],[0,1,p],[0,-1,-p],[0,1,-p],[p,0,-1],[p,0,1],[-p,0,-1],[-p,0,1]].map(norm);const faces=[[0,11,5],[0,5,1],[0,1,7],[0,7,10],[0,10,11],[1,5,9],[5,11,4],[11,10,2],[10,7,6],[7,1,8],[3,9,4],[3,4,2],[3,2,6],[3,6,8],[3,8,9],[4,9,5],[2,4,11],[6,2,10],[8,6,7],[9,8,1]];return{verts,faces};}
+ function shape(){if(cfg.shape==='cube'){const v=[[-1,-1,-1],[1,-1,-1],[1,1,-1],[-1,1,-1],[-1,-1,1],[1,-1,1],[1,1,1],[-1,1,1]];return{verts:v,faces:[[0,3,2,1],[4,5,6,7],[0,1,5,4],[1,2,6,5],[2,3,7,6],[3,0,4,7]]}};
+ if(cfg.shape==='octa')return{verts:[[0,1.5,0],[1.5,0,0],[0,0,1.5],[-1.5,0,0],[0,0,-1.5],[0,-1.5,0]],faces:[[0,1,2],[0,2,3],[0,3,4],[0,4,1],[5,2,1],[5,3,2],[5,4,3],[5,1,4]]};
+ let i=ico();if(cfg.shape==='dodeca'){let dual=i.faces.map(f=>norm(f.reduce((a,idx)=>a.map((x,j)=>x+i.verts[idx][j]),[0,0,0])));let polygons=[];
+ for(let idx=0;idx<i.verts.length;idx++){const axis=i.verts[idx],up=Math.abs(axis[2])<.9?[0,0,1]:[0,1,0],u=norm(cross(axis,up)),v=cross(axis,u);let adjacent=i.faces.map((f,j)=>f.includes(idx)?j:-1).filter(j=>j>=0);adjacent.sort((a,b)=>Math.atan2(dual[a].reduce((s,x,k)=>s+x*v[k],0),dual[a].reduce((s,x,k)=>s+x*u[k],0))-Math.atan2(dual[b].reduce((s,x,k)=>s+x*v[k],0),dual[b].reduce((s,x,k)=>s+x*u[k],0)));polygons.push(adjacent)}return{verts:dual.map(p=>p.map(n=>n*1.34)),faces:polygons};}
+ if(cfg.shape==='sphere'){const mid=(a,b)=>norm(i.verts[a].map((x,j)=>(x+i.verts[b][j])*.5));let v=i.verts.slice();let fs=[];let memo={};const m=(a,b)=>{const k=[a,b].sort((x,y)=>x-y).join('-');if(memo[k]!==undefined)return memo[k];const j=v.length;v.push(mid(a,b));memo[k]=j;return j};for(const [a,b,c] of i.faces){const ab=m(a,b),bc=m(b,c),ca=m(c,a);fs.push([a,ab,ca],[b,bc,ab],[c,ca,bc],[ab,bc,ca])}return{verts:v.map(p=>p.map(x=>x*1.35)),faces:fs};}
+ return{verts:i.verts.map(p=>p.map(x=>x*1.43)),faces:i.faces};
+ }
+ function rgb(hex){return[1,3,5].map(i=>parseInt(hex.slice(i,i+2),16))}
+ function transform(p,rx,ry,rz){let[x,y,z]=p;let c=Math.cos(rx),s=Math.sin(rx);[y,z]=[y*c-z*s,y*s+z*c];c=Math.cos(ry);s=Math.sin(ry);[x,z]=[x*c+z*s,-x*s+z*c];c=Math.cos(rz);s=Math.sin(rz);[x,y]=[x*c-y*s,x*s+y*c];return[x,y,z];}
+ function project(p,cx,cy,S){const depth=5.7/(5.7-p[2]*.25);return[cx+p[0]*S*depth,cy-p[1]*S*depth,p[2]];}
+ function resize(width,height){w=width;h=height;const dpr=Math.min(window.devicePixelRatio||1,window.innerWidth<700?1.3:1.75);canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);}
+ function render(){ctx.clearRect(0,0,w,h);const S=Math.min(w*.33,h*.34,120);const cx=w*.5,cy=h*.53;const p=state.pose;const bodyY=p.translationY*S;const mesh=shape();
+ const origin=project([0,p.translationY,0],cx,cy,S),glow=S*(1.65+cfg.glow*.40*state.glowTemporal);
+ let grd=ctx.createRadialGradient(origin[0],origin[1],0,origin[0],origin[1],glow);grd.addColorStop(0,cfg.colorCore+Math.round(84*state.glowTemporal).toString(16).padStart(2,'0'));grd.addColorStop(.42,cfg.colorCore+'12');grd.addColorStop(1,'transparent');ctx.fillStyle=grd;ctx.fillRect(cx-glow,cy-glow-bodyY,glow*2,glow*2);
+ const shadowY=cy+S*1.20;ctx.save();ctx.translate(cx,shadowY);ctx.scale(S*1.6,S*.29);let s=ctx.createRadialGradient(0,0,0,0,0,1);s.addColorStop(0,cfg.colorShadow+'f0');s.addColorStop(.45,cfg.colorShadow+'84');s.addColorStop(1,cfg.colorShadow+'00');ctx.fillStyle=s;ctx.beginPath();ctx.arc(0,0,1,0,Math.PI*2);ctx.fill();ctx.restore();
+ let verts=mesh.verts.map(v=>transform([v[0]*p.scaleX,v[1]*p.scaleY,v[2]*p.scaleX],p.x-.13,p.y,p.z)).map(v=>[v[0],v[1]+p.translationY,v[2]]);let screen=verts.map(v=>project(v,cx,cy,S));
+ const faces=mesh.faces.map((f,idx)=>{const ps=f.map(j=>verts[j]);const n=norm(cross(sub(ps[1],ps[0]),sub(ps[2],ps[0])));const center=ps.reduce((a,v)=>a.map((x,j)=>x+v[j]/ps.length),[0,0,0]);return{f,n,center,z:center[2],idx}}).sort((a,b)=>a.z-b.z);
+ const base=rgb(cfg.colorBase),accent=rgb(cfg.colorEdge);
+ for(const fac of faces){const n=fac.n;const intensity=.44+Math.max(0,n[0]*-.45+n[1]*.68+n[2]*.72)*.59;const col=base.map((c,i)=>clamp(Math.round(c*intensity+accent[i]*.12),0,255));ctx.beginPath();fac.f.forEach((j,i)=>{const q=screen[j];i?ctx.lineTo(q[0],q[1]):ctx.moveTo(q[0],q[1])});ctx.closePath();if(cfg.mode!=='wireframe'){ctx.fillStyle=`rgba(${col.join(',')},.89)`;ctx.fill()}if(cfg.mode!=='solid'){ctx.strokeStyle=cfg.colorEdge+'b7';ctx.lineWidth=Math.max(.9,S*.008);ctx.shadowColor=cfg.colorEdge;ctx.shadowBlur=6*cfg.glow*state.glowTemporal;ctx.stroke();ctx.shadowBlur=0;}}
+ if(cfg.glow>0.02){const shine=ctx.createRadialGradient(cx,cy-bodyY,0,cx,cy-bodyY,S*.95);shine.addColorStop(0,cfg.colorCore+Math.round(clamp(cfg.glow*80,0,125)).toString(16).padStart(2,'0'));shine.addColorStop(1,'transparent');ctx.fillStyle=shine;ctx.beginPath();ctx.arc(cx,cy-bodyY,S*.98,0,Math.PI*2);ctx.fill();}
+ if(cfg.shape==='cube'){ctx.save();ctx.translate(cx,cy-p.translationY*S);ctx.rotate(p.z*.19);ctx.transform(1,0,-.04,1,0,0);const fw=S*1.98,fh=S*1.64;ctx.fillStyle='rgba(5,19,22,.91)';ctx.beginPath();ctx.roundRect(-fw/2,-fh/2,fw,fh,S*.13);ctx.fill();ctx.strokeStyle=cfg.colorEdge+'45';ctx.lineWidth=1;ctx.stroke();ctx.restore();}
+ const visible=pixelMask(effectiveFace(),state.t);const pixelS=Math.max(4,S*.103*cfg.faceScale);ctx.fillStyle=cfg.colorEdge;ctx.shadowColor=cfg.colorEdge;ctx.shadowBlur=6*cfg.glow*state.glowTemporal;
+ for(const key of visible){let[c,r]=key.split(',').map(Number);let x=(c-7)*S*.128*cfg.faceScale,y=(r-5)*S*.131*cfg.faceScale;
+ const jitter=effectiveFace()==='glitch'?(Math.sin(c*52+r*17+state.t*15)*S*.045):0;
+ let rotated=transform([(x+jitter)/S,-y/S,1.10],p.x-.03,p.y*.26,p.z*.25);ctx.globalAlpha=.96;ctx.fillRect(cx+rotated[0]*S-pixelS/2,cy-(rotated[1]+p.translationY)*S-pixelS/2,pixelS,pixelS);}
+ ctx.globalAlpha=1;ctx.shadowBlur=0;
+ for(const prt of state.particles){const alpha=clamp(1-prt.age/prt.ttl,0,1);const x=cx+Math.cos(prt.a)*S*(.9+prt.r),y=cy-bodyY+Math.sin(prt.a)*S*(.9+prt.r);ctx.globalAlpha=alpha;ctx.fillStyle=cfg.colorEdge;ctx.fillRect(x,y,3,3);}ctx.globalAlpha=1;
+ state.dirty=false;
+ }
+ return{resize,render,rebuild:()=>state.dirty=true,updateMaterials:()=>state.dirty=true,updateFace:()=>state.dirty=true,hitTest:(x,y)=>Math.hypot(x*w*.5,y*h*.5)<Math.min(w*.33,h*.34,120)*1.25,name:'Canvas 3D / offline'};
+}
+/* ======== Controles, carregamento, painel arrastável, scroll ======== */
+function setSetting(key,value){cfg[key]=value;
+ if(key==='shape'){renderer3D.rebuild();log('geometria · '+value);}
+ if(key==='faceScale'){renderer3D.rebuild();}if(['mode','colorBase','colorEdge','colorCore','colorShadow','glow'].includes(key))renderer3D.updateMaterials();if(key==='colorBase')updateContext(true);if(['autoContext','weather','holiday','testHour','testDate'].includes(key)){state.contextHoldUntil=0;updateContext(true);} 
+ if(key==='expression'){state.contextHoldUntil=now()+6500;setFace(value);log('expressão manual · '+expressionNames[value]);}
+ if(key==='clientType'||key==='loyalty'||key==='journey'){state.nextRandomFace=0;updateContext(true);log('perfil simulado · '+value);}
+ if(key==='reducedMotion')log('movimento reduzido · '+(motionReduced()?'ativo':'inativo'));
+ state.dirty=true;
+}
+function wireInputs(){root.querySelectorAll('[data-setting]').forEach(el=>{const key=el.dataset.setting;const refresh=()=>{let val=el.type==='checkbox'?el.checked:el.type==='range'||el.type==='number'?Number(el.value):el.value;setSetting(key,val);if(el.type==='range'&&el.nextElementSibling&&el.nextElementSibling.tagName==='OUTPUT')el.nextElementSibling.textContent=Number(val).toFixed(2);};el.addEventListener(el.type==='range'||el.type==='color'?'input':'change',refresh);});
+ root.querySelectorAll('[data-palette]').forEach(b=>{const cs=palettes[b.dataset.palette];b.setAttribute('aria-label',paletteLabels[b.dataset.palette]);const sw=document.createElement('span');sw.className='iqe-sandbox-palette-swatches';sw.setAttribute('aria-hidden','true');cs.forEach(c=>{const chip=document.createElement('i');chip.style.background=c;sw.appendChild(chip)});b.appendChild(sw);b.setAttribute('aria-pressed',String(b.dataset.palette===cfg.paletteId))});
+ $('palettes').addEventListener('click',event=>{const btn=event.target.closest('[data-palette]');if(!btn)return;const c=palettes[btn.dataset.palette];cfg.paletteId=btn.dataset.palette;['colorBase','colorEdge','colorCore','colorShadow'].forEach((key,i)=>{const input=root.querySelector('[data-setting="'+key+'"]');input.value=c[i];setSetting(key,c[i]);});root.querySelectorAll('[data-palette]').forEach(b=>b.setAttribute('aria-pressed',String(b===btn)));updateContext(true);log('paleta · '+paletteLabels[cfg.paletteId]);});
+ $('force').addEventListener('click',()=>{const e=$('expression').value;state.contextHoldUntil=now()+6500;setFace(e,6500);log('estado forçado · '+expressionNames[e]);flash(expressionNames[e]);});
+ $('auto-face').addEventListener('click',()=>{state.faceUntil=0;state.contextHoldUntil=0;state.nextRandomFace=0;updateContext(true);log('expressões automáticas retomadas');});
+ $('click').addEventListener('click',()=>pulse('click'));$('hover').addEventListener('click',()=>pulse('hover'));$('double').addEventListener('click',()=>pulse('double'));
+ $('trigger-click').addEventListener('click',()=>pulse('click'));$('trigger-fall').addEventListener('click',()=>impact(1,1));$('trigger-rise').addEventListener('click',()=>impact(-1,1));
+ $('pause').addEventListener('click',()=>{state.running=!state.running;$('pause').textContent=state.running?'Pausar':'Retomar';state.dirty=true;log(state.running?'simulação retomada':'simulação pausada');if(state.running)requestAnimationFrame(loop);else renderCurrent();});
+ $('reset').addEventListener('click',()=>{Object.assign(cfg,defaults);root.querySelectorAll('[data-setting]').forEach(el=>{let val=cfg[el.dataset.setting];if(el.type==='checkbox')el.checked=val;else el.value=String(val);if(el.type==='range'&&el.nextElementSibling?.tagName==='OUTPUT')el.nextElementSibling.textContent=Number(val).toFixed(2);});root.querySelectorAll('[data-palette]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.palette===cfg.paletteId)));state.physY=state.velY=state.tilt=state.velTilt=state.spin=state.spinV=state.squash=state.pulse=state.shake=state.vibration=0;state.contextHoldUntil=0;state.particles=[];state.scrollVelocity=0;state.lastImpact=0;state.nextRandomFace=0;setFace('observer');renderer3D.rebuild();updateContext(true);renderer3D.updateMaterials();stage.scrollTop=0;state.dirty=true;flash('RESET / DEFAULTS');log('configuração restaurada');});
+ $('export').addEventListener('click',()=>{const exported={schema:'iqe.mascot.sandbox/v1',purpose:'developer-playground-only',exportedAt:new Date().toISOString(),engine:renderer3D.name,identity:{name:'Block',nameStatus:'provisório',brand:'Franco Romeu — Arte + Engenharia',mode:'pet-mascot-prototype',dock:'bottom-right',gaze:'left',sandboxOnly:true},geometry:{shape:cfg.shape,displayMode:cfg.mode,customGLB:null},colors:{paletteId:cfg.paletteId,paletteLabel:paletteLabels[cfg.paletteId],background:palettes[cfg.paletteId][3],body:cfg.colorBase,edges:cfg.colorEdge,internal:cfg.colorCore,contactShadow:cfg.colorShadow,glow:cfg.glow},face:{defaultExpression:cfg.expression,procedural:true,scale:cfg.faceScale,autonomousDayNight:cfg.autoContext},animation:{idle:cfg.idle,floating:cfg.floating,randomBlinks:cfg.blinks,sporadicGlitches:cfg.glitches,cursorTracking:cfg.lookAt,scrollPhysics:cfg.scrollEnabled,idleSpeed:cfg.idleSpeed,spring:cfg.spring},customerSimulation:{clientType:cfg.clientType,loyalty:cfg.loyalty,journey:cfg.journey,realCustomerData:false},context:{timezone:'America/Sao_Paulo',automaticDayNight:cfg.autoContext,simulatedHour:cfg.testHour,simulatedDate:cfg.testDate,monthlyCalendar:monthEvents(state.context?.year||spParts().year,state.context?.month||spParts().month),temporalBrightness:state.glowTemporal,temporalMood:state.lightPeriod,weather:cfg.weather,holiday:cfg.holiday,passive:cfg.passive,ambientEnabled:cfg.ambientEnabled,popupVibration:cfg.popupVibrate,vibrationPower:cfg.vibrationPower,weatherIsSimulation:cfg.weather!=='unknown'},accessibility:{reducedMotion:cfg.reducedMotion,systemReducedMotion:state.systemReduced,fpsCap:cfg.fpsCap}};const json=JSON.stringify(exported,null,2);const blob=new Blob([json],{type:'application/json;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='block-mascot-config.json';root.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1500);status('Configuração exportada sem alterar o site.');log('export · block-mascot-config.json');});
+
+ // Laboratório de contexto: botões permanecem dentro desta raiz.
+ $('wake').addEventListener('click',()=>{state.contextManuallySleepUntil=0;reactive('happy',10000);state.contextHoldUntil=now()+10000;state.pulse=.13;popup('Block acordou', 'Olá! Vamos dar forma a uma boa ideia?',true);});
+ $('sleep').addEventListener('click',()=>{state.contextManuallySleepUntil=now()+20000;reactive('sleeping',20000);state.contextHoldUntil=now()+20000;popup('Pausa para recarregar','Até os bons projetos pedem descanso.',false);});
+ $('inspect').addEventListener('click',()=>{reactive('attentive',3000);state.pulse=.12;state.personality='inspeção';popup('Inspeção técnica','Primeiro observar. Depois medir e projetar.',true);});
+ $('plan').addEventListener('click',()=>{reactive('thinking',3000);state.personality='projeto';popup('Traço + precisão','Cada detalhe começa com uma boa pergunta.',true);});
+ root.querySelectorAll('[data-demo-popup]').forEach(b=>b.addEventListener('click',()=>{const map={welcome:['Bem-vindo','Eu sou o Block. Observo, aprendo e ajudo a organizar ideias.','happy'],measurement:['Medições','Uma medida conferida vale mais que um palpite.','attentive'],design:['Projeto','É no encontro de arte e engenharia que tudo ganha forma.','thinking'],notice:['Atenção','Este é um alerta de teste. Nada foi enviado ao IQE real.','surprised']};const [title,msg,exp]=map[b.dataset.demoPopup];reactive(exp,1900);popup(title,msg,true);}));
+ $('weather-live').addEventListener('click',lookupWeather);
+ const debug=$('debug'),debugBtn=$('debug-toggle');function foldDebug(closed){debug.classList.toggle('iqe-sandbox-debug-closed',closed);debugBtn.textContent=closed?'+':'−';debugBtn.setAttribute('aria-expanded',String(!closed));}debugBtn.addEventListener('click',()=>foldDebug(!debug.classList.contains('iqe-sandbox-debug-closed')));if(window.innerWidth<640)foldDebug(true);
+ const panel=$('panel'),header=$('panelhead'),toggle=$('toggle-panel');function fold(on){panel.classList.toggle('iqe-sandbox-collapsed',on);toggle.textContent=on?'+':'−';toggle.setAttribute('aria-expanded',String(!on));}
+ toggle.addEventListener('click',()=>fold(!panel.classList.contains('iqe-sandbox-collapsed')));
+ // Arrastar só pelo cabeçalho. Não ativa se o usuário pressionar o botão.
+ let drag=null;header.addEventListener('pointerdown',e=>{if(e.target.closest('button')||e.button!==0||window.innerWidth<640)return;const r=panel.getBoundingClientRect();drag={sx:e.clientX,sy:e.clientY,x:r.left,y:r.top};header.setPointerCapture(e.pointerId);});header.addEventListener('pointermove',e=>{if(!drag)return;const x=clamp(drag.x+e.clientX-drag.sx,4,window.innerWidth-panel.offsetWidth-4);const y=clamp(drag.y+e.clientY-drag.sy,4,window.innerHeight-Math.min(panel.offsetHeight,60)-4);panel.style.left=x+'px';panel.style.top=y+'px';panel.style.right='auto';});header.addEventListener('pointerup',()=>drag=null);header.addEventListener('pointercancel',()=>drag=null);
+ if(window.innerWidth<640)fold(true);
+}
+function wireScroll(){const update=()=>{const stamp=now(),pos=stage.scrollTop,max=Math.max(1,stage.scrollHeight-stage.clientHeight);const dt=stamp-state.lastScrollTime;let velocity=dt>4&&dt<1000?(pos-state.lastScrollTop)/(dt/1000):0;state.lastScrollTime=stamp;state.lastScrollTop=pos;state.scrollTop=pos;state.scrollVelocity=mix(state.scrollVelocity,velocity,.48);$('scrollfill').style.height=(pos/max*100).toFixed(1)+'%';$('progress').textContent=String(Math.round(pos/max*100)).padStart(2,'0')+'%';if(cfg.scrollEnabled&&Math.abs(velocity)>1250){impact(velocity>0?1:-1,clamp(Math.abs(velocity)/2500,.67,1.30));}else if(cfg.scrollEnabled&&Math.abs(velocity)>65&&Math.abs(velocity)<850){state.tilt+=clamp(velocity*.000002,-.035,.035);}};
+ stage.addEventListener('scroll',update,{passive:true});
+ // Em superfícies com wheel que agregam deltaY, usa-se também o evento
+ // bruto para identificar gestos rápidos com precisão.
+ stage.addEventListener('wheel',e=>{if(e.target.closest('.iqe-sandbox-panel'))return;const dy=e.deltaY*(e.deltaMode===1?16:e.deltaMode===2?stageHeight:1);if(Math.abs(dy)>35&&cfg.scrollEnabled){const strength=clamp(Math.abs(dy)/160,.66,1.2);impact(dy>0?1:-1,strength);}}, {passive:true});
+}
+function wireMouse(){canvas.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();pulse('click');}});canvas.addEventListener('pointermove',e=>{const r=canvas.getBoundingClientRect();const x=clamp((e.clientX-r.left)/r.width*2-1,-1,1),y=clamp(-((e.clientY-r.top)/r.height*2-1),-1,1);state.mouseX=x;state.mouseY=y;state.over=true;const isHit=renderer3D.hitTest(x,y);if(isHit&&!state.hover){state.hover=true;pulse('hover');}if(!isHit)state.hover=false;canvas.style.cursor=isHit?'pointer':'grab';});canvas.addEventListener('pointerleave',()=>{state.over=false;state.hover=false;canvas.style.cursor='grab';});canvas.addEventListener('click',e=>{const r=canvas.getBoundingClientRect();const x=(e.clientX-r.left)/r.width*2-1,y=-((e.clientY-r.top)/r.height*2-1);if(renderer3D.hitTest(x,y))pulse('click');});canvas.addEventListener('dblclick',e=>{e.preventDefault();const r=canvas.getBoundingClientRect();const x=(e.clientX-r.left)/r.width*2-1,y=-((e.clientY-r.top)/r.height*2-1);if(renderer3D.hitTest(x,y))pulse('double');});}
+function updateDebug(){const t=now();if(t-lastDebug<130)return;lastDebug=t;const p=state.pose||{x:0,y:0,z:0};$('m-render').textContent=renderer3D.name;$('m-face').textContent=expressionNames[effectiveFace()]||state.face;$('m-fps').textContent=Math.round(state.fps)||'—';$('m-scroll').textContent=Math.round(state.scrollVelocity);$('m-rot').textContent=[p.x,p.y,p.z].map(v=>Math.round(v*180/Math.PI)).join(' / ');$('m-mouse').textContent=state.hover?'hover':state.over?'movendo':'fora';$('m-context').textContent=(state.context?.timeLabel||'—')+' / '+(state.context?.weather||'—');$('m-mood').textContent=state.personality;$('m-state').textContent=!state.visible||!state.pageVisible?'sleep':!state.running?'paused':Math.abs(state.velY)>.23?'physics':'idle';}
+function renderCurrent(){if(!renderer3D)return;renderer3D.render();renderAmbience();updateDebug();}
+function loop(timestamp){if(!state.running||!state.visible||!state.pageVisible)return;
+ if(!state.lastFrame)state.lastFrame=timestamp;const dt=Math.min((timestamp-state.lastFrame)/1000,.075);const cap=1000/(window.innerWidth<600?Math.min(Number(cfg.fpsCap),45):Number(cfg.fpsCap));if(timestamp-state.frameStart<cap-.5){requestAnimationFrame(loop);return;}state.frameStart=timestamp;state.lastFrame=timestamp;
+ updateContext(false);runPassive();updatePhysics(dt);renderCurrent();if(dt>0&&dt<.4){state.frameSamples.push(1/dt);if(state.frameSamples.length>22)state.frameSamples.shift();state.fps=state.frameSamples.reduce((a,b)=>a+b,0)/state.frameSamples.length;}
+ requestAnimationFrame(loop);
+}
+function start(){wireInputs();renderer3D=initOffline();if(!renderer3D){status('Erro: Canvas indisponível neste navegador.');return;}
+ status(renderer3D.name==='Three.js / WebGL'?'Three.js ativo · HTML sem acesso ao site FR.':'Modo contingência offline ativo · Three.js requer conexão ao CDN.');
+ const size=()=>{stageWidth=viewport.clientWidth;stageHeight=viewport.clientHeight;const r=canvas.getBoundingClientRect();renderer3D.resize(Math.max(1,r.width),Math.max(1,r.height));resizeAmbience(r.width,r.height);state.dirty=true;};size();if(window.ResizeObserver){resizeObserver=new ResizeObserver(size);resizeObserver.observe(viewport);resizeObserver.observe(canvas);}else window.addEventListener('resize',size);
+ wireMouse();wireScroll();
+ const mq=window.matchMedia('(prefers-reduced-motion: reduce)');const onMotion=e=>{state.systemReduced=e.matches;state.dirty=true;log('preferência do sistema atualizada');};if(mq.addEventListener)mq.addEventListener('change',onMotion);else if(mq.addListener)mq.addListener(onMotion);
+ document.addEventListener('visibilitychange',()=>{state.pageVisible=!document.hidden;if(state.pageVisible){state.lastFrame=0;requestAnimationFrame(loop);}});
+ if(window.IntersectionObserver){const io=new IntersectionObserver(entries=>{const show=entries[0]?.isIntersecting??true;const changed=show!==state.visible;state.visible=show;if(show&&changed){state.lastFrame=0;requestAnimationFrame(loop);}}, {threshold:.01});io.observe(viewport);}
+ state.nextBlink=now()+2200;state.nextGlitch=now()+4800;state.nextPassive=now()+5500;updateContext(true);setFace(contextFace());updatePhysics(0);renderCurrent();requestAnimationFrame(loop);log('motor ativo · '+renderer3D.name);log('isolamento · nenhum dado importado');
+}
+/* ========================================================================
+   UPGRADE FUTURO PARA .glb (INTENCIONALMENTE DESABILITADO)
+   ------------------------------------------------------------------------
+   Após revisão manual, adicionar um GLTFLoader da MESMA versão de Three.js
+   e configurar o carregamento a partir de um Blob/File escolhido pelo usuário.
+   Exemplo conceitual (NÃO executado neste sandbox):
+
+   const loader = new GLTFLoader();
+   loader.load('mascote-custom.glb', (gltf) => {
+     // substituir SOMENTE o mesh "body" dentro da "rig" deste playground;
+     // manter as rotinas de expressão, física, controles e exportação;
+     // posicionar pixels via raycast na nova malha.
+   });
+
+   Nenhum fetch, API, backend ou import do site FR é realizado aqui.
+   ======================================================================== */
+start();
+})();
+</script>
+</body>
+</html>
