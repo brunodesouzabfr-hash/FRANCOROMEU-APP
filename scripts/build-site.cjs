@@ -121,6 +121,8 @@ async function build() {
   aboutPillars.after(aboutAnchor);
   for (const section of doc.querySelectorAll('[data-fr-media-live]')) section.dataset.frMediaLive = 'false';
   for (const link of [...doc.querySelectorAll('link[rel="stylesheet"]')]) doc.head.appendChild(link);
+  // F8.2: keep each Home hero word unbroken at 320px, without editing source HTML.
+  const narrowHeroCss=doc.createElement('link');narrowHeroCss.rel='stylesheet';narrowHeroCss.href='/assets/css/fr-home-mobile-phase8.css';doc.head.appendChild(narrowHeroCss);
   // Preview blocks indexing; production permits eligible visual discovery.
   {
     let robots = doc.querySelector('meta[name="robots"]');
