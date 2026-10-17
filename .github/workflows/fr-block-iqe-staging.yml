@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - feature/block-iqe-staging-2026-10-17
+      - fix/block-iqe-face-bubbles-calendar-loyalty-2026
   pull_request:
     paths:
       - 'src/fr-block-iqe-stage.cjs'
@@ -31,9 +32,9 @@ jobs:
         run: |
           node - <<'NODE'
           const fs=require('node:fs');const html=fs.readFileSync('dist/index.html','utf8');
-          for(const s of ['fr-block-iqe-stage-marker','fr-block-avatar.iife.js','fr-block-iqe-init.js','noindex, nofollow, noimageindex'])
+          for(const s of ['fr-block-iqe-stage-marker','fr-block-avatar.iife.js','fr-block-iqe-balloons.js','fr-block-iqe-init.js','noindex, nofollow, noimageindex'])
             if(!html.includes(s))throw Error('Missing staging marker: '+s);
-          for(const f of ['dist/assets/js/fr-block-avatar.iife.js','dist/assets/js/fr-block-iqe-init.js','dist/assets/css/fr-block-iqe-stage.css'])
+          for(const f of ['dist/assets/js/fr-block-avatar.iife.js','dist/assets/js/fr-block-iqe-balloons.js','dist/assets/js/fr-block-iqe-init.js','dist/assets/css/fr-block-iqe-stage.css'])
             if(!fs.statSync(f).size)throw Error('Empty staging asset '+f);
           for(const s of ['fr-stage5-assistant-engine','fr-stage5-assistant-styles','fr-ai-launcher'])
             if(!html.includes(s))throw Error('Lost assistant contract '+s);
@@ -76,7 +77,7 @@ jobs:
           if(doc.getElementById('fr-block-iqe-stage-marker').content!=='production')throw Error('Wrong production marker');
           const robots=doc.querySelector('meta[name="robots"]')?.content||'';
           if(!robots.startsWith('index, follow'))throw Error('SEO indexing unexpectedly disabled: '+robots);
-          for(const file of ['dist/assets/js/fr-block-avatar.iife.js','dist/assets/js/fr-block-iqe-init.js','dist/assets/css/fr-block-iqe-stage.css']){
+          for(const file of ['dist/assets/js/fr-block-avatar.iife.js','dist/assets/js/fr-block-iqe-balloons.js','dist/assets/js/fr-block-iqe-init.js','dist/assets/css/fr-block-iqe-stage.css']){
              if(!fs.existsSync(file)||!fs.statSync(file).size)throw Error('Missing production avatar asset: '+file);
           }
           for(const id of ['fr-stage5-assistant-engine','fr-stage5-assistant-styles','fr6iqe-avatar-version']){
