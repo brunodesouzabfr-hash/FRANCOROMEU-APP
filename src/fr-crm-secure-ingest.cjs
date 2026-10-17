@@ -43,8 +43,9 @@ function validate(input){
  if(phone&&!/^\+55\d{10,11}$/.test(phone))return null;
  if(email&&!/^[^\s@]{1,64}@[^\s@]+\.[^\s@]{2,}$/u.test(email))return null;
  if(!BASES.has(input.basis))return null;
+ if(typeof input.evidence!=='string'||/[\r\n<>]/.test(input.evidence))return null;
  const evidence=clip(input.evidence,180);
- if(!evidence||/[\r\n<>]/.test(evidence))return null;
+ if(!evidence)return null;
  const stamp=input.consentRecordedAt;
  if(input.basis==='Consentimento específico'){
    if(typeof stamp!=='string'||!/^\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d(?:\.\d{1,3})?Z$/.test(stamp)||Number.isNaN(Date.parse(stamp)))return null;
