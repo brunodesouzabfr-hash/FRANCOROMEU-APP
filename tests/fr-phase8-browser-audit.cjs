@@ -91,6 +91,24 @@ async function oneScenario(page,route,viewport,errors){
   await page.waitForFunction(()=>window.FRNav7?.getState()?.mounted===true,{timeout:45000});
   assert.equal(await page.locator('#fr-cinema-overlay').count(),0,name+' screenshot obstructed by intro');
   await page.waitForTimeout(500);
+  if(route.route==='/portfolio'&&viewport.width<=390){
+   await page.evaluate(()=>document.fonts?.ready);
+   const word=await page.evaluate(()=>{
+    const span=document.querySelector('#view-projetos .fr16-portfolio-title > span');
+    const node=span?.firstChild;
+    if(!node||node.nodeType!==Node.TEXT_NODE)return null;
+    const start=node.textContent.toLowerCase().indexOf('transformação.');
+    if(start<0)return null;
+    const range=document.createRange();range.setStart(node,start);
+    range.setEnd(node,start+'transformação.'.length);
+    const rects=[...range.getClientRects()].filter(rect=>rect.width>0);
+    return {lines:rects.length,rects:rects.map(rect=>({left:rect.left,right:rect.right,width:rect.width})),viewport:innerWidth};
+   });
+   assert.ok(word,'Portfolio headline word not found');
+   assert.equal(word.lines,1,'TRANSFORMAÇÃO word splits across mobile lines: '+JSON.stringify(word));
+   assert.ok(word.rects[0].left>=5&&word.rects[0].right<=viewport.width-5,
+    'Portfolio headline word is cropped: '+JSON.stringify(word));
+  }
   const top=await measure(page);
   check(top,route,name+' top');
   assert.equal(top.nav.position,'header',name+' starts in header');
