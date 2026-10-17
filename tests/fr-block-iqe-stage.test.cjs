@@ -153,6 +153,8 @@ test('Block contextual hints restore welcome, navigation and auto-budget explana
  assert.match(current.textContent,/orçamento/i);
  assert.equal(tips.explain('auto'),true);
  assert.match(current.textContent,/Orçamento automático/);
+ doc.body.dispatchEvent(new win.Event('pointerdown',{bubbles:true}));
+ assert.equal(current.hidden,true,'the balloon must yield to user interaction');
  root.querySelector('#fr-ai-launcher').click();
  assert.equal(launcherClicks,1);
  // Native Stage 5 bubble wins if it becomes visible.
@@ -163,4 +165,14 @@ test('Block contextual hints restore welcome, navigation and auto-budget explana
  assert.equal(doc.querySelector('.fr-block-tip'),null);
  assert.ok(reactions>=2);
  dom.window.close();
+});
+
+test('site vendors the exact validated Lovable v2 bundle with broad calendar and explicit loyalty ranks',()=>{
+ const crypto=require('node:crypto');
+ const code=fs.readFileSync(path.join(__dirname,'../assets/js/fr-block-avatar.iife.js'),'utf8');
+ assert.equal(crypto.createHash('sha256').update(code).digest('hex'),
+  'f181164774e1bd607f3c4c1e9ab110fe477fcba1a867ba93c7e3af21e91e5995');
+ for(const feature of ['#B66622','HALLOWEEN','DIA DAS MÃES','SÃO JOÃO','CARNAVAL','BLACK FRIDAY','CONSCIÊNCIA NEGRA','BRONZE','PRATA','OURO','PREMIUM']){
+  assert.ok(code.includes(feature),'Missing Lovable v2 feature: '+feature);
+ }
 });
