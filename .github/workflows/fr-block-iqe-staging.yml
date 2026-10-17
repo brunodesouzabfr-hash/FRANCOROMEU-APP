@@ -63,3 +63,35 @@ jobs:
           if(!html.includes('fr6iqe-avatar-version'))throw Error('Legacy avatar marker removed');
           console.log('Production-default build unchanged and legacy visual hook preserved.');
           NODE
+      - name: Build Vercel production main with Block and SEO preserved
+        run: VERCEL_ENV=production VERCEL_GIT_COMMIT_REF=main npm run build
+      - name: Verify production Block activation, original IQE and SEO indexing
+        run: |
+          node - <<'NODE'
+          const fs=require('node:fs');
+          const {JSDOM}=require('jsdom');
+          const html=fs.readFileSync('dist/index.html','utf8');
+          const doc=new JSDOM(html).window.document;
+          if(!doc.getElementById('fr-block-iqe-stage-marker'))throw Error('Block not included in production main build');
+          if(doc.getElementById('fr-block-iqe-stage-marker').content!=='production')throw Error('Wrong production marker');
+          const robots=doc.querySelector('meta[name="robots"]')?.content||'';
+          if(!robots.startsWith('index, follow'))throw Error('SEO indexing unexpectedly disabled: '+robots);
+          for(const file of ['dist/assets/js/fr-block-avatar.iife.js','dist/assets/js/fr-block-iqe-init.js','dist/assets/css/fr-block-iqe-stage.css']){
+             if(!fs.existsSync(file)||!fs.statSync(file).size)throw Error('Missing production avatar asset: '+file);
+          }
+          for(const id of ['fr-stage5-assistant-engine','fr-stage5-assistant-styles','fr6iqe-avatar-version']){
+             if(!doc.getElementById(id))throw Error('Legacy Stage 5 fallback missing: '+id);
+          }
+          console.log('Block enabled in production main; SEO indexed; legacy IQE fallback intact');
+          NODE
+      - name: Verify emergency flag restores original production avatar
+        run: FR_BLOCK_IQE_ENABLED=0 VERCEL_ENV=production VERCEL_GIT_COMMIT_REF=main npm run build
+      - name: Confirm emergency fallback output
+        run: |
+          node - <<'NODE'
+          const fs=require('node:fs');
+          const html=fs.readFileSync('dist/index.html','utf8');
+          if(html.includes('fr-block-iqe-stage-marker'))throw Error('Opt-out failed to disable Block in production');
+          if(!html.includes('fr6iqe-avatar-version'))throw Error('Legacy fallback unavailable');
+          console.log('Production rollback via FR_BLOCK_IQE_ENABLED=0 validated');
+          NODE
