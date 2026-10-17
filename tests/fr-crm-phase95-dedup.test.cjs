@@ -51,7 +51,8 @@ function store(){
  return {fetchImpl,keys,calls};
 }
 const response=()=>({code:null,headers:{},body:null,setHeader(k,v){this.headers[k]=v;return this},status(n){this.code=n;return this},json(v){this.body=v;return this}});
-const req=(input=lead)=>({method:'POST',headers:{'x-fr-crm-token':env.FR_CRM_INGEST_SECRET,'content-type':'application/json'},body:input});
+const rawLead={...lead};delete rawLead.consentRecordedAt;
+const req=(input=rawLead)=>({method:'POST',headers:{'x-fr-crm-token':env.FR_CRM_INGEST_SECRET,'content-type':'application/json'},body:input});
 test('F9.5 ingestion requires distributed Redis credentials even if the original Notion flags are true',async()=>{
  assert.equal(configured(env),true);
  assert.equal(ingestConfigured(env),true);
@@ -106,7 +107,7 @@ test('F9.5 reused event ID with conflicting customer input is rejected without a
  const result=await processOnce({...lead,contactName:'Outro nome'},async()=>{writes++;return 'received'},{env,fetchImpl:fake.fetchImpl});
  assert.equal(result,'conflict');assert.equal(writes,1);
  const reply=response();
- await ingest(req({...lead,contactName:'Outro nome'}),reply,{env,fetchImpl:fake.fetchImpl});
+ await ingest(req({...rawLead,contactName:'Outro nome'}),reply,{env,fetchImpl:fake.fetchImpl});
  assert.equal(reply.code,409);assert.deepEqual(reply.body,{status:'conflict'});
 });
 test('F9.5 uncertain Notion result retains short lease and never retries a side effect immediately',async()=>{
