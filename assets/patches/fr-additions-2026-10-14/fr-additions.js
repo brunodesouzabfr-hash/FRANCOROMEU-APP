@@ -217,13 +217,13 @@
       card.dataset.frapVariant = 'environment';
       var media = visual({
         image: style.img,
-        alt: 'Referência visual da linguagem ' + clean(style.name, 'de ambiente'),
-        label: 'REFERÊNCIA VISUAL · LINGUAGEM DE AMBIENTE',
+        alt: 'Composição de materiais e ambiente ' + clean(style.name, 'de ambiente'),
+        label: 'AMBIENTE · FRANCO ROMEU',
         width: 1600,
         height: 1100
       });
       var copy = node('div', 'frap-copy');
-      copy.append(node('p', 'frap-index', String(index + 1).padStart(2, '0') + ' / 03'), node('h3', '', clean(style.name, 'Ambiente')), node('strong', 'frap-essence', clean(style.essence, 'Linguagem de ambiente')), node('p', 'frap-description', clean(style.desc, 'Referência visual para conversa de projeto.')));
+      copy.append(node('p', 'frap-index', String(index + 1).padStart(2, '0') + ' / 03'), node('h3', '', clean(style.name, 'Ambiente')), node('strong', 'frap-essence', clean(style.essence, 'Linguagem de ambiente')), node('p', 'frap-description', clean(style.desc, 'Materiais, composições e soluções para seu projeto.')));
       var sequence = node('ol', 'frap-steps');
       var palette = Array.isArray(style.palette) ? style.palette.slice(0, 3).join(' · ') : 'Paleta a confirmar';
       var services = Array.isArray(style.services) ? style.services.slice(0, 2).map(function (service) { return clean(service.role || service.id); }).join(' · ') : 'Serviços a confirmar';
@@ -316,7 +316,7 @@
       var copy = node('div', 'frap-copy');
       copy.append(node('p', 'frap-index', String(index + 1).padStart(2, '0') + ' / ' + String(selected.length).padStart(2, '0')), node('h3', '', clean(project.title, 'Conceito visual')), node('p', 'frap-description', 'Conceito de ' + clean(project.catLabel || project.cat, 'materialidade') + ', integrado ao acervo de projetos realizados pela Franco Romeu.'));
       var tags = node('ul', 'frap-tags');
-      [clean(project.catLabel || project.cat, 'Conceito visual'), 'Acervo FR', 'Referência visual'].forEach(function (tag) { tags.appendChild(node('li', '', tag)); });
+      [clean(project.catLabel || project.cat, 'Conceito visual'), 'Acervo FR', 'Projetos e materiais'].forEach(function (tag) { tags.appendChild(node('li', '', tag)); });
       copy.append(tags, actions([{ label: 'Explorar o estudo', project: projects.indexOf(project) }, { label: 'Ver grid completo', href: '#projects-container' }]));
       frame.append(media, copy);
       article.appendChild(frame);
