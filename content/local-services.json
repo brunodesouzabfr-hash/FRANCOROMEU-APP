@@ -1,0 +1,207 @@
+{
+  "schema_version": "fr-local-solutions-1.0.0",
+  "source_services": "content/services/media-service-map.json",
+  "source_organization": "content/media/organization.json",
+  "services": [
+    {
+      "id": "marcenaria-sob-medida",
+      "title": "Marcenaria sob medida",
+      "heading": "Marcenaria sob medida para integrar espaços e rotinas",
+      "meta": "Marcenaria sob medida em São Paulo e região: soluções para cozinhas, armários e ambientes integrados, com curadoria material e orçamento por escopo.",
+      "intro": "O móvel planejado precisa responder ao espaço construído, às medidas úteis e à rotina. A Franco Romeu compatibiliza a marcenaria com instalações, bancadas e acabamentos, considerando o que é viável no ambiente existente.",
+      "applications": [
+        [
+          "Cozinhas e lavanderias",
+          "Planejamento dos módulos em diálogo com bancadas, eletrodomésticos, hidráulica e circulação."
+        ],
+        [
+          "Armários, nichos e painéis",
+          "Dimensionamento de volumes, ferragens, acessos e pontos de fixação conforme as condições do local."
+        ],
+        [
+          "Ambientes integrados",
+          "Encontro entre madeira, pedra, iluminação e superfícies, preservando continuidade e facilidade de manutenção."
+        ]
+      ],
+      "steps": [
+        [
+          "Levantamento",
+          "Conferir medidas, instalações existentes e prioridades de uso."
+        ],
+        [
+          "Compatibilização",
+          "Avaliar aberturas, profundidades, ferragens e interfaces com os demais serviços."
+        ],
+        [
+          "Especificação",
+          "Escolher componentes e acabamentos conforme a proposta aprovada."
+        ],
+        [
+          "Execução",
+          "Conferir montagem, ajustes e alinhamento com as superfícies do ambiente."
+        ]
+      ],
+      "care": "Referências visuais e medidas preliminares orientam o estudo, mas não substituem o levantamento presencial. Materiais, prazos e valores dependem do escopo definido.",
+      "faq": [
+        [
+          "Posso integrar marcenaria a uma reforma?",
+          "Sim. O escopo pode considerar pisos, bancadas, instalações e pintura na mesma compatibilização."
+        ],
+        [
+          "Posso apresentar fotos de referência?",
+          "Sim. Elas orientam a intenção; dimensões e especificações serão verificadas para o local."
+        ]
+      ]
+    },
+    {
+      "id": "drywall",
+      "title": "Drywall e divisórias",
+      "heading": "Drywall e divisórias com compatibilização técnica",
+      "meta": "Drywall e divisórias para reformas em São Paulo e região. Planejamento de chapas, estrutura, reforços, instalações e acabamento.",
+      "intro": "Paredes e fechamentos em drywall exigem avaliação de uso, base, carga e condições do ambiente. A solução final depende do sistema completo, não apenas da aparência ou da cor da chapa.",
+      "applications": [
+        [
+          "Divisórias internas",
+          "Organização dos ambientes e compatibilização com acessos, portas e instalações."
+        ],
+        [
+          "Fechamentos e reforços",
+          "Planejamento dos pontos de carga, recortes e acessos de manutenção antes de fechar o sistema."
+        ],
+        [
+          "Acabamento de superfície",
+          "Tratamento de juntas, bordas e preparação para receber a pintura especificada."
+        ]
+      ],
+      "steps": [
+        [
+          "Diagnóstico",
+          "Verificar condições do local, geometria, uso e requisitos funcionais."
+        ],
+        [
+          "Sistema",
+          "Avaliar tipologias ST, RU, RF ou acústica conforme requisitos e fabricante."
+        ],
+        [
+          "Instalações",
+          "Planejar passagens, suportes e reforços com antecedência."
+        ],
+        [
+          "Acabamento",
+          "Conferir juntas, planos e interfaces antes da etapa final."
+        ]
+      ],
+      "care": "Desempenho de resistência ao fogo ou isolamento acústico não decorre de uma chapa isolada; exige especificação do conjunto e instalação adequadas. A proposta define inclusões e exclusões.",
+      "faq": [
+        [
+          "Posso fixar TV ou armários?",
+          "A instalação pode exigir reforços e fixadores especificados para a carga."
+        ],
+        [
+          "Drywall serve para ambientes úmidos?",
+          "A seleção depende do grau de exposição à água e da solução completa de proteção."
+        ]
+      ]
+    },
+    {
+      "id": "pisos",
+      "title": "Instalação e renovação de pisos",
+      "heading": "Pisos: da condição da base ao acabamento final",
+      "meta": "Instalação e renovação de pisos em São Paulo e região. Porcelanato, vinílico, laminado, madeira e pedra com análise da base e paginação.",
+      "intro": "O acabamento de um piso depende do substrato, da escolha do material e dos encontros com portas, rodapés e outros ambientes. Planejamos a intervenção considerando o uso real, a manutenção e a compatibilidade do sistema.",
+      "applications": [
+        [
+          "Porcelanato e cerâmica",
+          "Paginação, recortes, juntas e transições proporcionais ao espaço."
+        ],
+        [
+          "Vinílico e laminado",
+          "Condições de regularidade e umidade da base, conforme indicação do fabricante."
+        ],
+        [
+          "Madeira e pedra",
+          "Avaliação de aplicação, acabamento, manutenção e interfaces com o restante da obra."
+        ]
+      ],
+      "steps": [
+        [
+          "Inspeção",
+          "Avaliar regularidade, umidade, aderência e eventuais reparos na base."
+        ],
+        [
+          "Escolha",
+          "Relacionar material, tráfego, conforto e manutenção."
+        ],
+        [
+          "Compatibilização",
+          "Planejar paginação, desníveis, soleiras, rodapés e caimentos."
+        ],
+        [
+          "Instalação",
+          "Conferir juntas, arremates, recortes e acabamento previsto."
+        ]
+      ],
+      "care": "Sobreposição sobre piso existente, remoção e regularização são decisões condicionadas à avaliação da base. O orçamento não pressupõe uma preparação que ainda não foi identificada.",
+      "faq": [
+        [
+          "É possível instalar piso sobre piso?",
+          "Depende de aderência, nivelamento, altura disponível e compatibilidade técnica."
+        ],
+        [
+          "Qual piso é melhor para áreas molhadas?",
+          "A escolha considera a exposição, segurança, base e recomendação do fabricante."
+        ]
+      ]
+    },
+    {
+      "id": "revestimentos-e-acabamentos",
+      "title": "Revestimentos e acabamentos",
+      "heading": "Revestimentos com critério de superfície e materialidade",
+      "meta": "Revestimentos e acabamentos para reformas em São Paulo e região. Avaliação de base, paginação, recortes, juntas e integrações.",
+      "intro": "A decisão sobre uma superfície inclui base, juntas, manutenção e os encontros com marcenaria, iluminação, esquadrias e bancadas. A Franco Romeu avalia os revestimentos em relação ao conjunto arquitetônico.",
+      "applications": [
+        [
+          "Revestimento de paredes",
+          "Compatibilização de paginação, bordas e pontos de instalações."
+        ],
+        [
+          "Áreas de uso intenso",
+          "Avaliação de limpeza, exposição, suporte e especificação do material."
+        ],
+        [
+          "Detalhes e arremates",
+          "Planejamento de cantos, espessuras, nichos previstos e transições de materiais."
+        ]
+      ],
+      "steps": [
+        [
+          "Base",
+          "Identificar condição atual, umidade, fissuras e aderência."
+        ],
+        [
+          "Desenho",
+          "Definir paginação, juntas e tratamento dos recortes."
+        ],
+        [
+          "Interfaces",
+          "Conferir passagens hidráulicas, elétricas e encontros com outros elementos."
+        ],
+        [
+          "Conferência",
+          "Revisar acabamento e recomendações de manutenção do material."
+        ]
+      ],
+      "care": "Produtos, tonalidades, peças, fornecedores e valores dependem de especificação e disponibilidade. Não há promessa de desempenho sem avaliação técnica.",
+      "faq": [
+        [
+          "Uma mesma paginação serve para qualquer parede?",
+          "Não necessariamente. As dimensões e interferências alteram recortes e alinhamentos."
+        ],
+        [
+          "É possível combinar materiais?",
+          "Sim, se as juntas, espessuras, bordas e interfaces forem detalhadas."
+        ]
+      ]
+    }
+  ]
+}
