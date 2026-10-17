@@ -1,0 +1,23 @@
+/* Opt-in Staging ONLY: keep the original IQE launcher, handlers and focus ring. */
+#fr-ai-root.fr-block-iqe-staging #fr-ai-launcher .fr-ai-robot,
+#fr-ai-root.fr-block-iqe-staging .fr-ai-avatar {
+  position:relative;
+  isolation:isolate;
+  overflow:visible;
+}
+#fr-ai-root.fr-block-iqe-staging canvas[data-fr-block-avatar="visual-only"]{
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  pointer-events:none!important;
+  user-select:none;
+}
+#fr-ai-root.fr-block-iqe-staging #fr-ai-launcher:focus-visible{
+  outline:2px solid #FF811F;
+  outline-offset:4px;
+}
+@media(prefers-reduced-motion:reduce){
+  #fr-ai-root.fr-block-iqe-staging canvas[data-fr-block-avatar="visual-only"]{
+    transition:none!important;
+  }
+}

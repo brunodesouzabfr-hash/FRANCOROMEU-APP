@@ -73,6 +73,8 @@ async function build() {
   require('../src/fr-projects3d-phase5.cjs')(doc);
   // Phase 6: visual-only IQE assistant avatar, preserving the wizard and FRBudgetCore.
   require('../src/fr-iqe-avatar-phase6.cjs')(doc);
+  // Opt-in preview only: replace just the persistent assistant's visual avatar, never IQE business actions.
+  require('../src/fr-block-iqe-stage.cjs')(doc);
   // Phase 7: reversible navbar layout and native SPA/dialog interaction preservation.
   require('../src/fr-nav-phase7.cjs')(doc);
   // Fase 9.2: accessible static-service discovery inside the approved SPA views.
@@ -138,7 +140,7 @@ async function build() {
   {
     let robots = doc.querySelector('meta[name="robots"]');
     if (!robots) { robots = doc.createElement('meta'); robots.name = 'robots'; doc.head.appendChild(robots); }
-    robots.content = process.env.VERCEL_ENV === 'preview' ? 'noindex, nofollow, noimageindex' : 'index, follow, max-image-preview:large';
+    robots.content = (process.env.VERCEL_ENV === 'preview' || process.env.FR_BLOCK_IQE_STAGING === '1') ? 'noindex, nofollow, noimageindex' : 'index, follow, max-image-preview:large';
   }
   const dimensions = {};
   for (const file of fs.readdirSync('assets/media').filter(n => /\.jpe?g$/i.test(n))) dimensions['assets/media/' + file] = jpegDimensions('assets/media/' + file);

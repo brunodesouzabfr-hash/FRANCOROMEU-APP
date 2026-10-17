@@ -1,0 +1,97 @@
+name: Block IQE visual staging QA
+on:
+  push:
+    branches:
+      - feature/block-iqe-staging-2026-10-17
+  pull_request:
+    paths:
+      - 'src/fr-block-iqe-stage.cjs'
+      - 'assets/js/fr-block-*'
+      - 'assets/css/fr-block-*'
+      - 'scripts/build-site.cjs'
+      - 'tests/fr-block-iqe-stage.test.cjs'
+permissions:
+  contents: read
+jobs:
+  iqe-stage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: Verify original IQE and new reversible staging
+        run: node --test tests/fr-iqe-avatar-phase6.test.cjs tests/fr-block-iqe-stage.test.cjs
+      - name: Build explicit noindex visual staging preview
+        run: FR_BLOCK_IQE_STAGING=1 npm run build
+      - name: Check actual publishable HTML, assets, and preserved wizard
+        run: |
+          node - <<'NODE'
+          const fs=require('node:fs');const html=fs.readFileSync('dist/index.html','utf8');
+          for(const s of ['fr-block-iqe-stage-marker','fr-block-avatar.iife.js','fr-block-iqe-init.js','noindex, nofollow, noimageindex'])
+            if(!html.includes(s))throw Error('Missing staging marker: '+s);
+          for(const f of ['dist/assets/js/fr-block-avatar.iife.js','dist/assets/js/fr-block-iqe-init.js','dist/assets/css/fr-block-iqe-stage.css'])
+            if(!fs.statSync(f).size)throw Error('Empty staging asset '+f);
+          for(const s of ['fr-stage5-assistant-engine','fr-stage5-assistant-styles','fr-ai-launcher'])
+            if(!html.includes(s))throw Error('Lost assistant contract '+s);
+          console.log('Staging output contains Block assets, SEO isolation, and original assistant.');
+          NODE
+      - name: Install browser harness for the staging avatar
+        run: npm install --no-save --package-lock=false --no-audit --no-fund playwright@1.56.1
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Test actual launcher rendering and reversible IQE integration
+        run: node tests/fr-block-iqe-browser.cjs
+      - name: Archive desktop and mobile screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fr-block-iqe-staging-chromium
+          path: artifacts/block-iqe-staging/
+          if-no-files-found: ignore
+          retention-days: 7
+      - name: Build normal public site without avatar replacement
+        run: npm run build
+      - name: Confirm default public output has no Block injection
+        run: |
+          node - <<'NODE'
+          const fs=require('node:fs');const html=fs.readFileSync('dist/index.html','utf8');
+          if(html.includes('fr-block-iqe-stage-marker'))throw Error('Blocked staging code leaked to default build');
+          if(!html.includes('fr6iqe-avatar-version'))throw Error('Legacy avatar marker removed');
+          console.log('Production-default build unchanged and legacy visual hook preserved.');
+          NODE
+      - name: Build Vercel production main with Block and SEO preserved
+        run: VERCEL_ENV=production VERCEL_GIT_COMMIT_REF=main npm run build
+      - name: Verify production Block activation, original IQE and SEO indexing
+        run: |
+          node - <<'NODE'
+          const fs=require('node:fs');
+          const {JSDOM}=require('jsdom');
+          const html=fs.readFileSync('dist/index.html','utf8');
+          const doc=new JSDOM(html).window.document;
+          if(!doc.getElementById('fr-block-iqe-stage-marker'))throw Error('Block not included in production main build');
+          if(doc.getElementById('fr-block-iqe-stage-marker').content!=='production')throw Error('Wrong production marker');
+          const robots=doc.querySelector('meta[name="robots"]')?.content||'';
+          if(!robots.startsWith('index, follow'))throw Error('SEO indexing unexpectedly disabled: '+robots);
+          for(const file of ['dist/assets/js/fr-block-avatar.iife.js','dist/assets/js/fr-block-iqe-init.js','dist/assets/css/fr-block-iqe-stage.css']){
+             if(!fs.existsSync(file)||!fs.statSync(file).size)throw Error('Missing production avatar asset: '+file);
+          }
+          for(const id of ['fr-stage5-assistant-engine','fr-stage5-assistant-styles','fr6iqe-avatar-version']){
+             if(!doc.getElementById(id))throw Error('Legacy Stage 5 fallback missing: '+id);
+          }
+          console.log('Block enabled in production main; SEO indexed; legacy IQE fallback intact');
+          NODE
+      - name: Verify emergency flag restores original production avatar
+        run: FR_BLOCK_IQE_ENABLED=0 VERCEL_ENV=production VERCEL_GIT_COMMIT_REF=main npm run build
+      - name: Confirm emergency fallback output
+        run: |
+          node - <<'NODE'
+          const fs=require('node:fs');
+          const html=fs.readFileSync('dist/index.html','utf8');
+          if(html.includes('fr-block-iqe-stage-marker'))throw Error('Opt-out failed to disable Block in production');
+          if(!html.includes('fr6iqe-avatar-version'))throw Error('Legacy fallback unavailable');
+          console.log('Production rollback via FR_BLOCK_IQE_ENABLED=0 validated');
+          NODE
