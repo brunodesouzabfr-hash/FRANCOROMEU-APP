@@ -156,6 +156,9 @@ async function originalControls(page){
   await ready();
   browser=await chromium.launch({headless:true,args:['--disable-dev-shm-usage']});
   const context=await browser.newContext({deviceScaleFactor:1,reducedMotion:'reduce'});
+  // Prevent the 17-second cinematic overlay from hiding page UI in screenshots.
+  // Separate intro QA verifies full first-visit behavior and low-FPS playback.
+  await context.addInitScript(()=>{try{sessionStorage.setItem('fr_intro_v04_seen','1');}catch(_){}});
   const page=await context.newPage();
   const results=[],errors=[];
   for(const viewport of VIEWPORTS)for(const route of ROUTES)
