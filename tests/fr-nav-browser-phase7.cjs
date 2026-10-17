@@ -50,6 +50,25 @@ async function audit(page,width,height,pathname,name){
  // Prevent unrelated intro overlays from obscuring the geometry measurement,
  // but do not manipulate or replace the nav.
  await page.waitForTimeout(950);
+ await page.evaluate(()=>document.fonts?.ready);
+ if(pathname==='/'&&width===320){
+  const wordFit=await page.evaluate(()=>{
+   const line=document.querySelector('#hero-title .fr6-hero-line:nth-child(2)');
+   const span=line?.firstElementChild;
+   if(!line||!span)return null;
+   const a=line.getBoundingClientRect(),b=span.getBoundingClientRect();
+   const lineHeight=parseFloat(getComputedStyle(span).lineHeight);
+   return {word:span.textContent.trim(),lineLeft:a.left,lineRight:a.right,
+    textLeft:b.left,textRight:b.right,textHeight:b.height,lineHeight,
+    viewport:innerWidth};
+  });
+  assert.ok(wordFit,'Missing Home editorial heading at 320px');
+  assert.equal(wordFit.word.toUpperCase(),'FORJADOS');
+  assert.ok(wordFit.textRight<=wordFit.lineRight+2,'Home hero word clipped horizontally at 320px: '+JSON.stringify(wordFit));
+  assert.ok(wordFit.textLeft>=wordFit.lineLeft-2,'Home hero word starts outside line: '+JSON.stringify(wordFit));
+  assert.ok(Number.isFinite(wordFit.lineHeight)&&wordFit.textHeight<=wordFit.lineHeight*1.35,
+   'Home hero word wraps into two lines at 320px: '+JSON.stringify(wordFit));
+ }
  let start=await metrics(page);validate(start,name+' top','header');
  await page.screenshot({path:OUT+'/'+name+'-top.png',animations:'disabled',timeout:25000});
  await page.evaluate(()=>window.scrollTo({top:Math.min(510,Math.max(300,document.documentElement.scrollHeight-innerHeight-5)),behavior:'instant'}));
