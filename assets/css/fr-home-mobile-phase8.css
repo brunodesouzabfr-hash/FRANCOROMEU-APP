@@ -15,3 +15,20 @@
     white-space: nowrap !important;
   }
 }
+
+/* F8.4: 320px Home — the floating IQE must not cover the project CTA,
+   then must clear the bottom navigation dock after scrolling. */
+@media (max-width: 359px) {
+  body:has(#view-home.active) #fr-ai-root:not(.is-open) {
+    right: max(2px, env(safe-area-inset-right, 0px)) !important;
+    bottom: max(0px, env(safe-area-inset-bottom, 0px)) !important;
+  }
+  body:has(#view-home.active) #fr-ai-root:not(.is-open) .fr-ai-launcher {
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 50% !important;
+  }
+  body:has(#view-home.active):has(#smart-nav[data-fr-nav7-position="footer"]) #fr-ai-root:not(.is-open) {
+    bottom: calc(74px + env(safe-area-inset-bottom, 0px)) !important;
+  }
+}
