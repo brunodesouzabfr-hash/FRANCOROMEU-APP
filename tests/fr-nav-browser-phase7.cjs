@@ -74,7 +74,11 @@ async function audit(page,width,height,pathname,name){
    const c=document.querySelector('#hero-cta .fr6-btn.primary')?.getBoundingClientRect();
    const a=document.querySelector('#fr-ai-root .fr-ai-launcher')?.getBoundingClientRect();
    if(!c||!a)return null;
-   return {cta:{top:c.top,bottom:c.bottom,left:c.left,right:c.right},
+   const root=document.getElementById('fr-ai-root'),r=root?.getBoundingClientRect(),s=root?getComputedStyle(root):null;
+   return {root:r?{top:r.top,bottom:r.bottom,left:r.left,right:r.right,width:r.width,height:r.height,
+    bottomCss:s.bottom,rightCss:s.right,transform:s.transform,position:s.position,
+    selectorMatch:!!document.querySelector('body:has(#view-home.active) #fr-ai-root:not(.is-open)')}:null,
+    cta:{top:c.top,bottom:c.bottom,left:c.left,right:c.right},
     assistant:{top:a.top,bottom:a.bottom,left:a.left,right:a.right},
     intersects:c.left<a.right&&c.right>a.left&&c.top<a.bottom&&c.bottom>a.top};
   });
