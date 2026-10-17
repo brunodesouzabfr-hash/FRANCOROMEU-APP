@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth" style="scroll-behavior: smooth;"><head>
+<link rel="preload" as="script" href="/assets/intro/fr-intro-cinematic.js" fetchpriority="high">
 <!-- Ahrefs Web Analytics: tag assíncrona única -->
 <script src="https://analytics.ahrefs.com/analytics.js" data-key="R5uObk7S/kmy79NyRbbXsA" async></script>
 <link rel="stylesheet" href="assets/css/fr-quantity-control.css">
@@ -30,7 +31,7 @@
     <meta charset="UTF-8">
     <script id="fr-quiety-money-preflight">(function(d,w){if(w.FR_QUIETY_FLAGS&&w.FR_QUIETY_FLAGS.enabled===false)return;var r=d.documentElement,p={'/':'forja','/sobre':'palimpsesto','/ambientes':'patina','/projetos-3d':'wireframe','/portfolio':'arquivo','/orcamento':'ledger'},m=w.matchMedia('(prefers-reduced-motion: reduce)').matches;r.classList.add(m?'frqm-lite':'frqm-ready');r.dataset.frqmWorld=p[w.location.pathname]||'forja';if(m)r.classList.add('frqm-reduced');if(!m&&w.matchMedia('(hover: hover) and (pointer: fine)').matches)r.classList.add('frqm-fine-pointer')})(document,window);</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Reformas e Projetos em SP | Franco Romeu — Porcelanato e Interiores</title>
+    <title>Reformas e Projetos em SP | Franco Romeu — Alto Padrão</title>
     <!-- Franco Romeu — identidade vetorial e favicons oficiais -->
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
@@ -40,7 +41,7 @@
     <link rel="manifest" href="site.webmanifest">
     <meta name="msapplication-TileColor" content="#0A2F26">
     <meta name="msapplication-config" content="browserconfig.xml">
-    <meta name="description" content="Franco Romeu une arte e engenharia em reformas, projetos de interiores, porcelanato líquido, pintura, projetos 3D de interiores e marcenaria sob medida em São Paulo. Orçamento orientativo com visita técnica. Estruture seu orçamento.">
+    <meta name="description" content="Franco Romeu: reformas e projetos de alto padrão em SP. Interiores 3D, marcenaria sob medida, revestimentos, pintura técnica, elétrica, automação e manutenção.">
     <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
     <meta name="author" content="Franco Romeu — Arte & Engenharia">
     <meta name="application-name" content="Franco Romeu">
@@ -53,8 +54,8 @@
     <meta property="og:locale" content="pt_BR">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Franco Romeu — Arte & Engenharia">
-    <meta property="og:title" content="Reformas e Projetos em SP | Franco Romeu">
-    <meta property="og:description" content="Arte aplicada e engenharia de custo para reformas, porcelanato, pintura, projetos de interiores e marcenaria em São Paulo.">
+    <meta property="og:title" content="Reformas e Projetos em SP | Franco Romeu — Alto Padrão">
+    <meta property="og:description" content="Franco Romeu: reformas e projetos de alto padrão em SP. Interiores 3D, marcenaria sob medida, revestimentos, pintura técnica, elétrica, automação e manutenção.">
     <meta property="og:image" content="https://www.francoromeufr.com.br/assets/social/franco-romeu-og-site-1200x630.jpg">
     <meta property="og:image:secure_url" content="https://www.francoromeufr.com.br/assets/social/franco-romeu-og-site-1200x630.jpg">
     <meta property="og:image:type" content="image/jpeg">
@@ -63,8 +64,8 @@
     <meta property="og:image:alt" content="Marca Franco Romeu — Arte & Engenharia">
     <meta property="og:url" content="https://www.francoromeufr.com.br/">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Reformas e Projetos em SP | Franco Romeu">
-    <meta name="twitter:description" content="Arte aplicada e engenharia de custo para transformar matéria, estrutura e espaços em São Paulo.">
+    <meta name="twitter:title" content="Reformas e Projetos em SP | Franco Romeu — Alto Padrão">
+    <meta name="twitter:description" content="Franco Romeu: reformas e projetos de alto padrão em SP. Interiores 3D, marcenaria sob medida, revestimentos, pintura técnica, elétrica, automação e manutenção.">
     <meta name="twitter:image" content="https://www.francoromeufr.com.br/assets/social/franco-romeu-og-site-1200x630.jpg">
     <meta name="twitter:image:alt" content="Marca Franco Romeu — Arte & Engenharia">
     <!-- FR SEO: grafo único; informações comerciais sem avaliações ou endereço não comprovados. -->
@@ -85,7 +86,7 @@
         "ꟻR",
         "Franco Romeu — Arte & Engenharia"
       ],
-      "description": "Reformas, projetos de interiores, porcelanato líquido, pintura e marcenaria sob medida em São Paulo.",
+      "description": "Reformas e projetos de alto padrão em São Paulo: interiores 3D, marcenaria sob medida, revestimentos e mármores, pintura e texturas, pisos epóxi, alvenaria, elétrica, iluminação, automação, instalações de acessórios e eletrodomésticos, manutenção residencial, comercial e industrial e planejamento técnico de eventos. Atividades especiais sujeitas a avaliação de risco e requisitos aplicáveis.",
       "url": "https://www.francoromeufr.com.br/",
       "logo": {
         "@type": "ImageObject",
@@ -1710,41 +1711,6 @@ img,svg,video,canvas{display:block;max-width:100%}
   --fr6-ease-inout:cubic-bezier(.76,0,.24,1);
 }
 
-/* ---------- Loader / forge sequence ---------- */
-#loader.fr6-loader{
-  position:fixed;inset:0;z-index:10000;display:grid;place-items:center;
-  overflow:hidden;background:var(--fr6-ink);color:var(--fr6-paper);
-  isolation:isolate;animation:none;
-}
-#loader.fr6-loader::before{
-  content:"";position:absolute;inset:-30%;z-index:-2;
-  background:
-    radial-gradient(circle at 32% 44%,rgba(255,107,0,.2),transparent 22%),
-    radial-gradient(circle at 70% 58%,rgba(18,63,52,.9),transparent 31%),
-    #080b0a;
-  animation:fr6-loader-breathe 5s ease-in-out infinite alternate;
-}
-.fr6-loader-grid{position:absolute;inset:0;z-index:-1;opacity:.18;background-image:linear-gradient(rgba(230,214,181,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(230,214,181,.08) 1px,transparent 1px);background-size:clamp(42px,6vw,82px) clamp(42px,6vw,82px);mask-image:radial-gradient(circle,#000 10%,transparent 72%)}
-.fr6-loader-core{width:min(82vw,560px);display:flex;flex-direction:column;align-items:center;text-align:center;position:relative;z-index:2}
-.fr6-loader-index{font:400 .58rem/1 'Share Tech Mono',monospace;letter-spacing:.42em;text-transform:uppercase;color:rgba(230,214,181,.45);margin-bottom:2rem}
-.fr6-loader-mark{display:flex;align-items:center;justify-content:center;gap:.02em;font:900 clamp(5rem,18vw,11rem)/.72 'Stardos Stencil',serif;letter-spacing:-.14em;color:transparent;-webkit-text-stroke:1px rgba(255,107,0,.95);filter:drop-shadow(0 0 32px rgba(255,107,0,.18))}
-.fr6-loader-mark span:first-child{display:inline-block;transform:scaleX(-1) translateX(-.03em)}
-.fr6-loader-status{margin-top:2rem;font:400 .62rem/1.5 'Share Tech Mono',monospace;text-transform:uppercase;letter-spacing:.34em;color:var(--fr6-paper)}
-.fr6-loader-progress{width:100%;height:1px;margin-top:2rem;background:rgba(230,214,181,.14);overflow:visible;position:relative}
-.fr6-loader-progress::before,.fr6-loader-progress::after{content:"";position:absolute;top:-2px;width:5px;height:5px;border:1px solid rgba(246,167,0,.5);transform:rotate(45deg)}
-.fr6-loader-progress::before{left:-2px}.fr6-loader-progress::after{right:-2px}
-#loader .loader-bar-fill{height:100%;width:0;background:linear-gradient(90deg,var(--fr6-orange),var(--fr6-gold));box-shadow:0 0 18px rgba(255,107,0,.8);transition:width .18s linear}
-.fr6-loader-meta{width:100%;display:flex;justify-content:space-between;margin-top:.75rem;font:400 .55rem/1 'Share Tech Mono',monospace;letter-spacing:.18em;text-transform:uppercase;color:rgba(230,214,181,.42)}
-.fr6-loader-shutter{position:absolute;left:0;width:100%;height:50%;z-index:4;background:#080b0a;pointer-events:none;transform:scaleY(0)}
-.fr6-loader-shutter.top{top:0;transform-origin:top}.fr6-loader-shutter.bottom{bottom:0;transform-origin:bottom}
-#loader.fr6-loader.fade-out{animation:fr6-loader-shell .95s var(--fr6-ease-inout) forwards}
-#loader.fr6-loader.fade-out .fr6-loader-core{animation:fr6-loader-core-out .65s var(--fr6-ease-inout) forwards}
-#loader.fr6-loader.fade-out .fr6-loader-shutter.top,#loader.fr6-loader.fade-out .fr6-loader-shutter.bottom{animation:fr6-shutter-open .95s var(--fr6-ease-inout) forwards}
-@keyframes fr6-loader-breathe{to{transform:scale(1.08) rotate(2deg)}}
-@keyframes fr6-loader-core-out{to{opacity:0;transform:scale(.88);filter:blur(12px)}}
-@keyframes fr6-shutter-open{0%{transform:scaleY(0)}45%{transform:scaleY(1)}100%{transform:scaleY(0)}}
-@keyframes fr6-loader-shell{0%,82%{opacity:1;visibility:visible}100%{opacity:0;visibility:hidden;pointer-events:none}}
-
 /* ---------- Home shell ---------- */
 html,body{margin:0;width:100%;max-width:100%;overflow-x:clip}
 #cursor-dot,#cursor-ring{opacity:0}
@@ -2463,8 +2429,16 @@ body.fr8-over-project .fr8-project-hover-label{opacity:1}
         }
     </style>
 
+<style id="fr-intro-cinematic-v04-lock">
+html.fr-intro-active{overflow:hidden!important}
+html.fr-intro-active body > :not(#fr-cinema-overlay){visibility:hidden!important}
+html.fr-intro-active body > :not(#fr-cinema-overlay),html.fr-intro-active body > :not(#fr-cinema-overlay) *{animation-play-state:paused!important}
+</style>
 </head>
 <body class="antialiased selection:bg-fr-primary selection:text-white relative" style="">
+<!-- FR INTRO V05 — conclusão por quadro, qualidade adaptativa, cascade/fracture/fault -->
+<script src="/assets/intro/fr-intro-cinematic.js"></script>
+
 
     <!-- ===== CUSTOM CURSOR ===== -->
     <div id="cursor-dot"></div>
@@ -2472,21 +2446,6 @@ body.fr8-over-project .fr8-project-hover-label{opacity:1}
 
     <!-- ===== SCROLL PROGRESS ===== -->
     <div id="scroll-progress" style="width:0"></div>
-
-    <!-- PRELOADER — ETAPA 6 / FORGE SEQUENCE -->
-    <div id="loader" class="fr6-loader" aria-hidden="true" style="pointer-events:none;">
-        <div class="fr6-loader-grid" aria-hidden="true"></div>
-        <div class="fr6-loader-core">
-            <div class="fr6-loader-index">Franco Romeu / Alpha 2.0 / Experience 06</div>
-            <div class="fr6-loader-mark fr-brand-circle fr-brand-circle--contain" aria-hidden="true">
-                <img class="fr-loader-canonical-logo" src="assets/brand/franco-romeu-logo-remaster-384.webp" width="384" height="384" alt="" onerror="this.hidden=true;document.getElementById('loader').hidden=true">
-            </div>
-            <p class="fr6-loader-status" id="fr6-loader-status">Forjando experiência</p>
-            <div class="fr6-loader-meta"><span>Arte + Engenharia</span></div>
-        </div>
-        <div class="fr6-loader-shutter top" aria-hidden="true"></div>
-        <div class="fr6-loader-shutter bottom" aria-hidden="true"></div>
-    </div>
 
     <!-- ===== PROJECT MODAL — ETAPA 2 ===== -->
     <div id="project-modal" role="dialog" aria-modal="true" aria-labelledby="pm-title" aria-hidden="true">
@@ -2540,7 +2499,7 @@ body.fr8-over-project .fr8-project-hover-label{opacity:1}
         <a id="smart-nav-brand" href="/" data-fr-view="view-home" class="flex items-center gap-2 sm:gap-4 cursor-pointer relative shrink-0" aria-label="Ir para Home — Franco Romeu, Arte e Engenharia" aria-current="page">
             <span class="frx-top-logo fr-brand-circle" aria-hidden="true">
                 <span class="frx-logo-fallback">ꟻR</span>
-                <img src="assets/brand/franco-romeu-profile-remaster-256.webp" alt="" width="256" height="256" decoding="async" fetchpriority="high" onerror="this.hidden=true">
+                <img src="assets/brand/franco-romeu-medalhao-esmeralda-256.webp" alt="" width="256" height="256" decoding="async" fetchpriority="high" onerror="this.hidden=true">
             </span>
             <span class="frx-brand-copy">
                 <strong>Franco Romeu</strong>
@@ -2676,7 +2635,7 @@ body.fr8-over-project .fr8-project-hover-label{opacity:1}
                     <div class="fr6-kicker" data-fr6-reveal="left">Sistema Franco Romeu</div>
                     <h2 class="fr6-section-title" id="fr6-expertise-title" data-fr6-reveal>Três disciplinas.<br><span class="fr6-outline">Uma assinatura.</span></h2>
                 </div>
-                <p class="fr6-section-copy" data-fr6-reveal="right">A experiência FR conecta superfície, mobiliário e visualização técnica. Isso reduz incompatibilidades e mantém a intenção do projeto até o último acabamento.</p>
+                <p class="fr6-section-copy" data-fr6-reveal="right">Projetos e reformas de alto padrão integram interiores 3D, marcenaria sob medida, revestimentos, pintura e texturas, elétrica, iluminação e automação. A atuação inclui manutenção residencial, comercial e industrial e soluções para eventos, conforme escopo técnico.</p>
             </div>
 
             <div class="fr6-expertise-grid">
@@ -6234,7 +6193,7 @@ body.fr8-over-project .fr8-project-hover-label{opacity:1}
       <div class="max-w-6xl mx-auto px-4 py-2 flex flex-col md:flex-row justify-between items-center gap-2">
         <div class="flex items-center gap-3 cursor-pointer select-none" data-action="clickLogo">
           <span class="fr-brand-circle fr-budget-brand-mark border-2 border-fr-primary shadow-lg hover:scale-105 transition-transform duration-500">
-            <img src="assets/brand/franco-romeu-profile-remaster-256.webp" data-gm-img-idx="26" alt="Franco Romeu — Arte e Engenharia, logotipo" width="256" height="256" decoding="async">
+            <img src="assets/brand/franco-romeu-medalhao-esmeralda-256.webp" data-gm-img-idx="26" alt="Franco Romeu — Arte e Engenharia, logotipo" width="256" height="256" decoding="async">
           </span>
           <div>
             <p class="font-stencil text-fr-primary text-2xl leading-none tracking-wide">FRANCO ROMEU</p>
@@ -6298,7 +6257,7 @@ body.fr8-over-project .fr8-project-hover-label{opacity:1}
       <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
         <div>
             <div class="flex items-center justify-center md:justify-start gap-3 mb-4">
-                <span class="fr-brand-circle fr-footer-brand-mark" aria-hidden="true"><img src="assets/brand/franco-romeu-profile-remaster-256.webp" alt="" width="256" height="256" loading="lazy" decoding="async"></span>
+                <span class="fr-brand-circle fr-footer-brand-mark" aria-hidden="true"><img src="assets/brand/franco-romeu-medalhao-esmeralda-256.webp" alt="" width="256" height="256" loading="lazy" decoding="async"></span>
                 <div>
                     <h3 class="font-stencil text-lg text-fr-text">Franco Romeu</h3>
                     <p class="text-xs text-fr-text opacity-70">Arte aplicada. Execução com método.</p>
@@ -6680,7 +6639,8 @@ body.fr8-over-project .fr8-project-hover-label{opacity:1}
             if (!smartNav) return;
             const scrollY = window.scrollY;
             const maxScroll = Math.max(document.documentElement.scrollHeight - window.innerHeight, 1);
-            if (scrollY < 100) {
+            const budgetActive = document.querySelector('#view-orcamento.active') !== null;
+            if (budgetActive || scrollY < 100) {
                 smartNav.className = 'nav-state-header flex items-center justify-between text-fr-text';
                 locationIndicator?.classList.remove('visible');
             } else if (scrollY > maxScroll - 150) {
@@ -6697,6 +6657,9 @@ body.fr8-over-project .fr8-project-hover-label{opacity:1}
         window.addEventListener('resize', () => {
             if (!smartNavFrame) smartNavFrame = requestAnimationFrame(updateSmartNav);
         }, { passive:true });
+        document.addEventListener('frViewChanged', () => {
+            if (!smartNavFrame) smartNavFrame = requestAnimationFrame(updateSmartNav);
+        });
         updateSmartNav();
 
         // --- 2b. TOOLTIP DE NOME DA ABA (estado flutuante, só ícones) ---
@@ -7726,7 +7689,7 @@ body.fr8-over-project .fr8-project-hover-label{opacity:1}
         <button type="button" class="fr11-contact-brand" data-action="clickLogo" aria-label="Franco Romeu — abrir controle da marca">
           <span class="fr11-contact-mark">
             <span class="fr11-contact-orbit" aria-hidden="true"></span>
-            <span class="fr-brand-circle fr-contact-brand-circle"><img src="assets/brand/franco-romeu-profile-remaster-256.webp" alt="Franco Romeu — Arte e Engenharia, logotipo" width="256" height="256" decoding="async"></span>
+            <span class="fr-brand-circle fr-contact-brand-circle"><img src="assets/brand/franco-romeu-medalhao-esmeralda-256.webp" alt="Franco Romeu — Arte e Engenharia, logotipo" width="256" height="256" decoding="async"></span>
           </span>
           <span class="fr11-contact-copy">
             <small>FR / OFICINA DE PROJETOS</small>
@@ -8151,7 +8114,7 @@ body.fr8-over-project .fr8-project-hover-label{opacity:1}
       <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
         <div>
             <div class="flex items-center justify-center md:justify-start gap-3 mb-4">
-                <span class="fr-brand-circle fr-footer-brand-mark" aria-hidden="true"><img src="assets/brand/franco-romeu-profile-remaster-256.webp" alt="" width="256" height="256" loading="lazy" decoding="async"></span>
+                <span class="fr-brand-circle fr-footer-brand-mark" aria-hidden="true"><img src="assets/brand/franco-romeu-medalhao-esmeralda-256.webp" alt="" width="256" height="256" loading="lazy" decoding="async"></span>
                 <div>
                     <h3 class="font-stencil text-lg text-fr-text">Franco Romeu</h3>
                     <p class="text-xs text-fr-text opacity-70">Arte aplicada. Execução com método.</p>
@@ -8264,7 +8227,7 @@ body.fr8-over-project .fr8-project-hover-label{opacity:1}
                 <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 4px solid #ff6b00; padding-bottom: 20px; margin-bottom: 30px;">
                     <div style="display: flex; align-items: center; gap: 20px;">
                         <div class="fr-brand-circle" style="width: 80px; height: 80px; aspect-ratio: 1; border-radius: 50%; border: 3px solid #ff6b00; overflow: hidden; display: grid; place-items: center; background: #000;">
-                             <img src="assets/brand/franco-romeu-profile-remaster-256.webp" alt="Franco Romeu — Arte e Engenharia, logotipo" width="256" height="256" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                             <img src="assets/brand/franco-romeu-medalhao-esmeralda-256.webp" alt="Franco Romeu — Arte e Engenharia, logotipo" width="256" height="256" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: center;">
                         </div>
                         <div>
                             <p style="color: #ff6b00; font-size: 32px; margin: 0; letter-spacing: 2px; font-weight: bold;">FRANCO ROMEU</p>
@@ -12961,15 +12924,10 @@ function showToast(message){const toast=createToast();toast.textContent=message;
 
 /* Abertura visual breve; o conteúdo já está disponível e não depende da intro. */
 function initLoader(){
-  const loader=qs('#loader.fr6-loader');if(!loader)return;
   state.loaderReady=true;
-  loader.hidden=true;loader.setAttribute('aria-hidden','true');loader.style.pointerEvents='none';
-  initHeroEntrance();
-  let returning=false;try{returning=sessionStorage.getItem('fr_intro_seen')==='1';sessionStorage.setItem('fr_intro_seen','1')}catch(error){}
-  const logo=qs('img',loader);
-  if(returning||reduceMotion.matches||!isHomeActive()||!logo||!logo.complete||!logo.naturalWidth)return;
-  loader.hidden=false;loader.classList.add('fr-site-intro');
-  setTimeout(()=>{loader.hidden=true;loader.classList.remove('fr-site-intro')},600);
+  if(document.getElementById('fr-cinema-overlay')){
+    window.addEventListener('fr:intro-complete',initHeroEntrance,{once:true});
+  }else initHeroEntrance();
 }
 
 function initHeroEntrance(){
@@ -12999,6 +12957,8 @@ class HeroField{
     canvas.parentElement.addEventListener('pointermove',e=>{const r=canvas.getBoundingClientRect();this.pointer.x=(e.clientX-r.left)/r.width;this.pointer.y=(e.clientY-r.top)/r.height;this.pointer.active=true},{passive:true});
     canvas.parentElement.addEventListener('pointerleave',()=>{this.pointer.active=false});
     document.addEventListener('visibilitychange',this.start,{passive:true});
+    // Canvas da Home espera a introducao; evita dois loops graficos simultaneos.
+    window.addEventListener('fr:intro-complete',this.start,{once:true});
     new MutationObserver(this.start).observe(home(),{attributes:true,attributeFilter:['class']});
     this.start();
   }
@@ -13006,7 +12966,7 @@ class HeroField{
     const r=this.canvas.getBoundingClientRect();const low=document.documentElement.classList.contains('fr7-low-power');this.dpr=Math.min(window.devicePixelRatio||1,low?1:1.5);this.w=Math.max(1,r.width);this.h=Math.max(1,r.height);this.canvas.width=Math.round(this.w*this.dpr);this.canvas.height=Math.round(this.h*this.dpr);this.ctx.setTransform(this.dpr,0,0,this.dpr,0,0);
     const count=reduceMotion.matches?12:(low?(this.w<600?16:26):(this.w<600?28:52));this.points=Array.from({length:count},()=>({x:Math.random()*this.w,y:Math.random()*this.h,vx:(Math.random()-.5)*.18,vy:(Math.random()-.5)*.18,r:Math.random()*1.15+.35,a:Math.random()*.42+.12}));
   }
-  canRun(){return this.visible&&isHomeActive()&&!document.hidden&&!reduceMotion.matches}
+  canRun(){return this.visible&&isHomeActive()&&!document.hidden&&!reduceMotion.matches&&!document.documentElement.classList.contains('fr-intro-active')}
   start(){if(!this.frame&&this.canRun())this.frame=requestAnimationFrame(this.loop)}
   loop(){
     this.frame=0;if(!this.canRun())return;
@@ -18392,7 +18352,7 @@ if(d.readyState==='loading')listen(d,'DOMContentLoaded',boot,{once:true});else b
 'use strict';
 var d=document,w=window,origin='https://www.francoromeufr.com.br';
 var routes={
- 'view-home':{path:'/',label:'Home',title:'Reformas e Projetos em SP | Franco Romeu — Porcelanato e Interiores',description:'Franco Romeu une arte e engenharia em reformas, projetos de interiores, porcelanato líquido, pintura e marcenaria em São Paulo. Estruture seu orçamento.'},
+ 'view-home':{path:'/',label:'Home',title:'Reformas e Projetos em SP | Franco Romeu — Alto Padrão',description:'Franco Romeu: reformas e projetos de alto padrão em SP. Interiores 3D, marcenaria sob medida, revestimentos, pintura técnica, elétrica, automação e manutenção.'},
  'view-sobre':{path:'/sobre',label:'Sobre',title:'Franco Romeu — Arte, Engenharia e Método em São Paulo',description:'Conheça o método Franco Romeu: autoria, matéria, precisão técnica e engenharia de custo aplicadas a projetos e reformas em São Paulo.'},
  'view-ambientes':{path:'/ambientes',label:'Ambientes',title:'Ambientes e Interiores em São Paulo | Franco Romeu',description:'Explore referências visuais de ambientes e organize decisões de material, acabamento e uso para seu projeto de interiores em São Paulo.'},
  'view-projetos3d':{path:'/projetos-3d',label:'Projetos 3D',title:'Projetos 3D de Interiores em SP | Franco Romeu',description:'Visualize proporções, materiais e soluções antes da execução com projetos 3D de interiores orientados por arte e engenharia.'},
@@ -18413,7 +18373,7 @@ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',boot,{once:tru
 #loader[hidden]{display:none!important}
 #loader.fr-site-intro{visibility:visible!important;opacity:1!important;pointer-events:none!important;animation:frSiteIntro .6s ease both!important}
 @keyframes frSiteIntro{0%,45%{opacity:1}100%{opacity:0;visibility:hidden}}
-#smart-nav:is(.nav-state-header,.nav-state-floating,.nav-state-hidden){position:fixed!important;top:calc(8px + env(safe-area-inset-top,0px))!important;bottom:auto!important;left:50%!important;right:auto!important;transform:translateX(-50%)!important;width:calc(100% - 24px)!important;max-width:1440px!important;min-height:64px!important;height:auto!important;padding:8px 16px!important;gap:12px!important;border-radius:16px!important;background:rgba(3,24,18,.96)!important;opacity:1!important;visibility:visible!important;pointer-events:auto!important;backdrop-filter:none!important}
+/* A navbar segue os estados da Etapa 13; somente Orçamento permanece fixa no topo. */
 html #smart-nav:is(.nav-state-header,.nav-state-floating,.nav-state-hidden) #smart-nav-brand{flex:0 0 auto!important;width:auto!important;max-width:none!important;min-width:44px!important;height:44px!important}
 html #smart-nav:is(.nav-state-header,.nav-state-floating,.nav-state-hidden) #smart-nav-brand .frx-brand-copy{display:grid!important;gap:4px!important}
 html #smart-nav:is(.nav-state-header,.nav-state-floating,.nav-state-hidden) #smart-nav-brand .frx-brand-copy strong{font:700 17px/1 'Rokkitt',serif!important;letter-spacing:.05em!important}
