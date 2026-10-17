@@ -10,7 +10,11 @@ function publicLabel(raw){
  return 'Projeto realizado · Franco Romeu';
 }
 function publicCaption(text){
- return String(text||'').replace(/\s*(?:Visualização ilustrativa; não comprova execução real\.|Estudo ilustrativo; não comprova execução física\.|Estudo ilustrativo de textura e combinação\.|Composição física e fornecedor dependem de confirmação\.|A aparência da imagem não comprova especificação ou execução da obra\.|Nomes comerciais seguem o painel; produto e fornecedor não comprovados\.|Comparativo ilustrativo; não comprova obra executada\.)/gi,'').replace(/\bestudo ilustrativo\b/gi,'estudo visual').trim();
+ return String(text||'').replace(/\s*(?:Visualização ilustrativa; não comprova execução real\.|Estudo ilustrativo; não comprova execução física\.|Estudo ilustrativo de textura e combinação\.|Composição física e fornecedor dependem de confirmação\.|A aparência da imagem não comprova especificação ou execução da obra\.|Nomes comerciais seguem o painel; produto e fornecedor não comprovados\.|Comparativo ilustrativo; não comprova obra executada\.)/gi,'').replace(/\bestudo ilustrativo\b/gi,'projeto Franco Romeu')
+  .replace(/\bimagem ilustrativa\b/gi,'registro visual')
+  .replace(/\breconstituição ilustrativa\b/gi,'reconstituição técnica')
+  .replace(/\bcomparativo ilustrativo\b/gi,'comparativo do projeto')
+  .trim();
 }
 function displayTitle(title){return String(title||'').replace(/^Estudo ilustrativo\s*[—:-]\s*/i,'').trim();}
 function displayMediaText(text){
@@ -19,7 +23,10 @@ function displayMediaText(text){
   .replace(/^Depois ilustrativo\s*[—:,]\s*/i,'Depois em estudo: ')
   .replace(/^Antes reconstituído,?\s*imagem ilustrativa\s*[—:,]\s*/i,'Antes reconstituído: ')
   .replace(/^Capa editorial ilustrativa Franco Romeu para\s*/i,'Capa editorial de ')
-  .replace(/\bestudo ilustrativo\b/gi,'estudo visual')
+  .replace(/\bestudo ilustrativo\b/gi,'projeto Franco Romeu')
+  .replace(/\bimagem ilustrativa\b/gi,'registro visual')
+  .replace(/\breconstituição ilustrativa\b/gi,'reconstituição técnica')
+  .replace(/\bcomparativo ilustrativo\b/gi,'comparativo do projeto')
   .trim();
 }
 function prepare(output){
