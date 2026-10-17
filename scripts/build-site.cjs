@@ -75,6 +75,9 @@ async function build() {
   require('../src/fr-iqe-avatar-phase6.cjs')(doc);
   // Phase 7: reversible navbar layout and native SPA/dialog interaction preservation.
   require('../src/fr-nav-phase7.cjs')(doc);
+  // Fase 9.2: accessible static-service discovery inside the approved SPA views.
+  const localServices=require('./build-local-services.cjs');
+  localServices.injectDiscovery(doc);
   // Fase 9: measurement is an isolated, deferred public module.
   // The source SPA, quote math and intro remain unchanged.
   const frConversion=doc.createElement('script');
@@ -246,8 +249,9 @@ async function build() {
   const journal = require('./build-journal.cjs')(prepared);
   const editorial = require('./build-editorial-ecosystem.cjs')(prepared);
   const atlasHubs = require('./build-atlas-hubs.cjs')(prepared);
+  const localServicePages=localServices.build(prepared);
   const routes = { 'view-home': '/', 'view-sobre': '/sobre', 'view-ambientes': '/ambientes', 'view-projetos3d': '/projetos-3d', 'view-projetos': '/portfolio', 'view-orcamento': '/orcamento' };
-  const routeRecords=[...Object.entries(routes).map(([viewId,route])=>({route,file:route==='/'?'index.html':route.slice(1)+'.html',indexable:process.env.VERCEL_ENV!=='preview',category:viewId==='view-projetos3d'?'3d':'portfolio',media_ids:[...new Set([...doc.querySelectorAll('#'+viewId+' img[data-fr-media-id]')].map(n=>n.dataset.frMediaId))]})),{route:studyCase.route,file:studyCase.route.slice(1)+'.html',indexable:false,category:'3d',media_ids:prepared.data.caseCatalog.assets.map(a=>a.media_id)},...details,journal,...editorial,...atlasHubs];
+  const routeRecords=[...Object.entries(routes).map(([viewId,route])=>({route,file:route==='/'?'index.html':route.slice(1)+'.html',indexable:process.env.VERCEL_ENV!=='preview',category:viewId==='view-projetos3d'?'3d':'portfolio',media_ids:[...new Set([...doc.querySelectorAll('#'+viewId+' img[data-fr-media-id]')].map(n=>n.dataset.frMediaId))]})),{route:studyCase.route,file:studyCase.route.slice(1)+'.html',indexable:false,category:'3d',media_ids:prepared.data.caseCatalog.assets.map(a=>a.media_id)},...details,journal,...editorial,...atlasHubs,...localServicePages];
   // Main routes predate this integration; new study routes wait for release gates.
   const ns='xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"';
   const xml=rows=>'<?xml version="1.0" encoding="UTF-8"?>\n<urlset '+ns+'>'+rows.join('\n')+'</urlset>\n';
