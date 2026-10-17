@@ -27,7 +27,7 @@ test('staging explicitly enabled adds only visual assets and noindex with no cha
  assert.equal(result.visualOnly,true);
  assert.equal(doc.querySelector('meta[name=robots]').content,'noindex,nofollow');
  assert.deepEqual(Array.from(doc.querySelectorAll('script[src*="fr-block"]')).map(el=>el.getAttribute('src')),[
-  '/assets/js/fr-block-avatar.iife.js','/assets/js/fr-block-iqe-init.js'
+  '/assets/js/fr-block-avatar.iife.js','/assets/js/fr-block-iqe-balloons.js','/assets/js/fr-block-iqe-init.js'
  ]);
  assert.equal(doc.querySelector('link[href*="fr-block-iqe-stage.css"]').rel,'stylesheet');
  assert.equal(doc.getElementById('fr-ai-launcher'),button);
@@ -94,7 +94,7 @@ test('browser boot installs only when ready and its rollback leaves button event
  win.FRIQEAvatar6={mount(){legacyMounts++;},destroy(){destroys++;}};
  win.FRBlockAvatar={mountIQEBlock({root,palette,disableLegacy}){
    assert.equal(root,doc.getElementById('fr-ai-root'));
-   assert.equal(palette,'verdeLaranja');assert.equal(disableLegacy,true);
+   assert.equal(palette,'lovable');assert.equal(disableLegacy,true);
    mounts++;
    return {destroy(){destroys++;},react(){},update(){},state(){return {mounted:true,faces:2}}};
  }};
@@ -135,4 +135,32 @@ test('compiled browser bundle is actually vendored and contains the reversible B
  assert.ok(code.length>15000);
  assert.match(code,/FRBlockAvatar/);assert.match(code,/mountIQEBlock/);
  assert.match(code,/createElement/);
+});
+
+test('Block contextual hints restore welcome, navigation and auto-budget explanations without interfering with IQE events',()=>{
+ const dom=fixture(),win=dom.window,doc=win.document,root=doc.getElementById('fr-ai-root');
+ const code=fs.readFileSync(path.join(__dirname,'../assets/js/fr-block-iqe-balloons.js'),'utf8');
+ let reactions=0,launcherClicks=0;
+ root.querySelector('#fr-ai-launcher').addEventListener('click',()=>launcherClicks++);
+ win.eval(code);
+ const tips=win.FRBlockBalloons.mount(root,()=>reactions++);
+ assert.ok(tips);
+ assert.equal(tips.explain('welcome'),true);
+ const current=doc.querySelector('.fr-block-tip');
+ assert.ok(current && !current.hidden);
+ assert.match(current.textContent,/Boas-vindas ao IQE/);
+ assert.equal(tips.explain('orcamento'),true);
+ assert.match(current.textContent,/orçamento/i);
+ assert.equal(tips.explain('auto'),true);
+ assert.match(current.textContent,/Orçamento automático/);
+ root.querySelector('#fr-ai-launcher').click();
+ assert.equal(launcherClicks,1);
+ // Native Stage 5 bubble wins if it becomes visible.
+ const native=doc.createElement('button');native.className='fr-ai-context-bubble is-visible';native.textContent='Aviso nativo';
+ root.appendChild(native);
+ assert.equal(tips.explain('search'),false);
+ tips.destroy();
+ assert.equal(doc.querySelector('.fr-block-tip'),null);
+ assert.ok(reactions>=2);
+ dom.window.close();
 });
