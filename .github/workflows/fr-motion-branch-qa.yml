@@ -226,3 +226,34 @@ jobs:
           git merge-base --is-ancestor "$GITHUB_SHA" HEAD
           git push origin HEAD:refs/heads/integration/fr-motion-main-preserve-2026-10-17
           echo "INTEGRATION_CANDIDATE_BRANCH=integration/fr-motion-main-preserve-2026-10-17"
+
+  intro-chromium:
+    name: Phase 8.1 intro V05 — low FPS and reduced motion
+    runs-on: ubuntu-latest
+    timeout-minutes: 16
+    steps:
+      - name: Checkout reconciled main plus motion candidate
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Install locked application dependencies
+        run: npm ci --no-audit --no-fund
+      - name: Build the reconciled public application
+        run: npm run build
+      - name: Install isolated browser test harness
+        run: npm install --no-save --package-lock=false --no-audit --no-fund playwright@1.56.1
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Verify full visual finish at approximately eight frames per second
+        run: node tests/fr-intro-phase8-browser.cjs
+      - name: Archive intro screenshots and proof of completion
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fr-intro-phase8-low-fps
+          path: artifacts/intro-phase8/
+          if-no-files-found: ignore
+          retention-days: 14
