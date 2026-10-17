@@ -69,6 +69,18 @@ async function audit(page,width,height,pathname,name){
   assert.ok(Number.isFinite(wordFit.lineHeight)&&wordFit.textHeight<=wordFit.lineHeight*1.35,
    'Home hero word wraps into two lines at 320px: '+JSON.stringify(wordFit));
  }
+ if(pathname==='/'&&width===320){
+  const overlap=await page.evaluate(()=>{
+   const c=document.querySelector('#hero-cta .fr6-btn.primary')?.getBoundingClientRect();
+   const a=document.querySelector('#fr-ai-root .fr-ai-launcher')?.getBoundingClientRect();
+   if(!c||!a)return null;
+   return {cta:{top:c.top,bottom:c.bottom,left:c.left,right:c.right},
+    assistant:{top:a.top,bottom:a.bottom,left:a.left,right:a.right},
+    intersects:c.left<a.right&&c.right>a.left&&c.top<a.bottom&&c.bottom>a.top};
+  });
+  assert.ok(overlap,'Home CTA/assistant bounding boxes unavailable');
+  assert.equal(overlap.intersects,false,'IQE covers Home project CTA at 320px: '+JSON.stringify(overlap));
+ }
  let start=await metrics(page);validate(start,name+' top','header');
  await page.screenshot({path:OUT+'/'+name+'-top.png',animations:'disabled',timeout:25000});
  await page.evaluate(()=>window.scrollTo({top:Math.min(510,Math.max(300,document.documentElement.scrollHeight-innerHeight-5)),behavior:'instant'}));
@@ -77,6 +89,18 @@ async function audit(page,width,height,pathname,name){
  await page.waitForTimeout(1050);
  let dock=await metrics(page);
  validate(dock,name+(onBudget?' fixed top after scroll':' footer'),onBudget?'header':'footer');
+ if(pathname==='/'&&width===320){
+  const overlap=await page.evaluate(()=>{
+   const n=document.getElementById('smart-nav')?.getBoundingClientRect();
+   const a=document.querySelector('#fr-ai-root .fr-ai-launcher')?.getBoundingClientRect();
+   if(!n||!a)return null;
+   return {nav:{top:n.top,bottom:n.bottom,left:n.left,right:n.right},
+    assistant:{top:a.top,bottom:a.bottom,left:a.left,right:a.right},
+    intersects:n.left<a.right&&n.right>a.left&&n.top<a.bottom&&n.bottom>a.top};
+  });
+  assert.ok(overlap,'Dock/assistant bounding boxes unavailable');
+  assert.equal(overlap.intersects,false,'IQE covers floating nav dock at 320px: '+JSON.stringify(overlap));
+ }
  assert.ok(dock.scrollY>=160,'Page did not actually scroll: '+JSON.stringify(dock));
  if(onBudget){
   assert.ok(dock.bodyBudget,'Budget view must retain the original budget state');
