@@ -30,7 +30,23 @@ const assert=require('node:assert/strict');
      }catch(error){if(attempt===34)throw new Error('Preview failed to start: '+serverLog);await new Promise(r=>setTimeout(r,280));}
    }
    assert.ok(connected,'Preview is running');
-   await page.waitForFunction(()=>window.FRBlockStage?.getState()?.mounted===true,{timeout:15000});
+   try{
+     await page.waitForFunction(()=>window.FRBlockStage?.getState()?.mounted===true,undefined,{timeout:14000});
+   }catch(error){
+     const diag=await page.evaluate(()=>({
+       state:window.FRBlockStage?.getState?.()??null,
+       root:!!document.getElementById('fr-ai-root'),
+       launcher:!!document.querySelector('#fr-ai-launcher .fr-ai-robot'),
+       header:!!document.querySelector('.fr-ai-avatar'),
+       legacy:window.FRIQEAvatar6?.getState?.()??null,
+       bundle:!!window.FRBlockAvatar,
+       scripts:Array.from(document.querySelectorAll('script[src*="fr-block"]')).map(el=>el.src),
+       canvasSupport:!!document.createElement('canvas').getContext('2d')
+     }));
+     console.error('Block diagnostics for '+mode.name,JSON.stringify(diag));
+     await page.screenshot({path:'artifacts/block-iqe-staging/'+mode.name+'-failed.png'});
+     throw error;
+   }
    await page.waitForTimeout(850);
    const info=await page.evaluate(()=>{
      const root=document.getElementById('fr-ai-root');
