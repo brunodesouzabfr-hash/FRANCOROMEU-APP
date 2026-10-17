@@ -121,7 +121,7 @@ window.FR_MEDIA_CATALOG = {
       "status": "READY_WITH_LABEL",
       "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Teto cozinha — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo gráfico escuro da torre direita e percurso de luz no teto",
+      "alt": "Projeto 3D:  Estudo gráfico escuro da torre direita e percurso de luz no teto",
       "description": "Estudo gráfico escuro da torre direita e percurso de luz no teto.",
       "variants": [
         {
@@ -277,8 +277,8 @@ window.FR_MEDIA_CATALOG = {
       "status": "READY_WITH_LABEL",
       "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Ilha — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo ilustrativo do cooktop, tampo e base da mini-ilha com linhas azuis",
-      "description": "Estudo ilustrativo do cooktop, tampo e base da mini-ilha com linhas azuis.",
+      "alt": "Projeto 3D:  Detalhamento 3D do cooktop, tampo e base da mini-ilha com linhas azuis",
+      "description": "Detalhamento 3D do cooktop, tampo e base da mini-ilha com linhas azuis.",
       "variants": [
         {
           "file": "assets/media/fr-coz-lav/M061-480.webp",
@@ -329,8 +329,8 @@ window.FR_MEDIA_CATALOG = {
       "status": "READY_WITH_LABEL",
       "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Ilha — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo ilustrativo da mini-ilha com tampo, nichos e frente ripada",
-      "description": "Estudo ilustrativo da mini-ilha com tampo, nichos e frente ripada.",
+      "alt": "Projeto 3D:  Detalhamento 3D da mini-ilha com tampo, nichos e frente ripada",
+      "description": "Detalhamento 3D da mini-ilha com tampo, nichos e frente ripada.",
       "variants": [
         {
           "file": "assets/media/fr-coz-lav/M066-480.webp",
@@ -381,8 +381,8 @@ window.FR_MEDIA_CATALOG = {
       "status": "READY_WITH_LABEL",
       "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Ilha — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo ilustrativo da mini-ilha com linhas azuis; modelo comercial não validado",
-      "description": "Estudo ilustrativo da mini-ilha com linhas azuis; modelo comercial não validado.",
+      "alt": "Projeto 3D:  Detalhamento 3D da mini-ilha com linhas azuis; modelo comercial não validado",
+      "description": "Detalhamento 3D da mini-ilha com linhas azuis; modelo comercial não validado.",
       "variants": [
         {
           "file": "assets/media/fr-coz-lav/M160-480.webp",
@@ -655,8 +655,8 @@ window.FR_MEDIA_CATALOG = {
       "status": "READY_WITH_LABEL",
       "publication_label": "RECONSTITUIÇÃO TÉCNICA",
       "title": "Antes parede — Franco Romeu",
-      "alt": "Reconstituição ilustrativa: Ilustração de parede antiga com azulejos brancos, sem marcenaria final",
-      "description": "Ilustração de parede antiga com azulejos brancos, sem marcenaria final.",
+      "alt": "Reconstituição técnica:  Representação técnica de parede antiga com azulejos brancos, sem marcenaria final",
+      "description": "Representação técnica de parede antiga com azulejos brancos, sem marcenaria final.",
       "variants": [
         {
           "file": "assets/media/fr-coz-lav/M_a2e373872f-480.webp",
@@ -712,8 +712,8 @@ window.FR_MEDIA_CATALOG = {
       "status": "READY_WITH_LABEL",
       "publication_label": "RECONSTITUIÇÃO TÉCNICA",
       "title": "Integracao — Franco Romeu",
-      "alt": "Reconstituição ilustrativa: Ilustração frontal de ambiente demolido, passagem ao fundo e ausência de móveis finais",
-      "description": "Ilustração frontal de ambiente demolido, passagem ao fundo e ausência de móveis finais.",
+      "alt": "Reconstituição técnica:  Representação frontal de ambiente demolido, passagem ao fundo e ausência de móveis finais",
+      "description": "Representação frontal de ambiente demolido, passagem ao fundo e ausência de móveis finais.",
       "variants": [
         {
           "file": "assets/media/fr-coz-lav/M_2213e004d6-480.webp",
@@ -769,8 +769,8 @@ window.FR_MEDIA_CATALOG = {
       "status": "READY_WITH_LABEL",
       "publication_label": "RECONSTITUIÇÃO TÉCNICA",
       "title": "Integracao — Franco Romeu",
-      "alt": "Reconstituição ilustrativa: Ilustração do ambiente vazio com azulejos antigos e abertura ao fundo",
-      "description": "Ilustração do ambiente vazio com azulejos antigos e abertura ao fundo.",
+      "alt": "Reconstituição técnica:  Representação do ambiente vazio com azulejos antigos e abertura ao fundo",
+      "description": "Representação do ambiente vazio com azulejos antigos e abertura ao fundo.",
       "variants": [
         {
           "file": "assets/media/fr-coz-lav/M_97fd574b27-480.webp",
@@ -826,8 +826,8 @@ window.FR_MEDIA_CATALOG = {
       "status": "READY_WITH_LABEL",
       "publication_label": "RECONSTITUIÇÃO TÉCNICA",
       "title": "Integracao — Franco Romeu",
-      "alt": "Reconstituição ilustrativa: Ilustração do ambiente demolido com azulejos e passagem ao fundo",
-      "description": "Ilustração do ambiente demolido com azulejos e passagem ao fundo.",
+      "alt": "Reconstituição técnica:  Representação do ambiente demolido com azulejos e passagem ao fundo",
+      "description": "Representação do ambiente demolido com azulejos e passagem ao fundo.",
       "variants": [
         {
           "file": "assets/media/fr-coz-lav/M_76e8550654-480.webp",
@@ -976,8 +976,8 @@ window.FR_MEDIA_CATALOG = {
       "status": "READY_WITH_LABEL",
       "publication_label": "RECONSTITUIÇÃO TÉCNICA",
       "title": "Antes parede — Franco Romeu",
-      "alt": "Reconstituição ilustrativa: Ilustração do ambiente vazio com piso bruto e azulejos brancos",
-      "description": "Ilustração do ambiente vazio com piso bruto e azulejos brancos.",
+      "alt": "Reconstituição técnica:  Representação do ambiente vazio com piso bruto e azulejos brancos",
+      "description": "Representação do ambiente vazio com piso bruto e azulejos brancos.",
       "variants": [
         {
           "file": "assets/media/fr-coz-lav/M_2d491895a6-480.webp",
@@ -1152,7 +1152,7 @@ window.FR_MEDIA_CATALOG = {
       "status": "READY_WITH_LABEL",
       "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Aereos — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo cinza integrado com bloco central escuro no aéreo esquerdo",
+      "alt": "Projeto 3D:  Estudo cinza integrado com bloco central escuro no aéreo esquerdo",
       "description": "Estudo cinza integrado com bloco central escuro no aéreo esquerdo.",
       "variants": [
         {
@@ -1204,7 +1204,7 @@ window.FR_MEDIA_CATALOG = {
       "status": "READY_WITH_LABEL",
       "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Aereos — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo integrado com bloco inferior central escuro no aéreo esquerdo",
+      "alt": "Projeto 3D:  Estudo integrado com bloco inferior central escuro no aéreo esquerdo",
       "description": "Estudo integrado com bloco inferior central escuro no aéreo esquerdo.",
       "variants": [
         {
@@ -1261,8 +1261,8 @@ window.FR_MEDIA_CATALOG = {
       "status": "READY_WITH_LABEL",
       "publication_label": "RECONSTITUIÇÃO TÉCNICA",
       "title": "Integracao — Franco Romeu",
-      "alt": "Reconstituição ilustrativa: Ilustração de parede e passagem no estado demolido, sem mobiliário final",
-      "description": "Ilustração de parede e passagem no estado demolido, sem mobiliário final.",
+      "alt": "Reconstituição técnica:  Representação técnica de parede e passagem no estado demolido, sem mobiliário final",
+      "description": "Representação técnica de parede e passagem no estado demolido, sem mobiliário final.",
       "variants": [
         {
           "file": "assets/media/fr-coz-lav/M_041cb06df6-480.webp",
@@ -1313,7 +1313,7 @@ window.FR_MEDIA_CATALOG = {
       "status": "READY_WITH_LABEL",
       "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Frontao direito — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo cinza sem números do tampo e frontão direito em L",
+      "alt": "Projeto 3D:  Estudo cinza sem números do tampo e frontão direito em L",
       "description": "Estudo cinza sem números do tampo e frontão direito em L.",
       "variants": [
         {
@@ -1370,7 +1370,7 @@ window.FR_MEDIA_CATALOG = {
       "status": "READY_WITH_LABEL",
       "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Integracao — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Render arquitetônico integrado com torre direita, cooktop, ripado e teto luminoso",
+      "alt": "Projeto 3D:  Render arquitetônico integrado com torre direita, cooktop, ripado e teto luminoso",
       "description": "Render arquitetônico integrado com torre direita, cooktop, ripado e teto luminoso.",
       "variants": [
         {
@@ -1427,7 +1427,7 @@ window.FR_MEDIA_CATALOG = {
       "status": "READY_WITH_LABEL",
       "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Integracao — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo cinza integrado da cozinha, bancada esquerda e torre direita",
+      "alt": "Projeto 3D:  Estudo cinza integrado da cozinha, bancada esquerda e torre direita",
       "description": "Estudo cinza integrado da cozinha, bancada esquerda e torre direita.",
       "variants": [
         {
@@ -1480,7 +1480,7 @@ window.FR_MEDIA_CATALOG = {
       "status": "READY_WITH_LABEL",
       "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Ilha — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Render volumétrico do setor direito com mini-ilha, mesa e dois pendentes",
+      "alt": "Projeto 3D:  Render volumétrico do setor direito com mini-ilha, mesa e dois pendentes",
       "description": "Render volumétrico do setor direito com mini-ilha, mesa e dois pendentes.",
       "variants": [
         {
@@ -1573,7 +1573,7 @@ window.FR_MEDIA_CATALOG = {
       "status": "READY_WITH_LABEL",
       "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Torre quente — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo cinza da torre de forno e micro-ondas sem cotas legíveis",
+      "alt": "Projeto 3D:  Estudo cinza da torre de forno e micro-ondas sem cotas legíveis",
       "description": "Estudo cinza da torre de forno e micro-ondas sem cotas legíveis.",
       "variants": [
         {
@@ -1625,7 +1625,7 @@ window.FR_MEDIA_CATALOG = {
       "status": "READY_WITH_LABEL",
       "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Frontao direito — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo cinza sem números do tampo e frontão direito, em close",
+      "alt": "Projeto 3D:  Estudo cinza sem números do tampo e frontão direito, em close",
       "description": "Estudo cinza sem números do tampo e frontão direito, em close.",
       "variants": [
         {
@@ -1679,7 +1679,7 @@ window.FR_MEDIA_CATALOG = {
       "status": "READY_WITH_LABEL",
       "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Bancada integrada — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Vista ilustrativa técnica da bancada esquerda com contornos azuis",
+      "alt": "Projeto 3D:  Vista ilustrativa técnica da bancada esquerda com contornos azuis",
       "description": "Vista ilustrativa técnica da bancada esquerda com contornos azuis.",
       "variants": [
         {
@@ -1733,7 +1733,7 @@ window.FR_MEDIA_CATALOG = {
       "status": "READY_WITH_LABEL",
       "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Bancada integrada — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo frontal com contornos azuis da bancada, aéreos e inferiores",
+      "alt": "Projeto 3D:  Estudo frontal com contornos azuis da bancada, aéreos e inferiores",
       "description": "Estudo frontal com contornos azuis da bancada, aéreos e inferiores.",
       "variants": [
         {
@@ -1789,8 +1789,8 @@ window.FR_MEDIA_CATALOG = {
       "status": "READY_WITH_LABEL",
       "publication_label": "RECONSTITUIÇÃO TÉCNICA",
       "title": "Antes parede — Franco Romeu",
-      "alt": "Reconstituição ilustrativa: Ilustração de parede de azulejos e pontos de instalações no estado sem bancada final",
-      "description": "Ilustração de parede de azulejos e pontos de instalações no estado sem bancada final.",
+      "alt": "Reconstituição técnica:  Representação técnica de parede de azulejos e pontos de instalações no estado sem bancada final",
+      "description": "Representação técnica de parede de azulejos e pontos de instalações no estado sem bancada final.",
       "variants": [
         {
           "file": "assets/media/fr-coz-lav/M027-480.webp",
@@ -1947,7 +1947,7 @@ window.FR_MEDIA_CATALOG = {
       "status": "READY_WITH_LABEL",
       "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Bancada solo — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo da perna e recorte circular da bancada em linhas azuis",
+      "alt": "Projeto 3D:  Estudo da perna e recorte circular da bancada em linhas azuis",
       "description": "Estudo da perna e recorte circular da bancada em linhas azuis.",
       "variants": [
         {
@@ -2102,7 +2102,7 @@ window.FR_MEDIA_CATALOG = {
       "status": "READY_WITH_LABEL",
       "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Estante transicao — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo volumétrico da estante de transição, janela e máquina ao fundo",
+      "alt": "Projeto 3D:  Estudo volumétrico da estante de transição, janela e máquina ao fundo",
       "description": "Estudo volumétrico da estante de transição, janela e máquina ao fundo.",
       "variants": [
         {
@@ -2247,7 +2247,7 @@ window.FR_MEDIA_CATALOG = {
       "status": "READY_WITH_LABEL",
       "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Geladeira — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo cinza da geladeira lado a lado com contornos azuis",
+      "alt": "Projeto 3D:  Estudo cinza da geladeira lado a lado com contornos azuis",
       "description": "Estudo cinza da geladeira lado a lado com contornos azuis.",
       "variants": [
         {
@@ -2299,7 +2299,7 @@ window.FR_MEDIA_CATALOG = {
       "status": "READY_WITH_LABEL",
       "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Aereos — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo frontal do aéreo de quatro frentes: cinza, amadeirado, vidro escuro e cinza",
+      "alt": "Projeto 3D:  Estudo frontal do aéreo de quatro frentes: cinza, amadeirado, vidro escuro e cinza",
       "description": "Estudo frontal do aéreo de quatro frentes: cinza, amadeirado, vidro escuro e cinza.",
       "variants": [
         {
@@ -2351,7 +2351,7 @@ window.FR_MEDIA_CATALOG = {
       "status": "READY_WITH_LABEL",
       "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Aereos — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo da bancada esquerda e aéreo com bloco de vidro central inferior",
+      "alt": "Projeto 3D:  Estudo da bancada esquerda e aéreo com bloco de vidro central inferior",
       "description": "Estudo da bancada esquerda e aéreo com bloco de vidro central inferior.",
       "variants": [
         {
@@ -2407,8 +2407,8 @@ window.FR_MEDIA_CATALOG = {
       "status": "READY_WITH_LABEL",
       "publication_label": "RECONSTITUIÇÃO TÉCNICA",
       "title": "Antes parede — Franco Romeu",
-      "alt": "Reconstituição ilustrativa: Ilustração da parede antiga plana em azulejos brancos",
-      "description": "Ilustração da parede antiga plana em azulejos brancos.",
+      "alt": "Reconstituição técnica:  Representação técnica da parede antiga plana em azulejos brancos",
+      "description": "Representação técnica da parede antiga plana em azulejos brancos.",
       "variants": [
         {
           "file": "assets/media/fr-coz-lav/M_88353144b4-480.webp",
@@ -2459,7 +2459,7 @@ window.FR_MEDIA_CATALOG = {
       "status": "READY_WITH_LABEL",
       "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Bancada solo — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo cinza sem números da bancada isolada, frontão, recorte circular e cuba",
+      "alt": "Projeto 3D:  Estudo cinza sem números da bancada isolada, frontão, recorte circular e cuba",
       "description": "Estudo cinza sem números da bancada isolada, frontão, recorte circular e cuba.",
       "variants": [
         {
@@ -2513,7 +2513,7 @@ window.FR_MEDIA_CATALOG = {
       "status": "READY_WITH_LABEL",
       "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Bancada integrada — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo sem números da bancada integrada e aéreo de quatro frentes",
+      "alt": "Projeto 3D:  Estudo sem números da bancada integrada e aéreo de quatro frentes",
       "description": "Estudo sem números da bancada integrada e aéreo de quatro frentes.",
       "variants": [
         {
