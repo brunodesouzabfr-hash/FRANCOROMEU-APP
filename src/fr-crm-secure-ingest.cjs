@@ -2,11 +2,12 @@
 /**
  * FR 9.4: authenticated, server-to-server Notion intake. Never bundle into dist.
  * No browser-facing submission, CRM secrets, PII logs or GA4 events.
- * A Notion read-before-write check makes *retries* idempotent; it is not an
- * atomic uniqueness constraint across parallel serverless instances.
+ * A bounded Redis lease now serializes event IDs across serverless instances.
+ * Notion is still a separate system; this is not an exactly-once transaction.
  */
 const crypto=require('node:crypto');
 const {config}=require('./fr-crm-workflow.cjs');
+const gate=require('./fr-crm-dedup-gate.cjs');
 const NOTION_ORIGIN='https://api.notion.com/v1';
 const NOTION_VERSION='2025-09-03';
 const FIELDS=new Set(['eventId','source','service','city','contactName','phone','email','basis','evidence','consentRecordedAt']);
@@ -30,7 +31,8 @@ function configured(env=process.env){
  return env.FR_CRM_INGEST_ENABLED==='true'
    &&typeof env.FR_CRM_INGEST_SECRET==='string'&&env.FR_CRM_INGEST_SECRET.length>=32
    &&typeof env.FR_CRM_NOTION_TOKEN==='string'&&env.FR_CRM_NOTION_TOKEN.length>=30
-   &&typeof ds==='string'&&/^[a-f0-9-]{32,36}$/i.test(ds);
+   &&typeof ds==='string'&&/^[a-f0-9-]{32,36}$/i.test(ds)
+   &&gate.configured(env);
 }
 function validate(input){
  if(!input||typeof input!=='object'||Array.isArray(input)||Object.keys(input).some(k=>!FIELDS.has(k)))return null;
@@ -114,19 +116,25 @@ async function ingest(req,res,{env=process.env,fetchImpl=fetch}={}){
  if(!body||typeof body!=='object'||Buffer.byteLength(JSON.stringify(body),'utf8')>4096)return send(res,400,'invalid_payload');
  const lead=validate(body);
  if(!lead)return send(res,400,'invalid_payload');
- // A single running instance coalesces overlapping retries. Other instances
- // still require a database-backed unique key for absolute exactly-once writes.
- let pending=inflight.get(lead.eventId);
- if(!pending){
-  pending=receive(lead,{env,fetchImpl});
-  inflight.set(lead.eventId,pending);
-  pending.finally(()=>{if(inflight.get(lead.eventId)===pending)inflight.delete(lead.eventId)}).catch(()=>{});
+ // Local coalescing reduces redundant distributed lock attempts on one instance.
+ // Payloads with the same event ID but different content are never conflated.
+ const digest=gate.fingerprint(lead,env.FR_CRM_INGEST_SECRET);
+ let slot=inflight.get(lead.eventId);
+ if(slot&&slot.digest!==digest)return send(res,409,'conflict');
+ if(!slot){
+  const pending=gate.processOnce(lead,()=>receive(lead,{env,fetchImpl}),{env,fetchImpl});
+  slot={digest,pending};inflight.set(lead.eventId,slot);
+  pending.finally(()=>{if(inflight.get(lead.eventId)===slot)inflight.delete(lead.eventId)}).catch(()=>{});
  }
  try{
-  const result=await pending;
+  const result=await slot.pending;
+  if(result==='conflict')return send(res,409,'conflict');
+  if(result==='retry_later'){
+   res.setHeader('Retry-After','10');return send(res,503,'retry_later');
+  }
   return send(res,result==='received'?201:200,result);
  }catch(_){
-  res.setHeader('Retry-After','20');
+  res.setHeader('Retry-After','120');
   return send(res,503,'retry_later');
  }
 }
