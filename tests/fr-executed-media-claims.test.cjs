@@ -56,7 +56,7 @@ test('source index and deployed media/catalog presentation fields use affirmed b
  assert.deepEqual(hits(accessibleText(doc)),[]);
  doc.defaultView.close();
  const mediaSource=fs.readFileSync(path.join(ROOT,'assets/js/media-catalog.js'),'utf8');
-  const media=JSON.parse(script.slice(script.indexOf('=')+1).trim().replace(/;$/,''));
+ const media=JSON.parse(mediaSource.slice(mediaSource.indexOf('=')+1).trim().replace(/;$/,''));
  const inspect=[...(media.assets||[])];
  assert.ok(inspect.length>20);
  for(const asset of inspect){
@@ -72,7 +72,7 @@ test('source index and deployed media/catalog presentation fields use affirmed b
 
 test('generated media carries explicit digital-representation labels',()=>{
   const script=fs.readFileSync(path.join(ROOT,'assets/js/media-catalog.js'),'utf8');
-  const media=JSON.parse(script.replace(/^window\\.FR_MEDIA_CATALOG\\s*=\\s*/,'').replace(/;\\s*$/,''));
+  const media=JSON.parse(script.slice(script.indexOf('=')+1).trim().replace(/;$/,''));
   assert.equal(media.nature,'visualizacao_ilustrativa','Media catalog source kind must be preserved');
   const representations=(media.assets||[]).filter(m=>m.publication_label==='OBRA REALIZADA · REPRESENTAÇÃO DIGITAL');
   assert.ok(representations.length>=20,'Generated project visuals should be identified');
