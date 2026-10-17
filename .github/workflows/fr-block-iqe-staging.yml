@@ -31,7 +31,7 @@ jobs:
         run: |
           node - <<'NODE'
           const fs=require('node:fs');const html=fs.readFileSync('dist/index.html','utf8');
-          for(const s of ['fr-block-iqe-stage-marker','fr-block-avatar.iife.js','fr-block-iqe-init.js','noindex,nofollow'])
+          for(const s of ['fr-block-iqe-stage-marker','fr-block-avatar.iife.js','fr-block-iqe-init.js','noindex, nofollow, noimageindex'])
             if(!html.includes(s))throw Error('Missing staging marker: '+s);
           for(const f of ['dist/assets/js/fr-block-avatar.iife.js','dist/assets/js/fr-block-iqe-init.js','dist/assets/css/fr-block-iqe-stage.css'])
             if(!fs.statSync(f).size)throw Error('Empty staging asset '+f);
