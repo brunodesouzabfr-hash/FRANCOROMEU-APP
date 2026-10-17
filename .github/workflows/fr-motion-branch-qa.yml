@@ -107,3 +107,47 @@ jobs:
           path: artifacts/phase8/
           if-no-files-found: ignore
           retention-days: 14
+
+  integration-preflight:
+    name: Preserve main — non-destructive merge preflight
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Checkout entire branch history (isolated runner)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Diagnose conflicts with main without changing remote refs
+        shell: bash
+        run: |
+          set -uo pipefail
+          git fetch origin main
+          printf 'Feature: '; git rev-parse HEAD
+          printf 'Main: '; git rev-parse origin/main
+          printf 'Merge base: '; git merge-base HEAD origin/main
+          printf 'Main-only commits: '; git rev-list --count HEAD..origin/main
+          printf 'Feature-only commits: '; git rev-list --count origin/main..HEAD
+          git config user.name "FR Merge Preflight"
+          git config user.email "fr-preflight@users.noreply.github.com"
+          set +e
+          git merge --no-ff --no-commit origin/main > /tmp/fr-merge-result.txt 2>&1
+          merge_status=$?
+          set -e
+          cat /tmp/fr-merge-result.txt
+          if [ "$merge_status" -ne 0 ]; then
+            echo "::error::Merge conflict. The main branch remains untouched."
+            echo "FILES_WITH_CONFLICTS_BEGIN"
+            git diff --name-only --diff-filter=U
+            echo "FILES_WITH_CONFLICTS_END"
+            git ls-files -u | awk '{print $4}' | sort -u
+            for file in $(git diff --name-only --diff-filter=U); do
+              if [ -f "$file" ]; then
+                echo "CONFLICT_MARKERS_FOR $file"
+                grep -nE '^(<<<<<<<|=======|>>>>>>>)' "$file" | head -40 || true
+              fi
+            done
+            git merge --abort || true
+            exit 1
+          fi
+          echo "CLEAN_MERGE_PREFLIGHT=PASS — no remote write"
+          git merge --abort || true
