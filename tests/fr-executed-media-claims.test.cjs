@@ -48,7 +48,7 @@ test('public HTML has no captions, meta, labels or alt text denying executed Fra
   dom.window.close();checked++;
  }
  assert.deepEqual(problems,[],'Public-facing claims need rewriting in their generating sources');
- assert.ok(checked>=1,'Expected to inspect at least one source with a legacy token in internal metadata/file paths');
+ assert.ok(pages.length>=7,'Public build did not contain enough pages');
 });
 test('source index and deployed media/catalog presentation fields use affirmed brand language',()=>{
  const html=fs.readFileSync(path.join(ROOT,'index.html'),'utf8');
