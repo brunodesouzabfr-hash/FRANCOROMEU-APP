@@ -1,23 +1,69 @@
-/* Opt-in Staging ONLY: keep the original IQE launcher, handlers and focus ring. */
-#fr-ai-root.fr-block-iqe-staging #fr-ai-launcher .fr-ai-robot,
-#fr-ai-root.fr-block-iqe-staging .fr-ai-avatar {
-  position:relative;
+/* BLOCK is the sole visible avatar when its renderer is mounted.
+ * The Stage-5 IQE launcher button and its accessibility/behavior remain intact.
+ * Native assistant bubbles are NOT hidden or replaced by these selectors. */
+#fr-ai-root.fr-block-iqe-staging #fr-ai-launcher,
+#fr-ai-root.fr-block-iqe-staging #fr-ai-launcher.fr-ai-launcher{
+  width:76px; height:76px; min-width:66px; min-height:66px;
+  padding:0!important;
+  background:transparent!important;
+  border:0!important;
+  border-radius:12px!important;
+  box-shadow:none!important;
+  filter:none!important;
+  overflow:visible!important;
   isolation:isolate;
-  overflow:visible;
+}
+#fr-ai-root.fr-block-iqe-staging #fr-ai-launcher::before,
+#fr-ai-root.fr-block-iqe-staging #fr-ai-launcher::after,
+#fr-ai-root.fr-block-iqe-staging #fr-ai-launcher .fr-ai-robot::before,
+#fr-ai-root.fr-block-iqe-staging #fr-ai-launcher .fr-ai-robot::after{
+  content:none!important;display:none!important;
+}
+#fr-ai-root.fr-block-iqe-staging #fr-ai-launcher .fr-ai-robot{
+  width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;
+  border:0!important;background:transparent!important;box-shadow:none!important;
+  filter:none!important;transform:none!important;overflow:visible!important;
+  position:relative!important;isolation:isolate;
+}
+#fr-ai-root.fr-block-iqe-staging .fr-ai-avatar{
+  position:relative!important;isolation:isolate;
+  background:transparent!important;border:0!important;box-shadow:none!important;
+  overflow:visible!important;
+}
+/* The former status LED is part of the old artwork, not the functional launcher. */
+#fr-ai-root.fr-block-iqe-staging #fr-ai-launcher .fr-ai-status-dot{
+  display:none!important;
 }
 #fr-ai-root.fr-block-iqe-staging canvas[data-fr-block-avatar="visual-only"]{
-  display:block!important;
-  width:100%!important;
-  height:100%!important;
-  pointer-events:none!important;
-  user-select:none;
+  display:block!important;inset:0!important;
+  width:100%!important;height:100%!important;
+  pointer-events:none!important;user-select:none!important;
 }
 #fr-ai-root.fr-block-iqe-staging #fr-ai-launcher:focus-visible{
-  outline:2px solid #FF811F;
-  outline-offset:4px;
+  outline:2px solid #F6A700!important;outline-offset:5px;
+}
+/* Contextual hints are additive: native .fr-ai-context-bubble retains priority. */
+.fr-block-tip{
+  position:fixed;right:max(16px,env(safe-area-inset-right,16px));bottom:106px;
+  z-index:910;max-width:min(286px,calc(100vw - 30px));
+  display:flex;align-items:flex-start;gap:9px;padding:12px 14px 13px;
+  background:linear-gradient(145deg,#071C19,#123F34 110%);
+  border:1px solid #C9A24Daa;border-radius:13px;
+  box-shadow:0 10px 26px #010C0Bcf,0 0 12px #C9A24D28;
+  color:#EDE8D8;font:500 12px/1.5 system-ui,sans-serif;
+  transition:opacity .22s ease,transform .22s ease;
+}
+.fr-block-tip[hidden]{display:none!important;}
+.fr-block-tip strong{color:#F4CF81;font-size:12px;letter-spacing:.02em;}
+.fr-block-tip p{margin:3px 0 0;}
+.fr-block-tip button{border:0;background:transparent;color:#EDE8D8;
+  min-width:22px;min-height:24px;padding:0;font:700 18px/1 system-ui;cursor:pointer;}
+.fr-block-tip button:focus-visible{outline:2px solid #F6A700;outline-offset:2px;border-radius:3px;}
+@media(max-width:520px){
+ #fr-ai-root.fr-block-iqe-staging #fr-ai-launcher{width:68px;height:68px;min-width:68px;min-height:68px;}
+ .fr-block-tip{right:10px;bottom:96px;max-width:min(270px,calc(100vw - 20px));}
 }
 @media(prefers-reduced-motion:reduce){
-  #fr-ai-root.fr-block-iqe-staging canvas[data-fr-block-avatar="visual-only"]{
-    transition:none!important;
-  }
+ #fr-ai-root.fr-block-iqe-staging canvas[data-fr-block-avatar="visual-only"],
+ .fr-block-tip{animation:none!important;transition:none!important;}
 }
