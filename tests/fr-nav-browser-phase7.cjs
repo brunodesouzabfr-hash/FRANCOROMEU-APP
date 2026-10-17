@@ -91,6 +91,9 @@ async function audit(page,width,height,pathname,name){
   await ready();
   browser=await chromium.launch({headless:true,args:['--disable-dev-shm-usage']});
   const context=await browser.newContext({reducedMotion:'no-preference',deviceScaleFactor:1});
+  // UI geometry and screenshots must be taken AFTER the cinematic overlay.
+  // Skip intro only in navbar QA; intro playback has its own dedicated test.
+  await context.addInitScript(()=>{try{sessionStorage.setItem('fr_intro_v04_seen','1');}catch(_){}});
   const page=await context.newPage();
   await audit(page,1440,900,'/','home-desktop');
   await audit(page,1440,900,'/orcamento','budget-desktop');
