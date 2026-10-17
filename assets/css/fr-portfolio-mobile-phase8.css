@@ -1,0 +1,13 @@
+/* Phase 8.3: responsive editorial inscription, without splitting words.
+   The legacy mobile portfolio split TRANSFORMAÇÃO mid-word. Preserve the
+   large white first line; scale only the outlined gold closing statement. */
+@media (max-width: 767px) {
+  html body #view-projetos .fr16-portfolio-title > span {
+    font-size: clamp(1.85rem, 10vw, 3rem) !important;
+    line-height: 1.09 !important;
+    letter-spacing: -.055em !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    hyphens: none !important;
+  }
+}
