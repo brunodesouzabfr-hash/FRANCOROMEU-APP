@@ -89,6 +89,7 @@ async function oneScenario(page,route,viewport,errors){
   const resp=await page.goto(BASE+route.route,{waitUntil:'domcontentloaded',timeout:90000});
   assert.equal(resp?.status(),200,name+' HTTP');
   await page.waitForFunction(()=>window.FRNav7?.getState()?.mounted===true,{timeout:45000});
+  assert.equal(await page.locator('#fr-cinema-overlay').count(),0,name+' screenshot obstructed by intro');
   await page.waitForTimeout(500);
   const top=await measure(page);
   check(top,route,name+' top');
