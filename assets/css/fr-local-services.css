@@ -1,0 +1,49 @@
+
+/* Franco Romeu — F9.2 Service discovery and accessible editorial pages */
+.frls-page{margin:0;background:#031812;color:#e6d6b5;font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif}
+.frls-page *{box-sizing:border-box}
+.frls-page a{color:inherit;text-decoration:none}
+.frls-page a:focus-visible,.frls-discovery a:focus-visible{outline:3px solid #ff6b00;outline-offset:4px}
+.frls-skip{position:absolute;top:-100px;left:1rem;background:#f6a700;color:#031812!important;padding:10px;z-index:99}
+.frls-skip:focus{top:1rem}
+.frls-header{min-height:90px;padding:17px max(4vw,18px);border-bottom:1px solid #245247;display:flex;align-items:center;justify-content:space-between;gap:20px;background:#071f19}
+.frls-brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.14em;font-size:14px}
+.frls-brand img{width:56px;height:56px;object-fit:contain}
+.frls-brand small{display:block;font-size:9px;font-weight:500;letter-spacing:.19em;color:#f6a700}
+.frls-topnav{display:flex;flex-wrap:wrap;gap:clamp(12px,3vw,28px);align-items:center;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.frls-topnav a:hover,.frls-footer a:hover{color:#f6a700}
+.frls-page main{max-width:1320px;margin:0 auto;padding:0 max(4vw,18px)}
+.frls-hero{padding:clamp(64px,10vw,130px) 0 clamp(52px,7vw,90px);border-bottom:1px solid #245247}
+.frls-eyebrow{display:block;color:#f6a700;font:600 11px/1.8 ui-monospace,monospace;letter-spacing:.22em;text-transform:uppercase}
+.frls-page h1,.frls-page h2,.frls-discovery h2{font-family:Georgia,'Times New Roman',serif;font-weight:400;line-height:1.1}
+.frls-page h1{font-size:clamp(36px,6.7vw,92px);max-width:1020px;letter-spacing:-.035em;margin:18px 0 22px;text-wrap:balance}
+.frls-page h2{font-size:clamp(29px,4vw,52px);letter-spacing:-.025em;margin:12px 0 22px}
+.frls-hero>p:not(.frls-eyebrow){font-size:clamp(17px,2vw,22px);max-width:840px;color:#d1c6a9;line-height:1.75}
+.frls-actions{display:flex;flex-wrap:wrap;align-items:stretch;gap:12px;margin-top:30px}
+.frls-actions a{display:inline-flex;align-items:center;justify-content:center;border-radius:2px;min-height:48px;padding:12px 23px;border:1px solid #a87934;font-weight:700;font-size:13px;letter-spacing:.06em}
+.frls-primary{background:#f6a700;color:#031812!important}.frls-secondary{background:#123f34}
+.frls-actions a:hover{transform:translateY(-2px);filter:brightness(1.09)}
+.frls-section{padding:clamp(50px,7vw,96px) 0;border-bottom:1px solid #245247}
+.frls-section-head{max-width:770px;margin-bottom:34px}
+.frls-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.frls-item{background:linear-gradient(135deg,#123f34,#081e19);border:1px solid #28584c;border-radius:3px;padding:clamp(18px,3vw,32px);min-height:185px}
+.frls-item>span{color:#f6a700;font:500 11px ui-monospace,monospace;letter-spacing:.15em}
+.frls-item h3,.frls-item h2{font:500 clamp(21px,2.3vw,29px)/1.2 Georgia,serif;margin:17px 0 12px;letter-spacing:-.012em}
+.frls-item p,.frls-note{color:#cbbfa5;font-size:15px;line-height:1.8;margin:0}
+.frls-item a:hover{color:#f6a700}
+.frls-process .frls-item{background:#09291f}
+.frls-note{max-width:850px}
+.frls-faq{max-width:880px}.frls-faq details{border-bottom:1px solid #28584c;padding:15px 0}.frls-faq summary{font-size:17px;font-weight:600;cursor:pointer;min-height:36px}.frls-faq p{margin:12px 0;color:#cbbfa5}
+.frls-end{margin:60px 0;background:#123f34;border:1px solid #28584c;padding:clamp(25px,6vw,65px);border-radius:3px}
+.frls-end>p{max-width:880px}.frls-area{font-size:13px;line-height:1.8;color:#cbbfa5}
+.frls-footer{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;padding:38px max(4vw,18px);border-top:1px solid #245247;font-size:11px;letter-spacing:.11em}
+.frls-footer>div{display:flex;flex-wrap:wrap;gap:22px}
+.frls-discovery{box-sizing:border-box;max-width:1300px;width:calc(100% - 32px);margin:50px auto;padding:clamp(22px,5vw,50px);background:linear-gradient(128deg,#0a2f26,#031812);border:1px solid #28584c;border-radius:12px;color:#e6d6b5}
+.frls-discovery h2{font-size:clamp(26px,3.6vw,44px);margin:12px 0}
+.frls-discovery p{font-size:16px;max-width:760px;line-height:1.65;color:#cbbfa5}
+.frls-discovery nav{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:25px}
+.frls-discovery nav a{display:inline-flex;align-items:center;min-height:44px;padding:10px 15px;border:1px solid #28584c;border-radius:22px;color:#e6d6b5;font-size:13px;text-decoration:none!important}
+.frls-discovery nav a:hover{background:#123f34;border-color:#f6a700}
+.frls-discovery .frls-all{border-color:#f6a700;color:#f6a700}
+@media(max-width:720px){.frls-header{align-items:flex-start;flex-direction:column}.frls-topnav{font-size:11px;gap:15px}.frls-grid{grid-template-columns:1fr}.frls-hero{padding-top:68px}.frls-page h1{overflow-wrap:break-word}.frls-footer{align-items:flex-start;flex-direction:column}.frls-discovery nav a{flex:1 1 140px;justify-content:center;text-align:center}}
+@media(prefers-reduced-motion:reduce){.frls-actions a{transform:none!important;transition:none!important}}
