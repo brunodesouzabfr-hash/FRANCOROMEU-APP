@@ -1,12 +1,12 @@
 /*
  * Franco Romeu IQE — BLOCK Staging bootstrap.
- * Only injected by FR_BLOCK_IQE_STAGING=1, not loaded in production by default.
+ * Loads with Block on authorized staging and the deployed production main branch.
  * The existing assistant handles every button, search, budget and action.
  */
 (function(win,doc){
   'use strict';
   if(win.FRBlockStage)return;
-  var handle=null,booted=false,failed=false,discoverer=null,discoveryTimeout=0;
+  var handle=null,bubbles=null,booted=false,failed=false,discoverer=null,discoveryTimeout=0;
   function ready(){
     if(booted)return !!handle;
     var root=doc.getElementById('fr-ai-root');
@@ -21,12 +21,13 @@
     try {
       handle=win.FRBlockAvatar.mountIQEBlock({
         root:root,
-        palette:'verdeLaranja',
+        palette:'lovable',
         disableLegacy:true
       });
       if(handle){
         root.classList.add('fr-block-iqe-staging');
-        root.dataset.frBlockAvatar='staging';
+        root.dataset.frBlockAvatar='block-only';
+        bubbles=win.FRBlockBalloons?.mount(root,function(event){if(handle)handle.react(event);})||null;
         if(discoverer){discoverer.disconnect();discoverer=null;}
         if(discoveryTimeout){win.clearTimeout(discoveryTimeout);discoveryTimeout=0;}
         return true;
@@ -63,6 +64,7 @@
   function destroy(){
     if(discoverer){discoverer.disconnect();discoverer=null;}
     if(discoveryTimeout){win.clearTimeout(discoveryTimeout);discoveryTimeout=0;}
+    if(bubbles){bubbles.destroy();bubbles=null;}
     if(handle){handle.destroy();handle=null;}
     var root=doc.getElementById('fr-ai-root');
     if(root){root.classList.remove('fr-block-iqe-staging');delete root.dataset.frBlockAvatar;}
@@ -74,10 +76,12 @@
     mount:discover,
     destroy:destroy,
     react:function(kind){if(handle&&typeof handle.react==='function')handle.react(kind);},
+    explain:function(kind){return !!bubbles?.explain(kind);},
     update:function(cfg){if(handle&&typeof handle.update==='function')handle.update(cfg);},
     getState:function(){return {
       mounted:!!handle,booted:booted,failed:failed,
       engine:handle&&handle.state?handle.state():null,
+      contextualBubbles:bubbles?.state()||null,
       wizardUntouched:!!doc.getElementById('iqe-overlay'),
       assistantUntouched:!!doc.getElementById('fr-ai-body')
     };}
