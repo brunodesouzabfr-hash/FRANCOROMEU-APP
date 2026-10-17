@@ -46,7 +46,7 @@ test('57 mídias e 162 variantes liberadas por ficha; rastreabilidade e teto nat
     assert.ok(['aprovado','candidato'].includes(asset.state));
     // The historic forensic dossier retains the original source label and SHA.
     // The site presents updated work labels without rewriting immutable evidence.
-    assert.match(ficha, /^\*\*Rótulo público obrigatório:\*\* .+$/m);
+    assert.match(ficha, /^\s*-\s*\*\*Rótulo público obrigatório:\*\* .+$/m);
     assert.ok(ficha.includes('**SHA-256 da fonte:** ' + asset.sourceHash));
     for (const variant of asset.variants) {
       expected.push(variant.file.split('/').pop());
