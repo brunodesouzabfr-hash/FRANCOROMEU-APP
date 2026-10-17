@@ -15,9 +15,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Ilha — Franco Romeu",
-      "alt": "Projeto realizado pela Franco Romeu: Close de cooktop preto no tampo claro da mini-ilha; marcenaria cinza ao fundo",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Close de cooktop preto no tampo claro da mini-ilha; marcenaria cinza ao fundo",
       "description": "Close de cooktop preto no tampo claro da mini-ilha; marcenaria cinza ao fundo.",
       "variants": [
         {
@@ -28,7 +28,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -39,7 +39,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -50,7 +50,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -67,9 +67,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Ilha — Franco Romeu",
-      "alt": "Projeto realizado pela Franco Romeu: Vista superior oblíqua da mini-ilha com cooktop e tampo claro",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Vista superior oblíqua da mini-ilha com cooktop e tampo claro",
       "description": "Vista superior oblíqua da mini-ilha com cooktop e tampo claro.",
       "variants": [
         {
@@ -80,7 +80,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -91,7 +91,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -102,7 +102,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -171,9 +171,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Teto cozinha — Franco Romeu",
-      "alt": "Projeto realizado pela Franco Romeu: Torre quente cinza, nichos amadeirados e percurso luminoso no teto",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Torre quente cinza, nichos amadeirados e percurso luminoso no teto",
       "description": "Torre quente cinza, nichos amadeirados e percurso luminoso no teto.",
       "variants": [
         {
@@ -184,7 +184,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -195,7 +195,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -206,7 +206,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -223,9 +223,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Ilha — Franco Romeu",
-      "alt": "Projeto realizado pela Franco Romeu: Mini-ilha com tampo claro e cooktop, dois nichos laterais e mesa amadeirada adjacente",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Mini-ilha com tampo claro e cooktop, dois nichos laterais e mesa amadeirada adjacente",
       "description": "Mini-ilha com tampo claro e cooktop, dois nichos laterais e mesa amadeirada adjacente.",
       "variants": [
         {
@@ -236,7 +236,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -247,7 +247,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -258,7 +258,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -431,9 +431,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Frontao direito — Franco Romeu",
-      "alt": "Projeto realizado pela Franco Romeu: Vista da torre direita, tampo cinza, frontão claro e mini-ilha",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Vista da torre direita, tampo cinza, frontão claro e mini-ilha",
       "description": "Vista da torre direita, tampo cinza, frontão claro e mini-ilha.",
       "variants": [
         {
@@ -444,7 +444,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -455,7 +455,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -466,7 +466,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -483,9 +483,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Frontao direito — Franco Romeu",
-      "alt": "Projeto realizado pela Franco Romeu: Close do tampo cinza e frontão claro em L sobre marcenaria cinza",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Close do tampo cinza e frontão claro em L sobre marcenaria cinza",
       "description": "Close do tampo cinza e frontão claro em L sobre marcenaria cinza.",
       "variants": [
         {
@@ -496,7 +496,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -507,7 +507,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -518,7 +518,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -540,9 +540,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Integracao — Franco Romeu",
-      "alt": "Projeto realizado pela Franco Romeu: Vista integrada dos dois lados da cozinha, mesa, mini-ilha, dois pendentes e lavanderia ao fundo",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Vista integrada dos dois lados da cozinha, mesa, mini-ilha, dois pendentes e lavanderia ao fundo",
       "description": "Vista integrada dos dois lados da cozinha, mesa, mini-ilha, dois pendentes e lavanderia ao fundo.",
       "variants": [
         {
@@ -553,7 +553,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -564,7 +564,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -575,7 +575,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -597,9 +597,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Integracao — Franco Romeu",
-      "alt": "Projeto realizado pela Franco Romeu: Vista integrada com dois pendentes e traçado de teto diferente de R026",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Vista integrada com dois pendentes e traçado de teto diferente de R026",
       "description": "Vista integrada com dois pendentes e traçado de teto diferente de R026.",
       "variants": [
         {
@@ -610,7 +610,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -621,7 +621,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -632,7 +632,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -876,9 +876,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Torre quente — Franco Romeu",
-      "alt": "Projeto realizado pela Franco Romeu: Torre direita, ripado parcial e dois percursos luminosos no teto",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Torre direita, ripado parcial e dois percursos luminosos no teto",
       "description": "Torre direita, ripado parcial e dois percursos luminosos no teto.",
       "variants": [
         {
@@ -889,7 +889,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -900,7 +900,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -911,7 +911,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -929,9 +929,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Ilha — Franco Romeu",
-      "alt": "Projeto realizado pela Franco Romeu: Mini-ilha, mesa amadeirada, dois nichos laterais, ripado contínuo e dois pendentes",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Mini-ilha, mesa amadeirada, dois nichos laterais, ripado contínuo e dois pendentes",
       "description": "Mini-ilha, mesa amadeirada, dois nichos laterais, ripado contínuo e dois pendentes.",
       "variants": [
         {
@@ -942,7 +942,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -953,7 +953,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -1015,9 +1015,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Teto cozinha — Franco Romeu",
-      "alt": "Projeto realizado pela Franco Romeu: Vista elevada da torre, dois percursos de LED no teto e dois pendentes parciais",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Vista elevada da torre, dois percursos de LED no teto e dois pendentes parciais",
       "description": "Vista elevada da torre, dois percursos de LED no teto e dois pendentes parciais.",
       "variants": [
         {
@@ -1028,7 +1028,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1039,7 +1039,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -1056,9 +1056,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Frontao direito — Franco Romeu",
-      "alt": "Projeto realizado pela Franco Romeu: Close do encontro entre frontão claro em L e tampo cinza da cozinha direita",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Close do encontro entre frontão claro em L e tampo cinza da cozinha direita",
       "description": "Close do encontro entre frontão claro em L e tampo cinza da cozinha direita.",
       "variants": [
         {
@@ -1069,7 +1069,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1080,7 +1080,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1091,7 +1091,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -1109,9 +1109,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Ilha — Franco Romeu",
-      "alt": "Projeto realizado pela Franco Romeu: Vista vertical da mini-ilha, dois nichos laterais, mesa amadeirada e dois pendentes",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Vista vertical da mini-ilha, dois nichos laterais, mesa amadeirada e dois pendentes",
       "description": "Vista vertical da mini-ilha, dois nichos laterais, mesa amadeirada e dois pendentes.",
       "variants": [
         {
@@ -1122,7 +1122,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1133,7 +1133,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -1519,9 +1519,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Torre quente — Franco Romeu",
-      "alt": "Projeto realizado pela Franco Romeu: Torre de forno e micro-ondas, nichos amadeirados e marcenaria cinza",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Torre de forno e micro-ondas, nichos amadeirados e marcenaria cinza",
       "description": "Torre de forno e micro-ondas, nichos amadeirados e marcenaria cinza.",
       "variants": [
         {
@@ -1532,7 +1532,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1543,7 +1543,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1554,7 +1554,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -1839,9 +1839,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Bancada solo — Franco Romeu",
-      "alt": "Projeto realizado pela Franco Romeu: Bancada isolada com tampo claro, frontão, perna lateral, recorte circular e cuba preta",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Bancada isolada com tampo claro, frontão, perna lateral, recorte circular e cuba preta",
       "description": "Bancada isolada com tampo claro, frontão, perna lateral, recorte circular e cuba preta.",
       "variants": [
         {
@@ -1852,7 +1852,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1863,7 +1863,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1874,7 +1874,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -1893,9 +1893,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Bancada integrada — Franco Romeu",
-      "alt": "Projeto realizado pela Franco Romeu: Passagem entre cozinha e lavanderia com geladeira e estante amadeirada",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Passagem entre cozinha e lavanderia com geladeira e estante amadeirada",
       "description": "Passagem entre cozinha e lavanderia com geladeira e estante amadeirada.",
       "variants": [
         {
@@ -1906,7 +1906,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1917,7 +1917,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1928,7 +1928,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -1997,9 +1997,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Bancada solo — Franco Romeu",
-      "alt": "Projeto realizado pela Franco Romeu: Estudo isolado do tampo com cuba preta e recorte circular; não documenta fabricação real",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Estudo isolado do tampo com cuba preta e recorte circular; não documenta fabricação real",
       "description": "Estudo isolado do tampo com cuba preta e recorte circular; não documenta fabricação real.",
       "variants": [
         {
@@ -2010,7 +2010,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2021,7 +2021,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2032,7 +2032,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -2054,9 +2054,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Estante transicao — Franco Romeu",
-      "alt": "Projeto realizado pela Franco Romeu: Estante vazada amadeirada na transição para lavanderia, com janela e máquina ao fundo",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Estante vazada amadeirada na transição para lavanderia, com janela e máquina ao fundo",
       "description": "Estante vazada amadeirada na transição para lavanderia, com janela e máquina ao fundo.",
       "variants": [
         {
@@ -2067,7 +2067,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2078,7 +2078,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -2141,9 +2141,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Geladeira — Franco Romeu",
-      "alt": "Projeto realizado pela Franco Romeu: Geladeira junto à passagem da lavanderia e à bancada esquerda; o lado físico é esquerdo",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Geladeira junto à passagem da lavanderia e à bancada esquerda; o lado físico é esquerdo",
       "description": "Geladeira junto à passagem da lavanderia e à bancada esquerda; o lado físico é esquerdo.",
       "variants": [
         {
@@ -2154,7 +2154,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2165,7 +2165,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2176,7 +2176,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -2193,9 +2193,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Geladeira — Franco Romeu",
-      "alt": "Projeto realizado pela Franco Romeu: Geladeira escura com tela, dispensador e estante de transição; modelo comercial não confirmado",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Geladeira escura com tela, dispensador e estante de transição; modelo comercial não confirmado",
       "description": "Geladeira escura com tela, dispensador e estante de transição; modelo comercial não confirmado.",
       "variants": [
         {
@@ -2206,7 +2206,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2217,7 +2217,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2228,7 +2228,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -2563,9 +2563,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Teto cozinha — Franco Romeu",
-      "alt": "Projeto realizado pela Franco Romeu: Vista de teto com dois percursos de LED em L, torre direita e ripado parcial",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Vista de teto com dois percursos de LED em L, torre direita e ripado parcial",
       "description": "Vista de teto com dois percursos de LED em L, torre direita e ripado parcial.",
       "variants": [
         {
@@ -2576,7 +2576,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2587,7 +2587,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2598,7 +2598,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -2617,9 +2617,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Bancada integrada — Franco Romeu",
-      "alt": "Projeto realizado pela Franco Romeu: Vista corrigida da bancada esquerda: seletor preto separado entre torneira sem alavanca e bebedouro",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Vista corrigida da bancada esquerda: seletor preto separado entre torneira sem alavanca e bebedouro",
       "description": "Vista corrigida da bancada esquerda: seletor preto separado entre torneira sem alavanca e bebedouro.",
       "variants": [
         {
@@ -2630,7 +2630,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2641,7 +2641,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2652,7 +2652,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -2671,9 +2671,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Lavanderia — Franco Romeu",
-      "alt": "Projeto realizado pela Franco Romeu: Lavanderia com máquina frontal, bancada, armários, porta branca final, porta lateral parcial, varal e volume cinza",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Lavanderia com máquina frontal, bancada, armários, porta branca final, porta lateral parcial, varal e volume cinza",
       "description": "Lavanderia com máquina frontal, bancada, armários, porta branca final, porta lateral parcial, varal e volume cinza.",
       "variants": [
         {
@@ -2684,7 +2684,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2695,7 +2695,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2706,7 +2706,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -2725,9 +2725,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Lavanderia — Franco Romeu",
-      "alt": "Projeto realizado pela Franco Romeu: Vista elevada da lavanderia, dois percursos independentes de luz e porta branca final",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Vista elevada da lavanderia, dois percursos independentes de luz e porta branca final",
       "description": "Vista elevada da lavanderia, dois percursos independentes de luz e porta branca final.",
       "variants": [
         {
@@ -2738,7 +2738,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2749,7 +2749,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2760,7 +2760,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -2779,9 +2779,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Lavanderia — Franco Romeu",
-      "alt": "Projeto realizado pela Franco Romeu: Lavanderia com máquina frontal, bancada, armários inferiores e superiores, portas, varal e volume cinza",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Lavanderia com máquina frontal, bancada, armários inferiores e superiores, portas, varal e volume cinza",
       "description": "Lavanderia com máquina frontal, bancada, armários inferiores e superiores, portas, varal e volume cinza.",
       "variants": [
         {
@@ -2792,7 +2792,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2803,7 +2803,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2814,7 +2814,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -2833,9 +2833,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Lavanderia — Franco Romeu",
-      "alt": "Projeto realizado pela Franco Romeu: Close dos dois percursos luminosos da lavanderia e volume vertical cinza",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Close dos dois percursos luminosos da lavanderia e volume vertical cinza",
       "description": "Close dos dois percursos luminosos da lavanderia e volume vertical cinza.",
       "variants": [
         {
@@ -2846,7 +2846,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2857,7 +2857,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2868,7 +2868,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -2887,9 +2887,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Lavanderia — Franco Romeu",
-      "alt": "Projeto realizado pela Franco Romeu: Close de bancada e armários da lavanderia, máquina frontal, volume cinza e porta final",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Close de bancada e armários da lavanderia, máquina frontal, volume cinza e porta final",
       "description": "Close de bancada e armários da lavanderia, máquina frontal, volume cinza e porta final.",
       "variants": [
         {
@@ -2900,7 +2900,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2911,7 +2911,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2922,7 +2922,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -2939,7 +2939,7 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Bancada sob a janela — obra executada",
       "alt": "Bancada da lavanderia executada pela Franco Romeu, sob janela preta, com cuba metálica e torneira de parede.",
       "description": "Registro da bancada sob a janela, com composição e acabamento da obra Franco Romeu.",
@@ -2952,7 +2952,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
