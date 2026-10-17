@@ -69,3 +69,18 @@ test('source index and deployed media/catalog presentation fields use affirmed b
  const runtime=fs.readFileSync(path.join(ROOT,'assets/patches/fr-additions-2026-10-14/fr-additions.js'),'utf8');
  assert.doesNotMatch(runtime,/N[AÃ]O COMPROVA EXECU[ÇC][AÃ]O|IMAGEM ILUSTRATIVA/i);
 });
+
+test('generated media carries explicit digital-representation labels',()=>{
+  const script=fs.readFileSync(path.join(ROOT,'assets/js/media-catalog.js'),'utf8');
+  const media=JSON.parse(script.replace(/^window\\.FR_MEDIA_CATALOG\\s*=\\s*/,'').replace(/;\\s*$/,''));
+  assert.equal(media.nature,'visualizacao_ilustrativa','Media catalog source kind must be preserved');
+  const representations=(media.assets||[]).filter(m=>m.publication_label==='OBRA REALIZADA · REPRESENTAÇÃO DIGITAL');
+  assert.ok(representations.length>=20,'Generated project visuals should be identified');
+  for(const m of media.assets||[]){
+    assert.notEqual(m.publication_label,'PROJETO REALIZADO · FRANCO ROMEU',m.media_id+' may be mistaken for documentary photography');
+    if(m.alt?.startsWith('Representação digital de projeto realizado'))assert.match(m.publication_label||'',/REPRESENTAÇÃO DIGITAL/);
+  }
+  const prep=fs.readFileSync(path.join(ROOT,'scripts/prepare-project-library.cjs'),'utf8');
+  assert.match(prep,/ILLUSTRATIVE_AFTER'\\)return 'Depois — representação visual do projeto'/);
+  assert.doesNotMatch(prep,/ILLUSTRATIVE_AFTER'\\)return 'Depois — realização Franco Romeu'/);
+});
