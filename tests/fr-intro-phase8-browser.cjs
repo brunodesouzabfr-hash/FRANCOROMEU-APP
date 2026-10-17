@@ -24,7 +24,8 @@ function registerEvents(){
  window.addEventListener('fr:intro-complete',e=>window.__FR_INTRO_EVENTS.push(e.detail));
 }
 function lowFpsInit(){
- registerEvents();
+ window.__FR_INTRO_EVENTS=[];
+ window.addEventListener('fr:intro-complete',e=>window.__FR_INTRO_EVENTS.push(e.detail));
  Object.defineProperty(navigator,'deviceMemory',{configurable:true,get:()=>2});
  Object.defineProperty(navigator,'hardwareConcurrency',{configurable:true,get:()=>2});
  const nativeRAF=window.requestAnimationFrame.bind(window);
