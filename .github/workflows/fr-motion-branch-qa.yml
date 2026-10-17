@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - feature/fr-motion-phase1-2026-10-15
+      - integration/fr-motion-main-preserve-2026-10-17
   workflow_dispatch:
 
 permissions:
@@ -154,6 +155,7 @@ jobs:
 
   integration-candidate:
     name: Integrate V05 into isolated candidate (tests before push)
+    if: github.ref == 'refs/heads/feature/fr-motion-phase1-2026-10-15'
     runs-on: ubuntu-latest
     timeout-minutes: 25
     permissions:
