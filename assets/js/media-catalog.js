@@ -2940,9 +2940,9 @@ window.FR_MEDIA_CATALOG = {
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
       "publication_label": "PROJETO REALIZADO · FRANCO ROMEU",
-      "title": "Bancada sob a janela — detalhe ilustrativo",
-      "alt": "Imagem ilustrativa da bancada da lavanderia sob janela preta, com cuba metálica e torneira de parede.",
-      "description": "Vista ilustrativa única de bancada sob a janela. Painel direito, sem as cotas não validadas do painel esquerdo.",
+      "title": "Bancada sob a janela — obra executada",
+      "alt": "Bancada da lavanderia executada pela Franco Romeu, sob janela preta, com cuba metálica e torneira de parede.",
+      "description": "Registro da bancada sob a janela, com composição e acabamento da obra Franco Romeu.",
       "variants": [
         {
           "file": "assets/media/fr-coz-lav/M047_PANEL_DIREITO-472.webp",
