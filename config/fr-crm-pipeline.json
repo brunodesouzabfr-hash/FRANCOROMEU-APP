@@ -1,0 +1,28 @@
+{
+  "schema_version": "fr-crm-pipeline-1.0.0",
+  "crm": "Notion, workspace-private, manual intake only",
+  "public_intake_enabled": false,
+  "automated_sending_enabled": false,
+  "pipeline": [
+    {"id":"novo","label":"Novo","next":["triagem","perdido"]},
+    {"id":"triagem","label":"Triagem","next":["qualificacao","perdido"]},
+    {"id":"qualificacao","label":"Qualificação","next":["visita_tecnica","proposta_enviada","perdido"]},
+    {"id":"visita_tecnica","label":"Visita técnica","next":["proposta_enviada","qualificacao","perdido"]},
+    {"id":"proposta_enviada","label":"Proposta enviada","next":["negociacao","aprovado","perdido"]},
+    {"id":"negociacao","label":"Negociação","next":["proposta_enviada","aprovado","perdido"]},
+    {"id":"aprovado","label":"Aprovado","next":["pos_obra"]},
+    {"id":"perdido","label":"Perdido","next":["triagem"]},
+    {"id":"pos_obra","label":"Pós-obra","next":[]}
+  ],
+  "lead_origin": ["Website","WhatsApp","Instagram","Google Perfil","Indicação","Outro"],
+  "consent_status": ["Não informado","Registrado","Revogado"],
+  "loss_reasons": ["Preço","Prazo","Escopo","Sem retorno","Concorrência","Outro"],
+  "workflows": [
+    {"id":"new_lead","trigger":"manual_entry","action":"assign_owner_and_next_action","external_side_effects":false},
+    {"id":"followup_due","trigger":"review_deadline","action":"request_private_followup_review","external_side_effects":false},
+    {"id":"proposal","trigger":"stage_proposta_enviada","action":"require_last_contact_and_next_action","external_side_effects":false},
+    {"id":"won","trigger":"stage_aprovado","action":"require_approval_date_before_post_work","external_side_effects":false},
+    {"id":"lost","trigger":"stage_perdido","action":"record_reason_and_stop_outreach","external_side_effects":false},
+    {"id":"revoked","trigger":"consent_revoked","action":"block_outbound_automations_and_review_data_retention","external_side_effects":false}
+  ]
+}
