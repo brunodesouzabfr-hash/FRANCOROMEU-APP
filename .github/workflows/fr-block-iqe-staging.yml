@@ -39,6 +39,20 @@ jobs:
             if(!html.includes(s))throw Error('Lost assistant contract '+s);
           console.log('Staging output contains Block assets, SEO isolation, and original assistant.');
           NODE
+      - name: Install browser harness for the staging avatar
+        run: npm install --no-save --package-lock=false --no-audit --no-fund playwright@1.56.1
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Test actual launcher rendering and reversible IQE integration
+        run: node tests/fr-block-iqe-browser.cjs
+      - name: Archive desktop and mobile screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fr-block-iqe-staging-chromium
+          path: artifacts/block-iqe-staging/
+          if-no-files-found: ignore
+          retention-days: 7
       - name: Build normal public site without avatar replacement
         run: npm run build
       - name: Confirm default public output has no Block injection
