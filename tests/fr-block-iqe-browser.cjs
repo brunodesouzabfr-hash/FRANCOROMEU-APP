@@ -56,7 +56,7 @@ const assert=require('node:assert/strict');
        avatar:window.FRBlockStage.getState(),
        stageClass:root.classList.contains('fr-block-iqe-staging'),
        label:btn.getAttribute('aria-label'),
-       budgetPreserved:!!document.getElementById('iqe-overlay'),
+       budgetPreserved:!!document.getElementById('fr-ai-body'), // IQE wizard overlay is lazy-mounted, not present until requested
        canvases:canvases.map(canvas=>{
          let coverage=-1;
          try{
