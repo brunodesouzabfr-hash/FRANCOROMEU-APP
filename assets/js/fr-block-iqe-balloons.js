@@ -59,7 +59,7 @@
    var now=Date.now();if(!force&&last===id&&now-lastAt<28000)return false;
    title.textContent=data.title;p.textContent=data.text;container.hidden=false;container.dataset.frBlockTip=id;last=id;lastAt=now;
    if(typeof react==='function')react(data.react||'tips');
-   schedule(function(){if(container.dataset.frBlockTip===id)hide();},7500);
+   schedule(function(){if(container.dataset.frBlockTip===id)hide();},6000);
    return true;
   }
   function waitIntro(tries){
@@ -88,6 +88,10 @@
   function listen(target,type,fn,options){target.addEventListener(type,fn,options);listeners.push(function(){target.removeEventListener(type,fn,options);});}
   listen(close,'click',function(){hide();closed=true;});
   listen(doc,'click',onClick,{passive:true});
+  listen(doc,'pointerdown',function(event){
+    if(!container.hidden&&!container.contains(event.target))hide();
+  },{passive:true});
+  listen(win,'scroll',hide,{passive:true});
   listen(win,'popstate',onRoute);
   listen(win,'hashchange',onRoute);
   listen(win,'fr:intro-complete',function(){schedule(function(){show('welcome',false);},1200);});
