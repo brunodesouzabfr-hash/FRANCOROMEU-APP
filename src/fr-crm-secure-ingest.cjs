@@ -91,7 +91,7 @@ async function receive(lead,{env=process.env,fetchImpl=fetch}={}){
   parent:{type:'data_source_id',data_source_id:source},
   properties:properties(lead)
  },{env,fetchImpl});
- if(!UUID.test(created.id||''))throw new Error('NOTION_BAD_CREATE');
+ if(!/^[a-f0-9]{8}(?:-[a-f0-9]{4}){3}-[a-f0-9]{12}$/i.test(created.id||''))throw new Error('NOTION_BAD_CREATE');
  return 'received';
 }
 function send(res,status,label){
