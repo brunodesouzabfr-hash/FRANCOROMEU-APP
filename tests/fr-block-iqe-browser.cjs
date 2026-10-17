@@ -75,6 +75,9 @@ const assert=require('node:assert/strict');
    assert.equal(info.canvases.length,2,mode.name+' must render launcher and header');
    assert.ok(info.budgetPreserved,mode.name+' original IQE wizard missing');
    for(const c of info.canvases){assert.ok(c.w>0&&c.h>0,mode.name+' canvas has zero pixels');assert.ok(c.coverage>0,mode.name+' mascot did not paint pixels');}
+   // Capture the ACTUAL site after its approved intro finishes; never force-hide the intro.
+   await page.waitForFunction(()=>!document.documentElement.classList.contains('fr-intro-active')&&!document.getElementById('fr-cinema-overlay'),undefined,{timeout:45000});
+   await page.waitForTimeout(250);
    await page.screenshot({path:'artifacts/block-iqe-staging/'+mode.name+'.png',fullPage:false});
    const rollback=await page.evaluate(()=>{
      window.FRBlockStage.destroy();
