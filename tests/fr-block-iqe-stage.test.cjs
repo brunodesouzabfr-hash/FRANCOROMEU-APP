@@ -54,6 +54,38 @@ test('only the named Vercel preview branch enables Block without explicit flag',
   }
  }
 });
+test('Vercel main production enables Block while preserving public indexing and allows emergency opt-out',()=>{
+ const keys=['VERCEL_ENV','VERCEL_GIT_COMMIT_REF','FR_BLOCK_IQE_STAGING','FR_BLOCK_IQE_ENABLED'];
+ const values=Object.fromEntries(keys.map(key=>[key,process.env[key]]));
+ try{
+  delete process.env.FR_BLOCK_IQE_STAGING;delete process.env.FR_BLOCK_IQE_ENABLED;
+  process.env.VERCEL_ENV='production';
+  process.env.VERCEL_GIT_COMMIT_REF='main';
+  const production=fixture(),doc=production.window.document;
+  const launcher=doc.getElementById('fr-ai-launcher');
+  const originalContent=doc.getElementById('iqe-overlay');
+  const result=inject(doc);
+  assert.equal(result.enabled,true);
+  assert.equal(result.visualOnly,true);
+  assert.equal(doc.querySelector('meta[name=robots]').content,'index,follow','production SEO must remain indexable');
+  assert.equal(doc.querySelector('#fr-block-iqe-stage-marker').content,'production');
+  assert.equal(doc.getElementById('fr-ai-launcher'),launcher);
+  assert.equal(doc.getElementById('iqe-overlay'),originalContent);
+  production.window.close();
+  process.env.FR_BLOCK_IQE_ENABLED='0';
+  const fallback=fixture();
+  assert.equal(inject(fallback.window.document).enabled,false,'opt-out must restore old production build');
+  assert.equal(fallback.window.document.querySelector('#fr-block-iqe-stage-marker'),null);
+  fallback.window.close();
+  delete process.env.FR_BLOCK_IQE_ENABLED;
+  process.env.VERCEL_GIT_COMMIT_REF='other-branch';
+  const wrongBranch=fixture();
+  assert.equal(inject(wrongBranch.window.document).enabled,false);
+  wrongBranch.window.close();
+ }finally{
+  for(const key of keys){if(values[key]===undefined)delete process.env[key];else process.env[key]=values[key];}
+ }
+});
 test('browser boot installs only when ready and its rollback leaves button events intact',()=>{
  const dom=fixture(),win=dom.window,doc=win.document;
  const button=doc.getElementById('fr-ai-launcher');
