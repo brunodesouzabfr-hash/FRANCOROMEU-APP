@@ -46,6 +46,7 @@ async function audit(page,width,height,pathname,name){
  await page.setViewportSize({width,height});
  await page.goto(BASE+pathname,{waitUntil:'domcontentloaded',timeout:90000});
  await page.waitForFunction(()=>window.FRNav7&&window.FRNav7.getState().mounted,{timeout:45000});
+ assert.equal(await page.locator('#fr-cinema-overlay').count(),0,'Intro overlay obscures navbar QA screenshots');
  // Prevent unrelated intro overlays from obscuring the geometry measurement,
  // but do not manipulate or replace the nav.
  await page.waitForTimeout(950);
