@@ -83,8 +83,9 @@ test('declara seis mundos distintos e mantém a linguagem factual', () => {
     assert.ok(runtime.includes(`key: '${key}'`), `Mundo ausente: ${key}`);
     assert.ok(runtime.includes(line), `Linha conceitual ausente: ${line}`);
   }
-  assert.match(html, /Referência visual — não representa obra executada pela Franco Romeu/);
-  assert.match(html, /estudo 3D ilustrativo/i);
+  assert.doesNotMatch(html, /Referência visual — não representa obra executada pela Franco Romeu/);
+  assert.match(html, /Atmosferas e materiais — Franco Romeu/);
+  assert.doesNotMatch(html, /alt="Estudo 3D ilustrativo/i);
 });
 
 test('ativa os sistemas por contexto, muda de mundo e executa rollback', async () => {

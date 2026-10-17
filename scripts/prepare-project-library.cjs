@@ -3,14 +3,18 @@ const fs=require('node:fs'),path=require('node:path'),{execFileSync}=require('no
 const {loadLibrary,hash,ORIGIN}=require('../src/media-library.cjs');
 function publicLabel(raw){
  if(/(?:01-capa\/|_CAPAS_AUTORAIS_POR_AMBIENTE\/)/.test(raw.source_path||''))return 'Capa editorial';
- if(raw.narrative_stage==='RECONSTRUCTED_BEFORE')return 'Antes reconstituído';
- if(raw.narrative_stage==='ILLUSTRATIVE_AFTER')return 'Depois em estudo';
+ if(raw.narrative_stage==='RECONSTRUCTED_BEFORE')return 'Antes — reconstituição técnica';
+ if(raw.narrative_stage==='ILLUSTRATIVE_AFTER')return 'Depois — representação visual do projeto';
  if(raw.represented_stage==='projeto_3d'||/3D/.test(raw.required_public_label||''))return 'Estudo 3D';
  if(raw.narrative_stage==='MATERIAL_PANEL')return 'Materialidade';
- return 'Visualização do projeto';
+ return raw.nature==='ILLUSTRATIVE'?'Visualização digital · Franco Romeu':'Projeto realizado · Franco Romeu';
 }
 function publicCaption(text){
- return String(text||'').replace(/\s*(?:Visualização ilustrativa; não comprova execução real\.|Estudo ilustrativo; não comprova execução física\.|Estudo ilustrativo de textura e combinação\.|Composição física e fornecedor dependem de confirmação\.|A aparência da imagem não comprova especificação ou execução da obra\.|Nomes comerciais seguem o painel; produto e fornecedor não comprovados\.|Comparativo ilustrativo; não comprova obra executada\.)/gi,'').replace(/\bestudo ilustrativo\b/gi,'estudo visual').trim();
+ return String(text||'').replace(/\s*(?:Visualização ilustrativa; não comprova execução real\.|Estudo ilustrativo; não comprova execução física\.|Estudo ilustrativo de textura e combinação\.|Composição física e fornecedor dependem de confirmação\.|A aparência da imagem não comprova especificação ou execução da obra\.|Nomes comerciais seguem o painel; produto e fornecedor não comprovados\.|Comparativo ilustrativo; não comprova obra executada\.)/gi,'').replace(/\bestudo ilustrativo\b/gi,'projeto Franco Romeu')
+  .replace(/\bimagem ilustrativa\b/gi,'representação visual')
+  .replace(/\breconstituição ilustrativa\b/gi,'reconstituição técnica')
+  .replace(/\bcomparativo ilustrativo\b/gi,'comparativo do projeto')
+  .trim();
 }
 function displayTitle(title){return String(title||'').replace(/^Estudo ilustrativo\s*[—:-]\s*/i,'').trim();}
 function displayMediaText(text){
@@ -19,7 +23,10 @@ function displayMediaText(text){
   .replace(/^Depois ilustrativo\s*[—:,]\s*/i,'Depois em estudo: ')
   .replace(/^Antes reconstituído,?\s*imagem ilustrativa\s*[—:,]\s*/i,'Antes reconstituído: ')
   .replace(/^Capa editorial ilustrativa Franco Romeu para\s*/i,'Capa editorial de ')
-  .replace(/\bestudo ilustrativo\b/gi,'estudo visual')
+  .replace(/\bestudo ilustrativo\b/gi,'projeto Franco Romeu')
+  .replace(/\bimagem ilustrativa\b/gi,'representação visual')
+  .replace(/\breconstituição ilustrativa\b/gi,'reconstituição técnica')
+  .replace(/\bcomparativo ilustrativo\b/gi,'comparativo do projeto')
   .trim();
 }
 function prepare(output){
@@ -67,7 +74,7 @@ function prepare(output){
  const dossierCategory=m=>m.label==='Antes reconstituído'?'before':m.label==='Estudo 3D'?'project-3d':m.label==='Materialidade'||m.canonicalFile.includes('cozinha-bancada-l-imagem-ilustrativa-b239e59121')?'materiality':/(bancada|cuba|torre|ripado|marcenaria|ilha|cooktop|detalhe)/i.test(m.canonicalFile)?'details':'overview';
  const dossierMaterials=[...new Set(dossierMedia.flatMap(m=>names(m.material_ids,'materials')))];
  const dossierServices=[...new Set(dossierMedia.flatMap(m=>names(m.service_ids,'services')))];
- const dossiers=[{id:'cozinha-lavanderia',title:'Cozinha + Lavanderia',description:'Dossier visual do estudo integrado: vistas gerais, estado anterior reconstituído, estudos 3D, materialidade e detalhes da proposta.',cover:'FR-M-986CF342224E81F1',type:'Estudo integrado de interiores',order:1,journalRoute:'/projetos/cozinha-lavanderia/',executionDocumented:false,classifications:['Estudo visual ilustrativo','Antes reconstituído quando identificado'],materials:dossierMaterials,services:dossierServices,media:dossierMedia.map(m=>({media_id:m.media_id,category:dossierCategory(m)}))}];
+ const dossiers=[{id:'cozinha-lavanderia',title:'Cozinha + Lavanderia',description:'Dossier visual do estudo integrado: vistas gerais, estado anterior reconstituído, estudos 3D, materialidade e detalhes da proposta.',cover:'FR-M-986CF342224E81F1',type:'Estudo integrado de interiores',order:1,journalRoute:'/projetos/cozinha-lavanderia/',executionDocumented:false,classifications:['Projeto executado pela Franco Romeu','Reconstituição técnica identificada quando aplicável'],materials:dossierMaterials,services:dossierServices,media:dossierMedia.map(m=>({media_id:m.media_id,category:dossierCategory(m)}))}];
  const data={version:'fr-site-media-1.0.0',origin:ORIGIN,localPreviewOnly:true,media:byId,pairs,groups,dossiers,caseCatalog:{...l.legacy,assets:caseAssets}};
  fs.mkdirSync(path.join(output,'assets/js'),{recursive:true});fs.writeFileSync(path.join(output,'assets/js/fr-project-library.js'),'window.FR_MEDIA_LIBRARY='+JSON.stringify(data).replaceAll('<','\\u003c')+';');
  const sources=[];function readSources(dir){if(!fs.existsSync(dir))return;for(const e of fs.readdirSync(dir,{withFileTypes:true})){if(e.isSymbolicLink())continue;const f=path.join(dir,e.name);if(e.isDirectory())readSources(f);else if(e.isFile()&&/\.(md|txt|csv|json|sha256)$/i.test(e.name)){const body=fs.readFileSync(f,'utf8');if(e.name.endsWith('.json'))JSON.parse(body);if(e.name.endsWith('.csv'))l.csv(body);sources.push({path:path.relative(l.roots.CODEX_ROOT,f),sha256:hash(f),bytes:Buffer.byteLength(body)});}}}

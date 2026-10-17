@@ -1,0 +1,259 @@
+name: FR Motion Branch QA
+
+on:
+  push:
+    branches:
+      - feature/fr-motion-phase1-2026-10-15
+      - integration/fr-motion-main-preserve-2026-10-17
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  motion-quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout isolated feature branch
+        uses: actions/checkout@v4
+        with:
+          # Legacy regression compares pricing against an older pinned commit.
+          fetch-depth: 0
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+      - name: Verify phases 1-7 motion independently
+        run: node --test tests/fr-nav-phase7.test.cjs tests/fr-iqe-avatar-phase6.test.cjs tests/fr-projects3d-phase5.test.cjs tests/fr-motion-phase4.test.cjs tests/fr-ambientes-363.test.cjs tests/fr-motion-phase1.test.cjs
+      - name: Run all regression suites
+        run: npm test
+      - name: Check canonical HTML
+        if: always()
+        run: npm run check:html
+      - name: Build production-formatted HTML in isolation
+        if: always()
+        run: npm run build
+      - name: Audit public executed-work copy
+        if: always()
+        run: node --test tests/fr-executed-media-claims.test.cjs
+      - name: Audit links and project library
+        if: always()
+        run: npm run check:project-library
+      - name: Verify reproducible build
+        if: always()
+        run: npm run check:idempotence
+
+  nav-chromium:
+    name: Phase 7 Chromium geometry
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - name: Checkout feature branch without deployment
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Install pinned site dependencies
+        run: npm ci --no-audit --no-fund
+      - name: Build isolated public preview
+        run: npm run build
+      - name: Install pinned browser harness (not a production dependency)
+        run: npm install --no-save --package-lock=false --no-audit --no-fund playwright@1.56.1
+      - name: Install headless Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Measure centered dock, round corners, real scroll and budget route
+        run: node tests/fr-nav-browser-phase7.cjs
+      - name: Save desktop/mobile navigation screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fr-phase7-navbar-chromium
+          path: artifacts/nav-phase7/
+          if-no-files-found: ignore
+          retention-days: 7
+
+  phase8-integrated:
+    name: Phase 8 cross-route Chromium QA
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout isolated feature branch, no deployment
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Install locked dependencies
+        run: npm ci --no-audit --no-fund
+      - name: Build all canonical public routes
+        run: npm run build
+      - name: Install isolated browser harness
+        run: npm install --no-save --package-lock=false --no-audit --no-fund playwright@1.56.1
+      - name: Install Chromium for real visual validation
+        run: npx playwright install --with-deps chromium
+      - name: Audit six routes, nav, menu, IQE, GA4, images and mobile
+        run: node tests/fr-phase8-browser-audit.cjs
+      - name: Save QA screenshots and evidence report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fr-phase8-cross-route-qa
+          path: artifacts/phase8/
+          if-no-files-found: ignore
+          retention-days: 14
+
+  integration-preflight:
+    name: Preserve main — non-destructive merge preflight
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Checkout entire branch history (isolated runner)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Diagnose conflicts with main without changing remote refs
+        shell: bash
+        run: |
+          set -uo pipefail
+          git fetch origin main
+          printf 'Feature: '; git rev-parse HEAD
+          printf 'Main: '; git rev-parse origin/main
+          printf 'Merge base: '; git merge-base HEAD origin/main
+          printf 'Main-only commits: '; git rev-list --count HEAD..origin/main
+          printf 'Feature-only commits: '; git rev-list --count origin/main..HEAD
+          git config user.name "FR Merge Preflight"
+          git config user.email "fr-preflight@users.noreply.github.com"
+          set +e
+          git merge --no-ff --no-commit origin/main > /tmp/fr-merge-result.txt 2>&1
+          merge_status=$?
+          set -e
+          cat /tmp/fr-merge-result.txt
+          if [ "$merge_status" -ne 0 ]; then
+            echo "::error::Merge conflict. The main branch remains untouched."
+            echo "FILES_WITH_CONFLICTS_BEGIN"
+            git diff --name-only --diff-filter=U
+            echo "FILES_WITH_CONFLICTS_END"
+            git ls-files -u | awk '{print $4}' | sort -u
+            for file in $(git diff --name-only --diff-filter=U); do
+              if [ -f "$file" ]; then
+                echo "CONFLICT_MARKERS_FOR $file"
+                grep -nE '^(<<<<<<<|=======|>>>>>>>)' "$file" | head -40 || true
+              fi
+            done
+            git merge --abort || true
+            exit 1
+          fi
+          echo "CLEAN_MERGE_PREFLIGHT=PASS — no remote write"
+          git merge --abort || true
+
+  integration-candidate:
+    name: Integrate V05 into isolated candidate (tests before push)
+    if: github.ref == 'refs/heads/feature/fr-motion-phase1-2026-10-15'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout task history for main-preserving merge
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Set up Node for integration tests
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Build isolated merge candidate without modifying main or task branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main
+          git config user.name "Franco Romeu Integration"
+          git config user.email "fr-integration@users.noreply.github.com"
+          git switch -c integration/fr-motion-main-preserve-2026-10-17
+          set +e
+          git merge --no-commit --no-ff origin/main
+          merge_status=$?
+          set -e
+          if [ "$merge_status" -ne 0 ]; then
+            conflict_files="$(git diff --name-only --diff-filter=U | sort)"
+            expected="$(printf 'package.json\ntests/integration-release.test.cjs' | sort)"
+            if [ "$conflict_files" != "$expected" ]; then
+              echo "::error::Unexpected merge conflicts; refusing automatic resolution"
+              printf '%s\n' "$conflict_files"
+              exit 1
+            fi
+            # Both originals were reviewed against main. Keep the stricter GA4
+            # assertions from the feature; preserve main's canonical tag.
+            git show :2:tests/integration-release.test.cjs > tests/integration-release.test.cjs
+            git show :2:package.json > package.json
+          fi
+          # Preserve all existing motion/public tests AND the approved V05 intro QA.
+          node -e 'const fs=require("fs");const p="package.json",v=JSON.parse(fs.readFileSync(p,"utf8")),t="node --test tests/fr-intro-performance.test.cjs";if(!v.scripts.test.includes(t))v.scripts.test+=" && "+t;fs.writeFileSync(p,JSON.stringify(v,null,2)+"\n");'
+          test -f assets/intro/fr-intro-cinematic.js
+          test -f tests/fr-intro-performance.test.cjs
+          test -f assets/brand/franco-romeu-medalhao-esmeralda-256.webp
+          test -f assets/brand/franco-romeu-monograma-dourado-384.webp
+          git add package.json tests/integration-release.test.cjs
+          if [ -n "$(git diff --name-only --diff-filter=U)" ]; then
+            echo "::error::Unresolved files remain"; git diff --name-only --diff-filter=U; exit 1
+          fi
+          echo "All textual merge conflicts resolved; keeping all eight main commits as parent ancestry."
+      - name: Install locked dependencies
+        run: npm ci --no-audit --no-fund
+      - name: Execute combined branch regression suite including V05
+        run: npm test
+      - name: Validate HTML structure and build
+        run: |
+          npm run check:html
+          npm run build
+          npm run check:project-library
+          npm run check:idempotence
+      - name: Commit merged result and publish ONLY integration candidate branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add package.json tests/integration-release.test.cjs
+          git commit -m "merge(fr): preserve main intro V05 and integrate motion phases 1-8"
+          git merge-base --is-ancestor origin/main HEAD
+          git merge-base --is-ancestor "$GITHUB_SHA" HEAD
+          git push origin HEAD:refs/heads/integration/fr-motion-main-preserve-2026-10-17
+          echo "INTEGRATION_CANDIDATE_BRANCH=integration/fr-motion-main-preserve-2026-10-17"
+
+  intro-chromium:
+    name: Phase 8.1 intro V05 — low FPS and reduced motion
+    runs-on: ubuntu-latest
+    timeout-minutes: 16
+    steps:
+      - name: Checkout reconciled main plus motion candidate
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Install locked application dependencies
+        run: npm ci --no-audit --no-fund
+      - name: Build the reconciled public application
+        run: npm run build
+      - name: Install isolated browser test harness
+        run: npm install --no-save --package-lock=false --no-audit --no-fund playwright@1.56.1
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Verify full visual finish at approximately eight frames per second
+        run: node tests/fr-intro-phase8-browser.cjs
+      - name: Archive intro screenshots and proof of completion
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fr-intro-phase8-low-fps
+          path: artifacts/intro-phase8/
+          if-no-files-found: ignore
+          retention-days: 14

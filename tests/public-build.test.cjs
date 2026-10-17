@@ -85,7 +85,7 @@ test('página própria do estudo tem HTML e imagens sem motor financeiro nem mod
   assert.equal(caseDoc.querySelectorAll('h1').length,1);
   assert.equal(caseDoc.querySelectorAll('.frmedia-card').length,48);
   assert.equal(caseDoc.querySelectorAll('.frmedia-card img[src]').length,48);
-  assert.ok([...caseDoc.querySelectorAll('.frmedia-label')].every(n=>/Estudo 3D|Visualização do projeto|Antes reconstituído|Depois em estudo/.test(n.textContent)));
+  assert.ok([...caseDoc.querySelectorAll('.frmedia-label')].every(n=>/Estudo 3D|Projeto realizado|Antes — reconstituição técnica|Depois — representação visual do projeto|Visualização digital|Materialidade|Capa editorial/.test(n.textContent)));
   assert.equal(caseDoc.getElementById('fr-budget-core'),null);
   assert.doesNotMatch(text,/FRBudgetCore|three@|\.glb|AggregateRating/);
   assert.ok([...caseDoc.querySelectorAll('img[src]')].every(n=>n.getAttribute('src').startsWith('/assets/')));

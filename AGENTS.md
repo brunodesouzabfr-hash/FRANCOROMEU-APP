@@ -115,6 +115,10 @@ Núcleo: Franco Romeu, ꟻR, Forjada Resistência, Arte + Engenharia, verdade ma
 - Vocabulário útil: presença, matéria, método, execução, acabamento, precisão, oficina, forja, curadoria material, engenharia de custo e permanência.
 - Evite linguagem barateadora ou vazia, incluindo “baratinho”, “mágico”, “fazemos de tudo” e superlativos sem prova.
 - Não invente obra, cliente, depoimento, métrica, prêmio, certificação, CNPJ, prazo, garantia, licença, preço ou resultado.
+- **Declaração editorial do responsável (outubro de 2026):** os trabalhos fotografados e aprovados para o acervo Franco Romeu foram realizados fisicamente. Trate esses projetos como realizações da empresa, sem ressalvas genéricas que os desqualifiquem. Use expressões como «obra executada», «projeto realizado», «documentação da obra» e «antes e depois», de acordo com a etapa da mídia.
+- Distinga o projeto físico realizado de uma visualização digital sobre ele: uma renderização continua identificada como «Projeto 3D» e uma reconstrução técnica continua identificada como tal. Nunca apresente material gerado como fotografia documental nem atribua uma imagem externa à Franco Romeu sem confirmação de direitos e procedência.
+- Preserve as fichas históricas, hashes e documentos forenses sem edição retroativa; sua nomenclatura antiga não deve migrar para legendas, SEO, atributos de acessibilidade ou o catálogo de mídia exibido ao público.
+- A regressão obrigatória da apresentação pública é `tests/fr-executed-media-claims.test.cjs`. Corrija a **fonte** da legenda ou o gerador, não simplesmente esconda o elemento via CSS. O mesmo vale para modais, prévias de serviços, cards, conteúdo dinâmico e páginas do Jornal.
 - Render deve ser identificado como render. Imagem de terceiro deve ser identificada como referência visual e nunca apresentada como obra executada.
 - Use somente o arquivo de logo aprovado para a tarefa. Nunca redesenhe, ovalize, espelhe, distorça, recorte ou gere o monograma por IA. Preserve proporção e área de respiro.
 - Não use `®` sem comprovação de registro.

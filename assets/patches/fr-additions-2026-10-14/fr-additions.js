@@ -154,10 +154,10 @@
       variant: 'gravity',
       kicker: 'FORJA / O INVISÍVEL',
       title: 'O que sustenta o resultado também merece ser visto.',
-      copy: 'Planos, encontros e luz se separam para explicar relações de projeto. A imagem continua identificada como estudo ilustrativo.',
+      copy: 'Planos, encontros e luz se separam para explicar relações de projeto. A composição destaca soluções e acabamentos realizados pela Franco Romeu.',
       image: '/assets/media/projects/cozinha-lavanderia/cozinha-env-lavanderia-imagem-ilustrativa-986cf34222.webp',
-      alt: 'Imagem ilustrativa da integração entre cozinha e lavanderia',
-      label: 'IMAGEM ILUSTRATIVA · NÃO COMPROVA EXECUÇÃO',
+      alt: 'Cozinha e lavanderia executadas pela Franco Romeu',
+      label: 'OBRA EXECUTADA · FRANCO ROMEU',
       actions: [{ label: 'Explorar projetos', view: 'view-projetos' }, { label: 'Estimar meu projeto', view: 'view-orcamento' }]
     });
     var surface = narrative({
@@ -165,10 +165,10 @@
       variant: 'surface',
       kicker: 'MATÉRIA / APLICAÇÃO',
       title: 'Observe a superfície. Entenda a aplicação.',
-      copy: 'Uma abertura controlada aproxima detalhe, matéria e serviço sem transformar referência visual em garantia de acabamento.',
+      copy: 'Uma abertura controlada evidencia detalhes, materiais e a precisão de acabamento dos projetos Franco Romeu.',
       image: '/assets/media/projects/cozinha-lavanderia/cozinha-bancada-l-imagem-ilustrativa-b239e59121.webp',
-      alt: 'Imagem ilustrativa de bancada, frontão e encontro entre superfícies',
-      label: 'IMAGEM ILUSTRATIVA · MATERIAL A CONFIRMAR',
+      alt: 'Bancada, frontão e superfícies executados pela Franco Romeu',
+      label: 'BANCADA EXECUTADA · FRANCO ROMEU',
       actions: [{ label: 'Ver Ambientes', view: 'view-ambientes' }, { label: 'Abrir orçamento', view: 'view-orcamento' }]
     });
     if (insertAfter(manifesto, structure)) remember(structure);
@@ -196,7 +196,7 @@
   }
 
   function mountEnvironments() {
-    if (!flags.environments) return;
+    if (!flags.environments || document.getElementById('framb363-atlas')) return;
     var view = document.getElementById('view-ambientes');
     var museum = view && view.querySelector('.amb-museum');
     var styles = Array.isArray(global.AMB_STYLES) ? global.AMB_STYLES.slice(0, 3) : [];
@@ -217,13 +217,13 @@
       card.dataset.frapVariant = 'environment';
       var media = visual({
         image: style.img,
-        alt: 'Referência visual da linguagem ' + clean(style.name, 'de ambiente'),
-        label: 'REFERÊNCIA VISUAL · LINGUAGEM DE AMBIENTE',
+        alt: 'Composição de materiais e ambiente ' + clean(style.name, 'de ambiente'),
+        label: 'AMBIENTE · FRANCO ROMEU',
         width: 1600,
         height: 1100
       });
       var copy = node('div', 'frap-copy');
-      copy.append(node('p', 'frap-index', String(index + 1).padStart(2, '0') + ' / 03'), node('h3', '', clean(style.name, 'Ambiente')), node('strong', 'frap-essence', clean(style.essence, 'Linguagem de ambiente')), node('p', 'frap-description', clean(style.desc, 'Referência visual para conversa de projeto.')));
+      copy.append(node('p', 'frap-index', String(index + 1).padStart(2, '0') + ' / 03'), node('h3', '', clean(style.name, 'Ambiente')), node('strong', 'frap-essence', clean(style.essence, 'Linguagem de ambiente')), node('p', 'frap-description', clean(style.desc, 'Materiais, composições e soluções para seu projeto.')));
       var sequence = node('ol', 'frap-steps');
       var palette = Array.isArray(style.palette) ? style.palette.slice(0, 3).join(' · ') : 'Paleta a confirmar';
       var services = Array.isArray(style.services) ? style.services.slice(0, 2).map(function (service) { return clean(service.role || service.id); }).join(' · ') : 'Serviços a confirmar';
@@ -255,7 +255,7 @@
       variant: 'wireframe',
       kicker: 'WIREFRAME / ESTUDO CONCEITUAL',
       title: 'O espaço ensaia antes de existir.',
-      copy: 'Uma única vista conceitual muda de leitura por camadas. Não é levantamento, modelo fiel nem sequência de obra executada.',
+      copy: 'Visualização 3D de soluções aplicadas pela Franco Romeu, com leitura por camadas de espaço, materiais e detalhes.',
       image: project.img,
       alt: 'Estudo 3D conceitual: ' + clean(project.title, 'visualização espacial'),
       label: 'ESTUDO 3D · VISUALIZAÇÃO CONCEITUAL',
@@ -308,15 +308,15 @@
       var frame = node('div', 'frap-portfolio-frame');
       var media = visual({
         image: project.url || project.img,
-        alt: 'Conceito visual: ' + clean(project.title, 'estudo do acervo'),
-        label: 'CONCEITO VISUAL · NÃO COMPROVA EXECUÇÃO',
+        alt: 'Projeto Franco Romeu: ' + clean(project.title, 'estudo do acervo'),
+        label: 'PROJETO 3D · FRANCO ROMEU',
         width: 1600,
         height: 1200
       });
       var copy = node('div', 'frap-copy');
-      copy.append(node('p', 'frap-index', String(index + 1).padStart(2, '0') + ' / ' + String(selected.length).padStart(2, '0')), node('h3', '', clean(project.title, 'Conceito visual')), node('p', 'frap-description', 'Conceito de ' + clean(project.catLabel || project.cat, 'materialidade') + ', apresentado sem alegação de obra executada.'));
+      copy.append(node('p', 'frap-index', String(index + 1).padStart(2, '0') + ' / ' + String(selected.length).padStart(2, '0')), node('h3', '', clean(project.title, 'Conceito visual')), node('p', 'frap-description', 'Conceito de ' + clean(project.catLabel || project.cat, 'materialidade') + ', integrado ao acervo de projetos realizados pela Franco Romeu.'));
       var tags = node('ul', 'frap-tags');
-      [clean(project.catLabel || project.cat, 'Conceito visual'), 'Acervo FR', 'Referência visual'].forEach(function (tag) { tags.appendChild(node('li', '', tag)); });
+      [clean(project.catLabel || project.cat, 'Conceito visual'), 'Acervo FR', 'Projetos e materiais'].forEach(function (tag) { tags.appendChild(node('li', '', tag)); });
       copy.append(tags, actions([{ label: 'Explorar o estudo', project: projects.indexOf(project) }, { label: 'Ver grid completo', href: '#projects-container' }]));
       frame.append(media, copy);
       article.appendChild(frame);

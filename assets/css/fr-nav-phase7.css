@@ -1,0 +1,213 @@
+/* Franco Romeu · NAV F7.1 · ONE GEOMETRY, TWO POSITIONS.
+   Explicitly outranks the old header/floating/hidden and budget !important rules.
+   Never changes DOM routes, original dialog, IQE, or finance logic. */
+html body #smart-nav[data-fr-nav7-version="7.1"]:not(.fr-nav7-disabled){
+ --fr-nav7-h:72px;--fr-nav7-gap:clamp(6px,.7vw,12px);
+ position:fixed!important;display:flex!important;align-items:center!important;justify-content:space-between!important;
+ top:calc(12px + env(safe-area-inset-top,0px))!important;bottom:auto!important;
+ left:50vw!important;right:auto!important;margin:0!important;
+ width:min(1280px,calc(100vw - 32px))!important;max-width:1280px!important;min-width:0!important;
+ height:var(--fr-nav7-h)!important;min-height:var(--fr-nav7-h)!important;max-height:var(--fr-nav7-h)!important;
+ padding:8px clamp(12px,1.6vw,22px)!important;gap:var(--fr-nav7-gap)!important;
+ box-sizing:border-box!important;flex-wrap:nowrap!important;
+ border-radius:999px!important;border:1px solid rgba(230,214,181,.34)!important;
+ clip-path:none!important;overflow:visible!important;
+ background:linear-gradient(112deg,#031812f5,#0a2f26f5 68%,#123f34f5)!important;
+ box-shadow:0 14px 40px #010c09b8,0 0 0 1px #f6a70017!important;
+ backdrop-filter:blur(10px)!important;-webkit-backdrop-filter:blur(10px)!important;
+ opacity:1!important;visibility:visible!important;pointer-events:auto!important;
+ translate:none!important;scale:1!important;rotate:0deg!important;
+ transform:translate3d(-50%,0,0)!important;transform-origin:50% 50%!important;
+ z-index:560!important;isolation:isolate!important;
+ transition:top .82s cubic-bezier(.22,1,.32,1),width .82s cubic-bezier(.22,1,.32,1),height .72s cubic-bezier(.22,1,.32,1),min-height .72s cubic-bezier(.22,1,.32,1),max-height .72s cubic-bezier(.22,1,.32,1),background .45s ease,box-shadow .45s ease,opacity .2s ease!important;
+}
+html body.fr10-budget-active #smart-nav[data-fr-nav7-version="7.1"]:not(.fr-nav7-disabled){
+ left:50vw!important;right:auto!important;bottom:auto!important;margin:0!important;
+ width:min(1280px,calc(100vw - 32px))!important;max-width:1280px!important;
+ border-radius:999px!important;transform:translate3d(-50%,0,0)!important;
+ opacity:1!important;visibility:visible!important;pointer-events:auto!important;
+ z-index:560!important;
+}
+/* This is a genuine repositioning, not an animation that fades away. The bar stays accessible. */
+html body #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"]:not(.fr-nav7-disabled),
+html body.fr10-budget-active #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"]:not(.fr-nav7-disabled){
+ --fr-nav7-h:62px;
+ top:calc(100vh - var(--fr-nav7-h) - max(16px,env(safe-area-inset-bottom,0px)))!important;
+ top:calc(100dvh - var(--fr-nav7-h) - max(16px,env(safe-area-inset-bottom,0px)))!important;
+ bottom:auto!important;left:50vw!important;right:auto!important;margin:0!important;
+ width:min(560px,calc(100vw - 36px))!important;max-width:560px!important;
+ padding:7px 14px!important;gap:8px!important;
+ border-radius:999px!important;clip-path:none!important;overflow:visible!important;
+ background:linear-gradient(118deg,#031812f9,#0a2f26f9)!important;
+ box-shadow:0 16px 52px #000b,0 2px 0 #f6a70022!important;
+ transform:translate3d(-50%,0,0)!important;
+}
+html body #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-state="modal"]:not(.fr-nav7-disabled),
+html body.fr10-budget-active #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-state="modal"]:not(.fr-nav7-disabled){
+ opacity:0!important;visibility:hidden!important;pointer-events:none!important;
+ transform:translate3d(-50%,0,0)!important;
+}
+/* Original image is retained; the logo is the Home control in either state. */
+html body #smart-nav[data-fr-nav7-version="7.1"] #smart-nav-brand{
+ display:flex!important;align-items:center!important;justify-content:flex-start!important;
+ flex:0 0 auto!important;min-width:46px!important;max-width:260px!important;
+ width:auto!important;height:48px!important;min-height:44px!important;max-height:48px!important;
+ gap:10px!important;padding:0!important;border-radius:999px!important;
+ overflow:hidden!important;white-space:nowrap!important;background:transparent!important;
+ transform:none!important;box-shadow:none!important;
+}
+html body #smart-nav[data-fr-nav7-version="7.1"] #smart-nav-brand .frx-top-logo{
+ display:grid!important;place-items:center!important;
+ width:46px!important;height:46px!important;min-width:46px!important;min-height:46px!important;
+ max-width:46px!important;max-height:46px!important;flex:0 0 46px!important;
+ aspect-ratio:1!important;overflow:hidden!important;border-radius:50%!important;
+ clip-path:circle(50%)!important;background:#031812!important;
+}
+html body #smart-nav[data-fr-nav7-version="7.1"] #smart-nav-brand .frx-top-logo img{
+ display:block!important;width:100%!important;height:100%!important;
+ object-fit:cover!important;object-position:center!important;
+ border-radius:50%!important;clip-path:circle(50%)!important;transform:none!important;
+}
+html body #smart-nav[data-fr-nav7-version="7.1"] #smart-nav-brand .frx-brand-copy{
+ display:grid!important;gap:3px!important;min-width:0!important;
+}
+html body #smart-nav[data-fr-nav7-version="7.1"] #smart-nav-brand .frx-brand-copy strong{
+ font:700 17px/1.05 'Rokkitt',Georgia,serif!important;white-space:nowrap!important;color:#e6d6b5!important;
+}
+html body #smart-nav[data-fr-nav7-version="7.1"] #smart-nav-brand .frx-brand-copy small{
+ font:400 10px/1.2 'Share Tech Mono',monospace!important;white-space:nowrap!important;color:#f6a700!important;
+}
+html body #smart-nav[data-fr-nav7-version="7.1"] .gm-placeholder{display:none!important}
+/* Primary desktop navigation never wraps or stretches sideways. */
+html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items{
+ display:flex!important;flex:1 1 auto!important;min-width:0!important;max-width:100%!important;width:auto!important;
+ align-items:center!important;justify-content:center!important;gap:clamp(2px,.35vw,9px)!important;
+ padding:0!important;margin:0!important;overflow:visible!important;flex-wrap:nowrap!important;
+ list-style:none!important;
+}
+html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items>li{display:block!important;flex:0 0 auto!important;min-width:0!important}
+html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items :is(.nav-link,.nav-cta){
+ display:inline-flex!important;align-items:center!important;justify-content:center!important;
+ flex-direction:row!important;flex:0 0 auto!important;
+ width:auto!important;min-width:44px!important;max-width:none!important;
+ height:44px!important;min-height:44px!important;max-height:44px!important;
+ padding:9px clamp(7px,.5vw,12px)!important;margin:0!important;gap:6px!important;
+ white-space:nowrap!important;overflow:visible!important;overflow-wrap:normal!important;
+ border-radius:999px!important;font:600 clamp(11px,.94vw,14px)/1.1 'Rokkitt',Georgia,serif!important;
+ transform:none!important;box-shadow:none!important;transition:color .24s ease,background .24s ease!important;
+ background:transparent!important;color:#e6d6b5!important;
+}
+html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items .nav-label{
+ display:inline!important;font:inherit!important;max-width:none!important;
+ white-space:nowrap!important;overflow-wrap:normal!important;letter-spacing:.015em!important;
+ line-height:1!important;
+}
+html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items :is(.nav-link,.nav-cta) i{
+ display:inline-block!important;font-size:15px!important;line-height:1!important;
+ width:17px!important;height:17px!important;min-width:17px!important;max-width:17px!important;
+ text-align:center!important;margin:0!important;flex:0 0 17px!important;
+}
+html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items :is(.nav-link,.nav-cta):hover{
+ background:#f6a7001a!important;color:#f6a700!important;
+}
+html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items :is(.nav-link,.nav-cta).active-nav,
+html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items :is(.nav-link,.nav-cta)[aria-current="page"]{
+ color:#f6a700!important;background:#f6a7001e!important;box-shadow:inset 0 0 0 1px #f6a70055!important;
+}
+html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items .nav-cta{background:#fc7016!important;color:#031812!important}
+html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items .nav-cta:hover{background:#ffad69!important;color:#031812!important}
+/* Bottom state: centered and compact icon-only links, accessible labels remain in DOM. */
+html body #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"] #smart-nav-brand{
+ flex:0 0 46px!important;width:46px!important;min-width:46px!important;max-width:46px!important;
+}
+html body #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"] #smart-nav-brand .frx-brand-copy{display:none!important}
+html body #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"] .nav-items{
+ flex:1 1 auto!important;justify-content:center!important;gap:3px!important;
+}
+html body #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"] .nav-items :is(.nav-link,.nav-cta){
+ width:44px!important;min-width:44px!important;max-width:44px!important;
+ height:44px!important;min-height:44px!important;max-height:44px!important;
+ flex:0 0 44px!important;padding:8px!important;gap:0!important;aspect-ratio:1!important;
+}
+html body #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"] .nav-items .nav-label{
+ position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;
+ clip:rect(0,0,0,0)!important;white-space:nowrap!important;
+}
+html body #smart-nav[data-fr-nav7-version="7.1"] .fr-site-nav-contact{
+ display:flex!important;flex:0 0 auto!important;align-items:center!important;
+ gap:6px!important;margin:0!important;min-width:0!important;
+}
+html body #smart-nav[data-fr-nav7-version="7.1"] .fr-site-nav-contact :is(.fr-site-icon-link,#fr-site-menu-open){
+ display:flex!important;align-items:center!important;justify-content:center!important;
+ box-sizing:border-box!important;width:44px!important;min-width:44px!important;max-width:44px!important;
+ height:44px!important;min-height:44px!important;max-height:44px!important;
+ flex:0 0 44px!important;padding:9px!important;margin:0!important;
+ border-radius:50%!important;border:1px solid #e6d6b54c!important;
+ background:#123f344f!important;color:#e6d6b5!important;transform:none!important;
+}
+html body #smart-nav[data-fr-nav7-version="7.1"] .fr-site-nav-contact .fr-site-icon-link svg{
+ display:block!important;width:22px!important;height:22px!important;stroke:currentColor!important;
+ fill:none!important;flex:0 0 22px!important;
+}
+html body #smart-nav[data-fr-nav7-version="7.1"] .fr-site-nav-contact .fr-site-icon-link span{display:none!important}
+html body #smart-nav[data-fr-nav7-version="7.1"] .fr-site-nav-contact #fr-site-menu-open{display:none!important}
+html body #smart-nav[data-fr-nav7-version="7.1"] .fr-site-nav-contact :is(.fr-site-icon-link,#fr-site-menu-open):hover{
+ border-color:#f6a700!important;color:#f6a700!important;
+}
+html body #smart-nav[data-fr-nav7-version="7.1"] :is(a,button):focus-visible{
+ outline:3px solid #ff6b00!important;outline-offset:3px!important;
+}
+html body #fr-site-menu.fr-nav7-dialog{z-index:1200!important}
+html body #fr-site-menu.fr-nav7-dialog::backdrop{background:#010b09d9!important}
+/* In very wide navigation, remove decorative brand words before overflow. */
+@media(max-width:1260px){
+ html body #smart-nav[data-fr-nav7-version="7.1"] #smart-nav-brand .frx-brand-copy{display:none!important}
+ html body #smart-nav[data-fr-nav7-version="7.1"] #smart-nav-brand{max-width:48px!important;flex:0 0 48px!important}
+}
+@media(max-width:1100px){
+ html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items{display:none!important}
+ html body #smart-nav[data-fr-nav7-version="7.1"] .fr-site-nav-contact #fr-site-menu-open{display:flex!important}
+ html body #smart-nav[data-fr-nav7-version="7.1"] #smart-nav-brand{flex:1 1 auto!important;max-width:none!important}
+ html body #smart-nav[data-fr-nav7-version="7.1"] #smart-nav-brand .frx-brand-copy{display:grid!important}
+ html body #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"] #smart-nav-brand{
+  flex:0 0 46px!important;max-width:46px!important;
+ }
+ html body #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"] #smart-nav-brand .frx-brand-copy{display:none!important}
+ html body #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"]:not(.fr-nav7-disabled),
+ html body.fr10-budget-active #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"]:not(.fr-nav7-disabled){
+  width:min(310px,calc(100vw - 28px))!important;max-width:310px!important;
+  padding:7px 12px!important;justify-content:center!important;
+ }
+}
+@media(max-width:600px){
+ html body #smart-nav[data-fr-nav7-version="7.1"]:not(.fr-nav7-disabled),
+ html body.fr10-budget-active #smart-nav[data-fr-nav7-version="7.1"]:not(.fr-nav7-disabled){
+  --fr-nav7-h:60px;
+  width:calc(100vw - 16px)!important;max-width:100%!important;
+  padding:6px 10px!important;gap:6px!important;
+ }
+ html body #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"]:not(.fr-nav7-disabled),
+ html body.fr10-budget-active #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"]:not(.fr-nav7-disabled){
+  --fr-nav7-h:58px;
+  width:min(290px,calc(100vw - 24px))!important;max-width:290px!important;
+  top:calc(100dvh - var(--fr-nav7-h) - max(12px,env(safe-area-inset-bottom,0px)))!important;
+  padding:5px 10px!important;justify-content:center!important;
+ }
+ html body #smart-nav[data-fr-nav7-version="7.1"] #smart-nav-brand{min-width:44px!important;max-width:44px!important;flex:1 1 auto!important}
+ html body #smart-nav[data-fr-nav7-version="7.1"] #smart-nav-brand .frx-brand-copy{display:none!important}
+ html body #smart-nav[data-fr-nav7-version="7.1"] #smart-nav-brand .frx-top-logo{
+  width:42px!important;height:42px!important;min-width:42px!important;min-height:42px!important;
+  max-width:42px!important;max-height:42px!important;flex:0 0 42px!important;
+ }
+ html body #smart-nav[data-fr-nav7-version="7.1"] .fr-site-nav-contact{gap:4px!important}
+ html body #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"] #smart-nav-brand{flex:0 0 44px!important;width:44px!important;max-width:44px!important}
+}
+@media(prefers-reduced-motion:reduce){
+ html body #smart-nav[data-fr-nav7-version="7.1"]:not(.fr-nav7-disabled){
+  transition:none!important;backdrop-filter:none!important;
+ }
+}
+html.fr7-low-power body #smart-nav[data-fr-nav7-version="7.1"]:not(.fr-nav7-disabled){
+ backdrop-filter:none!important;transition:none!important;
+}
+@media print{html body #smart-nav[data-fr-nav7-version="7.1"]{display:none!important}}

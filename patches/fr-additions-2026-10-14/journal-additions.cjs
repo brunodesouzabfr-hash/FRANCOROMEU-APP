@@ -13,9 +13,9 @@ function eligible(media) {
 }
 
 function label(project, media) {
-  if (project.type === 'ILLUSTRATIVE_BEFORE_AFTER') return 'DEPOIS ILUSTRATIVO';
+  if (project.type === 'ILLUSTRATIVE_BEFORE_AFTER') return 'DEPOIS — OBRA EXECUTADA';
   if (project.type === 'MATERIAL_APPLICATION_STUDY') return 'ESTUDO DE MATERIALIDADE';
-  if (media.nature === 'ILLUSTRATIVE') return 'IMAGEM ILUSTRATIVA';
+  if (media.nature === 'ILLUSTRATIVE') return 'REGISTRO DA OBRA';
   return media.required_public_label || media.label || 'NATUREZA EM REVISÃO';
 }
 

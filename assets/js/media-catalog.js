@@ -15,9 +15,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "IMAGEM ILUSTRATIVA",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Ilha — Franco Romeu",
-      "alt": "Imagem ilustrativa: Close de cooktop preto no tampo claro da mini-ilha; marcenaria cinza ao fundo",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Close de cooktop preto no tampo claro da mini-ilha; marcenaria cinza ao fundo",
       "description": "Close de cooktop preto no tampo claro da mini-ilha; marcenaria cinza ao fundo.",
       "variants": [
         {
@@ -28,7 +28,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -39,7 +39,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -50,7 +50,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -67,9 +67,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "IMAGEM ILUSTRATIVA",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Ilha — Franco Romeu",
-      "alt": "Imagem ilustrativa: Vista superior oblíqua da mini-ilha com cooktop e tampo claro",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Vista superior oblíqua da mini-ilha com cooktop e tampo claro",
       "description": "Vista superior oblíqua da mini-ilha com cooktop e tampo claro.",
       "variants": [
         {
@@ -80,7 +80,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -91,7 +91,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -102,7 +102,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -119,9 +119,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "projeto_3d",
       "status": "READY_WITH_LABEL",
-      "publication_label": "ESTUDO 3D ILUSTRATIVO",
+      "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Teto cozinha — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo gráfico escuro da torre direita e percurso de luz no teto",
+      "alt": "Projeto 3D:  Estudo gráfico escuro da torre direita e percurso de luz no teto",
       "description": "Estudo gráfico escuro da torre direita e percurso de luz no teto.",
       "variants": [
         {
@@ -132,7 +132,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -143,7 +143,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -154,7 +154,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -171,9 +171,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "IMAGEM ILUSTRATIVA",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Teto cozinha — Franco Romeu",
-      "alt": "Imagem ilustrativa: Torre quente cinza, nichos amadeirados e percurso luminoso no teto",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Torre quente cinza, nichos amadeirados e percurso luminoso no teto",
       "description": "Torre quente cinza, nichos amadeirados e percurso luminoso no teto.",
       "variants": [
         {
@@ -184,7 +184,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -195,7 +195,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -206,7 +206,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -223,9 +223,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "IMAGEM ILUSTRATIVA",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Ilha — Franco Romeu",
-      "alt": "Imagem ilustrativa: Mini-ilha com tampo claro e cooktop, dois nichos laterais e mesa amadeirada adjacente",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Mini-ilha com tampo claro e cooktop, dois nichos laterais e mesa amadeirada adjacente",
       "description": "Mini-ilha com tampo claro e cooktop, dois nichos laterais e mesa amadeirada adjacente.",
       "variants": [
         {
@@ -236,7 +236,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -247,7 +247,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -258,7 +258,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -275,10 +275,10 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "projeto_3d",
       "status": "READY_WITH_LABEL",
-      "publication_label": "ESTUDO 3D ILUSTRATIVO",
+      "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Ilha — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo ilustrativo do cooktop, tampo e base da mini-ilha com linhas azuis",
-      "description": "Estudo ilustrativo do cooktop, tampo e base da mini-ilha com linhas azuis.",
+      "alt": "Projeto 3D:  Detalhamento 3D do cooktop, tampo e base da mini-ilha com linhas azuis",
+      "description": "Detalhamento 3D do cooktop, tampo e base da mini-ilha com linhas azuis.",
       "variants": [
         {
           "file": "assets/media/fr-coz-lav/M061-480.webp",
@@ -288,7 +288,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -299,7 +299,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -310,7 +310,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -327,10 +327,10 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "projeto_3d",
       "status": "READY_WITH_LABEL",
-      "publication_label": "ESTUDO 3D ILUSTRATIVO",
+      "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Ilha — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo ilustrativo da mini-ilha com tampo, nichos e frente ripada",
-      "description": "Estudo ilustrativo da mini-ilha com tampo, nichos e frente ripada.",
+      "alt": "Projeto 3D:  Detalhamento 3D da mini-ilha com tampo, nichos e frente ripada",
+      "description": "Detalhamento 3D da mini-ilha com tampo, nichos e frente ripada.",
       "variants": [
         {
           "file": "assets/media/fr-coz-lav/M066-480.webp",
@@ -340,7 +340,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -351,7 +351,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -362,7 +362,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -379,10 +379,10 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "projeto_3d",
       "status": "READY_WITH_LABEL",
-      "publication_label": "ESTUDO 3D ILUSTRATIVO",
+      "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Ilha — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo ilustrativo da mini-ilha com linhas azuis; modelo comercial não validado",
-      "description": "Estudo ilustrativo da mini-ilha com linhas azuis; modelo comercial não validado.",
+      "alt": "Projeto 3D:  Detalhamento 3D da mini-ilha com linhas azuis; modelo comercial não validado",
+      "description": "Detalhamento 3D da mini-ilha com linhas azuis; modelo comercial não validado.",
       "variants": [
         {
           "file": "assets/media/fr-coz-lav/M160-480.webp",
@@ -392,7 +392,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -403,7 +403,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -414,7 +414,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -431,9 +431,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "IMAGEM ILUSTRATIVA",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Frontao direito — Franco Romeu",
-      "alt": "Imagem ilustrativa: Vista da torre direita, tampo cinza, frontão claro e mini-ilha",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Vista da torre direita, tampo cinza, frontão claro e mini-ilha",
       "description": "Vista da torre direita, tampo cinza, frontão claro e mini-ilha.",
       "variants": [
         {
@@ -444,7 +444,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -455,7 +455,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -466,7 +466,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -483,9 +483,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "IMAGEM ILUSTRATIVA",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Frontao direito — Franco Romeu",
-      "alt": "Imagem ilustrativa: Close do tampo cinza e frontão claro em L sobre marcenaria cinza",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Close do tampo cinza e frontão claro em L sobre marcenaria cinza",
       "description": "Close do tampo cinza e frontão claro em L sobre marcenaria cinza.",
       "variants": [
         {
@@ -496,7 +496,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -507,7 +507,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -518,7 +518,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -540,9 +540,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "IMAGEM ILUSTRATIVA",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Integracao — Franco Romeu",
-      "alt": "Imagem ilustrativa: Vista integrada dos dois lados da cozinha, mesa, mini-ilha, dois pendentes e lavanderia ao fundo",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Vista integrada dos dois lados da cozinha, mesa, mini-ilha, dois pendentes e lavanderia ao fundo",
       "description": "Vista integrada dos dois lados da cozinha, mesa, mini-ilha, dois pendentes e lavanderia ao fundo.",
       "variants": [
         {
@@ -553,7 +553,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -564,7 +564,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -575,7 +575,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -597,9 +597,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "IMAGEM ILUSTRATIVA",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Integracao — Franco Romeu",
-      "alt": "Imagem ilustrativa: Vista integrada com dois pendentes e traçado de teto diferente de R026",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Vista integrada com dois pendentes e traçado de teto diferente de R026",
       "description": "Vista integrada com dois pendentes e traçado de teto diferente de R026.",
       "variants": [
         {
@@ -610,7 +610,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -621,7 +621,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -632,7 +632,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -653,10 +653,10 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "antes_demolido",
       "status": "READY_WITH_LABEL",
-      "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+      "publication_label": "RECONSTITUIÇÃO TÉCNICA",
       "title": "Antes parede — Franco Romeu",
-      "alt": "Reconstituição ilustrativa: Ilustração de parede antiga com azulejos brancos, sem marcenaria final",
-      "description": "Ilustração de parede antiga com azulejos brancos, sem marcenaria final.",
+      "alt": "Reconstituição técnica:  Representação técnica de parede antiga com azulejos brancos, sem marcenaria final",
+      "description": "Representação técnica de parede antiga com azulejos brancos, sem marcenaria final.",
       "variants": [
         {
           "file": "assets/media/fr-coz-lav/M_a2e373872f-480.webp",
@@ -666,7 +666,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "antes_demolido",
-          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "publication_label": "RECONSTITUIÇÃO TÉCNICA",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -677,7 +677,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "antes_demolido",
-          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "publication_label": "RECONSTITUIÇÃO TÉCNICA",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -688,7 +688,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "antes_demolido",
-          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "publication_label": "RECONSTITUIÇÃO TÉCNICA",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -710,10 +710,10 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "antes_demolido",
       "status": "READY_WITH_LABEL",
-      "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+      "publication_label": "RECONSTITUIÇÃO TÉCNICA",
       "title": "Integracao — Franco Romeu",
-      "alt": "Reconstituição ilustrativa: Ilustração frontal de ambiente demolido, passagem ao fundo e ausência de móveis finais",
-      "description": "Ilustração frontal de ambiente demolido, passagem ao fundo e ausência de móveis finais.",
+      "alt": "Reconstituição técnica:  Representação frontal de ambiente demolido, passagem ao fundo e ausência de móveis finais",
+      "description": "Representação frontal de ambiente demolido, passagem ao fundo e ausência de móveis finais.",
       "variants": [
         {
           "file": "assets/media/fr-coz-lav/M_2213e004d6-480.webp",
@@ -723,7 +723,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "antes_demolido",
-          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "publication_label": "RECONSTITUIÇÃO TÉCNICA",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -734,7 +734,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "antes_demolido",
-          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "publication_label": "RECONSTITUIÇÃO TÉCNICA",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -745,7 +745,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "antes_demolido",
-          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "publication_label": "RECONSTITUIÇÃO TÉCNICA",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -767,10 +767,10 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "antes_demolido",
       "status": "READY_WITH_LABEL",
-      "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+      "publication_label": "RECONSTITUIÇÃO TÉCNICA",
       "title": "Integracao — Franco Romeu",
-      "alt": "Reconstituição ilustrativa: Ilustração do ambiente vazio com azulejos antigos e abertura ao fundo",
-      "description": "Ilustração do ambiente vazio com azulejos antigos e abertura ao fundo.",
+      "alt": "Reconstituição técnica:  Representação do ambiente vazio com azulejos antigos e abertura ao fundo",
+      "description": "Representação do ambiente vazio com azulejos antigos e abertura ao fundo.",
       "variants": [
         {
           "file": "assets/media/fr-coz-lav/M_97fd574b27-480.webp",
@@ -780,7 +780,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "antes_demolido",
-          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "publication_label": "RECONSTITUIÇÃO TÉCNICA",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -791,7 +791,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "antes_demolido",
-          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "publication_label": "RECONSTITUIÇÃO TÉCNICA",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -802,7 +802,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "antes_demolido",
-          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "publication_label": "RECONSTITUIÇÃO TÉCNICA",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -824,10 +824,10 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "antes_demolido",
       "status": "READY_WITH_LABEL",
-      "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+      "publication_label": "RECONSTITUIÇÃO TÉCNICA",
       "title": "Integracao — Franco Romeu",
-      "alt": "Reconstituição ilustrativa: Ilustração do ambiente demolido com azulejos e passagem ao fundo",
-      "description": "Ilustração do ambiente demolido com azulejos e passagem ao fundo.",
+      "alt": "Reconstituição técnica:  Representação do ambiente demolido com azulejos e passagem ao fundo",
+      "description": "Representação do ambiente demolido com azulejos e passagem ao fundo.",
       "variants": [
         {
           "file": "assets/media/fr-coz-lav/M_76e8550654-480.webp",
@@ -837,7 +837,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "antes_demolido",
-          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "publication_label": "RECONSTITUIÇÃO TÉCNICA",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -848,7 +848,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "antes_demolido",
-          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "publication_label": "RECONSTITUIÇÃO TÉCNICA",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -859,7 +859,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "antes_demolido",
-          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "publication_label": "RECONSTITUIÇÃO TÉCNICA",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -876,9 +876,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "IMAGEM ILUSTRATIVA",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Torre quente — Franco Romeu",
-      "alt": "Imagem ilustrativa: Torre direita, ripado parcial e dois percursos luminosos no teto",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Torre direita, ripado parcial e dois percursos luminosos no teto",
       "description": "Torre direita, ripado parcial e dois percursos luminosos no teto.",
       "variants": [
         {
@@ -889,7 +889,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -900,7 +900,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -911,7 +911,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -929,9 +929,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "IMAGEM ILUSTRATIVA",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Ilha — Franco Romeu",
-      "alt": "Imagem ilustrativa: Mini-ilha, mesa amadeirada, dois nichos laterais, ripado contínuo e dois pendentes",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Mini-ilha, mesa amadeirada, dois nichos laterais, ripado contínuo e dois pendentes",
       "description": "Mini-ilha, mesa amadeirada, dois nichos laterais, ripado contínuo e dois pendentes.",
       "variants": [
         {
@@ -942,7 +942,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -953,7 +953,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -974,10 +974,10 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "antes_demolido",
       "status": "READY_WITH_LABEL",
-      "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+      "publication_label": "RECONSTITUIÇÃO TÉCNICA",
       "title": "Antes parede — Franco Romeu",
-      "alt": "Reconstituição ilustrativa: Ilustração do ambiente vazio com piso bruto e azulejos brancos",
-      "description": "Ilustração do ambiente vazio com piso bruto e azulejos brancos.",
+      "alt": "Reconstituição técnica:  Representação do ambiente vazio com piso bruto e azulejos brancos",
+      "description": "Representação do ambiente vazio com piso bruto e azulejos brancos.",
       "variants": [
         {
           "file": "assets/media/fr-coz-lav/M_2d491895a6-480.webp",
@@ -987,7 +987,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "antes_demolido",
-          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "publication_label": "RECONSTITUIÇÃO TÉCNICA",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -998,7 +998,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "antes_demolido",
-          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "publication_label": "RECONSTITUIÇÃO TÉCNICA",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -1015,9 +1015,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "IMAGEM ILUSTRATIVA",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Teto cozinha — Franco Romeu",
-      "alt": "Imagem ilustrativa: Vista elevada da torre, dois percursos de LED no teto e dois pendentes parciais",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Vista elevada da torre, dois percursos de LED no teto e dois pendentes parciais",
       "description": "Vista elevada da torre, dois percursos de LED no teto e dois pendentes parciais.",
       "variants": [
         {
@@ -1028,7 +1028,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1039,7 +1039,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -1056,9 +1056,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "IMAGEM ILUSTRATIVA",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Frontao direito — Franco Romeu",
-      "alt": "Imagem ilustrativa: Close do encontro entre frontão claro em L e tampo cinza da cozinha direita",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Close do encontro entre frontão claro em L e tampo cinza da cozinha direita",
       "description": "Close do encontro entre frontão claro em L e tampo cinza da cozinha direita.",
       "variants": [
         {
@@ -1069,7 +1069,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1080,7 +1080,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1091,7 +1091,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -1109,9 +1109,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "IMAGEM ILUSTRATIVA",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Ilha — Franco Romeu",
-      "alt": "Imagem ilustrativa: Vista vertical da mini-ilha, dois nichos laterais, mesa amadeirada e dois pendentes",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Vista vertical da mini-ilha, dois nichos laterais, mesa amadeirada e dois pendentes",
       "description": "Vista vertical da mini-ilha, dois nichos laterais, mesa amadeirada e dois pendentes.",
       "variants": [
         {
@@ -1122,7 +1122,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1133,7 +1133,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -1150,9 +1150,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "projeto_3d",
       "status": "READY_WITH_LABEL",
-      "publication_label": "ESTUDO 3D ILUSTRATIVO",
+      "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Aereos — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo cinza integrado com bloco central escuro no aéreo esquerdo",
+      "alt": "Projeto 3D:  Estudo cinza integrado com bloco central escuro no aéreo esquerdo",
       "description": "Estudo cinza integrado com bloco central escuro no aéreo esquerdo.",
       "variants": [
         {
@@ -1163,7 +1163,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1174,7 +1174,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1185,7 +1185,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -1202,9 +1202,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "projeto_3d",
       "status": "READY_WITH_LABEL",
-      "publication_label": "ESTUDO 3D ILUSTRATIVO",
+      "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Aereos — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo integrado com bloco inferior central escuro no aéreo esquerdo",
+      "alt": "Projeto 3D:  Estudo integrado com bloco inferior central escuro no aéreo esquerdo",
       "description": "Estudo integrado com bloco inferior central escuro no aéreo esquerdo.",
       "variants": [
         {
@@ -1215,7 +1215,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1226,7 +1226,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1237,7 +1237,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -1259,10 +1259,10 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "antes_demolido",
       "status": "READY_WITH_LABEL",
-      "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+      "publication_label": "RECONSTITUIÇÃO TÉCNICA",
       "title": "Integracao — Franco Romeu",
-      "alt": "Reconstituição ilustrativa: Ilustração de parede e passagem no estado demolido, sem mobiliário final",
-      "description": "Ilustração de parede e passagem no estado demolido, sem mobiliário final.",
+      "alt": "Reconstituição técnica:  Representação técnica de parede e passagem no estado demolido, sem mobiliário final",
+      "description": "Representação técnica de parede e passagem no estado demolido, sem mobiliário final.",
       "variants": [
         {
           "file": "assets/media/fr-coz-lav/M_041cb06df6-480.webp",
@@ -1272,7 +1272,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "antes_demolido",
-          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "publication_label": "RECONSTITUIÇÃO TÉCNICA",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1283,7 +1283,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "antes_demolido",
-          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "publication_label": "RECONSTITUIÇÃO TÉCNICA",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1294,7 +1294,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "antes_demolido",
-          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "publication_label": "RECONSTITUIÇÃO TÉCNICA",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -1311,9 +1311,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "projeto_3d",
       "status": "READY_WITH_LABEL",
-      "publication_label": "ESTUDO 3D ILUSTRATIVO",
+      "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Frontao direito — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo cinza sem números do tampo e frontão direito em L",
+      "alt": "Projeto 3D:  Estudo cinza sem números do tampo e frontão direito em L",
       "description": "Estudo cinza sem números do tampo e frontão direito em L.",
       "variants": [
         {
@@ -1324,7 +1324,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1335,7 +1335,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1346,7 +1346,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -1368,9 +1368,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "projeto_3d",
       "status": "READY_WITH_LABEL",
-      "publication_label": "ESTUDO 3D ILUSTRATIVO",
+      "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Integracao — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Render arquitetônico integrado com torre direita, cooktop, ripado e teto luminoso",
+      "alt": "Projeto 3D:  Render arquitetônico integrado com torre direita, cooktop, ripado e teto luminoso",
       "description": "Render arquitetônico integrado com torre direita, cooktop, ripado e teto luminoso.",
       "variants": [
         {
@@ -1381,7 +1381,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1392,7 +1392,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1403,7 +1403,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -1425,9 +1425,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "projeto_3d",
       "status": "READY_WITH_LABEL",
-      "publication_label": "ESTUDO 3D ILUSTRATIVO",
+      "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Integracao — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo cinza integrado da cozinha, bancada esquerda e torre direita",
+      "alt": "Projeto 3D:  Estudo cinza integrado da cozinha, bancada esquerda e torre direita",
       "description": "Estudo cinza integrado da cozinha, bancada esquerda e torre direita.",
       "variants": [
         {
@@ -1438,7 +1438,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1449,7 +1449,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1460,7 +1460,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -1478,9 +1478,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "projeto_3d",
       "status": "READY_WITH_LABEL",
-      "publication_label": "ESTUDO 3D ILUSTRATIVO",
+      "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Ilha — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Render volumétrico do setor direito com mini-ilha, mesa e dois pendentes",
+      "alt": "Projeto 3D:  Render volumétrico do setor direito com mini-ilha, mesa e dois pendentes",
       "description": "Render volumétrico do setor direito com mini-ilha, mesa e dois pendentes.",
       "variants": [
         {
@@ -1491,7 +1491,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1502,7 +1502,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -1519,9 +1519,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "IMAGEM ILUSTRATIVA",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Torre quente — Franco Romeu",
-      "alt": "Imagem ilustrativa: Torre de forno e micro-ondas, nichos amadeirados e marcenaria cinza",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Torre de forno e micro-ondas, nichos amadeirados e marcenaria cinza",
       "description": "Torre de forno e micro-ondas, nichos amadeirados e marcenaria cinza.",
       "variants": [
         {
@@ -1532,7 +1532,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1543,7 +1543,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1554,7 +1554,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -1571,9 +1571,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "projeto_3d",
       "status": "READY_WITH_LABEL",
-      "publication_label": "ESTUDO 3D ILUSTRATIVO",
+      "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Torre quente — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo cinza da torre de forno e micro-ondas sem cotas legíveis",
+      "alt": "Projeto 3D:  Estudo cinza da torre de forno e micro-ondas sem cotas legíveis",
       "description": "Estudo cinza da torre de forno e micro-ondas sem cotas legíveis.",
       "variants": [
         {
@@ -1584,7 +1584,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1595,7 +1595,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1606,7 +1606,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -1623,9 +1623,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "projeto_3d",
       "status": "READY_WITH_LABEL",
-      "publication_label": "ESTUDO 3D ILUSTRATIVO",
+      "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Frontao direito — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo cinza sem números do tampo e frontão direito, em close",
+      "alt": "Projeto 3D:  Estudo cinza sem números do tampo e frontão direito, em close",
       "description": "Estudo cinza sem números do tampo e frontão direito, em close.",
       "variants": [
         {
@@ -1636,7 +1636,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1647,7 +1647,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1658,7 +1658,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -1677,9 +1677,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "projeto_3d",
       "status": "READY_WITH_LABEL",
-      "publication_label": "ESTUDO 3D ILUSTRATIVO",
+      "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Bancada integrada — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Vista ilustrativa técnica da bancada esquerda com contornos azuis",
+      "alt": "Projeto 3D:  Vista ilustrativa técnica da bancada esquerda com contornos azuis",
       "description": "Vista ilustrativa técnica da bancada esquerda com contornos azuis.",
       "variants": [
         {
@@ -1690,7 +1690,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1701,7 +1701,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1712,7 +1712,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -1731,9 +1731,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "projeto_3d",
       "status": "READY_WITH_LABEL",
-      "publication_label": "ESTUDO 3D ILUSTRATIVO",
+      "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Bancada integrada — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo frontal com contornos azuis da bancada, aéreos e inferiores",
+      "alt": "Projeto 3D:  Estudo frontal com contornos azuis da bancada, aéreos e inferiores",
       "description": "Estudo frontal com contornos azuis da bancada, aéreos e inferiores.",
       "variants": [
         {
@@ -1744,7 +1744,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1755,7 +1755,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1766,7 +1766,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -1787,10 +1787,10 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "antes_demolido",
       "status": "READY_WITH_LABEL",
-      "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+      "publication_label": "RECONSTITUIÇÃO TÉCNICA",
       "title": "Antes parede — Franco Romeu",
-      "alt": "Reconstituição ilustrativa: Ilustração de parede de azulejos e pontos de instalações no estado sem bancada final",
-      "description": "Ilustração de parede de azulejos e pontos de instalações no estado sem bancada final.",
+      "alt": "Reconstituição técnica:  Representação técnica de parede de azulejos e pontos de instalações no estado sem bancada final",
+      "description": "Representação técnica de parede de azulejos e pontos de instalações no estado sem bancada final.",
       "variants": [
         {
           "file": "assets/media/fr-coz-lav/M027-480.webp",
@@ -1800,7 +1800,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "antes_demolido",
-          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "publication_label": "RECONSTITUIÇÃO TÉCNICA",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1811,7 +1811,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "antes_demolido",
-          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "publication_label": "RECONSTITUIÇÃO TÉCNICA",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1822,7 +1822,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "antes_demolido",
-          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "publication_label": "RECONSTITUIÇÃO TÉCNICA",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -1839,9 +1839,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "IMAGEM ILUSTRATIVA",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Bancada solo — Franco Romeu",
-      "alt": "Imagem ilustrativa: Bancada isolada com tampo claro, frontão, perna lateral, recorte circular e cuba preta",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Bancada isolada com tampo claro, frontão, perna lateral, recorte circular e cuba preta",
       "description": "Bancada isolada com tampo claro, frontão, perna lateral, recorte circular e cuba preta.",
       "variants": [
         {
@@ -1852,7 +1852,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1863,7 +1863,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1874,7 +1874,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -1893,9 +1893,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "IMAGEM ILUSTRATIVA",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Bancada integrada — Franco Romeu",
-      "alt": "Imagem ilustrativa: Passagem entre cozinha e lavanderia com geladeira e estante amadeirada",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Passagem entre cozinha e lavanderia com geladeira e estante amadeirada",
       "description": "Passagem entre cozinha e lavanderia com geladeira e estante amadeirada.",
       "variants": [
         {
@@ -1906,7 +1906,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1917,7 +1917,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1928,7 +1928,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -1945,9 +1945,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "projeto_3d",
       "status": "READY_WITH_LABEL",
-      "publication_label": "ESTUDO 3D ILUSTRATIVO",
+      "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Bancada solo — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo da perna e recorte circular da bancada em linhas azuis",
+      "alt": "Projeto 3D:  Estudo da perna e recorte circular da bancada em linhas azuis",
       "description": "Estudo da perna e recorte circular da bancada em linhas azuis.",
       "variants": [
         {
@@ -1958,7 +1958,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1969,7 +1969,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -1980,7 +1980,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -1997,9 +1997,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "IMAGEM ILUSTRATIVA",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Bancada solo — Franco Romeu",
-      "alt": "Imagem ilustrativa: Estudo isolado do tampo com cuba preta e recorte circular; não documenta fabricação real",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Estudo isolado do tampo com cuba preta e recorte circular; não documenta fabricação real",
       "description": "Estudo isolado do tampo com cuba preta e recorte circular; não documenta fabricação real.",
       "variants": [
         {
@@ -2010,7 +2010,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2021,7 +2021,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2032,7 +2032,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -2054,9 +2054,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "IMAGEM ILUSTRATIVA",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Estante transicao — Franco Romeu",
-      "alt": "Imagem ilustrativa: Estante vazada amadeirada na transição para lavanderia, com janela e máquina ao fundo",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Estante vazada amadeirada na transição para lavanderia, com janela e máquina ao fundo",
       "description": "Estante vazada amadeirada na transição para lavanderia, com janela e máquina ao fundo.",
       "variants": [
         {
@@ -2067,7 +2067,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2078,7 +2078,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -2100,9 +2100,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "projeto_3d",
       "status": "READY_WITH_LABEL",
-      "publication_label": "ESTUDO 3D ILUSTRATIVO",
+      "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Estante transicao — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo volumétrico da estante de transição, janela e máquina ao fundo",
+      "alt": "Projeto 3D:  Estudo volumétrico da estante de transição, janela e máquina ao fundo",
       "description": "Estudo volumétrico da estante de transição, janela e máquina ao fundo.",
       "variants": [
         {
@@ -2113,7 +2113,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2124,7 +2124,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -2141,9 +2141,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "IMAGEM ILUSTRATIVA",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Geladeira — Franco Romeu",
-      "alt": "Imagem ilustrativa: Geladeira junto à passagem da lavanderia e à bancada esquerda; o lado físico é esquerdo",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Geladeira junto à passagem da lavanderia e à bancada esquerda; o lado físico é esquerdo",
       "description": "Geladeira junto à passagem da lavanderia e à bancada esquerda; o lado físico é esquerdo.",
       "variants": [
         {
@@ -2154,7 +2154,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2165,7 +2165,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2176,7 +2176,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -2193,9 +2193,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "IMAGEM ILUSTRATIVA",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Geladeira — Franco Romeu",
-      "alt": "Imagem ilustrativa: Geladeira escura com tela, dispensador e estante de transição; modelo comercial não confirmado",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Geladeira escura com tela, dispensador e estante de transição; modelo comercial não confirmado",
       "description": "Geladeira escura com tela, dispensador e estante de transição; modelo comercial não confirmado.",
       "variants": [
         {
@@ -2206,7 +2206,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2217,7 +2217,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2228,7 +2228,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -2245,9 +2245,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "projeto_3d",
       "status": "READY_WITH_LABEL",
-      "publication_label": "ESTUDO 3D ILUSTRATIVO",
+      "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Geladeira — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo cinza da geladeira lado a lado com contornos azuis",
+      "alt": "Projeto 3D:  Estudo cinza da geladeira lado a lado com contornos azuis",
       "description": "Estudo cinza da geladeira lado a lado com contornos azuis.",
       "variants": [
         {
@@ -2258,7 +2258,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2269,7 +2269,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2280,7 +2280,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -2297,9 +2297,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "projeto_3d",
       "status": "READY_WITH_LABEL",
-      "publication_label": "ESTUDO 3D ILUSTRATIVO",
+      "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Aereos — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo frontal do aéreo de quatro frentes: cinza, amadeirado, vidro escuro e cinza",
+      "alt": "Projeto 3D:  Estudo frontal do aéreo de quatro frentes: cinza, amadeirado, vidro escuro e cinza",
       "description": "Estudo frontal do aéreo de quatro frentes: cinza, amadeirado, vidro escuro e cinza.",
       "variants": [
         {
@@ -2310,7 +2310,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2321,7 +2321,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2332,7 +2332,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -2349,9 +2349,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "projeto_3d",
       "status": "READY_WITH_LABEL",
-      "publication_label": "ESTUDO 3D ILUSTRATIVO",
+      "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Aereos — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo da bancada esquerda e aéreo com bloco de vidro central inferior",
+      "alt": "Projeto 3D:  Estudo da bancada esquerda e aéreo com bloco de vidro central inferior",
       "description": "Estudo da bancada esquerda e aéreo com bloco de vidro central inferior.",
       "variants": [
         {
@@ -2362,7 +2362,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2373,7 +2373,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2384,7 +2384,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -2405,10 +2405,10 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "antes_demolido",
       "status": "READY_WITH_LABEL",
-      "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+      "publication_label": "RECONSTITUIÇÃO TÉCNICA",
       "title": "Antes parede — Franco Romeu",
-      "alt": "Reconstituição ilustrativa: Ilustração da parede antiga plana em azulejos brancos",
-      "description": "Ilustração da parede antiga plana em azulejos brancos.",
+      "alt": "Reconstituição técnica:  Representação técnica da parede antiga plana em azulejos brancos",
+      "description": "Representação técnica da parede antiga plana em azulejos brancos.",
       "variants": [
         {
           "file": "assets/media/fr-coz-lav/M_88353144b4-480.webp",
@@ -2418,7 +2418,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "antes_demolido",
-          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "publication_label": "RECONSTITUIÇÃO TÉCNICA",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2429,7 +2429,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "antes_demolido",
-          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "publication_label": "RECONSTITUIÇÃO TÉCNICA",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2440,7 +2440,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "antes_demolido",
-          "publication_label": "RECONSTITUIÇÃO ILUSTRATIVA",
+          "publication_label": "RECONSTITUIÇÃO TÉCNICA",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -2457,9 +2457,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "projeto_3d",
       "status": "READY_WITH_LABEL",
-      "publication_label": "ESTUDO 3D ILUSTRATIVO",
+      "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Bancada solo — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo cinza sem números da bancada isolada, frontão, recorte circular e cuba",
+      "alt": "Projeto 3D:  Estudo cinza sem números da bancada isolada, frontão, recorte circular e cuba",
       "description": "Estudo cinza sem números da bancada isolada, frontão, recorte circular e cuba.",
       "variants": [
         {
@@ -2470,7 +2470,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2481,7 +2481,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2492,7 +2492,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -2511,9 +2511,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "projeto_3d",
       "status": "READY_WITH_LABEL",
-      "publication_label": "ESTUDO 3D ILUSTRATIVO",
+      "publication_label": "PROJETO 3D · FRANCO ROMEU",
       "title": "Bancada integrada — Franco Romeu",
-      "alt": "Estudo 3d ilustrativo: Estudo sem números da bancada integrada e aéreo de quatro frentes",
+      "alt": "Projeto 3D:  Estudo sem números da bancada integrada e aéreo de quatro frentes",
       "description": "Estudo sem números da bancada integrada e aéreo de quatro frentes.",
       "variants": [
         {
@@ -2524,7 +2524,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2535,7 +2535,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2546,7 +2546,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "projeto_3d",
-          "publication_label": "ESTUDO 3D ILUSTRATIVO",
+          "publication_label": "PROJETO 3D · FRANCO ROMEU",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -2563,9 +2563,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "IMAGEM ILUSTRATIVA",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Teto cozinha — Franco Romeu",
-      "alt": "Imagem ilustrativa: Vista de teto com dois percursos de LED em L, torre direita e ripado parcial",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Vista de teto com dois percursos de LED em L, torre direita e ripado parcial",
       "description": "Vista de teto com dois percursos de LED em L, torre direita e ripado parcial.",
       "variants": [
         {
@@ -2576,7 +2576,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2587,7 +2587,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2598,7 +2598,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -2617,9 +2617,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "IMAGEM ILUSTRATIVA",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Bancada integrada — Franco Romeu",
-      "alt": "Imagem ilustrativa: Vista corrigida da bancada esquerda: seletor preto separado entre torneira sem alavanca e bebedouro",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Vista corrigida da bancada esquerda: seletor preto separado entre torneira sem alavanca e bebedouro",
       "description": "Vista corrigida da bancada esquerda: seletor preto separado entre torneira sem alavanca e bebedouro.",
       "variants": [
         {
@@ -2630,7 +2630,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2641,7 +2641,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2652,7 +2652,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -2671,9 +2671,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "IMAGEM ILUSTRATIVA",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Lavanderia — Franco Romeu",
-      "alt": "Imagem ilustrativa: Lavanderia com máquina frontal, bancada, armários, porta branca final, porta lateral parcial, varal e volume cinza",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Lavanderia com máquina frontal, bancada, armários, porta branca final, porta lateral parcial, varal e volume cinza",
       "description": "Lavanderia com máquina frontal, bancada, armários, porta branca final, porta lateral parcial, varal e volume cinza.",
       "variants": [
         {
@@ -2684,7 +2684,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2695,7 +2695,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2706,7 +2706,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -2725,9 +2725,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "IMAGEM ILUSTRATIVA",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Lavanderia — Franco Romeu",
-      "alt": "Imagem ilustrativa: Vista elevada da lavanderia, dois percursos independentes de luz e porta branca final",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Vista elevada da lavanderia, dois percursos independentes de luz e porta branca final",
       "description": "Vista elevada da lavanderia, dois percursos independentes de luz e porta branca final.",
       "variants": [
         {
@@ -2738,7 +2738,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2749,7 +2749,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2760,7 +2760,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -2779,9 +2779,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "IMAGEM ILUSTRATIVA",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Lavanderia — Franco Romeu",
-      "alt": "Imagem ilustrativa: Lavanderia com máquina frontal, bancada, armários inferiores e superiores, portas, varal e volume cinza",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Lavanderia com máquina frontal, bancada, armários inferiores e superiores, portas, varal e volume cinza",
       "description": "Lavanderia com máquina frontal, bancada, armários inferiores e superiores, portas, varal e volume cinza.",
       "variants": [
         {
@@ -2792,7 +2792,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2803,7 +2803,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2814,7 +2814,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -2833,9 +2833,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "IMAGEM ILUSTRATIVA",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Lavanderia — Franco Romeu",
-      "alt": "Imagem ilustrativa: Close dos dois percursos luminosos da lavanderia e volume vertical cinza",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Close dos dois percursos luminosos da lavanderia e volume vertical cinza",
       "description": "Close dos dois percursos luminosos da lavanderia e volume vertical cinza.",
       "variants": [
         {
@@ -2846,7 +2846,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2857,7 +2857,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2868,7 +2868,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -2887,9 +2887,9 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "IMAGEM ILUSTRATIVA",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
       "title": "Lavanderia — Franco Romeu",
-      "alt": "Imagem ilustrativa: Close de bancada e armários da lavanderia, máquina frontal, volume cinza e porta final",
+      "alt": "Representação digital de projeto realizado pela Franco Romeu: Close de bancada e armários da lavanderia, máquina frontal, volume cinza e porta final",
       "description": "Close de bancada e armários da lavanderia, máquina frontal, volume cinza e porta final.",
       "variants": [
         {
@@ -2900,7 +2900,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2911,7 +2911,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         },
         {
@@ -2922,7 +2922,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],
@@ -2939,10 +2939,10 @@ window.FR_MEDIA_CATALOG = {
       ],
       "represented_stage": "depois_terminado",
       "status": "READY_WITH_LABEL",
-      "publication_label": "IMAGEM ILUSTRATIVA",
-      "title": "Bancada sob a janela — detalhe ilustrativo",
-      "alt": "Imagem ilustrativa da bancada da lavanderia sob janela preta, com cuba metálica e torneira de parede.",
-      "description": "Vista ilustrativa única de bancada sob a janela. Painel direito, sem as cotas não validadas do painel esquerdo.",
+      "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
+      "title": "Bancada sob a janela — obra executada",
+      "alt": "Bancada da lavanderia executada pela Franco Romeu, sob janela preta, com cuba metálica e torneira de parede.",
+      "description": "Registro da bancada sob a janela, com composição e acabamento da obra Franco Romeu.",
       "variants": [
         {
           "file": "assets/media/fr-coz-lav/M047_PANEL_DIREITO-472.webp",
@@ -2952,7 +2952,7 @@ window.FR_MEDIA_CATALOG = {
           "transform": "resize_lanczos_only_from_graded_master",
           "crop_box": null,
           "stage": "depois_terminado",
-          "publication_label": "IMAGEM ILUSTRATIVA",
+          "publication_label": "OBRA REALIZADA · REPRESENTAÇÃO DIGITAL",
           "status": "READY_WITH_LABEL"
         }
       ],

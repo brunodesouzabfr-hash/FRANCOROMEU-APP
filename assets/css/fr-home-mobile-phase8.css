@@ -1,0 +1,41 @@
+/* Phase 8.2: protect the authorial Home headline at narrow mobile widths.
+   Keep one intentional line per word; prevent the final S of FORJADOS
+   from wrapping on 320px viewports. Scope excludes budget and other views. */
+@media (max-width: 375px) {
+  html body #view-home .fr6-hero-title {
+    font-size: clamp(2.8rem, 14.7vw, 3.5rem) !important;
+    letter-spacing: -.075em !important;
+    max-width: 100% !important;
+  }
+  html body #view-home .fr6-hero-line:nth-child(2) {
+    margin-left: 0 !important;
+  }
+  html body #view-home .fr6-hero-line,
+  html body #view-home .fr6-hero-line > span {
+    white-space: nowrap !important;
+  }
+}
+
+/* F8.4: 320px Home — the floating IQE must not cover the project CTA,
+   then must clear the bottom navigation dock after scrolling. */
+@media (max-width: 359px) {
+  body:has(#view-home.active) #fr-ai-root:not(.is-open) {
+    right: max(2px, env(safe-area-inset-right, 0px)) !important;
+    bottom: max(0px, env(safe-area-inset-bottom, 0px)) !important;
+  }
+  body:has(#view-home.active) #fr-ai-root:not(.is-open) .fr-ai-launcher {
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 50% !important;
+    /* The legacy fixed root stays 68px tall; anchor the 44px control
+       to its bottom-right instead of its original top-left. */
+    position: absolute !important;
+    top: auto !important;
+    left: auto !important;
+    right: 0 !important;
+    bottom: 0 !important;
+  }
+  body:has(#view-home.active):has(#smart-nav[data-fr-nav7-position="footer"]) #fr-ai-root:not(.is-open) {
+    bottom: calc(74px + env(safe-area-inset-bottom, 0px)) !important;
+  }
+}

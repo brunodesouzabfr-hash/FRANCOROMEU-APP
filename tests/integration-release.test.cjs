@@ -5,6 +5,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const { JSDOM } = require('jsdom');
+const { TRACKING } = require('../src/public-site-meta.cjs');
 
 const ORIGIN = 'https://www.francoromeufr.com.br';
 const output = path.resolve('dist');
@@ -34,13 +35,17 @@ function walk(directory) {
 }
 
 test('todas as rotas públicas usam canonical www e um único conjunto de analytics', () => {
+  // Production/main approved measurement ID; do not allow a stale tag to pass.
+  assert.equal(TRACKING.ga4, 'G-22Z85RCGQC');
   for (const file of routeFiles) {
     const text = fs.readFileSync(path.join(output, file), 'utf8');
     const document = new JSDOM(text).window.document;
     assert.match(document.querySelector('link[rel="canonical"]')?.href || '', /^https:\/\/www\.francoromeufr\.com\.br\//, file);
     assert.doesNotMatch(text, /https:\/\/francoromeufr\.com\.br(?=[/"'#])/, file);
     assert.equal(count(text, 'analytics.ahrefs.com/analytics.js'), 1, `Ahrefs duplicado em ${file}`);
-    assert.equal(count(text, 'www.googletagmanager.com/gtag/js?id=G-22Z85RCGQC'), 1, `GA4 duplicado em ${file}`);
+    assert.equal(count(text, `www.googletagmanager.com/gtag/js?id=${TRACKING.ga4}`), 1, `GA4 ausente ou duplicado em ${file}`);
+    assert.equal(count(text, `gtag('config', '${TRACKING.ga4}')`) + count(text, `gtag("config","${TRACKING.ga4}")`), 1, `GA4 config ausente ou duplicado em ${file}`);
+    assert.doesNotMatch(text, /G-C3FMZ4NGGY/, `Tag GA4 obsoleta em ${file}`);
     assert.equal(count(text, 'clarity.ms/tag/'), 1, `Clarity duplicado em ${file}`);
     assert.equal(document.querySelectorAll('meta[name="google-site-verification"]').length, 1, file);
     assert.equal(document.querySelectorAll('meta[name="p:domain_verify"]').length, 1, file);
