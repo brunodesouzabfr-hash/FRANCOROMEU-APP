@@ -79,6 +79,25 @@ test('browser boot installs only when ready and its rollback leaves button event
  button.click();assert.equal(clicks,2);
  dom.window.close();
 });
+test('late Stage 5 launcher discovery mounts Block after the DOMContentLoaded event',async()=>{
+ const dom=fixture(),win=dom.window,doc=win.document;
+ const root=doc.getElementById('fr-ai-root'),parent=root.parentNode;
+ root.remove();
+ let count=0;
+ win.FRBlockAvatar={mountIQEBlock(){
+   count++;
+   return {destroy(){},react(){},update(){},state(){return {mounted:true,faces:2}}};
+ }};
+ win.HTMLCanvasElement.prototype.getContext=function(){return {};};
+ const code=fs.readFileSync(path.join(__dirname,'../assets/js/fr-block-iqe-init.js'),'utf8');
+ win.eval(code);doc.dispatchEvent(new win.Event('DOMContentLoaded'));
+ assert.equal(count,0,'the adapter must wait rather than mount onto missing elements');
+ parent.appendChild(root);
+ await new Promise(done=>win.setTimeout(done,12));
+ assert.equal(count,1);
+ assert.equal(win.FRBlockStage.getState().mounted,true);
+ win.FRBlockStage.destroy();dom.window.close();
+});
 test('compiled browser bundle is actually vendored and contains the reversible Block API',()=>{
  const code=fs.readFileSync(path.join(__dirname,'../assets/js/fr-block-avatar.iife.js'),'utf8');
  assert.ok(code.length>15000);
