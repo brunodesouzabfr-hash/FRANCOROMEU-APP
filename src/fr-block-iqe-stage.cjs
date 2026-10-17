@@ -1,10 +1,11 @@
 'use strict';
 /**
  * Optional, reversible IQE avatar replacement. Enabled ONLY when
- * FR_BLOCK_IQE_STAGING=1 during the site build. Does not touch budget wizard,
+ * FR_BLOCK_IQE_STAGING=1 or this exact staging branch as a Vercel preview. Does not touch budget wizard,
  * financial logic, search or original FR assistant event handlers.
  */
-module.exports=function installBlockStage(doc,{enabled=process.env.FR_BLOCK_IQE_STAGING==='1'}={}){
+const isBlockPreview=()=>process.env.VERCEL_ENV==='preview'&&process.env.VERCEL_GIT_COMMIT_REF==='feature/block-iqe-staging-2026-10-17';
+module.exports=function installBlockStage(doc,{enabled=process.env.FR_BLOCK_IQE_STAGING==='1'||isBlockPreview()}={}){
   if(!enabled)return {enabled:false,preservesAssistant:true,preservesWizard:true};
   if(!doc||!doc.getElementById('fr-stage5-assistant-engine')||!doc.getElementById('fr-stage5-assistant-styles'))throw Error('Block staging: missing Stage 5 assistant contracts');
   if(doc.getElementById('fr-block-iqe-stage-marker'))throw Error('Block staging: duplicate injection');
