@@ -77,7 +77,8 @@ test('Projetos 3D conserva cubo e painel, troca Calacatta e publica navegador vi
   'cozinha-bancada-l-imagem-ilustrativa-b239e59121-960w.webp'
  ])assert.ok(source.includes('/assets/media/projects/cozinha-lavanderia/'+file),file);
  assert.match(source,/function p3dIndexMarkup\(\)/);assert.match(source,/class="fr15-p3d-thumb"/);assert.match(source,/aria-label="Selecionar projeto/);
- assert.match(source,/class="fr15-p3d-cube/);assert.match(source,/class="fr15-p3d-dossier/);assert.match(source,/Antes reconstituído · imagem ilustrativa/);
+ assert.match(source,/class="fr15-p3d-cube/);assert.match(source,/class="fr15-p3d-dossier/);assert.match(source,/Antes — documentação visual/);
+ assert.doesNotMatch(source, /imagem ilustrativa(?![-\w])/i);
  assert.doesNotMatch(source,/Cadernos de modelagem|Matriz arquitetônica/);
  assert.ok(fs.existsSync('docs/archive/matriz-arquitetonica/README.md'));
  assert.ok(fs.existsSync('docs/archive/matriz-arquitetonica/matrix-source.js'));
