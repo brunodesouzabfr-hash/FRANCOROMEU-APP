@@ -171,6 +171,9 @@ test('sitemaps/XML excluem páginas noindex e imagens sem liberação; URLs inde
   for(const url of doc.getElementsByTagNameNS('http://www.sitemaps.org/schemas/sitemap/0.9','url')){const loc=url.getElementsByTagNameNS('http://www.sitemaps.org/schemas/sitemap/0.9','loc')[0].textContent,r=routes.get(loc);assert.ok(r&&r.indexable);assert.ok(fs.existsSync(path.join(output,r.file)));}
   assert.equal(doc.getElementsByTagNameNS('http://www.google.com/schemas/sitemap-image/1.1','image').length,0,'all current media have active_indexable=false');dom.window.close();
  }
- assert.equal(map.routes.filter(r=>r.indexable).length,6);
+ const publicRoutes=map.routes.filter(r=>r.indexable);
+ assert.equal(publicRoutes.filter(r=>r.category==='local-service').length,5,'Only the five curated local service URLs may be newly indexable');
+ assert.equal(publicRoutes.filter(r=>r.category!=='local-service').length,6,'The original six approved routes must be preserved');
+ assert.equal(publicRoutes.length,11);
  for(const r of map.routes.filter(r=>!r.indexable)){const text=fs.readFileSync(path.join(output,r.file),'utf8');assert.match(text,/name="robots" content="noindex/);assert.ok(text.includes('href="'+origin+r.route+'"'));assert.ok(text.includes('content="'+origin+r.route+'"'));}
 });
