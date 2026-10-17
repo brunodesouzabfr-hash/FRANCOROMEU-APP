@@ -1,0 +1,51 @@
+name: Block IQE visual staging QA
+on:
+  push:
+    branches:
+      - feature/block-iqe-staging-2026-10-17
+  pull_request:
+    paths:
+      - 'src/fr-block-iqe-stage.cjs'
+      - 'assets/js/fr-block-*'
+      - 'assets/css/fr-block-*'
+      - 'scripts/build-site.cjs'
+      - 'tests/fr-block-iqe-stage.test.cjs'
+permissions:
+  contents: read
+jobs:
+  iqe-stage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: Verify original IQE and new reversible staging
+        run: node --test tests/fr-iqe-avatar-phase6.test.cjs tests/fr-block-iqe-stage.test.cjs
+      - name: Build explicit noindex visual staging preview
+        run: FR_BLOCK_IQE_STAGING=1 npm run build
+      - name: Check actual publishable HTML, assets, and preserved wizard
+        run: |
+          node - <<'NODE'
+          const fs=require('node:fs');const html=fs.readFileSync('dist/index.html','utf8');
+          for(const s of ['fr-block-iqe-stage-marker','fr-block-avatar.iife.js','fr-block-iqe-init.js','noindex,nofollow'])
+            if(!html.includes(s))throw Error('Missing staging marker: '+s);
+          for(const f of ['dist/assets/js/fr-block-avatar.iife.js','dist/assets/js/fr-block-iqe-init.js','dist/assets/css/fr-block-iqe-stage.css'])
+            if(!fs.statSync(f).size)throw Error('Empty staging asset '+f);
+          for(const s of ['fr-stage5-assistant-engine','fr-stage5-assistant-styles','fr-ai-launcher'])
+            if(!html.includes(s))throw Error('Lost assistant contract '+s);
+          console.log('Staging output contains Block assets, SEO isolation, and original assistant.');
+          NODE
+      - name: Build normal public site without avatar replacement
+        run: npm run build
+      - name: Confirm default public output has no Block injection
+        run: |
+          node - <<'NODE'
+          const fs=require('node:fs');const html=fs.readFileSync('dist/index.html','utf8');
+          if(html.includes('fr-block-iqe-stage-marker'))throw Error('Blocked staging code leaked to default build');
+          if(!html.includes('fr6iqe-avatar-version'))throw Error('Legacy avatar marker removed');
+          console.log('Production-default build unchanged and legacy visual hook preserved.');
+          NODE
