@@ -151,3 +151,76 @@ jobs:
           fi
           echo "CLEAN_MERGE_PREFLIGHT=PASS — no remote write"
           git merge --abort || true
+
+  integration-candidate:
+    name: Integrate V05 into isolated candidate (tests before push)
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout task history for main-preserving merge
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Set up Node for integration tests
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Build isolated merge candidate without modifying main or task branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main
+          git config user.name "Franco Romeu Integration"
+          git config user.email "fr-integration@users.noreply.github.com"
+          git switch -c integration/fr-motion-main-preserve-2026-10-17
+          set +e
+          git merge --no-commit --no-ff origin/main
+          merge_status=$?
+          set -e
+          if [ "$merge_status" -ne 0 ]; then
+            conflict_files="$(git diff --name-only --diff-filter=U | sort)"
+            expected="$(printf 'package.json\\ntests/integration-release.test.cjs' | sort)"
+            if [ "$conflict_files" != "$expected" ]; then
+              echo "::error::Unexpected merge conflicts; refusing automatic resolution"
+              printf '%s\\n' "$conflict_files"
+              exit 1
+            fi
+            # Both originals were reviewed against main. Keep the stricter GA4
+            # assertions from the feature; preserve main's canonical tag.
+            git show :2:tests/integration-release.test.cjs > tests/integration-release.test.cjs
+            git show :2:package.json > package.json
+          fi
+          # Preserve all existing motion/public tests AND the approved V05 intro QA.
+          node -e 'const fs=require("fs");const p="package.json",v=JSON.parse(fs.readFileSync(p,"utf8")),t="node --test tests/fr-intro-performance.test.cjs";if(!v.scripts.test.includes(t))v.scripts.test+=" && "+t;fs.writeFileSync(p,JSON.stringify(v,null,2)+"\\n");'
+          test -f assets/intro/fr-intro-cinematic.js
+          test -f tests/fr-intro-performance.test.cjs
+          test -f assets/brand/franco-romeu-medalhao-esmeralda-256.webp
+          test -f assets/brand/franco-romeu-monograma-dourado-384.webp
+          git add package.json tests/integration-release.test.cjs
+          if [ -n "$(git diff --name-only --diff-filter=U)" ]; then
+            echo "::error::Unresolved files remain"; git diff --name-only --diff-filter=U; exit 1
+          fi
+          echo "All textual merge conflicts resolved; keeping all eight main commits as parent ancestry."
+      - name: Install locked dependencies
+        run: npm ci --no-audit --no-fund
+      - name: Execute combined branch regression suite including V05
+        run: npm test
+      - name: Validate HTML structure and build
+        run: |
+          npm run check:html
+          npm run build
+          npm run check:project-library
+          npm run check:idempotence
+      - name: Commit merged result and publish ONLY integration candidate branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add package.json tests/integration-release.test.cjs
+          git commit -m "merge(fr): preserve main intro V05 and integrate motion phases 1-8"
+          git merge-base --is-ancestor origin/main HEAD
+          git merge-base --is-ancestor "$GITHUB_SHA" HEAD
+          git push origin HEAD:refs/heads/integration/fr-motion-main-preserve-2026-10-17
+          echo "INTEGRATION_CANDIDATE_BRANCH=integration/fr-motion-main-preserve-2026-10-17"
