@@ -8,9 +8,9 @@ const hub='/solucoes/';
 const css='/assets/css/fr-local-services.css';
 function injectDiscovery(doc){
  const data=cfg();
- if(doc.getElementById('frls-discovery'))throw Error('Local services discovery injected twice');
+ if(doc.querySelector('.frls-discovery'))throw Error('Local services discovery injected twice');
  const links=data.services.map(s=>'<a href="'+route(s.id)+'">'+escape(s.title)+'</a>').join('');
- const section=doc.createElement('aside');section.id='frls-discovery';section.className='frls-discovery';
+ const section=doc.createElement('aside');section.className='frls-discovery';
  section.setAttribute('aria-label','Soluções e serviços Franco Romeu');
  section.innerHTML='<span class="frls-eyebrow">FR / SOLUÇÕES</span><h2>Matéria, método e execução.</h2><p>Conheça algumas frentes de trabalho e suas etapas técnicas. O levantamento orienta escopo e orçamento.</p><nav aria-label="Conheça nossos serviços">'+links+'<a class="frls-all" href="'+hub+'">Todas as soluções →</a></nav>';
  for(const id of ['view-home','view-sobre','view-orcamento']){
