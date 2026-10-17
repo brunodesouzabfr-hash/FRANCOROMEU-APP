@@ -1,0 +1,17 @@
+/* Phase 8.2: protect the authorial Home headline at narrow mobile widths.
+   Keep one intentional line per word; prevent the final S of FORJADOS
+   from wrapping on 320px viewports. Scope excludes budget and other views. */
+@media (max-width: 375px) {
+  html body #view-home .fr6-hero-title {
+    font-size: clamp(2.8rem, 14.7vw, 3.5rem) !important;
+    letter-spacing: -.075em !important;
+    max-width: 100% !important;
+  }
+  html body #view-home .fr6-hero-line:nth-child(2) {
+    margin-left: 0 !important;
+  }
+  html body #view-home .fr6-hero-line,
+  html body #view-home .fr6-hero-line > span {
+    white-space: nowrap !important;
+  }
+}
