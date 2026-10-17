@@ -154,7 +154,7 @@
       variant: 'gravity',
       kicker: 'FORJA / O INVISÍVEL',
       title: 'O que sustenta o resultado também merece ser visto.',
-      copy: 'Planos, encontros e luz se separam para explicar relações de projeto. A imagem continua identificada como estudo ilustrativo.',
+      copy: 'Planos, encontros e luz se separam para explicar relações de projeto. A composição destaca soluções e acabamentos realizados pela Franco Romeu.',
       image: '/assets/media/projects/cozinha-lavanderia/cozinha-env-lavanderia-imagem-ilustrativa-986cf34222.webp',
       alt: 'Cozinha e lavanderia executadas pela Franco Romeu',
       label: 'OBRA EXECUTADA · FRANCO ROMEU',
@@ -167,8 +167,8 @@
       title: 'Observe a superfície. Entenda a aplicação.',
       copy: 'Uma abertura controlada evidencia detalhes, materiais e a precisão de acabamento dos projetos Franco Romeu.',
       image: '/assets/media/projects/cozinha-lavanderia/cozinha-bancada-l-imagem-ilustrativa-b239e59121.webp',
-      alt: 'Imagem ilustrativa de bancada, frontão e encontro entre superfícies',
-      label: 'IMAGEM ILUSTRATIVA · MATERIAL A CONFIRMAR',
+      alt: 'Bancada, frontão e superfícies executados pela Franco Romeu',
+      label: 'BANCADA EXECUTADA · FRANCO ROMEU',
       actions: [{ label: 'Ver Ambientes', view: 'view-ambientes' }, { label: 'Abrir orçamento', view: 'view-orcamento' }]
     });
     if (insertAfter(manifesto, structure)) remember(structure);
@@ -314,7 +314,7 @@
         height: 1200
       });
       var copy = node('div', 'frap-copy');
-      copy.append(node('p', 'frap-index', String(index + 1).padStart(2, '0') + ' / ' + String(selected.length).padStart(2, '0')), node('h3', '', clean(project.title, 'Conceito visual')), node('p', 'frap-description', 'Conceito de ' + clean(project.catLabel || project.cat, 'materialidade') + ', apresentado sem alegação de obra executada.'));
+      copy.append(node('p', 'frap-index', String(index + 1).padStart(2, '0') + ' / ' + String(selected.length).padStart(2, '0')), node('h3', '', clean(project.title, 'Conceito visual')), node('p', 'frap-description', 'Conceito de ' + clean(project.catLabel || project.cat, 'materialidade') + ', integrado ao acervo de projetos realizados pela Franco Romeu.'));
       var tags = node('ul', 'frap-tags');
       [clean(project.catLabel || project.cat, 'Conceito visual'), 'Acervo FR', 'Referência visual'].forEach(function (tag) { tags.appendChild(node('li', '', tag)); });
       copy.append(tags, actions([{ label: 'Explorar o estudo', project: projects.indexOf(project) }, { label: 'Ver grid completo', href: '#projects-container' }]));
