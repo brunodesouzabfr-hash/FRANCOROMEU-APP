@@ -13,7 +13,9 @@ const env={
  FR_CRM_INGEST_ENABLED:'true',
  FR_CRM_INGEST_SECRET:'t'.repeat(64),
  FR_CRM_NOTION_TOKEN:'ntn_'+('x'.repeat(50)),
- FR_CRM_NOTION_DATA_SOURCE_ID:'ce2daa5f-8a64-479f-9c19-6aad58442499'
+ FR_CRM_NOTION_DATA_SOURCE_ID:'ce2daa5f-8a64-479f-9c19-6aad58442499',
+ FR_CRM_REDIS_REST_URL:'https://fr-crm-test.upstash.io',
+ FR_CRM_REDIS_REST_TOKEN:'r'.repeat(50)
 };
 const notionalId='0cddcc46-80cf-440b-b298-af3604676581';
 const req=(body=sample,extra={})=>({
@@ -33,6 +35,7 @@ const mockFetch=(queryResults=[])=>{
  const calls=[];
  const fetchImpl=async (url,opt)=>{
   calls.push({url,options:opt});
+  if(url===env.FR_CRM_REDIS_REST_URL)return {ok:true,json:async()=>({result:1})};
   return {ok:true,json:async()=>url.endsWith('/query')
    ?{results:queryResults}
    :{id:notionalId}
@@ -92,17 +95,17 @@ test('F9.4 creates exactly one real Notion page through secured server-side quer
  await ingest(req(),res,{env,fetchImpl:tracker.fetchImpl});
  assert.equal(res.code,201);
  assert.deepEqual(res.body,{status:'received'});
- assert.equal(tracker.calls.length,2);
- assert.match(tracker.calls[0].url,/^https:\/\/api\.notion\.com\/v1\/data_sources\/[a-f0-9-]+\/query$/);
- assert.equal(tracker.calls[1].url,'https://api.notion.com/v1/pages');
- for(const item of tracker.calls){
+ assert.equal(tracker.calls.length,4);
+ assert.match(tracker.calls[1].url,/^https:\/\/api\.notion\.com\/v1\/data_sources\/[a-f0-9-]+\/query$/);
+ assert.equal(tracker.calls[2].url,'https://api.notion.com/v1/pages');
+ for(const item of tracker.calls.slice(1,3)){
   assert.equal(item.options.headers['Notion-Version'],'2025-09-03');
   assert.equal(item.options.headers.Authorization,'Bearer '+env.FR_CRM_NOTION_TOKEN);
  }
- const query=JSON.parse(tracker.calls[0].options.body);
+ const query=JSON.parse(tracker.calls[1].options.body);
  assert.equal(query.filter['property'],'Referência de integração');
  assert.equal(query.filter.rich_text.equals,sample.eventId);
- const create=JSON.parse(tracker.calls[1].options.body);
+ const create=JSON.parse(tracker.calls[2].options.body);
  assert.equal(create.parent.type,'data_source_id');
  assert.equal(create.parent.data_source_id,env.FR_CRM_NOTION_DATA_SOURCE_ID);
  assert.equal(create.properties['Telefone'].phone_number,sample.phone);
@@ -115,12 +118,12 @@ test('F9.4 retry for existing event ID is acknowledged but never inserts another
  const x=mockFetch([{id:notionalId}]),res=response();
  await ingest(req(),res,{env,fetchImpl:x.fetchImpl});
  assert.equal(res.code,200);assert.equal(res.body.status,'already_received');
- assert.equal(x.calls.length,1);
+ assert.equal(x.calls.length,3);
 });
 test('F9.4 Notion failures respond without leaking client data or credentials',async()=>{
  const failing=async()=>({ok:false,status:429,json:async()=>({message:'secret'})});
  const res=response();await ingest(req(),res,{env,fetchImpl:failing});
- assert.equal(res.code,503);assert.equal(res.headers['Retry-After'],'20');
+ assert.equal(res.code,503);assert.equal(res.headers['Retry-After'],'120');
  assert.equal(JSON.stringify(res.body),JSON.stringify({status:'retry_later'}));
  assert.ok(!JSON.stringify(res).includes('Exemplo QA'));
  assert.ok(!JSON.stringify(res).includes(env.FR_CRM_NOTION_TOKEN));
