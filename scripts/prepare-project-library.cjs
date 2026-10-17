@@ -4,14 +4,14 @@ const {loadLibrary,hash,ORIGIN}=require('../src/media-library.cjs');
 function publicLabel(raw){
  if(/(?:01-capa\/|_CAPAS_AUTORAIS_POR_AMBIENTE\/)/.test(raw.source_path||''))return 'Capa editorial';
  if(raw.narrative_stage==='RECONSTRUCTED_BEFORE')return 'Antes — reconstituição técnica';
- if(raw.narrative_stage==='ILLUSTRATIVE_AFTER')return 'Depois — realização Franco Romeu';
+ if(raw.narrative_stage==='ILLUSTRATIVE_AFTER')return 'Depois — representação visual do projeto';
  if(raw.represented_stage==='projeto_3d'||/3D/.test(raw.required_public_label||''))return 'Estudo 3D';
  if(raw.narrative_stage==='MATERIAL_PANEL')return 'Materialidade';
- return 'Projeto realizado · Franco Romeu';
+ return raw.nature==='ILLUSTRATIVE'?'Visualização digital · Franco Romeu':'Projeto realizado · Franco Romeu';
 }
 function publicCaption(text){
  return String(text||'').replace(/\s*(?:Visualização ilustrativa; não comprova execução real\.|Estudo ilustrativo; não comprova execução física\.|Estudo ilustrativo de textura e combinação\.|Composição física e fornecedor dependem de confirmação\.|A aparência da imagem não comprova especificação ou execução da obra\.|Nomes comerciais seguem o painel; produto e fornecedor não comprovados\.|Comparativo ilustrativo; não comprova obra executada\.)/gi,'').replace(/\bestudo ilustrativo\b/gi,'projeto Franco Romeu')
-  .replace(/\bimagem ilustrativa\b/gi,'registro visual')
+  .replace(/\bimagem ilustrativa\b/gi,'representação visual')
   .replace(/\breconstituição ilustrativa\b/gi,'reconstituição técnica')
   .replace(/\bcomparativo ilustrativo\b/gi,'comparativo do projeto')
   .trim();
@@ -24,7 +24,7 @@ function displayMediaText(text){
   .replace(/^Antes reconstituído,?\s*imagem ilustrativa\s*[—:,]\s*/i,'Antes reconstituído: ')
   .replace(/^Capa editorial ilustrativa Franco Romeu para\s*/i,'Capa editorial de ')
   .replace(/\bestudo ilustrativo\b/gi,'projeto Franco Romeu')
-  .replace(/\bimagem ilustrativa\b/gi,'registro visual')
+  .replace(/\bimagem ilustrativa\b/gi,'representação visual')
   .replace(/\breconstituição ilustrativa\b/gi,'reconstituição técnica')
   .replace(/\bcomparativo ilustrativo\b/gi,'comparativo do projeto')
   .trim();
