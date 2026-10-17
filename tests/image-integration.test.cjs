@@ -91,7 +91,7 @@ test('Sobre, Ambientes e Portfolio refletem a limpeza seletiva e o dossier escal
  assert.doesNotMatch(about.body.textContent,/O método em leitura visual/);
  const ambientes=new JSDOM(fs.readFileSync(path.join(output,'ambientes.html'),'utf8')).window.document;
  assert.equal(ambientes.querySelectorAll('[data-frpm-dossier-open]').length,1);assert.equal(ambientes.querySelector('[data-frpm-dossier-open]').dataset.frpmDossierOpen,'cozinha-lavanderia');
- assert.match(ambientes.querySelector('figure.frpm-dossier-card').textContent,/Depois — realização Franco Romeu/);
+ assert.match(ambientes.querySelector('figure.frpm-dossier-card').textContent,/Depois — representação visual do projeto/);
  assert.doesNotMatch(ambientes.getElementById('view-ambientes').textContent,/FRANCO ROMEU \/ ARQUIVO DE VISUALIZAÇÃO/);
  assert.equal(data.dossiers.length,1);assert.equal(data.dossiers[0].id,'cozinha-lavanderia');assert.equal(data.dossiers[0].executionDocumented,false);assert.ok(data.dossiers[0].media.length>4);
  assert.ok(data.dossiers[0].media.some(item=>item.category==='materiality'&&data.media[item.media_id].canonicalFile.includes('cozinha-bancada-l-imagem-ilustrativa-b239e59121')));
