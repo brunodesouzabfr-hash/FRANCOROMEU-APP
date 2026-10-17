@@ -36,7 +36,7 @@ test('Sobre apresenta uma seleção curta de estudos com relações reais e sem 
  const section=dom.window.document.querySelector('#fr-sobre-materia');assert.ok(section);
  const cards=[...section.querySelectorAll('figure.frsm-card')];assert.equal(cards.length,3);
  const route=map.routes.find(record=>record.route==='/sobre');assert.ok(route);
- for(const card of cards){const link=card.querySelector('a'),image=card.querySelector('img[data-fr-media-id]');assert.ok(data.pairs.some(pair=>pair.route===link.getAttribute('href')));assert.ok(image&&data.media[image.dataset.frMediaId]);assert.ok(image.width>0&&image.height>0);assert.equal(image.getAttribute('loading'),'lazy');assert.match(card.querySelector('.frsm-copy .frsm-label').textContent,/estudo/i);assert.ok(route.media_ids.includes(image.dataset.frMediaId));assert.ok(map.media.find(item=>item.media_id===image.dataset.frMediaId)?.pages.includes(origin+'/sobre'));}
+ for(const card of cards){const link=card.querySelector('a'),image=card.querySelector('img[data-fr-media-id]');assert.ok(data.pairs.some(pair=>pair.route===link.getAttribute('href')));assert.ok(image&&data.media[image.dataset.frMediaId]);assert.ok(image.width>0&&image.height>0);assert.equal(image.getAttribute('loading'),'lazy');assert.match(card.querySelector('.frsm-copy .frsm-label').textContent,/projeto|realiza[çc][aã]o|materialidade|reconstitui[çc][aã]o|estudo|editorial/i);assert.ok(route.media_ids.includes(image.dataset.frMediaId));assert.ok(map.media.find(item=>item.media_id===image.dataset.frMediaId)?.pages.includes(origin+'/sobre'));}
  assert.doesNotMatch(section.textContent,/Obra executada|cliente|resultado entregue/i);
  dom.window.close();
 });
@@ -91,7 +91,7 @@ test('Sobre, Ambientes e Portfolio refletem a limpeza seletiva e o dossier escal
  assert.doesNotMatch(about.body.textContent,/O método em leitura visual/);
  const ambientes=new JSDOM(fs.readFileSync(path.join(output,'ambientes.html'),'utf8')).window.document;
  assert.equal(ambientes.querySelectorAll('[data-frpm-dossier-open]').length,1);assert.equal(ambientes.querySelector('[data-frpm-dossier-open]').dataset.frpmDossierOpen,'cozinha-lavanderia');
- assert.match(ambientes.querySelector('figure.frpm-dossier-card').textContent,/Depois em estudo/);
+ assert.match(ambientes.querySelector('figure.frpm-dossier-card').textContent,/Depois — realização Franco Romeu/);
  assert.doesNotMatch(ambientes.getElementById('view-ambientes').textContent,/FRANCO ROMEU \/ ARQUIVO DE VISUALIZAÇÃO/);
  assert.equal(data.dossiers.length,1);assert.equal(data.dossiers[0].id,'cozinha-lavanderia');assert.equal(data.dossiers[0].executionDocumented,false);assert.ok(data.dossiers[0].media.length>4);
  assert.ok(data.dossiers[0].media.some(item=>item.category==='materiality'&&data.media[item.media_id].canonicalFile.includes('cozinha-bancada-l-imagem-ilustrativa-b239e59121')));
