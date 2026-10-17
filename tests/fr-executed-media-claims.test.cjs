@@ -81,6 +81,6 @@ test('generated media carries explicit digital-representation labels',()=>{
     if(m.alt?.startsWith('Representação digital de projeto realizado'))assert.match(m.publication_label||'',/REPRESENTAÇÃO DIGITAL/);
   }
   const prep=fs.readFileSync(path.join(ROOT,'scripts/prepare-project-library.cjs'),'utf8');
-  assert.match(prep,/ILLUSTRATIVE_AFTER'\\)return 'Depois — representação visual do projeto'/);
-  assert.doesNotMatch(prep,/ILLUSTRATIVE_AFTER'\\)return 'Depois — realização Franco Romeu'/);
+  assert.ok(prep.includes("if(raw.narrative_stage==='ILLUSTRATIVE_AFTER')return 'Depois — representação visual do projeto';"));
+  assert.equal(prep.includes("if(raw.narrative_stage==='ILLUSTRATIVE_AFTER')return 'Depois — realização Franco Romeu';"),false);
 });
