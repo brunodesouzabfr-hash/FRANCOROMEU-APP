@@ -56,7 +56,7 @@ test('source index and deployed media/catalog presentation fields use affirmed b
  assert.deepEqual(hits(accessibleText(doc)),[]);
  doc.defaultView.close();
  const mediaSource=fs.readFileSync(path.join(ROOT,'assets/js/media-catalog.js'),'utf8');
- const media=JSON.parse(mediaSource.replace(/^window\.FR_MEDIA_CATALOG\s*=\s*/,'').replace(/;\s*$/,''));
+  const media=JSON.parse(script.slice(script.indexOf('=')+1).trim().replace(/;$/,''));
  const inspect=[...(media.assets||[])];
  assert.ok(inspect.length>20);
  for(const asset of inspect){
