@@ -75,6 +75,12 @@ async function build() {
   require('../src/fr-iqe-avatar-phase6.cjs')(doc);
   // Phase 7: reversible navbar layout and native SPA/dialog interaction preservation.
   require('../src/fr-nav-phase7.cjs')(doc);
+  // Fase 9: measurement is an isolated, deferred public module.
+  // The source SPA, quote math and intro remain unchanged.
+  const frConversion=doc.createElement('script');
+  frConversion.src='/assets/js/fr-conversion-phase9.js';
+  frConversion.defer=true;
+  doc.body.appendChild(frConversion);
   prepared.sourceGraph = sourceGraph;
   dom.window.FR_MEDIA_PRERENDER = true;
   dom.window.FR_MEDIA_LIBRARY = prepared.data;
