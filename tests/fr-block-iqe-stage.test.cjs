@@ -36,6 +36,24 @@ test('staging explicitly enabled adds only visual assets and noindex with no cha
  assert.throws(()=>inject(doc,{enabled:true}),/duplicate/);
  dom.window.close();
 });
+test('only the named Vercel preview branch enables Block without explicit flag',()=>{
+ const originalEnv=process.env.VERCEL_ENV,originalRef=process.env.VERCEL_GIT_COMMIT_REF,originalFlag=process.env.FR_BLOCK_IQE_STAGING;
+ try{
+  delete process.env.FR_BLOCK_IQE_STAGING;
+  process.env.VERCEL_ENV='preview';
+  process.env.VERCEL_GIT_COMMIT_REF='feature/block-iqe-staging-2026-10-17';
+  const d1=fixture();assert.equal(inject(d1.window.document).enabled,true);d1.window.close();
+  process.env.VERCEL_GIT_COMMIT_REF='main';
+  const d2=fixture();assert.equal(inject(d2.window.document).enabled,false);d2.window.close();
+  process.env.VERCEL_ENV='production';
+  process.env.VERCEL_GIT_COMMIT_REF='feature/block-iqe-staging-2026-10-17';
+  const d3=fixture();assert.equal(inject(d3.window.document).enabled,false);d3.window.close();
+ } finally{
+  for(const [key,value] of [['VERCEL_ENV',originalEnv],['VERCEL_GIT_COMMIT_REF',originalRef],['FR_BLOCK_IQE_STAGING',originalFlag]]){
+   if(value===undefined)delete process.env[key];else process.env[key]=value;
+  }
+ }
+});
 test('browser boot installs only when ready and its rollback leaves button events intact',()=>{
  const dom=fixture(),win=dom.window,doc=win.document;
  const button=doc.getElementById('fr-ai-launcher');
