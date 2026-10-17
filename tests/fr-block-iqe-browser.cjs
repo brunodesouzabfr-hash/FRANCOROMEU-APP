@@ -57,6 +57,10 @@ const assert=require('node:assert/strict');
        stageClass:root.classList.contains('fr-block-iqe-staging'),
        label:btn.getAttribute('aria-label'),
        budgetPreserved:!!document.getElementById('fr-ai-body'), // IQE wizard overlay is lazy-mounted, not present until requested
+       originalArtworkRemoved:!root.querySelector('#fr-ai-launcher .fr-ai-eyes,#fr-ai-launcher .fr6iqe-scene,#fr-ai-launcher .fr-ai-mouth'),
+       nativeBubblePresent:!!root.querySelector('.fr-ai-context-bubble'),
+       tips:window.FRBlockStage.getState().contextualBubbles,
+       chrome:{background:getComputedStyle(btn).backgroundImage,color:getComputedStyle(btn).backgroundColor,shadow:getComputedStyle(btn).boxShadow},
        canvases:canvases.map(canvas=>{
          let coverage=-1;
          try{
@@ -74,11 +78,29 @@ const assert=require('node:assert/strict');
    assert.ok(info.label,mode.name+' original launcher label missing');
    assert.equal(info.canvases.length,2,mode.name+' must render launcher and header');
    assert.ok(info.budgetPreserved,mode.name+' original IQE wizard missing');
+   assert.equal(info.originalArtworkRemoved,true,mode.name+' old IQE artwork still mounted');
+   assert.equal(info.chrome.background,'none',mode.name+' old orange background remains');
+   assert.equal(info.chrome.shadow,'none',mode.name+' old launcher shadow remains');
+   assert.ok(info.tips?.mounted,mode.name+' contextual balloons manager not mounted');
    for(const c of info.canvases){assert.ok(c.w>0&&c.h>0,mode.name+' canvas has zero pixels');assert.ok(c.coverage>0,mode.name+' mascot did not paint pixels');}
    // Capture the ACTUAL site after its approved intro finishes; never force-hide the intro.
    await page.waitForFunction(()=>!document.documentElement.classList.contains('fr-intro-active')&&!document.getElementById('fr-cinema-overlay'),undefined,{timeout:45000});
    await page.waitForTimeout(250);
+
+   const hints=await page.evaluate(()=>{
+     const native=document.querySelector('.fr-ai-context-bubble');
+     const shown=window.FRBlockStage.explain('welcome');
+     const fallback=document.querySelector('.fr-block-tip');
+     const hadNative=native?.classList.contains('is-visible')||false;
+     return {requested:shown,visible:!!fallback&&!fallback.hidden,hadNative,content:fallback?.textContent};
+   });
+   assert.ok(hints.requested||hints.hadNative,mode.name+' no welcome bubble source');
+   if(hints.requested)assert.match(hints.content,/Boas-vindas ao IQE/);
    await page.screenshot({path:'artifacts/block-iqe-staging/'+mode.name+'.png',fullPage:false});
+   await page.evaluate(()=>window.FRBlockStage.update({holiday:'halloween',loyalty:'premium',palette:'lovable'}));
+   await page.waitForTimeout(950);
+   await page.screenshot({path:'artifacts/block-iqe-staging/'+mode.name+'-theme-premium.png',fullPage:false});
+
    const rollback=await page.evaluate(()=>{
      window.FRBlockStage.destroy();
      return {canvasCount:document.querySelectorAll('canvas[data-fr-block-avatar]').length,legacy:window.FRIQEAvatar6?.getState()?.mounted===true,

@@ -15,6 +15,7 @@ module.exports=function installBlockStage(doc,{enabled=isBlockEnabled()}={}){
   if(doc.getElementById('fr-block-iqe-stage-marker'))throw Error('Block staging: duplicate injection');
   for(const [file,label] of [
     ['assets/js/fr-block-avatar.iife.js','compiled Lovable Block engine'],
+    ['assets/js/fr-block-iqe-balloons.js','context bubbles'],
     ['assets/js/fr-block-iqe-init.js','staging bootstrap'],
     ['assets/css/fr-block-iqe-stage.css','staging styles']
   ]) {
@@ -32,6 +33,7 @@ module.exports=function installBlockStage(doc,{enabled=isBlockEnabled()}={}){
   }
   const css=doc.createElement('link');css.rel='stylesheet';css.href='/assets/css/fr-block-iqe-stage.css';doc.head.appendChild(css);
   const engine=doc.createElement('script');engine.defer=true;engine.src='/assets/js/fr-block-avatar.iife.js';doc.body.appendChild(engine);
+  const balloons=doc.createElement('script');balloons.defer=true;balloons.src='/assets/js/fr-block-iqe-balloons.js';doc.body.appendChild(balloons);
   const init=doc.createElement('script');init.defer=true;init.src='/assets/js/fr-block-iqe-init.js';doc.body.appendChild(init);
   return {enabled:true,preservesAssistant:true,preservesWizard:true,visualOnly:true};
 };
