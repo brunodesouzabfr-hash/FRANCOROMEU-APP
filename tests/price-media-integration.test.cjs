@@ -69,7 +69,7 @@ test('galeria reconstrói host, filtra setor e mantém rótulo sem exigir JavaSc
   dom.window.FRMediaCase.integrate();
   const doc=dom.window.document;
   assert.equal(doc.querySelectorAll('#frmedia-cozinha-lavanderia .frmedia-card').length,57);
-  assert.ok([...doc.querySelectorAll('.frmedia-label')].every(n => ['IMAGEM ILUSTRATIVA','ESTUDO 3D ILUSTRATIVO','RECONSTITUIÇÃO ILUSTRATIVA'].includes(n.textContent)));
+  assert.ok([...doc.querySelectorAll('.frmedia-label')].every(n => ['PROJETO REALIZADO · FRANCO ROMEU','PROJETO 3D · FRANCO ROMEU','RECONSTITUIÇÃO TÉCNICA'].includes(n.textContent)));
   doc.querySelector('[data-group="LAV"]').click();
   assert.equal(doc.querySelectorAll('#frmedia-cozinha-lavanderia .frmedia-card').length,6);
   doc.getElementById('fr16-portfolio').remove();
