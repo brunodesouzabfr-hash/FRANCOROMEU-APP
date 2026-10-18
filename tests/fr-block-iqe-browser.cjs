@@ -136,9 +136,14 @@ const assert=require('node:assert/strict');
    await page.evaluate(()=>{window.FRBlockStage.update({holiday:'children',roam:true});window.FRBlockStage.explore();});
    await page.waitForTimeout(900);
    assert.equal(await page.locator('[data-fr-block-host="companion"]').count(),1,mode.name+' expressive companion has its own global portal');
+   const policyNavigation=page.waitForEvent('framenavigated',{predicate:frame=>frame===page.mainFrame(),timeout:4000}).catch(error=>{
+     if(error.name!=='TimeoutError')throw error;
+     return null;
+   });
    await page.emulateMedia({reducedMotion:'reduce'});
-   await page.waitForTimeout(150);
-   assert.equal(await page.evaluate(()=>window.FRBlockStage.getState().engine.spatial),'IDLE',mode.name+' reduced motion must park exploration');
+   await policyNavigation;
+   // The existing site may reload when its global motion policy changes.
+   await page.waitForFunction(()=>window.FRBlockStage?.getState()?.mounted===true&&window.FRBlockStage.getState().engine.spatial==='IDLE',undefined,{timeout:15000});
    // Validate rollback while reduction remains active; this page is closed after the test.
    const rollback=await page.evaluate(()=>{
      window.FRBlockStage.destroy();
