@@ -8,6 +8,7 @@ Branch: `fix/home-portfolio-scroll-scenes-2026-10-18`.
 - Home e Portfólio compartilham dimensões, cartões e revelação vertical em sentidos opostos. O Portfólio contém os 60 pares canônicos (120 imagens), sem gerar a lista duplicada de comparações.
 - O estágio original é movido para dentro do contêiner ativo `fr16-portfolio`, preservando os nós e os links dos projetos. O alias `frpm-before-after` continua válido, e o CTA de transformações aponta para ele.
 - Cada gesto de roda avança uma comparação em 680 ms, com aceleração e desaceleração cúbicas. Eventos de inércia do trackpad são agrupados; novos gestos e pulsos repetidos da roda podem entrar na fila. A distância do evento não determina quantas imagens avançam.
+- Saltos diretos pelo índice revelam apenas as duas cenas escolhidas. A regressão de 1 → 60 verifica que no máximo 12 imagens (extremos e vizinhas) recebem fonte, sem hidratar os 58 projetos intermediários.
 - A rolagem pela barra também termina em uma cena inteira. Toque vertical e teclado têm navegação por cena. Os limites liberam a rolagem da página; zoom, controles de formulário e diálogos abertos permanecem acessíveis. Índice, setas e pular sequência oferecem rotas alternativas.
 - Movimento reduzido elimina a interpolação e mantém as 60 comparações acessíveis pelos controles.
 - As 48 mídias elegíveis de `FR-C001` ficam em uma única pasta: **Reforma de cozinha e lavanderia — quartzo e móveis**. As duas galerias abertas que repetiam o projeto no Portfólio deixam de ser montadas. O dossier usa o visualizador existente e conserva os rótulos e relações de cada mídia.
@@ -27,14 +28,21 @@ Branch: `fix/home-portfolio-scroll-scenes-2026-10-18`.
 | Suíte geral | PASS | `npm test` |
 | Estrutura HTML e invariantes | PASS | `npm run check:html`: seis views, IDs únicos, núcleo financeiro e ponte PDF |
 | Build público | PASS | `npm run build` |
-| Revisão visual em desktop e 390×844 | BLOCKED | Prévia local sem acesso pelos navegadores; supervisor informa `bwrap: Can't mount proc on /newroot/proc: Operation not permitted` |
+| Home e Portfólio em desktop e 390×844 | PASS | Prévia Vercel: transições completas, uma cena ativa com opacidade 1 e sem overflow; captura desktop em `evidence/portfolio-scroll-desktop-2026-10-18.png` |
+| Índice e pasta de projeto no navegador | PASS | Índice acessado por teclado até 60/60; pasta com 48 miniaturas, avanço 1 → 2 e foco restaurado ao fechar |
+| Navegação nas seis views | PASS | Home, Sobre, Ambientes, Projetos 3D, Portfólio e Orçamento abertos; sem overflow horizontal no desktop |
+| Console observado | PASS | Nenhum erro no registro coletado durante a navegação |
+| Vercel/GitHub no commit 6955ebe5 | PASS | Status Vercel concluído e FR Quality Gate #117 aprovado; sem promoção de produção |
+| API Vercel da equipe | BLOCKED | Conexão recusou leitura do escopo `franco-romeu` com 403; URL e estado da prévia foram obtidos da integração GitHub |
 
-A verificação de toque acima usa eventos simulados. Sensibilidade em mouse/trackpad físicos, inspeção das seis views, console e conferência visual em desktop/390×844 continuam pendentes antes do aceite de release. Os testes não são medições de desempenho real nem certificação de fidelidade fotográfica.
+A verificação de toque usa eventos simulados. Resta o aceite do responsável sobre sensibilidade em mouse/trackpad e aparelho móvel físicos. A prévia mostra um aviso INP da barra de feedback Vercel; não é uma medição isolada desta mudança nem permite atribuir causa. Os testes não são medições de desempenho real nem certificação de fidelidade fotográfica.
+
+A prévia local falhou por infraestrutura (`bwrap: Can't mount proc on /newroot/proc: Operation not permitted`); a revisão foi concluída na prévia Vercel da branch. O ajuste posterior de salto direto preserva o layout; sua regressão tem teste próprio.
 
 ## Preservação, risco e reversão
 
 Arquivos de origem de mídia, hashes históricos, IDs de serviço, fórmulas, preços, cupons, persistência, IQE e arquivos de SEO/canonical não são alterados. O ajuste atua na apresentação e na navegação do acervo existente. Não há dependência de produção nova.
 
-Risco a conferir: ritmo e distinção de inércia/pulsos variam por dispositivo. A sequência não captura roda/toque fora de um estágio ativo, libera seus limites e possui controles explícitos. A seleção visual no navegador ainda precisa de aceite.
+Risco a conferir: ritmo e distinção de inércia/pulsos variam por dispositivo. A sequência não captura roda/toque fora de um estágio ativo, libera seus limites e possui controles explícitos. A seleção visual foi inspecionada na prévia; o aceite do responsável continua pendente.
 
 Reversão: reverter o commit desta tarefa e executar o build padrão. Nenhuma migração de dados nem movimentação física de fotos é necessária. Produção não foi promovida por esta tarefa.

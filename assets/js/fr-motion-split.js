@@ -62,10 +62,12 @@
   if(rec.announced===index)return;rec.announced=index;
   if(rec.status)rec.status.textContent='Comparação '+(index+1)+' de '+rec.count+': '+(title?title.textContent:'Franco Romeu');
  }
- function paint(rec,position){
+ function paint(rec,position,jump){
   rec.position=Math.max(0,Math.min(rec.count-1,position));
-  var index=Math.floor(rec.position),fraction=rec.position-index,selected=Math.round(rec.position);
-  var visible=fraction>0?[index,index+1]:[index];
+  var index=jump?jump.from:Math.floor(rec.position),fraction=jump?jump.fraction:rec.position-index,next=jump?jump.to:index+1;
+  var selected=jump?(fraction<.5?index:next):Math.round(rec.position);
+  if(jump)rec.position=selected;
+  var visible=fraction>0?[index,next]:[index];
   rec.layers.forEach(function(i){
    if(visible.indexOf(i)>=0)return;
    rec.frames.forEach(function(frames){frames[i].style.visibility='hidden';});
@@ -74,7 +76,7 @@
   visible.forEach(function(i){
    rec.frames.forEach(function(frames,side){
     var frame=frames[i],open=i===index?1:fraction;
-    frame.style.visibility='visible';
+    frame.style.visibility='visible';frame.style.zIndex=i===index?'1':'2';
     frame.style.clipPath=side===0?'inset('+((1-open)*100).toFixed(3)+'% 0 0 0)':'inset(0 0 '+((1-open)*100).toFixed(3)+'% 0)';
     frame.querySelector('img').style.transform=motion?'none':'translate3d(0,'+((side===0?-1:1)*(1-open)*12).toFixed(3)+'%,0) scale(1.055)';
    });
@@ -83,9 +85,9 @@
    card.style.pointerEvents=accessible?'auto':'none';card.inert=!accessible;card.setAttribute('aria-hidden',String(!accessible));
   });
   rec.layers=visible;
-  if(rec.active!==index){
-   rec.active=index;
-   for(var look=Math.max(0,index-1);look<=Math.min(rec.count-1,index+2);look++)hydrate(sceneImages(rec,look),rec.cards[look]);
+  if(rec.active!==selected){
+   rec.active=selected;
+   for(var look=Math.max(0,selected-1);look<=Math.min(rec.count-1,selected+2);look++)hydrate(sceneImages(rec,look),rec.cards[look]);
   }
   if(rec.bar)rec.bar.style.width=(100*rec.position/Math.max(1,rec.count-1)).toFixed(2)+'%';
   if(rec.counter)rec.counter.textContent=String(selected+1).padStart(2,'0')+' / '+String(rec.count).padStart(2,'0');
@@ -95,12 +97,14 @@
  function startTween(rec,direct,shouldAlign){
   if(motion||Math.abs(rec.target-rec.position)<.00001){paint(rec,rec.target);if(shouldAlign)align(rec,rec.target);announce(rec);return;}
   var end=direct?rec.target:Math.round(rec.position)+Math.sign(rec.target-rec.position);
-  rec.tween={from:rec.position,to:end,start:now(),align:shouldAlign};schedule();
+  rec.tween={from:rec.position,to:end,start:now(),align:shouldAlign,jump:direct&&Math.abs(end-rec.position)>1};
+  hydrate(sceneImages(rec,end),rec.cards[end]);schedule();
  }
  function select(rec,index,direct,shouldAlign){
   rec.target=Math.max(0,Math.min(rec.count-1,Math.round(index)));rec.escaping=false;
   if(rec.tween&&!direct)return;
   rec.tween=null;
+  if(direct)paint(rec,Math.round(rec.position));
   if(shouldAlign&&!motion)align(rec,rec.position);
   startTween(rec,direct,shouldAlign);
  }
@@ -143,7 +147,9 @@
    if(!rec.tween){syncScroll(rec);if(rec.tween)again=true;return;}
    if(d.hidden){rec.tween=null;paint(rec,rec.target);announce(rec);return;}
    var tween=rec.tween,t=clamp((time-tween.start)/duration),eased=t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;
-   paint(rec,tween.from+(tween.to-tween.from)*eased);
+   // Index jumps reveal only their two endpoints, without decoding intermediate projects.
+   if(tween.jump)paint(rec,rec.position,{from:tween.from,to:tween.to,fraction:eased});
+   else paint(rec,tween.from+(tween.to-tween.from)*eased);
    if(t===1){
     rec.tween=null;paint(rec,tween.to);if(tween.align)align(rec,tween.to);
     if(rec.target!==tween.to)startTween(rec,false,tween.align);else announce(rec);

@@ -78,22 +78,22 @@ test('Phase 2: motion remains namespaced with mobile, reduced-motion and lifecyc
  assert.match(js,/FRMotionSplit/);assert.match(js,/requestAnimationFrame/);assert.match(js,/data-frms-jump/);
 });
 
-function controller(reduced=false){
+function controller(reduced=false,portfolio=false){
  const dom=new JSDOM(heroMarkup,{runScripts:'outside-only',pretendToBeVisual:true,url:'https://www.francoromeufr.com.br/'}),w=dom.window,d=w.document;
- build(d,fixture(5));
- d.getElementById('view-home').className='view-section active';d.getElementById('view-projetos').className='view-section';
- const root=d.getElementById('frms-home');let clock=0,id=0,callbacks=new Map();
+ build(d,fixture(portfolio?60:5));
+ d.getElementById('view-home').className=portfolio?'view-section':'view-section active';d.getElementById('view-projetos').className=portfolio?'view-section active':'view-section';
+ const root=d.getElementById(portfolio?'frms-portfolio':'frms-home'),height=Number(root.dataset.frmsCount)*800;let clock=0,id=0,callbacks=new Map();
  Object.defineProperty(w,'innerHeight',{value:800,writable:true});Object.defineProperty(w,'scrollY',{value:1000,writable:true});
  Object.defineProperty(w.performance,'now',{value:()=>clock});
  w.requestAnimationFrame=fn=>{callbacks.set(++id,fn);return id};w.cancelAnimationFrame=n=>callbacks.delete(n);
  w.matchMedia=()=>({matches:reduced,addEventListener(){},removeEventListener(){}});w.HTMLCanvasElement.prototype.getContext=()=>null;
- root.getBoundingClientRect=()=>({top:1000-w.scrollY,bottom:5000-w.scrollY,height:4000});root.querySelector('.frms-pin').getBoundingClientRect=()=>({height:800});
+ root.getBoundingClientRect=()=>({top:1000-w.scrollY,bottom:1000+height-w.scrollY,height:height});root.querySelector('.frms-pin').getBoundingClientRect=()=>({height:800});
  w.scrollTo=({top})=>{w.scrollY=top;w.dispatchEvent(new w.Event('scroll'))};
  w.eval(fs.readFileSync(path.join(__dirname,'../assets/js/fr-motion-split.js'),'utf8'));d.dispatchEvent(new w.Event('DOMContentLoaded'));
  function step(ms=0){clock+=ms;const tasks=[...callbacks.values()];callbacks.clear();tasks.forEach(fn=>fn(clock));}
  function wheel(delta,gap=200,options={}){clock+=gap;const e=new w.WheelEvent('wheel',{deltaY:delta,cancelable:true,bubbles:true,...options});root.dispatchEvent(e);return e;}
  function touch(type,points){const e=new w.Event(type,{cancelable:true,bubbles:true});Object.defineProperty(e,'touches',{value:points.map(([clientX,clientY])=>({clientX,clientY}))});root.dispatchEvent(e);return e;}
- function state(){return w.FRMotionSplit.getState().find(x=>x.kind==='home')}
+ function state(){return w.FRMotionSplit.getState().find(x=>x.kind===(portfolio?'portfolio':'home'))}
  function whole(index){
   assert.equal(state().index,index);assert.equal(state().animating,false);
   assert.equal(root.querySelectorAll('.frms-card[aria-hidden="false"]').length,1);
@@ -150,4 +150,13 @@ test('Portfolio mount moves original pairs into the active stage, keeps old anch
  assert.equal(d.querySelectorAll('#frpm-before-after').length,1);assert.equal(d.querySelectorAll('#view-projetos .frpm-pair').length,0);
  assert.equal(stage.querySelectorAll('#frms-portfolio figure img').length,120);assert.equal(stage.querySelectorAll('#frpm-portfolio-projects .frpm-dossier-card').length,1);
  assert.equal(stage.lastElementChild.id,'fr16-final-cta');assert.equal(split.nextElementSibling.id,'frms-portfolio-links');assert.equal(stage.querySelector('[data-fr16-jump]').dataset.fr16Jump,'frpm-before-after');dom.window.close();
+});
+
+test('scene controller: a distant index jump decodes only its endpoints and neighbors',()=>{
+ const f=controller(false,true);f.root.querySelector('[data-frms-jump="59"]').click();
+ f.step(200);assert.ok([0,59].includes(f.state().index));
+ f.step(200);assert.ok([0,59].includes(f.state().index));
+ f.step(300);f.whole(59);
+ assert.ok(f.root.querySelectorAll('.frms-frame img[src]').length<=12,'do not hydrate the 58 intermediate projects');
+ f.root.querySelector('[data-frms-jump="0"]').click();f.step(400);f.step(300);f.whole(0);f.dom.window.close();
 });
