@@ -6,6 +6,7 @@ const TRACKING = Object.freeze({
   ga4: 'G-22Z85RCGQC',
   clarity: 'yvdvt0rcy6',
   ahrefs: 'R5uObk7S/kmy79NyRbbXsA',
+  metricool: '4c7dfc69331b1330e48fa1e9a887b72e',
   googleVerification: 'E_RRRPq5Hdni9bYjyrxFS2487bqKtuc9KijeiIeoLBg',
   pinterestVerification: 'feefd2f4d4ca08f595a42c56885b37ad'
 });
@@ -16,7 +17,8 @@ function trackingHead() {
     +'<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","'+TRACKING.clarity+'");</script>'
     +'<script async src="https://www.googletagmanager.com/gtag/js?id='+TRACKING.ga4+'"></script>'
     +'<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","'+TRACKING.ga4+'");</script>'
-    +'<script src="https://analytics.ahrefs.com/analytics.js" data-key="'+TRACKING.ahrefs+'" async></script>';
+    +'<script src="https://analytics.ahrefs.com/analytics.js" data-key="'+TRACKING.ahrefs+'" async></script>'
+    +'<script id="fr-metricool-tracker">(function(){function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"'+TRACKING.metricool+'"})});})();</script>';
 }
 
 function normalize(value) {
