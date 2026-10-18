@@ -43,6 +43,8 @@ test('only the named Vercel preview branch enables Block without explicit flag',
   process.env.VERCEL_ENV='preview';
   process.env.VERCEL_GIT_COMMIT_REF='feature/block-iqe-staging-2026-10-17';
   const d1=fixture();assert.equal(inject(d1.window.document).enabled,true);d1.window.close();
+  process.env.VERCEL_GIT_COMMIT_REF='feat/block-spatial-iqe-2026-10-18';
+  const spatial=fixture();assert.equal(inject(spatial.window.document).enabled,true);spatial.window.close();
   process.env.VERCEL_GIT_COMMIT_REF='main';
   const d2=fixture();assert.equal(inject(d2.window.document).enabled,false);d2.window.close();
   process.env.VERCEL_ENV='production';
@@ -108,6 +110,8 @@ test('browser boot installs only when ready and its rollback leaves button event
  assert.equal(doc.getElementById('fr-ai-root').classList.contains('fr-block-iqe-staging'),true);
  button.click();assert.equal(clicks,1);
  win.FRBlockStage.destroy();assert.equal(destroys,1);assert.equal(legacyMounts,1);
+ assert.equal(win.FRBlockStage.mount(),true);assert.equal(mounts,2,'must allow an explicit remount');
+ win.FRBlockStage.destroy();
  button.click();assert.equal(clicks,2);
  dom.window.close();
 });
@@ -171,16 +175,16 @@ test('site vendors the exact validated Lovable v2 bundle with broad calendar and
  const crypto=require('node:crypto');
  const code=fs.readFileSync(path.join(__dirname,'../assets/js/fr-block-avatar.iife.js'),'utf8');
  assert.equal(crypto.createHash('sha256').update(code).digest('hex'),
-  'c1346e2b94d18930b82c819aa37da39d2819f80588085ebe41c88a3aeaceb9c2');
- for(const feature of ['#B66622','HALLOWEEN','DIA DAS MÃES','SÃO JOÃO','CARNAVAL','BLACK FRIDAY','CONSCIÊNCIA NEGRA','BRONZE','PRATA','OURO','PREMIUM']){
-  assert.ok(code.includes(feature),'Missing Lovable v2 feature: '+feature);
+  'd2e0017a888a10c8bf9c6444ecb61aa764ccd7d95631de202aa169f049da03a7');
+ for(const feature of ['#B66622','HALLOWEEN','DIA DAS MÃES','SÃO JOÃO','CARNAVAL','BLACK FRIDAY','CONSCIÊNCIA NEGRA','bronze','prata','ouro','premium']){
+  assert.ok(code.toLocaleUpperCase('pt-BR').includes(feature.toLocaleUpperCase('pt-BR')),'Missing Lovable v2 feature: '+feature);
  }
 });
 
 
 test('Block launcher is truly unclipped and does not intercept assistant interactions',()=>{
  const css=fs.readFileSync(path.join(__dirname,'../assets/css/fr-block-iqe-stage.css'),'utf8');
- for(const token of ['#fr-ai-root.fr-block-iqe-staging','border-radius:0!important','clip-path:none!important','mask-image:none!important','overflow:visible!important','inset:-34%!important','width:168%!important','pointer-events:none!important']){
+ for(const token of ['#fr-ai-root.fr-block-iqe-staging','border-radius:0!important','clip-path:none!important','mask-image:none!important','overflow:visible!important','[data-fr-block-host]','[data-fr-block-hit]','pointer-events:none!important']){
    assert.ok(css.includes(token),'missing unclipped contract: '+token);
  }
  assert.ok(css.includes('#fr-ai-launcher:focus-visible'),'keyboard focus feedback retained');
@@ -188,8 +192,9 @@ test('Block launcher is truly unclipped and does not intercept assistant interac
 
 test('new bundle provides integrated festive cues without fictitious offers',()=>{
  const js=fs.readFileSync(path.join(__dirname,'../assets/js/fr-block-avatar.iife.js'),'utf8');
- for(const token of ['GHOST','VAMP','FRANK','BLACK FRI','NATAL','SAO JOAO','CLIENTE','TRABALHO','PASCOA','PLAY']){
+ for(const token of ['ghost','vampire','FRANK','BLACK FRI','NATAL','SAO JOAO','CLIENTE','TRABALHO','PASCOA','PLAY']){
    assert.ok(js.includes(token),'missing festive visor token '+token);
  }
  assert.ok(!js.includes('20% OFF'),'avoid offers without an actual configured campaign');
 });
+

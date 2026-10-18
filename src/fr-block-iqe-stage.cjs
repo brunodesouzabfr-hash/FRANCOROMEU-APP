@@ -5,7 +5,7 @@
  * FR_BLOCK_IQE_ENABLED=0 disables it on the next build/deployment.
  * Does not touch wizard, financial logic, search or original assistant handlers.
  */
-const isBlockPreview=()=>process.env.VERCEL_ENV==='preview'&&process.env.VERCEL_GIT_COMMIT_REF==='feature/block-iqe-staging-2026-10-17';
+const isBlockPreview=()=>process.env.VERCEL_ENV==='preview'&&['feature/block-iqe-staging-2026-10-17','feat/block-spatial-iqe-2026-10-18'].includes(process.env.VERCEL_GIT_COMMIT_REF);
 const isMainProduction=()=>process.env.VERCEL_ENV==='production'&&process.env.VERCEL_GIT_COMMIT_REF==='main';
 const isBlockEnabled=()=>process.env.FR_BLOCK_IQE_ENABLED!=='0' &&
   (process.env.FR_BLOCK_IQE_STAGING==='1'||isBlockPreview()||isMainProduction());
@@ -37,3 +37,4 @@ module.exports=function installBlockStage(doc,{enabled=isBlockEnabled()}={}){
   const init=doc.createElement('script');init.defer=true;init.src='/assets/js/fr-block-iqe-init.js';doc.body.appendChild(init);
   return {enabled:true,preservesAssistant:true,preservesWizard:true,visualOnly:true};
 };
+
