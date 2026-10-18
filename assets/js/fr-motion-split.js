@@ -3,8 +3,9 @@
  'use strict';
  if(w.FRMotionSplit) return;
  var roots=[],raf=0,observer=null,destroyed=false,controls=[],listeners=[],touch=null;
- var duration=1600,gestureIdle=240,skipWindow=1600,wheel={at:-Infinity,rec:null};
+ var duration=1600,gestureIdle=400,skipWindow=2000,wheel={at:-Infinity,rec:null};
  var nativeScroll={at:-Infinity,rec:null},lastScrollY=w.scrollY,alignedY=null,pointerDown=false;
+ var capturedInput={at:-Infinity,rec:null};
  var motionQuery=w.matchMedia&&w.matchMedia('(prefers-reduced-motion: reduce)');
  var motion=!!(motionQuery&&motionQuery.matches);
  function clamp(n){return Math.min(1,Math.max(0,n));}
@@ -50,6 +51,8 @@
   done();
  }
  function now(){return w.performance.now();}
+ function inputTime(event){var at=event.timeStamp;return typeof at==='number'&&at>0&&at<=now()+1000?at:now();}
+ function capture(rec){capturedInput={at:now(),rec:rec};}
  function listen(target,type,fn,options){target.addEventListener(type,fn,options);listeners.push([target,type,fn,options]);}
  function active(rec){var view=rec.root.closest('.view-section');return rec.root.isConnected&&(!view||view.classList.contains('active'))&&!rec.root.closest('[hidden],[inert]');}
  function geometry(rec){
@@ -121,8 +124,8 @@
   var next=rec.root.nextElementSibling;
   if(next){next.scrollIntoView({block:'start',behavior:motion?'instant':'smooth'});var focus=next.querySelector('a,button');if(focus)focus.focus({preventScroll:true});}
  }
- function scrollStep(rec,dir){
-  var at=now(),rapid=rec.rapid;
+ function scrollStep(rec,dir,at){
+  if(at===undefined)at=now();var rapid=rec.rapid;
   if(dir>0){
    if(!rapid.count||at-rapid.start>skipWindow){rapid.start=at;rapid.count=0;}
    rapid.count++;
@@ -162,6 +165,10 @@
   alignedY=null;
   var dir=Math.sign(top-previous),at=now();
   if(motion||!dir||blocked(d.activeElement)){schedule();return;}
+  // A browser may emit residual native scroll events for a captured wheel/swipe.
+  // They belong to that same pull, rather than a second scrollbar gesture.
+  var owner=capturedInput.rec;
+  if(owner&&active(owner)&&!owner.escaping&&at-capturedInput.at<=gestureIdle){align(owner,owner.position);schedule();return;}
   var rec=roots.find(function(item){if(!active(item))return false;var g=geometry(item);return previous>=g.top-2&&previous<=g.top+g.travel+2;});
   if(!rec){
    rec=pinned();
@@ -202,21 +209,21 @@
  function onWheel(event){
   if(motion||event.defaultPrevented||event.ctrlKey||event.metaKey||event.shiftKey||blocked(event.target))return;
   if(!event.deltaY||Math.abs(event.deltaX)>Math.abs(event.deltaY))return;
-  var dir=Math.sign(event.deltaY),at=now(),fresh=at-wheel.at>gestureIdle;
+  var dir=Math.sign(event.deltaY),at=inputTime(event),fresh=at-wheel.at>gestureIdle;
   wheel.at=at;
   // Only a quiet interval releases a pull. Magnitude, deltaMode, repeated values,
   // direction changes and tween completion cannot turn its inertia into new gestures.
-  if(!fresh&&wheel.rec&&active(wheel.rec)){event.preventDefault();return;}
-  if(fresh)wheel.rec=null;
+  if(!fresh&&wheel.rec&&active(wheel.rec)){event.preventDefault();capture(wheel.rec);return;}
+  if(fresh){wheel.rec=null;capturedInput.rec=null;}
   var rec=pinned();
   if(!rec){
    var pixels=event.deltaY*(event.deltaMode===1?16:event.deltaMode===2?w.innerHeight:1);
    rec=roots.find(function(item){if(!active(item))return false;var g=geometry(item);return dir>0&&g.rect.top>2&&g.rect.top<=pixels||dir<0&&g.rect.bottom<g.height-2&&g.height-g.rect.bottom<=-pixels;});
-   if(rec){event.preventDefault();wheel.rec=rec;rec.tween=null;rec.target=dir>0?0:rec.count-1;paint(rec,rec.target);align(rec,rec.target);}
+   if(rec){event.preventDefault();wheel.rec=rec;capture(rec);rec.tween=null;rec.target=dir>0?0:rec.count-1;paint(rec,rec.target);align(rec,rec.target);}
    return;
   }
   if(rec.escaping||boundary(rec,dir))return;
-  event.preventDefault();wheel.rec=rec;if(fresh)scrollStep(rec,dir);
+  event.preventDefault();wheel.rec=rec;capture(rec);if(fresh)scrollStep(rec,dir,at);
  }
  function onKey(event){
   if(event.defaultPrevented||event.ctrlKey||event.metaKey||event.altKey||blocked(event.target))return;
@@ -228,7 +235,7 @@
   else if(event.key==='Home'||event.key==='End'){event.preventDefault();select(rec,event.key==='Home'?0:rec.count-1,true,true);}
  }
  function onTouchStart(event){
-  touch=null;if(motion||event.touches.length!==1||blocked(event.target))return;
+  touch=null;capturedInput.rec=null;if(motion||event.touches.length!==1||blocked(event.target))return;
   var rec=pinned();if(!rec||rec.escaping)return;var point=event.touches[0];touch={rec:rec,x:point.clientX,y:point.clientY,captured:false,dir:0};
  }
  function onTouchMove(event){
@@ -236,19 +243,19 @@
   var point=event.touches[0],dy=touch.y-point.clientY,dx=touch.x-point.clientX;
   if(Math.abs(dy)<8||Math.abs(dy)<=Math.abs(dx))return;
   var dir=Math.sign(dy);if(boundary(touch.rec,dir))return;
-  event.preventDefault();touch.captured=true;touch.dir=dir;
+  event.preventDefault();touch.captured=true;touch.dir=dir;capture(touch.rec);
  }
- function onTouchEnd(){if(touch&&touch.captured)scrollStep(touch.rec,touch.dir);touch=null;}
+ function onTouchEnd(event){if(touch&&touch.captured){capture(touch.rec);scrollStep(touch.rec,touch.dir,inputTime(event));}touch=null;}
  function onResize(){roots.forEach(function(rec){if(rec.tween)cancel(rec);});schedule();}
  function onMotionChange(){motion=!!motionQuery.matches;roots.forEach(function(rec){var target=rec.target;rec.tween=null;paint(rec,target);announce(rec);});schedule();}
  function start(){
   all(d,'.frms-section').forEach(mount);if(!roots.length)return;
   lastScrollY=w.scrollY;
   listen(w,'scroll',onScroll,{passive:true});listen(w,'resize',onResize,{passive:true});listen(w,'pageshow',schedule,{passive:true});
-  listen(w,'pointerdown',function(){pointerDown=true;},{passive:true});listen(w,'pointerup',function(){pointerDown=false;nativeScroll.rec=null;},{passive:true});listen(w,'pointercancel',function(){pointerDown=false;nativeScroll.rec=null;},{passive:true});
+  listen(w,'pointerdown',function(){pointerDown=true;capturedInput.rec=null;},{passive:true});listen(w,'pointerup',function(){pointerDown=false;nativeScroll.rec=null;},{passive:true});listen(w,'pointercancel',function(){pointerDown=false;nativeScroll.rec=null;},{passive:true});
   listen(w,'wheel',onWheel,{passive:false});listen(w,'keydown',onKey);
   listen(w,'touchstart',onTouchStart,{passive:true});listen(w,'touchmove',onTouchMove,{passive:false});listen(w,'touchend',onTouchEnd,{passive:true});listen(w,'touchcancel',function(){touch=null;},{passive:true});
-  listen(d,'visibilitychange',schedule);listen(d,'frViewChanged',function(){touch=null;wheel={at:-Infinity,rec:null};nativeScroll={at:-Infinity,rec:null};lastScrollY=w.scrollY;roots.forEach(function(rec){rec.rapid.count=0;if(!active(rec)&&rec.tween)cancel(rec);});schedule();});
+  listen(d,'visibilitychange',schedule);listen(d,'frViewChanged',function(){touch=null;wheel={at:-Infinity,rec:null};nativeScroll={at:-Infinity,rec:null};capturedInput.rec=null;lastScrollY=w.scrollY;roots.forEach(function(rec){rec.rapid.count=0;if(!active(rec)&&rec.tween)cancel(rec);});schedule();});
   if(motionQuery&&motionQuery.addEventListener)listen(motionQuery,'change',onMotionChange);
   observer=new MutationObserver(schedule);all(d,'.view-section').forEach(function(view){observer.observe(view,{attributes:true,attributeFilter:['class','hidden','style']});});
   schedule();

@@ -92,7 +92,7 @@ function controller(reduced=false,portfolio=false){
  w.HTMLElement.prototype.scrollIntoView=function(options){skipped.push({id:this.id,options});};
  w.eval(fs.readFileSync(path.join(__dirname,'../assets/js/fr-motion-split.js'),'utf8'));d.dispatchEvent(new w.Event('DOMContentLoaded'));
  function step(ms=0){clock+=ms;const tasks=[...callbacks.values()];callbacks.clear();tasks.forEach(fn=>fn(clock));}
- function wheel(delta,gap=300,options={}){clock+=gap;const e=new w.WheelEvent('wheel',{deltaY:delta,cancelable:true,bubbles:true,...options});root.dispatchEvent(e);return e;}
+ function wheel(delta,gap=450,options={}){clock+=gap;const e=new w.WheelEvent('wheel',{deltaY:delta,cancelable:true,bubbles:true,...options});if(options.inputAt!==undefined)Object.defineProperty(e,'timeStamp',{value:options.inputAt});root.dispatchEvent(e);return e;}
  function touch(type,points){const e=new w.Event(type,{cancelable:true,bubbles:true});Object.defineProperty(e,'touches',{value:points.map(([clientX,clientY])=>({clientX,clientY}))});root.dispatchEvent(e);return e;}
  function state(){return w.FRMotionSplit.getState().find(x=>x.kind===(portfolio?'portfolio':'home'))}
  function whole(index){
@@ -119,7 +119,7 @@ test('scene controller: tiny and large wheel gestures each finish exactly one co
 });
 test('scene controller: a sustained pull never unlocks on amplitude, repeated deltas, direction, units or tween completion',()=>{
  for(const portfolio of [false,true])for(const deltaMode of [0,1,2]){
-  const f=controller(false,portfolio);f.wheel(120,300,{deltaMode});
+  const f=controller(false,portfolio);f.wheel(120,450,{deltaMode});
   for(let i=0;i<50;i++){f.step(40);assert.equal(f.wheel(i%4===0?-1800:120,0,{deltaMode}).defaultPrevented,true);}
   f.whole(1);assert.equal(f.state().target,1);assert.equal(f.skipped.length,0);
   for(const delta of [60,12,8,3,1])f.wheel(delta,200,{deltaMode});
@@ -128,15 +128,34 @@ test('scene controller: a sustained pull never unlocks on amplitude, repeated de
 });
 test('scene controller: three distinct rapid downward pulls skip the section in Home and Portfolio',()=>{
  for(const portfolio of [false,true]){
-  const f=controller(false,portfolio);f.wheel(1);f.wheel(1800,300);assert.equal(f.state().target,2);assert.equal(f.state().animating,true);
-  f.wheel(120,300);assert.equal(f.skipped.length,1);assert.equal(f.skipped[0].id,portfolio?'frms-portfolio-links':'other-home');assert.equal(f.skipped[0].options.behavior,'smooth');assert.equal(f.state().animating,false);
+  const f=controller(false,portfolio);f.wheel(1);f.wheel(1800,450);assert.equal(f.state().target,2);assert.equal(f.state().animating,true);
+  f.wheel(120,450);assert.equal(f.skipped.length,1);assert.equal(f.skipped[0].id,portfolio?'frms-portfolio-links':'other-home');assert.equal(f.skipped[0].options.behavior,'smooth');assert.equal(f.state().animating,false);
   f.wheel(9000,40);assert.equal(f.skipped.length,1);f.dom.window.close();
  }
+});
+test('scene controller: delayed event processing cannot split one physical input burst',()=>{
+ const f=controller();f.wheel(120,450,{inputAt:100});
+ for(let i=1;i<=4;i++){f.step(700);f.wheel(120,0,{inputAt:100+i*40});}
+ f.whole(1);assert.equal(f.state().target,1);assert.equal(f.skipped.length,0);f.dom.window.close();
+});
+test('scene controller: residual native scroll from a captured pull cannot advance or skip again',()=>{
+ const f=controller(false,true);f.wheel(3000);
+ for(let i=0;i<50;i++){
+  f.step(40);f.wheel(3000,0);f.w.scrollY=1000+800*59;f.w.dispatchEvent(new f.w.Event('scroll'));
+  assert.equal(f.state().target,1);assert.equal(f.skipped.length,0);
+ }
+ f.whole(1);f.dom.window.close();
+});
+test('scene controller: reaching the last image consumes the remaining inertia until a new pull',()=>{
+ const f=controller();f.root.querySelector('[data-frms-jump="3"]').click();f.step(1600);
+ f.wheel(120);for(let i=0;i<4;i++){f.step(400);f.wheel(80,0);}f.whole(4);
+ assert.equal(f.wheel(1,200).defaultPrevented,true);f.whole(4);
+ assert.equal(f.wheel(1,450).defaultPrevented,false);f.dom.window.close();
 });
 test('scene controller: spaced pulls advance in order; an upward pull resets the rapid exit sequence',()=>{
  const f=controller();f.wheel(12);f.step(1600);f.wheel(900);f.step(1600);f.wheel(120);f.step(1600);f.whole(3);assert.equal(f.skipped.length,0);
  f.wheel(-120);f.step(1600);f.whole(2);
- f.wheel(1);f.wheel(-1,300);f.wheel(1,300);assert.equal(f.skipped.length,0);
+ f.wheel(1);f.wheel(-1,450);f.wheel(1,450);assert.equal(f.skipped.length,0);
  f.step(1600);f.step(1600);f.step(1600);f.whole(3);f.dom.window.close();
 });
 test('scene controller: reverse and boundary scrolls release the page; zoom and open dialogs are untouched',()=>{

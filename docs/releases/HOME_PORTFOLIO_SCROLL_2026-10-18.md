@@ -7,9 +7,9 @@ Branch: `fix/home-portfolio-scroll-scenes-2026-10-18`.
 
 - Home e Portfólio compartilham dimensões, cartões e revelação vertical em sentidos opostos. O Portfólio contém os 60 pares canônicos (120 imagens), sem gerar a lista duplicada de comparações.
 - O estágio original é movido para dentro do contêiner ativo `fr16-portfolio`, preservando os nós e os links dos projetos. O alias `frpm-before-after` continua válido, e o CTA de transformações aponta para ele.
-- Cada puxada contínua de roda/trackpad avança somente uma comparação. A distância, velocidade, unidade e repetição dos eventos, uma inversão dentro da puxada ou o término da animação não liberam outro avanço. A sessão permanece consumida até haver mais de 240 ms sem eventos; esse intervalo distingue gestos na API de roda, que não informa o contato físico dos dedos.
+- Cada puxada contínua de roda/trackpad avança somente uma comparação. A distância, velocidade, unidade e repetição dos eventos, uma inversão dentro da puxada ou o término da animação não liberam outro avanço. O horário de origem dos eventos evita contar atrasos de processamento como novas puxadas; eventos nativos residuais da roda/toque não entram na contagem da barra. A sessão permanece consumida até haver mais de 400 ms sem eventos; esse intervalo distingue gestos na API de roda, que não informa o contato físico dos dedos.
 - Fotos em sentidos opostos e card central compartilham uma transição de 1.600 ms com interpolação de quinta ordem e velocidade/aceleração nulas nas extremidades. A mudança de cor do card usa 1.200 ms suaves. Nenhuma transição fica parada entre cenas.
-- Três puxadas separadas para baixo, iniciadas dentro de 1.600 ms, cancelam a fila e pulam a seção com rolagem suave ao conteúdo seguinte. Uma única puxada contínua não acumula essa contagem. Puxadas mais espaçadas percorrem as cenas uma a uma. Reverter o sentido reinicia a contagem; setas e índice continuam como controles explícitos. A mesma saída vale para três swipes completos; o botão **Pular animação ↓** permanece disponível.
+- Três puxadas separadas para baixo, iniciadas dentro de 2.000 ms, cancelam a fila e pulam a seção com rolagem suave ao conteúdo seguinte. Uma única puxada contínua não acumula essa contagem. Puxadas mais espaçadas percorrem as cenas uma a uma. Reverter o sentido reinicia a contagem; setas e índice continuam como controles explícitos. A mesma saída vale para três swipes completos; o botão **Pular animação ↓** permanece disponível.
 - Saltos diretos pelo índice revelam apenas as duas cenas escolhidas. A regressão de 1 → 60 verifica que no máximo 12 imagens (extremos e vizinhas) recebem fonte, sem hidratar os 58 projetos intermediários.
 - Uma puxada da barra avança uma cena, independentemente da distância; manter o ponteiro pressionado conserva a mesma sessão mesmo com pausas. Toque vertical e teclado têm navegação por cena; repetição automática de tecla não acumula fotos. Os limites liberam a rolagem da página após o gesto consumido; zoom, controles de formulário e diálogos abertos permanecem acessíveis.
 - Movimento reduzido elimina a interpolação e mantém as 60 comparações acessíveis pelos controles.
@@ -25,7 +25,7 @@ Branch: `fix/home-portfolio-scroll-scenes-2026-10-18`.
 | 60 pares apenas na animação | PASS | DOM gerado: 60 cartões, 120 imagens; zero `.frpm-pair` no Portfólio |
 | Pasta única do projeto | PASS | DOM gerado: um cartão em `frpm-portfolio-projects`; 48 IDs únicos no dossier; zero galerias antigas do projeto no Portfólio |
 | Ordem final da Home | PASS | DOM gerado termina em `froutro4` e `.fr6-footer` |
-| Interações por cena | PASS | 17 testes em `tests/fr-motion-phase1.test.cjs`: puxada sustentada maior que a animação, deltas/unidades/direções variados, três gestos separados, saída, fila espaçada, card/fotos sincronizados, limites, toque, zoom, teclado, barra mantida, movimento reduzido e cancelamento |
+| Interações por cena | PASS | 20 testes em `tests/fr-motion-phase1.test.cjs`: puxada sustentada maior que a animação, deltas/unidades/direções variados, três gestos separados, saída, fila espaçada, card/fotos sincronizados, limites, toque, zoom, teclado, barra mantida, movimento reduzido e cancelamento |
 | Montagem e preservação de rotas | PASS | Testes verificam identidade dos nós movidos, alias, CTA e galeria da página própria |
 | Suíte geral | PASS | `npm test` |
 | Estrutura HTML e invariantes | PASS | `npm run check:html`: seis views, IDs únicos, núcleo financeiro e ponte PDF |
@@ -41,7 +41,7 @@ A verificação de toque usa eventos simulados. Resta o aceite do responsável s
 
 A prévia local falhou por infraestrutura (`bwrap: Can't mount proc on /newroot/proc: Operation not permitted`); a revisão foi concluída na prévia Vercel da branch. O ajuste posterior de salto direto preserva o layout; sua regressão tem teste próprio.
 
-Revisão de sensibilidade solicitada em seguida: a regressão de 17 testes e a checagem sintática passaram localmente. A validação geral e a revisão visual desta revisão serão registradas no PR #35; as evidências de navegador e CI da tabela acima descrevem a versão anterior já verificada (`e0faad2`).
+Revisão de sensibilidade solicitada em seguida: a regressão de 20 testes e a checagem sintática passaram localmente. A validação geral e a revisão visual desta revisão serão registradas no PR #35; as evidências de navegador e CI da tabela acima descrevem a versão anterior já verificada (`e0faad2`).
 
 ## Preservação, risco e reversão
 
