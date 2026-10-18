@@ -90,12 +90,18 @@ test('Sobre, Ambientes e Portfolio refletem a limpeza seletiva e o dossier escal
  assert.ok(google.compareDocumentPosition(services)&about.defaultView.Node.DOCUMENT_POSITION_FOLLOWING);
  assert.doesNotMatch(about.body.textContent,/O método em leitura visual/);
  const ambientes=new JSDOM(fs.readFileSync(path.join(output,'ambientes.html'),'utf8')).window.document;
- assert.equal(ambientes.querySelectorAll('[data-frpm-dossier-open]').length,1);assert.equal(ambientes.querySelector('[data-frpm-dossier-open]').dataset.frpmDossierOpen,'cozinha-lavanderia');
- assert.match(ambientes.querySelector('figure.frpm-dossier-card').textContent,/Depois — representação visual do projeto/);
+ assert.equal(ambientes.querySelectorAll('#view-ambientes [data-frpm-dossier-open]').length,1);assert.equal(ambientes.querySelector('#view-ambientes [data-frpm-dossier-open]').dataset.frpmDossierOpen,'cozinha-lavanderia');
+ assert.match(ambientes.querySelector('#view-ambientes figure.frpm-dossier-card').textContent,/Depois — representação visual do projeto/);
  assert.doesNotMatch(ambientes.getElementById('view-ambientes').textContent,/FRANCO ROMEU \/ ARQUIVO DE VISUALIZAÇÃO/);
  assert.equal(data.dossiers.length,1);assert.equal(data.dossiers[0].id,'cozinha-lavanderia');assert.equal(data.dossiers[0].executionDocumented,false);assert.ok(data.dossiers[0].media.length>4);
  assert.ok(data.dossiers[0].media.some(item=>item.category==='materiality'&&data.media[item.media_id].canonicalFile.includes('cozinha-bancada-l-imagem-ilustrativa-b239e59121')));
  const portfolio=new JSDOM(fs.readFileSync(path.join(output,'portfolio.html'),'utf8')).window.document;
+ assert.equal(portfolio.querySelectorAll('#frpm-portfolio-projects [data-frpm-dossier-open]').length,1);
+ assert.equal(portfolio.querySelectorAll('#view-projetos .frpm-pair').length,0);
+ assert.equal(portfolio.querySelectorAll('#frms-portfolio .frms-card').length,60);
+ assert.equal(portfolio.querySelectorAll('#view-projetos #frmedia-cozinha-lavanderia,#view-projetos #frmedia-frontais').length,0);
+ assert.equal(new Set(data.dossiers[0].media.map(m=>m.media_id)).size,48);
+ assert.match(data.dossiers[0].title,/quartzo e móveis/);
  for(const id of ['fr16-case-model','fr16-method','fr16-services','fr16-pricing','frmedia-materialidade'])assert.equal(portfolio.getElementById(id),null,id);
  assert.doesNotMatch(portfolio.getElementById('view-projetos').textContent,/Materialidade: encontros e planos|Transformação é decisão acumulada|Comparação transparente de serviços|Preço sem escopo é apenas um número fora de contexto/);
 });
@@ -176,4 +182,14 @@ test('sitemaps/XML excluem páginas noindex e imagens sem liberação; URLs inde
  assert.equal(publicRoutes.filter(r=>r.category!=='local-service').length,6,'The original six approved routes must be preserved');
  assert.equal(publicRoutes.length,11);
  for(const r of map.routes.filter(r=>!r.indexable)){const text=fs.readFileSync(path.join(output,r.file),'utf8');assert.match(text,/name="robots" content="noindex/);assert.ok(text.includes('href="'+origin+r.route+'"'));assert.ok(text.includes('content="'+origin+r.route+'"'));}
+});
+
+test('Home termina com o percurso horizontal e o rodapé; o caderno mantém sua galeria própria',()=>{
+ const dom=new JSDOM(fs.readFileSync(path.join(output,'index.html'),'utf8')),doc=dom.window.document,home=doc.getElementById('view-home');
+ assert.equal(home.lastElementChild.className,'fr6-footer');assert.equal(home.lastElementChild.previousElementSibling.id,'froutro4');
+ assert.ok(doc.getElementById('frmedia-home-case').compareDocumentPosition(doc.getElementById('froutro4'))&dom.window.Node.DOCUMENT_POSITION_FOLLOWING);dom.window.close();
+ const page=new JSDOM(fs.readFileSync(path.join(output,'projetos/cozinha-lavanderia.html'),'utf8'),{runScripts:'outside-only',url:origin+'/projetos/cozinha-lavanderia'}),w=page.window,d=w.document;
+ w.FR_MEDIA_LIBRARY=data;w.FR_MEDIA_CATALOG=data.caseCatalog;w.eval(fs.readFileSync('assets/js/fr-media-case.js','utf8'));
+ w.FRMediaCase.mount('#fr-case-gallery',data.caseCatalog,{assetPrefix:'/'});w.FRMediaCase.integrate();
+ assert.equal(d.querySelectorAll('#fr-case-gallery .frmedia-card').length,48);assert.equal(d.querySelectorAll('#frmedia-cozinha-lavanderia').length,1);page.window.close();
 });
