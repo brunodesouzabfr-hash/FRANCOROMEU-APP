@@ -80,6 +80,8 @@ async function build() {
   // Fase 9.2: accessible static-service discovery inside the approved SPA views.
   const localServices=require('./build-local-services.cjs');
   localServices.injectDiscovery(doc);
+  // SEO / 2026-10-18: unique editorial context and related paths for two crawled SPA views.
+  require('../src/fr-seo-indexing-phase910.cjs').install(doc);
   // Fase 9: measurement is an isolated, deferred public module.
   // The source SPA, quote math and intro remain unchanged.
   const frConversion=doc.createElement('script');
