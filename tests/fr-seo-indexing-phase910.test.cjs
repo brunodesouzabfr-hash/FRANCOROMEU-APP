@@ -33,8 +33,8 @@ test('F9.10 editorial inserts unique source-backed sections without replacing ex
 test('F9.10 static service hub and four detail pages gain reciprocal contextual links to indexable SPA views',()=>{
  const build=fs.readFileSync('scripts/build-local-services.cjs','utf8');
  assert.match(build,/const related=/);
- assert.match(build,/href=\\"\\/portfolio\\"/);
- assert.match(build,/href=\\"\\/projetos-3d\\"/);
+ assert.ok(build.includes('href="/portfolio"'));
+ assert.ok(build.includes('href="/projetos-3d"'));
  if(!fs.existsSync('dist/solucoes/index.html'))return;
  const urls=['solucoes',...JSON.parse(fs.readFileSync('content/local-services.json','utf8')).services.map(s=>'solucoes/'+s.id)];
  for(const folder of urls){
