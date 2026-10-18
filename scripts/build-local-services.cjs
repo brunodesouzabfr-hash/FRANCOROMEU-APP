@@ -57,6 +57,7 @@ function build(prepared){
  }
  const action='<div class="frls-actions"><a class="frls-primary" href="/orcamento">Preparar orçamento →</a><a class="frls-secondary" href="'+whatsapp+'" target="_blank" rel="noopener noreferrer">Conversar no WhatsApp ↗</a></div>';
  const area='<p class="frls-area"><strong>Área de atendimento declarada:</strong> '+escape(areas.join(' · '))+'. A disponibilidade para cada endereço e escopo depende de confirmação.</p>';
+ const related='<p class="frls-related">Para comparar soluções, consulte o <a href="/portfolio">portfólio de referências</a> e os <a href="/projetos-3d">estudos em 3D</a>. O escopo de cada obra depende de levantamento.</p>';
  function items(rows,tag){return rows.map(([heading,text],i)=>'<article class="frls-item"><span>'+String(i+1).padStart(2,'0')+'</span><'+tag+'>'+escape(heading)+'</'+tag+'><p>'+escape(text)+'</p></article>').join('')}
  function servicePage(s){
   const link=route(s.id);
@@ -65,7 +66,7 @@ function build(prepared){
     +'<section class="frls-section frls-process"><div class="frls-section-head"><p class="frls-eyebrow">MÉTODO</p><h2>Do levantamento ao acabamento.</h2></div><div class="frls-grid">'+items(s.steps,'h3')+'</div></section>'
     +'<section class="frls-section"><div class="frls-section-head"><p class="frls-eyebrow">CRITÉRIOS</p><h2>Decisões que exigem avaliação.</h2></div><p class="frls-note">'+escape(s.care)+'</p></section>'
     +'<section class="frls-section"><div class="frls-section-head"><p class="frls-eyebrow">DÚVIDAS COMUNS</p><h2>Antes de começar.</h2></div><div class="frls-faq">'+s.faq.map(([q,a])=>'<details><summary>'+escape(q)+'</summary><p>'+escape(a)+'</p></details>').join('')+'</div></section>'
-    +'<section class="frls-end"><h2>Seu ambiente pede uma solução própria.</h2><p>O orçamento começa pela descrição do espaço, do uso e do objetivo. Não há preço fechado, prazo ou especificação sem levantamento.</p>'+area+action+'</section>';
+    +'<section class="frls-end"><h2>Seu ambiente pede uma solução própria.</h2><p>O orçamento começa pela descrição do espaço, do uso e do objetivo. Não há preço fechado, prazo ou especificação sem levantamento.</p>'+area+related+action+'</section>';
   page(link,s.heading,s.meta,body,s.id);
  }
  const ids=new Set();
@@ -78,7 +79,7 @@ function build(prepared){
  const cards=data.services.map((s,i)=>'<article class="frls-item"><span>'+String(i+1).padStart(2,'0')+' / SERVIÇO</span><h2><a href="'+route(s.id)+'">'+escape(s.title)+' →</a></h2><p>'+escape(s.meta)+'</p></article>').join('');
  const hubBody='<section class="frls-hero"><p class="frls-eyebrow">FR / SOLUÇÕES / SÃO PAULO E REGIÃO</p><h1>Soluções em matéria, técnica e permanência.</h1><p>Reformas e interiores pedem leitura do espaço, compatibilização entre serviços e atenção à execução. Explore as frentes de trabalho e seus critérios para iniciar uma conversa de orçamento com a Franco Romeu.</p>'+action+'</section>'
    +'<section class="frls-section"><div class="frls-section-head"><p class="frls-eyebrow">ESCOLHA UM CAMINHO</p><h2>O que seu ambiente exige.</h2></div><div class="frls-grid">'+cards+'</div></section>'
-   +'<section class="frls-end"><h2>Uma proposta começa com diagnóstico.</h2><p>As informações dessas páginas descrevem possibilidades de serviço; material, escopo, logística e investimento são definidos por caso.</p>'+area+action+'</section>';
+   +'<section class="frls-end"><h2>Uma proposta começa com diagnóstico.</h2><p>As informações dessas páginas descrevem possibilidades de serviço; material, escopo, logística e investimento são definidos por caso.</p>'+area+related+action+'</section>';
  page(hub,'Soluções para reformas e interiores','Conheça serviços de marcenaria, drywall, pisos e revestimentos da Franco Romeu em São Paulo e região.',hubBody,null);
  for(const s of data.services)servicePage(s);
  return rows;
