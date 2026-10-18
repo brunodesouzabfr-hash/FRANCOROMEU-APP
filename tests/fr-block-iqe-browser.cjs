@@ -108,7 +108,7 @@ const assert=require('node:assert/strict');
    await page.screenshot({path:'artifacts/block-iqe-staging/'+mode.name+'-theme-premium.png',fullPage:false});
 
    // Verify actual transparent canvases at front/back rotations for every requested theme.
-   for(const holiday of ['christmas','easter','halloween','newyear','children','fathers','mothers','lovers','labor','women','customer','blackfriday','junina']){
+   for(const holiday of ['christmas','easter','halloween','newyear','children','fathers','mothers','lovers','labor','women','client','blackfriday','junina']){
      for(const yaw of [-.55,2.55]){
        await page.evaluate(({holiday,yaw})=>window.FRBlockStage.update({holiday,yaw,reducedMotion:true,roam:false,loyalty:'sem-nivel',halloweenMode:0}),{holiday,yaw});
        await page.waitForTimeout(120);

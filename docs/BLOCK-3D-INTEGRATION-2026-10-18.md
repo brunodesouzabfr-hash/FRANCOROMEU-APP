@@ -3,8 +3,8 @@
 ## Origem
 
 - Base do site: `7f9ab0cd03faf9ddd9ee4780be6833dff1f4df92`.
-- Fonte do mascote: [Block PR #7](https://github.com/brunodesouzabfr-hash/fr-block-mascote-lab/pull/7), commit `f685f8d70081186a036bb0a0603aaf8704eee0d4`.
-- SHA-256 de `assets/js/fr-block-avatar.iife.js`: `6a9db4e944fcc14177a40b62b220abb28b76b0437171cbfc1154fd4639f1b975`.
+- Fonte do mascote: [Block PR #7](https://github.com/brunodesouzabfr-hash/fr-block-mascote-lab/pull/7), commit `b8efa8d2d1c44d6d67129770e1e35db7e8fb7f12`.
+- SHA-256 de `assets/js/fr-block-avatar.iife.js`: `d2e0017a888a10c8bf9c6444ecb61aa764ccd7d95631de202aa169f049da03a7`.
 - O arquivo é o bundle gerado por `npm run build:avatar`, também versionado em `release/iqe` no laboratório. O teste do site fixa o mesmo hash.
 
 ## Arquitetura e auditoria do recorte
@@ -23,10 +23,18 @@ Não foram alterados serviços, IDs, preços, fórmulas, armazenamento de orçam
 
 ## Verificação
 
-O laboratório passou em 69 testes, tipagem e bundle; o CI do primeiro commit passou em todos os passos. A varredura do motor cobriu 336 combinações sem recorte. Natal e Páscoa foram inspecionados na prévia Lovable sincronizada. Os 11 testes de contrato do site passaram localmente. O gate completo FR passou: regressões financeiras/canônicas, check:html, build, rotas, mídia e idempotência. O workflow desta branch verifica a página gerada em Chromium a 1440, 320, 360 e 390 px, arquiva screenshots e testa clique, redução de movimento, companheiro, desmontagem e remontagem.
+O laboratório passou em 72 testes, tipagem e bundle; o CI do primeiro commit passou em todos os passos. A varredura do motor cobriu 336 combinações sem recorte. Natal e Páscoa foram inspecionados na prévia Lovable sincronizada. Os 11 testes de contrato do site passaram localmente. O gate completo FR passou: regressões financeiras/canônicas, check:html, build, rotas, mídia e idempotência. O workflow desta branch verifica a página gerada em Chromium a 1440, 320, 360 e 390 px, arquiva screenshots e testa clique, redução de movimento, companheiro, desmontagem e remontagem.
+
+O Chromium concluiu os quatro viewports no commit `915a85c6`, incluindo clique único, movimento reduzido e rollback. Os checks da PR registram a validação do bundle final. A mudança de preferência de movimento pode recarregar o site: o teste aguarda a nova montagem antes de continuar.
+
+Screenshots de navegador: [site em 390 px](qa/block-site-mobile390.jpg) e [deslocamento no desktop](qa/block-site-desktop-free.jpg), capturados na integração com correção de modal (`2a42ea4c`), sem alterar a página para a captura. O novo perfil mantém essa geometria e adiciona a duração correta das mensagens e orçamento de efeitos.
 
 O resultado efetivo dos workflows está nos checks da PR. Não houve medição em telefone físico nem validação comercial de conversão. Aprovação estética humana permanece distinta dos testes automatizados.
 
 ## Ativação e reversão
 
 A branch `feat/block-spatial-iqe-2026-10-18` é permitida apenas como preview Vercel com noindex. A política de ativação da main em produção já existente foi preservada; não houve merge ou promoção de produção nesta tarefa. `FR_BLOCK_IQE_ENABLED=0` no próximo build restaura o visual anterior; a API `FRBlockStage.destroy()` permite rollback visual na sessão.
+
+## Limitação externa observada
+
+O check Cloudflare Workers falha também na base `7f9ab0c`, antes destas alterações. O deploy Vercel de preview ficou Ready. Não foi alterada a configuração de infraestrutura para resolver um check externo preexistente.
