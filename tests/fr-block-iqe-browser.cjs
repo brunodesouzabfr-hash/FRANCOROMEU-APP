@@ -16,7 +16,8 @@ const assert=require('node:assert/strict');
  try{
   for(const mode of [{name:'desktop',width:1440,height:900},{name:'mobile320',width:320,height:844},{name:'mobile360',width:360,height:844},{name:'mobile390',width:390,height:844}]){
    const page=await browser.newPage({viewport:{width:mode.width,height:mode.height},deviceScaleFactor:1});
-   page.on('pageerror',err=>{if(/fr-block|FRBlock|block-engine/i.test(err.stack||err.message))console.error('Block browser error:',err.message);});
+   const blockErrors=[];
+   page.on('pageerror',err=>{if(/fr-block|FRBlock|block-engine/i.test(err.stack||err.message))blockErrors.push(err.message);});
    // Site is intentionally offline-capable; third-party fonts and trackers are not part of avatar QA.
    await page.route('**/*',route=>{
     if(route.request().url().startsWith(base))route.continue();
@@ -105,8 +106,30 @@ const assert=require('node:assert/strict');
    await page.waitForTimeout(950);
    await page.screenshot({path:'artifacts/block-iqe-staging/'+mode.name+'-theme-premium.png',fullPage:false});
 
+   // Verify actual transparent canvases at front/back rotations for every requested theme.
+   for(const holiday of ['christmas','easter','halloween','newyear','children','fathers','mothers','lovers','labor','women','customer','blackfriday','junina']){
+     for(const yaw of [-.55,2.55]){
+       await page.evaluate(({holiday,yaw})=>window.FRBlockStage.update({holiday,yaw,reducedMotion:true,roam:false,loyalty:'sem-nivel',halloweenMode:0}),{holiday,yaw});
+       await page.waitForTimeout(120);
+       const edges=await page.evaluate(()=>Array.from(document.querySelectorAll('canvas[data-fr-block-avatar]')).map(canvas=>{
+         const w=canvas.width,h=canvas.height,data=canvas.getContext('2d').getImageData(0,0,w,h).data;
+         let cut=0;
+         for(let x=0;x<w;x++)cut+=(data[x*4+3]>16)+(data[((h-1)*w+x)*4+3]>16);
+         for(let y=0;y<h;y++)cut+=(data[y*w*4+3]>16)+(data[(y*w+w-1)*4+3]>16);
+         return cut;
+       }));
+       assert.ok(edges.every(n=>n===0),mode.name+' clipped '+holiday+' at yaw '+yaw+': '+edges);
+     }
+   }
+   await page.evaluate(()=>window.FRBlockStage.update({holiday:'none',yaw:-.55,reducedMotion:false,roam:true}));
+   await page.waitForTimeout(150);
+
    await page.evaluate(()=>{window.__frBlockClickCount=0;document.getElementById('fr-ai-launcher').addEventListener('click',()=>window.__frBlockClickCount++);});
-   await page.locator('[data-fr-block-hit]').click();
+   // A moving character deliberately never becomes locator-stable; click its visible center.
+   await page.locator('[data-fr-block-hit]').waitFor({state:'visible'});
+   const target=await page.locator('[data-fr-block-hit]').boundingBox();
+   assert.ok(target,mode.name+' missing moving pointer target');
+   await page.mouse.click(target.x+target.width/2,target.y+target.height/2);
    assert.equal(await page.evaluate(()=>window.__frBlockClickCount),1,mode.name+' portal must delegate exactly one original click');
    await page.locator('#fr-ai-close').click();
    await page.evaluate(()=>{window.FRBlockStage.update({holiday:'children',roam:true});window.FRBlockStage.explore();});
@@ -129,6 +152,7 @@ const assert=require('node:assert/strict');
    assert.equal(await page.locator('#fr-ai-root').count(),1,mode.name+' remount must not duplicate IQE');
    await page.evaluate(()=>window.FRBlockStage.destroy());
    assert.equal(await page.locator('[data-fr-block-host],[data-fr-block-hit]').count(),0,mode.name+' remount cleanup left global elements');
+   assert.deepEqual(blockErrors,[],mode.name+' Block browser errors');
    console.log(mode.name,'PASS',JSON.stringify(info));
    await page.close();
   }
