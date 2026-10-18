@@ -139,7 +139,7 @@ const assert=require('node:assert/strict');
    await page.emulateMedia({reducedMotion:'reduce'});
    await page.waitForTimeout(150);
    assert.equal(await page.evaluate(()=>window.FRBlockStage.getState().engine.spatial),'IDLE',mode.name+' reduced motion must park exploration');
-   await page.emulateMedia({reducedMotion:'no-preference'});
+   // Validate rollback while reduction remains active; this page is closed after the test.
    const rollback=await page.evaluate(()=>{
      window.FRBlockStage.destroy();
      return {canvasCount:document.querySelectorAll('canvas[data-fr-block-avatar]').length,legacy:window.FRIQEAvatar6?.getState()?.mounted===true,
