@@ -90,6 +90,7 @@ const assert=require('node:assert/strict');
    for(const c of info.canvases){assert.ok(c.w>0&&c.h>0,mode.name+' canvas has zero pixels');assert.ok(c.coverage>0,mode.name+' mascot did not paint pixels');}
    // Capture the ACTUAL site after its approved intro finishes; never force-hide the intro.
    await page.waitForFunction(()=>!document.documentElement.classList.contains('fr-intro-active')&&!document.getElementById('fr-cinema-overlay'),undefined,{timeout:45000});
+   await page.waitForFunction(()=>getComputedStyle(document.querySelector('[data-fr-block-host="launcher"]')).visibility==='visible',undefined,{timeout:5000});
    await page.waitForTimeout(250);
 
    const hints=await page.evaluate(()=>{
