@@ -1,0 +1,12 @@
+/* FR / Conteúdo contextual de leitura: Portfólio e Projetos 3D. */
+.frsi{position:relative;isolation:isolate;width:min(1120px,calc(100% - 32px));max-width:1120px;margin:clamp(48px,8vw,112px) auto 40px;padding:clamp(24px,5vw,64px);color:#E6D6B5;background:#0A2F26;border:1px solid rgba(230,214,181,.22);box-shadow:0 12px 48px rgba(0,0,0,.19);overflow-wrap:normal}
+.frsi:before{content:"";position:absolute;inset:0 auto 0 0;width:3px;background:#FC7016}
+.frsi .frsi-marker{font:400 .75rem/1.5 "Share Tech Mono",monospace;letter-spacing:.16em;color:#F6A700;text-transform:uppercase;margin:0 0 24px}
+.frsi h2{font:400 clamp(1.6rem,3.1vw,3rem)/1.16 "Stardos Stencil",Georgia,serif;max-width:850px;margin:0 0 24px;color:#E6D6B5;word-break:normal;overflow-wrap:normal}
+.frsi .frsi-description{font:400 clamp(1rem,1.3vw,1.24rem)/1.65 "Rokkitt",Georgia,serif;max-width:790px;margin:0 0 32px;color:#E6D6B5}
+.frsi .frsi-links{display:flex;flex-wrap:wrap;gap:12px}
+.frsi .frsi-links a{font:400 .9rem/1.4 "Rokkitt",Georgia,serif;color:#E6D6B5;text-decoration:none;min-height:44px;display:inline-flex;align-items:center;padding:10px 16px;border:1px solid #C8986A;transition:background .18s ease,color .18s ease,border-color .18s ease}
+.frsi .frsi-links a:hover,.frsi .frsi-links a:focus-visible{background:#E6D6B5;color:#0A2F26;border-color:#E6D6B5}
+.frsi .frsi-links a:focus-visible{outline:2px solid #FC7016;outline-offset:3px}
+@media (max-width:600px){.frsi{width:calc(100% - 24px);margin:48px auto 24px;padding:28px 20px}.frsi .frsi-links{flex-direction:column}.frsi .frsi-links a{width:100%}}
+@media (prefers-reduced-motion:reduce){.frsi .frsi-links a{transition:none}}
