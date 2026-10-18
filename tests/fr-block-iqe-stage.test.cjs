@@ -171,7 +171,7 @@ test('site vendors the exact validated Lovable v2 bundle with broad calendar and
  const crypto=require('node:crypto');
  const code=fs.readFileSync(path.join(__dirname,'../assets/js/fr-block-avatar.iife.js'),'utf8');
  assert.equal(crypto.createHash('sha256').update(code).digest('hex'),
-  '36eae55e31033e6468ae01c0d9faf7f50ce3ae46d5d19d33edd8ca9d6d78b9f6');
+  'c1346e2b94d18930b82c819aa37da39d2819f80588085ebe41c88a3aeaceb9c2');
  for(const feature of ['#B66622','HALLOWEEN','DIA DAS MÃES','SÃO JOÃO','CARNAVAL','BLACK FRIDAY','CONSCIÊNCIA NEGRA','BRONZE','PRATA','OURO','PREMIUM']){
   assert.ok(code.includes(feature),'Missing Lovable v2 feature: '+feature);
  }
