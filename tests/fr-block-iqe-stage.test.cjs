@@ -171,7 +171,7 @@ test('site vendors the exact validated Lovable v2 bundle with broad calendar and
  const crypto=require('node:crypto');
  const code=fs.readFileSync(path.join(__dirname,'../assets/js/fr-block-avatar.iife.js'),'utf8');
  assert.equal(crypto.createHash('sha256').update(code).digest('hex'),
-  'f181164774e1bd607f3c4c1e9ab110fe477fcba1a867ba93c7e3af21e91e5995');
+  '36eae55e31033e6468ae01c0d9faf7f50ce3ae46d5d19d33edd8ca9d6d78b9f6');
  for(const feature of ['#B66622','HALLOWEEN','DIA DAS MÃES','SÃO JOÃO','CARNAVAL','BLACK FRIDAY','CONSCIÊNCIA NEGRA','BRONZE','PRATA','OURO','PREMIUM']){
   assert.ok(code.includes(feature),'Missing Lovable v2 feature: '+feature);
  }
@@ -184,4 +184,12 @@ test('Block launcher is truly unclipped and does not intercept assistant interac
    assert.ok(css.includes(token),'missing unclipped contract: '+token);
  }
  assert.ok(css.includes('#fr-ai-launcher:focus-visible'),'keyboard focus feedback retained');
+});
+
+test('new bundle provides integrated festive cues without fictitious offers',()=>{
+ const js=fs.readFileSync(path.join(__dirname,'../assets/js/fr-block-avatar.iife.js'),'utf8');
+ for(const token of ['GHOST','VAMP','FRANK','BLACK FRI','NATAL','SAO JOAO','CLIENTE','TRABALHO','PASCOA','PLAY']){
+   assert.ok(js.includes(token),'missing festive visor token '+token);
+ }
+ assert.ok(!js.includes('20% OFF'),'avoid offers without an actual configured campaign');
 });
