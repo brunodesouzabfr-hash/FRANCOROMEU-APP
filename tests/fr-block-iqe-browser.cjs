@@ -14,7 +14,7 @@ const assert=require('node:assert/strict');
  const browser=await chromium.launch({headless:true,args:['--no-sandbox','--disable-dev-shm-usage']});
  fs.mkdirSync('artifacts/block-iqe-staging',{recursive:true});
  try{
-  for(const mode of [{name:'desktop',width:1440,height:900},{name:'mobile',width:390,height:844}]){
+  for(const mode of [{name:'desktop',width:1440,height:900},{name:'mobile320',width:320,height:844},{name:'mobile360',width:360,height:844},{name:'mobile390',width:390,height:844}]){
    const page=await browser.newPage({viewport:{width:mode.width,height:mode.height},deviceScaleFactor:1});
    page.on('pageerror',err=>{if(/fr-block|FRBlock|block-engine/i.test(err.stack||err.message))console.error('Block browser error:',err.message);});
    // Site is intentionally offline-capable; third-party fonts and trackers are not part of avatar QA.
@@ -51,10 +51,12 @@ const assert=require('node:assert/strict');
    const info=await page.evaluate(()=>{
      const root=document.getElementById('fr-ai-root');
      const btn=document.getElementById('fr-ai-launcher');
-     const canvases=[...root.querySelectorAll('canvas[data-fr-block-avatar="visual-only"]')];
+     const canvases=[...document.querySelectorAll('canvas[data-fr-block-avatar="visual-only"]')];
      return {
        avatar:window.FRBlockStage.getState(),
        stageClass:root.classList.contains('fr-block-iqe-staging'),
+       portalParents:Array.from(document.querySelectorAll('[data-fr-block-host]')).every(host=>host.parentElement===document.body),
+       portalPointerEvents:Array.from(document.querySelectorAll('[data-fr-block-host]')).every(host=>getComputedStyle(host).pointerEvents==='none'),
        label:btn.getAttribute('aria-label'),
        budgetPreserved:!!document.getElementById('fr-ai-body'), // IQE wizard overlay is lazy-mounted, not present until requested
        originalArtworkRemoved:!root.querySelector('#fr-ai-launcher .fr-ai-eyes,#fr-ai-launcher .fr6iqe-scene,#fr-ai-launcher .fr-ai-mouth'),
@@ -75,6 +77,8 @@ const assert=require('node:assert/strict');
      };
    });
    assert.ok(info.stageClass,mode.name+' stage class missing');
+   assert.ok(info.portalParents,mode.name+' portal still inside clipping ancestor');
+   assert.ok(info.portalPointerEvents,mode.name+' visual host blocks navigation');
    assert.ok(info.label,mode.name+' original launcher label missing');
    assert.equal(info.canvases.length,2,mode.name+' must render launcher and header');
    assert.ok(info.budgetPreserved,mode.name+' original IQE wizard missing');
@@ -101,6 +105,17 @@ const assert=require('node:assert/strict');
    await page.waitForTimeout(950);
    await page.screenshot({path:'artifacts/block-iqe-staging/'+mode.name+'-theme-premium.png',fullPage:false});
 
+   await page.evaluate(()=>{window.__frBlockClickCount=0;document.getElementById('fr-ai-launcher').addEventListener('click',()=>window.__frBlockClickCount++);});
+   await page.locator('[data-fr-block-hit]').click();
+   assert.equal(await page.evaluate(()=>window.__frBlockClickCount),1,mode.name+' portal must delegate exactly one original click');
+   await page.locator('#fr-ai-close').click();
+   await page.evaluate(()=>{window.FRBlockStage.update({holiday:'children',roam:true});window.FRBlockStage.explore();});
+   await page.waitForTimeout(900);
+   assert.equal(await page.locator('[data-fr-block-host="companion"]').count(),1,mode.name+' expressive companion has its own global portal');
+   await page.emulateMedia({reducedMotion:'reduce'});
+   await page.waitForTimeout(150);
+   assert.equal(await page.evaluate(()=>window.FRBlockStage.getState().engine.spatial),'IDLE',mode.name+' reduced motion must park exploration');
+   await page.emulateMedia({reducedMotion:'no-preference'});
    const rollback=await page.evaluate(()=>{
      window.FRBlockStage.destroy();
      return {canvasCount:document.querySelectorAll('canvas[data-fr-block-avatar]').length,legacy:window.FRIQEAvatar6?.getState()?.mounted===true,
@@ -109,8 +124,14 @@ const assert=require('node:assert/strict');
    assert.equal(rollback.canvasCount,0,mode.name+' destroy left canvas');
    assert.ok(rollback.assistant,mode.name+' destroyed the assistant');
    assert.ok(rollback.legacy,mode.name+' rollback did not restore the legacy visual');
+   await page.evaluate(()=>window.FRBlockStage.mount());
+   await page.waitForFunction(()=>window.FRBlockStage.getState().mounted===true);
+   assert.equal(await page.locator('#fr-ai-root').count(),1,mode.name+' remount must not duplicate IQE');
+   await page.evaluate(()=>window.FRBlockStage.destroy());
+   assert.equal(await page.locator('[data-fr-block-host],[data-fr-block-hit]').count(),0,mode.name+' remount cleanup left global elements');
    console.log(mode.name,'PASS',JSON.stringify(info));
    await page.close();
   }
  }finally{await browser.close();server.kill('SIGTERM');}
 })().catch(e=>{console.error(e);process.exitCode=1;});
+

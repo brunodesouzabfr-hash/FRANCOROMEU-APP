@@ -66,6 +66,7 @@
     if(discoveryTimeout){win.clearTimeout(discoveryTimeout);discoveryTimeout=0;}
     if(bubbles){bubbles.destroy();bubbles=null;}
     if(handle){handle.destroy();handle=null;}
+    booted=false;failed=false;
     var root=doc.getElementById('fr-ai-root');
     if(root){root.classList.remove('fr-block-iqe-staging');delete root.dataset.frBlockAvatar;}
     if(win.FRIQEAvatar6&&typeof win.FRIQEAvatar6.mount==='function'){
@@ -77,6 +78,8 @@
     destroy:destroy,
     react:function(kind){if(handle&&typeof handle.react==='function')handle.react(kind);},
     explain:function(kind){return !!bubbles?.explain(kind);},
+    explore:function(){if(handle&&typeof handle.explore==='function')handle.explore();},
+    returnHome:function(){if(handle&&typeof handle.returnHome==='function')handle.returnHome();},
     update:function(cfg){if(handle&&typeof handle.update==='function')handle.update(cfg);},
     getState:function(){return {
       mounted:!!handle,booted:booted,failed:failed,
@@ -89,3 +92,4 @@
   if(doc.readyState==='loading')doc.addEventListener('DOMContentLoaded',discover,{once:true});
   else discover();
 })(window,document);
+
