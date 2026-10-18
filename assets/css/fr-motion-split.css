@@ -16,7 +16,7 @@
 .frms-bottom{position:absolute;z-index:30;left:clamp(22px,4.5vw,80px);right:clamp(22px,4.5vw,80px);bottom:clamp(23px,4vh,50px);display:flex;align-items:center;gap:25px;font:500 10px/1.4 'Share Tech Mono',monospace;letter-spacing:.16em;color:#fff7e9;text-shadow:0 2px 8px #000a}
 .frms-progress{height:2px;flex:1;overflow:hidden;background:#e6d6b580}.frms-progress span{display:block;height:100%;width:0;background:#ff6b00}
 .frms-cards{position:absolute;inset:0;display:grid;place-items:center;z-index:25;pointer-events:none}
-.frms-card{position:absolute;width:clamp(310px,34vw,560px);min-height:clamp(268px,38svh,410px);max-height:70svh;padding:clamp(27px,3vw,45px);display:flex;flex-direction:column;justify-content:space-between;gap:22px;color:#031812;background:#e6d6b5;border:1px solid currentColor;box-shadow:0 25px 75px #0008;overflow:hidden;opacity:0;visibility:hidden;transform:translateY(22px);pointer-events:none;transition:background .28s linear,color .28s linear}
+.frms-card{position:absolute;width:clamp(310px,34vw,560px);min-height:clamp(268px,38svh,410px);max-height:70svh;padding:clamp(27px,3vw,45px);display:flex;flex-direction:column;justify-content:space-between;gap:22px;color:#031812;background:#e6d6b5;border:1px solid currentColor;box-shadow:0 25px 75px #0008;overflow:hidden;opacity:0;visibility:hidden;transform:translateY(22px);pointer-events:none;transition:background 1.2s ease-in-out,color 1.2s ease-in-out}
 .frms-card[data-frms-order="0"]{opacity:1;visibility:visible;transform:none;pointer-events:auto}
 .frms-card:before{content:"";position:absolute;inset:9px;border:1px solid currentColor;opacity:.35;pointer-events:none}
 .frms-card-top,.frms-card-foot{display:flex;justify-content:space-between;align-items:center;gap:14px;position:relative}
@@ -73,7 +73,7 @@
 .frms-index-jump:hover{color:#ffad69}
 .frms-index-link{padding:7px 4px;font:600 10px/1.2 'Share Tech Mono',monospace;white-space:nowrap}
 .frms-index-jump:focus-visible,.frms-index-link:focus-visible,.frms-skip:focus-visible,.frms-collection:focus-visible{outline:3px solid #ff6b00;outline-offset:3px}
-.frms-skip{position:absolute;left:clamp(22px,4.5vw,80px);bottom:68px;z-index:32;border:1px solid #e6d6b56b;background:#031812b5;color:#e6d6b5;padding:9px 15px;letter-spacing:.13em;text-transform:uppercase;font:500 10px/1.5 'Share Tech Mono',monospace;cursor:pointer;backdrop-filter:blur(6px)}
+.frms-skip{position:absolute;left:clamp(22px,4.5vw,80px);bottom:68px;z-index:32;min-height:44px;border:1px solid #e6d6b56b;background:#031812b5;color:#e6d6b5;padding:9px 15px;letter-spacing:.13em;text-transform:uppercase;font:500 10px/1.5 'Share Tech Mono',monospace;cursor:pointer;backdrop-filter:blur(6px)}
 .frms-skip:hover{background:#123f34}
 .frms-section[data-frms-kind="portfolio"] .frms-card{border-color:currentColor}
 .frms-portfolio-links{position:relative;z-index:1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2px;background:#031812;padding:clamp(20px,4vw,65px);width:100%;max-width:100%;overflow:hidden}

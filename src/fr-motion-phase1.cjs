@@ -131,7 +131,7 @@ module.exports=function installFRMotion(doc,prepared){
   }
   const status=element('p','frms-status');status.setAttribute('aria-live','polite');status.setAttribute('aria-atomic','true');
   pin.append(controls,status);
-  const skip=element('button','frms-skip',kind==='home'?'Pular destaques →':'Ir ao restante do Portfólio →');skip.type='button';skip.dataset.frmsSkip='';pin.appendChild(skip);
+  const skip=element('button','frms-skip','Pular animação ↓');skip.type='button';skip.dataset.frmsSkip='';skip.title='Três puxadas separadas e rápidas também pulam esta seção';pin.appendChild(skip);
   section.appendChild(pin);return section;
  }
  const case3D=findSameProject3D(prepared);
