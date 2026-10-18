@@ -75,6 +75,7 @@ test('Phase 2: motion remains namespaced with mobile, reduced-motion and lifecyc
  const js=fs.readFileSync(path.join(__dirname,'../assets/js/fr-motion-split.js'),'utf8');
  assert.match(css,/\.frms-portfolio-links/);
  assert.match(css,/prefers-reduced-motion/);
+ assert.match(css,/\.frms-card\{[^\n]+transform:translate3d\(62%,0,0\)/);
  assert.match(js,/FRMotionSplit/);assert.match(js,/requestAnimationFrame/);assert.match(js,/data-frms-jump/);
 });
 
@@ -109,12 +110,14 @@ function controller(reduced=false,portfolio=false){
 test('scene controller: tiny and large wheel gestures each finish exactly one complete image',()=>{
  const f=controller();
  assert.equal(f.wheel(1).defaultPrevented,true);assert.equal(f.state().target,1);
- assert.equal(f.state().duration,1600);
- f.step(800);assert.equal(f.state().animating,true);
- assert.equal(Number(f.root.querySelector('.frms-card[data-frms-order="1"]').style.opacity),.5);
+ assert.equal(f.state().duration,2300,'slow movement receives a longer animation');
+ f.step(1150);assert.equal(f.state().animating,true);
+ assert.ok(Number(f.root.querySelector('.frms-card[data-frms-order="1"]').style.opacity)<.5,'central card trails the photos');
+ assert.match(f.root.querySelector('.frms-card[data-frms-order="1"]').style.transform,/^translate3d\([\d.]+%,0,0\)$/);
  assert.match(f.root.querySelector('[data-frms-side="left"] .frms-frame[data-frms-order="1"]').style.clipPath,/50\.000%/);
- f.step(800);f.whole(1);
- assert.equal(f.wheel(1800).defaultPrevented,true);assert.equal(f.state().target,2);f.step(1600);f.whole(2);
+ f.step(1150);f.whole(1);
+ assert.equal(f.wheel(1800).defaultPrevented,true);assert.equal(f.state().target,2);
+ assert.equal(f.state().duration,1800);f.step(1800);f.whole(2);
  f.dom.window.close();
 });
 test('scene controller: a sustained pull never unlocks on amplitude, repeated deltas, direction, units or tween completion',()=>{
@@ -122,16 +125,41 @@ test('scene controller: a sustained pull never unlocks on amplitude, repeated de
   const f=controller(false,portfolio);f.wheel(120,450,{deltaMode});
   for(let i=0;i<50;i++){f.step(40);assert.equal(f.wheel(i%4===0?-1800:120,0,{deltaMode}).defaultPrevented,true);}
   f.whole(1);assert.equal(f.state().target,1);assert.equal(f.skipped.length,0);
-  for(const delta of [60,12,8,3,1])f.wheel(delta,200,{deltaMode});
+  for(const delta of [60,12,8,3,1])f.wheel(delta,40,{deltaMode});
   f.whole(1);assert.equal(f.skipped.length,0);f.dom.window.close();
  }
 });
-test('scene controller: three distinct rapid downward pulls skip the section in Home and Portfolio',()=>{
+test('scene controller: three very rapid distinct wheel detents skip in Home and Portfolio',()=>{
  for(const portfolio of [false,true]){
-  const f=controller(false,portfolio);f.wheel(1);f.wheel(1800,450);assert.equal(f.state().target,2);assert.equal(f.state().animating,true);
-  f.wheel(120,450);assert.equal(f.skipped.length,1);assert.equal(f.skipped[0].id,portfolio?'frms-portfolio-links':'other-home');assert.equal(f.skipped[0].options.behavior,'smooth');assert.equal(f.state().animating,false);
-  f.wheel(9000,40);assert.equal(f.skipped.length,1);f.dom.window.close();
+  const f=controller(false,portfolio),mode={deltaMode:1};
+  f.wheel(1,0,mode);f.wheel(1,120,mode);assert.equal(f.state().target,2);assert.equal(f.state().animating,true);
+  f.wheel(1,120,mode);assert.equal(f.skipped.length,1);assert.equal(f.skipped[0].id,portfolio?'frms-portfolio-links':'other-home');assert.equal(f.skipped[0].options.behavior,'smooth');assert.equal(f.state().animating,false);
+  f.wheel(9000,40,mode);assert.equal(f.skipped.length,1);f.dom.window.close();
  }
+});
+test('scene controller: a continuous pixel-mode pull cannot skip, but three short distinct bursts can',()=>{
+ const f=controller(false,true);f.wheel(120,0);
+ for(let i=0;i<20;i++)f.wheel(120,40);
+ assert.equal(f.state().target,1);assert.equal(f.skipped.length,0);
+ f.step(2300);f.whole(1);
+ f.wheel(120,300);f.wheel(120,300);f.wheel(120,300);
+ assert.equal(f.skipped.length,1);f.dom.window.close();
+});
+test('scene controller: three moderately spaced pulls remain three photographs, never a skip',()=>{
+ const f=controller(false,true);f.wheel(120,0);f.wheel(120,420);f.wheel(120,420);
+ assert.equal(f.state().target,3);assert.equal(f.skipped.length,0);
+ for(let i=0;i<3;i++)f.step(1800);
+ f.whole(3);f.dom.window.close();
+});
+test('scene controller: reversed navigation also slides the central card laterally',()=>{
+ const f=controller();f.wheel(120,0);f.step(1800);f.whole(1);
+ f.wheel(-120,450);f.step(900);
+ const entering=f.root.querySelector('.frms-card[data-frms-order="0"]');
+ const leaving=f.root.querySelector('.frms-card[data-frms-order="1"]');
+ assert.match(entering.style.transform,/^translate3d\(-[\d.]+%,0,0\)$/);
+ assert.match(leaving.style.transform,/^translate3d\([\d.]+%,0,0\)$/);
+ assert.equal(entering.style.zIndex,'101');
+ f.step(900);f.whole(0);f.dom.window.close();
 });
 test('scene controller: delayed event processing cannot split one physical input burst',()=>{
  const f=controller();f.wheel(120,450,{inputAt:100});
@@ -147,27 +175,33 @@ test('scene controller: residual native scroll from a captured pull cannot advan
  f.whole(1);f.dom.window.close();
 });
 test('scene controller: reaching the last image consumes the remaining inertia until a new pull',()=>{
- const f=controller();f.root.querySelector('[data-frms-jump="3"]').click();f.step(1600);
- f.wheel(120);for(let i=0;i<4;i++){f.step(400);f.wheel(80,0);}f.whole(4);
- assert.equal(f.wheel(1,200).defaultPrevented,true);f.whole(4);
+ const f=controller();f.root.querySelector('[data-frms-jump="3"]').click();f.step(1800);
+ f.wheel(120);for(let i=0;i<4;i++){f.step(400);f.wheel(80,0);}f.step(200);f.whole(4);
+ assert.equal(f.wheel(1,40).defaultPrevented,true);f.whole(4);
  assert.equal(f.wheel(1,450).defaultPrevented,false);f.dom.window.close();
 });
 test('scene controller: spaced pulls advance in order; an upward pull resets the rapid exit sequence',()=>{
- const f=controller();f.wheel(12);f.step(1600);f.wheel(900);f.step(1600);f.wheel(120);f.step(1600);f.whole(3);assert.equal(f.skipped.length,0);
- f.wheel(-120);f.step(1600);f.whole(2);
+ const f=controller();f.wheel(12);f.step(2300);f.wheel(900);f.step(1800);f.wheel(120);f.step(1800);f.whole(3);assert.equal(f.skipped.length,0);
+ f.wheel(-120);f.step(1800);f.whole(2);
  f.wheel(1);f.wheel(-1,450);f.wheel(1,450);assert.equal(f.skipped.length,0);
- f.step(1600);f.step(1600);f.step(1600);f.whole(3);f.dom.window.close();
+ f.step(2300);f.step(2300);f.step(2300);f.whole(3);f.dom.window.close();
 });
 test('scene controller: reverse and boundary scrolls release the page; zoom and open dialogs are untouched',()=>{
  const f=controller();assert.equal(f.wheel(-1).defaultPrevented,false);
  f.wheel(500,200,{ctrlKey:true});f.whole(0);
  const dialog=f.d.createElement('dialog');dialog.setAttribute('open','');f.d.body.appendChild(dialog);assert.equal(f.wheel(100).defaultPrevented,false);dialog.remove();
- f.root.querySelector('[data-frms-jump="4"]').click();f.step(1600);f.whole(4);assert.equal(f.wheel(1).defaultPrevented,false);
- f.wheel(-1);f.step(1600);f.whole(3);f.dom.window.close();
+ f.root.querySelector('[data-frms-jump="4"]').click();f.step(1800);f.whole(4);assert.equal(f.wheel(1).defaultPrevented,false);
+ f.wheel(-1);f.step(2300);f.whole(3);f.dom.window.close();
 });
 test('scene controller: one vertical swipe advances one image; pinch zoom remains native',()=>{
- const f=controller();f.touch('touchstart',[[50,600]]);assert.equal(f.touch('touchmove',[[50,80]]).defaultPrevented,true);f.touch('touchend',[]);assert.equal(f.state().target,1);f.step(1600);f.whole(1);
+ const f=controller();f.touch('touchstart',[[50,600]]);assert.equal(f.touch('touchmove',[[50,80]]).defaultPrevented,true);f.touch('touchend',[]);assert.equal(f.state().target,1);f.step(1800);f.whole(1);
  f.touch('touchstart',[[50,600],[120,500]]);assert.equal(f.touch('touchmove',[[50,580],[120,520]]).defaultPrevented,false);f.touch('touchend',[]);f.whole(1);f.dom.window.close();
+});
+test('scene controller: slow deliberate swipe chooses the longer smooth transition',()=>{
+ const f=controller();f.touch('touchstart',[[50,600]]);f.step(500);
+ assert.equal(f.touch('touchmove',[[50,420]]).defaultPrevented,true);
+ f.touch('touchend',[]);assert.equal(f.state().duration,2300);
+ f.step(2300);f.whole(1);f.dom.window.close();
 });
 test('scene controller: three completed swipes skip; one long swipe with many moves does not',()=>{
  const f=controller(false,true);
@@ -181,13 +215,13 @@ test('scene controller: a long scrollbar drag advances only one image and keeps 
  const f=controller(false,true);f.root.dispatchEvent(new f.w.Event('pointerdown',{bubbles:true}));
  for(let i=0;i<4;i++){f.w.scrollY=1000+800*59;f.w.dispatchEvent(new f.w.Event('scroll'));f.step(600);}
  f.whole(1);assert.equal(f.state().target,1);assert.equal(f.skipped.length,0);
- f.w.dispatchEvent(new f.w.Event('pointerup'));f.w.scrollY=1000+800*59;f.w.dispatchEvent(new f.w.Event('scroll'));f.step(1600);f.whole(2);f.dom.window.close();
+ f.w.dispatchEvent(new f.w.Event('pointerup'));f.w.scrollY=1000+800*59;f.w.dispatchEvent(new f.w.Event('scroll'));f.step(1800);f.whole(2);f.dom.window.close();
 });
 test('scene controller: keyboard and native scrollbar settle; route changes and destroy cancel transitions',()=>{
  const f=controller();f.root.dispatchEvent(new f.w.KeyboardEvent('keydown',{key:'ArrowDown',bubbles:true,cancelable:true}));
  for(let i=0;i<5;i++)f.root.dispatchEvent(new f.w.KeyboardEvent('keydown',{key:'ArrowDown',repeat:true,bubbles:true,cancelable:true}));
- f.step(1600);f.whole(1);
- f.w.scrollY=1000+3200*.61;f.w.dispatchEvent(new f.w.Event('scroll'));f.step();f.step(1600);f.whole(2);
+ f.step(1800);f.whole(1);
+ f.w.scrollY=1000+3200*.61;f.w.dispatchEvent(new f.w.Event('scroll'));f.step();f.step(1800);f.whole(2);
  f.wheel(1);f.step(200);f.d.getElementById('view-home').classList.remove('active');f.d.dispatchEvent(new f.w.Event('frViewChanged'));assert.equal(f.state().animating,false);
  f.w.FRMotionSplit.destroy();assert.equal(f.w.FRMotionSplit.getCount().length,0);assert.equal(f.wheel(100).defaultPrevented,false);f.dom.window.close();
 });
@@ -213,7 +247,7 @@ test('scene controller: a distant index jump decodes only its endpoints and neig
  const f=controller(false,true);f.root.querySelector('[data-frms-jump="59"]').click();
  f.step(200);assert.ok([0,59].includes(f.state().index));
  f.step(200);assert.ok([0,59].includes(f.state().index));
- f.step(1200);f.whole(59);
+ f.step(1400);f.whole(59);
  assert.ok(f.root.querySelectorAll('.frms-frame img[src]').length<=12,'do not hydrate the 58 intermediate projects');
- f.root.querySelector('[data-frms-jump="0"]').click();f.step(800);f.step(800);f.whole(0);f.dom.window.close();
+ f.root.querySelector('[data-frms-jump="0"]').click();f.step(900);f.step(900);f.whole(0);f.dom.window.close();
 });

@@ -7,9 +7,9 @@ Branch: `fix/home-portfolio-scroll-scenes-2026-10-18`.
 
 - Home e Portfólio compartilham dimensões, cartões e revelação vertical em sentidos opostos. O Portfólio contém os 60 pares canônicos (120 imagens), sem gerar a lista duplicada de comparações.
 - O estágio original é movido para dentro do contêiner ativo `fr16-portfolio`, preservando os nós e os links dos projetos. O alias `frpm-before-after` continua válido, e o CTA de transformações aponta para ele.
-- Cada puxada contínua de roda/trackpad avança somente uma comparação. A distância, velocidade, unidade e repetição dos eventos, uma inversão dentro da puxada ou o término da animação não liberam outro avanço. O horário de origem dos eventos evita contar atrasos de processamento como novas puxadas; eventos nativos residuais da roda/toque não entram na contagem da barra. A sessão permanece consumida até haver mais de 400 ms sem eventos; esse intervalo distingue gestos na API de roda, que não informa o contato físico dos dedos.
-- Fotos em sentidos opostos e card central compartilham uma transição de 1.600 ms com interpolação de quinta ordem e velocidade/aceleração nulas nas extremidades. A mudança de cor do card usa 1.200 ms suaves. Nenhuma transição fica parada entre cenas.
-- Três puxadas separadas para baixo, iniciadas dentro de 2.000 ms, cancelam a fila e pulam a seção com rolagem suave ao conteúdo seguinte. Uma única puxada contínua não acumula essa contagem. Puxadas mais espaçadas percorrem as cenas uma a uma. Reverter o sentido reinicia a contagem; setas e índice continuam como controles explícitos. A mesma saída vale para três swipes completos; o botão **Pular animação ↓** permanece disponível.
+- Cada puxada contínua de roda/trackpad avança somente uma comparação. A distância, unidade, repetição e inércia dos eventos ou o término da animação não liberam outro avanço. O horário de origem dos eventos evita contar atrasos de processamento como novas puxadas. Roda em pixels usa 260 ms de pausa para distinguir gestos; roda em linhas/páginas usa 80 ms para identificar detentes rápidos. O bloqueio de rolagem nativa residual ainda usa 400 ms. A API do navegador não expõe com certeza o número de gestos físicos.
+- As fotos revelam-se verticalmente em sentidos opostos. O card central entra e sai **lateralmente**, deslocando-se até 62% de sua largura, com progressão levemente retardada (10% do tempo) em relação às fotos. A duração normal é de 1.800 ms, aumenta para 2.050 ms em gestos menores e chega a 2.300 ms em scroll/swipe lento. A mudança de cor do card mantém 1.200 ms suaves. A interpolação de quinta ordem termina sem deixar a cena parada na transição.
+- Só **três gestos descendentes reconhecidos dentro de 850 ms e separados por no máximo 360 ms** cancelam a fila e pulam a seção com rolagem suave ao conteúdo seguinte. Uma puxada contínua não acumula contagem. Três puxadas moderadamente espaçadas avançam três cenas, sem salto. Reverter o sentido reinicia a contagem; setas e índice continuam controles explícitos. A mesma condição temporal se aplica aos swipes completos; o botão **Pular animação ↓** permanece disponível.
 - Saltos diretos pelo índice revelam apenas as duas cenas escolhidas. A regressão de 1 → 60 verifica que no máximo 12 imagens (extremos e vizinhas) recebem fonte, sem hidratar os 58 projetos intermediários.
 - Uma puxada da barra avança uma cena, independentemente da distância; manter o ponteiro pressionado conserva a mesma sessão mesmo com pausas. Toque vertical e teclado têm navegação por cena; repetição automática de tecla não acumula fotos. Os limites liberam a rolagem da página após o gesto consumido; zoom, controles de formulário e diálogos abertos permanecem acessíveis.
 - Movimento reduzido elimina a interpolação e mantém as 60 comparações acessíveis pelos controles.
@@ -25,7 +25,7 @@ Branch: `fix/home-portfolio-scroll-scenes-2026-10-18`.
 | 60 pares apenas na animação | PASS | DOM gerado: 60 cartões, 120 imagens; zero `.frpm-pair` no Portfólio |
 | Pasta única do projeto | PASS | DOM gerado: um cartão em `frpm-portfolio-projects`; 48 IDs únicos no dossier; zero galerias antigas do projeto no Portfólio |
 | Ordem final da Home | PASS | DOM gerado termina em `froutro4` e `.fr6-footer` |
-| Interações por cena | PASS | 20 testes em `tests/fr-motion-phase1.test.cjs`: puxada sustentada maior que a animação, deltas/unidades/direções variados, três gestos separados, saída, fila espaçada, card/fotos sincronizados, limites, toque, zoom, teclado, barra mantida, movimento reduzido e cancelamento |
+| Interações por cena | PASS | 24 testes em `tests/fr-motion-phase1.test.cjs`: scroll lento, card lateral também em reversão, trackpad contínuo, triplo scroll realmente rápido, gestos moderados sem salto, fila, limites, toque e movimento reduzido |
 | Montagem e preservação de rotas | PASS | Testes verificam identidade dos nós movidos, alias, CTA e galeria da página própria |
 | Suíte geral | PASS | `npm test` |
 | Estrutura HTML e invariantes | PASS | `npm run check:html`: seis views, IDs únicos, núcleo financeiro e ponte PDF |
@@ -42,6 +42,13 @@ A verificação de toque usa eventos simulados. Resta o aceite do responsável s
 A prévia local falhou por infraestrutura (`bwrap: Can't mount proc on /newroot/proc: Operation not permitted`); a revisão foi concluída na prévia Vercel da branch. O ajuste posterior de salto direto preserva o layout; sua regressão tem teste próprio.
 
 Revisão de sensibilidade solicitada em seguida: a regressão de 20 testes e a checagem sintática passaram localmente. A validação geral e a revisão visual desta revisão serão registradas no PR #35; as evidências de navegador e CI da tabela acima descrevem a versão anterior já verificada (`e0faad2`).
+
+## Reparo posterior — card lateral e salto estritamente rápido
+
+- Apenas `assets/js/fr-motion-split.js`, `assets/css/fr-motion-split.css`, seus testes e este registro foram alterados; o acervo do Portfólio, os 60 pares, o projeto cozinha/lavanderia e a ordem da Home permanecem intactos.
+- Regressões novas distinguem detentes de roda rápidos, ondas de trackpad contínuas, gestos espaçados, transição lateral nos dois sentidos e swipe lento. A simulação não substitui conferência de mouse/trackpad e celular reais; os limiares poderão ser calibrados após aceite manual.
+- Validação local deste reparo: 24/24 testes direcionados, `npm test` completo, `npm run check:html`, `npm run build`, `node --check` do runtime e dos testes, além de `git diff --check`, todos aprovados. A primeira tentativa de suíte geral no ambiente isolado encontrou `EPERM` na criação de subprocesso de um teste não relacionado; repetida com permissão apropriada, passou integralmente.
+- Reversão isolada: reverter apenas o commit deste reparo. Não há alteração de dados comerciais, SEO, conteúdo ou dependências de produção.
 
 ## Preservação, risco e reversão
 
