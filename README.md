@@ -92,6 +92,24 @@ Uma administração pública futura exige backend, sessão e autorização no se
 
 ## Publicação
 
-A configuração atual é de site estático na raiz: o `package.json` não possui script `build` e não gera `dist/`. Portanto, não documente `npm run build`/`dist/` como fluxo vigente sem antes introduzir e validar explicitamente uma etapa de build. A Vercel deve publicar a raiz conforme a configuração atual e respeitar `vercel.json`.
+A produção atual usa build explícito:
+
+```bash
+npm run build
+```
+
+O comando executa `scripts/build-site.cjs` e gera o artefato público em `dist/`. A Vercel está configurada com `buildCommand: "npm run build"` e `outputDirectory: "dist"`.
+
+O `sitemap.xml` e os sitemaps de imagens de produção são regenerados dentro de `dist/` a partir das rotas realmente liberadas pelo build. O `sitemap.xml` da raiz continua sendo uma fonte/base para verificações legadas, mas não deve ser usado isoladamente para inferir a cobertura final publicada.
+
+Antes de considerar uma release pronta, execute:
+
+```bash
+npm test
+npm run check:html
+npm run build
+npm run check:project-library
+npm run check:idempotence
+```
 
 Mudanças na `main` devem permanecer pequenas, reversíveis e cobertas por regressão. Antes de declarar publicação concluída, revise `docs/CHECKLIST_PUBLICACAO.md` e registre qualquer teste manual ainda não executado.
