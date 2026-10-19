@@ -57,7 +57,10 @@
     var filters=[['ALL','Todos'],['COZ_ESQ','Cozinha esquerda'],['COZ_DIR','Cozinha direita'],['LAV','Lavanderia'],['INT','Integração'],['TEC','Estudos 3D']];if(options.narrative)filters.push(['BEFORE','Condição inicial representada'],['APPLICATION','Resultado do projeto executado']);filters.forEach(function(pair){var b=node('button',null,pair[1]);b.type='button';b.dataset.group=pair[0];b.addEventListener('click',function(){render(pair[0]);});controls.appendChild(b);});
     controls.hidden=!!options.mediaIds||!!options.studyOnly&&!options.narrative||!!options.sector;
     if(w.FR_MEDIA_LIBRARY&&!controls.hidden){var label=node('label',null,'Núcleo do projeto '),select=node('select');select.setAttribute('aria-label','Selecionar núcleo do projeto');var option=node('option',null,'Todos os núcleos');option.value='ALL';select.appendChild(option);var names={OBJ_ILHA_COOKTOP_01:'Ilha e cooktop',OBJ_ILUMINACAO_DUPLO_L_01:'Iluminação proposta',OBJ_FRONTAO_COZINHA_DIREITO_01:'Frontão direito',ENV_COZINHA_LAVANDERIA_01:'Integração cozinha/lavanderia',OBJ_TORRE_QUENTE_01:'Torre e módulos',OBJ_RIPADO_LED_PENDENTE_01:'Ripado e luz',OBJ_MARCENARIA_COZINHA_ESQUERDA_01:'Marcenaria esquerda',OBJ_BANCADA_COZINHA_L_01:'Bancada em L',OBJ_CUBA_KOKAY_INTEGRACAO_01:'Integração de cuba',OBJ_MARCENARIA_LAVANDERIA_01:'Marcenaria da lavanderia',OBJ_GELADEIRA_01:'Módulo da geladeira',OBJ_BANCADA_LAVANDERIA_01:'Bancada da lavanderia'};Array.from(new Set(allowed.flatMap(function(a){return a.object_ids}))).forEach(function(id){if(!names[id])return;var o=node('option',null,names[id]);o.value=id;select.appendChild(o)});select.addEventListener('change',function(){nucleus=select.value;render(currentGroup)});label.appendChild(select);controls.appendChild(label);}
-    section.append(controls,status,grid,dialog);liveSections.add(section);host.appendChild(section);render('ALL');return section;
+    section.append(controls,status,grid,dialog);liveSections.add(section);
+    var outro=host.id==='view-home'&&host.querySelector('#froutro4');
+    if(outro)outro.before(section);else host.appendChild(section);
+    render('ALL');return section;
   }
   var hostObserver=null,directObserver=null;
   function integrate(){
@@ -67,8 +70,11 @@
     d.querySelectorAll('.frmedia-dialog[open]').forEach(function(dialog){var view=dialog.closest('.view-section');if(view&&!view.classList.contains('active'))dialog.close();});
     var stageHost=d.getElementById('fr16-portfolio');
     var host=stageHost || d.getElementById('view-projetos');
-    if(host)mount(host,catalog);
-    sections.forEach(function(spec){var target=d.getElementById(spec.host);if(target)mount(target,catalog,spec);});
+    var grouped=!!host&&w.FR_MEDIA_LIBRARY&&(w.FR_MEDIA_LIBRARY.dossiers||[]).some(function(item){return item.id==='cozinha-lavanderia'});
+    if(grouped){
+      ['frmedia-cozinha-lavanderia','frmedia-frontais'].forEach(function(id){var prior=d.getElementById(id);if(prior){if(activeDialog&&prior.contains(activeDialog.dialog))closeActive();prior.remove();}});
+    }else if(host)mount(host,catalog);
+    sections.forEach(function(spec){if(grouped&&spec.id==='frmedia-frontais')return;var target=d.getElementById(spec.host);if(target)mount(target,catalog,spec);});
     var view=d.getElementById('view-projetos');
     if(view&&!hostObserver&&typeof MutationObserver==='function'){hostObserver=new MutationObserver(integrate);hostObserver.observe(view,{childList:true,subtree:true});}
     if(!directObserver&&typeof MutationObserver==='function'){directObserver=new MutationObserver(integrate);d.querySelectorAll('.view-section:not(#view-projetos)').forEach(function(v){directObserver.observe(v,{childList:true})});}

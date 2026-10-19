@@ -16,7 +16,9 @@ function injectDiscovery(doc){
  for(const id of ['view-home','view-sobre','view-orcamento']){
   const view=doc.getElementById(id);if(!view)throw Error('Service discovery anchor missing: '+id);
   // Only the current view is exposed by the canonical SPA router.
-  view.appendChild(id==='view-home'?section.cloneNode(true):id==='view-sobre'?section.cloneNode(true):section);
+  const own=id==='view-orcamento'?section:section.cloneNode(true);
+  const outro=id==='view-home'&&view.querySelector('#froutro4');
+  if(outro)outro.before(own);else view.appendChild(own);
  }
  const sheet=doc.createElement('link');sheet.rel='stylesheet';sheet.href=css;doc.head.appendChild(sheet);
 }

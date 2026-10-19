@@ -32,7 +32,7 @@ function collectionLinks(doc) {
  const nav=doc.createElement('nav');nav.id='frms-portfolio-links';nav.className='frms-portfolio-links';
  nav.setAttribute('aria-label','Coleções especiais Franco Romeu');
  const links=[
-  ['/projetos/cozinha-lavanderia','Cozinha e Lavanderia','Projeto integrado'],
+  ['/portfolio#frpm-portfolio-projects','Cozinha e Lavanderia','Quartzo, móveis e projeto integrado'],
   ['/portfolio#frpm-before-after','Antes & Depois','Obras em transformação'],
   ['/portfolio#frpm-portfolio-environments','Reels Ambience','Ambientes em sequência']
  ];
@@ -78,8 +78,11 @@ module.exports=function installFRMotion(doc,prepared){
   section.dataset.frmsKind=kind;
   section.setAttribute('aria-label',kind==='home'?'Transformações Franco Romeu — destaque':'Arquivo de transformações Franco Romeu');
   section.dataset.frmsCount=String(items.length);
-  section.dataset.frmsScrollHeight=String(100+(items.length-1)*(kind==='home'?100:80));
+  section.dataset.frmsScrollHeight=String(items.length*100);
   section.style.height=section.dataset.frmsScrollHeight+'svh';
+  if(kind==='portfolio'){
+   const anchor=element('span','frms-anchor');anchor.id='frpm-before-after';anchor.setAttribute('aria-hidden','true');section.appendChild(anchor);
+  }
   const pin=element('div','frms-pin'),sides=[];
   for(const side of ['left','right']){
    const host=element('div','frms-side');host.dataset.frmsSide=side;host.setAttribute('aria-hidden','true');
@@ -87,6 +90,7 @@ module.exports=function installFRMotion(doc,prepared){
     const frame=element('figure','frms-frame');frame.dataset.frmsOrder=String(i);
     frame.style.zIndex=String(i+1);
     frame.appendChild(media(side==='left'?pair.before_media_id:pair.after_media_id,side,i,(side==='left'?pair.beforeLabel:pair.afterLabel)+' — '+pair.title));
+    frame.appendChild(element('figcaption','frms-stage-label',side==='left'?pair.beforeLabel:pair.afterLabel));
     host.appendChild(frame);
    });
    sides.push(host);pin.appendChild(host);
@@ -121,7 +125,13 @@ module.exports=function installFRMotion(doc,prepared){
  a.href=pair.route;a.setAttribute('aria-label','Abrir projeto '+pair.title);li.append(jump,a);ol.appendChild(li);
 });
   details.append(summary,ol);pin.appendChild(details);
-  const skip=element('button','frms-skip',kind==='home'?'Pular destaques →':'Ir ao restante do Portfólio →');skip.type='button';skip.dataset.frmsSkip='';pin.appendChild(skip);
+  const controls=element('nav','frms-controls');controls.setAttribute('aria-label','Navegar pelas comparações');
+  for(const [step,label,glyph] of [[-1,'Comparação anterior','↑'],[1,'Próxima comparação','↓']]){
+   const button=element('button','',glyph);button.type='button';button.dataset.frmsStep=String(step);button.setAttribute('aria-label',label);controls.appendChild(button);
+  }
+  const status=element('p','frms-status');status.setAttribute('aria-live','polite');status.setAttribute('aria-atomic','true');
+  pin.append(controls,status);
+  const skip=element('button','frms-skip','Pular animação ↓');skip.type='button';skip.dataset.frmsSkip='';skip.title='Ir diretamente ao conteúdo após a animação';pin.appendChild(skip);
   section.appendChild(pin);return section;
  }
  const case3D=findSameProject3D(prepared);

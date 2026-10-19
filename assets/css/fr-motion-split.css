@@ -1,6 +1,7 @@
 /* FR Motion / Phase 1 — isolated split-scroll component. Source: user-approved concept, reimplemented for the canonical FR SPA. */
 .frms-section{position:relative;isolation:isolate;background:#031812;color:#e6d6b5;contain:layout style;--frms-paper:#e6d6b5}
 .frms-section *{box-sizing:border-box}
+.frms-anchor{position:absolute;top:0;left:0;width:1px;height:1px;pointer-events:none}
 .frms-pin{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;isolation:isolate;background:#0a2f26}
 .frms-side{position:absolute;z-index:1;isolation:isolate;top:0;bottom:0;width:50%;overflow:hidden;background:#123f34}
 .frms-side[data-frms-side="left"]{left:0}
@@ -15,7 +16,7 @@
 .frms-bottom{position:absolute;z-index:30;left:clamp(22px,4.5vw,80px);right:clamp(22px,4.5vw,80px);bottom:clamp(23px,4vh,50px);display:flex;align-items:center;gap:25px;font:500 10px/1.4 'Share Tech Mono',monospace;letter-spacing:.16em;color:#fff7e9;text-shadow:0 2px 8px #000a}
 .frms-progress{height:2px;flex:1;overflow:hidden;background:#e6d6b580}.frms-progress span{display:block;height:100%;width:0;background:#ff6b00}
 .frms-cards{position:absolute;inset:0;display:grid;place-items:center;z-index:25;pointer-events:none}
-.frms-card{position:absolute;width:clamp(310px,34vw,560px);min-height:clamp(268px,38svh,410px);max-height:70svh;padding:clamp(27px,3vw,45px);display:flex;flex-direction:column;justify-content:space-between;gap:22px;color:#031812;background:#e6d6b5;border:1px solid currentColor;box-shadow:0 25px 75px #0008;overflow:hidden;opacity:0;visibility:hidden;transform:translateY(22px);pointer-events:none;transition:background .28s linear,color .28s linear}
+.frms-card{position:absolute;width:clamp(310px,34vw,560px);min-height:clamp(268px,38svh,410px);max-height:70svh;padding:clamp(27px,3vw,45px);display:flex;flex-direction:column;justify-content:space-between;gap:22px;color:#031812;background:#e6d6b5;border:1px solid currentColor;box-shadow:0 25px 75px #0008;overflow:hidden;opacity:0;visibility:hidden;transform:translate3d(62%,0,0);pointer-events:none;transition:background 2s ease-in-out,color 2s ease-in-out}
 .frms-card[data-frms-order="0"]{opacity:1;visibility:visible;transform:none;pointer-events:auto}
 .frms-card:before{content:"";position:absolute;inset:9px;border:1px solid currentColor;opacity:.35;pointer-events:none}
 .frms-card-top,.frms-card-foot{display:flex;justify-content:space-between;align-items:center;gap:14px;position:relative}
@@ -32,7 +33,13 @@
 .frms-index[open]{background:#031812ed;padding:14px;border:1px solid #e6d6b580}
 .frms-index ol{overflow:auto;max-height:38svh;padding-left:20px;margin:10px 0 0}
 .frms-index a{color:#e6d6b5}.frms-index li{padding:3px 0}
-.frms-section[data-frms-kind="home"] .frms-card{min-height:300px}
+.frms-section[data-frms-kind] .frms-card{min-height:300px}
+.frms-stage-label{position:absolute;left:clamp(22px,4.5vw,80px);bottom:145px;padding:8px 12px;border:1px solid #e6d6b580;background:#031812c9;color:#fff7e8;font:500 10px/1.5 'Share Tech Mono',monospace;letter-spacing:.14em}
+.frms-controls{position:absolute;z-index:32;left:50%;bottom:84px;transform:translateX(-50%);display:flex;gap:8px;pointer-events:auto}
+.frms-controls button{display:grid;place-items:center;width:44px;height:44px;border:1px solid #e6d6b580;border-radius:50%;background:#031812df;color:#fff7e8;font:20px/1 system-ui;cursor:pointer}
+.frms-controls button:disabled{opacity:.35;cursor:default}
+.frms-controls button:focus-visible{outline:3px solid #ff6b00;outline-offset:4px}
+.frms-status{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 @media(max-width:750px){
  .frms-side{width:100%;height:50%;bottom:auto;left:0!important;right:0!important}
  .frms-side[data-frms-side="left"]{top:0}
@@ -49,13 +56,12 @@
  .frms-card-foot a{width:44px;height:44px}
  .frms-index{right:17px;bottom:53px;font-size:11px}
  .frms-index ol{max-height:25svh}
+ .frms-stage-label{left:18px;bottom:14px;font-size:8px}
+ .frms-controls{bottom:100px}
 }
 @media(max-width:390px){.frms-card{width:88vw;padding:17px;min-height:218px;gap:10px}.frms-card-title{font-size:30px}.frms-top{font-size:7px}}
 @media(prefers-reduced-motion:reduce){
  .frms-section{height:100svh!important}
- .frms-frame:not([data-frms-order="0"]),.frms-card:not([data-frms-order="0"]){display:none!important}
- .frms-frame[data-frms-order="0"]{clip-path:none!important}
- .frms-card[data-frms-order="0"]{opacity:1!important;visibility:visible!important;transform:none!important}
  .frms-card,.frms-card-foot a{transition:none!important}
 }
 @media(forced-colors:active){.frms-card{background:Canvas!important;color:CanvasText!important;border:2px solid CanvasText}.frms-top,.frms-bottom{color:CanvasText!important;background:Canvas}.frms-frame:after{display:none}}
@@ -63,11 +69,11 @@
 
 /* Phase 2: indexed access to all documented transformations, with cinematic portfolio navigation. */
 .frms-index li{display:flex;align-items:center;gap:8px;justify-content:space-between;border-bottom:1px solid #e6d6b52a;padding:4px 0}
-.frms-index-jump{min-height:38px;flex:1;min-width:0;background:none;border:0;padding:7px 3px;color:inherit;text-align:left;font:inherit;cursor:pointer}
+.frms-index-jump{min-height:44px;flex:1;min-width:0;background:none;border:0;padding:7px 3px;color:inherit;text-align:left;font:inherit;cursor:pointer}
 .frms-index-jump:hover{color:#ffad69}
 .frms-index-link{padding:7px 4px;font:600 10px/1.2 'Share Tech Mono',monospace;white-space:nowrap}
 .frms-index-jump:focus-visible,.frms-index-link:focus-visible,.frms-skip:focus-visible,.frms-collection:focus-visible{outline:3px solid #ff6b00;outline-offset:3px}
-.frms-skip{position:absolute;left:clamp(22px,4.5vw,80px);bottom:68px;z-index:32;border:1px solid #e6d6b56b;background:#031812b5;color:#e6d6b5;padding:9px 15px;letter-spacing:.13em;text-transform:uppercase;font:500 10px/1.5 'Share Tech Mono',monospace;cursor:pointer;backdrop-filter:blur(6px)}
+.frms-skip{position:absolute;left:clamp(22px,4.5vw,80px);bottom:68px;z-index:32;min-height:44px;border:1px solid #e6d6b56b;background:#031812b5;color:#e6d6b5;padding:9px 15px;letter-spacing:.13em;text-transform:uppercase;font:500 10px/1.5 'Share Tech Mono',monospace;cursor:pointer;backdrop-filter:blur(6px)}
 .frms-skip:hover{background:#123f34}
 .frms-section[data-frms-kind="portfolio"] .frms-card{border-color:currentColor}
 .frms-portfolio-links{position:relative;z-index:1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2px;background:#031812;padding:clamp(20px,4vw,65px);width:100%;max-width:100%;overflow:hidden}
@@ -88,6 +94,5 @@
 .frms-card-foot p{max-width:73%}
 }
 @media(prefers-reduced-motion:reduce){
-.frms-skip,.frms-index-jump{display:none}
 .frms-collection{transition:none}
 }
