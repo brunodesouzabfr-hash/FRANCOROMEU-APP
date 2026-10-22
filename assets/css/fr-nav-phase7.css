@@ -211,3 +211,48 @@ html.fr7-low-power body #smart-nav[data-fr-nav7-version="7.1"]:not(.fr-nav7-disa
  backdrop-filter:none!important;transition:none!important;
 }
 @media print{html body #smart-nav[data-fr-nav7-version="7.1"]{display:none!important}}
+
+/* Mobile parity with desktop: the same nav pill and live route icons. A horizontal
+   rail is necessary for 320px devices; never shrink touch targets below 44px. */
+@media(max-width:750px){
+ html body #smart-nav[data-fr-nav7-version="7.1"]:not(.fr-nav7-disabled),
+ html body.fr10-budget-active #smart-nav[data-fr-nav7-version="7.1"]:not(.fr-nav7-disabled){
+  width:calc(100vw - 16px)!important;max-width:calc(100vw - 16px)!important;
+  padding:6px 9px!important;gap:4px!important;
+ }
+ html body #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"]:not(.fr-nav7-disabled),
+ html body.fr10-budget-active #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"]:not(.fr-nav7-disabled){
+  width:calc(100vw - 16px)!important;max-width:calc(100vw - 16px)!important;
+  padding:5px 9px!important;gap:4px!important;justify-content:space-between!important;
+ }
+ html body #smart-nav[data-fr-nav7-version="7.1"] #smart-nav-brand,
+ html body #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"] #smart-nav-brand{
+  flex:0 0 44px!important;width:44px!important;min-width:44px!important;max-width:44px!important;
+ }
+ html body #smart-nav[data-fr-nav7-version="7.1"] #smart-nav-brand .frx-brand-copy{display:none!important}
+ html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items,
+ html body #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"] .nav-items{
+  display:flex!important;flex:1 1 0!important;min-width:0!important;max-width:none!important;
+  justify-content:flex-start!important;align-items:center!important;gap:2px!important;
+  overflow-x:auto!important;overflow-y:hidden!important;flex-wrap:nowrap!important;
+  scrollbar-width:none!important;scrollbar-color:transparent transparent!important;
+  scroll-snap-type:x proximity;overscroll-behavior-x:contain;touch-action:pan-x;
+  -webkit-overflow-scrolling:touch;
+ }
+ html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items::-webkit-scrollbar{display:none}
+ html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items>li{flex:0 0 44px!important;scroll-snap-align:center}
+ html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items :is(.nav-link,.nav-cta),
+ html body #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"] .nav-items :is(.nav-link,.nav-cta){
+  display:inline-flex!important;width:44px!important;min-width:44px!important;max-width:44px!important;
+  height:44px!important;min-height:44px!important;max-height:44px!important;
+  flex:0 0 44px!important;padding:8px!important;gap:0!important;border-radius:50%!important;
+ }
+ html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items .nav-label{
+  position:absolute!important;width:1px!important;height:1px!important;padding:0!important;
+  overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;
+ }
+ html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items .fr-search-key{display:none!important}
+ html body #smart-nav[data-fr-nav7-version="7.1"] .fr-site-nav-contact{flex:0 0 auto!important;gap:2px!important}
+ /* Contacts remain in the same capsule; all routes can be reached by swiping the rail. */
+ html body #smart-nav[data-fr-nav7-version="7.1"] .fr-site-nav-contact #fr-site-menu-open{display:none!important}
+}
