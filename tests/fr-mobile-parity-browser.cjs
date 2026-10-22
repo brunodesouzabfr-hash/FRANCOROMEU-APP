@@ -46,7 +46,10 @@ async function sample(page){
    navOverflow:getComputedStyle(items).overflowX,links:items.querySelectorAll('li').length,
    instagram:getComputedStyle(nav.querySelector('[data-fr-contact="instagram"]')).display,
    whatsapp:getComputedStyle(nav.querySelector('[data-fr-contact="whatsapp"]')).display,
+   split:info(split),pin:info(split.querySelector('.frms-pin')),
    left:info(left),right:info(right),divider:info(divider),
+   sideCss:{left:{width:getComputedStyle(left).width,height:getComputedStyle(left).height,left:getComputedStyle(left).left,top:getComputedStyle(left).top},
+            right:{width:getComputedStyle(right).width,height:getComputedStyle(right).height,left:getComputedStyle(right).left,top:getComputedStyle(right).top}},
    card:card?info(card):null,controls:info(controls),
    launcher:btn?info(btn):null,
    blockMounted:window.FRBlockStage?.getState()?.mounted??false
@@ -71,6 +74,7 @@ async function sample(page){
    await page.waitForFunction(()=>window.FRBlockStage?.getState()?.mounted===true,{timeout:45000});
    await page.evaluate(()=>document.fonts?.ready);
    const m=await sample(page);
+   console.log('FR_MOBILE_PARITY_GEOMETRY',label,JSON.stringify(m));
    const tolerance=2;
    assert.ok(m.nav.left>=-tolerance&&m.nav.right<=size.width+tolerance,label+' nav outside viewport');
    assert.ok(Math.abs((m.nav.left+m.nav.right)/2-size.width/2)<=3,label+' nav not centered');
@@ -79,12 +83,12 @@ async function sample(page){
    assert.ok(m.links>=5,label+' missing nav icons');
    assert.notEqual(m.instagram,'none',label+' Instagram hidden');
    assert.notEqual(m.whatsapp,'none',label+' WhatsApp hidden');
-   assert.ok(Math.abs(m.left.width-size.width/2)<=2,label+' left half not 50%');
-   assert.ok(Math.abs(m.right.width-size.width/2)<=2,label+' right half not 50%');
+   assert.ok(Math.abs(m.left.width-m.pin.width/2)<=2,label+' left half not 50% of pin');
+   assert.ok(Math.abs(m.right.width-m.pin.width/2)<=2,label+' right half not 50% of pin');
    assert.ok(Math.abs(m.left.right-m.right.left)<=2,label+' split has gap/overlap');
    assert.ok(Math.abs(m.left.top-m.right.top)<=1,label+' halves are stacked vertically');
    assert.ok(Math.abs(m.left.height-m.right.height)<=1,label+' split height mismatch');
-   assert.ok(Math.abs(m.divider.left-size.width/2)<=2,label+' divider not centered');
+   assert.ok(Math.abs(m.divider.left-(m.pin.left+m.pin.width/2))<=2,label+' divider not centered');
    assert.ok(m.card&&m.controls,label+' missing scene card or controls');
    if(mobile){
     assert.equal(m.navOverflow,'auto',label+' mobile route rail not scrollable');
