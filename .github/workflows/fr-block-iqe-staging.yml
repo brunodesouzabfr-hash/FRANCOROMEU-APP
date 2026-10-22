@@ -48,10 +48,10 @@ jobs:
         run: npm install --no-save --package-lock=false --no-audit --no-fund playwright@1.56.1
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
-      - name: Test actual launcher rendering and reversible IQE integration
-        run: node tests/fr-block-iqe-browser.cjs
       - name: Verify mobile split, desktop nav parity and compact IQE in Chromium
         run: node tests/fr-mobile-parity-browser.cjs
+      - name: Test actual launcher rendering and reversible IQE integration
+        run: node tests/fr-block-iqe-browser.cjs
       - name: Archive desktop and mobile screenshots
         if: always()
         uses: actions/upload-artifact@v4
