@@ -22,6 +22,7 @@
       handle=win.FRBlockAvatar.mountIQEBlock({
         root:root,
         palette:'lovable',
+        size:win.matchMedia?.('(max-width: 600px)').matches ? 48 : 68,
         disableLegacy:true
       });
       if(handle){
