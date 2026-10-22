@@ -104,7 +104,7 @@
  .frms-section .frms-side[data-frms-side="left"]{left:0!important;right:auto!important}
  .frms-section .frms-side[data-frms-side="right"]{left:auto!important;right:0!important}
  .frms-section .frms-divider{left:50%!important;top:0!important;bottom:0!important;width:1px!important;height:100%!important}
- .frms-section .frms-cards{top:auto;bottom:clamp(95px,13svh,125px);left:8px;right:8px;height:min(30svh,210px);min-height:0;display:grid;place-items:center}
+ .frms-section .frms-cards{top:auto;bottom:clamp(148px,19svh,180px);left:8px;right:8px;height:min(29svh,205px);min-height:0;display:grid;place-items:center}
  .frms-section[data-frms-kind] .frms-card{
   width:min(86vw,320px);height:auto;min-height:0;max-height:100%;
   padding:clamp(10px,3vw,18px);gap:8px;overflow-y:auto;overscroll-behavior:contain;
@@ -113,10 +113,10 @@
  .frms-section .frms-card-kicker{margin-bottom:5px}
  .frms-section .frms-card-foot p{font-size:clamp(10px,2.8vw,12px);line-height:1.3}
  .frms-section .frms-stage-label{top:clamp(109px,15svh,145px);bottom:auto;left:8px;max-width:calc(100% - 16px);padding:5px 7px;font-size:8px;white-space:normal}
- .frms-section .frms-controls{bottom:clamp(62px,10svh,94px)}
+ .frms-section .frms-controls{bottom:94px}
  .frms-section .frms-skip{bottom:15px}
  .frms-section .frms-index{bottom:15px}
- .frms-section .frms-bottom{bottom:68px}
+ .frms-section .frms-bottom{bottom:75px}
 }
 @media(max-width:390px){
  .frms-section[data-frms-kind] .frms-card{width:min(88vw,290px);padding:11px}
