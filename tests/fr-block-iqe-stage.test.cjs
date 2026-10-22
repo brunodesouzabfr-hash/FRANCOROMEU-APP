@@ -115,6 +115,25 @@ test('browser boot installs only when ready and its rollback leaves button event
  button.click();assert.equal(clicks,2);
  dom.window.close();
 });
+test('mobile Block launch uses a smaller native body with accessible hit target',()=>{
+ const dom=fixture(),win=dom.window,doc=win.document;
+ win.matchMedia=query=>({matches:query==='(max-width: 600px)'});
+ let size=null;
+ win.FRBlockAvatar={mountIQEBlock(opts){
+   size=opts.size;
+   return {destroy(){},react(){},update(){},state(){return {mounted:true}}};
+ }};
+ win.HTMLCanvasElement.prototype.getContext=()=>({});
+ win.eval(fs.readFileSync(path.join(__dirname,'../assets/js/fr-block-iqe-init.js'),'utf8'));
+ doc.dispatchEvent(new win.Event('DOMContentLoaded'));
+ assert.equal(size,48);
+ assert.equal(win.FRBlockStage.getState().mounted,true);
+ const css=fs.readFileSync(path.join(__dirname,'../assets/css/fr-block-iqe-stage.css'),'utf8');
+ assert.match(css,/@media\(max-width:600px\)/);
+ assert.match(css,/width:52px!important;height:52px!important/);
+ assert.match(css,/\[data-fr-block-hit\]\{min-width:44px;min-height:44px/);
+ win.FRBlockStage.destroy();dom.window.close();
+});
 test('late Stage 5 launcher discovery mounts Block after the DOMContentLoaded event',async()=>{
  const dom=fixture(),win=dom.window,doc=win.document;
  const root=doc.getElementById('fr-ai-root'),parent=root.parentNode;
