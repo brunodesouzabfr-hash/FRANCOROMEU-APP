@@ -164,6 +164,20 @@ test('F7.1: destroy restores old navbar and all original links without duplicati
  assert.equal(api.mount(),true);assert.equal(api.getState().position,'footer');
  api.destroy();f.dom.window.close();
 });
+test('mobile navbar reuses desktop route icons, contacts and capsule in both dock positions',()=>{
+ const mobile=css.slice(css.indexOf('/* Mobile parity with desktop'));
+ assert.match(mobile,/@media\(max-width:750px\)/);
+ assert.match(mobile,/\.nav-items,\s*\n html body #smart-nav[^\n]*data-fr-nav7-position="footer"\] \.nav-items/);
+ assert.match(mobile,/display:flex!important;flex:1 1 0!important/);
+ assert.match(mobile,/overflow-x:auto!important;overflow-y:hidden!important/);
+ assert.match(mobile,/scroll-snap-type:x proximity/);
+ assert.match(mobile,/width:44px!important;min-width:44px!important;max-width:44px!important/);
+ assert.match(mobile,/\.fr-site-nav-contact\{flex:0 0 auto!important/);
+ assert.match(mobile,/\.fr-site-nav-contact #fr-site-menu-open\{display:none!important/);
+ assert.match(mobile,/data-fr-nav7-position="footer"/);
+ // Existing route/assistive text remains in the DOM; CSS only conceals labels visually.
+ assert.equal((html().match(/class="nav-label"/g)||[]).length,5);
+});
 test('F7.1: CSS enforces single centered, round, mobile-safe budget geometry and real vertical morph',()=>{
  assert.match(css,/border-radius:999px!important/);
  assert.match(css,/left:50vw!important;right:auto!important/);
