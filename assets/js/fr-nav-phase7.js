@@ -71,19 +71,23 @@ function immersiveSplitActive(){
 /* Some legacy nav engines write inline !important visibility while scrolling.
    Snapshot and restore those exact inline declarations around immersion. */
 function applyImmersiveVisibility(hidden){
+ var props=['display','opacity','visibility','pointer-events'];
  if(hidden){
   if(!immersiveApplied){
    immersiveInline={};
-   ['opacity','visibility','pointer-events'].forEach(function(prop){
+   props.forEach(function(prop){
     immersiveInline[prop]=[nav.style.getPropertyValue(prop),nav.style.getPropertyPriority(prop)];
    });
    immersiveApplied=true;
   }
-  nav.style.setProperty('opacity','0','important');
-  nav.style.setProperty('visibility','hidden','important');
-  nav.style.setProperty('pointer-events','none','important');
+  var target={'display':'none','opacity':'0','visibility':'hidden','pointer-events':'none'};
+  props.forEach(function(prop){
+   if(nav.style.getPropertyValue(prop)!==target[prop]||nav.style.getPropertyPriority(prop)!=='important'){
+    nav.style.setProperty(prop,target[prop],'important');
+   }
+  });
  }else if(immersiveApplied){
-  ['opacity','visibility','pointer-events'].forEach(function(prop){
+  props.forEach(function(prop){
    var saved=immersiveInline[prop];
    if(saved[0])nav.style.setProperty(prop,saved[0],saved[1]);
    else nav.style.removeProperty(prop);
@@ -157,7 +161,7 @@ function mount(){
  });
  // Legacy engines may continue changing nav-state-header/floating classes.
  // Their changes are orthogonal to fr-nav7-docked and cannot change the position.
- observe(nav,{attributes:true,attributeFilter:['class']},schedule);
+ observe(nav,{attributes:true,attributeFilter:['class','style']},schedule);
  sync();return true;
 }
 function destroy(){
