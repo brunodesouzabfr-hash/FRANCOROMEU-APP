@@ -160,8 +160,8 @@ async function originalControls(page){
  }));
  assert.equal(result.active,'view-sobre');
  assert.ok(result.assistant,'IQE launcher removed');
- assert.equal(result.ga4Scripts.length,1,'Expected one GA4 script');
- assert.ok(result.ga4Scripts[0].includes('G-22Z85RCGQC'),'GA4 ID disagrees with canonical main');
+ assert.equal(result.ga4Scripts.length,0,'Local preview must not collect production GA4 events');
+ assert.ok(!result.ga4Scripts.some(src=>src.includes('G-22Z85RCGQC')),'Local preview loaded production measurement');
  console.log('PHASE8_SPA_MENU_IQE_PASS',JSON.stringify({navigated,result}));
  return result;
 }
