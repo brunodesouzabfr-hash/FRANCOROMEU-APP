@@ -134,12 +134,13 @@ async function sample(page){
    await page.waitForTimeout(250);
    await page.screenshot({path:OUT+'/home-'+label+'.png',animations:'disabled',timeout:30000});
    if(mobile){
-    await page.evaluate(()=>{
-     const el=document.getElementById('frms-home');
-     window.scrollTo({top:window.scrollY+el.getBoundingClientRect().bottom+36,behavior:'instant'});
-    });
+    // The split-scroll engine intentionally captures direct scroll gestures.
+    // Exit through its own accessible Skip control rather than scrollTo().
+    const skip=page.locator('#frms-home [data-frms-skip]');
+    assert.equal(await skip.count(),1,label+' split has no accessible exit');
+    await skip.click();
     await page.waitForFunction(()=>window.FRNav7?.getState()?.immersive===false,{timeout:12000});
-    assert.equal(await page.evaluate(()=>getComputedStyle(document.getElementById('smart-nav')).visibility),'visible',label+' nav failed to return after split');
+    await page.waitForFunction(()=>getComputedStyle(document.getElementById('smart-nav')).visibility==='visible',{timeout:12000});
     assert.equal(await page.evaluate(()=>document.getElementById('smart-nav').inert),false,label+' nav remained inert after split');
    }
    if(mobile){
