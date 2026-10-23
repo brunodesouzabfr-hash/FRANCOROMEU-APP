@@ -159,7 +159,7 @@ test('trackers only execute on www host; verification tags remain in all generat
   assert.equal(count(markup, 'name="google-site-verification"'), 1);
   assert.equal(count(markup, 'name="p:domain_verify"'), 1);
   assert.equal(count(markup, 'id="fr-metricool-tracker"'), 1);
-  const snippets = [...markup.matchAll(/<script(?:\\s[^>]*)?>([\\s\\S]*?)<\\/script>/g)].map(match => match[1]);
+  const snippets = [...markup.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)].map(match => match[1]);
   assert.equal(snippets.length, 2, 'conditional analytics + Metricool bootstrap');
 
   function run(hostname) {
