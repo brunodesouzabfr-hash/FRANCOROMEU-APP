@@ -57,12 +57,23 @@ function budgetViewActive(){
  // route that must NEVER become a bottom floating dock.
  return activeView()==='view-orcamento';
 }
+/* Hide the shared nav only while a split-scroll section is actually pinned to
+   the mobile viewport. It returns as soon as that section is left. */
+function immersiveSplitActive(){
+ if(!w.matchMedia||!w.matchMedia('(max-width: 750px)').matches||budgetViewActive())return false;
+ var view=activeView(),id=view==='view-home'?'frms-home':view==='view-projetos'?'frms-portfolio':null;
+ if(!id)return false;
+ var section=d.getElementById(id);
+ if(!section||!section.isConnected||!section.closest('.view-section.active'))return false;
+ var rect=section.getBoundingClientRect(),vh=w.innerHeight||d.documentElement.clientHeight||1;
+ return rect.height>vh&&rect.top<=8&&rect.bottom>=vh-8;
+}
 function sync(){
  raf=0;if(!mounted)return;
  // Historical engines replace nav.className during scroll. The data-* marker
  // is the CSS contract; recover the class only for legacy diagnostics.
  if(!nav.classList.contains('fr-nav7-ready'))nav.classList.add('fr-nav7-ready');
- var y=offset(),blocked=overlaysOpen();
+ var y=offset(),blocked=overlaysOpen(),immersive=immersiveSplitActive();
  // Only Orçamento stays fixed at the TOP throughout scrolling.
  // All other SPA routes retain the original top↔bottom organic transition.
  // The budget guard overrides any old dock state immediately on route entry.
@@ -72,15 +83,15 @@ function sync(){
  var hideForModal=blocked;
  if(nav.classList.contains('fr-nav7-docked')!==docked)nav.classList.toggle('fr-nav7-docked',docked);
  if(nav.classList.contains('fr-nav7-modal')!==hideForModal)nav.classList.toggle('fr-nav7-modal',hideForModal);
- if(nav.inert!==hideForModal)nav.inert=hideForModal;
+ if(nav.inert!==(hideForModal||immersive))nav.inert=hideForModal||immersive;
  nav.dataset.frNav7Position=position;
- nav.dataset.frNav7State=blocked?'modal':position;
+ nav.dataset.frNav7State=blocked?'modal':immersive?'immersive':position;
 }
 function schedule(){if(mounted&&!raf)raf=w.requestAnimationFrame(sync);}
 function restoreOnDialogClose(){
  if(!nav||!mounted)return;
  // Capture close before legacy bubble listeners restore focus to the trigger.
- nav.inert=false;
+ nav.inert=immersiveSplitActive();
  nav.classList.remove('fr-nav7-modal');
  schedule();
 }
@@ -103,6 +114,7 @@ function mount(){
  position=!budgetViewActive()&&offset()>=160?'footer':'header';
  listen(w,'scroll',schedule,{passive:true});
  listen(w,'resize',schedule,{passive:true});
+ listen(w,'orientationchange',schedule,{passive:true});
  listen(w,'pageshow',schedule);
  listen(d,'visibilitychange',schedule);
  listen(d,'frViewChanged',routeChange);
@@ -140,7 +152,7 @@ function destroy(){
  position='header';mounted=false;
 }
 w.FRNav7={version:'7.1',mount:mount,destroy:destroy,refresh:function(){routes();schedule();},
- getState:function(){return {mounted:mounted,position:position,modal:overlaysOpen(),
+ getState:function(){return {mounted:mounted,position:position,immersive:nav?.dataset.frNav7State==='immersive',modal:overlaysOpen(),
   centered:true,budgetPinned:budgetViewActive(),view:active,menuIntact:!!d.getElementById('fr-site-menu'),
   iqeIntact:!!d.getElementById('fr-ai-root')};}};
 if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',mount,{once:true});
