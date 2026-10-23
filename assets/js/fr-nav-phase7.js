@@ -8,7 +8,7 @@ var nav=d.getElementById('smart-nav'),menu=d.getElementById('fr-site-menu'),
  opener=d.getElementById('fr-site-menu-open'),closeButton=d.getElementById('fr-site-menu-close'),
  brand=d.getElementById('smart-nav-brand');
 var mounted=false,raf=0,position='header',active='view-home',
- listeners=[],observers=[],previous={};
+ listeners=[],observers=[],previous={},immersiveApplied=false,immersiveInline=null;
 var OVERLAYS=[
  ['#iqe-overlay',['open','active','is-open','visible']],
  ['#amb-detail-overlay',['open','visible','is-open']],
@@ -68,6 +68,29 @@ function immersiveSplitActive(){
  var rect=section.getBoundingClientRect(),vh=w.innerHeight||d.documentElement.clientHeight||1;
  return rect.height>vh&&rect.top<=8&&rect.bottom>=vh-8;
 }
+/* Some legacy nav engines write inline !important visibility while scrolling.
+   Snapshot and restore those exact inline declarations around immersion. */
+function applyImmersiveVisibility(hidden){
+ if(hidden){
+  if(!immersiveApplied){
+   immersiveInline={};
+   ['opacity','visibility','pointer-events'].forEach(function(prop){
+    immersiveInline[prop]=[nav.style.getPropertyValue(prop),nav.style.getPropertyPriority(prop)];
+   });
+   immersiveApplied=true;
+  }
+  nav.style.setProperty('opacity','0','important');
+  nav.style.setProperty('visibility','hidden','important');
+  nav.style.setProperty('pointer-events','none','important');
+ }else if(immersiveApplied){
+  ['opacity','visibility','pointer-events'].forEach(function(prop){
+   var saved=immersiveInline[prop];
+   if(saved[0])nav.style.setProperty(prop,saved[0],saved[1]);
+   else nav.style.removeProperty(prop);
+  });
+  immersiveInline=null;immersiveApplied=false;
+ }
+}
 function sync(){
  raf=0;if(!mounted)return;
  // Historical engines replace nav.className during scroll. The data-* marker
@@ -86,6 +109,7 @@ function sync(){
  if(nav.inert!==(hideForModal||immersive))nav.inert=hideForModal||immersive;
  nav.dataset.frNav7Position=position;
  nav.dataset.frNav7State=blocked?'modal':immersive?'immersive':position;
+ applyImmersiveVisibility(immersive);
 }
 function schedule(){if(mounted&&!raf)raf=w.requestAnimationFrame(sync);}
 function restoreOnDialogClose(){
@@ -137,6 +161,7 @@ function mount(){
  sync();return true;
 }
 function destroy(){
+ applyImmersiveVisibility(false);
  if(raf){w.cancelAnimationFrame(raf);raf=0;}
  observers.forEach(function(o){o.disconnect();});observers=[];
  listeners.forEach(function(row){row[0].removeEventListener(row[1],row[2],row[3]);});listeners=[];
