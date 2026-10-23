@@ -46,6 +46,14 @@ async function sample(page){
    navOverflow:getComputedStyle(items).overflowX,links:items.querySelectorAll('li').length,
    instagram:getComputedStyle(nav.querySelector('[data-fr-contact="instagram"]')).display,
    whatsapp:getComputedStyle(nav.querySelector('[data-fr-contact="whatsapp"]')).display,
+   search:nav.querySelector('#fr-global-search-item')?getComputedStyle(nav.querySelector('#fr-global-search-item')).display:null,
+   captions:[...items.querySelectorAll('li a[data-fr-view]')].map(a=>{
+    const label=a.querySelector('.nav-label'),icon=a.querySelector('i');
+    const l=label.getBoundingClientRect(),i=icon.getBoundingClientRect();
+    return {label:label.textContent.trim(),display:getComputedStyle(label).display,
+            position:getComputedStyle(label).position,iconBottom:i.bottom,labelTop:l.top};
+   }),
+   navVisible:getComputedStyle(nav).visibility,navInert:nav.inert,navImmersive:window.FRNav7?.getState()?.immersive??false,
    split:info(split),pin:info(split.querySelector('.frms-pin')),
    left:info(left),right:info(right),divider:info(divider),
    sideCss:{left:{width:getComputedStyle(left).width,height:getComputedStyle(left).height,left:getComputedStyle(left).left,top:getComputedStyle(left).top},
@@ -81,8 +89,21 @@ async function sample(page){
    assert.ok(m.navRadius>=100,label+' nav pill lost rounding');
    assert.equal(m.navLinksDisplay,'flex',label+' desktop routes hidden');
    assert.ok(m.links>=5,label+' missing nav icons');
-   assert.notEqual(m.instagram,'none',label+' Instagram hidden');
-   assert.notEqual(m.whatsapp,'none',label+' WhatsApp hidden');
+   if(mobile){
+    assert.equal(m.instagram,'none',label+' Instagram must be removed from mobile navbar');
+    assert.equal(m.whatsapp,'none',label+' WhatsApp must be removed from mobile navbar');
+    if(m.search!==null)assert.equal(m.search,'none',label+' search must be removed from mobile navbar');
+    assert.ok(m.captions.length>=5,label+' missing route captions');
+    for(const caption of m.captions){
+     assert.ok(caption.label,label+' unnamed route');
+     assert.equal(caption.display,'block',label+' route label invisible');
+     assert.equal(caption.position,'static',label+' route label still visually hidden');
+     assert.ok(caption.labelTop>=caption.iconBottom-2,label+' route label not beneath icon: '+caption.label);
+    }
+   }else{
+    assert.notEqual(m.instagram,'none',label+' desktop Instagram hidden');
+    assert.notEqual(m.whatsapp,'none',label+' desktop WhatsApp hidden');
+   }
    assert.ok(Math.abs(m.left.width-m.pin.width/2)<=2,label+' left half not 50% of pin');
    assert.ok(Math.abs(m.right.width-m.pin.width/2)<=2,label+' right half not 50% of pin');
    assert.ok(Math.abs(m.left.right-m.right.left)<=2,label+' split has gap/overlap');
@@ -101,8 +122,26 @@ async function sample(page){
     if(scroll.overflow)assert.ok(scroll.x>0,label+' route rail cannot be swiped');
    }
    await page.evaluate(()=>document.getElementById('frms-home').scrollIntoView({block:'start',behavior:'instant'}));
-   await page.waitForTimeout(300);
+   if(mobile){
+    await page.waitForFunction(()=>window.FRNav7?.getState()?.immersive===true,{timeout:12000});
+    const hidden=await page.evaluate(()=>({state:document.getElementById('smart-nav').dataset.frNav7State,
+     visibility:getComputedStyle(document.getElementById('smart-nav')).visibility,
+     inert:document.getElementById('smart-nav').inert}));
+    assert.equal(hidden.state,'immersive',label+' nav did not enter immersive state');
+    assert.equal(hidden.visibility,'hidden',label+' nav still visible during split');
+    assert.equal(hidden.inert,true,label+' hidden nav still keyboard accessible');
+   }
+   await page.waitForTimeout(250);
    await page.screenshot({path:OUT+'/home-'+label+'.png',animations:'disabled',timeout:30000});
+   if(mobile){
+    await page.evaluate(()=>{
+     const el=document.getElementById('frms-home');
+     window.scrollTo({top:window.scrollY+el.getBoundingClientRect().bottom+36,behavior:'instant'});
+    });
+    await page.waitForFunction(()=>window.FRNav7?.getState()?.immersive===false,{timeout:12000});
+    assert.equal(await page.evaluate(()=>getComputedStyle(document.getElementById('smart-nav')).visibility),'visible',label+' nav failed to return after split');
+    assert.equal(await page.evaluate(()=>document.getElementById('smart-nav').inert),false,label+' nav remained inert after split');
+   }
    if(mobile){
     await page.goto(BASE+'/orcamento',{waitUntil:'domcontentloaded',timeout:90000});
     await page.waitForFunction(()=>window.FRNav7?.getState()?.mounted===true,{timeout:45000});
