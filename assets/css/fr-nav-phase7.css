@@ -313,3 +313,11 @@ html.fr7-low-power body #smart-nav[data-fr-nav7-version="7.1"]:not(.fr-nav7-disa
 @media(prefers-reduced-motion:reduce){
  html body #smart-nav[data-fr-nav7-state="immersive"]{transition:none!important}
 }
+
+/* Explicitly suppress children as well as their contact container. This
+   overrides the high-specificity desktop 44px contact button rule. */
+@media(max-width:750px){
+ html body #smart-nav[data-fr-nav7-version="7.1"] .fr-site-nav-contact :is(.fr-site-icon-link,#fr-site-menu-open){
+  display:none!important;
+ }
+}
