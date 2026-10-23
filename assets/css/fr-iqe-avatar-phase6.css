@@ -54,3 +54,13 @@ html.fr7-low-power #fr-ai-root.fr6iqe-ready .fr6iqe-cube{animation:none!importan
 #fr-ai-root.fr6iqe-ready .fr-ai-launcher .fr-ai-robot{width:44px;height:44px}
 #fr-ai-root.fr6iqe-ready .fr-ai-launcher .fr6iqe-scene{--fr6iqe-size:38px}
 }
+
+/* Legacy IQE fallback when Block cannot mount: mobile footprint only. */
+@media(max-width:600px){
+ #fr-ai-root.fr6iqe-ready:not(.fr-block-iqe-staging) .fr-ai-launcher .fr-ai-robot{
+  width:40px;height:40px;
+ }
+ #fr-ai-root.fr6iqe-ready:not(.fr-block-iqe-staging) .fr-ai-launcher .fr6iqe-scene{
+  --fr6iqe-size:34px;
+ }
+}

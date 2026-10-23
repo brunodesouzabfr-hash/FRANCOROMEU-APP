@@ -211,3 +211,113 @@ html.fr7-low-power body #smart-nav[data-fr-nav7-version="7.1"]:not(.fr-nav7-disa
  backdrop-filter:none!important;transition:none!important;
 }
 @media print{html body #smart-nav[data-fr-nav7-version="7.1"]{display:none!important}}
+
+/* Mobile parity with desktop: the same nav pill and live route icons. A horizontal
+   rail is necessary for 320px devices; never shrink touch targets below 44px. */
+@media(max-width:750px){
+ html body #smart-nav[data-fr-nav7-version="7.1"]:not(.fr-nav7-disabled),
+ html body.fr10-budget-active #smart-nav[data-fr-nav7-version="7.1"]:not(.fr-nav7-disabled){
+  width:calc(100vw - 16px)!important;max-width:calc(100vw - 16px)!important;
+  padding:6px 9px!important;gap:4px!important;
+ }
+ html body #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"]:not(.fr-nav7-disabled),
+ html body.fr10-budget-active #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"]:not(.fr-nav7-disabled){
+  width:calc(100vw - 16px)!important;max-width:calc(100vw - 16px)!important;
+  padding:5px 9px!important;gap:4px!important;justify-content:space-between!important;
+ }
+ html body #smart-nav[data-fr-nav7-version="7.1"] #smart-nav-brand,
+ html body #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"] #smart-nav-brand{
+  flex:0 0 44px!important;width:44px!important;min-width:44px!important;max-width:44px!important;
+ }
+ html body #smart-nav[data-fr-nav7-version="7.1"] #smart-nav-brand .frx-brand-copy{display:none!important}
+ html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items,
+ html body #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"] .nav-items{
+  display:flex!important;flex:1 1 0!important;min-width:0!important;max-width:none!important;
+  justify-content:flex-start!important;align-items:center!important;gap:2px!important;
+  overflow-x:auto!important;overflow-y:hidden!important;flex-wrap:nowrap!important;
+  scrollbar-width:none!important;scrollbar-color:transparent transparent!important;
+  scroll-snap-type:x proximity;overscroll-behavior-x:contain;touch-action:pan-x;
+  -webkit-overflow-scrolling:touch;
+ }
+ html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items::-webkit-scrollbar{display:none}
+ html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items>li{flex:0 0 44px!important;scroll-snap-align:center}
+ html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items :is(.nav-link,.nav-cta),
+ html body #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"] .nav-items :is(.nav-link,.nav-cta){
+  display:inline-flex!important;width:44px!important;min-width:44px!important;max-width:44px!important;
+  height:44px!important;min-height:44px!important;max-height:44px!important;
+  flex:0 0 44px!important;padding:8px!important;gap:0!important;border-radius:50%!important;
+ }
+ html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items .nav-label{
+  position:absolute!important;width:1px!important;height:1px!important;padding:0!important;
+  overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;
+ }
+ html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items .fr-search-key{display:none!important}
+ html body #smart-nav[data-fr-nav7-version="7.1"] .fr-site-nav-contact{flex:0 0 auto!important;gap:2px!important}
+ /* Contacts remain in the same capsule; all routes can be reached by swiping the rail. */
+ html body #smart-nav[data-fr-nav7-version="7.1"] .fr-site-nav-contact #fr-site-menu-open{display:none!important}
+}
+
+/* Mobile editorial dock: five route icons with captions, no quick social/search icons.
+   Keep all original destinations and search logic available elsewhere on the site. */
+@media(max-width:750px){
+ html body #smart-nav[data-fr-nav7-version="7.1"]:not(.fr-nav7-disabled),
+ html body.fr10-budget-active #smart-nav[data-fr-nav7-version="7.1"]:not(.fr-nav7-disabled){
+  --fr-nav7-h:72px;
+  padding:5px 8px!important;gap:4px!important;
+ }
+ html body #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"]:not(.fr-nav7-disabled),
+ html body.fr10-budget-active #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"]:not(.fr-nav7-disabled){
+  --fr-nav7-h:72px;
+  padding:5px 8px!important;gap:4px!important;
+  top:calc(100dvh - var(--fr-nav7-h) - max(12px,env(safe-area-inset-bottom,0px)))!important;
+ }
+ html body #smart-nav[data-fr-nav7-version="7.1"] .fr-site-nav-contact{display:none!important}
+ html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items>li#fr-global-search-item{display:none!important}
+ html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items>li{
+  flex:0 0 66px!important;min-width:66px!important;
+ }
+ html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items :is(.nav-link,.nav-cta),
+ html body #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"] .nav-items :is(.nav-link,.nav-cta){
+  position:relative!important;display:flex!important;flex-direction:column!important;
+  width:66px!important;min-width:66px!important;max-width:66px!important;
+  height:60px!important;min-height:60px!important;max-height:60px!important;
+  flex:0 0 60px!important;gap:3px!important;padding:5px 2px!important;
+  border-radius:13px!important;box-sizing:border-box!important;
+ }
+ html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items :is(.nav-link,.nav-cta) i{
+  display:block!important;width:20px!important;min-width:20px!important;max-width:20px!important;
+  height:20px!important;min-height:20px!important;font-size:17px!important;line-height:20px!important;
+  flex:0 0 20px!important;text-align:center!important;
+ }
+ html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items .nav-label,
+ html body #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"] .nav-items .nav-label{
+  position:static!important;display:block!important;width:100%!important;max-width:100%!important;
+  height:auto!important;clip:auto!important;clip-path:none!important;overflow:visible!important;
+  padding:0!important;margin:0!important;opacity:1!important;visibility:visible!important;
+  font:600 9px/1.1 'Rokkitt',Georgia,serif!important;letter-spacing:0!important;
+  text-align:center!important;white-space:nowrap!important;
+ }
+ html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items{align-items:center!important}
+ html body #smart-nav[data-fr-nav7-version="7.1"] #smart-nav-brand,
+ html body #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"] #smart-nav-brand{
+  flex:0 0 42px!important;width:42px!important;min-width:42px!important;max-width:42px!important;
+ }
+ /* An immersive split is the only reason to conceal the bar on mobile.
+    inert is managed by FRNav7, so hidden links cannot receive focus. */
+ html body #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-state="immersive"]:not(.fr-nav7-disabled),
+ html body.fr10-budget-active #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-state="immersive"]:not(.fr-nav7-disabled){
+  opacity:0!important;visibility:hidden!important;pointer-events:none!important;
+  transition:opacity .2s ease,visibility .2s ease!important;
+ }
+}
+@media(prefers-reduced-motion:reduce){
+ html body #smart-nav[data-fr-nav7-state="immersive"]{transition:none!important}
+}
+
+/* Explicitly suppress children as well as their contact container. This
+   overrides the high-specificity desktop 44px contact button rule. */
+@media(max-width:750px){
+ html body #smart-nav[data-fr-nav7-version="7.1"] .fr-site-nav-contact :is(.fr-site-icon-link,#fr-site-menu-open){
+  display:none!important;
+ }
+}

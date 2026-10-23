@@ -52,3 +52,12 @@
  .fr-block-tip{animation:none!important;transition:none!important;}
 }
 
+
+/* Keep the visual launcher compact on a phone; native Block size comes from mount
+   configuration (48px), not a transform that would shift its click portal. */
+@media(max-width:600px){
+ #fr-ai-root.fr-block-iqe-staging #fr-ai-launcher{
+  width:52px!important;height:52px!important;
+  min-width:52px!important;min-height:52px!important;
+ }
+}

@@ -12,6 +12,9 @@ on:
       - 'assets/css/fr-block-*'
       - 'scripts/build-site.cjs'
       - 'tests/fr-block-iqe-stage.test.cjs'
+      - 'tests/fr-mobile-parity-browser.cjs'
+      - 'assets/css/fr-nav-phase7.css'
+      - 'assets/css/fr-motion-split.css'
 permissions:
   contents: read
 jobs:
@@ -45,6 +48,8 @@ jobs:
         run: npm install --no-save --package-lock=false --no-audit --no-fund playwright@1.56.1
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
+      - name: Verify mobile split, desktop nav parity and compact IQE in Chromium
+        run: node tests/fr-mobile-parity-browser.cjs
       - name: Test actual launcher rendering and reversible IQE integration
         run: node tests/fr-block-iqe-browser.cjs
       - name: Archive desktop and mobile screenshots
@@ -52,7 +57,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: fr-block-iqe-staging-chromium
-          path: artifacts/block-iqe-staging/
+          path: |
+            artifacts/block-iqe-staging/
+            artifacts/mobile-parity/
           if-no-files-found: ignore
           retention-days: 7
       - name: Build normal public site without avatar replacement

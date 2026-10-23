@@ -42,6 +42,20 @@ test('Phase 2: five explicit editorial scenes and all 60 portfolio comparisons a
  assert.equal(prepared.data.pairs.length,60);
  dom.window.close();
 });
+test('mobile split-scroll retains desktop left/right panels and keeps editorial cards in a compact lower rail',()=>{
+ const css=fs.readFileSync(path.join(__dirname,'../assets/css/fr-motion-split.css'),'utf8');
+ const mobile=css.slice(css.indexOf('/* Mobile parity'));
+ assert.match(mobile,/@media\(max-width:750px\)/);
+ assert.match(mobile,/\.frms-section \.frms-side\{[^}]*width:50%!important;height:100%!important/);
+ assert.match(mobile,/data-frms-side="left"\]\{left:0!important;right:auto!important/);
+ assert.match(mobile,/data-frms-side="right"\]\{left:auto!important;right:0!important/);
+ assert.match(mobile,/\.frms-divider\{left:50%!important;top:0!important;bottom:0!important;width:1px!important;height:100%!important/);
+ assert.match(mobile,/\.frms-cards\{top:auto;bottom:/);
+ assert.match(mobile,/\.frms-card\{[^}]*max-height:100%/);
+ assert.match(mobile,/\.frms-controls\{bottom:/);
+ assert.match(mobile,/\.frms-skip\{bottom:/);
+});
+
 test('Phase 2: project 3D and executed scene are joined only for one canonical project',()=>{
  const fixtureData=fixture(),items=fixtureData.data.media;
  items.render={media_id:'render',project_ids:['FR-C001'],nature:'RENDER',stage:'PROJECT_3D',canonicalFile:'assets/media/render.webp',variants:[{width:500,height:500,canonical:true}]};

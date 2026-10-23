@@ -8,7 +8,7 @@ var nav=d.getElementById('smart-nav'),menu=d.getElementById('fr-site-menu'),
  opener=d.getElementById('fr-site-menu-open'),closeButton=d.getElementById('fr-site-menu-close'),
  brand=d.getElementById('smart-nav-brand');
 var mounted=false,raf=0,position='header',active='view-home',
- listeners=[],observers=[],previous={};
+ listeners=[],observers=[],previous={},immersiveApplied=false,immersiveInline=null;
 var OVERLAYS=[
  ['#iqe-overlay',['open','active','is-open','visible']],
  ['#amb-detail-overlay',['open','visible','is-open']],
@@ -57,12 +57,50 @@ function budgetViewActive(){
  // route that must NEVER become a bottom floating dock.
  return activeView()==='view-orcamento';
 }
+/* Hide the shared nav only while a split-scroll section is actually pinned to
+   the mobile viewport. It returns as soon as that section is left. */
+function immersiveSplitActive(){
+ if(!w.matchMedia||!w.matchMedia('(max-width: 750px)').matches||budgetViewActive())return false;
+ var view=activeView(),id=view==='view-home'?'frms-home':view==='view-projetos'?'frms-portfolio':null;
+ if(!id)return false;
+ var section=d.getElementById(id);
+ if(!section||!section.isConnected||!section.closest('.view-section.active'))return false;
+ var rect=section.getBoundingClientRect(),vh=w.innerHeight||d.documentElement.clientHeight||1;
+ return rect.height>vh&&rect.top<=8&&rect.bottom>=vh-8;
+}
+/* Some legacy nav engines write inline !important visibility while scrolling.
+   Snapshot and restore those exact inline declarations around immersion. */
+function applyImmersiveVisibility(hidden){
+ var props=['display','opacity','visibility','pointer-events'];
+ if(hidden){
+  if(!immersiveApplied){
+   immersiveInline={};
+   props.forEach(function(prop){
+    immersiveInline[prop]=[nav.style.getPropertyValue(prop),nav.style.getPropertyPriority(prop)];
+   });
+   immersiveApplied=true;
+  }
+  var target={'display':'none','opacity':'0','visibility':'hidden','pointer-events':'none'};
+  props.forEach(function(prop){
+   if(nav.style.getPropertyValue(prop)!==target[prop]||nav.style.getPropertyPriority(prop)!=='important'){
+    nav.style.setProperty(prop,target[prop],'important');
+   }
+  });
+ }else if(immersiveApplied){
+  props.forEach(function(prop){
+   var saved=immersiveInline[prop];
+   if(saved[0])nav.style.setProperty(prop,saved[0],saved[1]);
+   else nav.style.removeProperty(prop);
+  });
+  immersiveInline=null;immersiveApplied=false;
+ }
+}
 function sync(){
  raf=0;if(!mounted)return;
  // Historical engines replace nav.className during scroll. The data-* marker
  // is the CSS contract; recover the class only for legacy diagnostics.
  if(!nav.classList.contains('fr-nav7-ready'))nav.classList.add('fr-nav7-ready');
- var y=offset(),blocked=overlaysOpen();
+ var y=offset(),blocked=overlaysOpen(),immersive=immersiveSplitActive();
  // Only Orçamento stays fixed at the TOP throughout scrolling.
  // All other SPA routes retain the original top↔bottom organic transition.
  // The budget guard overrides any old dock state immediately on route entry.
@@ -72,15 +110,16 @@ function sync(){
  var hideForModal=blocked;
  if(nav.classList.contains('fr-nav7-docked')!==docked)nav.classList.toggle('fr-nav7-docked',docked);
  if(nav.classList.contains('fr-nav7-modal')!==hideForModal)nav.classList.toggle('fr-nav7-modal',hideForModal);
- if(nav.inert!==hideForModal)nav.inert=hideForModal;
+ if(nav.inert!==(hideForModal||immersive))nav.inert=hideForModal||immersive;
  nav.dataset.frNav7Position=position;
- nav.dataset.frNav7State=blocked?'modal':position;
+ nav.dataset.frNav7State=blocked?'modal':immersive?'immersive':position;
+ applyImmersiveVisibility(immersive);
 }
 function schedule(){if(mounted&&!raf)raf=w.requestAnimationFrame(sync);}
 function restoreOnDialogClose(){
  if(!nav||!mounted)return;
  // Capture close before legacy bubble listeners restore focus to the trigger.
- nav.inert=false;
+ nav.inert=immersiveSplitActive();
  nav.classList.remove('fr-nav7-modal');
  schedule();
 }
@@ -103,6 +142,7 @@ function mount(){
  position=!budgetViewActive()&&offset()>=160?'footer':'header';
  listen(w,'scroll',schedule,{passive:true});
  listen(w,'resize',schedule,{passive:true});
+ listen(w,'orientationchange',schedule,{passive:true});
  listen(w,'pageshow',schedule);
  listen(d,'visibilitychange',schedule);
  listen(d,'frViewChanged',routeChange);
@@ -121,10 +161,11 @@ function mount(){
  });
  // Legacy engines may continue changing nav-state-header/floating classes.
  // Their changes are orthogonal to fr-nav7-docked and cannot change the position.
- observe(nav,{attributes:true,attributeFilter:['class']},schedule);
+ observe(nav,{attributes:true,attributeFilter:['class','style']},schedule);
  sync();return true;
 }
 function destroy(){
+ applyImmersiveVisibility(false);
  if(raf){w.cancelAnimationFrame(raf);raf=0;}
  observers.forEach(function(o){o.disconnect();});observers=[];
  listeners.forEach(function(row){row[0].removeEventListener(row[1],row[2],row[3]);});listeners=[];
@@ -140,7 +181,7 @@ function destroy(){
  position='header';mounted=false;
 }
 w.FRNav7={version:'7.1',mount:mount,destroy:destroy,refresh:function(){routes();schedule();},
- getState:function(){return {mounted:mounted,position:position,modal:overlaysOpen(),
+ getState:function(){return {mounted:mounted,position:position,immersive:nav?.dataset.frNav7State==='immersive',modal:overlaysOpen(),
   centered:true,budgetPinned:budgetViewActive(),view:active,menuIntact:!!d.getElementById('fr-site-menu'),
   iqeIntact:!!d.getElementById('fr-ai-root')};}};
 if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',mount,{once:true});
