@@ -35,7 +35,7 @@ test('F9.2 every landing page has unique H1, canonical, metadata and Service gra
   assert.ok(doc.querySelector('a[href^="https://wa.me/"]'));
   assert.ok(!doc.querySelector('form, input, textarea'),'No collection of personal data on static pages');
   assert.equal(doc.querySelectorAll('script[src="/assets/js/fr-conversion-phase9.js"]').length,1);
-  assert.equal(doc.querySelectorAll('script[src*="googletagmanager.com/gtag/js"]').length,1);
+  assert.ok([...doc.scripts].some(script => script.textContent.includes('www.googletagmanager.com/gtag/js?id=') && script.textContent.includes('window.location.hostname!=="www.francoromeufr.com.br"')), 'GA4 conditional production bootstrap missing');
   const g=JSON.parse(doc.querySelector('script[type="application/ld+json"]').textContent)['@graph'];
   const service=g.filter(x=>x['@type']==='Service');
   assert.equal(service.length,1);

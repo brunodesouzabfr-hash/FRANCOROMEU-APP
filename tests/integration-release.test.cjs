@@ -5,6 +5,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const { JSDOM } = require('jsdom');
+const vm = require('node:vm');
 const { TRACKING } = require('../src/public-site-meta.cjs');
 
 const ORIGIN = 'https://www.francoromeufr.com.br';
@@ -150,4 +151,47 @@ test('há um único workflow IndexNow e ele deriva URLs do sitemap após prontid
   assert.match(workflow, /grep -Fxq/);
   assert.match(workflow, /dict\.fromkeys/);
   assert.match(workflow, /www\.francoromeufr\.com\.br/);
+});
+
+test('trackers only execute on www host; verification tags remain in all generated HTML', () => {
+  const { trackingHead, TRACKING } = require('../src/public-site-meta.cjs');
+  const markup = trackingHead();
+  assert.equal(count(markup, 'name="google-site-verification"'), 1);
+  assert.equal(count(markup, 'name="p:domain_verify"'), 1);
+  assert.equal(count(markup, 'id="fr-metricool-tracker"'), 1);
+  const snippets = [...markup.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)].map(match => match[1]);
+  assert.equal(snippets.length, 2, 'conditional analytics + Metricool bootstrap');
+
+  function run(hostname) {
+    const inserted = [];
+    const head = { appendChild(script) { inserted.push(script); } };
+    const document = {
+      head,
+      createElement(tag) { return { tag, setAttribute(key, value) { this[key] = value; } }; },
+      getElementsByTagName(tag) {
+        if (tag === 'head') return [head];
+        return [{ parentNode: { insertBefore(script) { inserted.push(script); } } }];
+      }
+    };
+    const window = { location: { hostname } };
+    for (const script of snippets) vm.runInNewContext(script, { window, document, Date }, { timeout: 1000 });
+    return { inserted, window };
+  }
+
+  for (const host of ['127.0.0.1', 'localhost', 'francoromeu-app.vercel.app', 'preview-example.vercel.app']) {
+    const result = run(host);
+    assert.equal(result.inserted.length, 0, host);
+    assert.equal(result.window.dataLayer, undefined, host);
+  }
+  const production = run('www.francoromeufr.com.br');
+  assert.equal(production.inserted.length, 4, 'Clarity, GA4, Ahrefs and Metricool');
+  for (const [needle, expected] of [
+    ['gtag/js?id='+TRACKING.ga4, 1],
+    ['clarity.ms/tag/'+TRACKING.clarity, 1],
+    ['analytics.ahrefs.com/analytics.js', 1],
+    ['tracker.metricool.com/resources/be.js', 1]
+  ]) {
+    assert.equal(production.inserted.filter(s => String(s.src||'').includes(needle)).length, expected, needle);
+  }
+  assert.equal(production.window.dataLayer.length, 2, 'one js init and one GA4 config');
 });
