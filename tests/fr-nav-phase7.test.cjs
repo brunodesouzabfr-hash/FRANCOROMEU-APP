@@ -164,19 +164,45 @@ test('F7.1: destroy restores old navbar and all original links without duplicati
  assert.equal(api.mount(),true);assert.equal(api.getState().position,'footer');
  api.destroy();f.dom.window.close();
 });
-test('mobile navbar reuses desktop route icons, contacts and capsule in both dock positions',()=>{
+test('mobile navbar presents labelled route icons and hides quick social/search controls only on mobile',()=>{
  const mobile=css.slice(css.indexOf('/* Mobile parity with desktop'));
  assert.match(mobile,/@media\(max-width:750px\)/);
- assert.match(mobile,/\.nav-items,\s*\n html body #smart-nav[^\n]*data-fr-nav7-position="footer"\] \.nav-items/);
- assert.match(mobile,/display:flex!important;flex:1 1 0!important/);
  assert.match(mobile,/overflow-x:auto!important;overflow-y:hidden!important/);
  assert.match(mobile,/scroll-snap-type:x proximity/);
- assert.match(mobile,/width:44px!important;min-width:44px!important;max-width:44px!important/);
- assert.match(mobile,/\.fr-site-nav-contact\{flex:0 0 auto!important/);
- assert.match(mobile,/\.fr-site-nav-contact #fr-site-menu-open\{display:none!important/);
- assert.match(mobile,/data-fr-nav7-position="footer"/);
- // Existing route/assistive text remains in the DOM; CSS only conceals labels visually.
+ assert.match(mobile,/\.nav-items>li#fr-global-search-item\{display:none!important/);
+ assert.match(mobile,/\.fr-site-nav-contact\{display:none!important/);
+ assert.match(mobile,/flex-direction:column!important/);
+ assert.match(mobile,/\.nav-label\{[\s\S]*?position:static!important/);
+ assert.match(mobile,/font:600 9px\/1\.1/);
+ assert.match(mobile,/data-fr-nav7-state="immersive"/);
  assert.equal((html().match(/class="nav-label"/g)||[]).length,5);
+});
+test('F7.3: mobile split immersion makes the nav invisible and inert; it restores after exit or entering budget',()=>{
+ const f=fixture();
+ f.w.matchMedia=query=>({matches:query==='(max-width: 750px)'});
+ const sec=f.d.createElement('section');sec.id='frms-home';sec.className='frms-section';
+ f.d.getElementById('view-home').appendChild(sec);
+ let rect={top:-20,bottom:2000,height:2020};
+ sec.getBoundingClientRect=()=>rect;
+ const api=boot(f);
+ f.scroll(250);
+ assert.equal(api.getState().immersive,true);
+ assert.equal(f.nav.dataset.frNav7State,'immersive');
+ assert.equal(f.nav.inert,true,'immersive nav cannot retain focus');
+ rect={top:-1800,bottom:200,height:2000};
+ f.scroll(1700);
+ assert.equal(api.getState().immersive,false);
+ assert.equal(f.nav.inert,false);
+ assert.equal(f.nav.dataset.frNav7State,'footer');
+ rect={top:0,bottom:3000,height:3000};
+ f.d.getElementById('view-home').classList.remove('active');
+ f.d.getElementById('view-orcamento').classList.add('active');
+ f.d.dispatchEvent(new f.w.CustomEvent('frViewChanged',{detail:{viewId:'view-orcamento'}}));
+ assert.equal(api.getState().immersive,false);
+ assert.equal(api.getState().budgetPinned,true);
+ assert.equal(f.nav.dataset.frNav7State,'header');
+ assert.equal(f.nav.inert,false);
+ api.destroy();f.dom.window.close();
 });
 test('F7.1: CSS enforces single centered, round, mobile-safe budget geometry and real vertical morph',()=>{
  assert.match(css,/border-radius:999px!important/);
