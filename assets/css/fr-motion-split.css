@@ -123,3 +123,26 @@
  .frms-section .frms-card-title{font-size:clamp(20px,6vw,25px)}
  .frms-section .frms-top{left:12px;right:12px;font-size:7px;letter-spacing:.08em}
 }
+
+/* Compact editorial inset to expose more of both compared photographs. */
+@media(max-width:750px){
+ .frms-section .frms-cards{
+  bottom:clamp(144px,18svh,176px);
+  height:min(23svh,154px);max-height:154px;
+ }
+ .frms-section[data-frms-kind] .frms-card{
+  width:min(74vw,246px);min-height:0;max-height:100%;
+  padding:9px 11px;gap:5px;
+ }
+ .frms-section .frms-card:before{inset:5px}
+ .frms-section .frms-card-title{font-size:clamp(18px,5.3vw,24px);line-height:1.02}
+ .frms-section .frms-card-kicker{margin-bottom:2px}
+ .frms-section .frms-card-top{font-size:8px}
+ .frms-section .frms-card-index{font-size:19px}
+ .frms-section .frms-card-foot p{font-size:10px;line-height:1.18}
+ .frms-section .frms-card-foot a{width:44px;height:44px}
+}
+@media(max-width:390px){
+ .frms-section[data-frms-kind] .frms-card{width:min(76vw,228px);padding:8px 9px}
+ .frms-section .frms-card-title{font-size:clamp(17px,5.5vw,21px)}
+}
