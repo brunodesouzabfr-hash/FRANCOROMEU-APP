@@ -53,11 +53,16 @@
 }
 
 
-/* Keep the visual launcher compact on a phone; native Block size comes from mount
-   configuration (48px), not a transform that would shift its click portal. */
+/* Phone: shrink the complete visual rig around the renderer's body anchor.
+   Keep the native launcher and pointer portal large enough for touch. */
 @media(max-width:600px){
  #fr-ai-root.fr-block-iqe-staging #fr-ai-launcher{
   width:52px!important;height:52px!important;
   min-width:52px!important;min-height:52px!important;
+ }
+ [data-fr-block-host="launcher"] canvas[data-fr-block-avatar],
+ [data-fr-block-host="companion"] canvas[data-fr-block-avatar]{
+  transform:scale(.75);
+  transform-origin:50% 62%;
  }
 }
