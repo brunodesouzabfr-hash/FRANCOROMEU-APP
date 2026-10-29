@@ -164,18 +164,27 @@ test('F7.1: destroy restores old navbar and all original links without duplicati
  assert.equal(api.mount(),true);assert.equal(api.getState().position,'footer');
  api.destroy();f.dom.window.close();
 });
-test('mobile navbar presents labelled route icons and hides quick social/search controls only on mobile',()=>{
- const mobile=css.slice(css.indexOf('/* Mobile parity with desktop'));
+test('mobile nav: five labelled icons fit without a horizontal rail, including at 320px',()=>{
+ const mobile=css.slice(css.indexOf('/* Mobile navigation:'));
  assert.match(mobile,/@media\(max-width:750px\)/);
- assert.match(mobile,/overflow-x:auto!important;overflow-y:hidden!important/);
- assert.match(mobile,/scroll-snap-type:x proximity/);
+ assert.match(mobile,/grid-template-columns:repeat\(5,minmax\(0,1fr\)\)!important/);
+ assert.match(mobile,/overflow-x:hidden!important;overflow-y:hidden!important/);
+ assert.doesNotMatch(mobile,/overflow-x:auto!important|scroll-snap-type:x proximity|66px!important/);
+ assert.match(mobile,/--fr-nav7-h:60px/);
+ assert.match(mobile,/height:48px!important;min-height:48px!important/);
  assert.match(mobile,/\.nav-items>li#fr-global-search-item\{display:none!important/);
  assert.match(mobile,/\.fr-site-nav-contact\{display:none!important/);
  assert.match(mobile,/flex-direction:column!important/);
- assert.match(mobile,/\.nav-label\{[\s\S]*?position:static!important/);
- assert.match(mobile,/font:600 9px\/1\.1/);
+ assert.match(mobile,/\.nav-label,[\s\S]*?position:static!important/);
+ assert.match(mobile,/white-space:nowrap!important/);
  assert.match(mobile,/data-fr-nav7-state="immersive"/);
  assert.equal((html().match(/class="nav-label"/g)||[]).length,5);
+ for(const viewport of [320,360,390,430]){
+  // Viewport - outer margin - border - horizontal padding - brand gap
+  // - 44px Home area - four 1px grid gaps, divided by five routes.
+  const cell=(viewport-16-2-16-4-44-4)/5;
+  assert.ok(cell>=44,'Navigation touch target too small at '+viewport+'px: '+cell);
+ }
 });
 test('F7.3: mobile split immersion makes the nav invisible and inert; it restores after exit or entering budget',()=>{
  const f=fixture();

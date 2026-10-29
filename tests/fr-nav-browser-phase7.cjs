@@ -26,7 +26,21 @@ async function metrics(page){
    radius:c.borderTopLeftRadius,navClasses:n.className,position:window.FRNav7?.getState().position,
    navState:n.dataset.frNav7Position,bodyBudget:document.body.classList.contains('fr10-budget-active'),
    scrollY:window.scrollY,cssLeft:c.left,cssTop:c.top,inert:n.inert,menu:getComputedStyle(document.getElementById('fr-site-menu-open')).display,
-   instagram:!!n.querySelector('[data-fr-contact="instagram"]'),whatsapp:!!n.querySelector('[data-fr-contact="whatsapp"]')};
+   instagram:!!n.querySelector('[data-fr-contact="instagram"]'),whatsapp:!!n.querySelector('[data-fr-contact="whatsapp"]'),
+    mobile:innerWidth<=750?(()=>{
+      const rail=n.querySelector('.nav-items');
+      const controls=[...rail.querySelectorAll('li')].filter(li=>getComputedStyle(li).display!=='none')
+        .map(li=>li.querySelector('a,button')).filter(Boolean);
+      const boxes=controls.map(el=>el.getBoundingClientRect()),navBox=n.getBoundingClientRect();
+      return {count:controls.length,scrollWidth:rail.scrollWidth,clientWidth:rail.clientWidth,
+        allInside:boxes.every(b=>b.left>=navBox.left-1&&b.right<=navBox.right+1),
+        sameRow:boxes.every(b=>Math.abs(b.top-boxes[0].top)<=1),
+        touchTargets:boxes.every(b=>b.width>=44&&b.height>=44),
+        labelsSingleLine:controls.every(el=>{
+          const label=el.querySelector('.nav-label');
+          return !!label&&getComputedStyle(label).whiteSpace==='nowrap';
+        })};
+    })():null};
  });
 }
 function validate(m,phase,kind){
@@ -36,6 +50,15 @@ function validate(m,phase,kind){
  assert.ok(parseFloat(m.radius)>=100,'Navbar is not organically rounded in '+phase+': '+JSON.stringify(m));
  assert.ok(m.rect.left>=-1&&m.rect.right<=m.viewport.width+1,'Navbar clipped horizontally: '+JSON.stringify(m));
  assert.equal(m.inert,false,'Navbar is inert in '+phase);
+ if(m.viewport.width<=750){
+  assert.ok(m.rect.height<=64,'Mobile nav too tall: '+JSON.stringify(m));
+  assert.equal(m.mobile.count,5,'Missing mobile route: '+JSON.stringify(m));
+  assert.ok(m.mobile.scrollWidth<=m.mobile.clientWidth+1,'Mobile nav still scrollable: '+JSON.stringify(m));
+  assert.equal(m.mobile.allInside,true,'Icon outside nav capsule: '+JSON.stringify(m));
+  assert.equal(m.mobile.sameRow,true,'Icons wrapped to another row: '+JSON.stringify(m));
+  assert.equal(m.mobile.touchTargets,true,'Touch target below 44px: '+JSON.stringify(m));
+  assert.equal(m.mobile.labelsSingleLine,true,'Labels wrapped: '+JSON.stringify(m));
+ }
  if(kind==='footer'){
   assert.ok(m.rect.bottom<m.viewport.height-3&&m.rect.bottom>m.viewport.height-95,'Floating dock not near footer in '+phase+': '+JSON.stringify(m));
  }else{
