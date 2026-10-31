@@ -297,3 +297,168 @@ html.fr7-low-power body #smart-nav[data-fr-nav7-version="7.1"]:not(.fr-nav7-disa
   display:none!important;
  }
 }
+
+/* FR optical liquid glass — site-compatible analogue of Expo's native glass.
+   Progressive enhancement: real backdrop translucency, multi-angle Fresnel
+   reflections and a bounded convex lens for the selected destination.
+   Never distort the glyph or let decorative layers capture pointer events. */
+html body #smart-nav[data-fr-nav7-version="7.1"]:not(.fr-nav7-disabled),
+html.frqm-ready body #smart-nav[data-fr-nav7-version="7.1"]:not(.fr-nav7-disabled){
+  --fr-glass-highlight:rgba(243,255,247,.72);
+  --fr-glass-edge:rgba(225,250,236,.29);
+  --fr-glass-shadow:rgba(0,11,8,.48);
+  background:
+    linear-gradient(116deg,rgba(245,255,247,.14) 0%,rgba(249,255,248,.035) 19%,transparent 43%),
+    linear-gradient(164deg,rgba(10,47,38,.69),rgba(3,24,18,.56) 45%,rgba(18,63,52,.58) 82%,rgba(3,24,18,.71))!important;
+  border:1px solid var(--fr-glass-edge)!important;
+  border-radius:999px!important;clip-path:none!important;
+  -webkit-backdrop-filter:blur(20px) saturate(1.65) contrast(1.08) brightness(1.08)!important;
+  backdrop-filter:blur(20px) saturate(1.65) contrast(1.08) brightness(1.08)!important;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.48),
+    inset 0 -1px 0 rgba(20,77,60,.7),
+    inset 2px 0 8px rgba(232,255,240,.09),
+    inset -3px 0 8px rgba(0,15,12,.24),
+    0 12px 40px rgba(0,10,8,.40),
+    0 0 0 1px rgba(245,255,239,.045)!important;
+}
+html body #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"]:not(.fr-nav7-disabled),
+html.frqm-ready body #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"]:not(.fr-nav7-disabled){
+  background:
+    linear-gradient(121deg,rgba(255,255,255,.13),transparent 29%,rgba(235,255,246,.045) 77%),
+    linear-gradient(160deg,rgba(7,40,31,.66),rgba(3,24,18,.48) 48%,rgba(14,55,42,.68))!important;
+}
+html body #smart-nav[data-fr-nav7-version="7.1"]::before,
+html.frqm-ready body #smart-nav[data-fr-nav7-version="7.1"]::before{
+  content:""!important;position:absolute!important;inset:0!important;z-index:0!important;
+  border-radius:inherit!important;pointer-events:none!important;
+  background:
+    radial-gradient(ellipse at 15% 0%,rgba(250,255,245,.16),transparent 43%),
+    radial-gradient(ellipse at 92% 100%,rgba(190,243,208,.08),transparent 39%)!important;
+  animation:none!important;filter:none!important;transform:none!important;
+  opacity:1!important;will-change:auto!important;
+}
+html body #smart-nav[data-fr-nav7-version="7.1"]::after,
+html.frqm-ready body #smart-nav[data-fr-nav7-version="7.1"]::after{
+  content:""!important;position:absolute!important;inset:0!important;z-index:1!important;
+  width:auto!important;height:auto!important;left:0!important;right:0!important;
+  top:0!important;bottom:0!important;border-radius:inherit!important;
+  padding:1px!important;pointer-events:none!important;opacity:1!important;
+  background:linear-gradient(118deg,rgba(255,255,255,.84) 0%,rgba(255,255,255,.27) 14%,rgba(255,255,255,.035) 42%,rgba(196,255,214,.39) 75%,rgba(255,255,255,.15) 100%)!important;
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0)!important;
+  -webkit-mask-composite:xor!important;mask-composite:exclude!important;
+  transform:none!important;animation:none!important;
+}
+html body #smart-nav[data-fr-nav7-version="7.1"]>*{
+  position:relative;z-index:2;
+}
+/* The active environment/page icon is seen through a small convex optical lens.
+   Lens highlights and the refracted backdrop are behind the icon, never on text. */
+html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items :is(.nav-link,.nav-cta):is(.active-nav,[aria-current="page"]),
+html.frqm-ready body #smart-nav[data-fr-nav7-version="7.1"] .nav-items :is(.nav-link,.nav-cta):is(.active-nav,[aria-current="page"]){
+  --fr-glass-lens-size:36px;
+  --fr-glass-lens-x:19px;
+  --fr-glass-lens-y:50%;
+  position:relative!important;isolation:isolate!important;
+  border:1px solid rgba(229,255,238,.26)!important;
+  border-radius:999px!important;
+  color:#f4f9ec!important;
+  background:linear-gradient(147deg,rgba(244,255,251,.17),rgba(236,255,247,.035) 44%,rgba(4,29,22,.18) 100%)!important;
+  -webkit-backdrop-filter:blur(3px) saturate(1.65) brightness(1.12)!important;
+  backdrop-filter:blur(3px) saturate(1.65) brightness(1.12)!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.29),inset 0 -1px 0 rgba(0,18,14,.3),0 3px 13px rgba(0,10,8,.22)!important;
+}
+html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items :is(.nav-link,.nav-cta):is(.active-nav,[aria-current="page"])::before,
+html.frqm-ready body #smart-nav[data-fr-nav7-version="7.1"] .nav-items :is(.nav-link,.nav-cta):is(.active-nav,[aria-current="page"])::before{
+  content:""!important;display:block!important;position:absolute!important;z-index:0!important;
+  top:var(--fr-glass-lens-y)!important;left:var(--fr-glass-lens-x)!important;
+  inset:auto!important; /* Optical lens keeps its own footprint. */
+  top:var(--fr-glass-lens-y)!important;left:var(--fr-glass-lens-x)!important;
+  width:var(--fr-glass-lens-size)!important;height:var(--fr-glass-lens-size)!important;
+  border-radius:50%!important;aspect-ratio:1!important;pointer-events:none!important;
+  border:1px solid rgba(247,255,248,.56)!important;
+  background:
+    radial-gradient(circle at 23% 17%,rgba(255,255,255,.38),transparent 38%),
+    radial-gradient(circle at 78% 83%,rgba(1,30,23,.26),transparent 57%),
+    linear-gradient(137deg,rgba(246,255,252,.17),rgba(255,255,255,.015) 44%,rgba(192,241,220,.13))!important;
+  -webkit-backdrop-filter:blur(2px) saturate(1.95) contrast(1.18)!important;
+  backdrop-filter:blur(2px) saturate(1.95) contrast(1.18)!important;
+  box-shadow:
+    inset 1px 2px 2px rgba(255,255,255,.46),
+    inset -2px -3px 4px rgba(3,29,22,.46),
+    inset 0 0 8px rgba(235,255,247,.18),
+    0 3px 10px rgba(0,11,8,.26),
+    0 0 0 1px rgba(255,255,255,.065)!important;
+  opacity:1!important;filter:none!important;
+  transform:translate(-50%,-50%)!important;animation:none!important;
+  transition:box-shadow .25s ease,background .25s ease!important;
+}
+html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items :is(.nav-link,.nav-cta):is(.active-nav,[aria-current="page"])::after,
+html.frqm-ready body #smart-nav[data-fr-nav7-version="7.1"] .nav-items :is(.nav-link,.nav-cta):is(.active-nav,[aria-current="page"])::after{
+  content:""!important;display:block!important;position:absolute!important;z-index:1!important;
+  inset:auto!important;top:var(--fr-glass-lens-y)!important;left:var(--fr-glass-lens-x)!important;
+  width:var(--fr-glass-lens-size)!important;height:var(--fr-glass-lens-size)!important;
+  border:0!important;border-radius:50%!important;pointer-events:none!important;
+  background:
+    radial-gradient(ellipse at 28% 18%,rgba(255,255,255,.65) 0%,rgba(255,255,255,.14) 13%,transparent 42%),
+    radial-gradient(ellipse at 84% 82%,transparent 53%,rgba(235,255,248,.37) 82%,transparent 93%)!important;
+  opacity:.85!important;box-shadow:none!important;filter:none!important;
+  transform:translate(-50%,-50%)!important;animation:none!important;
+}
+html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items :is(.nav-link,.nav-cta):is(.active-nav,[aria-current="page"]) :is(i,.nav-label){
+  position:relative!important;z-index:3!important;
+  text-shadow:0 1px 5px rgba(0,15,12,.65)!important;
+}
+html body #smart-nav[data-fr-nav7-version="7.1"][data-fr-nav7-position="footer"] .nav-items :is(.nav-link,.nav-cta):is(.active-nav,[aria-current="page"]){
+  --fr-glass-lens-x:50%;
+}
+/* In narrow devices the button must remain 48px high and labels never wrap.
+   34px lenses are fully contained in the five-column grid even at 320px. */
+@media(max-width:750px){
+  html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items :is(.nav-link,.nav-cta):is(.active-nav,[aria-current="page"]){
+    --fr-glass-lens-size:34px;--fr-glass-lens-x:50%;--fr-glass-lens-y:18px;
+    border-radius:12px!important;min-width:0!important;max-width:100%!important;
+    height:48px!important;min-height:48px!important;max-height:48px!important;
+    flex-direction:column!important;overflow:hidden!important;
+  }
+  html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items :is(.nav-link,.nav-cta):is(.active-nav,[aria-current="page"]) .nav-label{
+    white-space:nowrap!important;text-overflow:ellipsis!important;
+  }
+}
+/* Low-power, reduced-transparency and forced-colors fallbacks: readable, solid. */
+@supports not ((-webkit-backdrop-filter:blur(1px)) or (backdrop-filter:blur(1px))){
+  html body #smart-nav[data-fr-nav7-version="7.1"]:not(.fr-nav7-disabled){
+    background:linear-gradient(112deg,#0a2f26,#031812 64%,#123f34)!important;
+  }
+  html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items :is(.nav-link,.nav-cta):is(.active-nav,[aria-current="page"]){
+    background:rgba(28,76,60,.94)!important;
+  }
+}
+html.fr7-low-power body #smart-nav[data-fr-nav7-version="7.1"]:not(.fr-nav7-disabled){
+  -webkit-backdrop-filter:none!important;backdrop-filter:none!important;
+  background:linear-gradient(112deg,#0a2f26,#031812 64%,#123f34)!important;
+}
+html.fr7-low-power body #smart-nav[data-fr-nav7-version="7.1"] .nav-items :is(.nav-link,.nav-cta):is(.active-nav,[aria-current="page"]){
+  -webkit-backdrop-filter:none!important;backdrop-filter:none!important;
+}
+html.fr7-low-power body #smart-nav[data-fr-nav7-version="7.1"] .nav-items :is(.nav-link,.nav-cta):is(.active-nav,[aria-current="page"])::before{
+  -webkit-backdrop-filter:none!important;backdrop-filter:none!important;
+}
+@media(prefers-reduced-motion:reduce){
+  html body #smart-nav[data-fr-nav7-version="7.1"]::before,
+  html body #smart-nav[data-fr-nav7-version="7.1"]::after,
+  html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items :is(.nav-link,.nav-cta):is(.active-nav,[aria-current="page"])::before,
+  html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items :is(.nav-link,.nav-cta):is(.active-nav,[aria-current="page"])::after{
+    animation:none!important;transition:none!important;
+  }
+}
+@media(forced-colors:active){
+  html body #smart-nav[data-fr-nav7-version="7.1"]:not(.fr-nav7-disabled){
+    -webkit-backdrop-filter:none!important;backdrop-filter:none!important;
+    background:Canvas!important;border:1px solid CanvasText!important;
+  }
+  html body #smart-nav[data-fr-nav7-version="7.1"]::before,
+  html body #smart-nav[data-fr-nav7-version="7.1"]::after,
+  html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items :is(.nav-link,.nav-cta):is(.active-nav,[aria-current="page"])::before,
+  html body #smart-nav[data-fr-nav7-version="7.1"] .nav-items :is(.nav-link,.nav-cta):is(.active-nav,[aria-current="page"])::after{display:none!important}
+}

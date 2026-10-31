@@ -231,3 +231,18 @@ test('F7.1: CSS enforces single centered, round, mobile-safe budget geometry and
  assert.doesNotMatch(runtime,/\.showModal\(/);
  assert.doesNotMatch(runtime,/fr-nav7-concealed/);
 });
+test('F7 glass: transparent navbar and selected circular lens preserve mobile geometry',()=>{
+ const glass=css.slice(css.indexOf('/* FR optical liquid glass'));
+ assert.match(glass,/backdrop-filter:blur\(20px\) saturate\(1\.65\)/);
+ assert.match(glass,/--fr-glass-lens-size:36px/);
+ assert.match(glass,/--fr-glass-lens-size:34px/);
+ assert.match(glass,/\[aria-current="page"\]/);
+ assert.match(glass,/border-radius:50%!important;aspect-ratio:1!important/);
+ assert.match(glass,/@media\(max-width:750px\)/);
+ assert.match(glass,/white-space:nowrap!important/);
+ assert.match(glass,/@media\(forced-colors:active\)/);
+ assert.match(glass,/@media\(prefers-reduced-motion:reduce\)/);
+ assert.doesNotMatch(glass,/grid-template-columns|overflow-x:auto|pointer-events:auto|addEventListener/);
+ // The previous mobile rail fix remains byte-for-byte above the new skin.
+ assert.match(css,/grid-template-columns:repeat\(5,minmax\(0,1fr\)\)!important/);
+});
