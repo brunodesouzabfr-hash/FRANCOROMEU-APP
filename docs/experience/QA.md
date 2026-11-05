@@ -44,3 +44,7 @@ Orçamento, preços, fórmulas, `serviceId`, persistência e contatos não foram
 ## Publicação
 
 Esta entrega prepara a branch e a prévia. A aplicação da versão na `main` e no domínio oficial depende da autorização de merge/publicação prevista no `AGENTS.md` do repositório.
+
+## Compatibilidade da validação visual no GitHub
+
+O workflow auxiliar do Block falhou na instalação do Chromium porque `ubuntu-latest` passou a usar Ubuntu 26.04, incompatível com o Playwright 1.56.1 já fixado no próprio workflow. O runner desse workflow foi fixado em `ubuntu-24.04`, preservando a versão do harness e todos os testes. Não houve alteração no personagem ou nos motores do site. A validação é executada novamente no PR.
