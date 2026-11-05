@@ -43,6 +43,9 @@ module.exports=function buildCase(publicDoc,output,prepared){
   const schema=doc.createElement('script');schema.type='application/ld+json';schema.textContent=JSON.stringify(composeGraph({sourceGraph:prepared.sourceGraph,organization:prepared.l.organization,pageNodes:[{'@type':'CreativeWork','@id':origin+route+'#study',name:'Cozinha e lavanderia — projeto em estudo',url:origin+route,image:origin+'/'+variant.file,creativeWorkStatus:'Estudo visual de projeto',publisher:{'@id':origin+'/#organization'}},breadcrumb(route,'Cozinha e lavanderia',{name:'Jornal Técnico',route:'/projetos/'})]}));doc.head.appendChild(schema);
   for(const file of ['fr-project-library.js','media-catalog.js','fr-media-case.js']){const script=doc.createElement('script');script.src='/assets/js/'+file;doc.body.appendChild(script);}
   const boot=doc.createElement('script');boot.textContent='window.FRMediaCase.mount("#fr-case-gallery",window.FR_MEDIA_CATALOG,{assetPrefix:"/"});';doc.body.appendChild(boot);
+  const evidence=require('../src/fr-evidence-scenes.cjs');
+  doc.querySelector('.fr-case-hero').insertAdjacentHTML('afterend',evidence.projectScenes(prepared,'fres-case'));
+  evidence.addResources(doc);
   const file=path.join(output,route.slice(1)+'.html');fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,'<!doctype html>\n'+doc.documentElement.outerHTML);dom.window.close();
   return {route,images:catalog.assets.map(a=>a.variants[Math.min(1,a.variants.length-1)].file)};
 };

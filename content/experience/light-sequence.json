@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "source_media_id": "FR-M-986CF342224E81F1",
+  "source_file": "prepared-media/editorial/cozinha-env-lavanderia-imagem-ilustrativa-986cf34222.webp",
+  "nature": "GENERATED_LIGHTING_STUDY",
+  "width": 1122,
+  "height": 1402,
+  "night_ceiling": "off",
+  "states": [
+    {
+      "hour": "06h",
+      "title": "Primeira luz",
+      "description": "Luz natural discreta; ripado, pendentes, móveis e sóculos com luz quente.",
+      "file": "assets/experience/light-sequence/cozinha-quartzo-luz-06h.webp",
+      "alt": "Cozinha e lavanderia às 06h — estudo visual de iluminação. Luz natural discreta; ripado, pendentes, móveis e sóculos com luz quente."
+    },
+    {
+      "hour": "09h",
+      "title": "Luz da manhã",
+      "description": "Luz natural predominante, teto frio de apoio e luz quente reduzida.",
+      "file": "assets/experience/light-sequence/cozinha-quartzo-luz-09h.webp",
+      "alt": "Cozinha e lavanderia às 09h — estudo visual de iluminação. Luz natural predominante, teto frio de apoio e luz quente reduzida."
+    },
+    {
+      "hour": "12h",
+      "title": "Pleno dia",
+      "description": "Luz natural ampla; iluminação elétrica apagada.",
+      "file": "assets/experience/light-sequence/cozinha-quartzo-luz-12h.webp",
+      "alt": "Cozinha e lavanderia às 12h — estudo visual de iluminação. Luz natural ampla; iluminação elétrica apagada."
+    },
+    {
+      "hour": "17h",
+      "title": "Luz de tarefa",
+      "description": "Luz natural neutra, teto frio ativo e luz quente discreta, sem efeito de pôr do sol.",
+      "file": "assets/experience/light-sequence/cozinha-quartzo-luz-17h.webp",
+      "alt": "Cozinha e lavanderia às 17h — estudo visual de iluminação. Luz natural neutra, teto frio ativo e luz quente discreta, sem efeito de pôr do sol."
+    },
+    {
+      "hour": "22h",
+      "title": "Luz de acolher",
+      "description": "Noite com teto apagado e luz quente do ripado, móveis, pendentes e sóculos.",
+      "file": "assets/experience/light-sequence/cozinha-quartzo-luz-22h.webp",
+      "alt": "Cozinha e lavanderia às 22h — estudo visual de iluminação. Noite com teto apagado e luz quente do ripado, móveis, pendentes e sóculos."
+    }
+  ]
+}

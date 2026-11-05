@@ -1,0 +1,170 @@
+{
+  "FR-M-B239E5912188239C": [
+    {
+      "x": 25,
+      "y": 58,
+      "title": "Quartzo Calacatta",
+      "copy": "Superfície clara da bancada, em continuidade com o frontão."
+    },
+    {
+      "x": 59,
+      "y": 49,
+      "title": "Cuba e metais",
+      "copy": "A cuba preta e os metais se concentram na área de preparo e lavagem."
+    },
+    {
+      "x": 48,
+      "y": 76,
+      "title": "Marcenaria inferior",
+      "copy": "Gavetas e portas aproveitam o volume sob a bancada como armazenamento."
+    },
+    {
+      "x": 47,
+      "y": 88,
+      "title": "Luz no sóculo",
+      "copy": "A luz indireta no recuo inferior destaca o volume dos móveis."
+    }
+  ],
+  "FR-M-F4512475BCC65053": [
+    {
+      "x": 48,
+      "y": 53,
+      "title": "Tampo em quartzo Calacatta",
+      "copy": "A superfície clara delimita o cooktop e a área de apoio da ilha."
+    },
+    {
+      "x": 56,
+      "y": 72,
+      "title": "Frente ripada amadeirada",
+      "copy": "O ritmo vertical do ripado conecta a base ao painel e ao teto."
+    },
+    {
+      "x": 56,
+      "y": 90,
+      "title": "Iluminação da base",
+      "copy": "A luz indireta acompanha o recuo junto ao piso."
+    },
+    {
+      "x": 72,
+      "y": 27,
+      "title": "Dois pendentes",
+      "copy": "Os dois pontos suspensos marcam a área da ilha e do apoio amadeirado."
+    }
+  ],
+  "FR-M-78D797DA36E52BEE": [
+    {
+      "x": 49,
+      "y": 45,
+      "title": "Torre quente",
+      "copy": "Forno e micro-ondas agrupados em um módulo vertical."
+    },
+    {
+      "x": 49,
+      "y": 20,
+      "title": "Marcenaria cinza",
+      "copy": "Portas alinhadas prolongam o volume da torre até a parte superior."
+    },
+    {
+      "x": 80,
+      "y": 36,
+      "title": "Nicho amadeirado",
+      "copy": "O nicho aberto cria uma área de apoio em contraste com as frentes cinza."
+    },
+    {
+      "x": 83,
+      "y": 55,
+      "title": "Frontão claro",
+      "copy": "A superfície vertical acompanha o canto da bancada."
+    }
+  ],
+  "FR-M-85813FC193F39D38": [
+    {
+      "x": 80,
+      "y": 61,
+      "title": "Bancada da lavanderia",
+      "copy": "A bancada clara se organiza sobre a máquina frontal e os módulos inferiores."
+    },
+    {
+      "x": 77,
+      "y": 29,
+      "title": "Armários superiores",
+      "copy": "O armazenamento ocupa a faixa alta, preservando a área de trabalho."
+    },
+    {
+      "x": 44,
+      "y": 11,
+      "title": "Percursos de luz",
+      "copy": "Linhas no teto acompanham a extensão e os encontros do ambiente."
+    },
+    {
+      "x": 68,
+      "y": 77,
+      "title": "Máquina frontal",
+      "copy": "O equipamento se integra ao volume sob a bancada."
+    }
+  ],
+  "FR-M-45222B69BBC5B8EE": [
+    {
+      "x": 47,
+      "y": 28,
+      "title": "Quartzo Calacatta no frontão",
+      "copy": "O acabamento claro e marmorizado aparece na superfície vertical."
+    },
+    {
+      "x": 65,
+      "y": 51,
+      "title": "MDP cinza no tampo",
+      "copy": "O tampo horizontal cinza é distinto do frontão mineral claro."
+    },
+    {
+      "x": 67,
+      "y": 74,
+      "title": "Marcenaria inferior",
+      "copy": "As frentes cinza acompanham o desenho em L da área de apoio."
+    },
+    {
+      "x": 63,
+      "y": 18,
+      "title": "Luz sob o armário",
+      "copy": "A faixa de luz acompanha o encontro com o nicho superior."
+    }
+  ],
+  "FR-M-986CF342224E81F1": [
+    {
+      "x": 12,
+      "y": 65,
+      "title": "Quartzo Calacatta",
+      "copy": "Bancada e frontão claros organizam a área de apoio e prolongam a leitura da superfície."
+    },
+    {
+      "x": 35,
+      "y": 10,
+      "title": "Luz fria no teto",
+      "copy": "Os percursos em L distribuem a luz geral e de tarefa. Na sequência de horários, ela cede lugar à iluminação indireta à noite."
+    },
+    {
+      "x": 66,
+      "y": 91,
+      "title": "Luz quente nos sóculos",
+      "copy": "A luz sob os móveis acompanha o piso e destaca o recuo da base, criando uma cena de baixa intensidade."
+    },
+    {
+      "x": 95,
+      "y": 34,
+      "title": "Ripado com luz quente",
+      "copy": "A linha de luz acompanha o ripado da parede ao teto e reforça a continuidade entre os planos."
+    },
+    {
+      "x": 20,
+      "y": 76,
+      "title": "Marcenaria sob a bancada",
+      "copy": "Portas e gavetas aproveitam a faixa inferior sem interromper a circulação entre cozinha e lavanderia."
+    },
+    {
+      "x": 71,
+      "y": 54,
+      "title": "Ilha e cooktop",
+      "copy": "O cooktop ocupa o tampo claro; o apoio amadeirado ao lado amplia a área de uso da ilha."
+    }
+  ]
+}

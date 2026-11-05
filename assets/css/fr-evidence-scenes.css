@@ -1,0 +1,111 @@
+@font-face{font-family:"FR Evidence Stencil";src:url('/assets/fonts/StardosStencil-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"FR Evidence Stencil";src:url('/assets/fonts/StardosStencil-Bold.ttf') format('truetype');font-weight:700;font-display:swap}
+.fres,.fres-scene,.fres-annotation{--fres-bg:#0a2f26;--fres-deep:#031812;--fres-paper:#e6d6b5;--fres-gold:#f6a700;--fres-accent:#fc7016;--fres-ease:cubic-bezier(.16,1,.3,1);font-family:"FR Evidence Stencil","Stardos Stencil",serif;color:var(--fres-paper);box-sizing:border-box}
+.fres *,.fres-scene *,.fres-annotation *{box-sizing:border-box}
+.fres{position:relative;background:var(--fres-bg);padding:clamp(48px,8vw,120px) clamp(18px,5vw,80px);overflow:clip}
+.fres h2,.fres h3,.fres p{color:inherit;font-family:inherit;margin:0;font-weight:400;text-transform:none}
+.fres h2{font-size:clamp(2.5rem,5.9vw,6.5rem);line-height:1;letter-spacing:-.035em;text-wrap:balance}
+.fres h3{font-size:clamp(1.6rem,2.6vw,3.2rem);line-height:1.12;letter-spacing:-.02em;text-wrap:balance}
+.fres p{font-size:clamp(16px,1.2vw,19px);line-height:1.65}
+.fres .fres-eyebrow{font-size:12px;font-weight:700;letter-spacing:.16em;line-height:1.7;text-transform:uppercase;color:var(--fres-gold)}
+.fres-section-head{max-width:1000px;display:grid;gap:24px;margin-bottom:clamp(48px,7vw,100px);border-top:1px solid #e6d6b53d;padding-top:24px}
+.fres-section-head>p:not(.fres-eyebrow){max-width:580px}
+.fres .fres-origin{font-size:14px;line-height:1.6;opacity:.74}
+.fres :is(button,a,input):focus-visible,.fres-scene :is(button,a,input):focus-visible,.fres-annotation button:focus-visible{outline:2px solid var(--fres-gold);outline-offset:4px}
+.fres-text-link{display:inline-flex;align-items:center;min-height:44px;padding:10px 0;color:var(--fres-paper);text-decoration:none;border-bottom:1px solid #f6a70099;line-height:1.5;font-family:inherit;width:fit-content}
+.fres-text-link:hover{color:var(--fres-gold)}
+.fres-anchor{position:absolute;top:0;scroll-margin-top:90px}
+.fres-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.fres-organic-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:clamp(20px,5vw,90px);row-gap:clamp(60px,8vw,140px);align-items:start}
+.fres-organic-card{grid-column:1/8;min-width:0;margin:0}
+.fres-organic-card:nth-child(6n+2){grid-column:9/13;margin-top:22vw}
+.fres-organic-card:nth-child(6n+3){grid-column:2/7;margin-top:-6vw}
+.fres-organic-card:nth-child(6n+4){grid-column:8/13;margin-top:13vw}
+.fres-organic-card:nth-child(6n+5){grid-column:1/6;margin-top:-4vw}
+.fres-organic-card:nth-child(6n){grid-column:7/13;margin-top:12vw}
+.fres-organic-card>header{display:grid;gap:14px;margin-bottom:22px}
+.fres-organic-card h3{font-size:clamp(1.5rem,2.3vw,2.8rem)}
+.fres-card-description{margin-top:20px;display:grid;gap:12px}
+.fres-card-description p{font-size:16px}
+.fres-continuation{border-top:1px solid #e6d6b544;padding-top:35px;margin-top:90px!important;font-size:clamp(1.8rem,4vw,4rem)!important;line-height:1.2!important}
+.fres-continuation span{display:block;font-size:16px;margin-top:20px;line-height:1.6}
+.fres-scene{position:relative;min-width:0;width:100%;font-size:14px}
+.fres-viewport{position:relative;width:100%;aspect-ratio:var(--fres-ratio,4/5);background:var(--fres-deep);overflow:hidden;isolation:isolate}
+.fres-layer{position:absolute;inset:0;will-change:auto;margin:0!important}
+.fres-layer-origin{position:absolute;bottom:12px;left:12px;right:12px;z-index:6;width:fit-content;max-width:calc(100% - 24px);padding:5px 9px!important;background:#031812e6;color:#e6d6b5!important;font:700 11px/1.5 "FR Evidence Stencil","Stardos Stencil",serif!important}
+.fres-layer:first-child{opacity:1}
+.fres-layer img{display:block!important;position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:contain!important;max-width:none!important;max-height:none!important;margin:0!important;filter:none!important;transform:none!important}
+.fres-layer[data-fres-broken]{visibility:hidden}
+.fres-stage-labels{position:absolute;left:0;right:0;top:0;display:flex;justify-content:space-between;gap:20px;padding:14px 14px 34px;background:linear-gradient(#031812cc,transparent);font-size:11px;font-weight:700;line-height:1.5;text-transform:uppercase;pointer-events:none;z-index:20}
+.fres-stage-labels>span{max-width:46%;text-wrap:balance}
+.fres-stage-labels>span:last-child{text-align:right}
+.fres-range{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:ew-resize;z-index:21;touch-action:pan-y;appearance:auto}
+.fres-range:focus-visible{opacity:1;inset:auto 12px 12px;width:calc(100% - 24px);height:44px;accent-color:var(--fres-gold);background:var(--fres-deep)}
+.fres-viewport:focus-within{outline:2px solid var(--fres-gold);outline-offset:4px}
+.fres-line{position:absolute;top:0;bottom:0;left:50%;width:1px;background:var(--fres-paper);pointer-events:none;z-index:20}
+.fres-line>span{position:absolute;top:50%;left:50%;display:grid;place-items:center;transform:translate(-50%,-50%);width:48px;height:48px;aspect-ratio:1;border:1px solid var(--fres-paper);border-radius:50%;background:#031812bd;color:var(--fres-paper);font-size:22px}
+[data-fres-mode=sequence] .fres-line,[data-fres-mode=light] .fres-line{display:none}
+[data-fres-mode=sequence] .fres-range,[data-fres-mode=light] .fres-range{cursor:ew-resize}
+.fres-scene-footer{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:60px;padding:8px 0;border-bottom:1px solid #e6d6b53d}
+.fres-scene-footer p{font-size:12px!important;font-weight:700!important;line-height:1.6!important;margin:0!important;max-width:70%}
+.fres-comparison-origin{font:700 11px/1.6 "FR Evidence Stencil","Stardos Stencil",serif!important;padding-top:10px!important;margin:0!important;opacity:.8}
+.fres-scene :is(button,summary){font-family:inherit;min-height:44px;min-width:44px;font-size:13px;font-weight:700;line-height:1.5;cursor:pointer}
+.fres-scene-footer button{color:var(--fres-paper);padding:8px 12px;background:transparent;border:1px solid #e6d6b566;border-radius:0;white-space:nowrap}
+.fres-scene-footer button[aria-pressed=true]{color:var(--fres-gold);border-color:var(--fres-gold)}
+.fres-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:6px;margin-top:12px}
+.fres-steps>button{background:var(--fres-deep);border:1px solid #e6d6b533;color:var(--fres-paper);padding:10px 12px;text-align:left;border-radius:0;display:grid;gap:6px;align-content:start}
+.fres-steps>button>span{color:var(--fres-gold);font-size:11px;line-height:1.3}
+.fres-steps>button[aria-pressed=true]{border-color:var(--fres-gold);background:#123f34}
+.fres-steps>button,.fres-steps>button:hover,.fres-steps>button:focus{color:var(--fres-paper)!important;background:var(--fres-deep)!important}
+.fres-steps>button[aria-pressed=true]{color:var(--fres-paper)!important;background:#123f34!important}
+.fres-scene-footer button,.fres-scene-footer button:hover,.fres-scene-footer button:focus{background:transparent!important;color:var(--fres-paper)!important}
+.fres-scene-footer button[aria-pressed=true]{color:var(--fres-gold)!important}
+.fres-project-grid{display:grid;gap:clamp(64px,10vw,150px)}
+.fres-archive-jump{padding:18px clamp(18px,5vw,80px);background:#0a2f26;border-block:1px solid #e6d6b533;font:700 14px/1.6 "FR Evidence Stencil","Stardos Stencil",serif}
+.fres-archive-jump a{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:center;min-height:44px;color:#e6d6b5;text-decoration:none}
+.fres-archive-jump span{color:#f6a700}
+.fres-archive-jump a:focus-visible{outline:2px solid #f6a700;outline-offset:4px}
+.fres-project{display:grid;grid-template-columns:minmax(0,.65fr) minmax(0,1fr);gap:clamp(26px,5vw,84px);align-items:start;border-top:1px solid #e6d6b533;padding-top:35px}
+.fres-project:nth-child(even){grid-template-columns:minmax(0,1fr) minmax(0,.65fr)}
+.fres-project:nth-child(even)>.fres-project-copy{order:2}
+.fres-project-copy{display:grid;gap:22px;padding-top:8px;position:sticky;top:110px}
+.fres-views{margin-top:16px;border-bottom:1px solid #e6d6b533;padding-bottom:12px}
+.fres-views summary{padding:12px 0;cursor:pointer;line-height:1.5;min-height:44px}
+.fres-view-buttons{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.fres-view-buttons>figure{margin:0;min-width:0}
+.fres-view-buttons button{width:100%}
+.fres-view-buttons button{display:grid;gap:8px;min-width:0;padding:0;border:1px solid #e6d6b533;background:var(--fres-deep);color:var(--fres-paper);text-align:left;cursor:pointer;font-family:inherit}
+.fres-view-buttons img{width:100%;height:auto;aspect-ratio:4/5;object-fit:contain;display:block}
+.fres-view-buttons span{font-size:12px;font-weight:700;line-height:1.4;padding:8px}
+.fres-light-story{height:300svh;overflow:visible;background:var(--fres-deep);padding-top:0;padding-bottom:0}
+.fres-light-sticky{position:sticky;top:80px;min-height:calc(100svh - 80px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:clamp(28px,6vw,100px);padding:22px 0 110px}
+.fres-light-copy{display:grid;gap:24px}
+.fres-light-copy h2{font-size:clamp(2.4rem,4.7vw,5rem)}
+.fres-light-copy>p{max-width:470px}
+.fres-light-comparison{width:min(100%,calc((100svh - 340px)*.8));justify-self:center}
+.fres-light-comparison .fres-steps{grid-template-columns:repeat(5,minmax(0,1fr));gap:4px}
+.fres-light-comparison .fres-steps>button{font-size:11px;font-weight:700;min-width:0;padding:8px 5px;line-height:1.35}
+.fres-light-comparison .fres-steps>button>span{display:none}
+.fres-annotated{isolation:isolate}
+.fres-annotation{position:absolute;inset:0;z-index:8;pointer-events:none;min-width:0}
+.fres-annotation-pins{display:flex;gap:6px;position:absolute;left:12px;top:12px;max-width:calc(100% - 24px)}
+.fres-annotation.fres-spatial .fres-annotation-pins{inset:0;max-width:none;display:block}
+.fres-pin{display:grid;place-items:center;pointer-events:auto;width:44px;height:44px;min-width:44px;min-height:44px;aspect-ratio:1;padding:0!important;cursor:pointer;position:relative;border:1px solid var(--fres-paper)!important;border-radius:50%!important;background:#031812e8!important;color:var(--fres-paper)!important;font:700 13px/1 "FR Evidence Stencil","Stardos Stencil",serif!important;box-shadow:0 2px 10px #03181266}
+.fres-spatial .fres-pin{position:absolute;left:var(--fres-x);top:var(--fres-y);transform:translate(-50%,-50%)}
+.fres-pin:hover,.fres-pin[aria-expanded=true]{background:var(--fres-gold)!important;color:var(--fres-deep)!important;border-color:var(--fres-gold)!important}
+.fres-annotation-panel{position:absolute;left:12px;right:12px;bottom:12px;max-height:60%;padding:18px 18px 20px;background:#031812f5;border:1px solid var(--fres-gold);pointer-events:auto;overflow:auto;box-shadow:0 10px 40px #03181299}
+.fres-annotation-panel[hidden]{display:none!important}
+.fres-annotation-panel h4{font:700 clamp(16px,1.4vw,22px)/1.3 "FR Evidence Stencil","Stardos Stencil",serif!important;color:var(--fres-paper)!important;margin:0 35px 12px 0!important;text-transform:none!important}
+.fres-annotation-panel p{font:400 16px/1.6 "FR Evidence Stencil","Stardos Stencil",serif!important;color:var(--fres-paper)!important;margin:0!important;max-width:none!important}
+.fres-annotation-panel small{display:block;font:700 11px/1.5 "FR Evidence Stencil","Stardos Stencil",serif!important;margin-top:10px;color:var(--fres-gold)}
+.fres-annotation-panel [data-fres-close]{position:absolute;top:4px;right:4px;width:44px;min-width:44px;min-height:44px;padding:0;border:0;background:transparent;color:var(--fres-paper);font-size:26px;cursor:pointer}
+.frpm-dossier-stage .fres-scene{max-width:720px;margin-inline:auto}
+.fres-scene .fres-annotation{inset:0;z-index:22}
+.fres-scene .fres-annotation:not(.fres-spatial) .fres-annotation-pins{top:auto;bottom:12px}
+.fres-scene .fres-annotation-panel{bottom:66px}
+.fres-viewport.fres-annotated .fres-layer-origin{left:auto;right:12px;max-width:calc(100% - 130px);text-align:right}
+.fres-error-note{padding:12px;background:var(--fres-deep);font:700 13px/1.6 "FR Evidence Stencil",serif}
+@media(max-width:1000px){.fres-organic-card:nth-child(n){grid-column:span 6;margin-top:0}.fres-organic-card:nth-child(even){margin-top:120px}.fres-project-copy{position:static}.fres-light-comparison{width:min(100%,calc((100svh - 340px)*.8))}}
+@media(max-width:750px){.fres{padding:48px 18px}.fres-section-head{margin-bottom:42px;gap:18px}.fres-organic-grid{display:block}.fres-organic-card:nth-child(n){margin:0 0 64px;width:94%}.fres-organic-card:nth-child(3n+2){width:90%;margin-left:auto}.fres-organic-card:nth-child(3n){width:86%;margin-left:2%}.fres-organic-card h3{font-size:1.7rem}.fres-project:nth-child(n){grid-template-columns:minmax(0,1fr);gap:24px}.fres-project:nth-child(even)>.fres-project-copy{order:0}.fres-project-grid{gap:64px}.fres-view-buttons{grid-template-columns:repeat(2,minmax(0,1fr))}.fres-light-story{height:240svh;padding:0 18px}.fres-light-sticky{top:68px;min-height:calc(100svh - 68px);grid-template-columns:minmax(0,1fr);gap:16px;padding:18px 0;align-content:start}.fres-light-copy{gap:12px}.fres-light-copy h2{font-size:clamp(1.7rem,7vw,2.5rem);line-height:1.05}.fres-light-copy>p:not(.fres-eyebrow),.fres-light-copy>a{display:none}.fres-light-comparison{width:min(100%,calc((100svh - 300px)*.8))}.fres-scene-footer{min-height:54px}.fres-scene-footer p{max-width:66%}.fres-scene-footer button{padding-inline:8px;font-size:11px}.fres-annotation-panel{padding:14px;max-height:65%}.fres-annotation-panel p{font-size:14px!important}.fres-compact .fres-stage-labels{font-size:10px}.fres-steps{grid-template-columns:repeat(auto-fit,minmax(85px,1fr))}.fres-steps>button{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.fres-light-story{height:auto!important}.fres-light-sticky{position:static;min-height:0}.fres-light-comparison{width:min(100%,480px)}.fres *,.fres-scene *{scroll-behavior:auto!important;transition-duration:.01ms!important;animation:none!important}}
+@media(forced-colors:active){.fres-pin,.fres-annotation-panel,.fres-line>span,.fres-steps>button{border:1px solid CanvasText!important}.fres-range:focus-visible{opacity:1}}

@@ -1,0 +1,42 @@
+{
+  "tool": "image_gen",
+  "source_media_id": "FR-M-986CF342224E81F1",
+  "edit_scope": "Somente iluminação, reflexos e sombras; cena e câmera preservadas visualmente.",
+  "states": [
+    {
+      "hour": "06h",
+      "file": "assets/experience/light-sequence/cozinha-quartzo-luz-06h.webp",
+      "generated_png_sha256": "e8a7cdeb5f31947c9e03fec82703153ceba30101c8208479a2b0f83dd56bd717",
+      "webp_sha256": "361158e51ca11288e107baefd18e097181655c751090b5defdbcab6e246610b4",
+      "size_bytes": 106500
+    },
+    {
+      "hour": "09h",
+      "file": "assets/experience/light-sequence/cozinha-quartzo-luz-09h.webp",
+      "generated_png_sha256": "7cc083c3b82d787fe23be86d7a7725427376af0dc214c5fd4a220a48cafeb5fd",
+      "webp_sha256": "ac0d9338221ed8a8769a9aefe012a6415de2d894f80d6de38cbf4acfb91fa09e",
+      "size_bytes": 119102
+    },
+    {
+      "hour": "12h",
+      "file": "assets/experience/light-sequence/cozinha-quartzo-luz-12h.webp",
+      "generated_png_sha256": "cf678cd1b25e3c13074367db09bc4483f321753e412f2b15c9b432aee50525b8",
+      "webp_sha256": "899a5c4e18637d22366324588a8331611aa382832c3f06a8e7fb2d89f890e371",
+      "size_bytes": 122742
+    },
+    {
+      "hour": "17h",
+      "file": "assets/experience/light-sequence/cozinha-quartzo-luz-17h.webp",
+      "generated_png_sha256": "3026a4af7ac16099aba3d9390f151a510c7f11ac9823635b947e9d46db23e59c",
+      "webp_sha256": "cd143258f829bbbdc68d34c6017651804ef388cc2db1a6e72c296ed450ca2f00",
+      "size_bytes": 111904
+    },
+    {
+      "hour": "22h",
+      "file": "assets/experience/light-sequence/cozinha-quartzo-luz-22h.webp",
+      "generated_png_sha256": "f0e454bf6448986252972f8a01fc3cffadb143083df926c114875f21dcc4412c",
+      "webp_sha256": "245134023629433020b12e344c3ffe2dd986897fd0ff349479a12bef8ca98ffc",
+      "size_bytes": 120370
+    }
+  ]
+}
