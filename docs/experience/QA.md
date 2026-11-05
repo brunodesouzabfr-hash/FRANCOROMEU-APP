@@ -48,3 +48,5 @@ Esta entrega prepara a branch e a prévia. A aplicação da versão na `main` e 
 ## Compatibilidade da validação visual no GitHub
 
 O workflow auxiliar do Block falhou na instalação do Chromium porque `ubuntu-latest` passou a usar Ubuntu 26.04, incompatível com o Playwright 1.56.1 já fixado no próprio workflow. O runner desse workflow foi fixado em `ubuntu-24.04`, preservando a versão do harness e todos os testes. Não houve alteração no personagem ou nos motores do site. A validação é executada novamente no PR.
+
+Com a instalação corrigida, o harness revelou outra expectativa anterior à `main` atual: exigia `display:flex` e uma faixa mobile com rolagem horizontal, removida pelo commit canônico `77bc205`. A verificação foi alinhada à grade compacta aprovada: cinco rotas visíveis, sem overflow, com alvos de 44 px contidos na linha e centro desobstruído. Permanecem os checks de legenda, desktop, ocultação/acessibilidade da navegação durante a imersão, geometria do comparador, saída acessível e cabeçalho fixo no orçamento. O CSS e o JavaScript da navegação não foram alterados.

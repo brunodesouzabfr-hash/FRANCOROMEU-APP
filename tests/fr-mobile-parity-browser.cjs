@@ -42,7 +42,7 @@ async function sample(page){
    nav:info(nav),navState:window.FRNav7?.getState()?.position,
    navRadius:parseFloat(getComputedStyle(nav).borderTopLeftRadius),
    navLinksDisplay:getComputedStyle(items).display,
-   navScrollWidth:items.scrollWidth,navClientWidth:items.clientWidth,
+   navItems:info(items),navScrollWidth:items.scrollWidth,navClientWidth:items.clientWidth,
    navOverflow:getComputedStyle(items).overflowX,links:items.querySelectorAll('li').length,
    instagram:getComputedStyle(nav.querySelector('[data-fr-contact="instagram"]')).display,
    whatsapp:getComputedStyle(nav.querySelector('[data-fr-contact="whatsapp"]')).display,
@@ -50,7 +50,8 @@ async function sample(page){
    captions:[...items.querySelectorAll('li a[data-fr-view]')].map(a=>{
     const label=a.querySelector('.nav-label'),icon=a.querySelector('i');
     const l=label.getBoundingClientRect(),i=icon.getBoundingClientRect();
-    return {label:label.textContent.trim(),display:getComputedStyle(label).display,
+    const bounds=info(a),hit=document.elementFromPoint((bounds.left+bounds.right)/2,(bounds.top+bounds.bottom)/2);
+    return {label:label.textContent.trim(),bounds,hit:hit?.closest('a')===a,display:getComputedStyle(label).display,
             position:getComputedStyle(label).position,iconBottom:i.bottom,labelTop:l.top};
    }),
    navVisible:getComputedStyle(nav).visibility,navInert:nav.inert,navImmersive:window.FRNav7?.getState()?.immersive??false,
@@ -87,7 +88,7 @@ async function sample(page){
    assert.ok(m.nav.left>=-tolerance&&m.nav.right<=size.width+tolerance,label+' nav outside viewport');
    assert.ok(Math.abs((m.nav.left+m.nav.right)/2-size.width/2)<=3,label+' nav not centered');
    assert.ok(m.navRadius>=100,label+' nav pill lost rounding');
-   assert.equal(m.navLinksDisplay,'flex',label+' desktop routes hidden');
+   assert.equal(m.navLinksDisplay,mobile?'grid':'flex',label+' route layout differs from approved navbar');
    assert.ok(m.links>=5,label+' missing nav icons');
    if(mobile){
     assert.equal(m.instagram,'none',label+' Instagram must be removed from mobile navbar');
@@ -99,6 +100,12 @@ async function sample(page){
      assert.equal(caption.display,'block',label+' route label invisible');
      assert.equal(caption.position,'static',label+' route label still visually hidden');
      assert.ok(caption.labelTop>=caption.iconBottom-2,label+' route label not beneath icon: '+caption.label);
+     assert.ok(caption.bounds.width>=43.5&&caption.bounds.height>=44,label+' route touch target below 44px: '+caption.label);
+     assert.ok(caption.bounds.left>=m.navItems.left-1&&caption.bounds.right<=m.navItems.right+1,
+      label+' route clipped by compact grid: '+caption.label);
+     assert.ok(caption.bounds.top>=m.navItems.top-1&&caption.bounds.bottom<=m.navItems.bottom+1,
+      label+' route outside navbar row: '+caption.label);
+     assert.equal(caption.hit,true,label+' route center is obstructed: '+caption.label);
     }
    }else{
     assert.notEqual(m.instagram,'none',label+' desktop Instagram hidden');
@@ -112,14 +119,12 @@ async function sample(page){
    assert.ok(Math.abs(m.divider.left-(m.pin.left+m.pin.width/2))<=2,label+' divider not centered');
    assert.ok(m.card&&m.controls,label+' missing scene card or controls');
    if(mobile){
-    assert.equal(m.navOverflow,'auto',label+' mobile route rail not scrollable');
+    // main 77bc205 replaced the old swipe rail with five simultaneously visible routes.
+    assert.equal(m.navOverflow,'hidden',label+' compact grid lost its overflow guard');
+    assert.ok(m.navScrollWidth<=m.navClientWidth+1,label+' compact grid still needs horizontal scrolling');
     assert.ok(m.launcher.width<=54,label+' IQE launcher oversized');
     assert.ok(m.card.bottom<=m.controls.top+2,label+' card overlaps comparison controls');
     assert.ok(m.card.width<=size.width-12,label+' card outside screen');
-    // Real touch-sized icons remain keyboard/scroll reachable even at 320px.
-    await page.evaluate(()=>{const rail=document.querySelector('#smart-nav .nav-items');rail.scrollLeft=rail.scrollWidth;});
-    const scroll=await page.evaluate(()=>{const rail=document.querySelector('#smart-nav .nav-items');return {x:rail.scrollLeft,overflow:rail.scrollWidth>rail.clientWidth}});
-    if(scroll.overflow)assert.ok(scroll.x>0,label+' route rail cannot be swiped');
    }
    await page.evaluate(()=>document.getElementById('frms-home').scrollIntoView({block:'start',behavior:'instant'}));
    if(mobile){
