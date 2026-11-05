@@ -13,7 +13,7 @@ Data: 05/11/2026. Base canônica: `8d31ff2`. Destino da implementação: branch 
 | `npm run check:idempotence` | PASS — 880 arquivos públicos idênticos em builds consecutivos; fontes rastreadas preservadas. |
 | `git diff --cached --check` | PASS. |
 
-Fingerprint público verificado: `6c28394637648671bd537b8b502a2374319b3ac77fc2e17c1e30874435d9cd9e`.
+Fingerprint público verificado: `9b8dd68f4e2155defc6d2eda0acbc894715dc8a24ce9b775248f6c9018ca551e`.
 
 Os dois ajustes em testes antigos acompanham os requisitos novos: os 60 comparativos agora são validados como 30 + 30, sem perda ou duplicação; a antiga proibição de sliders dá lugar à exigência de range com label, limites e texto acessível. As restrições de origem, claims, mídia e finanças permanecem.
 
@@ -29,6 +29,7 @@ Verificação realizada na prévia HTTP com o build público, em desktop de 1363
 - Trio da adega validado nos estados de material e ambiente, com valores 500 e 1000, três imagens carregadas e ausência de overflow lateral.
 - Contraste do botão selecionado conferido no navegador: texto `rgb(230,214,181)` sobre `rgb(18,63,52)`. Corrigida a interferência das regras antigas do Jornal.
 - Atlas de estilos inspecionado com 24 marcadores nos 12 cards, sem rolagem lateral. Descrições e IDs do catálogo original não são alterados.
+- A revisão CSS acrescenta quebra de linha às legendas numeradas e limita os centros dos pontos a 24 px da borda; assim, os botões de 44 px não são recortados quando a foto encolhe. Essa proteção de borda é posterior à inspeção visual acima.
 - Nenhum erro de JavaScript da aplicação nas páginas inspecionadas. O navegador registrou mensagens próprias da extensão, sem relação com o código do site.
 
 ## Limites e decisões de conteúdo
