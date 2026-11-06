@@ -98,7 +98,11 @@ test('Sobre, Ambientes e Portfolio refletem a limpeza seletiva e o dossier escal
  const portfolio=new JSDOM(fs.readFileSync(path.join(output,'portfolio.html'),'utf8')).window.document;
  assert.equal(portfolio.querySelectorAll('#frpm-portfolio-projects [data-frpm-dossier-open]').length,1);
  assert.equal(portfolio.querySelectorAll('#view-projetos .frpm-pair').length,0);
- assert.equal(portfolio.querySelectorAll('#frms-portfolio .frms-card').length,60);
+ assert.equal(portfolio.querySelectorAll('#fres-before-after [data-fres-pair]').length,30);
+ assert.equal(portfolio.querySelectorAll('#frms-portfolio .frms-card').length,30);
+ const splitIds=[...portfolio.querySelectorAll('#frms-portfolio .frms-card')].map(n=>n.dataset.frmsPairId);
+ const organicIds=[...portfolio.querySelectorAll('#fres-before-after [data-fres-pair]')].map(n=>n.dataset.fresPair);
+ assert.equal(new Set([...organicIds,...splitIds]).size,60,'todos os comparativos preservados, sem duplicação entre as duas animações');
  assert.equal(portfolio.querySelectorAll('#view-projetos #frmedia-cozinha-lavanderia,#view-projetos #frmedia-frontais').length,0);
  assert.equal(new Set(data.dossiers[0].media.map(m=>m.media_id)).size,48);
  assert.match(data.dossiers[0].title,/quartzo e móveis/);
@@ -160,9 +164,9 @@ test('cada ambiente mantém uma capa seguida de pares materiais/exemplo, sem car
  assert.equal(data.groups.find(g=>g.physical==='biblioteca').cover,'FR-M-14B94B3E47FB47E6');
  assert.equal(data.groups.find(g=>g.physical==='area-gourmet').cover,'FR-M-83EFB6DCE0B7B856');
 });
-test('os 60 antes/depois têm texto próprio, rótulos visíveis e comparação estática sem slider não validado',()=>{
+test('os 60 antes/depois têm texto próprio, rótulos visíveis e controle acessível validado',()=>{
  assert.equal(data.pairs.length,60);assert.ok(new Set(data.pairs.map(p=>p.initial_condition)).size>40);
- for(const p of data.pairs){const rawBefore=master.find(m=>m.media_id===p.before_media_id),rawAfter=master.find(m=>m.media_id===p.after_media_id);assert.equal(rawBefore.narrative_stage,'RECONSTRUCTED_BEFORE');assert.equal(rawAfter.narrative_stage,'ILLUSTRATIVE_AFTER');assert.equal(p.display,'SIDE_BY_SIDE');const text=fs.readFileSync(path.join(output,p.route.slice(1),'index.html'),'utf8');assert.ok(text.includes('Antes reconstituído'));assert.ok(text.includes('Depois em estudo'));assert.ok(text.includes('Intervenções representadas no estudo'));assert.doesNotMatch(text,/\[A CONFIRMAR\]|Serviços executados|type="range"|Obra executada por Franco Romeu/);}
+ for(const p of data.pairs){const rawBefore=master.find(m=>m.media_id===p.before_media_id),rawAfter=master.find(m=>m.media_id===p.after_media_id);assert.equal(rawBefore.narrative_stage,'RECONSTRUCTED_BEFORE');assert.equal(rawAfter.narrative_stage,'ILLUSTRATIVE_AFTER');assert.equal(p.display,'SIDE_BY_SIDE');const text=fs.readFileSync(path.join(output,p.route.slice(1),'index.html'),'utf8');assert.ok(text.includes('Antes reconstituído'));assert.ok(text.includes('Depois em estudo'));assert.ok(text.includes('Intervenções representadas no estudo'));assert.doesNotMatch(text,/\[A CONFIRMAR\]|Serviços executados|Obra executada por Franco Romeu/);const doc=new JSDOM(text).window.document;const range=doc.querySelector('[data-fres-mode="wipe"] input[type="range"]');assert.ok(range,'comparador acessível solicitado deve existir');assert.ok(doc.querySelector('label[for="'+range.id+'"]'));assert.equal(range.min,'0');assert.equal(range.max,'1000');assert.ok(range.getAttribute('aria-valuetext'));}
 });
 test('URLs, SHA e dimensões das famílias públicas correspondem a derivados existentes; autorização permanece bloqueada',()=>{
  assert.equal(new Set(map.media.map(m=>m.media_id)).size,284);

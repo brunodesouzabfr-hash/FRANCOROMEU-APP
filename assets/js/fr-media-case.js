@@ -74,7 +74,7 @@
     if(grouped){
       ['frmedia-cozinha-lavanderia','frmedia-frontais'].forEach(function(id){var prior=d.getElementById(id);if(prior){if(activeDialog&&prior.contains(activeDialog.dialog))closeActive();prior.remove();}});
     }else if(host)mount(host,catalog);
-    sections.forEach(function(spec){if(grouped&&spec.id==='frmedia-frontais')return;var target=d.getElementById(spec.host);if(target)mount(target,catalog,spec);});
+    sections.forEach(function(spec){if(spec.id==='frmedia-caderno'&&d.getElementById('fres-project-stages'))return;if(grouped&&spec.id==='frmedia-frontais')return;var target=d.getElementById(spec.host);if(target)mount(target,catalog,spec);});
     var view=d.getElementById('view-projetos');
     if(view&&!hostObserver&&typeof MutationObserver==='function'){hostObserver=new MutationObserver(integrate);hostObserver.observe(view,{childList:true,subtree:true});}
     if(!directObserver&&typeof MutationObserver==='function'){directObserver=new MutationObserver(integrate);d.querySelectorAll('.view-section:not(#view-projetos)').forEach(function(v){directObserver.observe(v,{childList:true})});}

@@ -51,6 +51,9 @@ jobs:
       - name: Build portable public output
         run: npm run build
 
+      - name: Validate evidence scenes, annotations and lighting
+        run: npm run test:evidence
+
       - name: Validate routes, media and public boundaries
         run: npm run check:project-library
 

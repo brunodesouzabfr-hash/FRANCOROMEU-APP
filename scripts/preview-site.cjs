@@ -27,4 +27,4 @@ http.createServer(async (req, res) => {
   res.setHeader('Content-Type', mime[path.extname(file)] || 'application/octet-stream');
   res.setHeader('Cache-Control', 'no-store');
   fs.createReadStream(file).on('error',()=>{if(!res.headersSent)res.statusCode=503;res.end('Recurso indisponível')}).pipe(res);
-}).listen(Number(process.argv[2]) || 4181, '127.0.0.1', () => console.log('FR public preview on http://127.0.0.1:' + (process.argv[2] || 4181) + ' — root: ' + root));
+}).listen(Number(process.env.PORT) || Number(process.argv[2]) || 4181, '127.0.0.1', () => console.log('FR public preview on http://127.0.0.1:' + (process.env.PORT || process.argv[2] || 4181) + ' — root: ' + root));

@@ -102,6 +102,8 @@ async function build() {
   dom.window.eval(fs.readFileSync('assets/js/fr-project-media.js','utf8'));
   dom.window.FRProjectMedia.mount();
   for(const pair of doc.querySelectorAll('.frpm-pair'))pair.hidden=false;
+  // Reuse the approved evidence interactions in Portfolio, Projetos 3D and Ambientes.
+  require('../src/fr-evidence-scenes.cjs').install(doc,prepared);
   // A concise About selection reuses the same verified media and pair routes.
   const aboutAnchor=doc.querySelector('#view-sobre #fr-google-reviews');
   if(!aboutAnchor)throw new Error('About insertion point missing');

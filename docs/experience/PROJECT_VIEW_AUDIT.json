@@ -1,0 +1,303 @@
+{
+  "source": "main 8d31ff2; data master + public case catalog + visual contact sheets + fichas",
+  "project": "FR-C001",
+  "master3DCount": 21,
+  "public3DCount": 18,
+  "allAssetsAreRaster": true,
+  "stagesAreNotProofOfExecution": true,
+  "groupCount": 10,
+  "groups": [
+    {
+      "key": "integracao",
+      "title": "Integração cozinha + lavanderia",
+      "gray": [
+        "FR-M-CBE97078012F15B9"
+      ],
+      "render": [
+        "FR-M-E3F45A71E307B2CB"
+      ],
+      "after": [
+        "FR-M-986CF342224E81F1"
+      ],
+      "before": [
+        "FR-M-2213E004D668FFE7",
+        "FR-M-97FD574B27A24F85",
+        "FR-M-76E855065475CBC5",
+        "FR-M-2D491895A6800A73",
+        "FR-M-041CB06DF6088FB5"
+      ],
+      "note": "Antes geral do conjunto. Enquadramentos e vãos diferem; não certificar registro geométrico."
+    },
+    {
+      "key": "ilha",
+      "title": "Ilha, cooktop e ripado",
+      "gray": [
+        "FR-M-1ACE6819D27F62F7",
+        "FR-M-D0CA9C7352C86C81",
+        "FR-M-44C59154F0F9D77F"
+      ],
+      "render": [
+        "FR-M-55A2676B5DF88A57"
+      ],
+      "after": [
+        "FR-M-F95547B93191E812",
+        "FR-M-80A427276CEF2366",
+        "FR-M-8C633189E65ED5DC",
+        "FR-M-F4512475BCC65053"
+      ],
+      "note": "1ACE é close de cooktop: usar F955/80A como contraparte. D0CA/44C são gerais da ilha: usar 55A e 8C633/F451. Não há demolido exclusivo do objeto."
+    },
+    {
+      "key": "frontao-direito",
+      "title": "Frontão e tampo direitos",
+      "gray": [
+        "FR-M-4B216C7E0B01FE5C"
+      ],
+      "archivedGray": [
+        "FR-M-C6EB8354C773E8BC"
+      ],
+      "after": [
+        "FR-M-45222B69BBC5B8EE",
+        "FR-M-8B1BE5288E9A1455"
+      ],
+      "note": "Render dedicado e demolido exclusivo ausentes. 45222 é close: contraparte arquivada C6EB. Tampo cinza = MDP cinza; frontão marmorizado claro = quartzo Calacatta."
+    },
+    {
+      "key": "torre-quente",
+      "title": "Torre de forno e micro-ondas",
+      "gray": [
+        "FR-M-33EC3B99BA4271D8"
+      ],
+      "after": [
+        "FR-M-78D797DA36E52BEE",
+        "FR-M-E4B37AC18D80C473"
+      ],
+      "note": "Render dedicado e antes exclusivo ausentes. Melhor contraparte 78D."
+    },
+    {
+      "key": "bancada-integrada",
+      "title": "Bancada esquerda integrada à marcenaria",
+      "gray": [
+        "FR-M-2DD45B193B9D9702"
+      ],
+      "material3d": [
+        "FR-M-60C773787F71530B",
+        "FR-M-6A31D21C884E6892"
+      ],
+      "after": [
+        "FR-M-B239E5912188239C",
+        "FR-M-09B62863B656A8A6"
+      ],
+      "beforeContext": [
+        "FR-M-FEF2552A9B9435F9"
+      ],
+      "note": "60C e 6A31 são estudos com materiais e contornos azuis, não cinza puro. FEF é contexto da parede existente; não há confirmação métrica de mesma câmera."
+    },
+    {
+      "key": "bancada-solo",
+      "title": "Bancada esquerda isolada e recorte circular",
+      "gray": [
+        "FR-M-6D1E19DB75067AB7",
+        "FR-M-66DF774C0E8C74DB"
+      ],
+      "after": [
+        "FR-M-C9098D450C5629A5"
+      ],
+      "note": "66DF e C909 são vistas gerais mais próximas; 6D1E é detalhe do encontro. Sem render isolado separado."
+    },
+    {
+      "key": "aereos-esquerdos",
+      "title": "Aéreos e alternativas da marcenaria esquerda",
+      "gray": [
+        "FR-M-9FE2462DD482033A",
+        "FR-M-134FAB7C78074791"
+      ],
+      "archivedGray": [
+        "FR-M-F725814FD7FC9320",
+        "FR-M-F63A72FEFD63CA8B"
+      ],
+      "afterContext": [
+        "FR-M-B239E5912188239C",
+        "FR-M-09B62863B656A8A6"
+      ],
+      "beforeContext": [
+        "FR-M-A2E373872F20CE3D",
+        "FR-M-88353144B4C87AAB"
+      ],
+      "note": "9FE/F725/F63A são alternativas de painel central escuro; não representam sequência cronológica comprovada. Resultado geral mostra aéreos, sem contraparte isolada da frente."
+    },
+    {
+      "key": "estante-transicao",
+      "title": "Estante de transição para lavanderia",
+      "material3d": [
+        "FR-M-3FE2CB429D6C9CFD"
+      ],
+      "after": [
+        "FR-M-6B28E6ADD278BD6B"
+      ],
+      "note": "3FE já tem madeira e luz. Cinza puro e demolido do objeto ausentes."
+    },
+    {
+      "key": "geladeira",
+      "title": "Módulo da geladeira",
+      "gray": [
+        "FR-M-5C5D18DD1BE565DC"
+      ],
+      "after": [
+        "FR-M-B7A04EF330A8B618"
+      ],
+      "note": "Sem render dedicado e sem demolido exclusivo. Geometria das portas não deve ser tomada como especificação comercial."
+    },
+    {
+      "key": "iluminacao-duplo-l",
+      "title": "Percursos de luz no teto",
+      "wireframe": [
+        "FR-M-8C6CD031AF8654B3"
+      ],
+      "after": [
+        "FR-M-F48E737A207C219A",
+        "FR-M-B0C4A0D6AF236DC2",
+        "FR-M-9313FB13273C5711"
+      ],
+      "note": "8C6 é wireframe escuro; não cinza neutro. Resultado em diferentes ângulos; E3F é apenas contexto do projeto integrado, não render isolado correspondente."
+    }
+  ],
+  "pins": {
+    "FR-M-B239E5912188239C": [
+      {
+        "x": 25,
+        "y": 58,
+        "title": "Quartzo Calacatta",
+        "copy": "Superfície clara da bancada, em continuidade com o frontão."
+      },
+      {
+        "x": 59,
+        "y": 49,
+        "title": "Cuba e metais",
+        "copy": "A cuba preta e os metais se concentram na área de preparo e lavagem."
+      },
+      {
+        "x": 48,
+        "y": 76,
+        "title": "Marcenaria inferior",
+        "copy": "Gavetas e portas aproveitam o volume sob a bancada como armazenamento."
+      },
+      {
+        "x": 47,
+        "y": 88,
+        "title": "Luz no sóculo",
+        "copy": "A luz indireta no recuo inferior destaca o volume dos móveis."
+      }
+    ],
+    "FR-M-F4512475BCC65053": [
+      {
+        "x": 48,
+        "y": 53,
+        "title": "Tampo em quartzo Calacatta",
+        "copy": "A superfície clara delimita o cooktop e a área de apoio da ilha."
+      },
+      {
+        "x": 56,
+        "y": 72,
+        "title": "Frente ripada amadeirada",
+        "copy": "O ritmo vertical do ripado conecta a base ao painel e ao teto."
+      },
+      {
+        "x": 56,
+        "y": 90,
+        "title": "Iluminação da base",
+        "copy": "A luz indireta acompanha o recuo junto ao piso."
+      },
+      {
+        "x": 72,
+        "y": 27,
+        "title": "Dois pendentes",
+        "copy": "Os dois pontos suspensos marcam a área da ilha e do apoio amadeirado."
+      }
+    ],
+    "FR-M-78D797DA36E52BEE": [
+      {
+        "x": 49,
+        "y": 45,
+        "title": "Torre quente",
+        "copy": "Forno e micro-ondas agrupados em um módulo vertical."
+      },
+      {
+        "x": 49,
+        "y": 20,
+        "title": "Marcenaria cinza",
+        "copy": "Portas alinhadas prolongam o volume da torre até a parte superior."
+      },
+      {
+        "x": 80,
+        "y": 36,
+        "title": "Nicho amadeirado",
+        "copy": "O nicho aberto cria uma área de apoio em contraste com as frentes cinza."
+      },
+      {
+        "x": 83,
+        "y": 55,
+        "title": "Frontão claro",
+        "copy": "A superfície vertical acompanha o canto da bancada."
+      }
+    ],
+    "FR-M-85813FC193F39D38": [
+      {
+        "x": 80,
+        "y": 61,
+        "title": "Bancada da lavanderia",
+        "copy": "A bancada clara se organiza sobre a máquina frontal e os módulos inferiores."
+      },
+      {
+        "x": 77,
+        "y": 29,
+        "title": "Armários superiores",
+        "copy": "O armazenamento ocupa a faixa alta, preservando a área de trabalho."
+      },
+      {
+        "x": 44,
+        "y": 11,
+        "title": "Percursos de luz",
+        "copy": "Linhas no teto acompanham a extensão e os encontros do ambiente."
+      },
+      {
+        "x": 68,
+        "y": 77,
+        "title": "Máquina frontal",
+        "copy": "O equipamento se integra ao volume sob a bancada."
+      }
+    ],
+    "FR-M-45222B69BBC5B8EE": [
+      {
+        "x": 47,
+        "y": 28,
+        "title": "Quartzo Calacatta no frontão",
+        "copy": "O acabamento claro e marmorizado aparece na superfície vertical."
+      },
+      {
+        "x": 65,
+        "y": 51,
+        "title": "MDP cinza no tampo",
+        "copy": "O tampo horizontal cinza é distinto do frontão mineral claro."
+      },
+      {
+        "x": 67,
+        "y": 74,
+        "title": "Marcenaria inferior",
+        "copy": "As frentes cinza acompanham o desenho em L da área de apoio."
+      },
+      {
+        "x": 63,
+        "y": 18,
+        "title": "Luz sob o armário",
+        "copy": "A faixa de luz acompanha o encontro com o nicho superior."
+      }
+    ]
+  },
+  "validation": {
+    "mapped3D": 21,
+    "missing": [],
+    "duplicates": []
+  },
+  "pinCoordinates": "Percentuais no enquadramento integral da imagem, origem superior esquerda; use object-fit:contain ou converta para área efetiva se houver letterbox. Não usar object-fit:cover sem reprojectar coordenadas."
+}

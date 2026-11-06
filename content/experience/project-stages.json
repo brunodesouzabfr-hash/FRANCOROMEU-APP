@@ -1,0 +1,343 @@
+{
+  "source_commit": "8d31ff2",
+  "project_id": "FR-C001",
+  "classification_note": "As imagens são estudos 3D, reconstruções ou representações visuais. A matriz não identifica fotografia documental de execução nem certifica correspondência métrica entre câmeras.",
+  "scenes": [
+    {
+      "id": "integracao",
+      "sector": "Cozinha + lavanderia",
+      "title": "Integração cozinha + lavanderia",
+      "description": "Bancada esquerda, ilha e torre direita relacionadas à passagem para a lavanderia.",
+      "note": "Vistas do mesmo setor. Cada etapa mantém seu enquadramento de origem.",
+      "stages": [
+        {
+          "stage": "before",
+          "label": "Demolido · reconstituição",
+          "media_id": "FR-M-2213E004D668FFE7"
+        },
+        {
+          "stage": "gray",
+          "label": "Projeto 3D cinza",
+          "media_id": "FR-M-CBE97078012F15B9"
+        },
+        {
+          "stage": "render",
+          "label": "Renderizado · estudo 3D",
+          "media_id": "FR-M-E3F45A71E307B2CB"
+        },
+        {
+          "stage": "result",
+          "label": "Resultado · representação visual",
+          "media_id": "FR-M-986CF342224E81F1"
+        }
+      ],
+      "views": [
+        "FR-M-CBE97078012F15B9",
+        "FR-M-E3F45A71E307B2CB"
+      ],
+      "missing_stages": [],
+      "archived_views": []
+    },
+    {
+      "id": "ilha",
+      "sector": "Cozinha · lado direito",
+      "title": "Ilha, cooktop e ripado",
+      "description": "Cooktop, tampo claro, nichos e frente ripada na mini-ilha do lado direito.",
+      "note": "Vistas do mesmo setor. Cada etapa mantém seu enquadramento de origem.",
+      "stages": [
+        {
+          "stage": "gray",
+          "label": "Projeto 3D cinza",
+          "media_id": "FR-M-D0CA9C7352C86C81"
+        },
+        {
+          "stage": "render",
+          "label": "Renderizado · estudo 3D",
+          "media_id": "FR-M-55A2676B5DF88A57"
+        },
+        {
+          "stage": "result",
+          "label": "Resultado · representação visual",
+          "media_id": "FR-M-F4512475BCC65053"
+        }
+      ],
+      "views": [
+        "FR-M-D0CA9C7352C86C81",
+        "FR-M-44C59154F0F9D77F",
+        "FR-M-55A2676B5DF88A57"
+      ],
+      "missing_stages": [
+        "before"
+      ],
+      "archived_views": []
+    },
+    {
+      "id": "cooktop-detalhe",
+      "sector": "Cozinha · lado direito",
+      "title": "O recorte do cooktop",
+      "description": "O tampo e o encontro com o cooktop, vistos na escala do detalhe.",
+      "note": "Estudo técnico e representação visual do mesmo objeto.",
+      "stages": [
+        {
+          "stage": "project-3d",
+          "label": "Projeto 3D · detalhe",
+          "media_id": "FR-M-1ACE6819D27F62F7"
+        },
+        {
+          "stage": "result",
+          "label": "Resultado · representação visual",
+          "media_id": "FR-M-F95547B93191E812"
+        }
+      ],
+      "views": [
+        "FR-M-1ACE6819D27F62F7"
+      ],
+      "missing_stages": [
+        "before",
+        "render"
+      ],
+      "archived_views": []
+    },
+    {
+      "id": "frontao-direito",
+      "sector": "Cozinha · lado direito",
+      "title": "Frontão e tampo direitos",
+      "description": "O encontro entre frontão claro e tampo cinza no canto direito da cozinha.",
+      "note": "Vistas do mesmo setor. Cada etapa mantém seu enquadramento de origem.",
+      "stages": [
+        {
+          "stage": "gray",
+          "label": "Projeto 3D cinza",
+          "media_id": "FR-M-4B216C7E0B01FE5C"
+        },
+        {
+          "stage": "result",
+          "label": "Resultado · representação visual",
+          "media_id": "FR-M-45222B69BBC5B8EE"
+        }
+      ],
+      "views": [
+        "FR-M-4B216C7E0B01FE5C"
+      ],
+      "missing_stages": [
+        "before",
+        "render"
+      ],
+      "archived_views": [
+        "FR-M-C6EB8354C773E8BC"
+      ]
+    },
+    {
+      "id": "torre-quente",
+      "sector": "Cozinha · lado direito",
+      "title": "Torre de forno e micro-ondas",
+      "description": "Forno e micro-ondas integrados a módulos verticais da marcenaria.",
+      "note": "Vistas do mesmo setor. Cada etapa mantém seu enquadramento de origem.",
+      "stages": [
+        {
+          "stage": "gray",
+          "label": "Projeto 3D cinza",
+          "media_id": "FR-M-33EC3B99BA4271D8"
+        },
+        {
+          "stage": "result",
+          "label": "Resultado · representação visual",
+          "media_id": "FR-M-78D797DA36E52BEE"
+        }
+      ],
+      "views": [
+        "FR-M-33EC3B99BA4271D8"
+      ],
+      "missing_stages": [
+        "before",
+        "render"
+      ],
+      "archived_views": []
+    },
+    {
+      "id": "bancada-integrada",
+      "sector": "Cozinha · lado esquerdo",
+      "title": "Bancada esquerda integrada à marcenaria",
+      "description": "Bancada esquerda, cuba e marcenaria superior e inferior no mesmo recorte.",
+      "note": "Vistas do mesmo setor. Cada etapa mantém seu enquadramento de origem.",
+      "stages": [
+        {
+          "stage": "gray",
+          "label": "Projeto 3D cinza",
+          "media_id": "FR-M-2DD45B193B9D9702"
+        },
+        {
+          "stage": "render",
+          "label": "Projeto 3D com materiais",
+          "media_id": "FR-M-60C773787F71530B"
+        },
+        {
+          "stage": "result",
+          "label": "Resultado · representação visual",
+          "media_id": "FR-M-B239E5912188239C"
+        }
+      ],
+      "views": [
+        "FR-M-2DD45B193B9D9702",
+        "FR-M-60C773787F71530B",
+        "FR-M-6A31D21C884E6892"
+      ],
+      "missing_stages": [
+        "before"
+      ],
+      "archived_views": []
+    },
+    {
+      "id": "bancada-solo",
+      "sector": "Cozinha · lado esquerdo",
+      "title": "Bancada esquerda isolada e recorte circular",
+      "description": "O desenho da bancada em L, do frontão, da perna e do recorte circular.",
+      "note": "Vistas do mesmo setor. Cada etapa mantém seu enquadramento de origem.",
+      "stages": [
+        {
+          "stage": "gray",
+          "label": "Projeto 3D cinza",
+          "media_id": "FR-M-66DF774C0E8C74DB"
+        },
+        {
+          "stage": "result",
+          "label": "Resultado · representação visual",
+          "media_id": "FR-M-C9098D450C5629A5"
+        }
+      ],
+      "views": [
+        "FR-M-6D1E19DB75067AB7",
+        "FR-M-66DF774C0E8C74DB"
+      ],
+      "missing_stages": [
+        "before",
+        "render"
+      ],
+      "archived_views": []
+    },
+    {
+      "id": "aereos-esquerdos",
+      "sector": "Cozinha · lado esquerdo",
+      "title": "Aéreos e alternativas da marcenaria esquerda",
+      "description": "Frentes cinza, amadeiradas e escuras no estudo dos armários superiores.",
+      "note": "Vistas do mesmo setor. Cada etapa mantém seu enquadramento de origem.",
+      "stages": [
+        {
+          "stage": "gray",
+          "label": "Projeto 3D cinza",
+          "media_id": "FR-M-9FE2462DD482033A"
+        },
+        {
+          "stage": "result",
+          "label": "Resultado · vista geral do setor",
+          "media_id": "FR-M-B239E5912188239C"
+        }
+      ],
+      "views": [
+        "FR-M-9FE2462DD482033A",
+        "FR-M-134FAB7C78074791"
+      ],
+      "missing_stages": [
+        "before",
+        "render"
+      ],
+      "archived_views": [
+        "FR-M-F725814FD7FC9320",
+        "FR-M-F63A72FEFD63CA8B"
+      ]
+    },
+    {
+      "id": "estante-transicao",
+      "sector": "Cozinha + lavanderia",
+      "title": "Estante de transição para lavanderia",
+      "description": "Estante vazada e passagem entre a cozinha e a área de serviço.",
+      "note": "Vistas do mesmo setor. Cada etapa mantém seu enquadramento de origem.",
+      "stages": [
+        {
+          "stage": "render",
+          "label": "Projeto 3D com materiais",
+          "media_id": "FR-M-3FE2CB429D6C9CFD"
+        },
+        {
+          "stage": "result",
+          "label": "Resultado · representação visual",
+          "media_id": "FR-M-6B28E6ADD278BD6B"
+        }
+      ],
+      "views": [
+        "FR-M-3FE2CB429D6C9CFD"
+      ],
+      "missing_stages": [
+        "before",
+        "gray"
+      ],
+      "archived_views": []
+    },
+    {
+      "id": "geladeira",
+      "sector": "Cozinha · lado esquerdo",
+      "title": "Módulo da geladeira",
+      "description": "O módulo da geladeira no lado físico esquerdo e sua relação com a circulação.",
+      "note": "Vistas do mesmo setor. Cada etapa mantém seu enquadramento de origem.",
+      "stages": [
+        {
+          "stage": "gray",
+          "label": "Projeto 3D cinza",
+          "media_id": "FR-M-5C5D18DD1BE565DC"
+        },
+        {
+          "stage": "result",
+          "label": "Resultado · representação visual",
+          "media_id": "FR-M-B7A04EF330A8B618"
+        }
+      ],
+      "views": [
+        "FR-M-5C5D18DD1BE565DC"
+      ],
+      "missing_stages": [
+        "before",
+        "render"
+      ],
+      "archived_views": []
+    },
+    {
+      "id": "iluminacao-duplo-l",
+      "sector": "Cozinha · lado direito",
+      "title": "Percursos de luz no teto",
+      "description": "Dois percursos de iluminação em L no teto e sua relação com a torre e os nichos.",
+      "note": "Vistas do mesmo setor. Cada etapa mantém seu enquadramento de origem.",
+      "stages": [
+        {
+          "stage": "project-3d",
+          "label": "Projeto 3D · linhas de estrutura",
+          "media_id": "FR-M-8C6CD031AF8654B3"
+        },
+        {
+          "stage": "result",
+          "label": "Resultado · representação visual",
+          "media_id": "FR-M-F48E737A207C219A"
+        }
+      ],
+      "views": [
+        "FR-M-8C6CD031AF8654B3"
+      ],
+      "missing_stages": [
+        "before",
+        "gray",
+        "render"
+      ],
+      "archived_views": []
+    }
+  ],
+  "archived_views": [
+    "FR-M-C6EB8354C773E8BC",
+    "FR-M-F725814FD7FC9320",
+    "FR-M-F63A72FEFD63CA8B"
+  ],
+  "coverage": {
+    "master_3d": 21,
+    "public_3d": 18,
+    "public_3d_in_scenes": 18,
+    "archived_3d": 3
+  }
+}
