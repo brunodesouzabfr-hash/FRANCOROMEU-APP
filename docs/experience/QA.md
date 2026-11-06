@@ -9,11 +9,11 @@ Data: 06/11/2026. Base canônica: `8d31ff2`. Destino da implementação: branch 
 | `npm test` | PASS — regressões existentes, inclusive núcleo financeiro, catálogo, IQE, navegação, mídia e SEO. |
 | `npm run test:evidence` | PASS — 15 testes para partição do Portfólio, cobertura 3D, trios de materiais, dissoluções, propriedade manual, teclado, reduced motion, marcadores, estilos e liberação do novo painel de `inert`. |
 | `npm run check:html` | PASS — seis views, ponte `__frCore`, núcleo financeiro e bridge PDF preservados. |
-| `npm run check:project-library` | PASS — 337 rotas, 2.347 imagens verificadas nas páginas e 284 registros canônicos de mídia; sem erros de referência, dimensões ou rótulos. |
+| `npm run check:project-library` | PASS — 337 rotas, 2.353 imagens verificadas nas páginas e 284 registros canônicos de mídia; sem erros de referência, dimensões ou rótulos. |
 | `npm run check:idempotence` | PASS — 880 arquivos públicos idênticos em builds consecutivos; fontes rastreadas preservadas. |
 | `git diff --cached --check` | PASS. |
 
-Fingerprint público verificado: `7d913e686373e94e1ee084c9a038d4d90f3e34bca1868e8d4ec94123af4230d2`.
+Fingerprint público verificado: `78513ae8de2ea6fb23a39f6200690a5a5c90adc126ed535e19bbb26b880daa1f`.
 
 Os dois ajustes em testes antigos acompanham os requisitos novos: os 60 comparativos agora são validados como 30 + 30, sem perda ou duplicação; a antiga proibição de sliders dá lugar à exigência de range com label, limites e texto acessível. As restrições de origem, claims, mídia e finanças permanecem.
 
@@ -61,3 +61,15 @@ Navegador: desktop 1363 × 936 e frame 390 × 844 (375 px de conteúdo). A barra
 O feed foi observado com 10 posts, 30 comparativos e três pausas editoriais. Foram conferidos indicadores e navegação entre fotos por controles e teclado, bem como a ausência de overflow da página em desktop e no frame mobile. As 30 fotos iniciais continuam presentes nos carrosséis, sem duplicar os 30 pares seguintes. O teste mobile é de layout e teclado no navegador; não representa teste em aparelho físico ou gesto de toque físico. Os erros registrados no console inspecionado pertencem à extensão do navegador, sem erro da aplicação.
 
 Evidências: `docs/experience/qa/3d-bar-20261106.png` e `docs/experience/qa/portfolio-feed-20261106.png`. A imagem da barra registra a conferência do mecanismo; a indicação de foco foi posteriormente ajustada para permanecer na alça.
+
+## Portfólio em tela cheia — 06/11/2026
+
+A versão atual substitui os cards limitados a 660 px por hero e cenas de viewport inteiro. Foi conferido no navegador: desktop de 1363 × 936, com largura útil de 1348 px; hero, cena, trilho e foto mediram 1348 × 936. Bordas e margens de card: 0 px, sem overflow da página.
+
+No frame de 390 × 844, com 375 px de conteúdo, cena e foto mediram 375 × 844. No frame de 320 × 568, com 305 px de conteúdo, a cena preserva a altura mínima de 680 px e a rolagem vertical, sem overflow lateral. Esses frames não representam teste em aparelho físico.
+
+Foram conferidos: navegação para o segundo comparativo, leitura de título/legenda, botões de 44 × 44 px, mudança de enquadramento cover ↔ contain e disclosure dos serviços por teclado. O painel de serviços no frame de 390 px mediu 346 × 147,6 px. A posição dos controles foi elevada: no canvas de 844 px, seu limite inferior relativo à cena é 676 px; o launcher fixo começava em 692 px. Essa folga é considerada com a cena alinhada à janela.
+
+Os 15 testes específicos preservam as verificações de partição, recorte, teclado e estado manual e passam a conferir o modo imersivo e o controle de enquadramento. O código dos comparadores 3D e a sequência de luz não foram alterados nesta revisão. Os registros de erro inspecionados no navegador referem-se à extensão, sem erro da aplicação.
+
+Evidências atuais: `docs/experience/qa/portfolio-fullscreen-desktop-20261106.png` e `docs/experience/qa/portfolio-fullscreen-mobile-20261106.png`.

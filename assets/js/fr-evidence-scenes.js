@@ -75,6 +75,7 @@
     if(!rail||!slides.length)return;
     var index=0,requested=null,timer=0,raf=0,local=[],counter=root.querySelector('[data-fres-feed-count]');
     var prev=root.querySelector('[data-fres-feed-prev]'),next=root.querySelector('[data-fres-feed-next]'),dots=Array.from(root.querySelectorAll('[data-fres-feed-set]'));
+    var fit=root.querySelector('[data-fres-fit]');
     function on(el,type,fn,opts){el.addEventListener(type,fn,opts);local.push(function(){el.removeEventListener(type,fn,opts);});}
     function position(i){return slides[i].offsetLeft-slides[0].offsetLeft;}
     function nearest(){var distance=Infinity,found=0;slides.forEach(function(slide,i){var delta=Math.abs(position(i)-rail.scrollLeft);if(delta<distance){distance=delta;found=i;}});return found;}
@@ -94,6 +95,7 @@
       track('feed_slide',root);
     }
     if(prev)on(prev,'click',function(){go(index-1);});if(next)on(next,'click',function(){go(index+1);});
+    if(fit)on(fit,'click',function(){var whole=root.dataset.fresFit!=='contain';if(whole)root.dataset.fresFit='contain';else delete root.dataset.fresFit;fit.setAttribute('aria-pressed',String(whole));fit.setAttribute('aria-label',whole?'Preencher tela':'Ver imagem inteira');fit.textContent=whole?'Preencher tela':'Imagem inteira';track('feed_fit',root);});
     dots.forEach(function(dot,i){on(dot,'click',function(){go(i);});});
     on(rail,'keydown',function(e){if(e.target!==rail)return;var target=e.key==='ArrowRight'?index+1:e.key==='ArrowLeft'?index-1:e.key==='Home'?0:e.key==='End'?slides.length-1:null;if(target!==null){e.preventDefault();e.stopPropagation();go(target);}});
     function release(){requested=null;w.clearTimeout(timer);}

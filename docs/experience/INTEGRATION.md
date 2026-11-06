@@ -6,7 +6,7 @@ Base: `FRANCOROMEU-APP`, `main` em `8d31ff2`. Branch de trabalho: `codex/integra
 
 | Área | Comportamento |
 | --- | --- |
-| Portfólio / Antes & Depois | 30 comparativos em 10 posts de feed, com três fotos por carrossel, setas, indicadores e swipe nativo. Três formatos alternam retrato, enquadramento compacto e texto + imagem; três pausas editoriais apresentam os serviços do acervo. Os outros 30 permanecem no duplo scroll inverso com card central. Nenhum dos 60 pares é perdido ou duplicado entre as apresentações. |
+| Portfólio / Antes & Depois | 30 comparativos em 10 cenas imersivas, com largura integral e altura de viewport. Cada cena reúne três comparativos por navegação lateral, setas e indicadores. Hero fotográfico, texto sobre a imagem e três pausas editoriais formam um percurso contínuo, sem cartões ou lacunas entre cenas. Os outros 30 permanecem no duplo scroll inverso com card central. Nenhum dos 60 pares é perdido ou duplicado entre as apresentações. |
 | Projetos 3D | 11 recortes do mesmo projeto, com as etapas disponíveis em recortes progressivos, barra vertical, alça de 48 px e botões, conforme a referência. As 18 vistas públicas entram nos recortes; três vistas arquivadas não são promovidas. |
 | Reels Design / Ambientes em sequência | 48 trios em 20 ambientes: capa do local → painel de materiais → aplicação no ambiente. O mesmo controle funciona nos detalhes e nos visualizadores do Portfólio. |
 | Fotos do acervo | Legenda numerada com materiais e serviços da ficha. Seis imagens principais têm pontos de item com coordenadas inspecionadas; as demais usam números de legenda, sem fingir uma localização espacial ainda não conferida. O atlas de 12 estilos também reaproveita suas descrições e serviços existentes. |
@@ -59,3 +59,13 @@ Para três imagens, a segunda revela `min(100, progresso × 2)` e a terceira `ma
 O feed conserva os 30 pares e seus links; os outros 30 continuam no duplo scroll. Sua rolagem vertical é livre. O gesto lateral fora da faixa central troca de foto; a faixa central controla antes/depois. Setas, indicadores e teclado oferecem as mesmas ações. Slides fora de foco ficam `inert`; a navegação do carrossel não captura as teclas do slider de comparação. Não são usados contadores de curtidas, comentários ou engajamento inventado.
 
 Evidências visuais: [barra 3D](qa/3d-bar-20261106.png) e [feed](qa/portfolio-feed-20261106.png).
+
+## Proporção imersiva do Portfólio — 06/11/2026
+
+O hero e as dez cenas usam a largura integral do contêiner da janela e altura de `100svh`, com fallback em `100vh`. A altura mínima de 680 px conserva a leitura e os controles nas janelas mais baixas; nessas janelas, o usuário pode percorrer a cena pela rolagem vertical normal. O layout usa `width:100%` para não acrescentar a largura da scrollbar desktop que faria `100vw` transbordar.
+
+As imagens preenchem o canvas por `object-fit:cover`, mantendo sua proporção. O botão “Imagem inteira” alterna para `contain`, sem mudar a seleção do antes/depois nem o estado do orçamento. Os 30 pares e os 30 pares seguintes permanecem separados e completos. Os formatos panorama, foco e editorial variam a composição tipográfica, com dimensões de cena iguais.
+
+As legendas de origem continuam visíveis; serviços completos ficam em disclosures nativos sobre a foto e podem ser acessados pelo teclado. Gradientes da própria paleta dão contraste sem criar cartões. Os controles foram elevados para reservar espaço ao assistente e à navegação. Não foi adicionado bloqueio de scroll nem animação contínua.
+
+Evidências atuais: [desktop](qa/portfolio-fullscreen-desktop-20261106.png) e [mobile](qa/portfolio-fullscreen-mobile-20261106.png). As capturas anteriores permanecem como histórico, não como estado visual atual.

@@ -23,9 +23,11 @@ test('Portfolio covers every canonical pair once across the feed and split scene
  const doc=new JSDOM(fs.readFileSync('dist/portfolio.html','utf8')).window.document;
  const organic=[...doc.querySelectorAll('[data-fres-pair]')].map(n=>n.dataset.fresPair),split=[...doc.querySelectorAll('#frms-portfolio [data-frms-pair-id]')].map(n=>n.dataset.frmsPairId);
  assert.equal(organic.length,30);assert.equal(split.length,30);assert.equal(new Set([...organic,...split]).size,data.pairs.length);
+ assert.ok(doc.getElementById('fres-before-after').classList.contains('fres-feed-immersive'));
+ assert.equal(doc.querySelector('.fres-feed-cover img').alt,'');
  assert.equal(doc.querySelectorAll('[data-fres-feed]').length,10);assert.equal(doc.querySelectorAll('.fres-feed-note').length,3);
- for(const format of ['portrait','compact','story'])assert.ok(doc.querySelectorAll('.fres-feed-'+format).length>=3);
- for(const post of doc.querySelectorAll('[data-fres-feed]')){assert.equal(post.querySelectorAll('[data-fres-pair]').length,3);assert.equal(post.querySelectorAll('[data-fres-feed-set]').length,3);assert.equal(post.querySelector('.fres-feed-track').getAttribute('aria-roledescription'),'carrossel');}
+ for(const format of ['panorama','focus','editorial'])assert.ok(doc.querySelectorAll('.fres-feed-'+format).length>=3);
+ for(const post of doc.querySelectorAll('[data-fres-feed]')){assert.equal(post.querySelectorAll('[data-fres-pair]').length,3);assert.equal(post.querySelectorAll('[data-fres-feed-set]').length,3);assert.ok(post.querySelector('[data-fres-fit]'));assert.equal(post.querySelectorAll('.fres-feed-services').length,3);assert.equal(post.querySelector('.fres-feed-track').getAttribute('aria-roledescription'),'carrossel');}
  assert.deepEqual([...organic,...split].sort(),data.pairs.map(p=>p.pair_id).sort());
  assert.equal(doc.getElementById('fres-before-after').nextElementSibling.id,'frms-portfolio');
  assert.equal(doc.querySelectorAll('#frpm-before-after').length,1);
@@ -86,13 +88,14 @@ test('feed navigation changes slides without capturing comparison keys or losing
  const f=dom(doc.querySelector('[data-fres-feed]').outerHTML),post=f.d.querySelector('[data-fres-feed]'),rail=post.querySelector('.fres-feed-track'),slides=[...rail.children];
  slides.forEach((slide,i)=>Object.defineProperty(slide,'offsetLeft',{value:i*320}));
  const moves=[];rail.scrollTo=({left})=>{moves.push(left);rail.scrollLeft=left;};
+ const fit=post.querySelector('[data-fres-fit]');fit.click();assert.equal(post.dataset.fresFit,'contain');assert.equal(fit.getAttribute('aria-pressed'),'true');assert.equal(fit.getAttribute('aria-label'),'Preencher tela');
  assert.equal(post.dataset.fresFeedIndex,'0');assert.equal(slides[0].hasAttribute('inert'),false);assert.equal(slides[1].hasAttribute('inert'),true);
  post.querySelector('[data-fres-feed-next]').click();assert.equal(post.dataset.fresFeedIndex,'1');assert.equal(slides[0].hasAttribute('inert'),true);assert.equal(slides[1].hasAttribute('inert'),false);
  const range=input(f,slides[1].querySelector('[data-fres-scene]'),770),key=new f.w.KeyboardEvent('keydown',{key:'ArrowRight',bubbles:true,cancelable:true});range.dispatchEvent(key);
  assert.equal(post.dataset.fresFeedIndex,'1');assert.equal(key.defaultPrevented,false,'range keys belong to the comparator');
  rail.dispatchEvent(new f.w.KeyboardEvent('keydown',{key:'End',bubbles:true,cancelable:true}));assert.equal(post.dataset.fresFeedIndex,'2');assert.equal(post.querySelector('[data-fres-feed-next]').disabled,true);
  post.querySelector('[data-fres-feed-prev]').click();assert.equal(post.dataset.fresFeedIndex,'1');assert.equal(range.value,'770');assert.equal(post.querySelector('[data-fres-feed-count]').textContent,'2 / 3');
- assert.deepEqual(moves,[320,640,320]);
+ assert.deepEqual(moves,[320,640,320]);assert.equal(post.dataset.fresFit,'contain','full framing survives photo navigation');fit.click();assert.equal(post.hasAttribute('data-fres-fit'),false);assert.equal(fit.getAttribute('aria-pressed'),'false');assert.equal(range.value,'770','changing framing does not change the comparison');
  f.w.FREvidenceScenes.enhance(f.d);assert.equal(post.querySelectorAll('.fres-feed-track').length,1);
  f.w.FREvidenceScenes.destroy();post.querySelector('[data-fres-feed-prev]').click();assert.equal(post.dataset.fresFeedIndex,'1','destroy removes carousel listeners');f.instance.window.close();
 });
