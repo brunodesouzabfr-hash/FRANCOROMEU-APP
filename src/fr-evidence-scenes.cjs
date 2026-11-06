@@ -13,17 +13,19 @@ function comparison({id, layers, mode = 'sequence', title = '', compact = false}
   if (!layers.length) throw Error('Evidence scene has no layers: ' + id);
   const cover = layers.at(-1).media;
   const v = cover.variants.find(v=>v.canonical) || cover.variants.at(-1);
+  const initial = mode==='light'?0:500;
+  const initialIndex = Math.round(initial/1000*(layers.length-1));
   return `<div class="fres-scene${compact?' fres-compact':''}" data-fres-scene="${esc(id)}" data-fres-mode="${esc(mode)}" data-fres-labels="${esc(JSON.stringify(layers.map(l=>l.label)))}">
     <div class="fres-viewport" style="--fres-ratio:${v.width}/${v.height}">
-      ${layers.map((l,i)=>`<figure class="fres-layer" data-fres-layer="${i}"${i?' style="opacity:0"':''}>${image(l.media)}<figcaption class="${mode==='wipe'?'fres-sr':'fres-layer-origin'}">${esc(l.media.label)}</figcaption></figure>`).join('')}
+      ${layers.map((l,i)=>`<figure class="fres-layer" data-fres-layer="${i}"${mode==='sequence'?' style="opacity:1;clip-path:inset(0 '+(i?100-Math.max(0,Math.min(1,.5*(layers.length-1)-(i-1)))*100:0)+'% 0 0)"':i?' style="opacity:0"':''}>${image(l.media)}<figcaption class="${mode==='wipe'?'fres-sr':'fres-layer-origin'}">${esc(l.media.label)}</figcaption></figure>`).join('')}
       <div class="fres-stage-labels" aria-hidden="true"><span>${esc(layers[0].label)}</span><span>${esc(layers.at(-1).label)}</span></div>
       <div class="fres-line" aria-hidden="true"><span>‹ ›</span></div>
       <label class="fres-sr" for="${esc(id)}-range">${esc(title || 'Explorar as etapas deste ambiente')}</label>
-      <input class="fres-range" id="${esc(id)}-range" type="range" min="0" max="1000" step="1" value="${mode==='wipe'?'500':'0'}" aria-valuetext="${esc(layers[0].label)}">
+      <input class="fres-range" id="${esc(id)}-range" type="range" min="0" max="1000" step="1" value="${initial}" aria-valuetext="${esc(layers[initialIndex].label)}">
     </div>
     ${mode==='wipe'?`<p class="fres-comparison-origin">${layers.map(l=>esc(l.media.label)).join(' / ')}</p>`:''}
-    <div class="fres-scene-footer"><p data-fres-status aria-live="off">${esc(layers[0].label)}</p><button type="button" data-fres-resume>Seguir scroll</button></div>
-    ${mode==='wipe'?'':`<div class="fres-steps" role="group" aria-label="Etapas de ${esc(title||'comparação')}">${layers.map((l,i)=>`<button type="button" data-fres-set="${layers.length===1?0:i/(layers.length-1)*1000}" aria-pressed="${i===0}"><span>${String(i+1).padStart(2,'0')}</span>${esc(l.label)}</button>`).join('')}</div>`}
+    <div class="fres-scene-footer"><p data-fres-status aria-live="off">${esc(layers[initialIndex].label)}</p><button type="button" data-fres-resume>Seguir scroll</button></div>
+    ${mode==='wipe'?'':`<div class="fres-steps" role="group" aria-label="Etapas de ${esc(title||'comparação')}">${layers.map((l,i)=>`<button type="button" data-fres-set="${layers.length===1?0:i/(layers.length-1)*1000}" aria-pressed="${i===initialIndex}"><span>${String(i+1).padStart(2,'0')}</span>${esc(l.label)}</button>`).join('')}</div>`}
   </div>`;
 }
 function partition(pairs) {
@@ -49,7 +51,17 @@ function projectScenes(prepared, prefix='fres-project') {
 }
 function organicHTML(prepared, pairs) {
   const media=prepared.data.media;
-  return `<section class="fres fres-organic" id="fres-before-after" aria-labelledby="fres-organic-title"><span id="frpm-before-after" class="fres-anchor" aria-hidden="true"></span><header class="fres-section-head"><p class="fres-eyebrow">PORTFÓLIO / ANTES & DEPOIS</p><h2 id="fres-organic-title">Toda mudança<br>tem uma história.</h2><p>Arraste a linha ou percorra as imagens. Em cada ambiente, as escolhas de materiais e os serviços realizados.</p><a href="#frms-portfolio" class="fres-text-link">Continuar para o duplo scroll ↓</a></header><div class="fres-organic-grid">${pairs.map((p,i)=>`<article class="fres-organic-card" data-fres-pair="${esc(p.pair_id)}" style="--fres-card:${i%6}"><header><p class="fres-eyebrow">${String(i+1).padStart(2,'0')} / ${esc(p.environment)}</p><h3>${esc(shortTitle(p.title))}</h3></header>${comparison({id:'fres-ba-'+p.pair_id,layers:[{label:media[p.before_media_id].label,media:media[p.before_media_id]},{label:media[p.after_media_id].label,media:media[p.after_media_id]}],mode:'wipe',title:'Comparar antes e depois de '+p.environment})}<div class="fres-card-description"><p>${esc((p.interventions||[]).join(' · ') || p.result)}</p><a class="fres-text-link" href="${esc(p.route)}">Conhecer este ambiente ↗</a></div></article>`).join('')}</div><p class="fres-continuation">O percurso continua.<span>Outras ${prepared.data.pairs.length-pairs.length} transformações no duplo scroll.</span></p></section>`;
+  const posts=Array.from({length:Math.ceil(pairs.length/3)},(_,i)=>pairs.slice(i*3,i*3+3));
+  const formats=['portrait','compact','story'];
+  const postHTML=posts.map((entries,i)=>{
+    const id='fres-feed-'+i,format=formats[i%formats.length];
+    const slides=entries.map((p,j)=>`<article class="fres-organic-card fres-feed-slide" data-fres-pair="${esc(p.pair_id)}" role="group" aria-roledescription="slide" aria-label="${j+1} de ${entries.length}: ${esc(p.environment)}">${comparison({id:'fres-ba-'+p.pair_id,layers:[{label:media[p.before_media_id].label,media:media[p.before_media_id]},{label:media[p.after_media_id].label,media:media[p.after_media_id]}],mode:'wipe',title:'Comparar antes e depois de '+p.environment})}<div class="fres-card-description"><p class="fres-eyebrow">${esc(p.environment)}</p><h3>${esc(shortTitle(p.title))}</h3><p>${esc((p.interventions||[]).join(' · ') || p.result)}</p><a class="fres-text-link" href="${esc(p.route)}">Conhecer este ambiente ↗</a></div></article>`).join('');
+    const post=`<section class="fres-feed-post fres-feed-${format}" data-fres-feed="${id}" aria-label="Antes e depois · publicação ${i+1} de ${posts.length}"><header class="fres-feed-header"><div><strong>Franco Romeu</strong><span>Arte + Engenharia / Antes & Depois</span></div><span class="fres-feed-edition">${String(i+1).padStart(2,'0')} / ${String(posts.length).padStart(2,'0')}</span></header><div class="fres-feed-track" id="${id}-track" role="group" aria-roledescription="carrossel" aria-label="Comparativos da publicação ${i+1}" tabindex="0" aria-describedby="fres-feed-help">${slides}</div><footer class="fres-feed-controls"><button type="button" data-fres-feed-prev aria-label="Comparativo anterior" aria-controls="${id}-track">‹</button><div class="fres-feed-dots" role="group" aria-label="Escolher comparativo">${entries.map((p,j)=>`<button type="button" data-fres-feed-set="${j}" aria-label="Mostrar comparativo ${j+1}: ${esc(p.environment)}" aria-pressed="${j===0}" aria-controls="${id}-track"><span></span></button>`).join('')}</div><p data-fres-feed-count aria-live="polite" aria-atomic="true">1 / ${entries.length}</p><button type="button" data-fres-feed-next aria-label="Próximo comparativo" aria-controls="${id}-track">›</button></footer></section>`;
+    const services=[...new Set(entries.flatMap(p=>p.interventions||[]))].slice(0,4);
+    const note=(i+1)%3===0?`<aside class="fres-feed-note"><p class="fres-eyebrow">POR TRÁS DA MUDANÇA</p><h3>${['O detalhe faz parte do todo.','Matéria e método.','Cada escolha tem uma função.'][Math.floor(i/3)]}</h3><p>${esc(services.join(' · ') || entries[0].result)}</p><a class="fres-text-link" href="${esc(entries[0].route)}">Explorar materiais e serviços ↗</a></aside>`:'';
+    return post+note;
+  }).join('');
+  return `<section class="fres fres-organic fres-feed" id="fres-before-after" aria-labelledby="fres-organic-title"><span id="frpm-before-after" class="fres-anchor" aria-hidden="true"></span><header class="fres-section-head"><p class="fres-eyebrow">PORTFÓLIO / ANTES & DEPOIS</p><h2 id="fres-organic-title">Ambientes.<br>Em transformação.</h2><p>Um feed de escolhas e resultados. Arraste a linha para comparar; deslize fora dela para ver o próximo ambiente.</p><p class="fres-sr" id="fres-feed-help">Use as setas ou deslize as fotos para trocar de comparativo. No controle sobre a imagem, as setas comparam antes e depois.</p><a href="#frms-portfolio" class="fres-text-link">Ir para o duplo scroll ↓</a></header><div class="fres-organic-grid fres-feed-list">${postHTML}</div><p class="fres-continuation">O percurso continua.<span>Outras ${prepared.data.pairs.length-pairs.length} transformações no duplo scroll.</span></p></section>`;
 }
 function environmentScenes(group,data,prefix='fres-environment') {
   const scenes=group.trails.flatMap(trail=>{

@@ -19,10 +19,13 @@ function dom(html='<main></main>',options={}){
 }
 function input(f,root,value){const range=root.querySelector('input[type=range]');range.value=String(value);range.dispatchEvent(new f.w.Event('input',{bubbles:true}));return range;}
 
-test('Portfolio covers every canonical pair once across organic and split scenes, with stable curation',()=>{
+test('Portfolio covers every canonical pair once across the feed and split scenes, with stable curation',()=>{
  const doc=new JSDOM(fs.readFileSync('dist/portfolio.html','utf8')).window.document;
  const organic=[...doc.querySelectorAll('[data-fres-pair]')].map(n=>n.dataset.fresPair),split=[...doc.querySelectorAll('#frms-portfolio [data-frms-pair-id]')].map(n=>n.dataset.frmsPairId);
  assert.equal(organic.length,30);assert.equal(split.length,30);assert.equal(new Set([...organic,...split]).size,data.pairs.length);
+ assert.equal(doc.querySelectorAll('[data-fres-feed]').length,10);assert.equal(doc.querySelectorAll('.fres-feed-note').length,3);
+ for(const format of ['portrait','compact','story'])assert.ok(doc.querySelectorAll('.fres-feed-'+format).length>=3);
+ for(const post of doc.querySelectorAll('[data-fres-feed]')){assert.equal(post.querySelectorAll('[data-fres-pair]').length,3);assert.equal(post.querySelectorAll('[data-fres-feed-set]').length,3);assert.equal(post.querySelector('.fres-feed-track').getAttribute('aria-roledescription'),'carrossel');}
  assert.deepEqual([...organic,...split].sort(),data.pairs.map(p=>p.pair_id).sort());
  assert.equal(doc.getElementById('fres-before-after').nextElementSibling.id,'frms-portfolio');
  assert.equal(doc.querySelectorAll('#frpm-before-after').length,1);
@@ -56,18 +59,42 @@ test('all material trails have three related states: place, material panel and a
   assert.ok(data.media[scene.mediaIds[2]].project_ids.includes(trail.project_id));
  }
 });
-test('four-state scrub has adjacent layers only and no stale state after rapid jumps',()=>{
- const scene=library.scenes.find(s=>s.id==='integracao');
- const f=dom(scene.template.replaceAll('__INSTANCE__','test-scene'));
+test('four-state project curtain reveals each layer from the left and resets correctly after jumps',()=>{
+ const scene=library.scenes.find(s=>s.id==='integracao'),f=dom(scene.template.replaceAll('__INSTANCE__','test-scene'));
  const root=f.d.querySelector('[data-fres-scene]'),layers=[...root.querySelectorAll('[data-fres-layer]')];
- for(const value of [0,250,500,750,1000,100,999,0,1000]){
-  const range=input(f,root,value),visible=layers.map((n,i)=>Number(n.style.opacity)>0?i:-1).filter(i=>i>=0);
-  assert.ok(visible.length<=2);if(visible.length===2)assert.equal(visible[1]-visible[0],1);
+ const cases=[[0,[0,100,100,100]],[250,[0,25,100,100]],[500,[0,0,50,100]],[750,[0,0,0,75]],[1000,[0,0,0,0]],[100,[0,70,100,100]],[999,[0,0,0,.3]],[0,[0,100,100,100]],[1000,[0,0,0,0]]];
+ for(const [value,expected] of cases){
+  const range=input(f,root,value);
+  layers.forEach((layer,i)=>{assert.equal(layer.style.opacity,'1','curtains never crossfade');const right=parseFloat(layer.style.clipPath.match(/([\d.e-]+)%/)[1]);assert.ok(Math.abs(right-expected[i])<.001,'unexpected exposed strip at '+value+', layer '+i);});
+  assert.equal(root.querySelector('.fres-line').style.left,(value/10)+'%');
   assert.equal(range.value,String(value));assert.equal(f.w.FREvidenceScenes.getState()[0].manual,true);
+  assert.equal(root.querySelectorAll('[data-fres-set][aria-pressed=true]').length,1);
  }
- assert.deepEqual(layers.map(n=>Number(n.style.opacity)),[0,0,0,1]);
- input(f,root,0);assert.deepEqual(layers.map(n=>Number(n.style.opacity)),[1,0,0,0]);
  f.close();
+});
+test('three-state project uses the exact reference drawing/proposal curtain positions',()=>{
+ const scene=library.scenes.find(s=>s.id==='ilha'),f=dom(scene.template.replaceAll('__INSTANCE__','triple'));
+ const root=f.d.querySelector('[data-fres-scene]'),layers=[...root.querySelectorAll('[data-fres-layer]')];
+ assert.equal(root.querySelector('.fres-range').value,'500');assert.equal(root.querySelector('.fres-line').style.left,'50%');
+ for(const [value,expected] of [[0,[0,100,100]],[250,[0,50,100]],[500,[0,0,100]],[750,[0,0,50]],[1000,[0,0,0]]]){
+  input(f,root,value);assert.deepEqual(layers.map(l=>parseFloat(l.style.clipPath.match(/([\d.e-]+)%/)[1])),expected);
+ }
+ f.close();
+});
+test('feed navigation changes slides without capturing comparison keys or losing a manual comparison',()=>{
+ const doc=new JSDOM(fs.readFileSync('dist/portfolio.html','utf8')).window.document;
+ const f=dom(doc.querySelector('[data-fres-feed]').outerHTML),post=f.d.querySelector('[data-fres-feed]'),rail=post.querySelector('.fres-feed-track'),slides=[...rail.children];
+ slides.forEach((slide,i)=>Object.defineProperty(slide,'offsetLeft',{value:i*320}));
+ const moves=[];rail.scrollTo=({left})=>{moves.push(left);rail.scrollLeft=left;};
+ assert.equal(post.dataset.fresFeedIndex,'0');assert.equal(slides[0].hasAttribute('inert'),false);assert.equal(slides[1].hasAttribute('inert'),true);
+ post.querySelector('[data-fres-feed-next]').click();assert.equal(post.dataset.fresFeedIndex,'1');assert.equal(slides[0].hasAttribute('inert'),true);assert.equal(slides[1].hasAttribute('inert'),false);
+ const range=input(f,slides[1].querySelector('[data-fres-scene]'),770),key=new f.w.KeyboardEvent('keydown',{key:'ArrowRight',bubbles:true,cancelable:true});range.dispatchEvent(key);
+ assert.equal(post.dataset.fresFeedIndex,'1');assert.equal(key.defaultPrevented,false,'range keys belong to the comparator');
+ rail.dispatchEvent(new f.w.KeyboardEvent('keydown',{key:'End',bubbles:true,cancelable:true}));assert.equal(post.dataset.fresFeedIndex,'2');assert.equal(post.querySelector('[data-fres-feed-next]').disabled,true);
+ post.querySelector('[data-fres-feed-prev]').click();assert.equal(post.dataset.fresFeedIndex,'1');assert.equal(range.value,'770');assert.equal(post.querySelector('[data-fres-feed-count]').textContent,'2 / 3');
+ assert.deepEqual(moves,[320,640,320]);
+ f.w.FREvidenceScenes.enhance(f.d);assert.equal(post.querySelectorAll('.fres-feed-track').length,1);
+ f.w.FREvidenceScenes.destroy();post.querySelector('[data-fres-feed-prev]').click();assert.equal(post.dataset.fresFeedIndex,'1','destroy removes carousel listeners');f.instance.window.close();
 });
 test('manual input owns a scene across scroll updates until the user resumes',()=>{
  const scene=library.scenes.find(s=>s.id==='integracao');
