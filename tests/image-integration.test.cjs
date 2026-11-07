@@ -98,7 +98,13 @@ test('Sobre, Ambientes e Portfolio refletem a limpeza seletiva e o dossier escal
  const portfolio=new JSDOM(fs.readFileSync(path.join(output,'portfolio.html'),'utf8')).window.document;
  assert.equal(portfolio.querySelectorAll('#frpm-portfolio-projects [data-frpm-dossier-open]').length,1);
  assert.equal(portfolio.querySelectorAll('#view-projetos .frpm-pair').length,0);
- assert.equal(portfolio.querySelectorAll('#frms-portfolio .frms-card').length,60);
+ // The approved narrative edition replaces the sixty-screen split with a
+ // virtualized ten-image formation while retaining all sixty project links.
+ const story=JSON.parse(portfolio.getElementById('story-manifest').textContent);
+ assert.equal(story.pairs.length,60);
+ assert.equal(portfolio.querySelectorAll('#story-enxame [data-story-media-id]').length,10);
+ assert.equal(portfolio.querySelectorAll('[data-story-index]').length,60);
+ assert.equal(new Set(story.pairs.flatMap(p=>[p.before.id,p.after.id])).size,120);
  assert.equal(portfolio.querySelectorAll('#view-projetos #frmedia-cozinha-lavanderia,#view-projetos #frmedia-frontais').length,0);
  assert.equal(new Set(data.dossiers[0].media.map(m=>m.media_id)).size,48);
  assert.match(data.dossiers[0].title,/quartzo e móveis/);
@@ -184,9 +190,11 @@ test('sitemaps/XML excluem páginas noindex e imagens sem liberação; URLs inde
  for(const r of map.routes.filter(r=>!r.indexable)){const text=fs.readFileSync(path.join(output,r.file),'utf8');assert.match(text,/name="robots" content="noindex/);assert.ok(text.includes('href="'+origin+r.route+'"'));assert.ok(text.includes('content="'+origin+r.route+'"'));}
 });
 
-test('Home termina com o percurso horizontal e o rodapé; o caderno mantém sua galeria própria',()=>{
+test('Home conclui a narrativa e preserva percurso original, rodapé e galeria própria do caderno',()=>{
  const dom=new JSDOM(fs.readFileSync(path.join(output,'index.html'),'utf8')),doc=dom.window.document,home=doc.getElementById('view-home');
- assert.equal(home.lastElementChild.className,'fr6-footer');assert.equal(home.lastElementChild.previousElementSibling.id,'froutro4');
+ assert.equal(home.querySelector('.story-surface').lastElementChild.id,'story-home-resultado');
+ const archive=home.querySelector('.story-archive-body');
+ assert.equal(archive.lastElementChild.className,'fr6-footer');assert.equal(archive.lastElementChild.previousElementSibling.id,'froutro4');
  assert.ok(doc.getElementById('frmedia-home-case').compareDocumentPosition(doc.getElementById('froutro4'))&dom.window.Node.DOCUMENT_POSITION_FOLLOWING);dom.window.close();
  const page=new JSDOM(fs.readFileSync(path.join(output,'projetos/cozinha-lavanderia.html'),'utf8'),{runScripts:'outside-only',url:origin+'/projetos/cozinha-lavanderia'}),w=page.window,d=w.document;
  w.FR_MEDIA_LIBRARY=data;w.FR_MEDIA_CATALOG=data.caseCatalog;w.eval(fs.readFileSync('assets/js/fr-media-case.js','utf8'));

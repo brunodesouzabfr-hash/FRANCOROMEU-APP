@@ -44,7 +44,8 @@ function enhance(root){
  });
 }
 function mount(){var data=w.FR_MEDIA_LIBRARY;if(!data)return;
- var stage=d.getElementById('fr16-portfolio'),portfolio=stage&&!stage.hidden?stage:d.getElementById('view-projetos');
+ var storyArchive=d.querySelector('#story-archive-projetos .story-archive-body');
+ var stage=d.getElementById('fr16-portfolio'),portfolio=storyArchive||(stage&&!stage.hidden?stage:d.getElementById('view-projetos'));
  var split=d.getElementById('frms-portfolio');
  if(split&&portfolio){
   // Move the original stage, keeping its image nodes and controller intact.
@@ -58,7 +59,7 @@ function mount(){var data=w.FR_MEDIA_LIBRARY;if(!data)return;
   split.removeAttribute('inert');split.setAttribute('aria-hidden','false');
   var collections=d.getElementById('frms-portfolio-links');
   if(collections){if(split.nextElementSibling!==collections)split.after(collections);collections.removeAttribute('inert');collections.setAttribute('aria-hidden','false')}
- }else{
+ }else if(!storyArchive){
   ['frpm-portfolio-navigation','frpm-before-after'].forEach(function(id){var prior=d.getElementById(id);if(portfolio&&prior&&prior.parentElement!==portfolio)portfolio.appendChild(prior);if(prior){prior.removeAttribute('inert');prior.setAttribute('aria-hidden','false')}});
   if(portfolio&&!d.getElementById('frpm-portfolio-navigation'))portfolio.insertAdjacentHTML('beforeend','<nav class="frpm frpm-environment-nav" id="frpm-portfolio-navigation" aria-label="Acervos do Portfólio"><a href="/portfolio#frpm-portfolio-projects">Cozinha e lavanderia</a><a href="/portfolio#frpm-before-after">Antes & Depois · Franco Romeu</a><a href="/portfolio#frpm-portfolio-environments">Ambientes em sequência</a></nav>');
   if(portfolio&&!d.getElementById('frpm-before-after'))portfolio.insertAdjacentHTML('beforeend',beforeAfterHTML(data));
@@ -68,7 +69,7 @@ function mount(){var data=w.FR_MEDIA_LIBRARY;if(!data)return;
  var finalCTA=portfolio&&portfolio.querySelector('#fr16-final-cta'),next=finalCTA;
  ['frpm-portfolio-projects','frpm-portfolio-environments'].forEach(function(id){
   var own=d.getElementById(id);if(!portfolio||!own)return;
-  if(next){if(own.nextElementSibling!==next)portfolio.insertBefore(own,next);next=own}
+  if(next&&next.parentNode){if(own.nextElementSibling!==next)next.parentNode.insertBefore(own,next);next=own}
   else if(own.parentElement!==portfolio)portfolio.appendChild(own);
   own.removeAttribute('inert');own.setAttribute('aria-hidden','false');
  });

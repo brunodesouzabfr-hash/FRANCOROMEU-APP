@@ -239,7 +239,7 @@
       grid.appendChild(card);
     });
     section.append(header, grid);
-    view.insertBefore(section, museum);
+    museum.parentNode.insertBefore(section, museum);
     remember(section);
   }
 

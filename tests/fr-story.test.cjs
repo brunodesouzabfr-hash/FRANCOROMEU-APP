@@ -1,0 +1,52 @@
+'use strict';
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const {JSDOM}=require('jsdom');
+const html=()=>fs.readFileSync('dist/index.html','utf8');
+test('narrative edition preserves canonical commercial content and covers the full acervo',async()=>{
+ const source=new JSDOM(fs.readFileSync('index.html','utf8')).window.document;
+ const doc=new JSDOM(html()).window.document;
+ const original=await require('terser').minify(source.getElementById('fr-budget-core').textContent,{compress:false,mangle:false,format:{comments:false,inline_script:true}});
+ assert.equal(doc.getElementById('fr-budget-core').textContent,original.code,'Commercial core stays byte-identical after the same public minification');
+ const manifest=JSON.parse(doc.getElementById('story-manifest').textContent);
+ assert.equal(manifest.chapters.length,6);assert.equal(manifest.pairs.length,60);
+ const ids=manifest.pairs.flatMap(p=>[p.before.id,p.after.id]);assert.equal(new Set(ids).size,120);
+ assert.equal(doc.querySelectorAll('[data-story-service]').length,115);
+ assert.equal(doc.querySelectorAll('[data-story-category]').length,15);
+ assert.equal(doc.querySelectorAll('.story-amb-act').length,12);
+ assert.equal(doc.querySelectorAll('.story-model-act').length,6);
+ assert.equal(doc.querySelectorAll('[data-story-index]').length,60);
+ assert.equal(doc.querySelectorAll('#story-enxame img').length,10);
+ assert.equal(doc.querySelectorAll('.story-archive').length,5);
+ for(const node of source.querySelectorAll('.view-section [id]'))if(!node.closest('#admin-container,#god-mode-panel,#gm-backdrop'))assert.ok(doc.getElementById(node.id),'Original public functional anchor: '+node.id);
+ const before=source.querySelectorAll('#view-orcamento details summary');
+ for(const question of [...before].slice(1))assert.ok([...doc.querySelectorAll('.story-faq summary')].some(n=>n.textContent===question.textContent));
+ source.defaultView.close();doc.defaultView.close();
+});
+test('all twelve sets, reversal, deep links and reduced-motion keep the exact 120-image inventory',async()=>{
+ const dom=new JSDOM(html(),{url:'https://fr-test.example/portfolio',runScripts:'outside-only',pretendToBeVisual:true});
+ const w=dom.window,d=w.document;
+ const manifest=JSON.parse(d.getElementById('story-manifest').textContent);
+ d.querySelectorAll('.view-section').forEach(v=>v.classList.toggle('active',v.id==='view-projetos'));
+ w.matchMedia=()=>({matches:true,addEventListener(){},removeEventListener(){}});
+ w.scrollTo=()=>{};w.HTMLElement.prototype.scrollIntoView=function(){};
+ w.Image=class {decode(){return Promise.resolve();}};
+ w.IntersectionObserver=class {constructor(fn){this.fn=fn;}observe(el){this.fn([{target:el,isIntersecting:true}]);}unobserve(){}disconnect(){}};
+ w.eval(fs.readFileSync('assets/js/fr-story.js','utf8'));
+ await new Promise(r=>setTimeout(r,60));
+ let a=w.FRStory.audit();assert.equal(a.swarm.total,12);assert.equal(a.swarm.current,1);assert.equal(d.querySelectorAll('.story-view h1').length,1);assert.ok(d.querySelector('#view-projetos h1'));
+ for(let i=2;i<=12;i++){
+  d.querySelector('[data-story-step="1"]').click();await new Promise(r=>setTimeout(r,0));
+  a=w.FRStory.audit();assert.equal(a.swarm.current,i);assert.equal(a.swarm.mounted,10);assert.ok(a.swarm.preloaded<=10);assert.equal(a.swarm.state,'parked');
+  assert.equal(w.location.hash,'#portfolio/conjunto-'+i);
+ }
+ assert.deepEqual([...a.visited].sort(),manifest.pairs.flatMap(p=>[p.before.id,p.after.id]).sort());
+ d.querySelector('[data-story-step="1"]').click();assert.equal(w.FRStory.audit().swarm.current,12);
+ d.querySelector('[data-story-step="-1"]').click();await new Promise(r=>setTimeout(r,0));assert.equal(w.FRStory.audit().swarm.current,11);
+ w.location.hash='#portfolio/conjunto-3';await new Promise(r=>setTimeout(r,20));assert.equal(w.FRStory.audit().swarm.current,3);
+ d.querySelectorAll('.view-section').forEach(v=>v.classList.toggle('active',v.id==='view-home'));
+ d.dispatchEvent(new w.CustomEvent('frViewChanged',{detail:{viewId:'view-home'}}));await new Promise(r=>setTimeout(r,30));
+ assert.equal(w.FRStory.audit().modules,1);assert.equal(w.FRStory.audit().swarm,null);
+ w.FRStory.destroy();dom.window.close();
+});

@@ -1,4 +1,7 @@
 (()=>{'use strict';
+// The narrative edition opens inside its first scene. Keep the historical intro
+// available to the original experience and the dedicated intro laboratory.
+if(document.documentElement.dataset.story==='linha')return;
 // FR INTRO V05: visually completed playback, adaptive quality, no skip controls.
 if(document.getElementById('fr-cinema-overlay'))return;
 // Preserve first-visit behavior; allow explicit preview with ?frIntro=1.

@@ -173,6 +173,7 @@ async function build() {
   const dimensionScript = doc.createElement('script'); dimensionScript.id = 'fr-media-dimensions';
   dimensionScript.textContent = 'window.FR_MEDIA_DIMENSIONS=' + JSON.stringify(dimensions) + ';'; doc.head.appendChild(dimensionScript);
   for (const node of doc.querySelectorAll('#god-mode-panel,#gm-backdrop,#admin-container,.gm-placeholder')) node.remove();
+  require('../src/fr-story-adapters.cjs')(doc);
   for (const node of [...doc.scripts]) {
     if (node.type === 'application/ld+json' || node.type === 'application/json' || node.src || !node.textContent.trim()) continue;
     if (node.textContent.includes('// === GOD MODE 2.0 - PAINEL COMPLETO DE EDIÇÃO ===')) { node.remove(); removed.push('God Mode 2.0 script'); continue; }
@@ -188,6 +189,9 @@ async function build() {
   // header/hero layouts. Deliver the final cascade before body content, retaining
   // its exact order and IDs for the existing runtime integrations.
   for (const node of [...sourceStyles, ...doc.querySelectorAll('style')].filter((node,index,all)=>all.indexOf(node)===index)) doc.head.appendChild(node);
+  // A linha que fica: replace presentation after canonical enrichment and pruning.
+  // All six views, original tools, source content and commercial data are retained.
+  require('../src/fr-story.cjs')(doc, prepared);
   const walker = doc.createTreeWalker(doc, 128);
   const comments = []; while (walker.nextNode()) comments.push(walker.currentNode);
   comments.forEach(n => n.remove());
