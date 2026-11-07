@@ -48,5 +48,11 @@ test('all twelve sets, reversal, deep links and reduced-motion keep the exact 12
  d.querySelectorAll('.view-section').forEach(v=>v.classList.toggle('active',v.id==='view-home'));
  d.dispatchEvent(new w.CustomEvent('frViewChanged',{detail:{viewId:'view-home'}}));await new Promise(r=>setTimeout(r,30));
  assert.equal(w.FRStory.audit().modules,1);assert.equal(w.FRStory.audit().swarm,null);
+ w.FRStory.destroy();delete w.FRStory;
+ dom.reconfigure({url:'https://fr-test.example/portfolio#portfolio/conjunto-3'});
+ d.querySelectorAll('.view-section').forEach(v=>v.classList.toggle('active',v.id==='view-projetos'));
+ w.eval(fs.readFileSync('assets/js/fr-story.js','utf8'));await new Promise(r=>setTimeout(r,60));
+ assert.equal(w.FRStory.audit().swarm.current,3,'Direct entry restores the requested set before observer activation');
+ assert.deepEqual([...d.querySelectorAll('#story-enxame [data-story-media-id]')].map(n=>n.dataset.storyMediaId),manifest.pairs.slice(10,15).flatMap(p=>[p.before.id,p.after.id]));
  w.FRStory.destroy();dom.window.close();
 });

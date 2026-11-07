@@ -31,8 +31,8 @@ A matriz completa Inventário × Cena está em [STORY_BIBLE.md](STORY_BIBLE.md).
 
 - `npm test`: 215 testes passaram, nenhum teste falhou. Inclui regressões de orçamento, navegação, IQE, 3D, mídia, rotas, SEO, CRM e build público.
 - `npm run check:html`: aprovado; 253 IDs únicos na fonte, seis views e bridges comerciais/PDF preservadas.
-- `node --test tests/fr-story.test.cjs`: dois testes passaram após a correção de heading SPA. Confere integridade do núcleo financeiro após minificação idêntica, contagens, todos os IDs públicos originais e percurso completo 1–12, reversão, hash, janela de dez imagens, pré-carga de no máximo dez e destruição dos módulos por rota.
-- Build com `VERCEL_ENV=preview`: concluído. A transformação não altera a fonte `index.html`. Acorn declarado diretamente na mesma versão já resolvida pelo lockfile.
+- `node --test tests/fr-story.test.cjs`: dois testes passaram após a correção de heading SPA. Confere integridade do núcleo financeiro após minificação idêntica, contagens, todos os IDs públicos originais e percurso completo 1–12, reversão, hash e abertura direta no conjunto solicitado, janela de dez imagens, pré-carga de no máximo dez e destruição dos módulos por rota.
+- Build com `VERCEL_ENV=preview`: concluído. Deploy Vercel observado em estado READY, com canonical oficial e noindex. A transformação não altera a fonte `index.html`. Acorn declarado diretamente na mesma versão já resolvida pelo lockfile.
 - Compilação de CSS pelo Lightning CSS e `git diff --check`: aprovados após os ajustes responsivos.
 - Chrome remoto, desktop: Home, Ambientes e Portfólio inspecionados visualmente; avanço do conjunto 1 para 2; modal com exatamente duas imagens e rótulos; adição do serviço ao orçamento e abertura da calculadora observadas.
 - Chrome remoto, viewport via iframe de 390×844: todas as seis abas navegáveis. `scrollWidth === clientWidth`, sem overflow horizontal. Galeria com cinco pares visíveis após correção de `minmax(0,1fr)`.
